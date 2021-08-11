@@ -38,48 +38,6 @@ class AddLocation extends Component {
     addLocation = () => {
 
         console.log(this.state)
-
-        // fs.readFile('db.js', 'utf8', (err, data) => {
-        //     if (err) throw err
-        //     console.log(JSON.parse(data))
-        //     // let locations = JSON.parse(data);
-        //     // locations.push(this.state)
-
-        //     // fs.writeFile('db.js', JSON.stringify(locations), (err) => {
-        //     //     if(err) throw err
-        //     //     console.log('added a new location')
-        //     // })
-        // })
-
-        //fs.unlink('db.js')
-
-        // fs.writeFile('db.js', JSON.stringify(locationsDb),  { flag: 'w+' }, (err) => {
-        //     if(err) throw err;
-        //     else console.log('saved!!')
-
-        //     fs.readFile('db.js', 'utf8', (err, data) => {
-        //         if(err) throw err
-        //          console.log(JSON.parse(data))
-        //     })
-        // })
-
-            // fs.appendFile('db.js', JSON.stringify(locationsDb[0]), (err) => {
-            //     if(err) throw err
-            //     console.log('added new location')
-            //     //  console.log(JSON.parse(data))
-            // })
-        
-            // fs.readFile('db.js', 'utf8', (err, data) => {
-            //     if(err) throw err
-            //     let locations = JSON.parse(data);
-            //     console.log(locations)
-            //     // locations.push(locationsDb[0])
-
-            //     // fs.writeFile('db.js', JSON.stringify(locations), (err) => {
-            //     //     if(err) throw err
-            //     //     console.log('added a new location')
-            //     // })
-            // })
     }
 
     render() {
