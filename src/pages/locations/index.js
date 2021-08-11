@@ -13,10 +13,7 @@ import map from '../../images/map.png';
 import './style.css';
 
 import AutoComplete from "react-google-autocomplete";
-import locations from './db';
-
-//var fs = require('browserify-fs');
-//const path = require('path');
+//import locations from './db';
 
 const geolib = require('geolib');
 

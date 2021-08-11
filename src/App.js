@@ -17,7 +17,7 @@ const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/franchise/subcontractor'));
 const Featured = lazy(() => import('./pages/featured'));
-const AddLocation = lazy(() => import('./pages/franchise/addLocation'));
+const Form = lazy(() => import('./pages/addLocation/form'));
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
             {/* <Route exact path='/blog' component={BlogContainer} /> */}
             {/* <Route exact path='/blog/:id' component={Blog} /> */}
             <Route exact path='/featured' component={Featured} />
-            <Route exact path='/add' component={AddLocation} />
+            <Route exact path='/add' component={Form} />
           </Suspense>
         </Router>
       </HelmetProvider>

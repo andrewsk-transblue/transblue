@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-//var fs = require('browserify-fs')
+import AddLocation from './addLocation';
 
-class AddLocation extends Component {
-
+class Form extends Component {
     state={
         name: '',
         urlCity: '',
@@ -17,7 +16,7 @@ class AddLocation extends Component {
         region: 'northeast',
         image: 'northeast.jpeg',
         phone: '',
-        email: ''
+        email: '',
         /////need to add locations
     }
 
@@ -36,7 +35,6 @@ class AddLocation extends Component {
     }
 
     addLocation = () => {
-
         console.log(this.state)
     }
 
@@ -64,10 +62,12 @@ class AddLocation extends Component {
                     <option value='southwest'>Southwest</option>
                     <option value='midwest'>Midwest</option>
                 </select><br />
-                <button onClick={this.addLocation}>Add Location</button>
+                {/* <button onClick={this.addLocation}>Add Location</button> */}
+                {/* maybe add a review button before submit? then when review looks good, display AddLocation component so AddLocation is not rerendering every time user presses key */}
+                <AddLocation props={this.state} />
             </form>
         )
     }
 }
 
-export default AddLocation;
+export default Form;
