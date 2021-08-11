@@ -14,20 +14,12 @@ import MoreServices from './moreServices';
 import Whatwedo from './whatwedo';
 import Footer from '../../components/footer/index';
 import NewReviews from '../../components/landing/newReviews/newReviews';
-import locationsDb from '../locations/db';
+//import locationsDb from '../locations/db';
 import './style.css';
 
 function Franchise(props) {
-
-    console.log(props.match.params.urlCity)
-
-    //const [data, setData] = useState({});
-
-    const [showServices, setShowServices] = useState(false);
-
     const [easybaseData, seteasybaseData] = useState([]);
     const { db, e } = useEasybase();
-
 
     useEffect(() => {
         const mounted = async() => {
@@ -47,7 +39,7 @@ function Franchise(props) {
                 <div className='franchise-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`} alt={easybaseData[0].city} />
                     <div className='franchise-header-text'>
-                        <p >{easybaseData[0].name}</p>
+                        <p>{easybaseData[0].name}</p>
                         <p>Serving {easybaseData[0].city}, {easybaseData[0].state} and surrounding areas</p>
                     </div>
                     <div className='franchise-overlay'></div>

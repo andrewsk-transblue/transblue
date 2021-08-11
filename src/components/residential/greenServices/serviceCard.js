@@ -31,6 +31,15 @@ const text = [
 function ServiceCard() {
     const [index, setIndex] = useState(0);
 
+    function changeSlide(direction) {
+        if(direction === 'increment') {
+            index < text.length - 1 ? setIndex(index+1) : setIndex(0)
+        }
+        else {
+            index > 0 ? setIndex(index-1) : setIndex(text.length-1)
+        }
+    }
+
     return(
         <Fragment>
             <div className='row service-bg mt-5 mx-0'>
@@ -49,8 +58,8 @@ function ServiceCard() {
                     <h3>{text[index].title}</h3>
                     <p className='section-p'>{text[index].body}</p>
                     <a className='mr-1' href='https://tbev.herokuapp.com/'>LEARN MORE</a>
-                    <button onClick={() => setIndex(index-1)}><img src={leftarrow} alt='Prev Slide' /></button>
-                    <button onClick={() => setIndex(index+1)}><img src={rightarrow} alt='Next Slide' /></button>
+                    <button onClick={() => changeSlide('decrement')}><img src={leftarrow} alt='Prev Slide' /></button>
+                    <button onClick={() => changeSlide('increment')}><img src={rightarrow} alt='Next Slide' /></button>
                 </div>
             </div>
             </div>

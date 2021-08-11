@@ -16,3 +16,6 @@ function AddLocation(props) {
 }
 
 export default AddLocation;
+
+
+//should I make this its own app?? Probably... since typing urls does not work in reactpress
