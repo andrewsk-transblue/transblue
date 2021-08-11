@@ -74,12 +74,13 @@ class Locations extends Component {
             latitude: lat,
             longitude: lon
         }
-        for(let i=0; i<locationsDb.length-1; i++) {
+        for(let i=0; i<locationsDb.length; i++) {
             let franchiseLocation = {
                 latitude: locationsDb[i].lat,
                 longitude: locationsDb[i].lon
             }
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
+            // console.log(locationsDb[i].name, distance)
             if(distance < this.state.radius) {
                 locationList.push(locationsDb[i])
             }
@@ -90,20 +91,21 @@ class Locations extends Component {
     }
 
     searchLocation = (location_id) => {
-        this.setState({radius: 50})
-        axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`)
+        this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
+        axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city, filter locationList to locations within radius
             .then(res => {
                 console.log(res)
                 this.setState({
                     center: [res.data.result.geometry.location.lat, res.data.result.geometry.location.lng],
                     selectState: res.data.result.address_components[2].long_name,
                     showLocations: true,
-                    locationList: locationsDb.filter(loc => loc.state === res.data.result.address_components[2].short_name),
+                    //locationList: locationsDb.filter(loc => loc.state === res.data.result.address_components[2].short_name),
                     radius: 50
                     // placeholder: res.data.result.address_components.formatted_address
                 })
                 this.setLocationList(res.data.result.geometry.location.lat, res.data.result.geometry.location.lng)
             })
+            .then(() => console.log(this.state.center))
     }
 
     render() {
