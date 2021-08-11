@@ -49,16 +49,17 @@ function NewLanding() {
                 {/* <Nepal /> */}
                 
                 <div className='container-fluid video-wrapper'>
-                    <div className='row'>
-                        <div className='col-lg-5 col-12 pr-5 order-lg-12 video-text'>
+                    <div className='row mx-0'>
+                        <div className='col-lg-7 col-12'>
+                            <div className='video'></div>
+                        </div>
+                        <div className='col-lg-5 col-12 video-text'>
                             <h4 className='section-header'>HEADER ABOUT THE VIDEO</h4>
                             <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt.</p>
                             <p className='section-p'>Donec nec leo vel augue pretium ultrices id vitae orci. Aenean sit amet purus a odio luctus varius vitae vel odio. Nulla ac odio eget arcu ullamcorper laoreet.Aenean vitae tincidunt nisi.</p>
                             <p className='section-p mb-4'>Luctus sit amet lectus. Mauris mattis diam eget turpis tincidunt, ut posuere orci suscipit.  Nullam suscipit euismod elit, ut elementum est vehicula at. </p>
                         </div>
-                        <div className='col-lg-7 col-12'>
-                            <div className='video'></div>
-                        </div>
+
                     </div>
                 </div>
                 <Mission />
