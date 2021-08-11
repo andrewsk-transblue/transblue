@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {Fragment, useState} from 'react';
 import {useEasybase} from 'easybase-react';
 
 function AddLocation(props) {
-    console.log(props.props)
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    //console.log(props.props)
     let data = props.props;
     const {db} = useEasybase();
 
     function addLocation() {
         db('LOCATIONS').insert(data).one()
+        setIsSubmitted(true)
     }
 
     return(
-        <button onClick={addLocation}>ADD THIS LOCATION</button>
+        <Fragment>
+            <button className='add-btn' onClick={addLocation}>ADD THIS LOCATION</button>
+            {isSubmitted && 
+                <div className='alert'>
+                    Location has been submitted!
+                </div>
+            }
+        </Fragment>
     )
 }
 

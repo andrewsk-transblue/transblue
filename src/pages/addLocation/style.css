@@ -8,7 +8,18 @@
 form#add-location {
     margin: 0 auto;
     width: 50%;
-    margin-top: 180px;
+    margin-top: 50px;
+}
+
+form#add-location h3,
+form#add-location p {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+form#add-location h3 {
+    color: #0b56a4;
+    letter-spacing: .05em;
 }
 
 form#add-location select {
@@ -23,15 +34,12 @@ form#add-location input {
     padding: 2px 7px;
 }
 
-form .add-btn {
+form .add-buttons {
     width: 100%;
     text-align: center;
 }
 
-form#add-location button {
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: rgb(5, 197, 5);
+form .add-buttons button {
     color: white;
     border: 0px;
     padding: 3px 15px 5px 15px;
@@ -39,6 +47,22 @@ form#add-location button {
     letter-spacing: .05em;
 }
 
-form#add-location button:hover {
-    background-color: green;
+form#add-location .add-btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:  #ed6a22;
+}
+
+form#add-location .lat-lon {
+    background-color: #0b56a4;
+    color: white;
+    margin-right: 15px;
+}
+
+form#add-location .lat-lon:hover {
+    background-color: #0b55a4d8;
+}
+
+form#add-location .add-btn:hover {
+    background-color: #ed6922d2;
 }

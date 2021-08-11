@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react';
+import axios from 'axios';
 import AddLocation from './addLocation';
 import states from './states.js';
 import images from './images.js';
@@ -6,6 +7,9 @@ import './style.css';
 
 class Form extends Component {
     state={
+        test: {
+            blah: '123'
+        },
         name: '',
         urlCity: '',
         address1: '',
@@ -13,8 +17,8 @@ class Form extends Component {
         city: '',
         state: '',
         zipcode: '',
-        lat: '',
-        lon: '',
+        lat: 'Latitude',
+        lon: 'Longitude',
         location: '',
         region: 'northeast',
         image: 'northeast.jpeg',
@@ -48,6 +52,18 @@ class Form extends Component {
         })
     }
 
+    geocode = () => {
+        let city = this.state.city.replace(' ', '+');
+        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${city},+{this.state.state}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`)
+            .then(res => {
+                console.log(res)
+                this.setState({
+                    lat: res.data.results[0].geometry.location.lat,
+                    lon: res.data.results[0].geometry.location.lng
+                })
+            })
+    }
+
     render() {
         return(
             <Fragment>
@@ -56,16 +72,19 @@ class Form extends Component {
                     <input onChange={this.onChange} />
                 </div> */}
                 <form id='add-location' onSubmit={this.onSubmit}>
-                    <input id='name' placeholder='Franchise Name' onChange={this.onChange}></input>
-                    <input id='urlCity' placeholder='URL city' onChange={this.onChange}></input><br />
-                    <input id='address1' placeholder='Address' onChange={this.onChange}></input>
+                    <h3>ADD A FRANCHISE LOCATION</h3>
+                    <p className='text-secondary'>Make sure all fields are filled out.</p>
+                    <p className='text-secondary mb-5'>Once you've entered city and state, you can press the GET LAT &amp; LONG button and latitude and longitude will be calculated</p>
+                    <input id='name' placeholder='Franchise Name' onChange={this.onChange} required></input>
+                    <input id='urlCity' placeholder='URL city' onChange={this.onChange} required></input><br />
+                    <input id='address1' placeholder='Address' onChange={this.onChange} required></input>
                     <input id='address2' placeholder='Address Line 2 (optional)' onChange={this.onChange}></input><br />
-                    <input id='city' placeholder='City' onChange={this.onChange}></input>
+                    <input id='city' placeholder='City' onChange={this.onChange} required></input>
 
                     {/* <input id='state' placeholder='State' onChange={this.onChange}></input><br /> */}
 
-                    <select id='state' onChange={this.selectState}>
-                        <option value='' disabled selected>State</option>
+                    <select id='state' onChange={this.selectState} defaultValue={'State'} required>
+                        <option value='State' disabled>State</option>
                         {Object.keys(states).map(state => {
                             return(
                                 <option value={state}>{state}</option>
@@ -74,10 +93,10 @@ class Form extends Component {
                     </select><br />
 
 
-                    <input id='zipcode' placeholder='Zipcode' onChange={this.onChange}></input>
+                    <input id='zipcode' placeholder='Zipcode' onChange={this.onChange} required></input>
 
-                    <select id='region' onChange={this.selectRegion} >
-                        <option value='' disabled selected>Region</option>
+                    <select id='region' onChange={this.selectRegion} defaultValue={'Region'} required>
+                        <option value='Region' disabled>Region</option>
                         <option value='northwest'>Northwest</option>
                         <option value='northeast'>Northeast</option>
                         <option value='west'>West</option>
@@ -85,18 +104,15 @@ class Form extends Component {
                         <option value='midwest'>Midwest</option>
                     </select><br />
 
-                    <input id='email' placeholder='Email' onChange={this.onChange}></input>
-                    <input id='phone' placeholder='Phone' onChange={this.onChange}></input><br />
-                    <input id='lat' placeholder='Latitude' onChange={this.onChange}></input>
-                    <input id='lon' placeholder='Longitude' onChange={this.onChange}></input><br />
-                    {/* <input id='location' placeholder='State (full spelling)' onChange={this.onChange}></input><br /> */}
-                    {/* <input id='region' placeholder='Region' onChange={this.onChange}></input><br /> */}
+                    <input id='email' placeholder='Email' onChange={this.onChange} required></input>
+                    <input id='phone' placeholder='Phone' onChange={this.onChange} required></input><br />
+                    <input id='lat' placeholder={this.state.lat} onChange={this.onChange} disabled={true} required></input>
+                    <input id='lon' placeholder={this.state.lon} onChange={this.onChange} disabled={true} required></input><br />
 
-
-                    {/* <button onClick={this.addLocation}>Add Location</button> */}
                     {/* maybe add a review button before submit? then when review looks good, display AddLocation component so AddLocation is not rerendering every time user presses key */}
-                    <div className='add-btn'>
-                    <AddLocation props={this.state} />
+                    <div className='add-buttons'>
+                        <button className='lat-lon' onClick={this.geocode} disabled={(this.state.city !== '' && this.state.state !== '') ? false : true}>GET LAT &amp; LONG</button>
+                        <AddLocation props={this.state} />
                     </div>
                 </form>
             </Fragment>

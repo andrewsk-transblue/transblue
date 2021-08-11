@@ -23,12 +23,11 @@ function Franchise(props) {
 
     useEffect(() => {
         const mounted = async() => {
-            // const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-    
             seteasybaseData(ebData);
-            console.log(ebData)
-            //console.log(easybaseData[0].locations)
+            //console.log(ebData)
+            console.log(easybaseData[0])
+            //easybaseData[0].locations
         }
          mounted();
     }, [])
@@ -92,9 +91,7 @@ function Franchise(props) {
 
                 <Whatwedo />
                 
-                <Fragment>
-                    <NewReviews />
-                </Fragment>
+                <NewReviews />
                 <div className='map bg-light'>
                     <div className='container'>
                         <div className='row'>
