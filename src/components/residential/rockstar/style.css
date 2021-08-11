@@ -1,0 +1,94 @@
+.rockstar-wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+
+.rockstar-wrapper img:not(#drop):not(#forward) {
+    width: 100%;
+}
+
+#drop {
+    width: 20px;
+    /* width: 55px; */
+    margin-right: 10px;
+}
+
+.rockstar-wrapper .text {
+    position: absolute;
+    top: 75%;
+    width: 95%;
+    /* left: 40px; */
+    color: white;
+}
+
+.rockstar-wrapper .text h3 {
+    letter-spacing: 3.8px;
+    /* font-size: 4vw; */
+    font-size: 4.8vw;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+.rockstar-wrapper .text p {
+    font-size: 2.2vw;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+.rockstar-wrapper .text button {
+    background-color: transparent;
+    border: 0px;
+}
+
+#forward {
+    width: 30px;
+    /* width: 80px; */
+    opacity: .7;
+}
+
+#forward:hover {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 576px) {
+    #drop {
+        width: 30px;
+    }
+    .rockstar-wrapper .text p {
+        margin-left: 40px;
+    }
+    #forward {
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #forward {
+        width: 60px;
+    }
+    #drop {
+        width: 50px
+    }
+    .rockstar-wrapper .text p {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #drop {
+        width: 55px;
+    }
+    #forward {
+        width: 80px;
+    }
+    .rockstar-wrapper .text {
+        top: 78%;
+        left: 40px;
+    }
+    .rockstar-wrapper .text p {
+        margin-left: 65px;
+        font-size: 1.2em;
+    }
+}

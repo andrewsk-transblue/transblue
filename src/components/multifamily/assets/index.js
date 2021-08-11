@@ -1,0 +1,30 @@
+import React, {useRef, Fragment} from 'react';
+import Decks from '../decks';
+import assets from '../../../images/multifamily/assets.jpg';
+import downarrow from '../../../images/commercial/downarrow.png';
+import './style.css';
+
+function Assets() {
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
+    return(
+        <Fragment>
+            <div className='assets-wrapper container-fluid w-100 px-0'>
+                <img src={assets} alt='Multifamily Residence' />
+                <div className='overlay'></div>
+                <div className='text row mx-0'>
+                    <div className='col-lg-9 pl-4'>
+                        <h3>PROTECT YOUR ASSETS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque cursus mi, viverra maximus enim commodo vel. Duis in tempus.</p>
+                    </div>
+                    <div className='col-lg-3 my-auto text-center'>
+                        <div onClick={executeScroll}><img className='next-section' src={downarrow} alt='Next Section' /></div>
+                    </div>
+                </div>
+            </div>
+            <div ref={myRef}><Decks /></div>
+        </Fragment>
+    )
+}
+
+export default Assets;

@@ -1,0 +1,23 @@
+.quality {
+    margin-top: 40px;
+    width: 95%;
+}
+
+.quality img {
+    width: 100%;
+}
+
+.quality hr {
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .quality h3,
+    .quality .section-p {
+        padding-left: 1rem;
+    }
+    .quality {
+        margin-top: 70px;
+    }
+}

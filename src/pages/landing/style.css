@@ -1,0 +1,456 @@
+.landing-body {
+    position: absolute;
+    top: 600px;
+    background-color: white;
+}
+
+.landing-body .container-fluid:not(.who-is-tb) {
+    width: 95%;
+}
+
+/* HEADER CSS */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: -3;
+    height: auto;
+    height: 100vh;
+}
+
+#header_slide {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 40s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../../images/landingHeader/fire-min.jpeg');
+}
+
+.header-title {
+    z-index: 6;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: clamp(1.9em, 5vw, 7em);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.header-title:after {
+    animation: headerText 40s infinite linear 0s;
+    animation-timing-function: ease-in-out;
+    content: 'Luxury Exterior Design';
+}
+
+#header-overlay {
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.header-title {
+    font-size: clamp(1.9em, 5vw, 7em);
+    @supports not (font-size: clamp(2.2em, 5vw, 7em)) {
+        font-size: min(max(1.9em, 5vw), 7em); 
+      }
+}
+
+#header_slide,
+.header,
+#header-overlay {
+    height: clamp(300px, 600px, 900px);
+    
+    @supports not (height: clamp(300px, 600px, 900px)) {
+        height: min(max(300px, 600px), 900px)
+    }
+}
+
+/* WHO IS TB CSS */
+
+.who-is-tb {
+    font-family: 'Roboto';
+    color: rgb(192, 192, 192);
+    padding: 40px 30px 40px 30px;
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 30px;
+}
+
+.who-is-tb small {
+    letter-spacing: .0705em;
+}
+
+.who-is-tb p:first-of-type {
+    /* padding-bottom: 5px; */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    /* border-bottom: 1px solid rgb(124, 124, 124); */
+    font-size: 1.4em;
+    letter-spacing: 1.2px;
+    font-weight:lighter;
+    font-family: 'Raleway';
+    /* color: darkorange; */
+    color: rgb(0, 102, 255)
+}
+
+.who-is-tb hr {
+    background-color: rgb(124,124,124);
+    margin-bottom: 10px;
+    margin: 0 auto;
+    height: .5px;
+    width: 80%;
+    border-width: 0;
+}
+
+.who-is-tb p:nth-of-type(2) {
+    line-height: 1.7;
+    font-size: .95em;
+    /* font-size: 16px; */
+    letter-spacing: .06em;
+    margin-top: 5px;
+}
+
+.entry {
+    /* margin: 0 auto; */
+    padding-bottom: 10px;
+}
+
+.stats {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* .stats .col-lg-6:first-of-type {
+    padding-right: 40px;
+} */
+
+.stats h6 {
+    font-size: 1.8em;
+    letter-spacing: .0705em;
+    font-family:'Montserrat';
+    color: #0b56a0;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 3px;
+}
+
+.stats small {
+    font-family:'Raleway';
+    font-size: .85em;
+}
+
+/* .stats .col-lg-6:nth-of-type(2) {
+    padding: 0px;
+} */
+
+.stats .image-wrapper {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.stats .image-wrapper img {
+    width: 100%;
+}
+.stats .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* width: 95%; */
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index:5;
+}
+
+.community-stats:after {
+    font-size: 4.6vh;
+    animation: textslide 40s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    content: '';
+    animation-timing-function: ease-in-out;
+    width: 50%;
+    z-index: 12;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+}
+
+.mbridge {
+    margin-top: 50px;
+}
+
+.mbridge hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.mbridge img:not(.expand) {
+    width: 100%;
+    /* height: 200px */
+}
+
+.expand {
+    width: 20px;
+    height: 20px;
+}
+
+.mbridge a.cta {
+    margin-top: 10px;
+    padding: 3px 23px 2px 23px;
+    text-decoration: none;
+    font-size: .7em;
+    line-height: 1.2rem;
+}
+
+.stats a {
+    text-decoration: none;
+    padding: 3px 23px 2px 23px
+}
+
+.mbridge h5 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    margin: 15px 0px 20px 0px;
+}
+
+.mbridge p:first-of-type {
+    font-size: .85em;
+    margin-top: 10px;
+}
+
+.mbridge button {
+    background-color: transparent;
+    border: 0px;
+    margin: 0 auto;
+    color:rgb(71, 71, 71);
+}
+
+.nepal img {
+    width: 100%;
+    height: 95%;
+    display: block;
+    margin: auto;
+}
+
+.mission {
+    background-color: #0b56a4;
+    color: white;
+    margin-top: 60px;
+    padding: 50px 0px 30px 0px;
+}
+
+.mission img {
+    width: 100%;
+    /* width: clamp(30px, 100px, 400px) */
+}
+
+.mission .row {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.mission h1 {
+    font-family: 'Raleway';
+    letter-spacing: 2.5px;
+    font-size: 6vw;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+
+.mission p {
+    font-family: "Roboto";
+    line-height: 1.8em;
+    letter-spacing: .055em;
+}
+
+.video-wrapper {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.video-wrapper .video {
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    height: 375px;
+}
+
+@keyframes textslide {
+    0% {
+        content: '20250 diapers, 320 baby wipe packages, 105 cans of baby food provided to at risk women and children'
+    }
+    20% {
+        content: '510 items of clothing & shoes donated to at risk women and children'
+    }
+    40% {
+        content: '1000 lbs of food and supplies provided to members of Crow Nation'
+    }
+    50% {
+        content: 'A safe place to live and school tuition for 17 girls in domestic servitude in Uganda'
+    }
+    60% {
+        content: 'Clean water access to the village of Bukumula, Uganda'
+    }
+    70% {
+        content: '94 free pregnancy tests and 56 free ultrasounds performed'
+    }
+    80% {
+        content: '4000 children and youth sent to Solid Rock Summer Camps'
+    }
+    100% {
+        content: '50 fruit trees planted in Bukumula and Mbale, Uganda'
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .mbridge button {
+        margin-bottom: 50px;
+    }
+}
+
+/* HEADER ANIMATIONS CSS */
+
+@keyframes slideBg {
+    0% {
+        background-image: url('../../images/landingHeader/fire-min.jpeg');
+        /* background-size: 480px 300px; */
+    }
+    20% {
+        background-image: url('../../images/landingHeader/patio-min.jpeg');
+    }
+    30% {
+        background-image: url('../../images/landingHeader/snow-min.jpg');
+    }
+    40% {
+        background-image: url('../../images/landingHeader/asphalt.jpeg');
+    }
+    60% {
+        background-image: url('../../images/landingHeader/evHeader-min.jpeg');
+    } 
+    70% {
+        background-image: url('../../images/landingHeader/hoa.jpeg');
+    }
+    80% {
+        background-image: url('../../images/landingHeader/couple-pool-min.jpeg');
+    }
+    100% {
+        background-image: url('../../images/landingHeader/familyfirepit-min.jpg');
+    }
+}
+
+@keyframes headerText {
+    0% {
+        content: 'Luxury Exterior Design'
+    }
+    20% {
+        content: 'Luxury Exterior Design'
+    }
+    30% {
+        content: 'Reliable Snow Removal'
+    }
+    40% {
+        content: 'Quality Asphalt Installation'
+    }
+    60% {
+        content: 'A Greener World'
+    }
+    70% {
+        content: 'Beautiful Community Living'
+    }
+    80% {
+        content: 'Luxury Exterior Design'
+    }
+    100% {
+        content: 'Luxury Exterior Design'
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .community-stats:after {
+        font-size: 3.5vh;
+    }
+    
+}
+
+@media only screen and (min-width: 520px) {
+    .entry {
+        padding: 0px 15%;
+    }
+    .nepal .nepal-text {
+        padding-left: 30px;
+    }
+    /* .mission h1 {
+        font-size: 6vw;
+    } */
+    .video-wrapper .video-text {
+        padding-left: 30px;
+    }
+    .reviews-title span {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width:576px) {
+    .mission h1 {
+        font-size: 4.8vw;
+        margin-top: 15px;
+    }
+
+    .mission img {
+        width: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .mission img {
+        width: 100%;
+    }
+    .mission h1 {
+        font-size: 4vw;
+    }
+    .new-reviews blockquote {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .entry {
+        padding: 0px 15px;
+    }
+    .community-stats:after {
+        font-size: 1.35em;
+    }
+    .nepal {
+        padding-top: 50px;
+    }
+    .mbridge {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .new-reviews blockquote {
+        font-size: 1.2em;
+    }
+    .mbridge {
+        margin-top: 50px;
+    }
+}

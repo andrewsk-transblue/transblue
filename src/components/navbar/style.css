@@ -1,0 +1,78 @@
+.bg-dark.transparent,
+.dropdown-menu.transparent {
+    background-color: transparent !important;
+}
+.bg-dark.black,
+.dropdown-menu.black {
+    background-color: rgba(24, 24, 24, 0.9) !important;
+    backdrop-filter: blur(2px);
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+nav .navbar-nav li a:hover {
+    border-bottom: 1px solid lightgray;
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+nav span {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+nav .navbar-nav li a:hover {
+    color:rgb(1, 120, 255);
+}
+.navbar-custom {
+    background-color: inherit;
+}
+a.dropdown-item {
+    padding-left: 8px !important;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle.ml-auto {
+    text-align: right !important;
+}
+
+.nav-page {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white !important;
+    /* font-size: 1em; */
+    font-size: 1.6em;
+    margin-left: 30px;
+    letter-spacing: .08em;
+
+}
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(1, 120, 255) !important;
+    background-color: inherit !important;
+}
+#logo {
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+span.location i {
+    margin: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 530px) {
+    .nav-page {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    a.dropdown-item {
+        text-align: right !important;
+        padding-right: 0px !important;
+    }
+}

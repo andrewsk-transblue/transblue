@@ -1,0 +1,30 @@
+.assets-wrapper {
+    position: relative;
+}
+
+.assets-wrapper .overlay {
+    background-color: rgba(0,0,0,.2);
+}
+
+.assets-wrapper .text {
+    position: absolute;
+    top: 70%;
+    left: 40px;
+    color: white;
+    z-index: 35;
+}
+
+.assets-wrapper h3 {
+    letter-spacing: 3.8px;
+    font-size: 4vw;
+    font-family: 'Raleway';
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.assets-wrapper p {
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 1px;
+}

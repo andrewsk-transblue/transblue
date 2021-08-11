@@ -1,0 +1,131 @@
+.footer-container {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 15px 30px 10px 30px;
+    /* margin-top: 100px; */
+}
+
+.back-to-top {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 200;
+}
+.back-to-top button {
+    border: 0px;
+    background-color: transparent;
+    opacity: .6;
+}
+
+.back-to-top button:hover {
+    opacity: 1;
+}
+.social-media {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+.fab {
+    margin: 15px;
+}
+
+.social-media span a {
+    color: white !important;
+}
+
+.footer-services {
+    padding-left: 100px;
+}
+
+.footer-services h1,
+.footer-contact h1 {
+    font-size: 1em;
+    color: rgb(0, 110, 255);
+    font-family: 'Raleway', 'sans-serif';
+    letter-spacing: 1px;
+}
+
+.footer-services-list a,
+.small-screen-services a,
+.footer-contact p {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+}
+
+.footer-services-list a:hover {
+    color: white;
+}
+
+.terms {
+    text-align: center;
+}
+
+.terms a {
+    color: rgb(173, 173, 173);
+    font-size: .75em;
+}
+
+.small-screen-services button {
+    background-color: transparent;
+    color: rgb(0, 110, 255);
+    border: 0px;
+    font-size: 1em;
+    font-family: 'Raleway', 'sans-serif';
+    letter-spacing: 1px;
+    padding: 0px 0px 5px 0px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.55);
+}
+
+.others div {
+    border-bottom: 1px solid rgba(95, 95, 95, 0.55);
+    padding: 5px 0px 5px 0px;
+}
+
+.others a {
+    font-size: 1em;
+    font-family: 'Raleway', 'sans-serif';
+    letter-spacing: 1px;
+    color: rgb(168, 168, 168);
+    width: 100%;
+}
+
+.find-location {
+    font-family: 'Muli', sans-serif;
+    margin-left: 50px;
+}
+
+.find-location p {
+    letter-spacing: .08em;
+}
+
+.find-location p:nth-of-type(2) {
+    font-size: .9em;
+}
+
+.find-location span {
+    border-bottom: 1px solid gray;
+    padding-bottom: 7px;
+}
+
+.find-location input {
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+.find-location input::placeholder {
+    color: rgb(194, 194, 194);
+    font-family: 'Roboto';
+    letter-spacing: .05em;
+    font-size: .8em;
+}
+
+@media only screen and (max-width: 770px) {
+    .find-location {
+        margin: 30px 0px 30px 0px;
+    }
+}

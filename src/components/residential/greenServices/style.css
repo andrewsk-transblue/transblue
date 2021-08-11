@@ -1,0 +1,177 @@
+.green-services {
+    width: 93%;
+    margin-top: 80px;
+}
+
+.green-services .images {
+    position: relative;
+}
+
+.green-services img {
+    width: 95%;
+}
+
+.green-services .overlay {
+    background: rgba(0,0,0,.32);
+    width: 95%;
+}
+
+.green-services h6 {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    z-index: 3;
+    width: 95%;
+    text-align: center;
+    /* font-family: 'Muli', sans-serif; */
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+    letter-spacing: 1.4px;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 10px 0px 10px 0px;
+}
+
+.green-services button {
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+.green-services h4 {
+    font-family: 'Muli', sans-serif;
+    color: #0b56a0;
+}
+
+.green-services p {
+    font-family: 'Roboto';
+    line-height: 1.8em;
+}
+
+.green-services a {
+    border: 2px solid #0b56a4;
+    color: #0b56a4 !important;
+    text-decoration: none;
+    padding:3px 8px;
+    font-family: 'Raleway';
+}
+
+.green-services a:hover {
+    background-color: #0b56a4;
+    color: white !important;
+    transition: .5s;
+}
+
+
+/* TEST SERVICE CARD SECTION */
+
+.service-bg {
+    /* background-color: rgb(236, 225, 209); */
+    background-color: #cccccc;
+    padding: 50px 0px;
+}
+
+.service-card p:first-of-type {
+    letter-spacing: 1px;
+    color: rgb(129, 122, 112);
+}
+
+.service-card p:nth-of-type(2) {
+    font-size: .9em;
+}
+
+.service-wrapper {
+    width: 70%;
+}
+
+.service-wrapper button {
+    background-color: transparent;
+    border: 0px;
+}
+
+.service-wrapper i {
+    transform: scale(3,1.8);
+}
+
+.green-service-card img {
+    width: 100%;
+}
+
+.green-service-card {
+    outline: 1px solid #cccccc;
+    outline-offset: -30px;
+}
+
+.green-body {
+    padding: 10px 25px 40px 35px;
+    background-color: white;
+}
+
+.green-service-card h3 {
+    font-family: 'Montserrat';
+    letter-spacing: 1.5px;
+    color: #0b56a4;
+}
+
+.green-service-card hr {
+    background-color: #cccccc;
+    margin: 8px 10px 15px 0px;
+}
+
+.green-body a {
+    border: 2px solid black;
+    font-size: .6em;
+    background-color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black !important;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+}
+
+.green-body a:hover {
+    /* background-color:rgb(212, 194, 169); */
+    background-color: #0b56a4;
+    color: white !important;
+    /* border: 2px solid rgb(212, 194, 169); */
+    border: 2px solid #0b56a4;
+    transition: .5s;
+}
+
+.green-about {
+    width: 30%;
+}
+
+.green-about p:first-of-type {
+    font-family: 'Raleway';
+    line-height: 1.6em;
+}
+
+.green-about h2 {
+    font-family: 'Raleway';
+    color: white;
+    /* font-size: 3vw; */
+    line-height: 1.2em;
+    padding-right: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+    .green-body a {
+        margin-right: 1rem;
+        font-size: .85em;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .green-body button:first-of-type {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .service-bg {
+        padding: 50px;
+    }
+    .green-body {
+        padding: 10px 50px 45px 50px;
+    }
+}

@@ -1,0 +1,23 @@
+.dees-container {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 95%;
+}
+
+.dees-container img {
+    width: 100%;
+}
+
+.dees-container a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .dees-container .text {
+        margin-bottom: 40px;
+    }
+}
+/* 
+@media only screen and (min-width: 992px) {
+
+} */

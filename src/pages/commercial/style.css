@@ -1,0 +1,389 @@
+.commercial-about {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 95%;
+}
+
+/* .about-slideshow {
+    animation: commSlide 40s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../../images/commercial/commercial2.jpeg');
+    background-position: center center;
+    width: 100%;
+} */
+
+/* MARRIOTT CSS */
+.marriott-wrapper {
+    margin-bottom: 80px;
+    width: 93%;
+}
+.marriott-wrapper img {
+    width: 100%;
+}
+
+/* slideshow css */
+.slideshow {
+    position: relative;
+    padding: 0px;
+}
+
+.slideshow .row {
+    margin: 0px;
+}
+
+.slideshow-image,
+.commercial-about img,
+.service-card img,
+.first-impression img,
+.commercial-header img,
+.nextstep img,
+.simple-process img,
+.refresh img,
+.snow img,
+.asphalt-wrapper img,
+.impression-wrapper img:not(.next-section) {
+    width: 100%;
+}
+.slideshow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.644);
+}
+
+.slideshow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 3vw;
+    line-height: 1.8em;
+}
+
+.slideshow button {
+    z-index: 4000;
+    background-color: transparent;
+    border: 0px;
+}
+
+.next-slide,
+.prev-slide {
+    width: 60px;
+}
+
+.slideshow button .next-slide {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow button .prev-slide{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
+
+.slideshow span img {
+    margin: 0px 4px;
+    width: 30px;
+    opacity: .5;
+}
+
+.slideshow span img.active {
+    opacity: 1;
+}
+
+/* NEXT STEP CSS */
+.nextstep {
+    width: 95%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* ASPHALT CSS */
+.asphalt-wrapper {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.asphalt-wrapper img {
+    height: 100%;
+}
+
+.asphalt-wrapper .benefits {
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 50px;
+}
+
+.asphalt-wrapper .benefits .title {
+    font-family:'Raleway';
+    font-size: 1.8vw;
+    letter-spacing: .0705em;
+}
+
+.asphalt-wrapper .benefits .dash {
+    width: 50px;
+    height: 50%;
+    border-bottom: 1px solid white;
+}
+
+.asphalt-wrapper .benefits .body {
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    color:rgb(211, 211, 211);
+}
+
+.asphalt-wrapper .inline {
+    display: inline;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 2vw;
+    letter-spacing: 1.5px;
+}
+
+/* .asphalt-wrapper .overlay {
+    background-color: rgba(0,0,0,.4);
+}
+
+.asphalt-wrapper .text {
+    position: absolute;
+    z-index: 31;
+    color: white;
+    top: 30px;
+    left: 20px;
+}
+
+.asphalt-wrapper .text h4 {
+    font-family: 'Raleway';
+} */
+
+/* SNOW CSS */
+.snow p:last-of-type {
+    margin-bottom: 30px;
+}
+
+.snow {
+    width: 93%;
+}
+
+.snow a {
+    text-decoration: none;
+}
+
+/* SCHEDULE CSS */
+.schedule {
+    background-color: #eeeeee;
+    /* background-color: rgb(255, 136, 0); */
+    color: black;
+    margin-bottom: -100px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.schedule h1 {
+    font-family: 'Raleway';
+    /* font-weight: 400; */
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    font-size: 2.5vw;
+}
+
+.schedule a {
+    background-color: #0b56a4;
+    border: 2px solid #0b56a4;
+    color: white;
+    text-decoration: none;
+    /* padding: 5px 15px 5px 15px; */
+}
+
+.schedule a:hover {
+    background-color: #eeeeee;
+    border: 2px solid #0b56a4;
+    color: #0b56a4;
+}
+
+/* BENEFITS CSS */
+
+.commercial-benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.commercial-benefits h4 {
+    font-family: 'Raleway';
+    color: #0b56a4;
+    margin-bottom: 15px;
+    font-size: 1.7vw;
+}
+
+.commercial-benefits p {
+    line-height: 1.6em;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.commercial-benefits img {
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.commercial-benefits a {
+    margin: 0 auto;
+    margin-top: 28px;
+    text-decoration: none;
+}
+
+/* SIMPLE PROCESS CSS */
+.simple-process {
+    position: relative;
+}
+.simple-process .container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 40;
+    color: white;
+}
+
+.simple-process h1,
+.simple-process h3,
+.simple-process h6{
+    font-weight:normal;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+}
+.simple-process h1 {
+    font-weight: 450;
+    color:#ed6a22;
+}
+.simple-process h3 {
+    /* color:rgb(0, 90, 194); */
+    color: rgb(211, 211, 211);
+}
+.simple-process li {
+    font-family: 'Montserrat'
+}
+
+.refresh h3 {
+    font-family: 'Raleway';
+    color:  #0b56a4;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.refresh hr {
+    margin-top: 10px !important;
+}
+
+.refresh h6 {
+    font-weight: 500;
+    font-family: 'Raleway';
+    font-size: 1.15rem;
+    color: rgb(59, 59, 59);
+    letter-spacing: .05em;
+}
+
+.refresh {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    width: 93%;
+    font-family: 'Roboto';
+}
+
+.impression-wrapper {
+    position: relative;
+}
+
+/* .impression-wrapper img:not(.next-section) {
+    width: 100%;
+} */
+
+.impression-wrapper .overlay {
+    background-color: rgba(0,0,0,.4);
+}
+
+.impression-wrapper .text {
+    position: absolute;
+    top: 68%;
+    left: 20px;
+    color: white;
+    z-index: 35;
+}
+
+.impression-wrapper .text h3 {
+    letter-spacing: 3.8px;
+    font-size: 3.5vw;
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.impression-wrapper p {
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.impression-wrapper .next {
+    width: 75px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .impression-wrapper p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .marriott-wrapper h4,
+    .marriott-wrapper p,
+    .nextstep .section-header,
+    .nextstep .section-p,
+    .commercial-about h3,
+    .commercial-about p {
+        padding-left: 1rem;
+    }
+    .impression-wrapper .text {
+        padding-left: 2rem;
+    }
+
+    .snow img {
+        padding-top: 0px !important;
+    }
+    .commercial-about {
+        margin-top: 100px;
+    }
+}
+/* 
+@keyframes commSlide {
+    0% {
+        background-image: url('../../images/commercial/commercial2.jpeg');
+    }
+    50% {
+        background-image: url('../../images/commercial/plow.jpg');
+    }
+} */

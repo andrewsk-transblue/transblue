@@ -1,0 +1,75 @@
+.projects-wrapper {
+    margin-bottom: 80px;
+    width: 93%;
+}
+
+.projects-wrapper img:not(.next-project):not(.map-marker) {
+    width: 100%;
+}
+
+.projects-wrapper img.next-project {
+    width: 70px;
+    height: 50px;
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.projects-wrapper img.next-project:hover {
+    opacity: 1;
+}
+
+.projects-wrapper h4 {
+    font-family: 'Raleway';
+    /* font-size: 2vw; */
+    letter-spacing: .0505em;
+    margin-right: 50px;
+}
+
+.projects-wrapper p {
+    font-family: 'Montserrat';
+    padding-right: 50px;
+    line-height: 1.555em;
+}
+
+.projects-wrapper .row {
+    padding-top: 80px;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.card-wrapper .overlay {
+    background-color: rgba(0,0,0,.3);
+}
+
+.card-wrapper .label h5 {
+    position: absolute;
+    top: 85%;
+    left: 40px;
+    z-index: 3;
+    color: white;
+    font-family: 'Raleway';
+    letter-spacing: 4px;
+    /* font-size: 1.7vw; */
+}
+
+/* .card-wrapper .label img {
+    position: absolute;
+    top: 75%;
+    right: 40px;
+    width: 60px;
+    height: 50px;
+    z-index: 3;
+} */
+
+@media only screen and (min-width: 990px) {
+    .projects-wrapper h4,
+    .projects-wrapper p {
+        padding-left: 1rem;
+    }
+
+    .projects-wrapper .next-project {
+        margin-left: 1rem;
+    }
+}

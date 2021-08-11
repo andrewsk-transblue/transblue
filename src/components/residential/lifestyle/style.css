@@ -1,0 +1,47 @@
+.lifestyle-container {
+    margin-top: 70px;
+    width: 95%;
+}
+
+.lifestyle-container img {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.lifestyle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100%;
+}
+
+.lifestyle-text {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.9em;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+    .lifestyle-text {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .lifestyle-text {
+        font-size: 2.1vw;
+    }
+    .image-container {
+        margin-bottom: 0px;
+    }
+}

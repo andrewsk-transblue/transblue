@@ -1,0 +1,28 @@
+.capabilities-wrapper {
+    width: calc(93%-32px);
+    margin-bottom: 80px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+}
+
+/* .capabilities-wrapper .page-1,
+.capabilities-wrapper .page-2 {
+    border: 1.5px solid #0b56a4;
+} */
+
+.capabilities-wrapper img {
+    width: 100%;
+}
+
+/* .capabilities-wrapper .capabilities-1,
+.capabilities-wrapper .capabilities-2 {
+    border: 1.5px solid #0b56a4;
+} */
+
+/* .capabilities-wrapper .page-2 {
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.capabilities-1 {
+    border-right: 0;
+} */

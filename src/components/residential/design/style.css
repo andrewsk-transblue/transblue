@@ -1,0 +1,93 @@
+.design-wrapper {
+    position: relative;
+}
+
+.design-wrapper img:not(.forward):not(.back) {
+    width: 100%;
+}
+
+.design-wrapper .overlay {
+    background-color: rgba(0,0,0,.3);
+}
+
+.design-wrapper .text {
+    position: absolute;
+    top: 45%;
+    transform: translate(0%, -45%);
+    color: white;
+    z-index: 3;
+}
+
+.design-wrapper h3 {
+    font-family: 'Raleway';
+    font-size: 6vw;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.design-wrapper p {
+    font-family: 'Montserrat';
+    /* font-size: 1.2em; */
+    font-size: .88em;
+    font-weight: 300;
+}
+
+.design-wrapper .forward,
+.design-wrapper .back {
+    width: 30px;
+    /* opacity: .7; */
+    /* width: 60px; */
+}
+/* .design-wrapper .forward:hover,
+.design-wrapper .back:hover {
+    opacity: 1;
+} */
+
+.design-wrapper img.disabled,
+.design-wrapper img.disabled:hover  {
+    opacity: .3;
+}
+
+.design-wrapper button {
+    border: 0px;
+    background-color: transparent;
+}
+
+.design-wrapper .slide-indicator {
+    position: absolute;
+    bottom: 30px;
+    z-index: 20;
+    width: 100%;
+    text-align: center;
+}
+
+.design-wrapper .slide-indicator img {
+    width: 30px !important;
+    margin: 0px 4px;
+    width: 30px;
+    opacity: .5;
+}
+
+.design-wrapper .slide-indicator img.active {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 576px) {
+    .design-wrapper p {
+        font-size: 1.2em;
+    }
+    .design-wrapper .forward,
+    .design-wrapper .back {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .design-wrapper p {
+        font-size: 1.2em;
+    }
+    .design-wrapper .forward,
+    .design-wrapper .back {
+        width: 60px;
+    }
+}
