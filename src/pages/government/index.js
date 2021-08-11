@@ -68,7 +68,6 @@ class Government extends Component {
                 <Header img={govt} title='Government' subtitle='' />
                 <LocationsCta />
                 <div className='government-body'>
-                    <Capabilities2 />
                     <div className='container-fluid government-about'>
                         <div className='row'>
                             <div className='col-lg-6 order-lg-12'>
@@ -82,6 +81,7 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
+                    <Capabilities2 />
                     <div className='slider container-fluid'>
                         <h4 className='section-header mb-3'>REFRESH YOUR GOVERNMENT BUILDING</h4>
                         <hr />

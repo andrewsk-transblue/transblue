@@ -126,7 +126,7 @@
 }
 
 .stats {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -157,6 +157,7 @@
     width: 95%;
     position: relative;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .stats .image-wrapper img {
@@ -443,6 +444,12 @@
     }
     .mbridge {
         margin-top: 30px;
+    }
+    .stats {
+        margin-top: 80px;
+    }
+    .stats .image-wrapper {
+        margin-top: 0px;
     }
 }
 
