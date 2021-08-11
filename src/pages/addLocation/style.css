@@ -1,3 +1,10 @@
+.password {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 180px;
+}
+
 form#add-location {
     margin: 0 auto;
     width: 50%;
@@ -7,6 +14,7 @@ form#add-location {
 form#add-location select {
     width: 46%;
     margin-left: 2%;
+    padding: 2px 7px;
 }
 
 form#add-location input {
