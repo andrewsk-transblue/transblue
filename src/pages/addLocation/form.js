@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AddLocation from './addLocation';
+import states from './states.js';
 
 class Form extends Component {
     state={
@@ -38,6 +39,13 @@ class Form extends Component {
         console.log(this.state)
     }
 
+    selectState = (e) => {
+        this.setState({
+            state: states[e.target.value],
+            location: e.target.value
+        })
+    }
+
     render() {
         return(
             <form onSubmit={this.onSubmit}>
@@ -46,14 +54,27 @@ class Form extends Component {
                 <input id='address1' placeholder='Address' onChange={this.onChange}></input><br />
                 <input id='address2' placeholder='Address Line 2 (optional)' onChange={this.onChange}></input><br />
                 <input id='city' placeholder='City' onChange={this.onChange}></input><br />
-                <input id='state' placeholder='State' onChange={this.onChange}></input><br />
+
+                {/* <input id='state' placeholder='State' onChange={this.onChange}></input><br /> */}
+
+                State: 
+                <select id='state' onChange={this.selectState}>
+                    {Object.keys(states).map(state => {
+                        return(
+                            <option value={state}>{state}</option>
+                        )
+                    })}
+                </select><br />
+
+
                 <input id='zipcode' placeholder='Zipcode' onChange={this.onChange}></input><br />
                 <input id='phone' placeholder='Phone' onChange={this.onChange}></input><br />
                 <input id='email' placeholder='Email' onChange={this.onChange}></input><br />
                 <input id='lat' placeholder='Latitude' onChange={this.onChange}></input><br />
                 <input id='lon' placeholder='Longitude' onChange={this.onChange}></input><br />
-                <input id='location' placeholder='State (full spelling)' onChange={this.onChange}></input><br />
+                {/* <input id='location' placeholder='State (full spelling)' onChange={this.onChange}></input><br /> */}
                 {/* <input id='region' placeholder='Region' onChange={this.onChange}></input><br /> */}
+
                 Region:
                 <select id='region' onChange={this.selectRegion} value={this.state.region}>
                     <option value='northwest'>Northwest</option>

@@ -2,6 +2,7 @@ import React from 'react';
 import {useEasybase} from 'easybase-react';
 
 function AddLocation(props) {
+    console.log(props.props)
     let data = props.props;
     const {db} = useEasybase();
 
