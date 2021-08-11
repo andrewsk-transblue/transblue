@@ -41,12 +41,12 @@ class Commercial extends Component {
                 <div className='mb-5 simple-process'>
                     <img src={simple} alt='Commercial Landscaping' />
                     <div className='overlay'></div>
-                    <div className='container pl-5'>
+                    <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-lg-7 my-auto pr-0'>
+                            <div className='col-lg-8 my-auto pr-0'>
                                 <h1 className='w-100'>Running a business is hard.</h1>
                                 <h3 className='mb-3'><i>Designing your landscape shouldn't be.</i></h3>
-                                <h6 className='mb-3 mt-5'>Our professionals simplify the process with:</h6>
+                                <h6>Our professionals simplify the process with:</h6>
                                 <Fade right cascade>
                                     <ul>
                                         <li className='py-1'>A thorough consultation</li>
@@ -56,7 +56,7 @@ class Commercial extends Component {
                                     </ul>
                                 </Fade>
                             </div>
-                            <div className='col-lg-5 pt-3'></div>
+                            <div className='col-lg-4 pt-3'></div>
                         </div>
                     </div>
                 </div>
