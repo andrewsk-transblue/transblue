@@ -11,7 +11,7 @@ function AddLocation(props) {
     }
 
     return(
-        <button onClick={addLocation}>Add this location</button>
+        <button onClick={addLocation}>ADD THIS LOCATION</button>
     )
 }
 

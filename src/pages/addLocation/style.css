@@ -1,0 +1,36 @@
+form#add-location {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 180px;
+}
+
+form#add-location select {
+    width: 46%;
+    margin-left: 2%;
+}
+
+form#add-location input {
+    width: 46%;
+    margin: 5px 2%;
+    padding: 2px 7px;
+}
+
+form .add-btn {
+    width: 100%;
+    text-align: center;
+}
+
+form#add-location button {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(5, 197, 5);
+    color: white;
+    border: 0px;
+    padding: 3px 15px 5px 15px;
+    font-size: .8em;
+    letter-spacing: .05em;
+}
+
+form#add-location button:hover {
+    background-color: green;
+}

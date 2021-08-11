@@ -27,16 +27,17 @@ function Franchise(props) {
 
     const [easybaseData, seteasybaseData] = useState([]);
     const { db, e } = useEasybase();
-    const mounted = async() => {
-        // const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-        const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
 
-        seteasybaseData(ebData);
-        console.log(ebData)
-        //console.log(easybaseData[0].locations)
-    }
 
     useEffect(() => {
+        const mounted = async() => {
+            // const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
+            const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
+    
+            seteasybaseData(ebData);
+            console.log(ebData)
+            //console.log(easybaseData[0].locations)
+        }
          mounted();
     }, [])
 
