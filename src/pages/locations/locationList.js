@@ -1,55 +1,60 @@
 import React, {useState, useEffect} from 'react';
-import { useEasybase } from 'easybase-react';
+//import { useEasybase } from 'easybase-react';
 //import locationsDb from './db.js';
 import comingSoon from './comingSoon';
 import './style.css';
+
+import locationsDb from './db.js';
 const geolib = require('geolib');
+
 
 function LocationList(props) {
 
     const [locations, setLocations] = useState([]);
     const [noLocations, setNoLocations] = useState(false);
-    const [easybaseData, seteasybaseData] = useState([]);
-    const { db, e } = useEasybase();
+    // const [easybaseData, seteasybaseData] = useState([]);
+    // const { db, e } = useEasybase();
 
-    const mounted = async() => {
-        const ebData = await db("LOCATIONS").return().all();
-        seteasybaseData(ebData);
-        // if(easybaseData.length > 0) getLocations()
-    }
 
-    useEffect(() => {
-        mounted();
-    })
+
+    // useEffect(() => {
+    //     const mounted = async() => {
+    //         const ebData = await db("LOCATIONS").return().all();
+    //         seteasybaseData(ebData);
+    //         // if(easybaseData.length > 0) getLocations()
+    //     }
+    //     mounted()
+    // }, [])
 
     useEffect(() => {
         getLocations()
-    }, [props.coords, props.radius])
+    }, [props.radius, props.coords])
 
     function getLocations() {
+        //console.log(props.coords)
+        //console.log(easybaseData)
         let locationList = [];
         let userLocation = {
             latitude: props.coords[0],
             longitude: props.coords[1]
         }
-        for(let i=0; i < easybaseData.length; i++) {
+        for(let i=0; i < locationsDb.length; i++) {
 
             let franchiseLocation = {
-                latitude: easybaseData[i].lat,
-                longitude: easybaseData[i].lon
+                latitude: locationsDb[i].lat,
+                longitude: locationsDb[i].lon
             }
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
             //console.log(distance)
             if(distance < props.radius) {
-                locationList.push(easybaseData[i])
+                locationList.push(locationsDb[i])
                 //console.log(locationList)
-                setNoLocations(false)
+                //setNoLocations(false)
             }
         }
-        locationList.length > 0 ? setNoLocations(false) : setNoLocations(true)
-        setLocations(locationList)
 
-        //keeps calling this function on empty easybaseData array
+        //locationList.length > 0 ? setNoLocations(false) : setNoLocations(true)
+        setLocations(locationList)
     }
 
     return(

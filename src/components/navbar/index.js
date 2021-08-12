@@ -9,19 +9,21 @@ class Navbar extends Component {
         bgColor: 'transparent'
     }
 
-    componentDidMount() {
-        document.addEventListener('scroll', () => {
-            let bgColor = window.scrollY > 300 ? 'black' : 'transparent';
-            let displayPage = window.scrollY > 500 ? true : false;
-            this.setState({
-                bgColor: bgColor,
-                displayPage: displayPage
-            })
+    onScroll = () => {
+        let bgColor = window.scrollY > 300 ? 'black' : 'transparent';
+        let displayPage = window.scrollY > 500 ? true : false;
+        this.setState({
+            bgColor: bgColor,
+            displayPage: displayPage
         })
     }
 
+    componentDidMount() {
+        document.addEventListener('scroll', this.onScroll)
+    }
+
     componentWillUnmount() {
-        document.removeEventListener('scroll')
+        document.removeEventListener('scroll', this.onScroll)
     }
 
     render() {

@@ -3,7 +3,7 @@ import React from 'react';
 import { hydrate, render } from "react-dom";
 import './index.css';
 import App from './App';
-import { EasybaseProvider, useEasybase } from 'easybase-react';
+//import { EasybaseProvider, useEasybase } from 'easybase-react';
 import ebconfig from './ebconfig';
 import reportWebVitals from './reportWebVitals';
 
@@ -19,14 +19,16 @@ import reportWebVitals from './reportWebVitals';
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   hydrate(
-  <EasybaseProvider ebconfig={ebconfig}>
+  // <EasybaseProvider ebconfig={ebconfig}>
     <App />
-  </EasybaseProvider>
+  // </EasybaseProvider>
   , rootElement);
 } else {
-  render(  <EasybaseProvider ebconfig={ebconfig}>
-    <App />
-  </EasybaseProvider>, rootElement);
+  render(  
+  // <EasybaseProvider ebconfig={ebconfig}>
+    <App />,
+  // </EasybaseProvider>, 
+  rootElement);
 }
 
 // If you want to start measuring performance in your app, pass a function

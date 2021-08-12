@@ -54,7 +54,7 @@ class Form extends Component {
 
     geocode = () => {
         let city = this.state.city.replace(' ', '+');
-        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${city},+{this.state.state}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`)
+        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${city},+${this.state.state}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`)
             .then(res => {
                 console.log(res)
                 this.setState({
