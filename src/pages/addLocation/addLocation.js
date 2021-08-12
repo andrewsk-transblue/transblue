@@ -17,7 +17,8 @@ function AddLocation(props) {
             <button className='add-btn' onClick={addLocation}>ADD THIS LOCATION</button>
             {isSubmitted && 
                 <div className='alert'>
-                    Location has been submitted!
+                    Location has been submitted!<br />
+                    <a href={`/locations/${data.state}/${data.urlCity}`}>View Franchise Page</a>
                 </div>
             }
         </Fragment>

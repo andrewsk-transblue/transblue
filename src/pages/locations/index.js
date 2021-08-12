@@ -22,10 +22,10 @@ class Locations extends Component {
         super();
         this.state={
             showStates: false,
-            states:  ['California', 'Colorado', 'Louisiana', 'Massachusetts', 'Oregon', 'Texas', 'Virginia', 'Washington'],
-            selectState: 'Select State',
+            // states:  ['California', 'Colorado', 'Louisiana', 'Massachusetts', 'Oregon', 'Texas', 'Virginia', 'Washington'],
+            // selectState: 'Select State',
             bounds: [],
-            showLocations: false,
+            // showLocations: false,
             locationList: [],
             center: [47.6062, -122.3321],
             noLocations: false,
@@ -37,6 +37,7 @@ class Locations extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props)
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)

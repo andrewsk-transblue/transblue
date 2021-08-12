@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Route
@@ -6,7 +6,7 @@ import {
 import { HelmetProvider } from 'react-helmet-async';
 import NewLanding from './pages/landing/newLanding';
 import './App.css';
-import { EasybaseProvider } from 'easybase-react';
+import { EasybaseProvider, useEasybase } from 'easybase-react';
 import ebconfig from './ebconfig';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
@@ -20,9 +20,19 @@ const Featured = lazy(() => import('./pages/featured'));
 const Form = lazy(() => import('./pages/addLocation/form'));
 
 function App() {
+  const [easybaseData, seteasybaseData] = useState([]);
+  const { db, e } = useEasybase();
+  const mounted = async() => {
+    const ebData = await db("LOCATIONS").return().all();
+    seteasybaseData(ebData);
+    //console.log(easybaseData)
+}
+
+  useEffect(() => {
+       mounted();
+  }, [])
 
   return (
-    <EasybaseProvider ebconfig={ebconfig}>
       <HelmetProvider>
         <Router>
           <Suspense fallback={<div>Loading...</div>}>
@@ -44,7 +54,6 @@ function App() {
           </Suspense>
         </Router>
       </HelmetProvider>
-    </EasybaseProvider>
   );
 }
 
