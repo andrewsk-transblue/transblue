@@ -15,8 +15,6 @@ import './style.css';
 import AutoComplete from "react-google-autocomplete";
 //import locations from './db';
 
-const geolib = require('geolib');
-
 class Locations extends Component {
     constructor() {
         super();
@@ -27,7 +25,7 @@ class Locations extends Component {
             bounds: [],
             // showLocations: false,
             locationList: [],
-            center: [47.6062, -122.3321],
+            center: [],
             noLocations: false,
             isLoading: true,
             displayMiles: false,
@@ -48,7 +46,7 @@ class Locations extends Component {
         else if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                this.setLocationList(position.coords.latitude, position.coords.longitude)
+                //this.setLocationList(position.coords.latitude, position.coords.longitude)
               });
         }
     }
@@ -58,7 +56,9 @@ class Locations extends Component {
         this.setState({
             radius: e.target.value,
             displayMiles: !this.state.displayMiles
-        }, () => this.setLocationList(this.state.center[0], this.state.center[1])) 
+        })
+        // () => this.setLocationList(this.state.center[0], this.state.center[1])) 
+        // }, () => this.setState({center: })
     }
 
     centerLocation = (lat, lon) => {
@@ -68,29 +68,6 @@ class Locations extends Component {
             radius: 50
         })
     }
-
-    setLocationList = (lat, lon) => {
-        let locationList = [];
-        let userLocation = {
-            latitude: lat,
-            longitude: lon
-        }
-        for(let i=0; i<locationsDb.length; i++) {
-            let franchiseLocation = {
-                latitude: locationsDb[i].lat,
-                longitude: locationsDb[i].lon
-            }
-            let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
-            // console.log(locationsDb[i].name, distance)
-            if(distance < this.state.radius) {
-                locationList.push(locationsDb[i])
-            }
-        }
-        locationList.length > 0 ? this.setState({locationList: locationList, noLocations: false}, () => this.setState({isLoading: false}))
-        :
-        this.setState({noLocations: true}, () => this.setState({isLoading: false}))
-    }
-
     searchLocation = (location_id) => {
         this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
         axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city, filter locationList to locations within radius
@@ -104,10 +81,8 @@ class Locations extends Component {
                     radius: 50
                     // placeholder: res.data.result.address_components.formatted_address
                 })
-                this.setLocationList(res.data.result.geometry.location.lat, res.data.result.geometry.location.lng)
             })
-            .then(() => console.log(this.state.center))
-    }
+        }
 
     render() {
         return(
@@ -136,7 +111,7 @@ class Locations extends Component {
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
-                                {!this.state.isLoading && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
+                                {this.state.center.length > 0 && <LocationList coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
                                 {/* {this.state.locationList.length > 0 && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />} */}
                             </div>
                         </div>
