@@ -7,7 +7,7 @@ import MapComp from './map';
 import LocationList from './locationList';
 //import bounds from './bounds';
 import locationsHeader from '../../images/location.jpeg';
-import locationsDb from './db';
+//import locationsDb from './db';
 import map from '../../images/map.png';
 //import locationsHeader from '../../images/locationsHeader.jpeg';
 import './style.css';
@@ -35,7 +35,7 @@ class Locations extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
+        //console.log(this.props)
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
@@ -69,11 +69,12 @@ class Locations extends Component {
         })
     }
     searchLocation = (location_id) => {
-        this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
+        //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
         axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city, filter locationList to locations within radius
             .then(res => {
-                console.log(res)
+                //console.log(res)
                 this.setState({
+                    radius: 50,
                     center: [res.data.result.geometry.location.lat, res.data.result.geometry.location.lng],
                     selectState: res.data.result.address_components[2].long_name,
                     showLocations: true,
@@ -85,6 +86,8 @@ class Locations extends Component {
         }
 
     render() {
+        console.log('rendering');
+        console.log(this.state.isLoading)
         return(
             <Fragment>
             <Navbar page='locations' />

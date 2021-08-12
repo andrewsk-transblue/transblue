@@ -15,11 +15,12 @@ function LocationList(props) {
     const mounted = async() => {
         const ebData = await db("LOCATIONS").return().all();
         seteasybaseData(ebData);
+        // if(easybaseData.length > 0) getLocations()
     }
 
     useEffect(() => {
         mounted();
-    }, [])
+    })
 
     useEffect(() => {
         getLocations()
@@ -38,10 +39,10 @@ function LocationList(props) {
                 longitude: easybaseData[i].lon
             }
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
-            console.log(distance)
+            //console.log(distance)
             if(distance < props.radius) {
                 locationList.push(easybaseData[i])
-                console.log(locationList)
+                //console.log(locationList)
                 setNoLocations(false)
             }
         }

@@ -20,6 +20,10 @@ class Navbar extends Component {
         })
     }
 
+    componentWillUnmount() {
+        document.removeEventListener('scroll')
+    }
+
     render() {
         return(
             <nav className={this.props.blog ? `navbar navbar-expand-lg bg-blog fixed-top mx-0` : `mx-0 navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor}`}  >
