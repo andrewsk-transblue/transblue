@@ -24,23 +24,24 @@ function NewLanding() {
                 <div className='container-fluid who-is-tb text-center'>
                     <div className='row'>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
-                            <small>TRANSBLUE IS...</small>
+                            <small>TRANSBLUE IS</small>
                             <p>QUALITY OF LIFE</p>
+                            <span className='ellipsis'></span>
                             {/* <hr /> */}
                             <p>Landscapes aren't just backyards. They are birthday parties, holidays, celebrations with family and friends</p>
                         </div>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
-                            <small>TRANSBLUE IS...</small>
+                            <small>TRANSBLUE IS</small>
                             <p>SAFTER WINTERS</p>
                             <p>Quality snow services that keep your clients safe and your doors open for business</p>
                         </div>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
-                            <small>TRANSBLUE IS...</small>
+                            <small>TRANSBLUE IS</small>
                             <p>LANDSCAPE DESIGN</p>
                             <p>Landscape designs enhace your property and increase your home's value</p>
                         </div>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
-                            <small>TRANSBLUE IS...</small>
+                            <small>TRANSBLUE IS</small>
                             <p>PAVING SERVICES</p>
                             <p>Paving services that enhance your curb appeal and increase the value of your investment</p>
                         </div>

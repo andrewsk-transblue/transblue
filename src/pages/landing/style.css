@@ -86,7 +86,8 @@
 }
 
 .who-is-tb small {
-    letter-spacing: .0705em;
+    letter-spacing: .09em;
+    font-family: 'Montserrat';
 }
 
 .who-is-tb p:first-of-type {
@@ -114,10 +115,11 @@
 
 .who-is-tb p:nth-of-type(2) {
     line-height: 1.7;
-    font-size: .95em;
+    font-size: .9em;
     /* font-size: 16px; */
-    letter-spacing: .06em;
+    letter-spacing: .07em;
     margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .entry {
