@@ -10,7 +10,7 @@ function Core2() {
             <div className='row'>
                 <div className='col-lg-6'>
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core1} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
@@ -22,7 +22,7 @@ function Core2() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core2} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
@@ -34,7 +34,7 @@ function Core2() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core3} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
@@ -47,7 +47,7 @@ function Core2() {
                 </div>
                 <div className='col-lg-6'>
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core1} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
@@ -59,7 +59,7 @@ function Core2() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core2} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
@@ -71,7 +71,7 @@ function Core2() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-lg-2 my-auto text-center'>
+                        <div className='col-lg-2 my-auto text-center pr-0'>
                             <img src={core3} alt='' />
                         </div>
                         <div className='col-lg-10 my-auto'>
