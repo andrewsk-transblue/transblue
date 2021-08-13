@@ -66,7 +66,7 @@ function NewLanding() {
                     </div>
                 </div>
                 <Mission />
-                <Here />
+                {/* <Here /> */}
                 <Core />
                 <Core2 />
                 <NewReviews />

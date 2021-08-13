@@ -74,7 +74,7 @@ class Form extends Component {
                 <form id='add-location' onSubmit={this.onSubmit}>
                     <h3>ADD A FRANCHISE LOCATION</h3>
                     <p className='text-secondary'>Make sure all fields are filled out.</p>
-                    <p className='text-secondary mb-5'>Once you've entered city and state, you can press the GET LAT &amp; LONG button and latitude and longitude will be calculated</p>
+                    <p className='text-secondary mb-5'>Once you've entered city and state, press the GET LAT &amp; LONG button to calculate latitude and longitude</p>
                     <input id='name' placeholder='Franchise Name' onChange={this.onChange} required></input>
                     <input id='urlCity' placeholder='URL city' onChange={this.onChange} required></input><br />
                     <input id='address1' placeholder='Address' onChange={this.onChange} required></input>

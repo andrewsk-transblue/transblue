@@ -79,7 +79,6 @@ class Locations extends Component {
                     selectState: res.data.result.address_components[2].long_name,
                     showLocations: true,
                     //locationList: locationsDb.filter(loc => loc.state === res.data.result.address_components[2].short_name),
-                    radius: 50
                     // placeholder: res.data.result.address_components.formatted_address
                 })
             })
