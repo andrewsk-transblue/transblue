@@ -437,7 +437,7 @@
 
 @media only screen and (min-width: 992px) {
     .entry {
-        padding: 0px 15px;
+        padding: 0px 20px;
     }
     .community-stats:after {
         font-size: 1.35em;

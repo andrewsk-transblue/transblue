@@ -53,7 +53,7 @@ function LocationList(props) {
             }
         }
 
-        //locationList.length > 0 ? setNoLocations(false) : setNoLocations(true)
+        locationList.length > 0 ? setNoLocations(false) : setNoLocations(true)
         setLocations(locationList)
     }
 

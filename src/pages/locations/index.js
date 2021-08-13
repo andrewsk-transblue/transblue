@@ -86,8 +86,9 @@ class Locations extends Component {
         }
 
     render() {
-        console.log('rendering');
+        //console.log('rendering');
         console.log(this.state.isLoading)
+        console.log(this.state.center)
         return(
             <Fragment>
             <Navbar page='locations' />

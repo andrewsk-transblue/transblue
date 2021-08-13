@@ -38,7 +38,7 @@ function NewLanding() {
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
                             <small>TRANSBLUE IS</small>
                             <p>LANDSCAPE DESIGN</p>
-                            <p>Landscape designs enhace your property and increase your home's value</p>
+                            <p>Landscape designs enhance your property and increase your home's value</p>
                         </div>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
                             <small>TRANSBLUE IS</small>
