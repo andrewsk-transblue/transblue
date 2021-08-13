@@ -10,6 +10,7 @@ import Nepal from '../../components/landing/nepal';
 import Mission from '../../components/landing/mission';
 import Here from '../../components/landing/here';
 import Core from '../../components/landing/core';
+import Core2 from '../../components/landing/core2';
 import LocationsCta from '../../components/locationsCTA';
 
 function NewLanding() {
@@ -66,6 +67,7 @@ function NewLanding() {
                 <Mission />
                 <Here />
                 <Core />
+                <Core2 />
                 <NewReviews />
                 <Services />
                 <Footer />
