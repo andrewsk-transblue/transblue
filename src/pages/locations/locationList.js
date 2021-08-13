@@ -13,7 +13,7 @@ function LocationList(props) {
     const [locations, setLocations] = useState([]);
     const [noLocations, setNoLocations] = useState(false);
     // const [easybaseData, seteasybaseData] = useState([]);
-    // const { db, e } = useEasybase();
+    //const { db, e } = useEasybase();
 
 
 

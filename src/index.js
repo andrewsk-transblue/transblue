@@ -3,7 +3,7 @@ import React from 'react';
 import { hydrate, render } from "react-dom";
 import './index.css';
 import App from './App';
-//import { EasybaseProvider, useEasybase } from 'easybase-react';
+import { EasybaseProvider, useEasybase } from 'easybase-react';
 import ebconfig from './ebconfig';
 import reportWebVitals from './reportWebVitals';
 

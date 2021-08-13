@@ -6,8 +6,8 @@ import {
 import { HelmetProvider } from 'react-helmet-async';
 import NewLanding from './pages/landing/newLanding';
 import './App.css';
-//import { EasybaseProvider, useEasybase } from 'easybase-react';
-//import ebconfig from './ebconfig';
+import { EasybaseProvider, useEasybase } from 'easybase-react';
+import ebconfig from './ebconfig';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./pages/commercial/index'));

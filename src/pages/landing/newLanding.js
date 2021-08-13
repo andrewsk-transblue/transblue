@@ -9,6 +9,7 @@ import Mbridge from '../../components/landing/mbridge';
 import Nepal from '../../components/landing/nepal';
 import Mission from '../../components/landing/mission';
 import Here from '../../components/landing/here';
+import Core from '../../components/landing/core';
 import LocationsCta from '../../components/locationsCTA';
 
 function NewLanding() {
@@ -64,6 +65,7 @@ function NewLanding() {
                 </div>
                 <Mission />
                 <Here />
+                <Core />
                 <NewReviews />
                 <Services />
                 <Footer />
