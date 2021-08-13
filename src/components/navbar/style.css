@@ -8,6 +8,11 @@
     backdrop-filter: blur(2px);
 }
 
+nav.navbar {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
 nav .navbar-nav li a {
     color: white !important;
     font-family: 'Montserrat', sans-serif;
