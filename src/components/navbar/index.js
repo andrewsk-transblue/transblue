@@ -44,10 +44,10 @@ class Navbar extends Component {
                                 General Contracting
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="/residential">Residential</a>
-                                <a className="dropdown-item" href="/multifamily">Multifamily</a>
-                                <a className='dropdown-item' href="/commercial">Commercial</a>
-                                <a className='dropdown-item' href="/commercial">Government</a>
+                                <Link className="dropdown-item" to="/residential">Residential</Link>
+                                <Link className="dropdown-item" to="/multifamily">Multifamily</Link>
+                                <Link className='dropdown-item' to="/commercial">Commercial</Link>
+                                <Link className='dropdown-item' to="/commercial">Government</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
@@ -55,10 +55,10 @@ class Navbar extends Component {
                                 Green Services
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <Link className="dropdown-item" to="/">About</Link>
-                                <Link className="dropdown-item" to="/residential">Residential</Link>
-                                <Link className="dropdown-item" to="/multifamily">Multifamily</Link>
-                                <Link className='dropdown-item' to="/commercial">Commercial</Link>
+                                <a className="dropdown-item" href="/">About</a>
+                                <a className="dropdown-item" href="/residential">Residential</a>
+                                <a className="dropdown-item" href="/multifamily">Multifamily</a>
+                                <a className='dropdown-item' href="/commercial">Commercial</a>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
