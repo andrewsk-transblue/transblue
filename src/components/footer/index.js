@@ -44,18 +44,40 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className='row mx-0'>
-                    <div className='footer-services d-none d-md-block col-lg-3 col-md-3'>
-                        <h1>SERVICES</h1>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                        <h1>GENERAL</h1>
                         <div className='footer-services-list'>
                             <a href='/residential'>Residential</a> <br />
                             <a href='/commercial'>Commercial</a><br />
                             <a href='/multifamily'>Multifamily</a><br />
                             <a href='/government'>Government</a><br />
-                            <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
-                            <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br />
+                            {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
+                            <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                         </div>
                     </div>
-                    <div className='footer-services d-none d-md-block col-lg-3 col-md-3'>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                        <h1>SNOW SERVICES</h1>
+                        <div className='footer-services-list'>
+                            <a href='/residential'>About</a> <br />
+                            <a href='/commercial'>How We Operate</a><br />
+                            <a href='/multifamily'>Our Software</a><br />
+                            <a href='/government'>Gallery</a><br />
+                            <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>FAQ</a><br />
+                            <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Pricing</a><br />
+                        </div>
+                    </div>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                        <h1>GREEN SERVICES</h1>
+                        <div className='footer-services-list'>
+                            <a href='/residential'>About</a> <br />
+                            <a href='/commercial'>Residential</a><br />
+                            <a href='/multifamily'>Commercial</a><br />
+                            <a href='/government'>Multifamily</a><br />
+                            {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>FAQ</a><br />
+                            <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Pricing</a><br /> */}
+                        </div>
+                    </div>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
                         <h1>OTHER</h1>
                         <div className='footer-services-list'>
                             <a href='/'>Home</a> <br />
@@ -92,8 +114,8 @@ class Footer extends Component {
                                 <a href='/commercial'>Commercial</a><br />
                                 <a href='/multifamily'>Multifamily</a><br />
                                 <a href='/government'>Government</a><br />
-                                <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
-                                <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br />
+                                {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
+                                <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                                 <hr />
                             </div>
                         }
