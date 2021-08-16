@@ -54,7 +54,7 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className='row mx-0'>
-                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                         <h1>GENERAL</h1>
                         <div className='footer-services-list'>
                             <a href='/residential'>Residential</a> <br />
@@ -65,7 +65,7 @@ class Footer extends Component {
                             <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                         </div>
                     </div>
-                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                         <h1>SNOW SERVICES</h1>
                         <div className='footer-services-list'>
                             <a href='/residential'>About</a> <br />
@@ -76,7 +76,7 @@ class Footer extends Component {
                             <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Pricing</a><br />
                         </div>
                     </div>
-                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                         <h1>GREEN SERVICES</h1>
                         <div className='footer-services-list'>
                             <a href='/residential'>About</a> <br />
@@ -87,7 +87,7 @@ class Footer extends Component {
                             <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Pricing</a><br /> */}
                         </div>
                     </div>
-                    <div className='footer-services d-none d-md-block col-lg-2 col-md-2'>
+                    <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                         <h1>OTHER</h1>
                         <div className='footer-services-list'>
                             <a href='/'>Home</a> <br />
@@ -96,7 +96,7 @@ class Footer extends Component {
                             <a href='#'>Franchise</a><br />
                         </div>
                     </div>
-                    {!this.props.locationPage && <div className='col-lg-3 col-md-5 d-none d-md-block find-location px-0'>
+                    {!this.props.locationPage && <div className='col-lg-3 col-md-12 d-none d-md-block find-location px-0'>
                         <p className='mb-2'>FIND A LOCATION</p>
                         <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
                         <span>

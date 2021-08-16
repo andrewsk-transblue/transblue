@@ -95,7 +95,7 @@
 
 .find-location {
     font-family: 'Muli', sans-serif;
-    margin-left: 50px;
+    margin: 30px 0px 30px 0px;
 }
 
 .find-location p {
@@ -124,8 +124,14 @@
     font-size: .8em;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (min-width: 768px) {
     .find-location {
-        margin: 30px 0px 30px 0px;
+        margin: 30px 0px 30px 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .find-location {
+        margin: 0px;
     }
 }
