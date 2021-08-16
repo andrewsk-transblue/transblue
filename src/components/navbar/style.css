@@ -13,18 +13,52 @@ nav.navbar {
     padding-right: 3.5%;
 }
 
-nav .navbar-nav li a {
+nav .navbar-nav li a,
+nav button {
     color: white !important;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
-nav .navbar-nav li a:hover {
+
+nav button {
+    line-height: 1.5 !important;
+    background-color: transparent;
+    border: 0px;
+}
+
+nav .navbar-nav li a.active {
     border-bottom: 1px solid lightgray;
 }
 
-.dropdown-menu {
+nav button {
+    background-color: transparent;
+    border: 0px;
+}
+
+a.dropdown-item {
+    text-align: right !important;
+    padding-right: 0px !important;
+}
+div.dropdown-menu {
     padding-top: 0px;
     margin-top: 0px;
+}
+a#navbarDropdown.nav-link.dropdown-toggle.ml-auto {
+    text-align: right !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+    border-bottom: 1px solid lightgray;
+}
+
+.dropdown button.active {
+    border-bottom: 1px solid lightgray;
+}
+
+nav .navbar-nav li a:hover {
+    /* border-bottom: 1px solid lightgray; */
+    color: rgb(199, 199, 199) !important;
 }
 nav span {
     color: white;
@@ -37,22 +71,15 @@ nav .navbar-nav li a:hover {
 .navbar-custom {
     background-color: inherit;
 }
-a.dropdown-item {
-    padding-left: 8px !important;
-}
-
-a#navbarDropdown.nav-link.dropdown-toggle.ml-auto {
-    text-align: right !important;
-}
 
 .nav-page {
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: white !important;
-    /* font-size: 1em; */
-    font-size: 1.6em;
-    margin-left: 30px;
     letter-spacing: .08em;
+    font-size: .9em;
+    margin-left: 0px;
 
 }
 .dropdown-menu .dropdown-item:hover {
@@ -60,24 +87,35 @@ a#navbarDropdown.nav-link.dropdown-toggle.ml-auto {
     background-color: inherit !important;
 }
 #logo {
-    width: 150px;
-    margin-left: 20px;
-    margin-right: 10px;
+    width: 110px;
+    /* height: 50px; */
+    margin-left: 0px;
+    /* margin-right: 10px; */
 }
 
-span.location i {
+.location i {
     margin: 0px 10px 0px 10px;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (min-width: 576px) {
     .nav-page {
-        display: none;
+        font-size: 1.4em;
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     a.dropdown-item {
-        text-align: right !important;
-        padding-right: 0px !important;
+        padding-left: 8px !important;
+        text-align: left !important;
+        /* padding-right: 0px !important; */
+    }
+    #logo {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .nav-page {
+        font-size: 1.6em;
+        margin-left: 30px;
     }
 }

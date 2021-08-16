@@ -1,77 +1,89 @@
-import React, { Component } from 'react';
-
-import './style.css';
-
+import React,  {Component} from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
+import './style.css';
 
 class Navbar extends Component {
     state={
-        bgColor: 'transparent'
-    }
-
-    onScroll = () => {
-        let bgColor = window.scrollY > 300 ? 'black' : 'transparent';
-        let displayPage = window.scrollY > 500 ? true : false;
-        this.setState({
-            bgColor: bgColor,
-            displayPage: displayPage
-        })
+        bgColor: 'transparent',
+        logo: true
+        // scrollHeight: 300
     }
 
     componentDidMount() {
-        document.addEventListener('scroll', this.onScroll)
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('scroll', this.onScroll)
+        // if(window.innerWidth < 992) this.setState({scrollHeight: 0})
+        // this.props.page === 'CONTACT' ? this.setState({bgColor: 'black'}) :
+        document.addEventListener('scroll', () => {
+            // console.log(window.scrollY)
+            let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
+            // if(this.props.page === 'CONTACT') bgColor = 'black'
+            let displayPage = window.scrollY >300 ? true : false;
+            this.setState({
+                bgColor: bgColor,
+                displayPage: displayPage
+            })
+        })
     }
 
     render() {
         return(
-            <nav className={this.props.blog ? `navbar navbar-expand-lg bg-blog fixed-top mx-0` : `mx-0 navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor}`}  >
-                <a className="navbar-brand" href="/"><img src={logo} id='logo' alt='Transblue Logo'></img></a>
-                {this.state.displayPage && <div className='nav-page' href="/">{this.props.page}</div>}
-                {this.props.franchise &&
-                    <span className='location'>{this.props.city}, {this.props.state} <i className="fas fa-map-marker-alt"></i>
-                    {this.props.phone} <i className="fas fa-phone"></i></span>}
+            <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ml-auto`}  >
+                {this.state.logo && <a className="navbar-brand" href="/"><img src={logo} id='logo' alt='Transblue Logo'></img></a>}
+                {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse pr-0" id="navbarNav">
+                <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item ml-auto">
-                            <a className="nav-link" href="/">Home</a>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item dropdown ml-auto">
-                            <a className="nav-link dropdown-toggle ml-auto" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services
-                            </a>
-                            <div className={`dropdown-menu ml-auto ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                General Contracting
+                            </button>
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="/residential">Residential</a>
-                                <a className="dropdown-item" href="/commercial">Commercial</a>
                                 <a className="dropdown-item" href="/multifamily">Multifamily</a>
-                                <a className="dropdown-item" href="/government">Government</a>
-                                <a className="dropdown-item" target='_blank' rel='noreferrer' href="https://tbsnow.herokuapp.com/">Snow</a>
-                                <a className="dropdown-item" href="https://tbev.herokuapp.com/" target='_blank' rel='noreferrer'>EV</a>
+                                <a className='dropdown-item' href="/commercial">Commercial</a>
+                                <a className='dropdown-item' href="/commercial">Government</a>
                             </div>
                         </li>
+                        <li className="nav-item dropdown ml-auto">
+                            <button className={this.props.parentPage === 'ev' ? "nav-link dropdown-toggle ml-auto active" : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Green Services
+                            </button>
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                                <Link className="dropdown-item" to="/">About</Link>
+                                <Link className="dropdown-item" to="/residential">Residential</Link>
+                                <Link className="dropdown-item" to="/multifamily">Multifamily</Link>
+                                <Link className='dropdown-item' to="/commercial">Commercial</Link>
+                            </div>
+                        </li>
+                        <li className="nav-item dropdown ml-auto">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Snow Services
+                            </button>
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">About</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">How We Operate</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">Emergency &amp; Risk</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">Our Software</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">Gallery</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">Pricing</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
+                            </div>
+                        </li>
+                        {/* <li className="nav-item ml-auto">
+                            <a className={this.props.page === 'GALLERY' ? 'nav-link active' : 'nav-link'} href="/gallery">Gallery</a>
+                        </li> */}
                         <li className="nav-item ml-auto">
-                            <a className="nav-link" href="/locations/">Locations</a>
+                            <Link className={this.props.page === 'contact' ?"nav-link active" : "nav-link"} to="/contact">Contact</Link>
                         </li>
                         <li className="nav-item ml-auto">
-                            <a className="nav-link" href="/featured">Featured Projects</a>
+                            <Link className="nav-link" to="#">Franchise</Link>
                         </li>
-                        {!this.props.franchise && <li className="nav-item ml-auto">
-                            <a className="nav-link" target="_blank" rel="noreferrer" href="/blog">Blog</a>
-                        </li>}
-                        {!this.props.franchise && <li className="nav-item ml-auto">
-                            <a className="nav-link" href="/franchise">Franchise</a>
-                        </li>}
-                        {this.props.franchise && 
-                            <li className="nav-item ml-auto">
-                            <a className="nav-link" href={`/${this.props.name}/subcontractor`} target='_blank' rel='noreferrer' >Subcontractor Form</a>
-                        </li>}
                     </ul>
                 </div>
             </nav>
