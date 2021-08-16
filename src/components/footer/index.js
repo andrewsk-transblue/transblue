@@ -42,12 +42,12 @@ function Footer(props) {
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                     <h1>SNOW SERVICES</h1>
                     <div className='footer-services-list'>
-                        <a href='/residential'>About</a> <br />
-                        <a href='/commercial'>How We Operate</a><br />
-                        <a href='/multifamily'>Our Software</a><br />
-                        <a href='/government'>Gallery</a><br />
-                        <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>FAQ</a><br />
-                        <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Pricing</a><br />
+                        <a href='https://tbsnow.herokuapp.com/'>About</a> <br />
+                        <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
+                        <a href='https://tbsnow.herokuapp.com/software'>Our Software</a><br />
+                        <a href='https://tbsnow.herokuapp.com/gallery'>Gallery</a><br />
+                        <a href='https://tbsnow.herokuapp.com/faq' target='_blank' rel='noreferrer'>FAQ</a><br />
+                        <a href='https://tbev.herokuapp.com/pricing' target='_blank' rel='noreferrer'>Pricing</a><br />
                     </div>
                 </div>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
@@ -102,13 +102,13 @@ function Footer(props) {
                     <button onClick={() => setDisplaySnow(!displaySnow)}>SNOW SERVICES <i className="fas fa-angle-down"></i></button>
                     {displaySnow && 
                         <div>
-                            <a href='/residential'>About</a><br />
-                            <a href='/commercial'>How We Operate</a><br />
-                            <a href='/multifamily'>Our Software</a><br />
-                            <a href='/government'>Emergency &amp; Risk</a><br />
-                            <a href='/government'>Pricing</a><br />
-                            <a href='/government'>Gallery</a><br />
-                            <a href='/government'>FAQ</a><br />
+                            <a href='https://tbsnow.herokuapp.com/'>About</a><br />
+                            <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
+                            <a href='https://tbsnow.herokuapp.com/software'>Our Software</a><br />
+                            <a href='https://tbsnow.herokuapp.com/emergency'>Emergency &amp; Risk</a><br />
+                            <a href='https://tbsnow.herokuapp.com/pricing'>Pricing</a><br />
+                            <a href='https://tbsnow.herokuapp.com/gallery'>Gallery</a><br />
+                            <a href='https://tbsnow.herokuapp.com/faq'>FAQ</a><br />
                             <hr />
                         </div>
                     }
