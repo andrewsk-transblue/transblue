@@ -18,8 +18,6 @@ function Footer(props) {
         })
     }
 
-    console.log(props.locationPage)
-
     return(
         <div className='footer-container container-fluid w-100'>
             <div className='row mx-0 back-to-top'>

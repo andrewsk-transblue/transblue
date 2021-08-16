@@ -23,7 +23,7 @@ function Multifamily() {
                 <title>Transblue Multifamily</title>
                 <meta name="description" content="Transblue Multifamily Services" />
             </Helmet>
-            <Navbar page='MULTIFAMILY' />
+            <Navbar page='MULTIFAMILY' parentPage='gc' />
 
             <Header img={header} title='Multifamily' subtitle='' />
             <LocationsCta />

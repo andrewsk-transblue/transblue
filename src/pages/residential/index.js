@@ -22,7 +22,7 @@ function Residential() {
                 <title>Transblue Residential</title>
                 <meta name="description" content="Transblue Residential Services" />
             </Helmet>
-            <Navbar page='RESIDENTIAL' />
+            <Navbar page='RESIDENTIAL' parentPage='gc' />
             <div className='residential-header container-fluid'>
                 <div className='overlay'></div>
                 <img src={residential} alt='residential header' ></img>

@@ -30,7 +30,7 @@ class Commercial extends Component {
                     <title>Transblue Commercial</title>
                     <meta name="description" content="Transblue Commercial Services" />
                 </Helmet>
-                <Navbar page='COMMERCIAL' />
+                <Navbar page='COMMERCIAL' parentPage='gc' />
                 <Header img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
                 <LocationsCta />
                 <About />
