@@ -48,6 +48,7 @@ class Navbar extends Component {
                                 <Link className="dropdown-item" to="/multifamily">Multifamily</Link>
                                 <Link className='dropdown-item' to="/commercial">Commercial</Link>
                                 <Link className='dropdown-item' to="/government">Government</Link>
+                                <Link className='dropdown-item' to="/featured">Featured Projects</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
@@ -75,17 +76,17 @@ class Navbar extends Component {
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
                             </div>
                         </li>
-                        {/* <li className="nav-item ml-auto">
-                            <a className={this.props.page === 'GALLERY' ? 'nav-link active' : 'nav-link'} href="/gallery">Gallery</a>
-                        </li> */}
-                        <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="/locations">Locations</Link>
-                        </li>
-                        <li className="nav-item ml-auto">
-                            <Link className={this.props.page === 'contact' ?"nav-link active" : "nav-link"} to="/contact">Contact</Link>
-                        </li>
-                        <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="#">Franchise</Link>
+
+                        <li className="nav-item dropdown ml-auto">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other
+                            </button>
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">Contact</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">Locations</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">Blog</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">Franchise</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
