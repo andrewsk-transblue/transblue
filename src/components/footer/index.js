@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import AutoComplete from "react-google-autocomplete";
 import collapse from '../../images/collapse30.png';
 import './style.css';
@@ -30,10 +31,10 @@ function Footer(props) {
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                     <h1>GENERAL</h1>
                     <div className='footer-services-list'>
-                        <a href='/residential'>Residential</a> <br />
-                        <a href='/commercial'>Commercial</a><br />
-                        <a href='/multifamily'>Multifamily</a><br />
-                        <a href='/government'>Government</a><br />
+                        <Link to='/residential'>Residential</Link> <br />
+                        <Link to='/commercial'>Commercial</Link><br />
+                        <Link to='/multifamily'>Multifamily</Link><br />
+                        <Link to='/government'>Government</Link><br />
                         {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
                         <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                     </div>
