@@ -71,7 +71,7 @@ function NewLanding() {
                 <Core2 />
                 <NewReviews />
                 <Services />
-                <Footer />
+                <Footer locationPage={false} />
             </div>
         </Fragment>
     )
