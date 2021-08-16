@@ -161,7 +161,13 @@ class Footer extends Component {
                         <div className='find-location'>
                             <p className='mb-2'>FIND A LOCATION</p>
                             <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
-                            <span><input placeholder='SEARCH CITY OR ZIPCODE' /><i className='fas fa-search'></i></span>
+                            <span>
+                                <AutoComplete
+                                    apiKey='AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4'
+                                    onPlaceSelected={(location) => this.setLocation(location)}
+                                />
+                                <a href={`/locations/${this.state.location}`} ><i className='fas fa-search'></i></a>
+                            </span>
                         </div>
                     </div>
                 </div>
