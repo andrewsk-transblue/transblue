@@ -8,7 +8,9 @@ class Footer extends Component {
         super();
         this.state = {
             location: '',
-            displayServices: false
+            displayServices: false,
+            displaySnow: false,
+            displayEV: false
         }
     }
 
@@ -27,6 +29,14 @@ class Footer extends Component {
         this.setState({displayServices: !this.state.displayServices})
     }
 
+    displaySnow = () => {
+        this.setState({displaySnow: !this.state.displaySnow})
+    }
+
+    displayEV = () => {
+        this.setState({displayEV: !this.state.displayEV})
+    }
+
     scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -35,7 +45,7 @@ class Footer extends Component {
     }
 
     render() {
-        console.log(this.props)
+        //console.log(this.props)
         return(
             <div className='footer-container container-fluid w-100'>
                 <div className='row mx-0 back-to-top'>
@@ -107,7 +117,7 @@ class Footer extends Component {
                 </div>
                 <div className='row mx-0 small-screen-services'>
                     <div className='col-sm-12 d-block d-md-none'>
-                        <button onClick={this.displayServices}>SERVICES <i className="fas fa-angle-down"></i></button>
+                        <button onClick={this.displayServices}>GENERAL SERVICES <i className="fas fa-angle-down"></i></button>
                         {this.state.displayServices && 
                             <div>
                                 <a href='/residential'>Residential</a><br />
@@ -116,6 +126,29 @@ class Footer extends Component {
                                 <a href='/government'>Government</a><br />
                                 {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
                                 <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
+                                <hr />
+                            </div>
+                        }
+                        <button onClick={this.displaySnow}>SNOW SERVICES <i className="fas fa-angle-down"></i></button>
+                        {this.state.displaySnow && 
+                            <div>
+                                <a href='/residential'>About</a><br />
+                                <a href='/commercial'>How We Operate</a><br />
+                                <a href='/multifamily'>Our Software</a><br />
+                                <a href='/government'>Emergency &amp; Risk</a><br />
+                                <a href='/government'>Pricing</a><br />
+                                <a href='/government'>Gallery</a><br />
+                                <a href='/government'>FAQ</a><br />
+                                <hr />
+                            </div>
+                        }
+                        <button onClick={this.displayEV}>GREEN SERVICES <i className="fas fa-angle-down"></i></button>
+                        {this.state.displayEV && 
+                            <div>
+                                <a href='/residential'>About</a><br />
+                                <a href='/commercial'>Residential</a><br />
+                                <a href='/multifamily'>Commercial</a><br />
+                                <a href='/government'>Multifamily</a><br />
                                 <hr />
                             </div>
                         }
