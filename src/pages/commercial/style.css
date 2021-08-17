@@ -22,6 +22,17 @@
     margin-bottom: 60px;
 }
 
+.hospitality-wrapper .hospitality-header {
+    margin-top: 5px !important;
+}
+
+.hospitality-wrapper h6 {
+    font-family: 'Raleway', sans-serif;
+    color:rgb(92, 92, 92);
+    margin-bottom: 0px;
+    letter-spacing: .0705em;
+}
+
 .hospitality-wrapper 
 .hospitality-subheader {
   font-family: 'Raleway', sans-serif;
@@ -30,6 +41,10 @@
   font-weight: 500;
   font-size: 1.1em;
   margin-bottom: 0px;
+}
+
+.hospitality-wrapper img {
+    width: 100%;
 }
 
 .hospitality-wrapper .check-icon {
@@ -470,6 +485,9 @@
     }
     .impression-wrapper p {
         font-size: 1.2em;
+    }
+    .marriott-wrapper h4.section-header {
+        margin-top: 0px !important;
     }
 }
 /* 
