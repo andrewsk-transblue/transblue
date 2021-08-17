@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import LocationsCta from '../../components/locationsCTA';
+import ContactCta from '../../components/contactCta';
 import About from './about';
 import Slideshow from './slideshow';
 import Footer from '../../components/footer/index';
@@ -32,7 +33,8 @@ class Commercial extends Component {
                 </Helmet>
                 <Navbar page='COMMERCIAL' parentPage='gc' />
                 <Header img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
-                <LocationsCta />
+                {/* <LocationsCta /> */}
+                <ContactCta />
                 <About />
                 <Impression />
                 <Marriott />

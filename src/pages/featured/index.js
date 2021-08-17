@@ -17,6 +17,7 @@ import checkerboard from '../../images/featured/checkerboard.jpg';
 import hoaroofing from '../../images/featured/hoaroofing.jpg';
 import downarrow from '../../images/featured/downarrow.png';
 import './style.css';
+import ContactCta from '../../components/contactCta';
 
 const projects = [
     {
@@ -93,7 +94,8 @@ function Featured() {
             </Helmet>
             <Navbar page='FEATURED PROJECTS' />
             <Header img={header} title='Featured Projects' />
-            <LocationsCta />
+            <ContactCta />
+            {/* <LocationsCta /> */}
             <div className='projects-wrapper container-fluid'>
                 <div className='row'>
                     <div className='col-lg-6 order-lg-12'>

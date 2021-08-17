@@ -7,6 +7,7 @@ import Lifestyle from '../../components/residential/lifestyle/lifestyle';
 import Dees from '../../components/residential/dees/dees';
 import Quality from '../../components/residential/quality/quality';
 import LocationsCta from '../../components/locationsCTA';
+import ContactCta from '../../components/contactCta';
 import Carousel from '../../components/residential/carousel';
 import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
@@ -33,7 +34,8 @@ function Residential() {
                     </div>
                 </div>                
             </div>
-            <LocationsCta />
+            <ContactCta />
+            {/* <LocationsCta /> */}
             <div className='residential-body'>
                 <div className='about row'>
                     <p>

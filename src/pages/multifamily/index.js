@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import LocationsCta from '../../components/locationsCTA';
+import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
 import ServiceSlides from '../../components/commercial/serviceSlides';
 import CampImages from '../../components/multifamily/camp';
@@ -26,7 +27,8 @@ function Multifamily() {
             <Navbar page='MULTIFAMILY' parentPage='gc' />
 
             <Header img={header} title='Multifamily' subtitle='' />
-            <LocationsCta />
+            <ContactCta />
+            {/* <LocationsCta /> */}
             <div className='multifamily-body'>
                 <div className='container-fluid multifamily-about'>
                     <div className='row'>

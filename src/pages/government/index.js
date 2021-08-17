@@ -5,6 +5,7 @@ import Header from '../../components/header';
 import Capabilities2 from '../../components/government/capabilities2';
 import Footer from '../../components/footer/index';
 import LocationsCta from '../../components/locationsCTA';
+import ContactCta from '../../components/contactCta';
 import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
@@ -66,7 +67,8 @@ class Government extends Component {
                 </Helmet>
                 <Navbar page='GOVERNMENT' parentPage='gc' />
                 <Header img={govt} title='Government' subtitle='' />
-                <LocationsCta />
+                {/* <LocationsCta /> */}
+                <ContactCta />
                 <div className='government-body'>
                     <div className='container-fluid government-about'>
                         <div className='row'>

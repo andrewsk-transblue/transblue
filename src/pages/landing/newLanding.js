@@ -6,12 +6,13 @@ import NewReviews from '../../components/landing/newReviews/newReviews';
 import Services from '../../components/landing/services/index';
 import Footer from '../../components/footer';
 import Mbridge from '../../components/landing/mbridge';
-import Nepal from '../../components/landing/nepal';
+// import Nepal from '../../components/landing/nepal';
 import Mission from '../../components/landing/mission';
-import Here from '../../components/landing/here';
+// import Here from '../../components/landing/here';
 import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
 import LocationsCta from '../../components/locationsCTA';
+import ContactCta from '../../components/contactCta';
 
 function NewLanding() {
 
@@ -19,7 +20,8 @@ function NewLanding() {
         <Fragment>
             <Navbar page='HOME' />
             <Header />
-            <LocationsCta />
+            <ContactCta />
+            {/* <LocationsCta /> */}
             <div className='landing-body'>
                 <div className='container-fluid who-is-tb text-center'>
                     <div className='row'>
