@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import Fade from 'react-reveal/Fade';
+import React from 'react';
 import commercial from '../../images/commercial/commercial2.jpeg';
 import './style.css';
 
@@ -13,7 +12,7 @@ function About() {
                     <p className='section-p pb-4'>Transblue offers snow hauling, paving, and more for commercial clients, letting you put your attention where it belongs: on your customers.</p>
                 </div>
                 <div className='col-lg-6'>
-                   <img src={commercial} alt='' />
+                   <img src={commercial} alt='Commercial Landscaping' />
                 </div>
             </div>
         </div>

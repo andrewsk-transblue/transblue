@@ -454,26 +454,24 @@
     .community-stats:after {
         font-size: 1.35em;
     }
-    .nepal {
-        padding-top: 50px;
-    }
     .mbridge {
         margin-top: 30px;
     }
     .stats {
         margin-top: 80px;
+        margin-bottom: 80px;
     }
     .stats .image-wrapper {
         margin-top: 0px;
     }
     .video-wrapper {
-        margin-top: 50px;
+        margin-top: 80px;
     }
     .video-wrapper .video {
         margin-bottom: 0px;
     }
     .mission {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
 
