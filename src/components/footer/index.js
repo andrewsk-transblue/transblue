@@ -33,6 +33,7 @@ function Footer(props) {
                         <Link to='/commercial'>Commercial</Link><br />
                         <Link to='/multifamily'>Multifamily</Link><br />
                         <Link to='/government'>Government</Link><br />
+                        <Link to='/featured'>Featured Projects</Link>
                         {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
                         <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                     </div>
@@ -61,7 +62,7 @@ function Footer(props) {
                     <h1>OTHER</h1>
                     <div className='footer-services-list'>
                         <a href='/'>Home</a> <br />
-                        <a href='/featured'>Featured Projects</a><br />
+                        <a href='/locations'>Locations</a><br />
                         <a href='#'>Blog</a><br />
                         <a href='#'>Franchise</a><br />
                     </div>
