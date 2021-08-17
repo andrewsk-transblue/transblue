@@ -18,7 +18,7 @@ function Hospitality() {
     return(
         <div className='hospitality-wrapper container-fluid'>
             <div className='row'>
-                <div className='col-12 col-lg-6 pr-5 mt-3'>
+                <div className='col-12 col-lg-6 hospitality-text'>
                     <h6>NO MATTER THE PROJECT,</h6>
                     <h4 className='section-header hospitality-header'>
                         YOU CAN COUNT ON TRANSBLUE
