@@ -415,7 +415,7 @@
 
 @media only screen and (min-width: 992px) {
     .marriott-wrapper h4,
-    .marriott-wrapper p,
+    .marriott-wrapper p:not(.contact-modal-wrapper .section-p),
     .nextstep .section-header,
     .nextstep .section-p,
     .commercial-about h3,
