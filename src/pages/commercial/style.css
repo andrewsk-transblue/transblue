@@ -5,13 +5,6 @@
     width: 95%;
 }
 
-/* .about-slideshow {
-    animation: commSlide 40s linear infinite 0s;
-    animation-timing-function: ease-in-out;
-    background-image: url('../../images/commercial/commercial2.jpeg');
-    background-position: center center;
-    width: 100%;
-} */
 
 /* MARRIOTT CSS */
 .marriott-wrapper {
@@ -21,6 +14,26 @@
 .marriott-wrapper img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+/* HOSPITALITY CSS */
+.hospitality-wrapper {
+    width: 93%;
+    margin-bottom: 60px;
+}
+
+.hospitality-wrapper 
+.hospitality-subheader {
+  font-family: 'Raleway', sans-serif;
+  padding: 7px 0px 5px 0px;
+  letter-spacing: .07em;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 0px;
+}
+
+.hospitality-wrapper .check-icon {
+    width: 30px;
 }
 
 /* slideshow css */

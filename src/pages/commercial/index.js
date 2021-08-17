@@ -12,6 +12,7 @@ import Benefits from './benefits';
 // import Asphalt from './asphalt';
 import Impression from './impression';
 import Marriott from './marriott';
+import Hospitality from './hospitality';
 // import Refresh from './refresh';
 import Fade from 'react-reveal/Fade';
 //import NewReviews from '../../components/landing/newReviews/newReviews';
@@ -38,6 +39,7 @@ class Commercial extends Component {
                 <About />
                 <Impression />
                 <Marriott />
+                <Hospitality />
                 <Slideshow />
                 <Benefits />
                 <div className='mb-5 simple-process'>
