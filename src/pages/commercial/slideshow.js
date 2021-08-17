@@ -63,6 +63,7 @@ class Slideshow extends Component {
 
     decrement = () => {
         if(this.state.slideNo > 0) this.setState({slideNo: this.state.slideNo -1}, this.clearTimer)
+        else this.setState({slideNo: images.length-1})
     }
 
     render() {
