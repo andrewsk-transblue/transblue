@@ -91,10 +91,11 @@ function Footer(props) {
                     <button onClick={() => setDisplayServices(!displayServices)}>GENERAL SERVICES <i className="fas fa-angle-down"></i></button>
                     {displayServices && 
                         <div>
-                            <a href='/residential'>Residential</a><br />
-                            <a href='/commercial'>Commercial</a><br />
-                            <a href='/multifamily'>Multifamily</a><br />
-                            <a href='/government'>Government</a><br />
+                            <Link to='/residential'>Residential</Link><br />
+                            <Link to='/commercial'>Commercial</Link><br />
+                            <Link to='/multifamily'>Multifamily</Link><br />
+                            <Link to='/government'>Government</Link><br />
+                            <Link to='/featured'>Featured Projects</Link>
                             <hr />
                         </div>
                     }
@@ -123,7 +124,7 @@ function Footer(props) {
                     }
                     <div className='others'>
                         <div><a href='/'>HOME</a><br /></div>
-                        <div><a href='/featured'>FEATURED PROJECTS</a><br /></div>
+                        <div><a href='/locations'>LOCATIONS</a><br /></div>
                         <div><a href='/blog'>BLOG</a><br /></div>
                         <div><a href='/franchise'>FRANCHISE</a><br /></div>
                     </div>
