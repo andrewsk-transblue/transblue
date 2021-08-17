@@ -7,7 +7,7 @@ function Refresh() {
 
     return(
         <div className='container-fluid refresh' id='refresh'>
-        <h3>REFRESH YOUR COMMERCIAL BRAND</h3>
+        <h4 className='section-header'>REFRESH YOUR COMMERCIAL BRAND</h4>
         <hr className='mb-4' />
         <div className='row'>
             <div className='col-lg-4 col-md-6'>

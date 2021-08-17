@@ -229,34 +229,39 @@
 /* BENEFITS CSS */
 
 .commercial-benefits {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    width: 93%;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.commercial-benefits h4 {
+.commercial-benefits img {
+    width: 90%;
+}
+
+/* .commercial-benefits h4 {
     font-family: 'Raleway';
     color: #0b56a4;
     margin-bottom: 15px;
     font-size: 1.7vw;
-}
+} */
 
-.commercial-benefits p {
+/* .commercial-benefits p {
     line-height: 1.6em;
     font-family: 'Montserrat';
     font-weight: 400;
     letter-spacing: 1px;
-}
+} */
 
-.commercial-benefits img {
+/* .commercial-benefits img {
     width: 50px;
     margin-bottom: 25px;
-}
+} */
 
-.commercial-benefits a {
+/* .commercial-benefits a {
     margin: 0 auto;
     margin-top: 28px;
     text-decoration: none;
-}
+} */
 
 /* SIMPLE PROCESS CSS */
 .simple-process .container-fluid {

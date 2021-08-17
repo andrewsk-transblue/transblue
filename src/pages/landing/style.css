@@ -217,10 +217,12 @@
     padding: 3px 23px 3px 23px;
     text-decoration: none;
     font-size: .8em;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: black;
     border: 2px solid black;
+    letter-spacing: .0705em;
+
 }
 
 .mbridge a.mbridge-cta:hover {
@@ -231,7 +233,7 @@
 
 .stats a {
     text-decoration: none;
-    padding: 3px 23px 2px 23px
+    /* padding: 3px 23px 2px 23px */
 }
 
 .mbridge h6 {
