@@ -100,7 +100,7 @@ class Locations extends Component {
                         <span className='span-search'>
                             <AutoComplete
                                 // placeholder={this.state.placeholder}
-                                apiKey='AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4'
+                                apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => this.searchLocation(location.place_id)}
                             />
                             <select onChange={this.selectRadius} value={this.state.radius} className='ml-2 mr-1' name='radius' id='radius'>

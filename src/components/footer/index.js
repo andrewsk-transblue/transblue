@@ -72,7 +72,7 @@ function Footer(props) {
                     <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
                     <span>
                         <AutoComplete
-                            apiKey='AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4'
+                            apiKey={process.env.REACT_APP_GOOGLE_API}
                             onPlaceSelected={(location) => setLocation(location.place_id)}
                         />
                         <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
@@ -133,7 +133,7 @@ function Footer(props) {
                         <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
                         <span>
                             <AutoComplete
-                                apiKey='AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4'
+                                apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => setLocation(location.place_id)}
                             />
                             <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>

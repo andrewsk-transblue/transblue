@@ -42,7 +42,7 @@ class LocationsCta extends Component {
                             <div className='inline pl-2'>
                             <label htmlFor='zipcode'>FIND A LOCATION</label><br />
                                 <AutoComplete
-                                    apiKey='AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4'
+                                    apiKey={process.env.REACT_APP_GOOGLE_API}
                                     onPlaceSelected={(location) => this.setLocation(location.place_id)}
                                 />
                                 <a href={`/locations/${this.state.location}`}><button id='search'><i className="fas fa-search"></i></button></a>
