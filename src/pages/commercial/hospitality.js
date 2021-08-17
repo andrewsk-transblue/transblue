@@ -23,7 +23,7 @@ function Hospitality() {
                     <h4 className='section-header hospitality-header'>
                         YOU CAN COUNT ON TRANSBLUE
                     </h4>
-                    {/* <p className='section-p mb-1'>We're a one-stop shop for all your landscaping needs. Lorem ipsum dolor sit amet.</p> */}
+                    <p className='section-p mb-2'>We're a one-stop shop for all your landscaping needs.</p>
                     <p className='hospitality-subheader'>
                         <img src={check} className='check-icon' /> WE NEVER CUT CORNERS
                     </p>
