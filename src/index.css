@@ -21,7 +21,7 @@ code {
   text-align: center;
 }
 
-.header-text {
+/* .header-text {
   position: absolute;
   top: 50%;
   transform: translate(0%,-50%);
@@ -34,12 +34,31 @@ code {
   font-size: clamp(1.9em, 5vw, 7em);
   letter-spacing: 5px;
   margin-bottom: 0px;
-}
+} */
 
+.header-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  width: 100%;
+  text-align:center;
+  z-index: 50;
+  color: white;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 300;
+  font-size: clamp(1.65em, 4vw, 7em);
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+}
 .header-subtext {
-  font-size: .3em;
+  font-size: .5em;
   letter-spacing: 5px;
 }
+
+/* .header-subtext {
+  font-size: .3em;
+  letter-spacing: 5px;
+} */
 
 .cta {
   border: 2px solid #0b56a4;

@@ -26,7 +26,7 @@ function Multifamily() {
             </Helmet>
             <Navbar page='MULTIFAMILY' parentPage='gc' />
 
-            <Header img={header} title='Multifamily' subtitle='' />
+            <Header img={header} title='MULTIFAMILY' subtitle='' />
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='multifamily-body'>

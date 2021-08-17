@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
-import residential from '../../images/residential/backyard2.jpeg';
+// import Header from '../../components/header';
 import Footer from '../../components/footer/index';
 import Lifestyle from '../../components/residential/lifestyle/lifestyle';
 import Dees from '../../components/residential/dees/dees';
@@ -13,6 +13,7 @@ import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Design from '../../components/residential/design';
 import Rockstar from '../../components/residential/rockstar';
+import residential from '../../images/residential/backyard2.jpeg';
 
 import './style.css';
 
@@ -28,12 +29,13 @@ function Residential() {
                 <div className='overlay'></div>
                 <img src={residential} alt='residential header' ></img>
                 <div className='centered-text header-text'>
-                    Residential
+                    RESIDENTIAL
                     <div className='header-subtext'>
                         Make your backyard feel like home
                     </div>
                 </div>                
             </div>
+            {/* <Header img={residential} title='RESIDENTIAL' subtitle='Make your backyard feel like home' /> */}
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='residential-body'>
@@ -43,7 +45,6 @@ function Residential() {
                     </p>
                 </div>
                 <Quality />
-
                 <Lifestyle />
                 <UpgradeNew />
                 <Carousel />

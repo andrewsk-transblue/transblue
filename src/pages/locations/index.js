@@ -91,7 +91,7 @@ class Locations extends Component {
         return(
             <Fragment>
             <Navbar page='locations' />
-            <Header img={locationsHeader} title='Find A Location' subtitle='' />
+            <Header img={locationsHeader} title='FIND A LOCATION' subtitle='' />
 
                 <div className='map-container'>
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
