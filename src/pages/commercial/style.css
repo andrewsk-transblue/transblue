@@ -425,7 +425,9 @@
     .impression-wrapper .text {
         padding-left: 2rem;
     }
-
+    .marriott-wrapper a {
+        margin-left: 1rem;
+    }
     .snow img {
         padding-top: 0px !important;
     }

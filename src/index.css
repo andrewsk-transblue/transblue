@@ -60,7 +60,7 @@ code {
   letter-spacing: 5px;
 } */
 
-.cta {
+/* .cta {
   border: 2px solid #0b56a4;
   color: #0b56a4;
   padding: 5px 23px;
@@ -76,6 +76,43 @@ code {
   background-color: #0b56a4;
   color: white;
   transition: .5s;
+} */
+
+a.cta {
+  background-color: #0b56a4;
+  color: white !important;
+  padding: 6px 25px 4px 25px;
+  border: 2px solid #0b56a4;
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: .85em;
+  letter-spacing: .0705em;
+  font-weight: 500;
+}
+
+a.cta:hover {
+  background-color: white;
+  color: #0b56a4 !important;
+  border: 2px solid #0b56a4;
+  transition: .5s;
+}
+
+button.cta {
+  text-decoration: none !important;
+  border: 2px solid #0b56a4 !important;
+  color: #0b56a4 !important;
+  background-color: white !important;
+  font-size: .85em !important;
+  font-family: 'Muli', sans-serif !important;
+  letter-spacing: .07em !important;
+  padding: 4px 25px 2px 25px !important;
+  margin-left: 10px;
+}
+
+button.cta:hover {
+  background-color: #0b56a4 !important;
+  color: white !important;
+  transition: .5s !important;
 }
 
 /* .nav-component {
