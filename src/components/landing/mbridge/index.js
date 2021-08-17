@@ -40,21 +40,21 @@ function Mbridge() {
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={dawsonplace} alt='Dawson Place' />
                     <p className='text-secondary'>DAWSON PLACE</p>
-                    <h5>HEALING FOR CHILD ABUSE VICTIMS</h5>
+                    <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
                     <p className='section-p'>Dawson Place Child Advocacy Center is a safe place where abused kids and non-offending</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
-                    <h5>SOFT SLAVERY IN UGANDA</h5>
+                    <h6>SOFT SLAVERY IN UGANDA</h6>
                     <p className='section-p'>Dee's Hope is a nonprofit organization helping orphan girls in Uganda to have a better life by giving</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
-                    <h5>FIRE AND POLICE CHAPLAINCY</h5>
+                    <h6>FIRE AND POLICE CHAPLAINCY</h6>
                     <p className='section-p'>Chaplains are called when there is a natural disaster, structural or brush fire, serious accident</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>

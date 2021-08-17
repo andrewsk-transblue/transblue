@@ -234,11 +234,12 @@
     padding: 3px 23px 2px 23px
 }
 
-.mbridge h5 {
-    font-family: 'Raleway';
+.mbridge h6 {
     font-weight: 500;
-    margin: 15px 0px 15px 0px;
-    font-size: 1.15em;
+    font-family: 'Raleway';
+    font-size: 1.15rem;
+    color: rgb(59, 59, 59);
+    letter-spacing: .05em;
 }
 
 .mbridge p:first-of-type {
