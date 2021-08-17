@@ -6,6 +6,7 @@
 
 .contact-cta button#cta {
     position: fixed;
+    border-radius: 0px 0px 4px 4px;
     border: 0px;
     background-color: #ed6a22;
     /* background-color: #0b56a4; */
@@ -13,7 +14,6 @@
     font-family: 'Roboto';
     font-size: 1em;
     letter-spacing: .05em;
-    border-radius: 0px 0px 5px 5px;
     transform: rotate(90deg);
     height: 35px;
     right: -58px;
@@ -77,15 +77,16 @@
 }
 
 .contact-cta form button {
-    background-color: #0b56a4;
-    color: white;
+    background-color: #ed6a22;
+    color: white;   
     border: 0px;
-    padding: 5px 18px;
+    padding: 2px 20px 3px 20px;
     font-size: .85em;
 }
 
 .contact-cta form button:hover {
-    background-color: #1964b4;
+    background-color: #ff782f;
+    transition: .5s;
 }
 
 /* .form-header {

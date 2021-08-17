@@ -8,9 +8,9 @@
     margin: 0 auto;
 }
 
-button, .button, input[type="submit"], .a8c-posts-list__view-all, button[data-load-more-btn] {
+/* button, .button, input[type="submit"], .a8c-posts-list__view-all, button[data-load-more-btn] {
     border-radius: 0px !important;
-}
+} */
 
 .contact-modal-wrapper .modal-open .modal {
     height: 600px;
