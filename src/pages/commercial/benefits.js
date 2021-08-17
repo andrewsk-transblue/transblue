@@ -6,8 +6,13 @@ import './style.css';
 
 function Benefits() {
     return(
-        <div className='bg-light commercial-benefits'>
-            <div className='container'>
+        <div className='bg-light commercial-benefits container-fluid'>
+            <div className='row'>
+                <div className='col'>
+                    
+                </div>
+            </div>
+            {/* <div className='container'>
                 <div className='row  text-center'>
                     <div className='col col-lg-4'>
                         <img src={clock} alt='' />
@@ -28,7 +33,7 @@ function Benefits() {
                 <div className='row'>
                     <a className='cta' href='/locations'>FIND A LOCATION</a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
