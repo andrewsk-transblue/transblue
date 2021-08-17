@@ -100,7 +100,7 @@
 }
 
 .slideshow button {
-    z-index: 4000;
+    z-index: 1000;
     background-color: transparent;
     border: 0px;
 }
