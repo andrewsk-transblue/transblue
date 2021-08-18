@@ -2,22 +2,20 @@ import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
-import LocationsCta from '../../components/locationsCTA';
+//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import About from './about';
 import Slideshow from './slideshow';
 import Footer from '../../components/footer/index';
 import ServiceSlides from '../../components/commercial/serviceSlides/index';
 import Benefits from './benefits';
-// import Asphalt from './asphalt';
 import Impression from './impression';
 import Marriott from './marriott';
 import Hospitality from './hospitality';
+import Green from './green';
 // import Refresh from './refresh';
 import Fade from 'react-reveal/Fade';
-//import NewReviews from '../../components/landing/newReviews/newReviews';
 import headerBg from '../../images/commercial/header2.jpg';
-//import asphalt from '../../images/commercial/asphalt2.jpg';
 import simple from '../../images/commercial/simple3.jpg';
 import nextstep4 from '../../images/commercial/nextstep4.JPG';
 import snow from '../../images/commercial/snow.jpeg';
@@ -64,7 +62,6 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
-
                 <div className='nextstep container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6 order-lg-12'>
@@ -80,6 +77,7 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
+                <Green />
                 
                 {/* <Asphalt /> */}
 
