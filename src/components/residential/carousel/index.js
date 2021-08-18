@@ -20,40 +20,40 @@ let images = [concrete, fire, kitchen, patio, pool, pavers, deck, fence, turf, c
 let text = [
             {
                 title: 'CONCRETE',
-                body: 'Whether you need an elegant driveway or a sturdy concrete entertaining space we’ve got you covered. We offer remodeling and demolition as well as touch-ups and repair. We inspect and prep each and every site for proper drainage and water run-off so your concrete adapts to the elements of its surroundings.'
+                body: 'Whether you need an elegant driveway or a sturdy concrete entertaining space we’ve got you covered. We offer remodeling and demolition as well as touch-ups and repair.'
             },{
                 title: 'FIRE FEATURES',
-                body: "Have a warm and cozy evening by the fire with your family with Transblue’s Fire features! Our Fire Feature Products include Outdoor Fireplaces and Fire Pits made from your choice of material including Brick, Stone, River Rock and Concrete. "
+                body: "Have a warm and cozy evening by the fire with your family with Transblue’s Fire features!"
             },{
                 title: 'OUTDOOR KITCHENS',
-                body: 'Bring your cooking skills outside with outdoor kitchens. Cooking outside leads to fresh air, good smells and better tasting food.Outdoor kitchens can be incorporated into any outdoor project, resulting into the perfect entertaining space.'
+                body: 'Bring your cooking skills outside with outdoor kitchens. Cooking outside leads to fresh air, good smells and better tasting food.'
             }, {
                 title: 'COVERED PATIOS',
-                body: 'Don’t let the weather keep you from going outdoors! Shade structure for covered patios turn any outdoor living space into something you can enjoy during the spring, summer , fall and even winter!'
+                body: 'Don’t let the weather keep you from going outdoors! Shade structure for covered patios turn any outdoor living space into something you can enjoy all year round!'
             }, {
                 title: 'POOLS & SPAS',
-                body: 'A nice cool dip in the pool on a hot day sounds like a perfect way to spend the Summer. Purpose, type, space, and budget, and more should be considered before diving into an investment.'
+                body: 'A nice cool dip in the pool on a hot day sounds like a perfect way to spend the Summer.'
             },{
                 title: 'PAVERS',
-                body: 'Whether you’re dreaming of an intimate patio, a practical driveway or a luxurious outdoor living space we do it all! We offer traditional paver shapes and textures as well as unique extravangant options.'
+                body: 'Whether you’re dreaming of an intimate patio, a practical driveway or a luxurious outdoor living space we do it all!'
             },{
                 title: 'DECKS',
-                body: 'All decks and fences are framed with pressure treated materials. Also all deck framing is built with pressure treated lumber to insure long lasting quality. All fences posts and cross beams are built with pressure treated lumber as well'
+                body: 'All decks and fences are framed with pressure treated materials.'
             },{
                 title: 'FENCES',
-                body: 'All decks and fences are framed with pressure treated materials. Also all deck framing is built with pressure treated lumber to insure long lasting quality. All fences posts and cross beams are built with pressure treated lumber as well'
+                body: 'All decks and fences are framed with pressure treated materials.'
             },{
                 title: 'SYNTHETIC TURF',
-                body: 'Synthetic turf has come a long way, constantly improving to look more realistic and become a more ecofriendly alternative to living grass. At Transblue we are proud to offer the best synthetic turf innovation on the market. '
+                body: 'At Transblue we are proud to offer the best synthetic turf innovation on the market. '
             }, {
                 title: 'ATHLETIC COURTS',
-                body: 'R&R doesn’t just have to be all rest and relxation... Shooting some hoops and practicing your putting technique can be just as relaxing! From demolition to installation and design, we take care of it all'
+                body: 'R&R doesn’t just have to be all rest and relxation... Shooting some hoops and practicing your putting technique can be just as relaxing! '
             }, {
                 title: 'WATER FEATURES',
-                body: 'Who doesn’t want to swim or gather around a refreshing pool on a hot summer day? Swimming pools and spas are not only a great place to spend your summer days, they are also investments that add value to your life and home!'
+                body: 'Who doesn’t want to swim or gather around a refreshing pool on a hot summer day?'
             }, {
                 title: 'RETAINING WALLS',
-                body: 'Add some layers, stability and style to your slopes with retaining walls. No matter what style you need, Transblue’s retaining walls are designed to be both functional and beautiful, creating a harmonious, structured look that will keep your backyard safe and stable'
+                body: 'Add some layers, stability and style to your slopes with retaining walls. No matter what style you need, Transblue’s retaining walls are designed to be both functional and beautiful.'
             }
     ]
 
