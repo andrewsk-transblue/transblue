@@ -9,61 +9,42 @@ const geolib = require('geolib');
 
 
 function LocationList(props) {
+    const [isLoading, setIsLoading] = useState(true);
 
-    const [locations, setLocations] = useState([]);
-    const [noLocations, setNoLocations] = useState(false);
-    // const [easybaseData, seteasybaseData] = useState([]);
-    //const { db, e } = useEasybase();
+    const locations = props.locations;
+    const locationList = [];
 
-
-
-    // useEffect(() => {
-    //     const mounted = async() => {
-    //         const ebData = await db("LOCATIONS").return().all();
-    //         seteasybaseData(ebData);
-    //         // if(easybaseData.length > 0) getLocations()
-    //     }
-    //     mounted()
-    // }, [])
+    console.log(locations);
 
     useEffect(() => {
         getLocations()
     }, [props.radius, props.coords])
 
     function getLocations() {
-        //console.log(props.coords)
-        //console.log(easybaseData)
-        let locationList = [];
         let userLocation = {
             latitude: props.coords[0],
             longitude: props.coords[1]
         }
-        for(let i=0; i < locationsDb.length; i++) {
-
+        for(let i=0; i < locations.length; i++) {
             let franchiseLocation = {
-                latitude: locationsDb[i].lat,
-                longitude: locationsDb[i].lon
+                latitude: locations[i].lat,
+                longitude: locations[i].lon
             }
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
-            //console.log(distance)
             if(distance < props.radius) {
-                locationList.push(locationsDb[i])
-                //console.log(locationList)
-                //setNoLocations(false)
+                locationList.push(locations[i])
             }
         }
-
-        locationList.length > 0 ? setNoLocations(false) : setNoLocations(true)
-        setLocations(locationList)
+        console.log(locationList)
     }
 
     return(
         <div className='container-fluid location-list-container'>
-            {noLocations && <div className='no-locations'>
+            <div className='no-locations'>
                 NO LOCATIONS AVAILABLE <br />
                 <small>Please try different search criteria</small>
-            </div>}
-             {locations.map((location, index) => {
+            </div>
+             {locationList.map((location, index) => {
                 return(
                     <div className='row location' >
                         <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>

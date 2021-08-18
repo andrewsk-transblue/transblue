@@ -35,15 +35,28 @@ class Locations extends Component {
     }
 
     componentDidMount() {
-        //console.log(this.props)
+        console.log(this.props)
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
+
+        this.setState({
+            locations: this.props.locations
+        })
+        
+        
         //check params - if no params, check geolocation
-        if(this.props.match.params.zipcode !== undefined) {
-            this.searchLocation(this.props.match.params.zipcode)
-        }
-        else if ("geolocation" in navigator) {
+        // if(this.props.match.params.zipcode !== undefined && this.props.match !== undefined) {
+        //     this.searchLocation(this.props.match.params.zipcode)
+        // }
+        // else if ("geolocation" in navigator) {
+        //     navigator.geolocation.getCurrentPosition((position) => {
+        //         this.setState({center: [position.coords.latitude, position.coords.longitude]})
+        //         //this.setLocationList(position.coords.latitude, position.coords.longitude)
+        //       });
+        // }
+
+        if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
                 //this.setLocationList(position.coords.latitude, position.coords.longitude)
@@ -86,8 +99,8 @@ class Locations extends Component {
 
     render() {
         //console.log('rendering');
-        console.log(this.state.isLoading)
-        console.log(this.state.center)
+        //console.log(this.state.isLoading)
+        //console.log(this.state.center)
         return(
             <Fragment>
             <Navbar page='locations' />
@@ -114,7 +127,7 @@ class Locations extends Component {
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
-                                {this.state.center.length > 0 && <LocationList coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
+                                {this.state.center.length > 0 && <LocationList locations={this.state.locations} coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
                                 {/* {this.state.locationList.length > 0 && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />} */}
                             </div>
                         </div>

@@ -6,8 +6,7 @@ import {
 import { HelmetProvider } from 'react-helmet-async';
 import NewLanding from './pages/landing/newLanding';
 import './App.css';
-import { EasybaseProvider, useEasybase } from 'easybase-react';
-import ebconfig from './ebconfig';
+import { useEasybase } from 'easybase-react';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./pages/commercial/index'));
@@ -20,17 +19,19 @@ const Featured = lazy(() => import('./pages/featured'));
 const Form = lazy(() => import('./pages/addLocation/form'));
 
 function App() {
-//   const [easybaseData, seteasybaseData] = useState([]);
-//   const { db, e } = useEasybase();
-//   const mounted = async() => {
-//     const ebData = await db("LOCATIONS").return().all();
-//     seteasybaseData(ebData);
-//     //console.log(easybaseData)
-// }
+  console.log('rendering App.js')
+  const [easybaseData, seteasybaseData] = useState([]);
+  const { db, e } = useEasybase();
+  const mounted = async() => {
+    const ebData = await db("LOCATIONS").return().all();
+    seteasybaseData(ebData);
+    console.log(easybaseData)
+    //console.log(easybaseData)
+}
 
-//   useEffect(() => {
-//        mounted();
-//   }, [])
+  useEffect(() => {
+       mounted();
+  }, [])
 
   return (
       <HelmetProvider>
@@ -46,7 +47,10 @@ function App() {
             {/* <Route exact path='/locations/:state/:urlCity' component={Franchise} /> */}
             <Route exact path='/:name/subcontractor' component={Subcontractor} />
             <Route exact path='/locations/:zipcode' component={Locations} />
-            <Route exact path='/locations' component={Locations} />
+            {/* <Route exact path='/locations' component={Locations} /> */}
+            {easybaseData.length > 0 && <Route exact path='/locations'>
+              <Locations locations={easybaseData} />
+            </Route>}
             {/* <Route exact path='/blog' component={BlogContainer} /> */}
             {/* <Route exact path='/blog/:id' component={Blog} /> */}
             <Route exact path='/featured' component={Featured} />

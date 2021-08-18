@@ -115,14 +115,6 @@ button.cta:hover {
   transition: .5s !important;
 }
 
-/* .nav-component {
-  z-index: 5000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-} */
-
 .overlay {
   position: absolute;
   top: 0;

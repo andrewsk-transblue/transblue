@@ -30,7 +30,7 @@
     animation-timing-function: ease-in-out;
     background-image: url('../../images/landingHeader/fire-min.jpeg');
 }
-
+/* 
 #header-overlay {
     z-index: 2;
     width: 100%;
@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.644);
-}
+} */
 
 #header_slide,
 .header,

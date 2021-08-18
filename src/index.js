@@ -7,27 +7,19 @@ import { EasybaseProvider, useEasybase } from 'easybase-react';
 import ebconfig from './ebconfig';
 import reportWebVitals from './reportWebVitals';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   hydrate(
-  // <EasybaseProvider ebconfig={ebconfig}>
+  <EasybaseProvider ebconfig={ebconfig}>
     <App />
-  // </EasybaseProvider>
+  </EasybaseProvider>
   , rootElement);
 } else {
   render(  
-  // <EasybaseProvider ebconfig={ebconfig}>
+  <EasybaseProvider ebconfig={ebconfig}>
     <App />,
-  // </EasybaseProvider>, 
+  </EasybaseProvider>, 
   rootElement);
 }
 
