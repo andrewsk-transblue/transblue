@@ -33,20 +33,27 @@
 
 .header-title {
     z-index: 6;
-    width: 100%;
-    text-align: center;
     color: white;
-    letter-spacing: 5px;
-    font-size: clamp(1.9em, 5vw, 7em);
-    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    text-align:center;
+    font-family: 'Raleway', 'sans-serif';
     font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    font-size: clamp(1.65em, 4vw, 7em);
+    @supports not (font-size: clamp(2.2em, 5vw, 7em)) {
+        font-size: min(max(1.9em, 5vw), 7em); 
+      }
 }
 
-.header-title:after {
+/* .header-title:after {
     animation: headerText 40s infinite linear 0s;
     animation-timing-function: ease-in-out;
-    content: 'Luxury Exterior Design';
-}
+    content: 'LUXURY EXTERIOR DESIGN';
+} */
 
 #header-overlay {
     z-index: 2;
@@ -56,13 +63,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.644);
-}
-
-.header-title {
-    font-size: clamp(1.9em, 5vw, 7em);
-    @supports not (font-size: clamp(2.2em, 5vw, 7em)) {
-        font-size: min(max(1.9em, 5vw), 7em); 
-      }
 }
 
 #header_slide,
@@ -372,10 +372,10 @@
 
 @keyframes headerText {
     0% {
-        content: 'Luxury Exterior Design'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
     20% {
-        content: 'Luxury Exterior Design'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
     30% {
         content: 'Reliable Snow Removal'
@@ -390,10 +390,10 @@
         content: 'Beautiful Community Living'
     }
     80% {
-        content: 'Luxury Exterior Design'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
     100% {
-        content: 'Luxury Exterior Design'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
 }
 
