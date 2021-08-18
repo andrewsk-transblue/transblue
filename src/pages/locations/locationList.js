@@ -18,6 +18,13 @@ class LocationList extends Component {
         this.getLocationList()
     }
 
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        if (this.props !== prevProps) {
+          this.getLocationList()
+        }
+      }
+
     getLocationList = () => {
         let locationList = [];
         let userLocation = {
@@ -34,11 +41,12 @@ class LocationList extends Component {
                 locationList.push(this.props.locations[i])
             }
         }
+        console.log(locationList)
         this.setState({locationList: locationList})
     }
 
     render() {
-        console.log(this.props)
+        //console.log(this.props)
         return(
             <div className='container-fluid location-list-container'>
                 {this.state.locationList.length === 0 && <div className='no-locations'>
