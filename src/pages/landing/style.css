@@ -139,12 +139,15 @@
     background-color: rgba(0,0,0,.5);
 }
 
+.community-stats {
+    width: 80%;
+}
+
 .community-stats:after {
     font-size: 4.6vw;
     animation: textslide 40s infinite linear;
     content: '';
     animation-timing-function: ease-in-out;
-    width: 50%;
     z-index: 12;
     color: white;
     font-family: 'Montserrat', 'sans-serif';
@@ -159,13 +162,8 @@
     width: 100%;
 }
 
-.expand {
-    width: 20px;
-    height: 20px;
-}
-
 .mbridge a.mbridge-cta {
-    padding: 3px 23px 3px 23px;
+    padding: 2px 23px;
     text-decoration: none;
     font-size: .8em;
     font-family: 'Raleway', sans-serif;
@@ -201,6 +199,10 @@
     border: 0px;
     margin: 0 auto;
     color:rgb(71, 71, 71);
+}
+
+.mbridge h4 {
+    margin-bottom: 3.8vh;
 }
 
 .mission {
@@ -243,7 +245,7 @@
     background-color: rgb(71, 71, 71);
     width: 100%;
     height: 375px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 @keyframes textslide {
@@ -340,14 +342,14 @@
     .entry {
         padding: 0px 15%;
     }
-    .nepal .nepal-text {
-        padding-left: 30px;
-    }
     .video-wrapper .video-text {
         padding-left: 30px;
     }
     .reviews-title span {
         font-size: 3vw;
+    }
+    .community-stats {
+        width: 50%;
     }
 }
 

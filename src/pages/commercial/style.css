@@ -13,7 +13,7 @@
 }
 .marriott-wrapper img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* HOSPITALITY CSS */
@@ -97,7 +97,7 @@
     font-size: 3vw;
     font-size: 18px;
     font-size: clamp(18px, 3vw, 3vw);
-    width: 75%;
+    width: 60%;
     line-height: 1.8em;
 }
 
@@ -148,8 +148,8 @@
 /* NEXT STEP CSS */
 .nextstep {
     width: 95%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* GREEN SOLNS CSS */
@@ -194,8 +194,10 @@
     font-family: 'Raleway';
     /* font-weight: 400; */
     letter-spacing: 1.5px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 2.5vw;
+    font-size: 20px;
+    font-size: clamp(20px, 2.5vw, 30px);
 }
 
 .schedule a {
@@ -203,7 +205,6 @@
     border: 2px solid #0b56a4;
     color: white;
     text-decoration: none;
-    /* padding: 5px 15px 5px 15px; */
 }
 
 .schedule a:hover {
@@ -213,7 +214,6 @@
 }
 
 /* BENEFITS CSS */
-
 .commercial-benefits {
     width: 93%;
     padding-top: 80px;
@@ -413,6 +413,13 @@
     .hospitality-wrapper .hospitality-text {
         margin-top: 1rem;
         padding-right: 3rem;
+    }
+    .nextstep {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .schedule h1 {
+        margin-bottom: 25px;
     }
 }
 

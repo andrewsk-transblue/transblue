@@ -40,7 +40,7 @@ class Commercial extends Component {
                 <Hospitality />
                 <Slideshow />
                 <Benefits />
-                <div className='mb-5 simple-process'>
+                <div className='simple-process'>
                     <img src={simple} alt='Commercial Landscaping' />
                     <div className='overlay'></div>
                     <div className='container-fluid'>
@@ -64,16 +64,16 @@ class Commercial extends Component {
                 </div>
                 <div className='nextstep container-fluid'>
                     <div className='row'>
-                        <div className='col-lg-6 order-lg-12'>
+                        <div className='col-lg-6'>
+                            <img src={nextstep4} alt='Next Step Pregnancy' />
+                        </div>
+                        <div className='col-lg-6'>
                             <h4 className='section-header'>
                                 <p className='ml-0 mb-0 text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
                                 HELPING PREGNANT WOMEN IN NEED
                             </h4>
                             <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
                             <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are given free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
-                        </div>
-                        <div className='col-lg-6'>
-                            <img src={nextstep4} alt='Next Step Pregnancy' />
                         </div>
                     </div>
                 </div>
@@ -84,14 +84,14 @@ class Commercial extends Component {
                 <div className='container-fluid snow'>
                     <div className='row'>
                         <div className='col-lg-6'>
-                            <h4 className='section-header'>KEEP CUSTOMERS &amp; EMPLOYEES SAFE</h4>
-                            <p className='section-p pr-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus faucibus neque, sed sodales lectus blandit vel.</p>
-                            <p className='section-p pr-5 mt-3'>Aliquam at vestibulum metus. Vestibulum non est et risus ultrices malesuada sit amet id felis. Morbi aliquet, tortor quis consectetur.</p>
-                            <p className='section-p pr-5 mt-3'>Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt. </p>
-                            <a className='cta mt-3' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a>
+                            <img className='pt-4' src={snow} alt='Commercial Snow Removal'/>
                         </div>
                         <div className='col-lg-6'>
-                            <img className='pt-4' src={snow} alt='Commercial Snow Removal'/>
+                            <h4 className='section-header'>KEEP CUSTOMERS &amp; EMPLOYEES SAFE</h4>
+                            <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus faucibus neque, sed sodales lectus blandit vel.</p>
+                            <p className='section-p mt-3'>Aliquam at vestibulum metus. Vestibulum non est et risus ultrices malesuada sit amet id felis. Morbi aliquet, tortor quis consectetur.</p>
+                            <p className='section-p mt-3'>Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt. </p>
+                            <a className='cta mt-3' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a>
                         </div>
                     </div>
                 </div>
