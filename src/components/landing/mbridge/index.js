@@ -9,31 +9,29 @@ function Mbridge() {
     return(
         <Fragment>
             <div className='container-fluid stats'>
-            <div className='row'>
-                <div className='col-lg-6 pr-5 mx-auto'>
-                    <div className='col-lg-12 text-dark'>
-                        <small className='ml-0'>TRANSBLUE GIVES BACK</small>
-                        <h6>OUR COMMITMENT TO A BETTER COMMUNITY</h6>
-                        <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt. </p>
-                        <p className='section-p'>Aenean vestibulum lacinia eleifend. Nulla ipsum erat, interdum at viverra lobortis, luctus sit amet lectus.</p>
-                        <p className='section-p'>Nullam suscipit euismod elit, ut elementum est vehicula at. Curabitur lobortis diam aliquet, fermentum </p>
-                        <a href='/' className='cta'>LEARN MORE</a>
-                    </div>
+            <div className='row mx-0'>
+                <div className='col-lg-6 mbridge-text'>
+                    <small className='ml-0'>TRANSBLUE GIVES BACK</small>
+                    <h6>OUR COMMITMENT TO A BETTER COMMUNITY</h6>
+                    <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt. </p>
+                    <p className='section-p'>Aenean vestibulum lacinia eleifend. Nulla ipsum erat, interdum at viverra lobortis, luctus sit amet lectus.</p>
+                    <p className='section-p'>Nullam suscipit euismod elit, ut elementum est vehicula at. Curabitur lobortis diam aliquet, fermentum </p>
+                    <a href='/' className='cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-6'>
                     <div className='image-wrapper'>
                         <div className='overlay'></div>
                         <img src={charity}  alt='community'/>
-                        <div className='community-stats'></div>
+                        <div className='community-stats centered-text'></div>
                     </div>
                 </div>
             </div>
         </div>
         <div className='container-fluid mbridge'>
-            <div className='row mx-0 mb-3'>
+            <div className='row mx-0'>
                 <div className='col-lg-12'>
-                    <h4 className='section-header pb-2'>TRANSBLUE PARTNERS WITH mBRIDGE</h4>
-                    <hr />
+                    <h4 className='section-header'>TRANSBLUE PARTNERS WITH mBRIDGE</h4>
+                    {/* <hr /> */}
                 </div>
             </div>
             <div className='row mx-0'>
