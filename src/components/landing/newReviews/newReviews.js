@@ -79,7 +79,7 @@ class NewReviews extends Component {
                     </div>
                     <div className='col-lg-8 col-8 px-0 my-auto'>
                         <blockquote className='blockquote'>
-                            <p className='mb-2 mt-3 text-secondary'>{reviews[this.state.activeReview].review}</p>
+                            <p className='mb-2 text-secondary'>{reviews[this.state.activeReview].review}</p>
                             <footer className="blockquote-footer">{reviews[this.state.activeReview].name}, <cite title="Source Title">{reviews[this.state.activeReview].location}</cite></footer>
                         </blockquote>
                     </div>
