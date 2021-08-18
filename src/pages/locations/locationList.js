@@ -41,7 +41,7 @@ class LocationList extends Component {
                 locationList.push(this.props.locations[i])
             }
         }
-        console.log(locationList)
+        //console.log(locationList)
         this.setState({locationList: locationList})
     }
 
@@ -68,7 +68,7 @@ class LocationList extends Component {
                                         <i className="fas fa-envelope"></i>{location.email}<br /> 
                                     </div>                               
                                     <span>
-                                        <a href={`/locations/${location.state}/${location.urlCity}`} target='_blank' rel="noreferrer"><button>Website</button></a>
+                                        <a href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel="noreferrer"><button>Website</button></a>
                                         <button onClick={() => this.props.selectLocation(location.lat, location.lon)} id='view-location'>View On Map</button>
                                     </span><br />
                                 </div>

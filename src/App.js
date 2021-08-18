@@ -13,20 +13,18 @@ const Commercial = lazy(() => import ('./pages/commercial/index'));
 const Multifamily = lazy(() => import ('./pages/multifamily/index'));
 const Government = lazy(() => import ('./pages/government/index'));
 const Locations = lazy(() => import('./pages/locations/index'));
-// const Franchise = lazy(() => import('./pages/franchise/franchise'));
+const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/franchise/subcontractor'));
 const Featured = lazy(() => import('./pages/featured'));
 const Form = lazy(() => import('./pages/addLocation/form'));
 
 function App() {
-  console.log('rendering App.js')
+  //console.log('rendering App.js')
   const [easybaseData, seteasybaseData] = useState([]);
   const { db, e } = useEasybase();
   const mounted = async() => {
     const ebData = await db("LOCATIONS").return().all();
     seteasybaseData(ebData);
-    console.log(easybaseData)
-    //console.log(easybaseData)
 }
 
   useEffect(() => {
@@ -44,7 +42,7 @@ function App() {
             <Route exact path='/government' component={Government} />
             {/* <Route exact path='/featured' component={Projects} /> */}
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
-            {/* <Route exact path='/locations/:state/:urlCity' component={Franchise} /> */}
+            <Route exact path='/locations/:state/:urlCity' component={Franchise} />
             <Route exact path='/:name/subcontractor' component={Subcontractor} />
             <Route exact path='/locations/:zipcode' component={Locations} />
             {/* <Route exact path='/locations' component={Locations} /> */}
