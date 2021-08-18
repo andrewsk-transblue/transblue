@@ -139,6 +139,7 @@ button.cta:hover {
   color: #0b56a4;
   letter-spacing: .06em;
   line-height: 1.2em;
+  margin-top: 1rem;
 }
 
 .section-subheader {
@@ -164,9 +165,9 @@ button.cta:hover {
   .section-p {
     line-height: 1.4em;
   }
-  .section-header {
-    margin-top: 0px !important;
-  }
+  /* .section-header {
+    margin-top: 1rem !important;
+  } */
   .dees-container img {
     padding-left: 4rem;
   }
@@ -177,7 +178,7 @@ button.cta:hover {
     line-height: 1.6em;
   }
   .section-header {
-    margin-top: .9rem !important;
+    margin-top: 1rem !important;
   }
 }
 
