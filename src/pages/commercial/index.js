@@ -27,7 +27,7 @@ class Commercial extends Component {
         return(
             <Fragment>
                 <Helmet>
-                    <title>Transblue Commercial</title>
+                    <title>Transblue GC</title>
                     <meta name="description" content="Transblue Commercial Services" />
                 </Helmet>
                 <Navbar page='COMMERCIAL' parentPage='gc' />

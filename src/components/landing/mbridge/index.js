@@ -3,11 +3,30 @@ import dawsonplace from '../../../images/charities/dawsonplace2.png';
 import deeshope from '../../../images/charities/deeshope2.jpg';
 import charity from '../../../images/newLanding/charity.jpeg';
 import hope from '../../../images/charities/hope2.jpg';
+import card1 from '../../../images/newLanding/card1.png';
+import card2 from '../../../images/newLanding/card2.png';
+import card3 from '../../../images/newLanding/card3.png';
+import card4 from '../../../images/newLanding/card4.png';
+import card5 from '../../../images/newLanding/card5.png';
+import './style.css';
 
 function Mbridge() {
 
     return(
         <Fragment>
+            <div className='card-wrapper container-fluid'>
+                <div className='row'>
+                    <div className='col-12 col-lg-4'>
+                        <img src={card4} alt='' />
+                    </div>
+                    <div className='col-12 col-lg-4'>
+                        <img src={card3} alt='' />
+                    </div>
+                    <div className='col-12 col-lg-4'>
+                        <img src={card5} alt='' />
+                    </div>
+                </div>
+            </div>
             <div className='container-fluid stats'>
             <div className='row mx-0'>
                 <div className='col-lg-6 mbridge-text'>

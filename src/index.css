@@ -39,10 +39,11 @@ code {
 .header-text {
   position: absolute;
   top: 50%;
-  transform: translate(0%,-50%);
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align:center;
   z-index: 50;
+  width: 100%;
   color: white;
   font-family: 'Raleway', 'sans-serif';
   font-weight: 300;
@@ -158,9 +159,9 @@ button.cta:hover {
   .section-p {
     line-height: 1.4em;
   }
-  /* .section-header {
-    margin-top: 1rem !important;
-  } */
+  .section-header {
+    margin-top: 0rem !important;
+  }
   .dees-container img {
     padding-left: 4rem;
   }

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import './style.css';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/landing/header';
 import NewReviews from '../../components/landing/newReviews/newReviews';
@@ -13,11 +13,16 @@ import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
 import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
+import './style.css';
 
 function NewLanding() {
 
     return(
         <Fragment>
+            <Helmet>
+                <title>Transblue GC</title>
+                <meta name="description" content="Transblue Commercial Services" />
+            </Helmet>
             <Navbar page='HOME' />
             <Header />
             <ContactCta />
