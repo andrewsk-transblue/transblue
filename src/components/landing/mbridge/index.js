@@ -3,8 +3,6 @@ import dawsonplace from '../../../images/charities/dawsonplace2.png';
 import deeshope from '../../../images/charities/deeshope2.jpg';
 import charity from '../../../images/newLanding/charity.jpeg';
 import hope from '../../../images/charities/hope2.jpg';
-import card1 from '../../../images/newLanding/card1.png';
-import card2 from '../../../images/newLanding/card2.png';
 import card3 from '../../../images/newLanding/card3.png';
 import card4 from '../../../images/newLanding/card4.png';
 import card5 from '../../../images/newLanding/card5.png';

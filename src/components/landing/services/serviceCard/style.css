@@ -142,3 +142,9 @@
         font-size: 1.6em;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .description-text {
+        width: 90%;
+    }
+}
