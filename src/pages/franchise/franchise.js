@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
+import { Helmet } from 'react-helmet-async';
 import ServiceCard from './serviceCard';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
@@ -33,7 +34,13 @@ function Franchise(props) {
     }, [])
 
     return(
-        easybaseData.length > 0 && <div className='franchise-wrapper'>
+        easybaseData.length > 0 && 
+            <Fragment>
+            <Helmet>
+                <title>{easybaseData[0].name}</title>
+                <meta name="description" content="Transblue Government Services" />
+            </Helmet>
+            <div className='franchise-wrapper'>
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`}  />
                 <div className='franchise-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`} alt={easybaseData[0].city} />
@@ -51,27 +58,24 @@ function Franchise(props) {
                 <div className='random'>
                     <div className='overlay'></div>
                     <div className='container excellent-service centered-text'>
-                    <div className='row'>
-                        <div className='col-lg-4'>
-                            <i className="fas fa-seedling fa-2x"></i>
-                            <p>OUTSTANDING SERVICE</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
-                        </div>
-                        <div className='col-lg-4'>
-                            <i className="fas fa-seedling fa-2x"></i>
-                            <p>PROFESSIONAL WORK</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
-                        </div>
-                        <div className='col-lg-4'>
-                            <i className="fas fa-seedling fa-2x"></i>
-                            <p>GREAT COMMUNICATION</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
+                        <div className='row'>
+                            <div className='col-lg-4'>
+                                <i className="fas fa-seedling fa-2x"></i>
+                                <p>OUTSTANDING SERVICE</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
+                            </div>
+                            <div className='col-lg-4'>
+                                <i className="fas fa-seedling fa-2x"></i>
+                                <p>PROFESSIONAL WORK</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
+                            </div>
+                            <div className='col-lg-4'>
+                                <i className="fas fa-seedling fa-2x"></i>
+                                <p>GREAT COMMUNICATION</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
+                            </div>
                         </div>
                     </div>
-                    {/* <div className='row'>
-                        <span><i className="fas fa-circle"></i><i className="fas fa-circle"></i><i className="fas fa-circle"></i><i className="fas fa-circle"></i></span>
-                    </div> */}
-                </div>
                 </div>
 
                 <div className='franchise-services'>
@@ -114,6 +118,7 @@ function Franchise(props) {
                 </div>
                 <Footer locationPage={true} franchise={true} location={easybaseData[0]} />
             </div>
+            </Fragment>
     )
 
 }
