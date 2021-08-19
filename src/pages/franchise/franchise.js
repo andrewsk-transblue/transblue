@@ -11,7 +11,6 @@ import About from './about/about';
 import CityZip from './cityZip';
 import Contact from './contact';
 import MoreServices from './moreServices';
-import Whatwedo from './whatwedo';
 import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
 import NewReviews from '../../components/landing/newReviews/newReviews';
