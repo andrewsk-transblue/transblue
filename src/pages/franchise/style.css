@@ -427,3 +427,7 @@
     letter-spacing: .05em;
     margin: 20px 0px;
 }
+
+.franchise-lifestyle-wrapper button.cta {
+    margin-left: 0px;
+}
