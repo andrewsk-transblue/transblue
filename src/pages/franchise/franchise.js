@@ -12,6 +12,7 @@ import CityZip from './cityZip';
 import Contact from './contact';
 import MoreServices from './moreServices';
 import Whatwedo from './whatwedo';
+import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 //import locationsDb from '../locations/db';
@@ -65,21 +66,21 @@ function Franchise(props) {
 
                 <div className='random'>
                     <div className='overlay'></div>
-                    <div className='container excellent-service'>
+                    <div className='container excellent-service centered-text'>
                     <div className='row'>
                         <div className='col-lg-4'>
                             <i className="fas fa-seedling fa-2x"></i>
-                            <p>Outstanding Service</p>
+                            <p>OUTSTANDING SERVICE</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
                         </div>
                         <div className='col-lg-4'>
                             <i className="fas fa-seedling fa-2x"></i>
-                            <p>Professional Work</p>
+                            <p>PROFESSIONAL WORK</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
                         </div>
                         <div className='col-lg-4'>
                             <i className="fas fa-seedling fa-2x"></i>
-                            <p>Excellent Communication</p>
+                            <p>GREAT COMMUNICATION</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
                         </div>
                     </div>
@@ -89,7 +90,8 @@ function Franchise(props) {
                 </div>
                 </div>
 
-                <Whatwedo />
+                {/* <Whatwedo /> */}
+                <FranchiseLifestyle />
                 
                 <NewReviews />
                 <div className='map bg-light'>
