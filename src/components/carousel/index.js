@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <img 
-        className={`${className} arrow`}
+        className={`${className} arrow left`}
         src={forward}
         onClick={onClick}
         />
@@ -73,7 +73,7 @@ function Carousel() {
       };
 
       return(
-        <div className='slider container-fluid'>
+        <div className='slider-container container-fluid'>
             <h4 className='section-header mb-4'>WE OFFER A VARIETY OF SERVICES TO FIT YOUR NEEDS</h4>
             <Slider {...settings}>
                 <div>

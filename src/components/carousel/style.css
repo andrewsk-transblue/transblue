@@ -1,8 +1,8 @@
-.slider {
-    width: 95%;
+.slider-container {
+    width: 93%;
+    margin-top: 80px;
 }
-
-.slider p:first-of-type {
+.slider-container p:first-of-type {
     font-size: 18px;
     font-family: 'Raleway';
     letter-spacing: .06em;
@@ -10,11 +10,25 @@
     margin-bottom: .5rem;;
 }
 
-.slider p {
+.slider-container p {
     padding-right: 15px;
 }
 
-.slider .arrow {
-    width: 30px;
-    height: 30px;
+.slider-container .arrow {
+    width: 40px;
+    height: 40px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.slider-container img:not(.arrow) {
+    width: 95%;
+}
+
+img.slick-arrow.slick-prev {
+    margin-left: -20px;
+}
+
+img.slick-arrow.slick-next {
+    margin-right: -10px;
 }

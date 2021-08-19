@@ -97,7 +97,7 @@ class Commercial extends Component {
                     </div>
                 </div>
 
-                <ServiceSlides />
+                {/* <ServiceSlides /> */}
 
                 <Carousel />
 
