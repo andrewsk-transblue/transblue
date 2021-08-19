@@ -49,43 +49,15 @@
     left: 0;
 }
 
-.franchise-header-text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    z-index: 30;
-    text-align: center;
-}
-
-.franchise-header-text p:first-of-type {
-    font-size: 4em;
-    font-family: 'Raleway', 'sans-serif';
-    letter-spacing: 4px;
-}
-
-.franchise-header-text p:nth-of-type(2) {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 1.2em;
-}
-
 .random {
     height: 550px;
     position: relative;
 }
 
-.franchise-header .franchise-overlay {
-    height: 100%;
-    z-index: 5;
-    background-color: rgba(0,0,0,0.6)
-}
-
 .random .overlay {
     height: 100%;
     z-index: 5;
-    background-color: rgba(0,0,0,0.75)
+    background-color: rgba(0,0,0,0.5)
 }
 
 .franchise-services {
@@ -422,15 +394,21 @@
 
 .contact input.submit {
     margin-top: 10px;
+    font-family: 'Raleway';
+    border-radius: 0px !important;
     /* background-color:navy; */
     background-color: #0b56a4;
     color: white;
-    border: 0px;
-    padding: 5px 10px 5px 10px;
+    border: 2px solid #0b56a4 !important;
+    padding: 3px 18px 2px 18px;
+    font-size: .85em;
 }
 
 .contact input.submit:hover {
-    background-color: rgb(0, 0, 197);
+    border: 2px solid #0b56a4 !important;
+    background-color: white;
+    color: #0b56a4;
+    transition: .5s;
 }
 
 .city-list {

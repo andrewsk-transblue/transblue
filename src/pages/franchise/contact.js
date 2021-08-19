@@ -58,7 +58,7 @@ class Contact extends Component {
 
             <div className='col-lg-12 contact p-3'>
                 <h1  className='text-center w-responsive pt-2 pb-0'>Contact Us</h1>
-                <p className='text-center w-responsive pb-3 mb-3'>Do you have any questions? Please do not hesitate to contact us directly.</p>
+                <p className='text-center w-responsive pb-3 mb-3'>Have any questions? Feel free to contact us directly!</p>
                 
                 <div className='row'>
                     <div className='col-lg-9'>

@@ -26,7 +26,7 @@ function Franchise(props) {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
             //console.log(ebData)
-            console.log(easybaseData[0])
+            //console.log(easybaseData[0])
             //easybaseData[0].locations
         }
          mounted();
@@ -37,11 +37,11 @@ function Franchise(props) {
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`}  />
                 <div className='franchise-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`} alt={easybaseData[0].city} />
-                    <div className='franchise-header-text'>
-                        <p>{easybaseData[0].name}</p>
-                        <p>Serving {easybaseData[0].city}, {easybaseData[0].state} and surrounding areas</p>
+                    <div className='header-text'>
+                        <p>{easybaseData[0].name.toUpperCase()}</p>
+                        <p className='header-subtext'>Serving {easybaseData[0].city}, {easybaseData[0].state} and surrounding areas</p>
                     </div>
-                    <div className='franchise-overlay'></div>
+                    <div className='overlay'></div>
                 </div>
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
