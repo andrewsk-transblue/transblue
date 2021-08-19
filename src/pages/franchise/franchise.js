@@ -1,7 +1,8 @@
 import React, {Fragment, useEffect, useState} from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
-import { Helmet } from 'react-helmet-async';
+import Header from '../../components/header';
 import ServiceCard from './serviceCard';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
@@ -42,14 +43,19 @@ function Franchise(props) {
             </Helmet>
             <div className='franchise-wrapper'>
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`}  />
-                <div className='franchise-header'>
+                <Header
+                    img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
+                    title={easybaseData[0].name.toUpperCase()}
+                    subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
+                />
+                {/* <div className='franchise-header'>
                     <img src={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`} alt={easybaseData[0].city} />
                     <div className='header-text'>
                         <p>{easybaseData[0].name.toUpperCase()}</p>
                         <p className='header-subtext'>Serving {easybaseData[0].city}, {easybaseData[0].state} and surrounding areas</p>
                     </div>
                     <div className='overlay'></div>
-                </div>
+                </div> */}
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
