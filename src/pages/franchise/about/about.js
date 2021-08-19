@@ -28,11 +28,11 @@ function About(props) {
             <div className='row'>
                 <div className='col-lg-6'>
                     <h1>A LANDSCAPING COMPANY<br /> YOU CAN TRUST</h1>
-                    <div className='franchise-email ml-0'><i className="fas fa-envelope"></i> {props.email}</div>
+                    <a href='mailto:incomingleads@transblue.org'><div className='franchise-email'><i className="fas fa-envelope"></i> {props.email}</div></a>
                     <a href={`tel:+${tel}`}><div className='franchise-phone'><i className="fas fa-phone"></i>  {props.phone}</div></a>
                 </div>
                 <div className='col-lg-6'>
-                    <p className='text-secondary'>Donec non neque imperdiet, pretium ex ut, tristique mi. Suspendisse sed tellus a ipsum viverra pharetra pharetra nec quam. Duis quis consequat justo, vel vulputate nulla. Vivamus sit amet viverra risus. Pellentesque maximus ac mi in efficitur. Sed vitae congue ex. Ut in ultricies elit. Phasellus et tincidunt lacus, aliquam lacinia ex. Nunc accumsan aliquam blandit.</p>
+                    <p className='section-p'>Donec non neque imperdiet, pretium ex ut, tristique mi. Suspendisse sed tellus a ipsum viverra pharetra pharetra nec quam. Duis quis consequat justo, vel vulputate nulla. Vivamus sit amet viverra risus. Pellentesque maximus ac mi in efficitur. Sed vitae congue ex. Ut in ultricies elit. Phasellus et tincidunt lacus, aliquam lacinia ex. Nunc accumsan aliquam blandit.</p>
                 </div>
             </div>
         </div>
