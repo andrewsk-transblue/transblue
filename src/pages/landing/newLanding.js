@@ -13,6 +13,7 @@ import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
 import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
+import banner from '../../images/newLanding/banner.png';
 import './style.css';
 
 function NewLanding() {
@@ -28,13 +29,12 @@ function NewLanding() {
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='landing-body'>
-                <div className='container-fluid who-is-tb text-center'>
-                    <div className='row'>
+                <div className='container-fluid w-100 who-is-tb text-center'>
+                    {/* <div className='row'>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
                             <small>TRANSBLUE IS</small>
                             <p>QUALITY OF LIFE</p>
                             <span className='ellipsis'></span>
-                            {/* <hr /> */}
                             <p>Landscapes aren't just backyards. They are birthday parties, holidays, celebrations with family and friends</p>
                         </div>
                         <div className='col-lg-3 col-md-12 col-sm-12 col-lg-3 entry'>
@@ -52,7 +52,8 @@ function NewLanding() {
                             <p>PAVING SERVICES</p>
                             <p>Paving services that enhance your curb appeal and increase the value of your investment</p>
                         </div>
-                    </div>
+                    </div> */}
+                    <img src={banner} alt='' />
                 </div>
 
                 <Mbridge />

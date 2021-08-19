@@ -55,7 +55,8 @@
 .who-is-tb {
     font-family: 'Roboto';
     color: rgb(192, 192, 192);
-    padding: 40px 30px 40px 30px;
+    /* padding: 40px 30px 40px 30px; */
+    padding: 0px;
     background-color: rgb(37, 37, 37);
     margin-bottom: 30px;
 }
@@ -95,6 +96,10 @@
     letter-spacing: .07em;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.who-is-tb img {
+    width: 100%;
 }
 
 .entry {
