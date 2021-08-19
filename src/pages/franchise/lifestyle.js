@@ -5,8 +5,7 @@ import luxury from '../../images/franchise/luxury.jpg';
 import commercial from '../../images/franchise/commercial.jpg';
 import './style.css';
 
-function FranchiseLifestyle() {
-
+function FranchiseLifestyle(props) {
     return(
         <div className='franchise-lifestyle-wrapper'>
             <div className=' container-fluid'>
@@ -14,17 +13,20 @@ function FranchiseLifestyle() {
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={residential} alt='' />
                         <h6>CREATE THE PERFECT OUTDOOR LIVING SPACE</h6>
-                        <ContactModal text='GET STARTED' />
+                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={luxury} alt='' />
                         <h6>BEAUTIFY YOUR MULTIFAMILY RESIDENCE</h6>
-                        <ContactModal text='GET STARTED' />
+                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={commercial} alt='' />
                         <h6>BEAUTIFY YOUR COMMERCIAL BUSINESS</h6>
-                        <ContactModal text='GET STARTED' />
+                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                 </div>
             </div>

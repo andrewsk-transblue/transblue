@@ -47,7 +47,7 @@ function Franchise(props) {
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
-                <FranchiseLifestyle />
+                <FranchiseLifestyle location={easybaseData[0]} />
 
                 <div className='random'>
                     <div className='overlay'></div>

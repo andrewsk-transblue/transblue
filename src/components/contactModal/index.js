@@ -56,7 +56,7 @@ class ContactModal extends Component {
                             </button>
                             <form className='contact-form container-fluid' onSubmit={this.onSubmit}>
                                 <div className='row'>
-                                    <h3>TRANSBLUE GENERAL CONTRACTING</h3>
+                                    <h3>{this.props.location !== undefined ? `${this.props.location.name.toUpperCase()}` : 'TRANSBLUE GENERAL CONTRACTING'}</h3>
                                     <p className='section-p'>Transblue is a leading provider of construction management services specializing in Multifamily, Residential and Commercial Properties. Expect unmatched efficiency and expertise for all property installations</p>
                                     <p className='section-p'>Transblue will help your property meet the requirements for an eco-friendly tomorrow.</p>
                                 </div>

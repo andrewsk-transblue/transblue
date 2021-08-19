@@ -82,6 +82,10 @@
     padding-top: 60px;
 }
 
+.about p:first-of-type {
+    margin-bottom: 0px;
+}
+
 .service-card {
     position: relative;
     width: 100%;
@@ -425,7 +429,7 @@
     font-size: 1.15rem;
     color: rgb(59, 59, 59);
     letter-spacing: .05em;
-    margin: 20px 0px;
+    margin: 30px 0px 15px 0px;
 }
 
 .franchise-lifestyle-wrapper button.cta {
