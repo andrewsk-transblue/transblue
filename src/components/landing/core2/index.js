@@ -6,7 +6,7 @@ import './style.css';
 
 function Core2() {
     return(
-        <div className='core2-wrapper container-fluid'>
+        <div className='core2-wrapper container-fluid d-lg-none'>
             <div className='row'>
                 <div className='col-lg-6'>
                     <div className='row'>

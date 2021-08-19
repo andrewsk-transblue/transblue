@@ -4,7 +4,7 @@ import './style.css';
 
 function Core() {
     return(
-        <div className='core-wrapper container-fluid'>
+        <div className='core-wrapper container-fluid d-none d-lg-block'>
             <div className='row'>
                 <div className='col-12 col-md-6 col-lg-5 text-center'>
                     <img src={core} alt='Core Values' />

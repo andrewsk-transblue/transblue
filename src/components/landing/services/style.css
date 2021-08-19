@@ -7,8 +7,9 @@
 
 .services-container h3 {
     font-size: 2em;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 .services-container hr {

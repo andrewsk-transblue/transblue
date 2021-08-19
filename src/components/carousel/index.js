@@ -74,7 +74,7 @@ function Carousel() {
 
       return(
         <div className='slider-container container-fluid'>
-            <h4 className='section-header mb-4'>WE OFFER A VARIETY OF SERVICES TO FIT YOUR NEEDS</h4>
+            <h4 className='section-header'>WE OFFER A VARIETY OF SERVICES TO FIT YOUR NEEDS</h4>
             <Slider {...settings}>
                 <div>
                     <img src={snow} alt='Government Asphalt' />

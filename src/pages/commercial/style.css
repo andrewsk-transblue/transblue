@@ -41,7 +41,11 @@
   letter-spacing: .07em;
   font-weight: 500;
   font-size: 1.1em;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
+}
+
+.hospitality-subheader {
+    margin-bottom: 0px;
 }
 
 .hospitality-wrapper img {
@@ -153,19 +157,13 @@
 }
 
 /* GREEN SOLNS CSS */
-
-/* .green-solns p:first-of-type {
-    margin: 15px 0px 15px 0px;
-    font-size: 1.1em;
-} */
-
 .green-solns {
     width: 93%;
     margin-bottom: 80px;
 }
 
 .green-solns .hospitality-subheader {
-    margin: 10px 0px;
+    margin: 18px 0px 16px 0px;
 }
 
 /* SNOW CSS */
@@ -450,6 +448,11 @@
     }
     .impression-wrapper p {
         font-size: 1.2em;
+    }
+
+    .refresh hr,
+    .green-solns hr {
+        margin-bottom: 40px !important;
     }
     /* .marriott-wrapper h4.section-header {
         margin-top: 0px !important;

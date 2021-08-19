@@ -1,9 +1,27 @@
 .core2-wrapper {
-    width: 93%;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    width: 90% !important;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .core2-wrapper img {
     width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+    .core2-wrapper {
+        width: 80% !important;
+    }
+    .core2-wrapper img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    .core2-wrapper {
+        width: 70% !important;
+    }
+    .core2-wrapper img {
+        width: 80%;
+    }
 }
