@@ -181,6 +181,27 @@
     text-decoration: none;
 }
 
+.govt-slider .slick-next::before,
+.govt-slider .slick-prev::before {
+    color: black;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.slider img,
+.slider p {
+    width: 95%;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 93%;
+}
+
 /* SCHEDULE CSS */
 .schedule {
     background-color: #eeeeee;

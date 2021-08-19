@@ -13,6 +13,7 @@ import Impression from './impression';
 import Marriott from './marriott';
 import Hospitality from './hospitality';
 import Green from './green';
+import Carousel from '../../components/carousel';
 // import Refresh from './refresh';
 import Fade from 'react-reveal/Fade';
 import headerBg from '../../images/commercial/header2.jpg';
@@ -27,7 +28,7 @@ class Commercial extends Component {
         return(
             <Fragment>
                 <Helmet>
-                    <title>Transblue GC</title>
+                    <title>Transblue Commercial</title>
                     <meta name="description" content="Transblue Commercial Services" />
                 </Helmet>
                 <Navbar page='COMMERCIAL' parentPage='gc' />
@@ -97,6 +98,8 @@ class Commercial extends Component {
                 </div>
 
                 <ServiceSlides />
+
+                <Carousel />
 
                 <div className='schedule text-center'>
                     <h1>SCHEDULE A FREE CONSULTATION TODAY!</h1>
