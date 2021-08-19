@@ -4,7 +4,7 @@ function ServiceCard(props) {
     return(
         <div className='service-card'>
             <img src={props.image} alt='Service Card' />
-            <h4>{props.service}</h4>
+            <h5>{props.service}</h5>
         </div>
     )
 }

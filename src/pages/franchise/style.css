@@ -94,7 +94,7 @@
     height: 100%;
 }
 
-.service-card h4 {
+.service-card h5 {
     background-color: rgba(0,0,0,0.6);
     color: white;
     text-align: center;
@@ -103,8 +103,9 @@
     left: 0;
     width: 100%;
     z-index: 2;
-    font-family: 'Montserrat';
-    padding: 5px 0px 5px 0px;
+    font-family: 'Raleway';
+    padding: 6px 0px;
+    letter-spacing: .05em;
 }
 
 .more-services {
