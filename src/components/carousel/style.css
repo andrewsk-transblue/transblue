@@ -1,3 +1,7 @@
+.slider {
+    width: 95%;
+}
+
 .slider p:first-of-type {
     font-size: 18px;
     font-family: 'Raleway';
@@ -8,4 +12,9 @@
 
 .slider p {
     padding-right: 15px;
+}
+
+.slider .arrow {
+    width: 30px;
+    height: 30px;
 }

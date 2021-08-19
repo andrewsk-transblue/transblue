@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
+import forward from '../../images/forward50.png';
+import back from '../../images/back50.png';
 import snow from '../../images/commercial/services/snow.jpg';
 import asphalt from '../../images/commercial/services/asphalt.jpg';
 import ev from '../../images/commercial/services/ev.jpg';
@@ -7,6 +9,28 @@ import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import concrete from '../../images/commercial/services/concrete2.jpg';
 import './style.css';
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <img 
+        className={`${className} arrow`}
+        src={forward}
+        onClick={onClick}
+        />
+    );
+  }
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <img 
+        className={`${className} arrow`}
+        src={back}
+        onClick={onClick}
+        />
+    );
+  }
 
 function Carousel() {
     const settings = {
@@ -18,6 +42,8 @@ function Carousel() {
         slidesToScroll: 4,
         initialSlide: 0,
         className: 'govt-slider',
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         responsive: [
           {
             breakpoint: 1024,
