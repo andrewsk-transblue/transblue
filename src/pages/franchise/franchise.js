@@ -48,14 +48,6 @@ function Franchise(props) {
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
                 />
-                {/* <div className='franchise-header'>
-                    <img src={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`} alt={easybaseData[0].city} />
-                    <div className='header-text'>
-                        <p>{easybaseData[0].name.toUpperCase()}</p>
-                        <p className='header-subtext'>Serving {easybaseData[0].city}, {easybaseData[0].state} and surrounding areas</p>
-                    </div>
-                    <div className='overlay'></div>
-                </div> */}
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
