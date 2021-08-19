@@ -2,10 +2,10 @@ import React, {Fragment, useEffect, useState} from 'react';
 import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import ServiceCard from './serviceCard';
-import pools from '../../images/franchise/pools.jpeg';
-import decks from '../../images/franchise/decks.jpeg';
+import pools from '../../images/franchise/pools.jpg';
+import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
-import sunroom from '../../images/franchise/sunroom.jpeg';
+import sunroom from '../../images/franchise/sunroom.jpg';
 import Map from './map';
 import About from './about/about';
 import CityZip from './cityZip';
@@ -54,10 +54,10 @@ function Franchise(props) {
                         </div> */}
 
                         <div className='row'>
-                            <div className='col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
                         </div>
                         <MoreServices />
                     </div>
