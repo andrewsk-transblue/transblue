@@ -53,27 +53,32 @@ function Carousel() {
                 <div>
                     <img src={snow} alt='Government Asphalt' />
                     <p>SNOW &amp; ICE</p>
-                    {/* <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p> */}
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
                 <div>
                     <img src={asphalt} alt='Government Asphalt' />
                     <p>ASPHALT</p>
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
                 <div>
                     <img src={ev} alt='Government Paint' />
                     <p>GREEN SERVICES</p>
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
                 <div>
                     <img src={concrete} alt='Government Roof' />
                     <p>CONCRETE</p>
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
                 <div>
                     <img src={concreteCropped} alt='Government Siding' />
                     <p>ALL NEW SIDING</p>
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
                 <div>
                     <img src={asphaltCropped} alt='Government Siding' />
                     <p>SLOPE CREEP</p>
+                    <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu.</p>
                 </div>
             </Slider>
         </div>

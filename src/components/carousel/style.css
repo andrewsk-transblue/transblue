@@ -1,6 +1,11 @@
-.slider p {
+.slider p:first-of-type {
     font-size: 18px;
     font-family: 'Raleway';
     letter-spacing: .06em;
     margin-top: .7rem;
+    margin-bottom: .5rem;;
+}
+
+.slider p {
+    padding-right: 15px;
 }
