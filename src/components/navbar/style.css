@@ -14,10 +14,21 @@ nav.navbar {
 }
 
 nav .navbar-nav li a,
-nav button {
+nav button,
+nav .franchise-contact,
+nav .franchise-contact a {
     color: white !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    text-decoration: none;
+}
+
+nav .franchise-contact i {
+    margin-right: 7px;
+}
+
+nav .franchise-contact i.fa-phone {
+    margin-left: 20px;
 }
 
 nav button {

@@ -6,11 +6,12 @@ import './style.css';
 class Navbar extends Component {
     state={
         bgColor: 'transparent',
-        logo: true
         // scrollHeight: 300
     }
 
     componentDidMount() {
+        let tel;
+        this.props.franchise === true ? tel = this.props.phone.replace(/[^A-Z0-9]/ig, "") : tel = '';
         // if(window.innerWidth < 992) this.setState({scrollHeight: 0})
         // this.props.page === 'CONTACT' ? this.setState({bgColor: 'black'}) :
         document.addEventListener('scroll', () => {
@@ -20,7 +21,8 @@ class Navbar extends Component {
             let displayPage = window.scrollY >300 ? true : false;
             this.setState({
                 bgColor: bgColor,
-                displayPage: displayPage
+                displayPage: displayPage,
+                tel: tel
             })
         })
     }
@@ -28,8 +30,9 @@ class Navbar extends Component {
     render() {
         return(
             <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ml-auto`}  >
-                {this.state.logo && <a className="navbar-brand" href="/"><img src={logo} id='logo' alt='Transblue Logo'></img></a>}
+                <a className="navbar-brand" href="/"><img src={logo} id='logo' alt='Transblue Logo'></img></a>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
+                {this.props.franchise && <div className='franchise-contact'><i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a></div>}
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

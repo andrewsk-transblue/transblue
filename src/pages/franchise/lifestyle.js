@@ -13,19 +13,19 @@ function FranchiseLifestyle(props) {
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={residential} alt='' />
                         <h6>CREATE THE PERFECT OUTDOOR LIVING SPACE</h6>
-                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p> */}
                         <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={luxury} alt='' />
                         <h6>BEAUTIFY YOUR MULTIFAMILY RESIDENCE</h6>
-                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p> */}
                         <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                     <div className='col-12 col-md-6 col-lg-4'>
                         <img src={commercial} alt='' />
                         <h6>BEAUTIFY YOUR COMMERCIAL BUSINESS</h6>
-                        <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p>
+                        {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit.</p> */}
                         <ContactModal text='GET STARTED' location={props.location} />
                     </div>
                 </div>
