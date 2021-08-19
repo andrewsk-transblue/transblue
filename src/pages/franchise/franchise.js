@@ -47,22 +47,7 @@ function Franchise(props) {
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
-                <div className='franchise-services'>
-                    <div className='container-fluid'>
-                        {/* <div className='about'>
-                            <h4>{easybaseData[0].name}</h4>
-                            <About phone={easybaseData[0].phone} email={easybaseData[0].email} />
-                        </div> */}
-
-                        <div className='row'>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
-                        </div>
-                        <MoreServices />
-                    </div>
-                </div>
+                <FranchiseLifestyle />
 
                 <div className='random'>
                     <div className='overlay'></div>
@@ -90,9 +75,25 @@ function Franchise(props) {
                 </div>
                 </div>
 
+                <div className='franchise-services'>
+                    <div className='container-fluid'>
+                        {/* <div className='about'>
+                            <h4>{easybaseData[0].name}</h4>
+                            <About phone={easybaseData[0].phone} email={easybaseData[0].email} />
+                        </div> */}
+
+                        <div className='row'>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                        </div>
+                        <MoreServices />
+                    </div>
+                </div>
+
                 {/* <Whatwedo /> */}
-                <FranchiseLifestyle />
-                
+
                 <NewReviews />
                 <div className='map bg-light'>
                     <div className='container'>
