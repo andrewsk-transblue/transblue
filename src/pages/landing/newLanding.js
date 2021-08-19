@@ -14,6 +14,7 @@ import Core2 from '../../components/landing/core2';
 import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import banner from '../../images/newLanding/banner.png';
+import banner2 from '../../images/newLanding/banner2.png';
 import './style.css';
 
 function NewLanding() {
@@ -53,11 +54,10 @@ function NewLanding() {
                             <p>Paving services that enhance your curb appeal and increase the value of your investment</p>
                         </div>
                     </div> */}
-                    <img src={banner} alt='' />
+                    <img src={banner2} alt='' />
                 </div>
 
                 <Mbridge />
-                {/* <Nepal /> */}
                 
                 <div className='container-fluid video-wrapper'>
                     <div className='row mx-0'>
