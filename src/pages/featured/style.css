@@ -5,6 +5,12 @@
 
 .projects-wrapper img:not(.next-project):not(.map-marker) {
     width: 100%;
+    margin-top: 0px;
+}
+
+img.map-marker {
+    width: 30px;
+    margin-top: 0px;
 }
 
 .projects-wrapper img.next-project {
