@@ -12,7 +12,8 @@ class ContactModal extends Component {
         email: '',
         phone: '',
         message: '',
-        isSubmitted: false
+        isSubmitted: false,
+        disabled: true
     }
 
     onChange = (e) => {
@@ -41,6 +42,10 @@ class ContactModal extends Component {
         // })
 
         //need to have users safelist domain
+    }
+
+    enableSubmit = () => {
+        this.setState({disabled: false})
     }
 
     render() {
@@ -85,10 +90,10 @@ class ContactModal extends Component {
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className='cta' data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
+                                    <button className={this.state.disabled ? 'cta disabled' : 'cta'} disabled={this.state.disabled} data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
                                 </div>
                                 <div className='row'>
-                                    {!this.state.isSubmitted && <Captcha />}
+                                    {!this.state.isSubmitted && <Captcha onChange={this.enableSubmit} />}
                                 </div>
                             </form>
                         </div>      

@@ -13,7 +13,8 @@ class Form extends Component {
         email: '',
         phone: '',
         message: '',
-        isSubmitted: false
+        isSubmitted: false,
+        disabled: true
     }
 
     onChange = (e) => {
@@ -22,8 +23,13 @@ class Form extends Component {
         })
     }
 
+    enableSubmit = () => {
+        this.setState({disabled: false})
+    }
+
     onSubmit = (e) => {
         e.preventDefault();
+        console.log('testing disabled')
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
@@ -73,8 +79,8 @@ class Form extends Component {
                     </div>
                     <div className='row mt-2'>
                         <div className='col-12'>
-                            <button type='submit' id='send'>SUBMIT</button>
-                            {!this.state.isSubmitted && <Captcha />}
+                            <button className={this.state.disabled ? 'disabled' : ''} disabled={this.state.disabled} type='submit' id='send'>SUBMIT</button>
+                            {!this.state.isSubmitted && <Captcha onChange={this.enableSubmit} />}
                         </div>
                     </div>
                     {this.state.isSubmitted && <div className='row submitted'>

@@ -102,3 +102,7 @@
 .contact-cta form button#send {
     margin-bottom: 1rem;
 }
+
+.contact-cta form button.disabled {
+    background-color: #ed6922b7;
+}
