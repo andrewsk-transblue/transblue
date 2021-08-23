@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import './style.css';
 
+const api_key = process.env.REACT_APP_MAILGUN_API;
+const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+
 class Form extends Component {
     state={
         firstName: '',
@@ -18,6 +22,18 @@ class Form extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+        var data = {
+            from: 'test@test.com',
+            to: 'carters@transblue.org',
+            subject: 'GC Contact Message',
+            text: `Name: ${this.state.firstName} ${this.state.lastName}
+                    Email: ${this.state.email}
+                    Phone: ${this.state.phone}
+                    Message: ${this.state.message}`
+        };
+        mailgun.messages().send(data, function(error, body) {
+            console.log(body)
+        })
         console.log(this.state)
     }
 

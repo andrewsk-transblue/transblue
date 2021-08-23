@@ -24,9 +24,9 @@ class ContactModal extends Component {
         e.preventDefault();
         console.log(this.state)
         var data = {
-            from: 'test@yahoo.com',
+            from: 'test@test.com',
             to: 'carters@transblue.org',
-            subject: 'EV Contact Message',
+            subject: 'GC Contact Message',
             text: `Name: ${this.state.firstName} ${this.state.lastName}
                     Email: ${this.state.email}
                     Phone: ${this.state.phone}
