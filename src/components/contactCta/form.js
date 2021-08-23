@@ -11,7 +11,8 @@ class Form extends Component {
         lastName: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        isSubmitted: false
     }
 
     onChange = (e) => {
@@ -35,6 +36,7 @@ class Form extends Component {
             console.log(body)
         })
         console.log(this.state)
+        this.setState({isSubmitted: true})
     }
 
     render() {
@@ -73,6 +75,11 @@ class Form extends Component {
                             <button type='submit' id='send'>SUBMIT</button>
                         </div>
                     </div>
+                    {this.state.isSubmitted && <div className='row mt-2 submitted'>
+                        <div className='col-12'>
+                        Thank you! We will contact you shortly
+                        </div>
+                    </div>}
                 </form>
             </div>
         )
