@@ -2,10 +2,11 @@ import React, {Fragment} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
-import LocationsCta from '../../components/locationsCTA';
+//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
-import ServiceSlides from '../../components/commercial/serviceSlides';
+//import ServiceSlides from '../../components/commercial/serviceSlides';
+import Carousel from '../../components/carousel';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Footer from '../../components/footer';
@@ -97,7 +98,8 @@ function Multifamily() {
                         </div>
                     </div>
                 </div>
-                <ServiceSlides />
+                {/* <ServiceSlides /> */}
+                <Carousel />
                 <ServiceCard />
                 <div className='container-fluid camp'>
                     <div className='row'>
