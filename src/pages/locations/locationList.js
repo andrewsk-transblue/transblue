@@ -11,7 +11,8 @@ const geolib = require('geolib');
 class LocationList extends Component {
     state={
         isLoading: true,
-        locationList: []
+        locationList: [],
+        comingSoon: []
     }
 
     componentDidMount = () => {
@@ -19,7 +20,6 @@ class LocationList extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        // Typical usage (don't forget to compare props):
         if (this.props !== prevProps) {
           this.getLocationList()
         }

@@ -56,21 +56,21 @@ function Mbridge() {
                     <img src={dawsonplace} alt='Dawson Place' />
                     <p className='text-secondary'>DAWSON PLACE</p>
                     <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
-                    <p className='section-p'>Dawson Place Child Advocacy Center is a safe place where abused kids and non-offending</p>
+                    <p className='section-p'>Dawsons Place child advocacy center transforms hut to hope for children that have been traumatized by abuse. Transblue has consistently been one of Dawsons’ place primary community supporters.</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
                     <h6>SOFT SLAVERY IN UGANDA</h6>
-                    <p className='section-p'>Dee's Hope is a nonprofit organization helping orphan girls in Uganda to have a better life by giving</p>
+                    <p className='section-p'>Dee's hope provides young girls a better way.  By providing them security, education, food and shelter, Dee's Hope is helping break young girls out of the nightmare of being someone’s house servant.</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
-                    <p className='section-p'>Chaplains are called when there is a natural disaster, structural or brush fire, serious accident</p>
+                    <p className='section-p'>Hope Unlimited through Northwest Incident Support, partners with first responders during crisis situations and provides resources for families during loss or difficult circumstances.</p>
                     <a href='/' className='mbridge-cta'>LEARN MORE</a>
                 </div>
             </div>

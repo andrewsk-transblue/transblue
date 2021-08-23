@@ -103,7 +103,7 @@ class Locations extends Component {
         //console.log(this.state.center)
         return(
             <Fragment>
-            <Navbar page='locations' />
+            <Navbar page='LOCATIONS' />
             <Header img={locationsHeader} title='FIND A LOCATION' subtitle='' />
 
                 <div className='map-container'>
