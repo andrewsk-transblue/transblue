@@ -6,7 +6,7 @@ import Header from '../../components/header';
 import FeaturedCard from './featuredCard';
 import Footer from '../../components/footer/index';
 import header from '../../images/featured/header.jpg';
-import header2 from '../../images/featured/header-2.jpg';
+import header2 from '../../images/featured/header-3.jpg';
 import labrynth from '../../images/featured/labrynth.jpg';
 import floralHills from '../../images/featured/floralhills.jpg';
 import maplewood from '../../images/featured/maplewood.JPG';
