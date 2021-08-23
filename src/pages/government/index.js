@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Capabilities2 from '../../components/government/capabilities2';
+import Carousel from '../../components/carousel';
 import Footer from '../../components/footer/index';
-import LocationsCta from '../../components/locationsCTA';
+//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
@@ -15,8 +16,8 @@ import solar from '../../images/government/govtsolarCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import porous from '../../images/multifamily/porous.jpg';
 import Slider from "react-slick";
-import ServiceSlides from '../../components/commercial/serviceSlides/index';
-import Capabilities from '../../components/government/capabilities';
+//import ServiceSlides from '../../components/commercial/serviceSlides/index';
+//import Capabilities from '../../components/government/capabilities';
 import './style.css';
 
 
@@ -174,9 +175,10 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <ServiceSlides />
+                    <Carousel />
+                    {/* <ServiceSlides /> */}
                 </div>
-                <Capabilities />
+                {/* <Capabilities /> */}
                 <Footer />
             </Fragment>
         )
