@@ -15,13 +15,13 @@ function ContactCta() {
     })
     return(
         displayCTA && <div className='contact-cta'>
-            {!displayForm && <button id='cta' onClick={() => setDisplayForm(!displayForm)}>GET MORE INFO</button>}
-            {displayForm && 
-                <Slide right>
+            <button id='cta' onClick={() => setDisplayForm(true)}>GET MORE INFO</button>
+            {/* {displayForm &&  */}
+                <Slide right when={displayForm} exit={true} collapse>
                     <div className='form'>
                         <Form onClick={() => setDisplayForm(false)} />
                     </div>
-                </Slide>}
+                </Slide>
         </div>
     )
 }

@@ -1,7 +1,7 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {Component} from 'react';
 //import { useEasybase } from 'easybase-react';
 //import locationsDb from './db.js';
-import comingSoon from './comingSoon';
+//import comingSoon from './comingSoon';
 import './style.css';
 
 //import locationsDb from './db.js';
