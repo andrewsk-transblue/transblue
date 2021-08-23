@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Captcha from '../captcha/captcha';
 import './style.css';
 
 const api_key = process.env.REACT_APP_MAILGUN_API;
@@ -73,9 +74,10 @@ class Form extends Component {
                     <div className='row mt-2'>
                         <div className='col-12'>
                             <button type='submit' id='send'>SUBMIT</button>
+                            {!this.state.isSubmitted && <Captcha />}
                         </div>
                     </div>
-                    {this.state.isSubmitted && <div className='row mt-2 submitted'>
+                    {this.state.isSubmitted && <div className='row submitted'>
                         <div className='col-12'>
                         Thank you! We will contact you shortly
                         </div>

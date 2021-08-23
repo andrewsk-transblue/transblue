@@ -98,3 +98,7 @@
     color: white;
     font-family: 'Raleway', sans-serif;
 }
+
+.contact-cta form button#send {
+    margin-bottom: 1rem;
+}

@@ -1,4 +1,5 @@
 import React, {Fragment, Component} from 'react';
+import Captcha from '../captcha/captcha';
 import './style.css';
 const api_key = process.env.REACT_APP_MAILGUN_API;
 const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
@@ -10,7 +11,8 @@ class ContactModal extends Component {
         lastName: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        isSubmitted: false
     }
 
     onChange = (e) => {
@@ -33,6 +35,7 @@ class ContactModal extends Component {
                     Message: ${this.state.message}`
         };
         console.log(this.state)
+        this.setState({isSubmitted: true})
         // mailgun.messages().send(data, function(error, body) {
         //     console.log(body)
         // })
@@ -83,6 +86,9 @@ class ContactModal extends Component {
                                 </div>
                                 <div className='row'>
                                     <button className='cta' data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
+                                </div>
+                                <div className='row'>
+                                    {!this.state.isSubmitted && <Captcha />}
                                 </div>
                             </form>
                         </div>      
