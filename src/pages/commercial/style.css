@@ -76,7 +76,6 @@
 .nextstep img,
 .simple-process img,
 .refresh img,
-.snow img,
 .asphalt-wrapper img,
 .green-solns img,
 .impression-wrapper img:not(.next-section) {
@@ -156,19 +155,6 @@
     width: 95%;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-/* SNOW CSS */
-.snow p:last-of-type {
-    margin-bottom: 30px;
-}
-
-.snow {
-    width: 93%;
-}
-
-.snow a {
-    text-decoration: none;
 }
 
 .govt-slider .slick-next::before,
@@ -404,9 +390,6 @@
     }
     .marriott-wrapper a {
         margin-left: 1rem;
-    }
-    .snow img {
-        padding-top: 0px !important;
     }
     .commercial-about {
         margin-top: 100px;

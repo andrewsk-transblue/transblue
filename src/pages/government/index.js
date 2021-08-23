@@ -4,18 +4,16 @@ import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Capabilities2 from '../../components/government/capabilities2';
 import Carousel from '../../components/carousel';
-import Footer from '../../components/footer/index';
+import Snow from '../../components/snow';
 //import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import Green from '../../components/green';
+import Footer from '../../components/footer/index';
 import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
-import ev from '../../images/government/evCropped.jpeg';
-import solar from '../../images/government/govtsolarCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
-import porous from '../../images/multifamily/porous.jpg';
 import Slider from "react-slick";
 //import ServiceSlides from '../../components/commercial/serviceSlides/index';
 //import Capabilities from '../../components/government/capabilities';
@@ -137,20 +135,13 @@ class Government extends Component {
                         </div>
                     </div>
                     <Green />
-                    <div className='container-fluid snow'>
-                        <div className='row'>
-                            <div className='col-lg-5'>
-                                <h4 className='section-header mb-3'>GOVERNMENT SNOW SERVICES</h4>
-                                <p className='section-p pr-5'>Curabitur lobortis diam aliquet, fermentum ligula eget, egestas nibh. Aenean vitae tincidunt nisi.</p>
-                                <p className='section-p pr-5'>Mauris mattis diam eget turpis tincidunt, ut posuere orci suscipit. Aenean sit amet purus a odio luctus varius vitae vel odio. Nullam suscipit euismod elit, ut elementum est vehicula at.</p>
-                                <p className='section-p mb-4 pr-5'>Donec nec leo vel augue pretium ultrices id vitae orci. Nulla ac odio eget arcu ullamcorper laoreet.</p>
-                                <a className='cta' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a>
-                            </div>
-                            <div className='col-lg-7'>
-                                <img className='pt-4' src={snow} alt='Government Snow Services' />
-                            </div>
-                        </div>
-                    </div>
+                    <Snow
+                        img={snow}
+                        title='GOVERNMENT SNOW SERVICES'
+                        p1='Curabitur lobortis diam aliquet, fermentum ligula eget, egestas nibh. Aenean vitae tincidunt nisi.'
+                        p2='Mauris mattis diam eget turpis tincidunt, ut posuere orci suscipit. Aenean sit amet purus a odio luctus varius vitae vel odio. Nullam suscipit euismod elit, ut elementum est vehicula at.'
+                        p3='Donec nec leo vel augue pretium ultrices id vitae orci. Nulla ac odio eget arcu ullamcorper laoreet.'
+                    />
                     <Carousel />
                     {/* <ServiceSlides /> */}
                 </div>

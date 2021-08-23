@@ -12,8 +12,7 @@
 
 .government-header img,
 .government-about img,
-.asphalt img,
-.snow img {
+.asphalt img {
     width: 100%;
 }
 
@@ -48,22 +47,10 @@
     margin-bottom: .7rem;
 }
 
-.snow {
-    margin-top: 100px;
-}
-
-.snow a {
-    text-decoration: none;
-}
-
 @media only screen and (min-width: 990px) {
     .government-about p,
     .government-about h4 {
         padding-left: 1rem;
-    }
-
-    .government-body .snow img {
-        padding-top: 0px !important;
     }
 
     .green-solns {

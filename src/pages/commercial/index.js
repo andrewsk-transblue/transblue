@@ -6,7 +6,6 @@ import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import About from './about';
 import Slideshow from './slideshow';
-import Footer from '../../components/footer/index';
 //import ServiceSlides from '../../components/commercial/serviceSlides/index';
 import Benefits from './benefits';
 import Impression from './impression';
@@ -14,7 +13,9 @@ import Marriott from './marriott';
 import Hospitality from './hospitality';
 // import Green from './green';
 import Green from '../../components/green';
+import Snow from '../../components/snow';
 import Carousel from '../../components/carousel';
+import Footer from '../../components/footer/index';
 // import Refresh from './refresh';
 import Fade from 'react-reveal/Fade';
 import headerBg from '../../images/commercial/header2.jpg';
@@ -82,22 +83,13 @@ class Commercial extends Component {
                 <Green />
                 
                 {/* <Asphalt /> */}
-
-                <div className='container-fluid snow'>
-                    <div className='row'>
-                        <div className='col-lg-6'>
-                            <img className='pt-4' src={snow} alt='Commercial Snow Removal'/>
-                        </div>
-                        <div className='col-lg-6'>
-                            <h4 className='section-header'>KEEP CUSTOMERS &amp; EMPLOYEES SAFE</h4>
-                            <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus faucibus neque, sed sodales lectus blandit vel.</p>
-                            <p className='section-p mt-3'>Aliquam at vestibulum metus. Vestibulum non est et risus ultrices malesuada sit amet id felis. Morbi aliquet, tortor quis consectetur.</p>
-                            <p className='section-p mt-3'>Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt. </p>
-                            <a className='cta mt-3' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a>
-                        </div>
-                    </div>
-                </div>
-
+                <Snow
+                    img={snow}
+                    title='KEEP CUSTOMERS &amp; EMPLOYEES SAFE'
+                    p1='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus faucibus neque, sed sodales lectus blandit vel.'
+                    p2='Aliquam at vestibulum metus. Vestibulum non est et risus ultrices malesuada sit amet id felis. Morbi aliquet, tortor quis consectetur.'
+                    p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
+                />
                 {/* <ServiceSlides /> */}
 
                 <Carousel />

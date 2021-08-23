@@ -44,8 +44,7 @@
 }
 
 .multifamily-about a,
-.benefits a,
-.snow a  {
+.benefits a {
     text-decoration: none;
 }
 
@@ -115,13 +114,8 @@
     font-family: 'Roboto';
 }
 
-.snow,
 .camp {
     margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.snow {
     margin-bottom: 80px;
 }
 
@@ -146,7 +140,6 @@
         padding-bottom: 0px !important;
     }
 
-    .snow img,
     .benefits img {
         padding-top: 0px !important;
     }
@@ -157,9 +150,5 @@
 
     .multifamily-about {
         padding: 80px 0px;
-    }
-
-    .multifamily-body .snow .section-p {
-        padding-right: 3rem;
     }
 }

@@ -9,6 +9,7 @@ import Assets from '../../components/multifamily/assets';
 import Carousel from '../../components/carousel';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
+import Snow from '../../components/snow';
 import Footer from '../../components/footer';
 import header from '../../images/multifamily/header.jpeg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
@@ -85,19 +86,13 @@ function Multifamily() {
                     </div>
                 </div>
                 <Assets />
-                <div className='container-fluid snow'>
-                    <div className='row'>
-                        <div className='col-lg-6 pl-0'>
-                            <h4 className='section-header'>KEEP YOUR COMMUNITY SAFE</h4>
-                            <div className='section-p mb-3'>Proper facilities management is key to a successful multifamily residence. We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: taking care of your residents.</div>
-                            <div className='section-p mb-4'>Mauris sem nulla, consequat in purus sit amet, finibus viverra metus. Vivamus ultrices cursus nisi vitae ultricies. Nunc id tellus turpis. Vivamus a dolor at lorem condimentum consectetur.</div>
-                            <a className='cta' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>WINTER SERVICES</a>
-                        </div>
-                        <div className='col-lg-6 px-0'>
-                            <img className='pt-4' src={snow} alt='Multifamily Snow Removal' />
-                        </div>
-                    </div>
-                </div>
+                <Snow
+                    img={snow}
+                    title='KEEP YOUR COMMUNITY SAFE'
+                    p1='Proper facilities management is key to a successful multifamily residence. We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: taking care of your residents.'
+                    p2='Mauris sem nulla, consequat in purus sit amet, finibus viverra metus. Vivamus ultrices cursus nisi vitae ultricies. Nunc id tellus turpis. Vivamus a dolor at lorem condimentum consectetur.'
+                    p3=''
+                />
                 {/* <ServiceSlides /> */}
                 <Carousel />
                 <ServiceCard />
