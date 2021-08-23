@@ -2,10 +2,11 @@ import React, {Fragment, useRef} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
-import LocationsCta from '../../components/locationsCTA';
+//import LocationsCta from '../../components/locationsCTA';
 import FeaturedCard from './featuredCard';
 import Footer from '../../components/footer/index';
 import header from '../../images/featured/header.jpg';
+import header2 from '../../images/featured/header-2.jpg';
 import labrynth from '../../images/featured/labrynth.jpg';
 import floralHills from '../../images/featured/floralhills.jpg';
 import maplewood from '../../images/featured/maplewood.JPG';
@@ -93,7 +94,7 @@ function Featured() {
                 <meta name="description" content="Transblue Featured Projects" />
             </Helmet>
             <Navbar page='FEATURED PROJECTS' />
-            <Header img={header} title='FEATURED PROJECTS' />
+            <Header img={header2} title='FEATURED PROJECTS' />
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='projects-wrapper container-fluid'>
