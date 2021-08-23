@@ -1,0 +1,28 @@
+.green-solns {
+    width: 95%;
+}
+
+.green-solns p:first-of-type {
+    font-weight: 500;
+    font-family: 'Raleway';
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    font-family: 'Raleway';
+    letter-spacing: .06em;
+    margin-top: 1.2rem;
+    margin-bottom: .7rem;
+}
+
+.green-solns hr {
+    margin-bottom: 30px;
+}
+
+.green-solns img {
+    width: 100%;
+}
+/* 
+@media only screen and (min-width: 1200px) {
+    .green-solns hr {
+        margin-bottom: 40px !important;
+    }
+} */

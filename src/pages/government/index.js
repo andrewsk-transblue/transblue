@@ -7,6 +7,7 @@ import Carousel from '../../components/carousel';
 import Footer from '../../components/footer/index';
 //import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
+import Green from '../../components/green';
 import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
@@ -135,32 +136,7 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid green-solns'>
-                        <div className='row'>
-                            <div className='col-lg-12'>
-                                <h4 className='section-header mb-3'>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT</h4>
-                                <hr />
-                                {/* <h3>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT WITH GREEN SOLUTIONS</h3> */}
-                            </div>
-                        </div>
-                        <div className='row'>
-                        <div className='col-lg-4 col-md-6'>
-                                <img src={solar} alt='Government Solar Roof' />
-                                <p>SOLAR</p>
-                                <p className='section-p mb-4'>Decrease your energy bill by installing solar roofs to create your own energy</p>
-                            </div>
-                            <div className='col-lg-4 col-md-6'>
-                                <img src={ev} alt='Government EV Charger' />
-                                <p>ELECTRIC VEHICLE CHARGERS</p>
-                                <p className='section-p mb-4'>Provide green solutions for your employees and contribute to creating a greener world</p>
-                            </div>
-                            <div className='col-lg-4 col-md-6'>
-                                <img src={porous} alt='Porous Asphalt' />
-                                <p>POROUS ASPHALT</p>
-                                <p className='section-p mb-4'>Provide green solutions for your employees and contribute to creating a greener world</p>
-                            </div>
-                        </div>
-                    </div>
+                    <Green />
                     <div className='container-fluid snow'>
                         <div className='row'>
                             <div className='col-lg-5'>
