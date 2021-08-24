@@ -54,7 +54,7 @@ class LocationList extends Component {
                     <small>Please try different search criteria</small>
                 </div>}
                 {this.state.locationList.length > 0 && this.state.locationList.map((location, index) => {
-                    //console.log(location)
+                    console.log(location)
                     return(
                         <div className='row location' >
                             <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>
