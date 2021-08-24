@@ -56,25 +56,25 @@ class Form extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className='row mx-0'>
                         <div className='col-6 pl-0 pr-2'>
-                            <input id='firstName' onChange={this.onChange} placeholder='First Name' value={this.state.firstName}></input>
+                            <input id='firstName' onChange={this.onChange} placeholder='First Name' value={this.state.firstName} required></input>
                         </div>
                         <div className='col-6 px-0'>
-                            <input id='lastName' onChange={this.onChange} placeholder='Last Name' value={this.state.lastName}></input>
+                            <input id='lastName' onChange={this.onChange} placeholder='Last Name' value={this.state.lastName} required></input>
                         </div>
                     </div>
                     <div className='row mt-2'>
                         <div className='col-12'>
-                            <input id='phone' onChange={this.onChange} placeholder='Phone' value={this.state.phone}></input>
+                            <input id='phone' onChange={this.onChange} placeholder='Phone' value={this.state.phone} required></input>
                         </div>
                     </div>
                     <div className='row mt-2'>
                         <div className='col-12'>
-                            <input id='email' onChange={this.onChange} placeholder='Email' value={this.state.email}></input>
+                            <input id='email' onChange={this.onChange} placeholder='Email' value={this.state.email} required></input>
                         </div>
                     </div>
                     <div className='row mt-2'>
                         <div className='col-12'>
-                            <textarea id='message' onChange={this.onChange} placeholder='Tell us about your project' value={this.state.message} />
+                            <textarea id='message' onChange={this.onChange} placeholder='Tell us about your project' value={this.state.message} required />
                         </div>
                     </div>
                     <div className='row mt-2'>
