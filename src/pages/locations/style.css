@@ -183,7 +183,7 @@
 
 .map-container {
     position: relative;
-    width: 93%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -245,6 +245,15 @@
 
 .map-view-toggle .fa-list-ul {
     padding-right: 7px;
+}
+
+.map-view-toggle button {
+    border: 0px;
+    background-color: transparent;
+}
+
+.map-view-toggle button.active {
+    color: #ed6a22;
 }
 
 @media only screen and (max-width: 640px) {
