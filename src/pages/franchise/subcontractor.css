@@ -29,20 +29,22 @@
     background-color:white;
 }
 
-.contract h1 {
-    color: navy;
+.contract h2 {
+    color: #0b56a4;
     font-family: 'Raleway';
+    letter-spacing: .06em;
+    font-weight: 400;
 }
 
-.contract h3 {
+.contract h4 {
     font-family: "Montserrat";
     padding-bottom: 40px;
     border-bottom: 1px solid gray;
     margin-bottom: 20px;
 }
 
-.contract h1,
-.contract h3 {
+.contract h2,
+.contract h4 {
     width: 100%;
     text-align: center;
 }
