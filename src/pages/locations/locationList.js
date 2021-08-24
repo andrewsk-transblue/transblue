@@ -55,9 +55,7 @@ class LocationList extends Component {
                 </div>}
                 {this.state.locationList.length > 0 && this.state.locationList.map((location, index) => {
                     //console.log(location)
-                    let tel;
-                    location.callblue ? tel = location.phone : tel = location.personalphone;
-                    let telLink = tel.replace(/[^A-Z0-9]/ig, "");
+                    let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='row location' >
                             <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>

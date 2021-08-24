@@ -7,10 +7,7 @@ function ListView(props) {
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
                 {props.locations.map(location => {
-                    let tel;
-                    location.callblue ? tel = location.phone : tel = location.personalphone;
-                    let telLink = tel.replace(/[^A-Z0-9]/ig, "");
-
+                    let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
                             <div className='listview-location'>
@@ -19,7 +16,7 @@ function ListView(props) {
                                 {location.city} {location.state}, {location.zipcode}</p>
                                 <p className='section-p'>
                                     {location.email}<br />
-                                    <a href={`tel:+${telLink}`}>{tel}</a>
+                                    <a href={`tel:+${telLink}`}>{location.phone}</a>
                                 </p>
                             </div>
                         </div>
