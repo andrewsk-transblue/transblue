@@ -46,7 +46,7 @@ class LocationList extends Component {
     }
 
     render() {
-        //console.log(this.props)
+        //console.log(this.props)        
         return(
             <div className='container-fluid location-list-container'>
                 {this.state.locationList.length === 0 && <div className='no-locations'>
@@ -54,7 +54,10 @@ class LocationList extends Component {
                     <small>Please try different search criteria</small>
                 </div>}
                 {this.state.locationList.length > 0 && this.state.locationList.map((location, index) => {
-                    console.log(location)
+                    //console.log(location)
+                    let tel;
+                    location.callblue ? tel = location.phone : tel = location.personalphone;
+                    let telLink = tel.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='row location' >
                             <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>
@@ -64,12 +67,12 @@ class LocationList extends Component {
                                     {location.address1}, {location.address2}<br />
                                     {location.city}, {location.state} {location.zipcode}<br />
                                     <div className='location-contact'>
-                                        <i className="fas fa-phone"></i>{location.phone}<br />
+                                        <a href={`tel:+${telLink}`}><i className="fas fa-phone"></i>{location.phone}<br /></a>
                                         <i className="fas fa-envelope"></i>{location.email}<br /> 
                                     </div>                               
                                     <span>
-                                        <a href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel="noreferrer"><button>Website</button></a>
-                                        <button onClick={() => this.props.selectLocation(location.lat, location.lon)} id='view-location'>View On Map</button>
+                                        <a href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel="noreferrer"><button>WEBSITE</button></a>
+                                        <button onClick={() => this.props.selectLocation(location.lat, location.lon)} id='view-location'>VIEW ON MAP</button>
                                     </span><br />
                                 </div>
                             </div>

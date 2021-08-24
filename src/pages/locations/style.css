@@ -101,14 +101,16 @@
 .location-body button {
     color: white;
     border: 0px;
-    border-radius: 3px;
-    padding: 2px 8px 2px 8px;
+    border-radius: 0px;
+    padding: 2px 10px 2px 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: .9em;
+    letter-spacing: .05em;
 }
 
 .location-body a button {
-    background-color: navy;
+    background-color: #0b56a4;
 }
 
 .location-body #view-location {
@@ -268,14 +270,13 @@
 
 .listview-location {
     padding: 20px;
-    /* width: 95%;
-    height: 90%; */
     margin: 20px 5px;
     border-radius: 2px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
-.listview-location a {
+.listview-location a,
+.location-contact a {
     text-decoration: none;
     color: black !important;
 }
