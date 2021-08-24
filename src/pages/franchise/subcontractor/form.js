@@ -37,11 +37,16 @@ class Form extends Component {
         //console.log(this.state[e.target.id])
         this.setState({[e.target.id]: value})
     } 
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        console.log('submitted')
+    }
     
     render() {
         //console.log(this.props)
         return(
-            <form className='subform-wrapper'>
+            <form className='subform-wrapper'  onSubmit={this.onSubmit}>
                 <div className='row'>
                     <span>
                         <input className='left-input' placeholder='Business Name' id='businessName' onChange={this.onChange} required></input>
@@ -97,8 +102,19 @@ class Form extends Component {
                     <Agreement location={this.props.location} />                           
                 </div>
 
+                <div className='row'>
+                    <span>
+                    <input id='acceptTerms' type='radio' checked={this.state.acceptTerms} onChange={(e) => this.updateRadio(e, true)}></input>
+                    <label>I have read and accept all terms and conditions listed above</label>
+                    </span>
+                </div>
+
                 <div className='row submit'>
-                    <button type='submit' className='cta'>SUBMIT</button>
+                    <button type='submit' className='cta' disabled={!this.state.acceptTerms}>SUBMIT</button>
+                </div>
+
+                <div className='application-sent alert alert-success'>
+                    Thank you! Your application has been submitted.
                 </div>
             </form>
         )

@@ -1,5 +1,5 @@
 .subcontractor-wrapper {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -21,11 +21,12 @@
 }
 
 .subform-wrapper {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .subform-wrapper button.cta {
     margin-left: 0px;
+    margin-top: 20px;
 }
 
 .subform-wrapper input {
@@ -62,7 +63,8 @@
     margin-left: 4%
 }
 
-.subform-wrapper span p {
+.subform-wrapper span p,
+.subform-wrapper label {
     margin-bottom: 5px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -70,12 +72,20 @@
 
 #liability,
 #insurance,
-#remoteAccess {
+#remoteAccess,
+#acceptTerms {
     margin-right: 5px;
 }
 
 label {
     margin-right: 10px;
+}
+
+.agreement {
+    margin: 30px -15px 20px -15px;
+    border: 1px solid gray;
+    padding: 5px 20px 10px 20px;
+    width: 100%;
 }
 
 .agreement h6,
@@ -91,4 +101,10 @@ label {
     height: 75px;
     overflow-y: auto;
     font-size: .6em;
+}
+
+@media only screen and (min-width: 992px) {
+    .subcontractor-wrapper {
+        width: 60%;
+    }
 }

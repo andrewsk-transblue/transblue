@@ -3,8 +3,6 @@ import { useEasybase } from 'easybase-react';
 import Navbar from '../../../components/navbar';
 import Form from './form';
 import './style.css';
-import Agreement from './agreement';
-
 
 function Subcontractor(props) {
 
@@ -21,7 +19,7 @@ function Subcontractor(props) {
         mounted();
     }, [])
 
-    console.log(props)
+    //console.log(props)
 
     return(
         <Fragment>
@@ -29,6 +27,7 @@ function Subcontractor(props) {
             <div className='subcontractor-wrapper'>
                 <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase()}</h2>
                 <h5>SUBCONTRACTOR APPLICATION</h5>
+                <hr />
                 {easybaseData.length > 0 && <Form location={easybaseData[0]} />}
             </div>
         </Fragment>
