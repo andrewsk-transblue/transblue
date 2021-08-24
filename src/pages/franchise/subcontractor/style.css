@@ -103,6 +103,11 @@ label {
     font-size: .6em;
 }
 
+.subform-wrapper .application-sent {
+    margin: 20px -15px;
+    border-radius: 2px;
+}
+
 @media only screen and (min-width: 992px) {
     .subcontractor-wrapper {
         width: 60%;

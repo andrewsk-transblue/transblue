@@ -41,6 +41,7 @@ class Form extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log('submitted')
+        this.setState({applicationSent: true})
     }
     
     render() {
@@ -113,9 +114,9 @@ class Form extends Component {
                     <button type='submit' className='cta' disabled={!this.state.acceptTerms}>SUBMIT</button>
                 </div>
 
-                <div className='application-sent alert alert-success'>
+                {this.state.applicationSent && <div className='application-sent alert alert-success'>
                     Thank you! Your application has been submitted.
-                </div>
+                </div>}
             </form>
         )
     }
