@@ -7,14 +7,18 @@ function ListView(props) {
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
                 {props.locations.map(location => {
+                    console.log(location)
                     return(
-                        <div className='col-4 mb-4'>
-                            <h5>{location.name.toUpperCase()}</h5>
-                            <p className='section-p'>{location.address1}, {location.address2}<br />
-                            {location.city} {location.state}, {location.zipcode}<br />
-                            {location.email}<br />
-                            {location.phone}
-                            </p>
+                        <div className='col-4'>
+                            <div className='listview-location'>
+                                <h5>{location.name.toUpperCase()}</h5>
+                                <p className='section-p'>{location.address1}{location.address2.length > 0 && `, ${location.address2}`}<br />
+                                {location.city} {location.state}, {location.zipcode}</p>
+                                <p className='section-p'>
+                                    {location.email}<br />
+                                    {location.phone}
+                                </p>
+                            </div>
                         </div>
                     )
                 })}

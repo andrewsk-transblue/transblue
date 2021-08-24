@@ -266,6 +266,15 @@
     color: #0b56a4;
 }
 
+.listview-location {
+    padding: 20px;
+    /* width: 95%;
+    height: 90%; */
+    margin: 20px 5px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
 @media only screen and (max-width: 640px) {
     .location-wrapper {
         width: 90%;
