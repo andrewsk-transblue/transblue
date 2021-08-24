@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Footer from '../../components/footer/index';
 import MapContainer from './mapcontainer';
+import ListView from './listView';
 
 //import bounds from './bounds';
 import locationsHeader from '../../images/location.jpeg';
@@ -26,6 +27,7 @@ function Locations(props) {
                     <i className="fas fa-map"></i>MAP VIEW
                 </button>
             </div>
+            {!viewMap && <ListView locations={props.locations} />}
             {viewMap && <MapContainer locations={props.locations} />}
             <Footer locationPage={true} />
         </Fragment>

@@ -183,7 +183,7 @@
 
 .map-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -235,7 +235,7 @@
 
 .map-view-toggle {
     text-align: center;
-    padding: 30px 0px;
+    padding: 15px 0px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -254,6 +254,16 @@
 
 .map-view-toggle button.active {
     color: #ed6a22;
+}
+
+.listview-wrapper {
+    width: 93%;
+    padding-top: 40px;
+}
+
+.listview-wrapper h5 {
+    font-family: 'Raleway', sans-serif;
+    color: #0b56a4;
 }
 
 @media only screen and (max-width: 640px) {
