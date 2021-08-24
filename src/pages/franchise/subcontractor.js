@@ -13,15 +13,15 @@ class Subcontractor extends Component {
         console.log(this.props.match.params)
         return(
             <div className='contract-wrapper'>
-                <Background />
-                {/* <div><img src={contractImage} alt='background' /></div> */}
-                <div className='contract-bg-overlay'></div>
                 <Navbar />
+                <Background />
+                <div className='contract-bg-overlay'></div>
+                
                 <form className='form needs-validation' onSubmit={this.handleSubmit} >
                     <div className='container contract'>
                         
                         <SubForm props={this.props.match.params} />
-                        
+
                         <div className='row agreement'>
                             <h6>SUBCONTRACTOR AGREEMENT</h6>                            
                             <Agreement location={this.props.match.params} />                           
@@ -37,7 +37,7 @@ class Subcontractor extends Component {
                             </div>
                         </div>
 
-                        <input type='submit' value='SUBMIT' id='submit' />
+                        <button type='submit' value='SUBMIT' className='cta' onclick={this.onSubmit}>SUBMIT</button>
                         <div className='application-sent alert alert-success'>
                             Thank you! Your application has been submitted.
                         </div>

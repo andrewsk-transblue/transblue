@@ -12,7 +12,7 @@ function Agreement(props) {
     }
 
     useEffect(() => {
-        
+        console.log('rendering')
         mounted();
     }, [])
 

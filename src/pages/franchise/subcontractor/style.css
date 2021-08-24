@@ -1,0 +1,94 @@
+.subcontractor-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.subcontractor-wrapper h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #0b56a4;
+}
+
+.subcontractor-wrapper h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+.subcontractor-wrapper h2,
+.subcontractor-wrapper h5 {
+    width: 100%;
+    text-align: center;
+}
+
+.subform-wrapper {
+    margin-top: 40px;
+}
+
+.subform-wrapper button.cta {
+    margin-left: 0px;
+}
+
+.subform-wrapper input {
+    padding-left: 10px;
+}
+
+.subform-wrapper input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;;
+}
+
+.subform-wrapper span {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subform-wrapper .left-input,
+.subform-wrapper .right-input {
+    width: 48%;
+}
+
+.subform-wrapper .center-left-input,
+.subform-wrapper .center-center-input,
+.subform-wrapper .center-right-input {
+    width: 32%;
+}
+
+.subform-wrapper .center-center-input,
+.subform-wrapper .center-right-input {
+    margin-left: 2%;
+}
+
+.subform-wrapper .right-input {
+    margin-left: 4%
+}
+
+.subform-wrapper span p {
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#liability,
+#insurance,
+#remoteAccess {
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.agreement h6,
+.form-check p {
+    color: navy;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.agreement p {
+    height: 75px;
+    overflow-y: auto;
+    font-size: .6em;
+}
