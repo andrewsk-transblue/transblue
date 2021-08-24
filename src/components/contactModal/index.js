@@ -49,6 +49,7 @@ class ContactModal extends Component {
     }
 
     render() {
+        const formCompleted = this.state.firstName.length > 0 && this.state.lastName.length > 0 && this.state.phone.length > 0 && this.state.message.length > 0 && !this.state.disabled;
         return(
             <Fragment>
                 <button className='cta' data-toggle="modal" data-target="#exampleModalCenter">
@@ -78,7 +79,7 @@ class ContactModal extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-6 my-2 input-left'>
-                                        <input placeholder='Email' id='email'></input>
+                                        <input placeholder='Email' id='email' onChange={this.onChange}></input>
                                     </div>
                                     <div className='col-sm-6 my-2 input-right'>
                                         <input placeholder='Phone Number' id='phone' onChange={this.onChange}></input>
@@ -86,11 +87,11 @@ class ContactModal extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-12 px-0 mt-2'>
-                                        <textarea placeholder='What can we help you with?' id='message'></textarea>
+                                        <textarea placeholder='What can we help you with?' id='message' onChange={this.onChange}></textarea>
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className={this.state.disabled ? 'cta disabled' : 'cta'} disabled={this.state.disabled} data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
+                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={!formCompleted} data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
                                 </div>
                                 <div className='row'>
                                     {!this.state.isSubmitted && <Captcha onChange={this.enableSubmit} />}
