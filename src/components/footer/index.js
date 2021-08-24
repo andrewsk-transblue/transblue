@@ -74,6 +74,7 @@ function Footer(props) {
                         <AutoComplete
                             apiKey={process.env.REACT_APP_GOOGLE_API}
                             onPlaceSelected={(location) => setLocation(location.place_id)}
+                            
                         />
                         <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
                     </span>
