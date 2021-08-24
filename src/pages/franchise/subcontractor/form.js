@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import Agreement from './agreement';
 import './style.css';
 
+const api_key = process.env.REACT_APP_MAILGUN_API;
+const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+
 class Form extends Component {
     constructor() {
         super();
@@ -42,6 +46,32 @@ class Form extends Component {
         e.preventDefault();
         console.log('submitted')
         this.setState({applicationSent: true})
+
+        var data = {
+            from: 'test@test.com',
+            to: 'carters@transblue.org',
+            subject: 'Subcontractor Application',
+            text: ` Business Name: ${this.state.businessName}
+                    Name: ${this.state.name}
+                    Job Title: ${this.state.jobTitle}
+                    Email: ${this.state.email}
+                    Business Phone: ${this.state.businessPhone}
+                    Cell Phone: ${this.state.phone}
+                    Address: ${this.state.address1}
+                    Address Line 2: ${this.state.address2}
+                    City: ${this.state.city}
+                    State: ${this.state.state}
+                    Zipcode: ${this.state.zipcode}
+                    Tax ID: ${this.state.EIN}
+                    Contractor License Number: ${this.state.licenseNo}
+                    Comprehensive Liability Insurance: ${this.state.liability}
+                    Certificate of Insurance: ${this.state.insurance}
+                    Ability to access and report information remotely: ${this.state.remoteAccess}`
+        };
+        //console.log(data)
+        // mailgun.messages().send(data, function(error, body) {
+        //     console.log(body)
+        // })
     }
     
     render() {
