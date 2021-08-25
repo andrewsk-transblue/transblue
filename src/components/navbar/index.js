@@ -40,55 +40,55 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="/">Home</Link>
+                            <Link className="nav-link" to="/">HOME</Link>
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 GC
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <Link className="dropdown-item" to="/residential">Residential</Link>
-                                <Link className="dropdown-item" to="/multifamily">Multifamily</Link>
-                                <Link className='dropdown-item' to="/commercial">Commercial</Link>
-                                <Link className='dropdown-item' to="/government">Government</Link>
-                                <Link className='dropdown-item' to="/featured">Featured Projects</Link>
+                                <Link className="dropdown-item" to="/residential">RESIDENTIAL</Link>
+                                <Link className="dropdown-item" to="/multifamily">MULTIFAMILY</Link>
+                                <Link className='dropdown-item' to="/commercial">COMMERCIAL</Link>
+                                <Link className='dropdown-item' to="/government">GOVERNMENT</Link>
+                                <Link className='dropdown-item' to="/featured">FEATURED PROJECTS</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Green Services
+                                GREEN SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="/">About</a>
-                                <a className="dropdown-item" href="/residential">Residential</a>
-                                <a className="dropdown-item" href="/multifamily">Multifamily</a>
-                                <a className='dropdown-item' href="/commercial">Commercial</a>
+                                <a className="dropdown-item" href="/">ABOUT</a>
+                                <a className="dropdown-item" href="/residential">RESIDENTIAL</a>
+                                <a className="dropdown-item" href="/multifamily">MULTIFAMILY</a>
+                                <a className='dropdown-item' href="/commercial">COMMERCIAL</a>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Snow Services
+                                SNOW SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">About</a>
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">How We Operate</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">Emergency &amp; Risk</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">Our Software</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">Gallery</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">Pricing</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">EMERGENCY &amp; RISK</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">GALLERY</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">PRICING</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
                             </div>
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Other
+                                OTHER
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">Contact</a>
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">Locations</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">Blog</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">Franchise</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">CONTACT</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">LOCATIONS</a>
+                                <a className='dropdown-item' href="/blog">BLOG</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">FRANCHISE</a>
                             </div>
                         </li>
                     </ul>

@@ -21,6 +21,12 @@ nav .franchise-contact a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .05em;
+}
+
+nav button {
+    border-radius: 0px;
 }
 
 nav .franchise-contact i {

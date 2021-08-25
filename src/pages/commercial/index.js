@@ -76,7 +76,7 @@ class Commercial extends Component {
                                 HELPING PREGNANT WOMEN IN NEED
                             </h4>
                             <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
-                            <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are given free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
+                            <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are provided free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
                         </div>
                     </div>
                 </div>
