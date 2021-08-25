@@ -14,17 +14,22 @@ class Navbar extends Component {
         this.props.franchise === true ? tel = this.props.phone.replace(/[^A-Z0-9]/ig, "") : tel = '';
         // if(window.innerWidth < 992) this.setState({scrollHeight: 0})
         // this.props.page === 'CONTACT' ? this.setState({bgColor: 'black'}) :
-        document.addEventListener('scroll', () => {
-            // console.log(window.scrollY)
-            let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
-            // if(this.props.page === 'CONTACT') bgColor = 'black'
-            let displayPage = window.scrollY >300 ? true : false;
-            this.setState({
-                bgColor: bgColor,
-                displayPage: displayPage,
-                tel: tel
+        
+        if(this.props.theme === 'dark') {
+            this.setState({bgColor: 'black'})
+        }
+
+        else{
+            document.addEventListener('scroll', () => {
+                let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
+                let displayPage = window.scrollY >300 ? true : false;
+                this.setState({
+                    bgColor: bgColor,
+                    displayPage: displayPage,
+                    tel: tel
+                })
             })
-        })
+        }
     }
 
     render() {

@@ -6,7 +6,7 @@ import './style.css';
 function Privacy() {
     return(
         <Fragment>
-            <Navbar />
+            <Navbar theme='dark' />
             <div className='privacy-wrapper'>
                 <h4>PRIVACY POLICY</h4>
                 <p> This Privacy Policy describes how your personal information is collected, used, and shared when you visit transblue.org (the “Site”).</p>
