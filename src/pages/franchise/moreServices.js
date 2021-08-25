@@ -1,4 +1,5 @@
 import React, {useState, Fragment} from 'react';
+import cardtop from '../../images/cardtop.svg'
 //import line from '../../images/lineblack.PNG';
 
 function MoreServices() {
@@ -47,12 +48,14 @@ function MoreServices() {
 
     <div className='row more-services card-deck mx-0'>
         <div className='col-lg-6 card'>
-            <h5 className="line-header">
+            {/* <div className='vector'></div> */}
+            {/* <img src={cardtop} alt='' /> */}
+            <h4 className="line-header">
                 {/* <img src={line} alt='' />  */}
                 GENERAL CONTRACTING
-            </h5>
+            </h4>
             <div className='row'>
-                <div className='col-lg-4 section-p'>
+                <div className='col-lg-4 section-p pr-0'>
                     Concrete
                     Patios
                     Flagstone
@@ -81,7 +84,7 @@ function MoreServices() {
             </div>
         </div>
         <div className='col-lg-3 card'>
-            <h5>SNOW SERVICES</h5>
+            <h4>SNOW SERVICES</h4>
             <div className='row'>
                 <div className='col-lg-12 section-p'>
                     Snow Hauling<br />
@@ -96,7 +99,7 @@ function MoreServices() {
             </div>
         </div>
         <div className='col-lg-3 card'>
-            <h5>GREEN SERVICES</h5>
+            <h4>GREEN SERVICES</h4>
             <div className='row'>
                 <div className='col-lg-12 section-p'>
                     Solar Panels<br />
