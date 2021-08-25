@@ -17,10 +17,10 @@ function ListView(props) {
                                     <h5>{location.name.toUpperCase()}</h5>
                                 </div>
                                 <div className='row'>
-                                    <div className='col-1 px-0'>
+                                    <div className='col-1 pr-0'>
                                         <img className='location-icon' src={locationIcon} alt='' />
                                     </div>
-                                    <div className='col-10 px-0'>
+                                    <div className='col-10 pr-0'>
                                         <p className='section-p'>
                                             {location.address1}{location.address2.length > 0 && `, ${location.address2}`}<br />
                                             {location.city} {location.state}, {location.zipcode}
@@ -28,10 +28,10 @@ function ListView(props) {
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <div className='col-1 px-0'>
+                                    <div className='col-1 pr-0'>
                                         <img src={mailIcon} alt='' />
                                     </div>
-                                    <div className='col-10 px-0'>
+                                    <div className='col-10 pr-0'>
                                         <p className='section-p'>
                                             {location.email}<br />
                                             <a href={`tel:+${telLink}`}>{location.phone}</a>
