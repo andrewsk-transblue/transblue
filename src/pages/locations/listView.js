@@ -38,6 +38,11 @@ function ListView(props) {
                                         </p>
                                     </div>
                                 </div>
+                                <div className='row'>
+                                    <div className='col-12'>
+                                        <a className='web-link' href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel='noreferrer'>WEBSITE</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     )
