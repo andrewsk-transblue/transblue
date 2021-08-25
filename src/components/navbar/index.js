@@ -75,7 +75,7 @@ class Navbar extends Component {
                                 SNOW SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">About</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">ABOUT</a>
                                 <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">EMERGENCY &amp; RISK</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a>

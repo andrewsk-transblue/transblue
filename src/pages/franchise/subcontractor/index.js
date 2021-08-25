@@ -23,7 +23,7 @@ function Subcontractor(props) {
 
     return(
         <Fragment>
-            <Navbar />
+            <Navbar theme='dark' />
             <div className='subcontractor-wrapper'>
                 <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase()}</h2>
                 <h5>SUBCONTRACTOR APPLICATION</h5>
