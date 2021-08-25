@@ -19,7 +19,7 @@ class Navbar extends Component {
             this.setState({bgColor: 'black'})
         }
 
-        else{
+        else {
             document.addEventListener('scroll', () => {
                 let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
                 let displayPage = window.scrollY >300 ? true : false;

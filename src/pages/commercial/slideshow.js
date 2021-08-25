@@ -12,20 +12,20 @@ import line from '../../images/line.png';
 let images = [snow, asphalt, fence, solar];
 let text = [
     {
-        p1: "Keep your business doors open this winter with fast and reliable snow plowing and de-icing",
+        p1: "KEEP YOUR BUSINESS DOORS OPEN",
         // p1: 'We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: running your business.',
         p2: ''
     },
     {
-        p1: 'Assure your customers that their safety is a priority by refreshing your asphalt and concrete',
+        p1: 'REFRESH YOUR ASPHALT AND CONCRETE',
         p2: ''
     },
     {
-        p1: 'Increase security and safety with a fence around your business',
+        p1: 'INCREASE SECURITY AND PRIVACY',
         p2: ''
     },
     {
-        p1: 'Lower your energy bill and environmental impact with a solar roof',
+        p1: 'LOWER YOUR ENERGY BILL',
         p2: ''
     }
 ]
