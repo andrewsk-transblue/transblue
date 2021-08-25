@@ -26,7 +26,7 @@ nav .franchise-contact a {
 }
 
 nav button {
-    border-radius: 0px;
+    border-radius: 0px !important;
 }
 
 nav .franchise-contact i {

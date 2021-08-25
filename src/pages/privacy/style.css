@@ -1,0 +1,32 @@
+.privacy-wrapper {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 85%;
+}
+
+.privacy-wrapper h5,
+.privacy-wrapper h4 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(73, 73, 73);
+}
+
+.privacy-wrapper h4 {
+    margin-left: 25px;
+}
+
+.privacy-wrapper h5 {
+    margin-top: 30px;
+}
+
+.privacy-wrapper p,
+.privacy-wrapper ul {
+    font-family: 'Roboto';
+    color: rgb(90, 90, 90);
+    font-size: 14px;
+    letter-spacing: .04em;
+    font-weight: 300;
+}
+
+.privacy-wrapper p {
+    margin-left: 25px;
+}

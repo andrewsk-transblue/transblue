@@ -156,7 +156,7 @@ function Footer(props) {
 
             <div className='terms'>
                 <span>
-                    <a href='/privacy'>Privacy Policy</a>
+                    <a href='/privacy'>PRIVACY POLICY</a>
                 </span>
             </div>
         </div>
