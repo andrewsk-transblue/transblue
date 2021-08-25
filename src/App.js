@@ -31,6 +31,8 @@ function App() {
        mounted();
   }, [])
 
+  console.log('rendering')
+
   return (
       <HelmetProvider>
         <Router>

@@ -98,7 +98,7 @@ function Multifamily() {
                 <ServiceCard />
                 <div className='container-fluid camp'>
                     <div className='row'>
-                        <div className='col-lg-6 order-lg-12'>
+                        <div className='col-lg-6 order-lg-12 left-text'>
                             <h4 className='section-header'>TRANSBLUE SUPPORTS KIDS CAMPS</h4>
                             {/* <div className='section-p mb-3'>Summer is a great time for camps. Camps are transformational in the lives of children and teens. Solid Rock Mission, one of our mBridge partners, hosts camps all summer long for thousands of kids and teens (1782 kids in June).</div>
                             <div className='section-p mb-3'>This month we have had back to back to back camps. We organized camps in villages and small towns. Over 100 kids showed up to each camp with 1782 attending in June. These kids come from various families and backgrounds with all sorts of hurts and broken stories. Our goal is to always and foremost show them God's love.</div>

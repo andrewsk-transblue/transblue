@@ -6,7 +6,7 @@ function Quality() {
     return(
         <div className='container-fluid quality'>
             <div className='row mx-0'>
-                <div className='col-lg-6 order-lg-12'>
+                <div className='col-lg-6 order-lg-12 left-text'>
                     {/* <h6 className='text-secondary text-right mr-4'>create the perfect outdoor space</h6> */}
                     <h3 className='section-header'>QUALITY TIME MATTERS</h3>
                     <p className='section-p mt-2'>Friends and family are everything to us here at Transblue. We understand that free time is not always easy to come by, and just how important it is to spend it with the people we love most.</p>

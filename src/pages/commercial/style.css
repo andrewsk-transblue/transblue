@@ -377,19 +377,8 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .marriott-wrapper h4,
-    .marriott-wrapper p:not(.contact-modal-wrapper .section-p),
-    .nextstep .section-header,
-    .nextstep .section-p,
-    .commercial-about h3,
-    .commercial-about p {
-        padding-left: 1rem;
-    }
     .impression-wrapper .text {
         padding-left: 2rem;
-    }
-    .marriott-wrapper a {
-        margin-left: 1rem;
     }
     .commercial-about {
         margin-top: 100px;

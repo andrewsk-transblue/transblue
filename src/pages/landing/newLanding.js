@@ -64,7 +64,7 @@ function NewLanding() {
                         <div className='col-lg-7 col-12'>
                             <div className='video'></div>
                         </div>
-                        <div className='col-lg-5 col-12 video-text'>
+                        <div className='col-lg-5 col-12 left-text'>
                             <h4 className='section-header'>HEADER ABOUT THE VIDEO</h4>
                             <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt.</p>
                             <p className='section-p'>Donec nec leo vel augue pretium ultrices id vitae orci. Aenean sit amet purus a odio luctus varius vitae vel odio. Nulla ac odio eget arcu ullamcorper laoreet.Aenean vitae tincidunt nisi.</p>

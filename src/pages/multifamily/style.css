@@ -129,8 +129,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .camp h4,
-    .camp .section-p,
     .decks h4,
     .decks .section-p {
         padding-left: 1rem;

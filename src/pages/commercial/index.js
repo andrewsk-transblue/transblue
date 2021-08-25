@@ -70,7 +70,7 @@ class Commercial extends Component {
                         <div className='col-lg-6'>
                             <img src={nextstep4} alt='Next Step Pregnancy' />
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-lg-6 left-text'>
                             <h4 className='section-header'>
                                 <p className='ml-0 mb-0 text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
                                 HELPING PREGNANT WOMEN IN NEED
