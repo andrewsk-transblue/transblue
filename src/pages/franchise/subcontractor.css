@@ -31,7 +31,7 @@
 
 .contract h2 {
     color: #0b56a4;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
     font-weight: 400;
 }
@@ -64,7 +64,7 @@ label,
 .agreement h6,
 .form-check p {
     color: navy;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     margin-top: 15px;
     font-weight: bold;
@@ -134,7 +134,7 @@ label div {
     background-color: navy;
     color: white;
     letter-spacing: 2px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     padding: 8px 13px 8px 13px;
     border: 0px;
     border-radius: 3px;

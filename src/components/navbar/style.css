@@ -79,7 +79,7 @@ nav .navbar-nav li a:hover {
 }
 nav span {
     color: white;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 nav .navbar-nav li a:hover {

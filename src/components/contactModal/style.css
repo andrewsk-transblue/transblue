@@ -61,7 +61,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: .8em;
     letter-spacing: .03em;
 }

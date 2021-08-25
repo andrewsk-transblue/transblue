@@ -38,10 +38,10 @@
 .government-body .asphalt p:first-of-type,
 .government-body .slider p:first-of-type {
     font-weight: 500;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: rgb(59, 59, 59);
     font-size: 18px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
     margin-top: 1.2rem;
     margin-bottom: .7rem;

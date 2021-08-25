@@ -47,7 +47,7 @@
 }
 
 .location-search label {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .location-search input::placeholder {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .5px;
 }
 

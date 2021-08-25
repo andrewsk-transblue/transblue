@@ -37,10 +37,10 @@
 .hospitality-subheader,
 .green-solns p:first-of-type {
     font-weight: 500;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: rgb(59, 59, 59);
     font-size: 18px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
     margin-top: 1.2rem;
     margin-bottom: .7rem;
@@ -97,7 +97,7 @@
     transform: translate(-50%,-50%);
     color: white;
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 3vw;
     font-size: 18px;
@@ -188,7 +188,7 @@
 }
 
 .schedule h1 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     /* font-weight: 400; */
     letter-spacing: 1.5px;
     margin-bottom: 15px;
@@ -236,7 +236,7 @@
 .simple-process h3,
 .simple-process h6{
     font-weight:normal;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
 }
 .simple-process h1 {
@@ -263,7 +263,7 @@
 }
 
 .refresh h3 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color:  #0b56a4;
     font-weight: 500;
     letter-spacing: 2px;
@@ -276,7 +276,7 @@
 
 .refresh h6 {
     font-weight: 500;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.15rem;
     color: rgb(59, 59, 59);
     letter-spacing: .05em;
@@ -313,14 +313,14 @@
 .impression-wrapper .text h3 {
     letter-spacing: 3.8px;
     font-size: 3.5vw;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .impression-wrapper p {
     font-size: 1em;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }

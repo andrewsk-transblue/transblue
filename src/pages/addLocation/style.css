@@ -14,7 +14,7 @@ form#add-location {
 form#add-location h3,
 form#add-location p {
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 form#add-location h3 {

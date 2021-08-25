@@ -65,7 +65,7 @@ code {
   border: 2px solid #0b56a4;
   color: #0b56a4;
   padding: 5px 23px;
-  font-family:'Raleway';
+  font-family:'Raleway', sans-serif;
   font-weight: 600;
   text-decoration: none;
   font-size: .85em;
@@ -128,7 +128,7 @@ button.cta:hover {
 }
 
 .section-header {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: #0b56a4;
   letter-spacing: .06em;
   line-height: 1.2em;
@@ -138,7 +138,7 @@ button.cta:hover {
 }
 
 .section-subheader {
-  font-family:'Raleway';
+  font-family:'Raleway', sans-serif;
   font-size: .5em !important;
   letter-spacing: .1em;
 }

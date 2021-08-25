@@ -10,7 +10,7 @@
     color: white;
     border: 0px;
     border-radius: 3px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     padding: 6px 10px 6px 10px;
     margin-top: 10px;
     font-size: .8em;
@@ -62,7 +62,7 @@
 
 .no-locations {
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     padding: 10px 10px 10px 0px;
     margin-left: -20px;
     font-weight: bold;
@@ -169,7 +169,7 @@
 
 .location .index {
     font-size: 1.3em;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 450;
 }
 
@@ -238,7 +238,7 @@
 .map-view-toggle {
     text-align: center;
     padding: 15px 0px;
-    font-family: 'Raleway', sans-serif;
+    background-color: rgb(54, 54, 54);
 }
 
 .map-view-toggle .fa-map {
@@ -250,8 +250,11 @@
 }
 
 .map-view-toggle button {
+    font-family: 'Raleway', sans-serif;
     border: 0px;
     background-color: transparent;
+    color: white;
+    letter-spacing: .05em;
 }
 
 .map-view-toggle button.active {
@@ -260,6 +263,7 @@
 
 .listview-wrapper {
     width: 93%;
+    margin-top: 30px;
     /* padding-top: 40px; */
 }
 

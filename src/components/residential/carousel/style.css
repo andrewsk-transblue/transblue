@@ -6,7 +6,7 @@
 }
 
 .carousel h2 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: .065em;;
     text-align: center;
     width: 100%;
@@ -21,7 +21,7 @@
 .carousel h3 {
     font-size: 1.4em;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
     line-height: 1.2em;
     color: #0b56a4;

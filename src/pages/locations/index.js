@@ -14,7 +14,7 @@ import './style.css';
 //import locations from './db';
 
 function Locations(props) {
-        const [viewMap, setViewMap] = useState(false);
+        const [viewMap, setViewMap] = useState(true);
    
         return(
             <Fragment>

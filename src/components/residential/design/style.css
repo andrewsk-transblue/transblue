@@ -19,14 +19,14 @@
 }
 
 .design-wrapper h3 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 6vw;
     font-weight: 300;
     letter-spacing: 4px;
 }
 
 .design-wrapper p {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     /* font-size: 1.2em; */
     font-size: .88em;
     font-weight: 300;

@@ -68,7 +68,7 @@
     left: 0;
     width: 100%;
     z-index: 2;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     padding: 6px 0px;
     letter-spacing: .05em;
 }
@@ -111,7 +111,7 @@
 }
 
 .excellent-service .col-lg-4 p:first-of-type {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.4em;
     font-weight: 500;
     letter-spacing: 2px;
@@ -120,7 +120,7 @@
 }
 
 .excellent-service .col-lg-4 p:nth-of-type(2) {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 550;
     line-height: 1.8em;
     color: rgb(224, 224, 224);
@@ -139,7 +139,7 @@
 
 .map h1 {
     /* color: white; */
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     /* margin: 0 auto; */
     margin-bottom: 40px;
@@ -169,7 +169,7 @@
 .zipcode-list div {
     border: 0px;
     background-color: transparent;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     padding: 20px 0px 0px 0px;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .contact h2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: #0b56a4;
     letter-spacing: .0705em;
 }
@@ -236,7 +236,7 @@
 
 .contact label {
     font-weight: 600;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: .8em;
     margin-bottom: 1px;
 }
@@ -282,7 +282,7 @@
 
 .contact input.submit {
     margin-top: 10px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     border-radius: 0px !important;
     /* background-color:navy; */
     background-color: #0b56a4;
@@ -335,7 +335,7 @@
 
 .contact-sidebar {
     font-size: .9em;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .contact-sidebar i {
@@ -356,7 +356,7 @@
 
 .franchise-lifestyle-wrapper h6 {
     font-weight: 500;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.15rem;
     color: rgb(59, 59, 59);
     letter-spacing: .05em;

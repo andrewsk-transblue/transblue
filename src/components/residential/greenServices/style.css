@@ -24,7 +24,7 @@
     width: 95%;
     text-align: center;
     /* font-family: 'Muli', sans-serif; */
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
     letter-spacing: 1.4px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -52,7 +52,7 @@
     color: #0b56a4 !important;
     text-decoration: none;
     padding:3px 8px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .green-services a:hover {
@@ -107,7 +107,7 @@
 }
 
 .green-service-card h3 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1.5px;
     color: #0b56a4;
 }
@@ -142,12 +142,12 @@
 }
 
 .green-about p:first-of-type {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     line-height: 1.6em;
 }
 
 .green-about h2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color: white;
     /* font-size: 3vw; */
     line-height: 1.2em;
