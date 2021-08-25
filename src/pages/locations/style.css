@@ -266,6 +266,7 @@
 .listview-wrapper h5 {
     font-family: 'Raleway', sans-serif;
     color: #0b56a4;
+    margin-bottom: 18px;
 }
 
 .listview-location {
@@ -279,6 +280,10 @@
 .location-contact a {
     text-decoration: none;
     color: black !important;
+}
+
+.listview-location img {
+    width: 18px;
 }
 
 @media only screen and (max-width: 640px) {

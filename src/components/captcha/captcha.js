@@ -1,7 +1,6 @@
 import React from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 function Captcha(props) {
     return(
         <ReCAPTCHA

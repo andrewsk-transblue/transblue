@@ -39,9 +39,9 @@ class Form extends Component {
                     Phone: ${this.state.phone}
                     Message: ${this.state.message}`
         };
-        mailgun.messages().send(data, function(error, body) {
-            console.log(body)
-        })
+        // mailgun.messages().send(data, function(error, body) {
+        //     console.log(body)
+        // })
         console.log(this.state)
         this.setState({isSubmitted: true})
     }
