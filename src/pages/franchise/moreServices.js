@@ -46,7 +46,7 @@ function MoreServices() {
         </div>
     </div>} */}
 
-    <div className='row more-services card-deck mx-0'>
+    {displayServices && <div className='row more-services card-deck mx-0'>
         <div className='col-lg-6 card'>
             {/* <div className='vector'></div> */}
             {/* <img src={cardtop} alt='' /> */}
@@ -113,7 +113,7 @@ function MoreServices() {
                 <a className='cta' href='/'>GREEN WEBSITE</a>
             </div>
         </div>
-    </div>
+    </div>}
     
     </Fragment>
     )
