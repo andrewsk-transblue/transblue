@@ -42,7 +42,7 @@ function Franchise(props) {
                 <meta name="description" content="Transblue Government Services" />
             </Helmet>
             <div className='franchise-wrapper'>
-                <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`}  />
+                <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
                 <Header
                     img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
                     title={easybaseData[0].name.toUpperCase()}
