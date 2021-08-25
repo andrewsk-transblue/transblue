@@ -272,14 +272,16 @@
 .listview-wrapper {
     width: 93%;
     margin-top: 30px;
+    margin-bottom: 60px;
     /* padding-top: 40px; */
 }
 
 .listview-wrapper h5 {
     font-family: 'Raleway', sans-serif;
-    color: #0b56a4;
+    color: rgb(87, 87, 87);
     margin-bottom: 18px;
     padding-left: 15px;
+    letter-spacing: .05em;
 }
 
 .listview-location {
@@ -295,14 +297,9 @@
     color: black !important;
 }
 
-/* .listview-location a.web-link {
-    color: white;
-    background-color: #ed6a22;
-    font-size: 12px;
-    padding: 3px 10px 5px 10px;
-    text-decoration: none;
-    letter-spacing: .07em;
-} */
+.listview-location p {
+    font-size: 15px;
+}
 
 .listview-location img {
     width: 18px;

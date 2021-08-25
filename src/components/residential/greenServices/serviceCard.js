@@ -3,12 +3,13 @@ import React, {Fragment, useState} from 'react';
 import ev2 from '../../../images/residential/ev2.jpg';
 import ev3 from '../../../images/residential/ev3.jpg';
 import solar from '../../../images/residential/solar4.jpg';
+import xeriscape from '../../../images/residential/xeriscape.jpg';
 import rightarrow from '../../../images/residential/rightarrow.png';
 import leftarrow from '../../../images/residential/leftarrow.png';
 
 import './style.css';
 
-const images = [ev2, ev3, solar];
+const images = [ev2, ev3, solar, xeriscape];
 const text = [
     {
         title: 'ELECTRIC VEHICLE CHARGERS',
@@ -23,7 +24,7 @@ const text = [
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque facilisis mi. Nunc pretium ex enim, sed rhoncus nisl porttitor.'
     },
     {
-        title: 'SHADE STRUCTURES',
+        title: 'XERISCAPES',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque facilisis mi. Nunc pretium ex enim, sed rhoncus nisl porttitor.'
     }
 ]
