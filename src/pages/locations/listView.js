@@ -9,6 +9,7 @@ function ListView(props) {
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
                 {props.locations.map(location => {
+                    console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>

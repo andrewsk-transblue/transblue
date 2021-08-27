@@ -4,6 +4,8 @@ import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import ServiceCard from './serviceCard';
+import Professional from './professional';
+import Contact2 from './contact2';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
@@ -51,6 +53,7 @@ function Franchise(props) {
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
+                <Professional />
                 <FranchiseLifestyle location={easybaseData[0]} />
 
                 <div className='random'>
@@ -110,6 +113,7 @@ function Franchise(props) {
                         </div>
                     </div>
                 </div>
+                <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} />
                 <div className='container-fluid contact-container'>
                     <div className='contact-overlay'></div>
                     <Contact name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`}/>

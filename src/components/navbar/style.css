@@ -41,15 +41,11 @@ nav button {
     line-height: 1.5 !important;
     background-color: transparent;
     border: 0px;
+    border-radius: 0px !important;
 }
 
 nav .navbar-nav li a.active {
     border-bottom: 1px solid lightgray;
-}
-
-nav button {
-    background-color: transparent;
-    border: 0px;
 }
 
 a.dropdown-item {

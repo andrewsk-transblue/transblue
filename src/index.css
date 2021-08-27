@@ -156,6 +156,15 @@ button.cta:hover {
   font-size: 1.03rem;
 }
 
+.left-input,
+.right-input {
+    width: 48%;
+}
+
+.right-input {
+    margin-left: 4%;
+}
+
 @media only screen and (min-width: 992px) {
   .section-p {
     line-height: 1.4em;

@@ -105,7 +105,7 @@ class Navbar extends Component {
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">CONTACT</a>
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">LOCATIONS</a>
+                                <a className="dropdown-item" href="/locations">LOCATIONS</a>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">FRANCHISE</a>
                             </div>

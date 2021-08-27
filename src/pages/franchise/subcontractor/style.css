@@ -43,11 +43,6 @@
     margin-top: 20px;
 }
 
-.subform-wrapper .left-input,
-.subform-wrapper .right-input {
-    width: 48%;
-}
-
 .subform-wrapper .center-left-input,
 .subform-wrapper .center-center-input,
 .subform-wrapper .center-right-input {
@@ -57,10 +52,6 @@
 .subform-wrapper .center-center-input,
 .subform-wrapper .center-right-input {
     margin-left: 2%;
-}
-
-.subform-wrapper .right-input {
-    margin-left: 4%
 }
 
 .subform-wrapper span p,
