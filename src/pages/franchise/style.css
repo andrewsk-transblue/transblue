@@ -171,17 +171,15 @@
     /* background-color: rgb(58, 58, 58); */
 }
 
-.map h1 {
-    /* color: white; */
+/* .map h1 {
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    /* margin: 0 auto; */
     margin-bottom: 40px;
     letter-spacing: 3px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(0, 26, 255);
     border-bottom: 1px solid rgb(160, 160, 160);
-}
+} */
 
 #mapid {
     width: 100%;

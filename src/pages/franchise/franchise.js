@@ -6,6 +6,7 @@ import Header from '../../components/header';
 import ServiceCard from './serviceCard';
 import Professional from './professional';
 import Contact2 from './contact2';
+import getAreas from './addCityZip';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
@@ -23,12 +24,22 @@ import './style.css';
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
+    const [areas, setAreas] = useState({})
     const { db, e } = useEasybase();
 
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
+            console.log(JSON.parse(ebData[0].zipcodes))
+
+            let zipcodeArray = JSON.parse(ebData[0].zipcodes)
+
+            let areas = getAreas(zipcodeArray)
+            console.log(areas)
+            setAreas(areas)
+            
+
             //console.log(ebData)
             //console.log(easybaseData[0])
             //easybaseData[0].locations
@@ -102,14 +113,13 @@ function Franchise(props) {
                 <div className='map bg-light'>
                     <div className='container'>
                         <div className='row'>
-                            <h1 className='text-dark'>Areas Serviced</h1><br />
-                            {/* <h6>around {easybaseData[0].city}, {easybaseData[0].state}</h6> */}
-                        </div>
-                        <div className='row'>
                             <div className='col-lg-6 cities'>
-                                {easybaseData[0].locations !== undefined && <CityZip locations={easybaseData[0].locations} />   }             
+                                <h2 className='section-header'>AREAS SERVICED</h2><br />
+                                {Object.keys(areas).length > 0 && <CityZip locations={areas} />   }             
                             </div>
+                            
                             {easybaseData[0].lat > 0 && <div className='col-lg-6'><Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} /></div>}
+                            
                         </div>
                     </div>
                 </div>
