@@ -29,8 +29,10 @@ const text = [
     }
 ]
 
-function ServiceCard() {
+function ServiceCard(props) {
     const [index, setIndex] = useState(0);
+
+    const body = props.body
 
     function changeSlide(direction) {
         if(direction === 'increment') {
@@ -48,8 +50,10 @@ function ServiceCard() {
                 <p className='mb-1'>WELCOME TO THE</p>
                 <h2>FUTURE OF
                     GREEN ENERGY</h2>
-                <p className='section-p'>We are committed to the future beauty of our outdoors. For that reason we offer an array of projects that help minimize your carbon footprint.</p>
-                <p className='mb-4 section-p'>We provide proffesional grade Electric vehicle charge installations and retrofitting. To conserve power useage we also provide solar paneling installations for roofing and shade structures. </p>
+                <p className='section-p'>{props.p1}</p>
+                <p className='section-p'>{props.p2}</p>
+                {/* <p className='section-p'>We are committed to the future beauty of our outdoors. For that reason we offer an array of projects that help minimize your carbon footprint.</p>
+                <p className='mb-4 section-p'>We provide proffesional grade Electric vehicle charge installations and retrofitting. To conserve power useage we also provide solar paneling installations for roofing and shade structures. </p> */}
             </div>
             <div className='green-service-card service-wrapper col-lg-8 col-12 col-xs-12 order-lg-1 order-sm-12'>
                 <img src={images[index]} alt='' />
@@ -57,7 +61,10 @@ function ServiceCard() {
                     <p className='text-secondary mb-1 mt-2'>TRANSBLUE GREEN SERVICES</p>
                     <hr />
                     <h3>{text[index].title}</h3>
-                    <p className='section-p'>{text[index].body}</p>
+                    <p className='section-p'>
+                        {/* {text[index].body} */}
+                        {body[index]}
+                    </p>
                     <a className='mr-1' href='https://tbev.herokuapp.com/'>LEARN MORE</a>
                     <button onClick={() => changeSlide('decrement')}><img src={leftarrow} alt='Prev Slide' /></button>
                     <button onClick={() => changeSlide('increment')}><img src={rightarrow} alt='Next Slide' /></button>

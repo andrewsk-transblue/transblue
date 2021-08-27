@@ -17,9 +17,9 @@ function Quality() {
                     What do you do when your project is complete? When your dream project has the final touches laced into position?</p>
 
                     <span>
-                    <div className='inline'>SIT.</div>
-                    <div className='inline'>RELAX.</div>
-                    <div className='inline'>ENJOY.</div>
+                        <div className='inline'>SIT.</div>
+                        <div className='inline'>RELAX.</div>
+                        <div className='inline'>ENJOY.</div>
                     </span>
 
                     <p className='section-p'>This is the place you watch your children grow up, the place where you laugh, the place you long to be after a long day at the office.</p>
