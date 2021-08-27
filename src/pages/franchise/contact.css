@@ -11,7 +11,7 @@ svg {
     z-index: 0;
 }
 
-.contact2-wrapper h3 {
+.contact2-wrapper h2 {
     color: #0b56a4;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 10px !important;
@@ -62,7 +62,7 @@ svg {
 
 .contact2-wrapper .contact-info p {
     color: rgb(221, 221, 221);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
 }
 

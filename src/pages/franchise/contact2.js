@@ -14,11 +14,15 @@ function Contact2(props) {
                 >
                     <stop offset="0%" style={{stopColor:'rgb(0,188,212)', stopOpacity: 1.00}} />
                     <stop offset="70%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />
+
+                    <stop offset="0%" style={{stopColor:'rgb(3,169,244)', stopOpacity:1.00}} />
+                    <stop offset="47%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />
+                    <stop offset="100%" style={{stopColor:'rgb(5,39,75)', stopOpacity:1.00}} />
                 </linearGradient>
                 </defs>
             </svg>
             <div className='contact-form-info'>
-                <h3>GET IN TOUCH.</h3>
+                <h2>GET IN TOUCH.</h2>
                 <p className='section-p'>
                     We are happy to provide a complimentary quote or answer any questions you may have.
                 </p>
@@ -39,8 +43,8 @@ function Contact2(props) {
                             
                             </p>
                             <p>
-                                IncomingLeads@Transblue.org<br />
-                                (844) 482-2583
+                                {props.email}<br />
+                                {props.phone}
                             </p>
                             <span>                    
                                 <a href='https://www.linkedin.com/company/transblue-general-contractor'><i className="fab fa-linkedin-in"></i></a>
