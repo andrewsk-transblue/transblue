@@ -6,7 +6,7 @@ import Header from '../../components/header';
 import ServiceCard from './serviceCard';
 import Professional from './professional';
 import Contact2 from './contact2';
-import getAreas from './addCityZip';
+//import getAreas from './addCityZip';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
@@ -31,18 +31,12 @@ function Franchise(props) {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
-            console.log(JSON.parse(ebData[0].zipcodes))
+            //console.log(JSON.parse(ebData[0].zipcodes))
 
-            let zipcodeArray = JSON.parse(ebData[0].zipcodes)
+            //let zipcodeArray = JSON.parse(ebData[0].zipcodes)
 
-            let areas = getAreas(zipcodeArray)
-            console.log(areas)
-            setAreas(areas)
-            
-
-            //console.log(ebData)
-            //console.log(easybaseData[0])
-            //easybaseData[0].locations
+            let areas = JSON.parse(ebData[0].areas)
+            setAreas(areas);
         }
          mounted();
     }, [])
