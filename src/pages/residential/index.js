@@ -8,6 +8,7 @@ import Dees from '../../components/residential/dees/dees';
 import Quality from '../../components/residential/quality/quality';
 import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
+import Installation from '../../components/residential/installation';
 import Carousel from '../../components/residential/carousel';
 import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
@@ -47,6 +48,7 @@ function Residential() {
                 <Quality />
                 <Lifestyle />
                 <UpgradeNew />
+                <Installation />
                 <Carousel />
                 <Design />
                 <Dees />
