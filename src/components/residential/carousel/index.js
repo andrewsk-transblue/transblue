@@ -26,34 +26,34 @@ let text = [
                 body: "Have a warm and cozy evening by the fire with your family with Transblue’s Fire features!"
             },{
                 title: 'OUTDOOR KITCHENS',
-                body: 'Bring your cooking skills outside with outdoor kitchens. Cooking outside leads to fresh air, good smells and better tasting food.'
+                body: "Love the life you live. Transblue builds incredible outdoor kitchens. There's nothing better than firing the smoker or grill and getting ready for the entertainment."
             }, {
                 title: 'COVERED PATIOS',
-                body: 'Don’t let the weather keep you from going outdoors! Shade structure for covered patios turn any outdoor living space into something you can enjoy all year round!'
+                body: 'Don’t let the weather keep you from going outdoors! From proposal to design to permit, our teams build outdoor living space structures that allow you to enjoy your outdoor space during any rainy event.'
             }, {
                 title: 'POOLS & SPAS',
-                body: 'A nice cool dip in the pool on a hot day sounds like a perfect way to spend the Summer.'
+                body: 'Tired of the heat? Looking to relax and enjoy your homes full potential? Allow Transblue’s team of outdoor living space experts design and build the pool you have been dreaming of.'
             },{
                 title: 'PAVERS',
                 body: 'Whether you’re dreaming of an intimate patio, a practical driveway or a luxurious outdoor living space we do it all!'
             },{
                 title: 'DECKS',
-                body: 'All decks and fences are framed with pressure treated materials.'
+                body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
             },{
                 title: 'FENCES',
-                body: 'All decks and fences are framed with pressure treated materials.'
+                body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
             },{
                 title: 'SYNTHETIC TURF',
-                body: 'At Transblue we are proud to offer the best synthetic turf innovation on the market. '
+                body: "Transblue offers the world's most realistic synthetic turf and synthetic putting greens available in the market today. We are pleased to provide you with an unmatched, professional quality putting green or synthetic lawn for your home."
             }, {
                 title: 'ATHLETIC COURTS',
-                body: 'R&R doesn’t just have to be all rest and relxation... Shooting some hoops and practicing your putting technique can be just as relaxing! '
+                body: 'Transblue installs top of the line Basketball, Hockey, Tennis, and Pickleball playable courts. Not to mention batting cages, putting greens and all types of courts used to play sports on.'
             }, {
                 title: 'WATER FEATURES',
-                body: 'Who doesn’t want to swim or gather around a refreshing pool on a hot summer day?'
+                body: 'Transblue installs waterfalls, ponds, water features, Koi ponds, and much, much more. At Transblue we will install multi-tiered waterfalls for your home, living space, or calm relaxing walk through your garden, water features enhance entertainment and enjoyment for your family and friends.'
             }, {
                 title: 'RETAINING WALLS',
-                body: 'Add some layers, stability and style to your slopes with retaining walls. No matter what style you need, Transblue’s retaining walls are designed to be both functional and beautiful.'
+                body: 'Let Transblue’s team of installers and designers build your next retaining wall. We have the experience you can depend on. Our lead designers have created, designed and installed hundreds of retaining walls.'
             }
     ]
 
@@ -77,12 +77,12 @@ class Carousel extends Component {
     }
 
     componentDidMount() {
-        console.log(images.length)
+        //console.log(images.length)
         window.addEventListener('resize', this.updateDimensions);
         if(window.innerWidth > 992) {
             this.setState({cols: 4, lastSlide: 3})
         }
-        console.log(this.state.cols)
+        //console.log(this.state.cols)
     }
 
     render() {

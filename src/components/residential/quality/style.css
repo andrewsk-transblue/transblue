@@ -22,11 +22,13 @@
     font-size: 1.1em;
     margin-right: 15px;
     font-style: italic;
+    font-family: 'Raleway', sans-serif;
 }
 
-.quality h6 {
+.quality p:not(.section-p) {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
+    font-size: 1.05em;
 }
 
 @media only screen and (min-width: 992px) {

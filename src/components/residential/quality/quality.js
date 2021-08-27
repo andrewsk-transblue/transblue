@@ -22,9 +22,9 @@ function Quality() {
                         <div className='inline'>ENJOY.</div>
                     </span>
 
-                    <p className='section-p'>This is the place you watch your children grow up, the place where you laugh, the place you long to be after a long day at the office.</p>
-                    <p className='section-p'>This is your <i>escape</i>, where the world makes sense again, where you recharge.</p>
-                    <p className='section-p'>This is Transblue.</p> 
+                    <p className='section-p'>This is the place you watch your children grow up, the place where you laugh, the place you long to be after a long day at the office.
+                    This is your <i>escape</i>, where the world makes sense again, where you recharge.</p>
+                    <p>THIS IS TRANSBLUE.</p> 
                     {/* <h6>THIS IS TRANSBLUE.</h6> */}
                 </div>
                 <div className='col-lg-6'>
