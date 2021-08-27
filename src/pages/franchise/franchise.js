@@ -31,9 +31,6 @@ function Franchise(props) {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
-            //console.log(JSON.parse(ebData[0].zipcodes))
-
-            //let zipcodeArray = JSON.parse(ebData[0].zipcodes)
 
             let areas = JSON.parse(ebData[0].areas)
             setAreas(areas);
@@ -61,7 +58,7 @@ function Franchise(props) {
                 <Professional />
                 <FranchiseLifestyle location={easybaseData[0]} />
 
-                <div className='random'>
+                {/* <div className='random'>
                     <div className='overlay'></div>
                     <div className='container excellent-service centered-text'>
                         <div className='row'>
@@ -82,7 +79,7 @@ function Franchise(props) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='franchise-services'>
                     <div className='container-fluid'>
@@ -122,9 +119,10 @@ function Franchise(props) {
                     <div className='contact-overlay'></div>
                     <Contact name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`}/>
                 </div> */}
-                <Footer locationPage={true} franchise={true} location={easybaseData[0]} />
+                
             </div>
-            </Fragment>
+            <Footer locationPage={true} franchise={true} location={easybaseData[0]} />
+        </Fragment>
     )
 
 }

@@ -6,14 +6,14 @@ function Contact2(props) {
     return(
         <div className='contact2-wrapper'>
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet">
-                <path d="M 0 5 L 16 3 L 16 8 L 0 8 Z" fill='url(#linear-gradient)' stroke="transparent" stroke-width=".1" />
+                <path d="M 0 5 L 16 3 L 16 8 L 0 8 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
                 <defs>
                 <linearGradient
                     id="linear-gradient"
                     x1="0%" y1="50%" x2="100%" y2="50%"
                 >
-                    <stop offset="0%" style={{stopColor:'rgb(0,188,212)', stopOpacity: 1.00}} />
-                    <stop offset="70%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />
+                    {/* <stop offset="0%" style={{stopColor:'rgb(0,188,212)', stopOpacity: 1.00}} />
+                    <stop offset="70%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} /> */}
 
                     <stop offset="0%" style={{stopColor:'rgb(3,169,244)', stopOpacity:1.00}} />
                     <stop offset="47%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />

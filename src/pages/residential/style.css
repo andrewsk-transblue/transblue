@@ -16,23 +16,20 @@
 .residential-body .section-header {
     font-size: 1.7em;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 5px;
     line-height: 1.2em;
 }
 
-.residential-navbar {
+/* .residential-navbar {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
     width: 100%;
-}
+} */
 
 .residential-header img  {
     width: 100%;
     height: 600px;
-    /* max-width: 100%;
-    height: auto; */
 }
 
 .residential-body .about {

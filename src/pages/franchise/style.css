@@ -1,10 +1,10 @@
-.franchise-wrapper {
+/* .franchise-wrapper {
     background-image: url('../../images/franchise/random.jpeg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
 
 .test {
     width: 100%;
@@ -12,7 +12,7 @@
     background-color: transparent;
 }
 
-.random {
+/* .random {
     height: 550px;
     position: relative;
 }
@@ -21,7 +21,7 @@
     height: 100%;
     z-index: 5;
     background-color: rgba(0,0,0,0.5)
-}
+} */
 
 .franchise-services {
     padding-top: 90px;
@@ -109,25 +109,14 @@
     border-radius: 15px;
 } */
 
-.more-services .card .vector {
-    /* Vector 3 */
-    position: absolute;
-    width: 373px;
-    height: 110px;
-
-    background: linear-gradient(88.39deg, #0B56A4 1.45%, #FFFFFF 114.39%);
-    border: 1px solid #FFFFFF;
-}
-
 .about-franchise p {
     margin-top: 15px;
 }
 
-.random {
+/* .random {
     position: relative;
-}
+} */
 
-.random img,
 .franchise-lifestyle-wrapper img {
     width: 100%;
 }
@@ -192,7 +181,7 @@
 
 .cities .zipcode-list,
 .cities .city-list {
-    height: 400px;
+    height: 300px;
     overflow-y: auto;
 }
 
@@ -360,9 +349,10 @@
     background-color: #0b56a4;
 }
 
-.cities h4 {
+.cities h5 {
     /* color: white; */
     font-weight:normal;
+    font-family: 'Raleway', sans-serif;
 }
 
 .contact-sidebar {

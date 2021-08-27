@@ -42,7 +42,8 @@ function Services() {
                             image={residential}
                             service='RESIDENTIAL'
                             page='residential'
-                            description= 'Luxury exterior design is our specialty. From outdoor kitchens to gorgeous, functional retaining walls, we’ll build you the backyard retreat of your dreams. '
+                            // description= 'Luxury exterior design is our specialty. From outdoor kitchens to gorgeous, functional retaining walls, we’ll build you the backyard retreat of your dreams. '
+                            description='Whether you’re installing a new patio, re-furbishing a swimming pool, building an outdoor kitchen or adding a sun room our expert teams are the best choice for you and your family. Offering over 62 service lines our turn-key installations are built to make your life easy. You don’t need 5 different contractors on your job, all you need is Transblue. Our multi discipline expertise brings all your construction needs under one roof, the Transblue roof. For a best-in-class project and experience call us today at __________. '
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>

@@ -12,6 +12,23 @@
     margin-right: 20px;
 }
 
+.quality span {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.quality span .inline {
+    letter-spacing: .05em;
+    font-size: 1.1em;
+    margin-right: 15px;
+    font-style: italic;
+}
+
+.quality h6 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;
+}
+
 @media only screen and (min-width: 992px) {
     .quality {
         margin-top: 70px;

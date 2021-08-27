@@ -41,7 +41,7 @@ function Residential() {
             <div className='residential-body'>
                 <div className='about row'>
                     <p>
-                        At Transblue, we build more than just luxury backyard improvement projects. We transform your backyard into the perfect venue for your next family barbecue. We prepare the canvas for your summer dinner party. We turn your vision for outdoor luxury into reality.
+                    Transblue takes a holistic approach to your project. We believe that each project is a collaboration of your vision and our expertise. Our teams will guide you through the process and ensure you love what your are building and your dreams not only come true but become an investment that returns not only ROI but that brings family closer together! Projects are not just beautiful materials and designs, they are birthday parties, BBQ’s, anniversaries and relaxing afternoons! 
                     </p>
                 </div>
                 <Quality />
