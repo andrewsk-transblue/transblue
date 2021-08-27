@@ -43,7 +43,7 @@ function Services() {
                             service='RESIDENTIAL'
                             page='residential'
                             // description= 'Luxury exterior design is our specialty. From outdoor kitchens to gorgeous, functional retaining walls, we’ll build you the backyard retreat of your dreams. '
-                            description='Whether you’re installing a new patio, re-furbishing a swimming pool, building an outdoor kitchen or adding a sun room our expert teams are the best choice for you and your family. Offering over 62 service lines our turn-key installations are built to make your life easy. You don’t need 5 different contractors on your job, all you need is Transblue. Our multi discipline expertise brings all your construction needs under one roof, the Transblue roof. For a best-in-class project and experience call us today at __________. '
+                            description='Whether you’re installing a new patio, re-furbishing a swimming pool, building an outdoor kitchen or adding a sun room our expert teams are the best choice for you and your family. Offering over 62 service lines, our turn-key installations are built to make your life easy. Our multi discipline expertise brings all your construction needs under one roof, the Transblue roof. '
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -51,7 +51,7 @@ function Services() {
                             image={commercial}
                             service='COMMERCIAL'
                             page='commercial'
-                            description='Luxury design isn’t only for the home. We’ll make your asphalt look smooth and brand new. We’ll plow and de-ice your parking lot to ensure the safety and security of your customers and residents. Your business deserves the best exterior care, and we’re proud to provide it.' 
+                            description='Our teams are focused on making your life simple and reducing the burden that comes with the capital projects required to keep your business looking its best. Our experts offer a full range of services from swimming pool construction, roofing, siding, asphalt, concrete, painting, decking, fencing and interior remodels, to Electrical Vehicles and Solar installs to Snow and Ice management and everything in between. ' 
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -59,7 +59,7 @@ function Services() {
                             image={multifamily} 
                             service='MULTIFAMILY'
                             page='multifamily'
-                            description='If you’re in charge of an HOA or other multifamily residence management organization, you need a repair and beautification service you can rely on. Transblue offers all the multifamily services you need. We’ll repave your parking lot, replace your roofs, install decks, remove snow, and de-ice your parking lot during the winter.'
+                            description='As a property manager, you are extremely busy. Our focus is being your resource. Our expert teams turn proposals around quickly to make your life easier! Our teams attend board meetings and describe projects and services to ensure the delivery to your communities is exactly what it should be, World Class.'
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -67,7 +67,7 @@ function Services() {
                             image={snowSmall}
                             service='SNOW'
                             page='snow'
-                            description='At Transblue, we build more than just luxury backyard improvement projects. We transform your backyard into the perfect venue for your next family barbecue. We prepare the canvas for your summer dinner party. We turn your vision for outdoor luxury into reality.'
+                            description='Transblue, a leader in snow and ice management, understands what your property needs. Its simple consistent on time service with a focus on quality. The World Class Experience we deliver at Transblue will ensure that your clients, employees, and stakeholders don’t lose faith in your brand.'
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -75,7 +75,7 @@ function Services() {
                             image={government}
                             service='GOVERNMENT'
                             page='government'
-                            description='Luxury design isn’t only for the home. We’ll make your asphalt look smooth and brand new. We’ll plow and de-ice your parking lot to ensure the safety and security of your customers and residents. Your business deserves the best exterior care, and we’re proud to provide it.' 
+                            description='Transblue General Contractors provides a full range of construction services to Government Facilities, whether it be Federal Government, Military, Municipality, School Districts, Parks and Recreation, etc. Transblue is positioned to deliver on the projects you’re planning to improve your properties. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.' 
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -83,7 +83,7 @@ function Services() {
                             image={evSmall}
                             service='EV'
                             page='ev'
-                            description='If you’re in charge of an HOA or other multifamily residence management organization, you need a repair and beautification service you can rely on. Transblue offers all the multifamily services you need. We’ll repave your parking lot, replace your roofs, install decks, remove snow, and de-ice your parking lot during the winter.'
+                            description='With a strong focus on making our World a Better Place Transblue’s ESG (environmental, social, and governance) program is World Class. Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc. Has set Transblue apart in the industry as an environmental leader. For a best in class consultation and install, call Transblue Today.'
                         />
                     </div>
                 </div>

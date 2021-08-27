@@ -28,7 +28,8 @@
 .quality p:not(.section-p) {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.05em;
+    font-size: 1.1em;
+    margin-top: 25px;
 }
 
 @media only screen and (min-width: 992px) {
