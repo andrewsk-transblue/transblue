@@ -15,6 +15,7 @@ function Form() {
             <span>
                 <textarea placeholder='Tell us about your project'></textarea>
             </span>
+            <button>SEND MESSAGE</button>
         </div>
     )
 }

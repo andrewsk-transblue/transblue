@@ -1,20 +1,34 @@
 .contact2-wrapper {
     background-color: white;;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 500px;
+    position: relative;
 }
 
-/* .contact2-wrapper h3 {
-    color: #0b56a4;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-bottom: 40px;
-} */
+svg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 0;
+}
 
 .contact2-wrapper h3 {
     color: #0b56a4;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact2-wrapper .contact-form-info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.contact2-wrapper h3,
+.contact2-wrapper .section-p {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contact2-wrapper .container-fluid {
@@ -23,7 +37,7 @@
 
 .contact2-wrapper .contact-info {
     padding-right: 100px;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 .contact2-wrapper .section-p:last-of-type {
@@ -39,20 +53,53 @@
     padding: 6px 10px;
 }
 
+.contact2-wrapper .contact-info h5 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;
+    margin-top: 30px;
+}
+
+.contact2-wrapper .contact-info p {
+    color: rgb(221, 221, 221);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .05em;
+}
+
+.contact2-wrapper .contact-info p:last-of-type {
+    margin-bottom: 25px;
+}
+
 .contact2-wrapper .contact-info .fa-facebook-f {
     padding: 0px 2px;
 }
 
 .contact2-wrapper .form-wrapper {
-    background-color: rgb(223, 223, 223);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    /* background-color: rgb(223, 223, 223); */
+    background-color: white;
     padding: 40px 20px;
     width: 90%;
     margin: 0 auto;
+
+}
+
+.contact2-wrapper .form-wrapper button {
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0b56a4;
+    border: 0px;
+    margin-top: 20px;
+    padding: 5px;
+    letter-spacing: .0705em;
+    /* font-size: 1.2em; */
 }
 
 .contact2-wrapper input,
 .contact2-wrapper textarea {
-    border: 0px;
+    border: 1px solid rgb(202, 202, 202);
     padding: 5px;
 }
 

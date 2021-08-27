@@ -113,11 +113,11 @@ function Franchise(props) {
                         </div>
                     </div>
                 </div>
-                <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} />
-                <div className='container-fluid contact-container'>
+                <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} franchise={easybaseData[0]} />
+                {/* <div className='container-fluid contact-container'>
                     <div className='contact-overlay'></div>
                     <Contact name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`}/>
-                </div>
+                </div> */}
                 <Footer locationPage={true} franchise={true} location={easybaseData[0]} />
             </div>
             </Fragment>
