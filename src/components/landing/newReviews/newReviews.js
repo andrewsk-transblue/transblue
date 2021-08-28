@@ -63,7 +63,7 @@ class NewReviews extends Component {
                     <div className='col-lg-2 col-2'></div>
                     <div className='col-lg-4 col-xl-3 pr-0 col-8 my-auto'>
                         <div className='row'>
-                            <span><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star mr-3"></i>
+                            <span><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star mr-2"></i>
                             Testimonials</span>
                         </div>
                     </div>
