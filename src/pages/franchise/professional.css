@@ -1,15 +1,13 @@
 .professional-wrapper {
     padding-top: 80px;
-    padding-bottom: 80px;
     background-color: white;
 }
 
 .professional-wrapper .container-fluid {
     width: 93%;
-    text-align: center;
 }
 
-.professional-wrapper h4 {
+.professional-wrapper h5 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
     color: rgb(78, 78, 78);
