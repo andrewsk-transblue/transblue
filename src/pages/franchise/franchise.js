@@ -32,6 +32,7 @@ function Franchise(props) {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
 
+            console.log(ebData[0].areas)
             let areas = JSON.parse(ebData[0].areas)
             setAreas(areas);
         }

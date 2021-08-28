@@ -330,46 +330,80 @@ const locations = [
         phone: '(360) 854 3111',
         email: 'TransblueMountVernon@transblue.org',
         locations: {
-            'Everett': [98201 ,98203,98204,98208,98206,98207,98213,98291],
-            'Acme': [98220],
-            'Anacortes': [98221],
-            'Arlington': [98223],
-            'Bellingham': [98225,98226,98227,98228,98229],
-            'Blaine': [98230,98231],
-            'Bow': [98232],
-            'Burlington': [98233],
-            'Clearlake': [98235],
-            'Clinton': [98236],
-            'Conway': [98238],
-            'Coupeville': [98239],
-            'Custer': [98240],
-            'Everson': [98247],
-            'Ferndale': [98248],
-            'Freeland': [98249],
-            'Granite Falls': [98252],
-            'Green Bank': [98253],
-            'Hamilton': [98255],
-            'La Conner': [98257],
-            'Lake Stevens': [98258],
-            'Langley': [98260],
-            'Lummi Island': [98262],
-            'Lymen': [98263],
-            'Lynden': [98264],
-            'Maple Falls': [98266],
-            'Marysville': [98270,98271],
-            'Monroe': [98272],
-            'Mount Vernon': [98273,98274],
-            'Mukilteo': [98275],
-            'Nooksack': [98276],
-            'North Lakewood': [98259],
-            'Oak Harbor': [98277],
-            'Camano Island': [98282],
-            'Sedro Woolley': [98284],
-            'Snohomish': [98290, 98296],
-            'Stanwood': [98292],
-            'Sultan': [98294],
-            'Sumas': [98295],
-            'Sylvana': [98287]
+            "Everett": [
+                98201,
+                98203,
+                98204,
+                98208,
+                98206,
+                98207,
+                98213,
+                98291
+            ],
+            "Acme": [
+                98220
+            ],
+            "Anacortes": [
+                98221
+            ],
+            "Arlington": [
+                98223
+            ],
+            "Bellingham": [
+                98225,
+                98226,
+                98227,
+                98228,
+                98229
+            ],
+            "Blaine": [
+                98230,
+                98231
+            ],
+            "Bow": [
+                98232
+            ],
+            "Burlington": [
+                98233
+            ],
+            "Clearlake": [98235],
+            "Clinton": [98236],
+            "Conway": [98238],
+            "Coupeville": [98239],
+            "Custer": [98240],
+            "Everson": [98247],
+            "Ferndale": [98248],
+            "Freeland": [98249],
+            "Granite Falls": [98252],
+            "Green Bank": [98253],
+            "Hamilton": [98255],
+            "La Conner": [98257],
+            "Lake Stevens": [98258],
+            "Langley": [98260],
+            "Lummi Island": [98262],
+            "Lymen": [98263],
+            "Lynden": [98264],
+            "Maple Falls": [98266],
+            "Marysville": [
+                98270,
+                98271
+            ],
+            "Monroe": [98272],
+            "Mount Vernon": [
+                98273,
+                98274
+            ],
+            "Mukilteo": [98275],
+            "Nooksack": [98276],
+            "North Lakewood": [98259],
+            "Oak Harbor": [98277],
+            "Camano Island": [98282],
+            "Sedro Woolley": [98284],
+            "Snohomish": [98290, 98296],
+            "Stanwood": [98292],
+            "Sultan": [98294],
+            "Sumas": [98295],
+            "Sylvana": [98287]
 
         }
     },
@@ -767,12 +801,12 @@ const locations = [
         phone: '(206) 649-6688',
         email: 'TransblueSeattle@transblue.org',
         locations: {
-            'Bellevue': [98006, 98015],
-            'Mercer Island': [98040],
-            'Preston': [98050],
-            'Renton': [98055, 98056, 98057, 98058, 98059],
-            'Seahurst': [98062],
-            'Seattle': [98199,98101,98106,98108,98109,98116,98118,98119,98121,98122,98126, 98134, 98136, 98144,98146,98148, 98154,98158,98161,98164,98166, 98168, 98174, 98178,98181, 98188, 98199,98111,98114,98124, 98129, 98131, 98138, 98139,98141,98190, 98191,98194]
+            "Bellevue": [98006, 98015],
+            "Mercer Island": [98040],
+            "Preston": [98050],
+            "Renton": [98055, 98056, 98057, 98058, 98059],
+            "Seahurst": [98062],
+            "Seattle": [98199,98101,98106,98108,98109,98116,98118,98119,98121,98122,98126, 98134, 98136, 98144,98146,98148, 98154,98158,98161,98164,98166, 98168, 98174, 98178,98181, 98188, 98199,98111,98114,98124, 98129, 98131, 98138, 98139,98141,98190, 98191,98194]
         }
     },
     {
