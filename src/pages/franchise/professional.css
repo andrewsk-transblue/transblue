@@ -1,11 +1,15 @@
 .professional-wrapper {
-    padding-top: 80px;
     padding-bottom: 80px;
     background-color: white;
 }
 
 .professional-wrapper .container-fluid {
     width: 93%;
+}
+
+.professional-wrapper h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #0b56a4;
 }
 
 .professional-wrapper h5 {

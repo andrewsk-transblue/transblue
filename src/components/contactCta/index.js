@@ -3,7 +3,7 @@ import Form from './form';
 import Slide from 'react-reveal/Slide';
 import './style.css';
 
-function ContactCta() {
+function ContactCta(props) {
     const [displayForm, setDisplayForm] = useState(false);
     const [displayCTA, setDisplayCTA] = useState(false);
 
@@ -19,7 +19,7 @@ function ContactCta() {
             {/* {displayForm &&  */}
                 <Slide right when={displayForm} exit={true} collapse>
                     <div className='form'>
-                        <Form onClick={() => setDisplayForm(false)} />
+                        <Form email={props.email} onClick={() => setDisplayForm(false)} />
                     </div>
                 </Slide>
         </div>

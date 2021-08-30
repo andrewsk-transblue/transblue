@@ -52,8 +52,18 @@ class NewReviews extends Component {
     }
 
     changeReview(operation) {
-        if(operation === 'decrement' && this.state.activeReview >0) this.setState({activeReview: this.state.activeReview - 1})
-        if(operation === 'increment' && this.state.activeReview < reviews.length-1) this.setState({activeReview: this.state.activeReview + 1})
+        if(operation === 'decrement') {
+            if(this.state.activeReview > 0) {
+                this.setState({activeReview: this.state.activeReview - 1})
+            }
+            else this.setState({activeReview: reviews.length-1})
+        }
+        if(operation === 'increment') {
+            if(this.state.activeReview < reviews.length-1) {
+                this.setState({activeReview: this.state.activeReview + 1})
+            }
+            else this.setState({activeReview: 0})
+        }
     }
 
     render() {

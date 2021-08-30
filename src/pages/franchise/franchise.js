@@ -37,6 +37,7 @@ function Franchise(props) {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
+            //console.log(ebData[0])
             // setCities(JSON.parse(ebData[0].citylist))
             // setZipcodes(JSON.parse(ebData[0].zipcodelist))
         }
@@ -57,11 +58,11 @@ function Franchise(props) {
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
                 />
-                <ContactCta />
+                <ContactCta email={easybaseData[0].email} />
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
-                <Professional />
+                <FranchiseLifestyle location={easybaseData[0]} />
 
                 <Slideshow 
                     images={[slidesnow, asphalt, fence, solar]}
@@ -114,9 +115,10 @@ function Franchise(props) {
                         <MoreServices />
                     </div>
                 </div>
-                <FranchiseLifestyle location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
+
+                <Professional />
 
                 <NewReviews />
                 <div className='map bg-light'>

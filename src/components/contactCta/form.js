@@ -43,10 +43,12 @@ class Form extends Component {
         //     console.log(body)
         // })
         console.log(this.state)
+        console.log(this.props.email)
         this.setState({isSubmitted: true})
     }
 
     render() {
+        //console.log(this.props)
         return(
             <div className='container'>
                 {/* <div className='form-header'> */}

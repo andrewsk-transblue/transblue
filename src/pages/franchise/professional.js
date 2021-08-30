@@ -6,7 +6,6 @@ function Professional() {
         <div className='professional-wrapper'>
             <div className='container-fluid'>
                 <div className='row'>
-
                     <div className='col-12 col-lg-4'>
                         <h5>
                             <i className="fas fa-seedling"></i> OUTSTANDING SERVICE                 
