@@ -64,6 +64,7 @@ class Slideshow extends Component {
                             <div className='overlay'></div>
                             <div className='slideshow-text centered-text'>
                                 <p>{this.state.text[this.state.slideNo].p1}</p>
+                                {/* <button>CONTACT US</button> */}
                             </div>
                             <button onClick={this.decrement}><img src={leftarrow} className='prev-slide' alt='Prev Slide' /></button>
                             <button onClick={this.increment}><img src={rightarrow} className='next-slide' alt='Next Slide' /></button>

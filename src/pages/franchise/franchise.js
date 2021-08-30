@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
+import ContactCta from '../../components/contactCta';
 import ServiceCard from './serviceCard';
 import Professional from './professional';
 import Contact2 from './contact2';
@@ -11,7 +12,7 @@ import Map from './map';
 import About from './about/about';
 import Slideshow from '../../components/slideshow';
 import CityZip from './cityZip';
-import Contact from './contact';
+//import Contact from './contact';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
@@ -38,7 +39,7 @@ function Franchise(props) {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
 
-            console.log(ebData[0].areas)
+            //console.log(ebData[0].areas)
             let areas = JSON.parse(ebData[0].areas)
             setAreas(areas);
         }
@@ -59,6 +60,7 @@ function Franchise(props) {
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
                 />
+                <ContactCta />
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
