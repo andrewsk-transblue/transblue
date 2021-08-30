@@ -5,7 +5,7 @@ import Header from '../../components/header';
 //import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import About from './about';
-import Slideshow from './slideshow';
+import Slideshow from '../../components/slideshow';
 //import ServiceSlides from '../../components/commercial/serviceSlides/index';
 import Benefits from './benefits';
 import Impression from './impression';
@@ -22,6 +22,10 @@ import headerBg from '../../images/commercial/header2.jpg';
 import simple from '../../images/commercial/simple3.jpg';
 import nextstep4 from '../../images/commercial/nextstep4.JPG';
 import snow from '../../images/commercial/snow.jpeg';
+import slidesnow from '../../images/commercial/snow.jpg';
+import asphalt from '../../images/commercial/asphalt4.jpg';
+import fence from '../../images/commercial/fence.jpg';
+import solar from '../../images/commercial/solar.jpg';
 import './style.css';
 
 
@@ -41,7 +45,27 @@ class Commercial extends Component {
                 <Impression />
                 <Marriott />
                 <Hospitality />
-                <Slideshow />
+                <Slideshow 
+                    images={[slidesnow, asphalt, fence, solar]}
+                    text={[
+                        {
+                            p1: "KEEP YOUR BUSINESS DOORS OPEN",
+                            // p1: 'We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: running your business.',
+                            p2: ''
+                        },
+                        {
+                            p1: 'REFRESH YOUR ASPHALT AND CONCRETE',
+                            p2: ''
+                        },
+                        {
+                            p1: 'INCREASE SECURITY AND PRIVACY',
+                            p2: ''
+                        },
+                        {
+                            p1: 'LOWER YOUR ENERGY BILL',
+                            p2: ''
+                        }
+                    ]} />
                 <Benefits />
                 <div className='simple-process'>
                     <img src={simple} alt='Commercial Landscaping' />

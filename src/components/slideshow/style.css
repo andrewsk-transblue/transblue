@@ -1,0 +1,82 @@
+.slideshow {
+    position: relative;
+    padding: 0px;
+}
+
+.slideshow .row {
+    margin: 0px;
+}
+
+.slideshow-image {
+    width: 100%;
+}
+
+.slideshow-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+    font-size: 18px;
+    font-size: clamp(18px, 3vw, 3vw);
+    width: 60%;
+    line-height: 1.8em;
+}
+
+.slideshow button {
+    z-index: 1000;
+    background-color: transparent;
+    border: 0px;
+}
+.slideshow button .next-slide {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+}
+
+.slideshow button .prev-slide{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+}
+
+.slideshow span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+}
+
+.slideshow span img {
+    margin: 0px 4px;
+    width: 20px;
+    opacity: .5;
+}
+
+.slideshow span img.active {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .slideshow span {
+        bottom: 30px;
+    }
+
+    .slideshow span img {
+        width: 30px;
+    }
+    .slideshow button .next-slide,
+    .slideshow button .prev-slide {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .slideshow button .next-slide,
+    .slideshow button .prev-slide {
+        width: 60px;
+    }
+}

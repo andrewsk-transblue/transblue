@@ -7,20 +7,26 @@ import ServiceCard from './serviceCard';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
-import pools from '../../images/franchise/pools.jpg';
-import decks from '../../images/franchise/decks.jpg';
-import firepit from '../../images/franchise/firepit.jpg';
-import sunroom from '../../images/franchise/sunroom.jpg';
 import Map from './map';
 import About from './about/about';
+import Slideshow from '../../components/slideshow';
 import CityZip from './cityZip';
 import Contact from './contact';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
 import NewReviews from '../../components/landing/newReviews/newReviews';
+import pools from '../../images/franchise/pools.jpg';
+import decks from '../../images/franchise/decks.jpg';
+import firepit from '../../images/franchise/firepit.jpg';
+import sunroom from '../../images/franchise/sunroom.jpg';
 //import locationsDb from '../locations/db';
 import './style.css';
+
+import slidesnow from '../../images/commercial/snow.jpg';
+import asphalt from '../../images/commercial/asphalt4.jpg';
+import fence from '../../images/commercial/fence.jpg';
+import solar from '../../images/commercial/solar.jpg';
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
@@ -57,30 +63,28 @@ function Franchise(props) {
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
                 <Professional />
-                <FranchiseLifestyle location={easybaseData[0]} />
 
-                {/* <div className='random'>
-                    <div className='overlay'></div>
-                    <div className='container excellent-service centered-text'>
-                        <div className='row'>
-                            <div className='col-lg-4'>
-                                <i className="fas fa-seedling fa-2x"></i>
-                                <p>OUTSTANDING SERVICE</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
-                            </div>
-                            <div className='col-lg-4'>
-                                <i className="fas fa-seedling fa-2x"></i>
-                                <p>PROFESSIONAL WORK</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
-                            </div>
-                            <div className='col-lg-4'>
-                                <i className="fas fa-seedling fa-2x"></i>
-                                <p>GREAT COMMUNICATION</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                <Slideshow 
+                    images={[slidesnow, asphalt, fence, solar]}
+                    text={[
+                        {
+                            p1: "KEEP YOUR BUSINESS DOORS OPEN",
+                            // p1: 'We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: running your business.',
+                            p2: ''
+                        },
+                        {
+                            p1: 'REFRESH YOUR ASPHALT AND CONCRETE',
+                            p2: ''
+                        },
+                        {
+                            p1: 'INCREASE SECURITY AND PRIVACY',
+                            p2: ''
+                        },
+                        {
+                            p1: 'LOWER YOUR ENERGY BILL',
+                            p2: ''
+                        }
+                    ]} />
 
                 <div className='franchise-services'>
                     <div className='container-fluid'>
@@ -116,6 +120,7 @@ function Franchise(props) {
                         <MoreServices />
                     </div>
                 </div>
+                <FranchiseLifestyle location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
 

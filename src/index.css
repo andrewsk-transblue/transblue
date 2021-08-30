@@ -179,6 +179,9 @@ button.cta:hover {
   .left-text {
     padding-left: 2rem;
   }
+  .right-text {
+    padding-right: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

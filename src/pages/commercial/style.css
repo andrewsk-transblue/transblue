@@ -58,17 +58,6 @@
     width: 25px;
 }
 
-/* slideshow css */
-.slideshow {
-    position: relative;
-    padding: 0px;
-}
-
-.slideshow .row {
-    margin: 0px;
-}
-
-.slideshow-image,
 .commercial-about img,
 .service-card img,
 .first-impression img,
@@ -80,74 +69,6 @@
 .green-solns img,
 .impression-wrapper img:not(.next-section) {
     width: 100%;
-}
-.slideshow-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.644);
-}
-
-.slideshow-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 3vw;
-    font-size: 18px;
-    font-size: clamp(18px, 3vw, 3vw);
-    width: 60%;
-    line-height: 1.8em;
-}
-
-.slideshow button {
-    z-index: 1000;
-    background-color: transparent;
-    border: 0px;
-}
-
-.next-slide,
-.prev-slide {
-    width: 60px;
-}
-
-.slideshow button .next-slide {
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-}
-
-.slideshow button .prev-slide{
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-}
-
-.slideshow span {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 5px;
-}
-
-.slideshow span img {
-    margin: 0px 4px;
-    width: 20px;
-    opacity: .5;
-}
-
-.slideshow span img.active {
-    opacity: 1;
 }
 
 /* NEXT STEP CSS */
@@ -330,12 +251,6 @@
     height: 60px;
 }
 
-/* @media only screen and (max-width: 1200px) {
-    .impression-wrapper p {
-        font-size: 1em;
-    }
-} */
-
 @media only screen and (min-width: 768px) {
     .simple-process {
         position: relative;
@@ -362,18 +277,6 @@
     .simple-process h6 {
         margin: 3rem 0 1rem 0;
     }
-
-    .slideshow span {
-        bottom: 30px;
-    }
-
-    .slideshow span img {
-        width: 30px;
-    }
-    .slideshow button .next-slide,
-    .slideshow button .prev-slide {
-        width: 40px;
-    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -388,10 +291,6 @@
     }
     .marriott-wrapper img {
         margin-bottom: 0px;
-    }
-    .slideshow button .next-slide,
-    .slideshow button .prev-slide {
-        width: 60px;
     }
     .hospitality-wrapper .hospitality-text {
         margin-top: 1rem;
