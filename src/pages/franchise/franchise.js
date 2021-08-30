@@ -4,13 +4,14 @@ import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
+import About from './about/about';
 import ServiceCard from './serviceCard';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
 import Map from './map';
-import About from './about/about';
 import Slideshow from '../../components/slideshow';
+import Services from './services';
 import CityZip from './cityZip';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
@@ -94,9 +95,10 @@ function Franchise(props) {
                                     LOVE THE LIFE YOU LIVE
                                 </h3>
                                 <p className='section-p'>
-                                    At Transblue, our team of landscape architects and designers and put your plans to paper and design a beautiful, cost effective landscape.
+                                    At {easybaseData[0].name}, our team of landscape architects and designers and put your plans to paper and design a beautiful, cost effective landscape.
                                 </p>
                                 <p className='section-p'>With over 20 years of experience, you can trust Transblue with your home. We offer a variety of services to make your dream landscape a reality.</p>
+
                                 <button className='cta'>VIEW ALL SERVICES</button>
                                 {/* <p className='section-p'>The process is simple:</p>
                                 <p className='step'>1) CONSULTATION</p>
@@ -121,7 +123,8 @@ function Franchise(props) {
                 <Professional />
 
                 <NewReviews />
-                <div className='map bg-light'>
+                <Services />
+                <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-lg-6 col-12 cities'>
