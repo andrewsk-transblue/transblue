@@ -26,9 +26,7 @@ class CityZip extends Component {
                     <div className='city-buttons city-list'>
                     {this.state.cities.length > 0 && this.state.cities.map(city => {
                         return(
-                            <div>
-                                <button>{city}</button>
-                            </div>
+                            <div>{city}</div>
                         )
                     })}
                     </div>

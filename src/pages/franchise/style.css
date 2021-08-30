@@ -181,9 +181,9 @@
     letter-spacing: .05em;
 }
 
-.map button.cta {
-    margin: 40px 0px 0px 0px;
-}
+/* .map button.cta {
+    margin-left: 0px;
+} */
 
 /* .map h1 {
     font-family: 'Raleway', sans-serif;
@@ -214,20 +214,14 @@
     overflow-y: auto;
 }
 
-.cities button,
+.cities div,
 .zipcode-list div {
     border: 0px;
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
-    padding: 0px 20px 0px 0px;
+    /* padding: 0px; */
     margin-bottom: 20px;
     text-align: left;
-}
-
-
-.cities button.active-city {
-    border-bottom: 1.5px solid #0b56a4;
-    border-bottom: 1.5px solid #ed6a22;
 }
 
 .city-list {

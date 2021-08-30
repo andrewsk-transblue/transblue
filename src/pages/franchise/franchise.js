@@ -131,9 +131,12 @@ function Franchise(props) {
                             <div className='col-lg-6 col-12 cities'>
                                 <h5>AREAS SERVICED</h5>
                                 <h2>{easybaseData[0].name.toUpperCase()}</h2>
-                                <p className='section-p'>Open Mon-Fri 9:00am - 5:00pm</p>
+                                <p className='section-p'>
+                                    {easybaseData[0].phone}<br />
+                                    Open Mon-Fri 9:00am - 5:00pm
+                                </p>
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
-                                <ContactModal email={easybaseData[0].email} />
+                                {/* <ContactModal text='SEND US A MESSAGE' email={easybaseData[0].email} /> */}
                             </div>
                             <div className='col-lg-6 col-12'>
                                 {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} />}
