@@ -12,7 +12,6 @@ import Map from './map';
 import About from './about/about';
 import Slideshow from '../../components/slideshow';
 import CityZip from './cityZip';
-//import Contact from './contact';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
@@ -21,7 +20,7 @@ import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
 import sunroom from '../../images/franchise/sunroom.jpg';
-import locationsDb from '../locations/db';
+//import locationsDb from '../locations/db';
 import './style.css';
 
 import slidesnow from '../../images/commercial/snow.jpg';
@@ -32,20 +31,14 @@ import solar from '../../images/commercial/solar.jpg';
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
     //const [areas, setAreas] = useState({})
-    const [cities, setCities] = useState([])
-    const [zipcodes, setZipcodes] = useState([])
     const { db, e } = useEasybase();
 
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
-            //let areas = JSON.parse(ebData[0].areas)
-            setCities(JSON.parse(ebData[0].citylist))
-            setZipcodes(JSON.parse(ebData[0].zipcodelist))
-            //setAreas(areas);
-            console.log(locationsDb[14])
-            console.log(Object.keys(locationsDb[14].locations))
+            // setCities(JSON.parse(ebData[0].citylist))
+            // setZipcodes(JSON.parse(ebData[0].zipcodelist))
         }
          mounted();
     }, [])
