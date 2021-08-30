@@ -35,7 +35,7 @@ class CityZip extends Component {
         return(
             <div className='row'>
                 <div className='col-lg-5 pr-5'>
-                    <h5>CITIES</h5>
+                    <h6>CITIES:</h6>
                     <div className='city-buttons city-list'>
                     {this.state.cities.length > 0 && this.state.cities.map(city => {
                         return(
@@ -47,8 +47,8 @@ class CityZip extends Component {
                     </div>
                 </div>
                 <div className='col-lg-1'></div>
-                <div className='col-lg-5'>
-                    <h5>ZIPCODES</h5>
+                <div className='col-lg-5 pr-5'>
+                    <h6>ZIPCODES:</h6>
                     <div className='zipcode-list'>
                         {this.state.zipcodes.map(zipcode => {
                             return(

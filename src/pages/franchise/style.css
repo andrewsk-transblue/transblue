@@ -160,6 +160,25 @@
     /* background-color: rgb(58, 58, 58); */
 }
 
+.map h2 {
+    /* margin-bottom: 30px; */
+    font-family: 'Raleway', sans-serif;
+    color: #0b56a4;
+    letter-spacing: .05em;
+}
+
+.map .section-p {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.map h5 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(78, 78, 78);
+    margin-bottom: 5px;
+}
+
 /* .map h1 {
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -172,11 +191,15 @@
 
 #mapid {
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
-.map .col-lg-6 {
+/* .map .col-lg-6 {
     position: relative;
+} */
+
+.cities {
+    padding-left: 50px;
 }
 
 .cities .zipcode-list,
@@ -190,12 +213,14 @@
     border: 0px;
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
-    padding: 20px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
+
 .cities button.active-city {
-    border-bottom: 1.5px solid rgb(0, 26, 255);
+    border-bottom: 1.5px solid #0b56a4;
     border-bottom: 1.5px solid #ed6a22;
 }
 
@@ -207,7 +232,7 @@
     margin-bottom: -100px;
 }
 
-.contact {
+/* .contact {
     background-color: white;
     padding: 0px;
     position: absolute;
@@ -217,13 +242,13 @@
     width: 60%;
     margin: 0 auto;
     border-radius: 5px;
-}
+} */
 
-.contact h2 {
+/* .contact h2 {
     font-family: 'Raleway', sans-serif;
     color: #0b56a4;
     letter-spacing: .0705em;
-}
+} */
 
 /* .contact-container img {
     width: 100%;
@@ -337,22 +362,26 @@
 
 .city-list::-webkit-scrollbar-track,
 .zipcode-list::-webkit-scrollbar-track {
-    /* -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);  */
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
 
 .city-list::-webkit-scrollbar-thumb,
 .zipcode-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); */
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5);
     /* background-color:rgb(0, 26, 255); */
     background-color: #0b56a4;
+    /* background-color: rgb(121, 121, 121); */
 }
 
-.cities h5 {
+.cities h6 {
     /* color: white; */
     font-weight:normal;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: .07em;;
 }
 
 .contact-sidebar {

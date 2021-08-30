@@ -103,15 +103,17 @@ function Franchise(props) {
 
                 <NewReviews />
                 <div className='map bg-light'>
-                    <div className='container'>
+                    <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-lg-6 cities'>
-                                <h2 className='section-header'>AREAS SERVICED</h2><br />
-                                {Object.keys(areas).length > 0 && <CityZip locations={areas} />   }             
+                            <div className='col-lg-6 col-12 cities'>
+                                <h5>AREAS SERVICED</h5>
+                                <h2>{easybaseData[0].name.toUpperCase()}</h2>
+                                <p className='section-p'>Open Mon-Fri 9:00am - 5:00pm</p>
+                                {Object.keys(areas).length > 0 && <CityZip locations={areas} />   }
                             </div>
-                            
-                            {easybaseData[0].lat > 0 && <div className='col-lg-6'><Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} /></div>}
-                            
+                            <div className='col-lg-6 col-12'>
+                                {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} />}
+                            </div>
                         </div>
                     </div>
                 </div>
