@@ -88,12 +88,30 @@ function Franchise(props) {
                             <h4>{easybaseData[0].name}</h4>
                             <About phone={easybaseData[0].phone} email={easybaseData[0].email} />
                         </div> */}
-
+                        
                         <div className='row'>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-12 col-md-6 col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                            <div className='col-lg-5 right-text'>
+                                <h3 className='section-header'>
+                                    LOVE THE LIFE YOU LIVE
+                                </h3>
+                                <p className='section-p'>
+                                    At Transblue, our team of landscape architects and designers and put your plans to paper and design a beautiful, cost effective landscape.
+                                </p>
+                                <p className='section-p'>With over 20 years of experience, you can trust Transblue with your home. We offer a variety of services to make your dream landscape a reality.</p>
+                                <button className='cta'>VIEW ALL SERVICES</button>
+                                {/* <p className='section-p'>The process is simple:</p>
+                                <p className='step'>1) CONSULTATION</p>
+                                <p className='section-p'>Our highly knowledgeable team will meet with you and discuss the plans and ideas that you’re processing.</p> */}
+                            </div>
+                            <div className='col-lg-7'>
+                                <div className='row'>
+                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={decks} service='DECKS' /></div>
+                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={pools} service='POOLS' /></div>
+                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                                </div>
+                            </div>
+                            
                         </div>
                         <MoreServices />
                     </div>

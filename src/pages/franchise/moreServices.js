@@ -10,9 +10,9 @@ function MoreServices() {
     }
     return(
         <Fragment>
-        <div className='row'>
+        {/* <div className='row'>
             {!displayServices ? <button className='cta' onClick={() => toggle(true)}>MORE SERVICES</button> : <button className='cta' onClick={() => toggle(false)}>LESS SERVICES</button>}
-        </div>
+        </div> */}
         {/* {displayServices && <div className='row more-services'>
         <div className='col-lg-3'>
             Concrete<br />
