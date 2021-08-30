@@ -32,6 +32,12 @@ function Services() {
                             <a className='cta' href='/'>GREEN WEBSITE</a>
                         </div>
                     </div>
+                    <div className='col-lg-6 my-auto'>
+                        <div className='description'>
+                            <h6>SOLAR PANELS</h6>
+                        <p>Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home or business helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.</p>
+                        </div>
+                    </div>
                 </div>
                 <div className='row'>
                     <div className='col-lg-6 list px-0'>
