@@ -13,21 +13,8 @@ class CityZip extends Component {
     }
 
     componentDidMount() {
-        let cities = Object.keys(this.state.locations)
-        let firstCity = cities[0];
-        this.setState({
-            cities: cities,
-            zipcodes: this.state.locations[firstCity],
-            activeCity: firstCity
-        })
-    }
-
-    setActiveCity = (e) => {
-        this.setState({
-            activeCity: e.target.value,
-            zipcodes: this.state.locations[e.target.value]
-        }, () => console.log(this.state.zipcodes))
-        
+        this.setState({cities: this.props.cities})
+        this.setState({zipcodes: this.props.zipcodes})
     }
 
     render() {
@@ -40,7 +27,7 @@ class CityZip extends Component {
                     {this.state.cities.length > 0 && this.state.cities.map(city => {
                         return(
                             <div>
-                                <button className={this.state.activeCity === city ? 'active-city' : ''} onClick={this.setActiveCity} value={city}>{city}</button>
+                                <button>{city}</button>
                             </div>
                         )
                     })}

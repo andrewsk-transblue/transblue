@@ -21,7 +21,7 @@ import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
 import sunroom from '../../images/franchise/sunroom.jpg';
-//import locationsDb from '../locations/db';
+import locationsDb from '../locations/db';
 import './style.css';
 
 import slidesnow from '../../images/commercial/snow.jpg';
@@ -31,17 +31,21 @@ import solar from '../../images/commercial/solar.jpg';
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
-    const [areas, setAreas] = useState({})
+    //const [areas, setAreas] = useState({})
+    const [cities, setCities] = useState([])
+    const [zipcodes, setZipcodes] = useState([])
     const { db, e } = useEasybase();
 
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
-
-            //console.log(ebData[0].areas)
-            let areas = JSON.parse(ebData[0].areas)
-            setAreas(areas);
+            //let areas = JSON.parse(ebData[0].areas)
+            setCities(JSON.parse(ebData[0].citylist))
+            setZipcodes(JSON.parse(ebData[0].zipcodelist))
+            //setAreas(areas);
+            console.log(locationsDb[14])
+            console.log(Object.keys(locationsDb[14].locations))
         }
          mounted();
     }, [])
@@ -90,11 +94,6 @@ function Franchise(props) {
 
                 <div className='franchise-services'>
                     <div className='container-fluid'>
-                        {/* <div className='about'>
-                            <h4>{easybaseData[0].name}</h4>
-                            <About phone={easybaseData[0].phone} email={easybaseData[0].email} />
-                        </div> */}
-                        
                         <div className='row'>
                             <div className='col-lg-5 right-text'>
                                 <h3 className='section-header'>
@@ -134,7 +133,7 @@ function Franchise(props) {
                                 <h5>AREAS SERVICED</h5>
                                 <h2>{easybaseData[0].name.toUpperCase()}</h2>
                                 <p className='section-p'>Open Mon-Fri 9:00am - 5:00pm</p>
-                                {Object.keys(areas).length > 0 && <CityZip locations={areas} />   }
+                                <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
                             <div className='col-lg-6 col-12'>
                                 {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} />}
