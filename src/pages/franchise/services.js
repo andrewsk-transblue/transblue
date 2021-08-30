@@ -2,7 +2,25 @@ import React, {useState} from 'react';
 import services from '../../images/franchise/services.jpeg';
 import './services.css';
 
+const serviceData = {
+    solar: 'Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home or business helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.',
+    greenRoof: 'testing',
+    ev: 'testing again'
+}
+
 function Services() {
+    const [displayInfo, setDisplayInfo] = useState(false);
+    const [text, setText] = useState('');
+    const [title, setTitle] = useState('');
+
+    function displayService(e) {
+        console.log(e.target.name)
+        //console.log(e.target.id)
+        setDisplayInfo(true);
+        setText(serviceData[e.target.id])
+        setTitle(e.target.name)
+    }
+
     return(
         <div className='franchise-services-full'>
             <img src={services} alt='' />
@@ -12,15 +30,16 @@ function Services() {
                     <h5>GREEN SERVICES</h5>
                         <div className='row body'>
                             <div className='col-lg-4 section-p'>
-                                Solar Panels<br />
-                                Sustainable Roofs<br />
-                                EV Installation<br />
+                                <button onClick={displayService} id='solar' name='SOLAR PANELS'>Solar Panels</button><br />
+                                <button onClick={displayService} id='greenRoof' name='SUSTAINABLE ROOFS'>Sustainable Roofs</button><br />
+                                <button onClick={displayService} id='ev' name='EV INSTALLATION'>EV Installation</button><br />
+                                Porous Pavement
                             </div>
                             <div className='col-lg-4 section-p'>
                                 Shade Structures<br />
                                 Xeriscapes<br />
-                                LED<br />
-                                Pavement
+                                LED
+                            
                             </div>
                             <div className='col-lg-4 section-p'>
                                 Bioswales<br />
@@ -33,10 +52,10 @@ function Services() {
                         </div>
                     </div>
                     <div className='col-lg-6 my-auto'>
-                        <div className='description'>
-                            <h6>SOLAR PANELS</h6>
-                        <p>Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home or business helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.</p>
-                        </div>
+                        {displayInfo && <div className='description'>
+                            <h6>{title}</h6>
+                            <p>{text}</p>
+                        </div>}
                     </div>
                 </div>
                 <div className='row'>
