@@ -25,7 +25,6 @@
 .contact-cta .form {
     width: 300px;
     padding-bottom: 16px;
-    /* background-color: gray; */
     background-color: rgba(0,0,0,.65);
     backdrop-filter: blur(5px);
     position: fixed;
