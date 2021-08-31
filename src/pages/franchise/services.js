@@ -1,12 +1,7 @@
 import React, {useState} from 'react';
 import services from '../../images/franchise/services.jpeg';
+import descriptions from './serviceDescription';
 import './services.css';
-
-const serviceData = {
-    solar: 'Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home or business helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.',
-    greenRoof: 'testing',
-    ev: 'testing again'
-}
 
 function Services() {
     const [displayInfo, setDisplayInfo] = useState(false);
@@ -17,7 +12,7 @@ function Services() {
         console.log(e.target.name)
         //console.log(e.target.id)
         setDisplayInfo(true);
-        setText(serviceData[e.target.id])
+        setText(descriptions[e.target.id])
         setTitle(e.target.name)
     }
 
@@ -33,18 +28,17 @@ function Services() {
                                 <button onClick={displayService} id='solar' name='SOLAR PANELS'>Solar Panels</button><br />
                                 <button onClick={displayService} id='greenRoof' name='SUSTAINABLE ROOFS'>Sustainable Roofs</button><br />
                                 <button onClick={displayService} id='ev' name='EV INSTALLATION'>EV Installation</button><br />
-                                Porous Pavement
                             </div>
                             <div className='col-lg-4 section-p'>
-                                Shade Structures<br />
-                                Xeriscapes<br />
-                                LED
-                            
+                                <button onClick={displayService} id='porous' name='POROUS PAVEMENT'>Porous Pavement</button><br />
+                                <button onClick={displayService} id='xeriscapes' name='XERISCAPES'>Xeriscapes</button><br />
+                                <button onClick={displayService} id='ev' name='EV INSTALLATION'>EV Installation</button>
                             </div>
                             <div className='col-lg-4 section-p'>
-                                Bioswales<br />
-                                HVAC<br />
-                                Water Reclamation
+                                <button onClick={displayService} id='bioswales' name='BIOSWALES'>Bioswales</button><br />
+                                <button onClick={displayService} id='hvac' name='HVAC'>HVAC</button><br />
+                                <button onClick={displayService} id='reclamation' name='WATER RECLAMATION'>Water Reclamation</button>
+
                             </div>
                         </div>
                         <div className='card-text'>

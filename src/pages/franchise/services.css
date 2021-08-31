@@ -1,5 +1,6 @@
 .franchise-services-full {
     position: relative;
+    margin-top: 60px;
 }
 
 .franchise-services-full img {
@@ -18,7 +19,7 @@
     background:linear-gradient(90deg, rgba(11, 86, 164, 1) 0%,  rgba(3, 169, 244, 1)43%, rgba(11, 86, 164, 1) 100%);
     color: white;
     font-family: 'Raleway', sans-serif;
-    padding: 20px 40px;
+    padding: 15px 40px;
     letter-spacing: .07em;
     margin-bottom: 0px;
 }
@@ -29,7 +30,7 @@
 
 .franchise-services-full .list {
     background-color: white;
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 
 .franchise-services-full a {
@@ -49,7 +50,7 @@
 
 .franchise-services-full .description {
     background-color: white;
-    padding: 40px;
+    padding: 30px;
 }
 
 .franchise-services-full .description p {

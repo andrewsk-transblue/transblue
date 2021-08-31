@@ -1,0 +1,14 @@
+const descriptions = {
+    solar: 'Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home or business helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.',
+    greenRoof: "A green roof provides a rainwater buffer, purifies the air, reduces the ambient temperature, regulates the indoor temperature, saves energy and encourages biodiversity in the city. Green roofs are part of climate-proof construction. What's more, people are happier in a green environment than in grey surroundings.",
+    ev: 'EVs can help the United States have a greater diversity of fuel choices available for transportation.  The U.S. used nearly nine billion barrels of petroleum last year, two-thirds of which went towards transportation.  Our reliance on petroleum makes us vulnerable to price spikes and supply disruptions. EVs help reduce this threat because almost all U.S. electricity is produced from domestic sources, including coal, nuclear, natural gas, and renewable sources. – source energy.gov',
+    porous: 'Permeable pavements help reestablish a more natural hydrologic balance and reduce runoff volume by trapping and slowly releasing precipitation into the ground instead of allowing it to flow into storm drains and out to receiving waters as effluent.',
+    shade: '',
+    xeriscapes: 'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.',
+    led: 'Standard LED bulbs can be up to 80% more energy efficient than conventional bulbs, and waste far less energy than other styles of lighting. This means that LEDs require less power than regular forms of lighting with an obvious positive the effect on the environment',
+    bioswales: 'Permeable pavements help reestablish a more natural hydrologic balance and reduce runoff volume by trapping and slowly releasing precipitation into the ground instead of allowing it to flow into storm drains and out to receiving waters as effluent.',
+    hvac: "One example of innovative energy solutions: ICE-POWERED AIR CONDITIONERS A company out of Glendale, California, has designed an ice-powered air conditioning unit that not only cools commercial office buildings, but also reduces a building’s total energy consumption.",
+    reclamation: 'Water Recycling Can Decrease Diversion of Freshwater from Sensitive Ecosystems. Water Recycling Decreases Discharge to Sensitive Water Bodies. Recycled Water May Be Used to Create or Enhance Wetlands and Riparian (Stream) Habitats. Water Recycling Can Reduce and Prevent Pollution.'
+}
+
+export default descriptions;
