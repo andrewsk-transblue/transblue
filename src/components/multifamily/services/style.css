@@ -1,10 +1,14 @@
 .servicelist-wrapper {
     width: 93%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .servicelist-wrapper img {
     width: 100%;
+}
+
+.servicelist-wrapper .section-header {
+    margin-top: 0px !important;
 }
 
 /* .servicelist-wrapper p.section-p:last-of-type {

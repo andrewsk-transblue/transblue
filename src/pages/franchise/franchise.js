@@ -6,6 +6,7 @@ import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import About from './about/about';
 import ServiceCard from './serviceCard';
+import Commercial from './commercial.js';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
@@ -15,9 +16,9 @@ import Services from './services';
 import CityZip from './cityZip';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
-import Footer from '../../components/footer/index';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import ContactModal from '../../components/contactModal';
+import Footer from '../../components/footer/index';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
@@ -118,6 +119,8 @@ function Franchise(props) {
                         <MoreServices />
                     </div>
                 </div>
+                
+                <Commercial location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
 

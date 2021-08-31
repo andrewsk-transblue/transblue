@@ -9,8 +9,8 @@ function ServiceList() {
                 <div className='col-12 col-lg-6'>
                     <img src={services} alt='' />
                 </div>
-                <div className='col-12 col-lg-6'>
-                    <h4 className='section-header'>WE OFFER A VARIETY OF SERVICES</h4>
+                <div className='col-12 col-lg-6 left-text'>
+                    <h4 className='section-header'>OUR MULTIFAMILY SERVICES</h4>
                     <p className='asterisk section-p'><span>*</span> Snow and Ice Management</p>
                     <p className='asterisk section-p'><span>*</span> Swimming Pool construction and resurfacing</p>
                     <p className='asterisk section-p'><span>*</span> Asphalt Paving</p>
