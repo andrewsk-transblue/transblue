@@ -10,15 +10,35 @@
 .professional-wrapper h3 {
     font-family: 'Raleway', sans-serif;
     color: #0b56a4;
+    text-align: center;
+}
+
+.professional-wrapper p:not(.body) {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.professional-wrapper i {
+    margin-bottom: 20px;
+    color: #ed6a22;
+    color: #0b56a4;
+}
+
+.professional-wrapper span {
+    font-weight: 300;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .professional-wrapper h5 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
     color: rgb(78, 78, 78);
-    margin-bottom: 16px;;
+    margin-bottom: 10px;
 }
 
-svg {
-    margin-bottom: 25px;
+.professional-wrapper a {
+    margin-top: 40px;
 }
