@@ -15,7 +15,7 @@ function Assets() {
                 <div className='text row mx-0'>
                     <div className='col-lg-9 pl-4'>
                         <h3>PROTECT YOUR ASSETS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque cursus mi, viverra maximus enim commodo vel. Duis in tempus.</p>
+                        <p>Investing in your property is key to keeping up property values. Take care of the common elements and work with Transblue to deliver a World Class finish to your community's capital projects.</p>
                     </div>
                     <div className='col-lg-3 my-auto text-center'>
                         <div onClick={executeScroll}><img className='next-section' src={downarrow} alt='Next Section' /></div>

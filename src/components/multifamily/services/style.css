@@ -1,0 +1,23 @@
+.servicelist-wrapper {
+    width: 93%;
+}
+
+.servicelist-wrapper img {
+    width: 100%;
+}
+
+.servicelist-wrapper p.section-p {
+    margin-top: 20px;
+}
+
+p.asterisk {
+    margin: 0px 0px 0px 15px;
+    line-height: 1.3em;
+}
+
+.asterisk span {
+    vertical-align: sub;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 10px;
+}

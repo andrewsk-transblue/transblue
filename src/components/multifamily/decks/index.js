@@ -8,7 +8,7 @@ function Decks() {
         <div className='row'>
             <div className='col-lg-4 col-md-12 order-lg-12 px-0'>
                 <h4 className='section-header'>INCREASE SECURITY &amp; PRIVACY</h4>
-                <div className='section-p pb-4'>Let your owners and renters enjoy the utmost privacy and relaxation with a fence or deck from Transblue. We’ll design you a beautiful, functional outdoor space perfect for entertaining and security.</div>
+                <div className='section-p pb-4'>Fencing is a key to privacy and needs to be replaced every 15-20 years. Whether your increasing property privacy or just replacing worn out fencing Transblue is the right choice for you! </div>
             </div>
             <div className='col-lg-4 col-md-6 px-0 mb-3'>
                 <img className='decks-image' src={fence} alt='Multifamily Fence' />

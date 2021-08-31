@@ -7,6 +7,7 @@ import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
 //import ServiceSlides from '../../components/commercial/serviceSlides';
 import Carousel from '../../components/carousel';
+import ServiceList from '../../components/multifamily/services';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Snow from '../../components/snow';
@@ -40,7 +41,7 @@ function Multifamily() {
                             <a href='/locations'>FIND YOUR LOCAL TRANSBLUE</a>
                         </div>
                         <div className='col-lg-6'>
-                            <p className='section-p pt-4'>Whether you are an apartment complex, retirement community, or a condo association, attractive landscaping can have a huge impact on boosting occupancy number of your property. Let the professionals at Transblue help transform your property into something beautiful and appealing to current and future occupants.</p>
+                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multi-family communities. Our specific multi-family division understands the specific needs of the community and can taylor construction plans to your exact needs. Primarily we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
                         </div>
                     </div>
                 </div>
@@ -54,29 +55,31 @@ function Multifamily() {
                         <div className='col-lg-4'>
                             <img src={pool} alt='Apartment Rooftop' />
                             <p>POOLS</p>
-                            <div className=' section-p mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</div>
+                            <div className='section-p mb-4'>We provide swimming pool renovations and installs for community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems. </div>
                         </div>
                         <div className='col-lg-4'>
                             <img src={parkinglot} alt='Apartment Rooftop' />
                             <p>ASPHALT</p>
-                            <div className='section-p mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</div>
+                            <div className='section-p mb-4'>We provide asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping.</div>
                         </div>
                     </div>
                 </div>
                 <div className='benefits-banner'>
-                    <p>ATTRACT PROSPECTIVE TENANTS</p>
-                    <p>With a beautifully designed landscape and perfectly tailored amenities</p>
+                    <p>INCREASE YOUR PROPERTY VALUE</p>
+                    <p>with our World Class services that enhance the beauty of every space </p>
                 </div>
                 <div className='container-fluid benefits'>
                     <div className='row'>
                         <div className='col-lg-6 pt-3'>
                             <h4 className='section-header'>GET AN EDGE OVER YOUR COMPETITORS</h4>
                             <ul className='section-p pr-5'>
-                                <li>Attract prospective tenants</li>
-                                <li>Achieve and maintain a high occupancy rate</li>
-                                <li>Maintain and increase property values</li>
-                                <li>Manage operational expenses to remain within budget</li>
-                                <li>Provide a safe, comfortable environment for staff, residents, and visitors</li>
+                                <li>Turnkey installation – all services under 1 roof </li>
+                                <li>Increase your property value</li>
+                                <li>Proactive project management</li>
+                                <li>On time and on budget projects</li>
+                                <li>Multi-discipline subject matter construction experts</li>
+                                <li>Collaborative team members and flexible service offerings</li>
+                                <li>Financing available for qualifying projects</li>
                             </ul>
                             <a className='cta' href='/locations'>FIND A LOCATION</a><ContactModal />
                         </div>
@@ -89,13 +92,40 @@ function Multifamily() {
                 <Snow
                     img={snow}
                     title='KEEP YOUR COMMUNITY SAFE'
-                    p1='Proper facilities management is key to a successful multifamily residence. We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: taking care of your residents.'
-                    p2='Mauris sem nulla, consequat in purus sit amet, finibus viverra metus. Vivamus ultrices cursus nisi vitae ultricies. Nunc id tellus turpis. Vivamus a dolor at lorem condimentum consectetur.'
-                    p3=''
+                    p1='Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.'
+                    p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
+                    p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
                 />
                 {/* <ServiceSlides /> */}
-                <Carousel />
-                <ServiceCard />
+                <Carousel
+                    services={{
+                        'SNOW & ICE': '',
+                        'SWIMMING POOLS': '',
+                        'ASPHALT': '',
+                        'LANDSCAPE INSTALLS': '',
+                        'ROOFING': '',
+                        'SIDING': '',
+                        'PAINTING': '',
+                        'REMODELS': '',
+                        'CONCRETE': '',
+                        'DRAINAGE SYSTEMS': '',
+                        'DECKS & FENCES': '',
+                        'EV CHARGING': '',
+                        'SOLAR POWER': '',
+                        'ESG SERVICES': ''
+                    }} />
+                <ServiceList />
+                <ServiceCard
+                     p1='As a property manager, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
+                     p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'
+                     services={['ev', 'solar', 'roofs', 'xeriscapes']}
+                     body={
+                         ['The need for EV charging stations is on the rise. Transblue provides the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. required to install Electric Charging Stations for your communities.',
+                         'Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.',
+                         'A green roof provides a rainwater buffer, purifies the air, reduces the ambient temperature, regulates the indoor temperature, saves energy and encourages biodiversity in the city. Green roofs are part of climate-proof construction.',
+                         'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
+                     }
+                />
                 <div className='container-fluid camp'>
                     <div className='row'>
                         <div className='col-lg-6 order-lg-12 left-text'>
