@@ -6,3 +6,8 @@
 .franchise-commercial-wrapper img {
     width: 100%;
 }
+
+.franchise-commercial-wrapper b {
+    margin-top: 15px;
+    display: block;
+}

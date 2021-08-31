@@ -1,0 +1,13 @@
+.section-wrapper {
+    width: 93%;
+    margin-bottom: 100px;
+}
+
+.section-wrapper img {
+    width: 100%;
+}
+
+.section-wrapper b {
+    display: block;
+    margin-top: 15px;
+}

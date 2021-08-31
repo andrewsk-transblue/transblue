@@ -7,6 +7,7 @@ import ContactCta from '../../components/contactCta';
 import About from './about/about';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
+import Multifamily from './multifamily';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
@@ -24,12 +25,14 @@ import decks from '../../images/franchise/decks.jpg';
 import firepit from '../../images/franchise/firepit.jpg';
 import sunroom from '../../images/franchise/sunroom.jpg';
 //import locationsDb from '../locations/db';
-import './style.css';
 
 import slidesnow from '../../images/commercial/snow.jpg';
 import asphalt from '../../images/commercial/asphalt4.jpg';
 import fence from '../../images/commercial/fence.jpg';
 import solar from '../../images/commercial/solar.jpg';
+
+import './style.css';
+
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
@@ -121,6 +124,7 @@ function Franchise(props) {
                 </div>
                 
                 <Commercial location={easybaseData[0]} />
+                <Multifamily location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
 
