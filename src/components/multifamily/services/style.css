@@ -1,16 +1,17 @@
 .servicelist-wrapper {
     width: 93%;
+    margin-bottom: 50px;
 }
 
 .servicelist-wrapper img {
     width: 100%;
 }
 
-.servicelist-wrapper p.section-p:last-of-type {
+/* .servicelist-wrapper p.section-p:last-of-type {
     margin-top: 20px;
-}
+} */
 
-.servicelist-wrapper .section-p:not(.section-p:last-of-type) {
+.servicelist-wrapper .section-p {
     font-size: .9em;
 }
 
@@ -24,4 +25,8 @@ p.asterisk {
     font-weight: bold;
     font-size: 1.2em;
     padding-right: 10px;
+}
+
+.servicelist-wrapper a.cta {
+    margin-top: 20px;
 }

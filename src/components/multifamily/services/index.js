@@ -1,5 +1,4 @@
 import React from 'react';
-import parkinglot from '../../../images/multifamily/parkinglot.jpeg';
 import services from '../../../images/multifamily/services.jpeg';
 import './style.css';
 
@@ -25,7 +24,8 @@ function ServiceList() {
                     <p className='asterisk section-p'><span>*</span> Decking, fencing and railing systems. </p>
                     <p className='asterisk section-p'><span>*</span> Electric Vehicle Charging Systems, Solar Power</p>
                     <p className='asterisk section-p'><span>*</span> ESG Service Offerings</p>
-                    <p className='section-p'>Give our professionals a call today to discuss your project needs</p>
+                    {/* <p className='section-p'>Give our professionals a call today to discuss your project needs</p> */}
+                    <a className='cta' href='/locations'>FIND A LOCATION</a>
                 </div>
             </div>
         </div>

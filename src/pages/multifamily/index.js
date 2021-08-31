@@ -13,6 +13,7 @@ import ServiceCard from '../../components/residential/greenServices/serviceCard'
 import Snow from '../../components/snow';
 import Footer from '../../components/footer';
 import header from '../../images/multifamily/header.jpeg';
+import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
 import pool from '../../images/multifamily/pool.jpeg';
 import parkinglot from '../../images/multifamily/asphalt.jpg';
@@ -30,7 +31,7 @@ function Multifamily() {
             </Helmet>
             <Navbar page='MULTIFAMILY' parentPage='gc' />
 
-            <Header img={header} title='MULTIFAMILY' subtitle='' />
+            <Header img={header2} title='MULTIFAMILY' subtitle='' />
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='multifamily-body'>
