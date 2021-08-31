@@ -39,6 +39,6 @@
     margin-bottom: 10px;
 }
 
-.professional-wrapper a {
-    margin-top: 40px;
+.professional-wrapper button.cta {
+    margin: 40px 0px 0px 0px;
 }

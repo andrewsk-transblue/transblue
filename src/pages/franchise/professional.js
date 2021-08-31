@@ -38,7 +38,7 @@ function Professional() {
                 </div>
                 <div className='row'>
                     <div className='col-lg-12 text-center'>
-                        <a className='cta' href='/locations'>FIND A LOCATION</a>
+                        <ContactModal text='SEND US A MESSAGE' />
                     </div>
                 </div>
             </div>
