@@ -48,11 +48,6 @@
 }
 
 @media only screen and (min-width: 990px) {
-    .government-about p,
-    .government-about h4 {
-        padding-left: 1rem;
-    }
-
     .green-solns {
         margin-top: 60px;
     }

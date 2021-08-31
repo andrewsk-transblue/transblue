@@ -100,7 +100,7 @@ function Franchise(props) {
                                     LOVE THE LIFE YOU LIVE
                                 </h3>
                                 <p className='section-p'>
-                                    At {easybaseData[0].name}, our team of landscape architects and designers and put your plans to paper and design a beautiful, cost effective landscape.
+                                    At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
                                 </p>
                                 <p className='section-p'>With over 20 years of experience, you can trust Transblue with your home. We offer a variety of services to make your dream landscape a reality.</p>
 
