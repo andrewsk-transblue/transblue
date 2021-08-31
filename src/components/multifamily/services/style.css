@@ -6,8 +6,12 @@
     width: 100%;
 }
 
-.servicelist-wrapper p.section-p {
+.servicelist-wrapper p.section-p:last-of-type {
     margin-top: 20px;
+}
+
+.servicelist-wrapper .section-p:not(.section-p:last-of-type) {
+    font-size: .9em;
 }
 
 p.asterisk {
