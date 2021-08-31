@@ -110,9 +110,9 @@ class Commercial extends Component {
                 <Snow
                     img={snow}
                     title='KEEP CUSTOMERS &amp; EMPLOYEES SAFE'
-                    p1='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus faucibus neque, sed sodales lectus blandit vel.'
-                    p2='Aliquam at vestibulum metus. Vestibulum non est et risus ultrices malesuada sit amet id felis. Morbi aliquet, tortor quis consectetur.'
-                    p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
+                    p1='Transblue specializes in providing commercial snow removal services to multisite commercial, retail, industrial, and government facilities.'
+                    p2='At Transblue we know that quality and cost are the driving forces behind choosing the right snow removal partner for your brands locations. Our comprehensive snow removal management plans will help with costing on budgets and costs control initiatives, project planning and management, and environmental impacts that that face your brands image every day. '
+                    // p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
                 />
                 {/* <ServiceSlides /> */}
 
