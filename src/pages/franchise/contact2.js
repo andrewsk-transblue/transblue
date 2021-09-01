@@ -5,22 +5,28 @@ import './contact.css';
 function Contact2(props) {
     return(
         <div className='contact2-wrapper'>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet">
-                <path d="M 0 5 L 16 3 L 16 8 L 0 8 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
-                <defs>
-                <linearGradient
-                    id="linear-gradient"
-                    x1="0%" y1="50%" x2="100%" y2="50%"
+            <div className='svg-container'>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+                viewBox="0 0 15 8"  
+                width='100%' height='100%'
+                preserveAspectRatio="xMinYMax meet"
                 >
-                    {/* <stop offset="0%" style={{stopColor:'rgb(0,188,212)', stopOpacity: 1.00}} />
-                    <stop offset="70%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} /> */}
+                    <path d="M 0 5 L 16 3 L 16 8 L 0 8 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
+                    <defs>
+                    <linearGradient
+                        id="linear-gradient"
+                        x1="0%" y1="50%" x2="100%" y2="50%"
+                    >
+                        {/* <stop offset="0%" style={{stopColor:'rgb(0,188,212)', stopOpacity: 1.00}} />
+                        <stop offset="70%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} /> */}
 
-                    <stop offset="0%" style={{stopColor:'rgb(3,169,244)', stopOpacity:1.00}} />
-                    <stop offset="47%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />
-                    <stop offset="100%" style={{stopColor:'rgb(5,39,75)', stopOpacity:1.00}} />
-                </linearGradient>
-                </defs>
-            </svg>
+                        <stop offset="0%" style={{stopColor:'rgb(3,169,244)', stopOpacity:1.00}} />
+                        <stop offset="47%" style={{stopColor:'rgb(11,86,164)', stopOpacity:1.00}} />
+                        <stop offset="100%" style={{stopColor:'rgb(5,39,75)', stopOpacity:1.00}} />
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <div className='contact-form-info'>
                 <h2>GET IN TOUCH.</h2>
                 <p className='section-p'>
@@ -37,8 +43,7 @@ function Contact2(props) {
                         <div className='col-lg-6 col-12 contact-info my-auto'>
                             <h5>{props.franchise.name.toUpperCase()}</h5>
                             <p>
-                                {props.franchise.address1}<br />
-                                {props.franchise.address2}
+                                {props.franchise.address1}, {props.franchise.address2}<br />
                                 {props.franchise.city}, {props.franchise.state} {props.franchise.zipcode}
                             
                             </p>

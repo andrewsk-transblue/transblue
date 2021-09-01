@@ -143,7 +143,6 @@ function Franchise(props) {
                                     <span className='hours'>Mon-Fri 9:00am - 5:00pm</span>
                                 </p>
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
-                                {/* <ContactModal text='SEND US A MESSAGE' email={easybaseData[0].email} /> */}
                             </div>
                             <div className='col-lg-6 col-12'>
                                 {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} />}

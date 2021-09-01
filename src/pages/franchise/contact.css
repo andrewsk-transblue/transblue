@@ -12,9 +12,16 @@
     padding-top: 50px;
 }
 
-.contact2-wrapper svg {
-    display: block;
+.contact2-wrapper .svg-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+/* 
+.contact2-wrapper svg {
+    border: 1px solid red;
+} */
 
 .contact2-wrapper .contact-form-info {
     position: absolute;
