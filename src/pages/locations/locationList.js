@@ -16,7 +16,7 @@ class LocationList extends Component {
     }
 
     componentDidMount = () => {
-        console.log(this.props)
+        //console.log(this.props)
 
         this.getLocationList()
     }
@@ -41,9 +41,9 @@ class LocationList extends Component {
                 latitude: this.props.locations[i].lat,
                 longitude: this.props.locations[i].lon
             }
-            console.log(franchiseLocation)
+            //console.log(franchiseLocation)
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
-            console.log(distance)
+            //console.log(distance)
             if(distance < this.props.radius) {
                 locationList.push(this.props.locations[i])
             }

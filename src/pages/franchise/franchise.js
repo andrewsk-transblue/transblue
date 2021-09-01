@@ -75,7 +75,6 @@ function Franchise(props) {
                     text={[
                         {
                             p1: "KEEP YOUR BUSINESS DOORS OPEN",
-                            // p1: 'We’ll help you keep your lots plowed and treated for ice during snowstorms to let you focus on what you’re best at: running your business.',
                             p2: ''
                         },
                         {

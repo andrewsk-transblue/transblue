@@ -210,7 +210,7 @@
 
 .cities .zipcode-list,
 .cities .city-list {
-    height: 250px;
+    height: 280px;
     overflow-y: auto;
 }
 
@@ -226,6 +226,7 @@
     /* padding: 0px; */
     margin-bottom: 20px;
     text-align: left;
+    padding-right: 3rem;
 }
 
 .city-list {

@@ -15,7 +15,6 @@ class MapContainer extends Component {
         this.state={
             showStates: false,
             bounds: [],
-            locationList: [],
             center: [],
             noLocations: false,
             isLoading: true,
@@ -27,7 +26,6 @@ class MapContainer extends Component {
 
     
     componentDidMount() {
-
         //console.log(this.props)
         //console.log(this.props.coordinates)
         setTimeout(() => {
@@ -46,9 +44,18 @@ class MapContainer extends Component {
 
         else {
             this.setState({
-                center: [47.6062, -122.3321]
+                center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
             })
         }
+    }
+
+    selectLocation = (lat, lon) => {
+        //console.log(lat, lon)
+        this.setState({
+            center: [lat, lon],
+            bounds: [],
+            radius: 10
+        })
     }
 
     selectRadius = (e) => {
@@ -58,13 +65,6 @@ class MapContainer extends Component {
         })
     }
 
-    centerLocation = (lat, lon) => {
-        this.setState({
-            center: [lat, lon],
-            bounds: [],
-            radius: 50
-        })
-    }
     searchLocation = (location_id) => {
         //console.log(location_id)
         //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
@@ -73,7 +73,6 @@ class MapContainer extends Component {
                 this.setState({
                     radius: 50,
                     center: [res.data.result.geometry.location.lat, res.data.result.geometry.location.lng],
-                    // selectState: res.data.result.address_components[2].long_name,
                     showLocations: true
                 })
             })
@@ -86,7 +85,7 @@ class MapContainer extends Component {
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
                     {!this.state.isLoading && <MapComp 
                     // bounds={this.props.coordinates} 
-                    coords={this.state.bounds} center={this.state.center} radius={this.state.radius} selectLocation={(lat, lon) => this.centerLocation(lat,lon)} />}
+                    coords={this.state.bounds} center={this.state.center} radius={this.state.radius}/>}
                     <div className='search-container new-search'>
                         <span className='span-search'>
                             <AutoComplete
@@ -109,7 +108,7 @@ class MapContainer extends Component {
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
-                                {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
+                                {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
                                 {/* {this.state.locationList.length > 0 && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />} */}
                             </div>
                         </div>

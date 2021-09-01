@@ -21,9 +21,9 @@ class CityZip extends Component {
         //console.log(this.state.cities)
         return(
             <div className='row'>
-                <div className='col-lg-5 pr-5'>
+                <div className='col-lg-5'>
                     <h6>CITIES:</h6>
-                    <div className='city-buttons city-list'>
+                    <div className='city-list'>
                     {this.state.cities.length > 0 && this.state.cities.map(city => {
                         return(
                             <div>{city}</div>
