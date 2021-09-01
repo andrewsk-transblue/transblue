@@ -45,7 +45,7 @@ class LocationsCta extends Component {
                                     apiKey={process.env.REACT_APP_GOOGLE_API}
                                     onPlaceSelected={(location) => this.setLocation(location.place_id)}
                                     options={{
-                                        types: ['(regions)'],
+                                        types: ['geocode'],
                                         componentRestrictions: { country: "us" }}}
                                 />
                                 <a href={`/locations/${this.state.location}`}><button id='search'><i className="fas fa-search"></i></button></a>

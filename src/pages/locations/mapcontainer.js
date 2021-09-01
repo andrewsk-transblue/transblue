@@ -94,7 +94,7 @@ class MapContainer extends Component {
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => this.searchLocation(location.place_id)}
                                 options={{
-                                    types: ['(regions)'],
+                                    types: ['geocode'],
                                     componentRestrictions: { country: "us" }
                                 }}
                             />

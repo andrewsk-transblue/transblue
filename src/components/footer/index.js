@@ -75,7 +75,7 @@ function Footer(props) {
                             apiKey={process.env.REACT_APP_GOOGLE_API}
                             onPlaceSelected={(location) => setLocation(location.place_id)}
                             options={{
-                                types: ['(regions)'],
+                                types: ['geocode'],
                                 componentRestrictions: { country: "us" }}}
                         />
                         <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
@@ -139,7 +139,7 @@ function Footer(props) {
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => setLocation(location.place_id)}
                                 options={{
-                                    types: ['(regions)'],
+                                    types: ['geocode'],
                                     componentRestrictions: { country: "us" }}}
                             />
                             <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
