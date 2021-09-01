@@ -28,15 +28,11 @@ class MapContainer extends Component {
     
     componentDidMount() {
 
-        console.log(this.props)
+        //console.log(this.props)
         //console.log(this.props.coordinates)
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
-
-        this.setState({
-            locations: this.props.locations
-        })
 
         if(this.props.zipcode !== undefined) {
             this.searchLocation(this.props.zipcode)
@@ -70,23 +66,21 @@ class MapContainer extends Component {
         })
     }
     searchLocation = (location_id) => {
+        //console.log(location_id)
         //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
         axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city, filter locationList to locations within radius
             .then(res => {
-                //console.log(res)
                 this.setState({
                     radius: 50,
                     center: [res.data.result.geometry.location.lat, res.data.result.geometry.location.lng],
-                    selectState: res.data.result.address_components[2].long_name,
-                    showLocations: true,
-                    //locationList: locationsDb.filter(loc => loc.state === res.data.result.address_components[2].short_name),
-                    // placeholder: res.data.result.address_components.formatted_address
+                    // selectState: res.data.result.address_components[2].long_name,
+                    showLocations: true
                 })
             })
         }
 
     render() {
-        console.log(this.props)
+        //console.log(this.props)
         return(
             <div className='map-container'>
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
@@ -111,7 +105,7 @@ class MapContainer extends Component {
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
-                                {this.state.center.length > 0 && <LocationList locations={this.state.locations} coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
+                                {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
                                 {/* {this.state.locationList.length > 0 && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />} */}
                             </div>
                         </div>

@@ -28,23 +28,28 @@ class LocationList extends Component {
       }
 
     getLocationList = () => {
+        console.log('get location list')
         let locationList = [];
         let userLocation = {
             latitude: this.props.coords[0],
             longitude: this.props.coords[1]
         }
+
+        //console.log(userLocation)
         for(let i=0; i < this.props.locations.length; i++) {
             let franchiseLocation = {
                 latitude: this.props.locations[i].lat,
                 longitude: this.props.locations[i].lon
             }
+            console.log(franchiseLocation)
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
+            console.log(distance)
             if(distance < this.props.radius) {
                 locationList.push(this.props.locations[i])
             }
         }
         //console.log(locationList)
-        this.setState({locationList: locationList})
+        this.setState({locationList: locationList}, () => console.log(this.state.locationList))
     }
 
     render() {
