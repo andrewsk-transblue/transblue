@@ -16,6 +16,8 @@ class LocationList extends Component {
     }
 
     componentDidMount = () => {
+        console.log(this.props)
+
         this.getLocationList()
     }
 

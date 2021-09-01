@@ -5,7 +5,7 @@ import Footer from '../../components/footer/index';
 import MapContainer from './mapcontainer';
 import ListView from './listView';
 
-import axios from 'axios';
+//import axios from 'axios';
 
 //import bounds from './bounds';
 import locationsHeader from '../../images/location.jpeg';
@@ -16,6 +16,9 @@ import './style.css';
 //import locations from './db';
 
 function Locations(props) {
+
+        console.log(props)
+
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
         // let zipcodes = JSON.parse(props.locations[1].zipcodelist);
 

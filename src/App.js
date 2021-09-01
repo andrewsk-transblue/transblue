@@ -47,7 +47,10 @@ function App() {
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
             <Route exact path='/locations/:state/:urlCity' component={Franchise} />
             <Route exact path='/:locations/:state/:urlCity/subcontractor' component={Subcontractor} />
-            <Route exact path='/locations/:zipcode' component={Locations} />
+            {/* <Route exact path='/locations/:zipcode' component={Locations} /> */}
+            {easybaseData.length > 0 && <Route exact path='/locations/:zipcode'>
+              <Locations locations={easybaseData} />
+            </Route>}
             {/* <Route exact path='/locations' component={Locations} /> */}
             {easybaseData.length > 0 && <Route exact path='/locations'>
               <Locations locations={easybaseData} />

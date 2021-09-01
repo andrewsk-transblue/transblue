@@ -27,6 +27,8 @@ class MapContainer extends Component {
 
     
     componentDidMount() {
+
+        console.log(this.props)
         //console.log(this.props.coordinates)
         setTimeout(() => {
             this.setState({isLoading: false})
