@@ -42,11 +42,16 @@ class MapContainer extends Component {
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ("geolocation" in navigator) {
+        else if ('getCurrentPosition' in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                //this.setLocationList(position.coords.latitude, position.coords.longitude)
               });
+        }
+
+        else {
+            this.setState({
+                center: [47.6062, -122.3321]
+            })
         }
     }
 
