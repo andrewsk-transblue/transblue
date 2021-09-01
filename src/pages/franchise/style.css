@@ -214,6 +214,10 @@
     overflow-y: auto;
 }
 
+.cities span {
+    margin-left: 20px;
+}
+
 .cities div,
 .zipcode-list div {
     border: 0px;

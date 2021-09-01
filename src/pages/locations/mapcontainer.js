@@ -5,6 +5,8 @@ import LocationList from './locationList';
 import map from '../../images/map.png';
 import AutoComplete from "react-google-autocomplete";
 
+
+
 import './style.css';
 
 class MapContainer extends Component {
@@ -25,6 +27,7 @@ class MapContainer extends Component {
 
     
     componentDidMount() {
+        //console.log(this.props.coordinates)
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
@@ -75,10 +78,13 @@ class MapContainer extends Component {
         }
 
     render() {
+        console.log(this.props)
         return(
             <div className='map-container'>
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
-                    {!this.state.isLoading && <MapComp coords={this.state.bounds} center={this.state.center} radius={this.state.radius} selectLocation={(lat, lon) => this.centerLocation(lat,lon)} />}
+                    {!this.state.isLoading && <MapComp 
+                    // bounds={this.props.coordinates} 
+                    coords={this.state.bounds} center={this.state.center} radius={this.state.radius} selectLocation={(lat, lon) => this.centerLocation(lat,lon)} />}
                     <div className='search-container new-search'>
                         <span className='span-search'>
                             <AutoComplete

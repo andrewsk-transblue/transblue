@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, Polygon } from 'react-leaflet';
 import L from 'leaflet';
 
 import locationsDb from './db';
@@ -25,6 +25,26 @@ function SetCenter({center, radius}) {
 }
 
 function MapComp(props) {
+
+    //console.log(props)
+
+        // let newArray = []
+
+        // console.log(props.bounds)
+
+        // props.bounds.forEach(pair => {
+        //     //console.log(pair[0])
+        //     let a = pair[0]
+        //     pair[0] = pair[1]
+        //     pair[1] = a
+        //     //console.log(pair)
+
+        //     newArray.push(pair)
+        // })
+
+        // console.log(newArray)
+
+
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>
             <TileLayer
@@ -85,6 +105,10 @@ function MapComp(props) {
                     </Marker>
                 )
             })}
+
+            
+
+            {/* <Polygon pathOptions={{color: 'purple'}} positions={props.bounds} /> */}
 
             {props.center.length > 0 && <SetCenter center={props.center} radius={props.radius} />}
             {props.coords.length > 0 && <SetViewOnClick coords={props.coords} />}
