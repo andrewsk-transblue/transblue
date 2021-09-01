@@ -38,7 +38,11 @@ class MapContainer extends Component {
             locations: this.props.locations
         })
 
-        if ("geolocation" in navigator) {
+        if(this.props.zipcode !== undefined) {
+            this.searchLocation(this.props.zipcode)
+        }
+
+        else if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
                 //this.setLocationList(position.coords.latitude, position.coords.longitude)
@@ -47,13 +51,10 @@ class MapContainer extends Component {
     }
 
     selectRadius = (e) => {
-        //console.log(e.target.value)
         this.setState({
             radius: e.target.value,
             displayMiles: !this.state.displayMiles
         })
-        // () => this.setLocationList(this.state.center[0], this.state.center[1])) 
-        // }, () => this.setState({center: })
     }
 
     centerLocation = (lat, lon) => {

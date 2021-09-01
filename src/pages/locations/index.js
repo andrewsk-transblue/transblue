@@ -78,6 +78,8 @@ function Locations(props) {
         //   });
         
         const [viewMap, setViewMap] = useState(true);
+
+
    
         return(
             <Fragment>
@@ -90,9 +92,10 @@ function Locations(props) {
                     <i className="fas fa-map"></i>MAP VIEW
                 </button>
             </div>
-            {!viewMap && <ListView locations={props.locations} />}
+            {!viewMap && <ListView locations={props.locations} zipcode={props.zipcode} />}
             {viewMap > 0 && <MapContainer locations={props.locations} 
-            //coordinates={filteredArr} 
+            zipcode={props.zipcode} 
+            //coordinates={filteredArr}  
              />}
             <Footer locationPage={true} />
         </Fragment>
