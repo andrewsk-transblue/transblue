@@ -46,17 +46,14 @@ function App() {
             {/* <Route exact path='/featured' component={Projects} /> */}
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
             <Route exact path='/locations/:state/:urlCity' component={Franchise} />
-            <Route exact path='/:locations/:state/:urlCity/subcontractor' component={Subcontractor} />
-            {/* <Route exact path='/locations/:zipcode' component={Locations} /> */}
-            {easybaseData.length > 0 && <Route exact path='/locations/:zipcode'>
-              <Locations locations={easybaseData} />
-            </Route>}
-            {/* <Route exact path='/locations' component={Locations} /> */}
+            <Route exact path='/locations/:state/:urlCity/subcontractor' component={Subcontractor} />
+            <Route exact path='/locations/:zipcode' render={(props) => {
+                const zipcode = props.match.params.zipcode;
+                return <Locations locations={easybaseData} zipcode={zipcode} />
+            }} />
             {easybaseData.length > 0 && <Route exact path='/locations'>
               <Locations locations={easybaseData} />
             </Route>}
-            {/* <Route exact path='/blog' component={BlogContainer} /> */}
-            {/* <Route exact path='/blog/:id' component={Blog} /> */}
             <Route exact path='/featured' component={Featured} />
             <Route exact path='/add' component={Form} />
             <Route exact path='/privacy' component={Privacy} />
