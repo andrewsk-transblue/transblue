@@ -85,6 +85,7 @@ class MapContainer extends Component {
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
                     {!this.state.isLoading && <MapComp 
                     // bounds={this.props.coordinates} 
+                    selectLocation={(lat, lon) => this.selectLocation(lat,lon)}
                     coords={this.state.bounds} center={this.state.center} radius={this.state.radius}/>}
                     <div className='search-container new-search'>
                         <span className='span-search'>
