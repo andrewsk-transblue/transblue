@@ -197,6 +197,10 @@
     margin: 0 auto;
 }
 
+.map-container button#location-search.disabled {
+    background-color: #0b55a4b6;
+}
+
 .search-container {
     /* position: absolute;
     width: 375px;

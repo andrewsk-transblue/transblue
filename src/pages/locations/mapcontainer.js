@@ -20,7 +20,8 @@ class MapContainer extends Component {
             isLoading: true,
             displayMiles: false,
             radius: 50,
-            locations: []
+            locations: [],
+            disabled: true
         }
     }
 
@@ -65,10 +66,17 @@ class MapContainer extends Component {
         })
     }
 
+    selectLocation = (location_id) => {
+        this.setState({
+            disabled: false,
+            location_id: location_id
+        })
+    }
+
     searchLocation = (location_id) => {
         //console.log(location_id)
         //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
-        axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city, filter locationList to locations within radius
+        axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city or address, filter locationList to locations within radius
             .then(res => {
                 this.setState({
                     radius: 50,
@@ -92,7 +100,10 @@ class MapContainer extends Component {
                             <AutoComplete
                                 placeholder='Enter city or address'
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
-                                onPlaceSelected={(location) => this.searchLocation(location.place_id)}
+                                onPlaceSelected={(location) =>
+                                    this.selectLocation(location.place_id) 
+                                    // this.searchLocation(location.place_id)
+                                }
                                 options={{
                                     types: ['geocode'],
                                     componentRestrictions: { country: "us" }
@@ -104,7 +115,7 @@ class MapContainer extends Component {
                                 <option value={100}>100mi</option>
                                 <option value={200}>200mi</option>
                             </select>
-                            <button id='location-search' onClick={this.searchZipcode}>GO</button>
+                            <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
