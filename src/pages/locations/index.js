@@ -20,9 +20,11 @@ function Locations(props) {
         console.log(props)
 
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
-        // let zipcodes = JSON.parse(props.locations[1].zipcodelist);
+        // let zipcodes = JSON.parse(props.locations[2].zipcodelist);
 
         // let str = zipcodes.toString()
+
+        // console.log(str)
 
         // const options = {
         //     method: 'GET',

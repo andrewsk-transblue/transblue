@@ -20,12 +20,12 @@ class ContactModal extends Component {
         this.setState({
             [e.target.id]: e.target.value
         })
-        console.log(this.state.firstName)
+        //console.log(this.state.firstName)
     }
 
     onSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state)
+        //console.log(this.state)
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
@@ -35,7 +35,7 @@ class ContactModal extends Component {
                     Phone: ${this.state.phone}
                     Message: ${this.state.message}`
         };
-        console.log(this.state)
+        //console.log(this.state)
         this.setState({isSubmitted: true})
         // mailgun.messages().send(data, function(error, body) {
         //     console.log(body)

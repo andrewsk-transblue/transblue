@@ -77,7 +77,6 @@ class Carousel extends Component {
     }
 
     componentDidMount() {
-        //console.log(images.length)
         window.addEventListener('resize', this.updateDimensions);
         if(window.innerWidth > 992) {
             this.setState({cols: 4, lastSlide: 3})
@@ -88,7 +87,9 @@ class Carousel extends Component {
     render() {
     return(
         <div className='container-fluid carousel px-0'>
-            <h2>RESIDENTIAL SERVICES</h2>
+            <h2>GET INSPIRED</h2>
+            <p>TRANSBLUE RESIDENTIAL SERVICES</p>
+            {/* <h2>RESIDENTIAL SERVICES</h2> */}
             <hr />
             <div className='row mx-0'>
                 <div className='col-lg-1 col-sm-1 col-md-2 col-1 prev-slide px-0'>

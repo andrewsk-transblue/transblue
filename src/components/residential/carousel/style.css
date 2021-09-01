@@ -13,6 +13,13 @@
     color: #0b56a4;
 }
 
+.carousel p:not(.section-p) {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: .0705em;
+    color: rgb(82, 82, 82);
+}
+
 .carousel hr {
     width: 40%;
     margin-bottom: 30px;
