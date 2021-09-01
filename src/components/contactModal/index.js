@@ -53,7 +53,7 @@ class ContactModal extends Component {
         return(
             <Fragment>
                 <button className='cta' data-toggle="modal" data-target="#exampleModalCenter">
-                    {this.props.text !== undefined ? this.props.text : 'CONTACT US'}
+                    {this.props.text !== undefined ? this.props.text : 'SEND A MESSAGE'}
                 </button>
                 
                 <div className='contact-modal-wrapper'>

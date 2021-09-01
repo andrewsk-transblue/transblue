@@ -90,7 +90,7 @@ class MapContainer extends Component {
                     <div className='search-container new-search'>
                         <span className='span-search'>
                             <AutoComplete
-                                // placeholder={this.state.placeholder}
+                                placeholder='Enter city or address'
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => this.searchLocation(location.place_id)}
                                 options={{
