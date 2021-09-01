@@ -77,7 +77,7 @@ function MapComp(props) {
                 return(
                     <Marker position={[`${location.lat}`, `${location.lon}`]}
                         eventHandlers={{
-                            click: () => props.selectLocation(`${location.lat}`, `${location.lon}`)
+                            click: () => props.zoomLocation(`${location.lat}`, `${location.lon}`)
                             }
                         }>
                         <Popup>
@@ -95,7 +95,7 @@ function MapComp(props) {
                 return(
                     <Marker position={[`${location.lat}`, `${location.lon}`]}
                         eventHandlers={{
-                            click: () => props.selectLocation(`${location.lat}`, `${location.lon}`)
+                            click: () => props.zoomLocation(`${location.lat}`, `${location.lon}`)
                             }
                         }>
                         <Popup>

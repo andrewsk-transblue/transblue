@@ -77,7 +77,7 @@ class LocationList extends Component {
                                     </div>                               
                                     <span>
                                         <a href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel="noreferrer"><button>WEBSITE</button></a>
-                                        <button onClick={() => this.props.selectLocation(location.lat, location.lon)} id='view-location'>VIEW ON MAP</button>
+                                        <button onClick={() => this.props.zoomLocation(location.lat, location.lon)} id='view-location'>VIEW ON MAP</button>
                                     </span><br />
                                 </div>
                             </div>

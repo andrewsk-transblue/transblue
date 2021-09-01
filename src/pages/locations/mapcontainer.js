@@ -49,7 +49,7 @@ class MapContainer extends Component {
         }
     }
 
-    selectLocation = (lat, lon) => {
+    zoomLocation = (lat, lon) => {
         //console.log(lat, lon)
         this.setState({
             center: [lat, lon],
@@ -85,7 +85,7 @@ class MapContainer extends Component {
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
                     {!this.state.isLoading && <MapComp 
                     // bounds={this.props.coordinates} 
-                    selectLocation={(lat, lon) => this.selectLocation(lat,lon)}
+                    zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
                     coords={this.state.bounds} center={this.state.center} radius={this.state.radius}/>}
                     <div className='search-container new-search'>
                         <span className='span-search'>
@@ -109,7 +109,7 @@ class MapContainer extends Component {
                         <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
-                                {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />}
+                                {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} zoomLocation={(lat, lon) => this.zoomLocation(lat, lon)} state={this.state.selectState} />}
                                 {/* {this.state.locationList.length > 0 && <LocationList noLocations={this.state.noLocations} locationList={this.state.locationList} selectLocation={(lat, lon) => this.selectLocation(lat, lon)} state={this.state.selectState} />} */}
                             </div>
                         </div>
