@@ -93,6 +93,10 @@ class MapContainer extends Component {
                                 // placeholder={this.state.placeholder}
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) => this.searchLocation(location.place_id)}
+                                options={{
+                                    types: ['(regions)'],
+                                    componentRestrictions: { country: "us" }
+                                }}
                             />
                             <select onChange={this.selectRadius} value={this.state.radius} className='ml-2 mr-1' name='radius' id='radius'>
                                 <option value={50}>50mi</option>

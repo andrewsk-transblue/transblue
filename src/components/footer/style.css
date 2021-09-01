@@ -119,7 +119,7 @@
 
 .find-location input::placeholder {
     color: rgb(194, 194, 194);
-    font-family: 'Roboto';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
     font-size: .8em;
 }
