@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap, Polygon } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, Polygon, GeoJSON } from 'react-leaflet';
 import L from 'leaflet';
 
 import locationsDb from './db';
@@ -7,12 +7,12 @@ import comingSoon from './comingSoon';
 
 import './style.css';
 
-function SetViewOnClick({ coords }) {
-    const map = useMap();
-    map.fitBounds(coords)
+// function SetViewOnClick({ coords }) {
+//     const map = useMap();
+//     map.fitBounds(coords)
     
-    return null;
-}
+//     return null;
+// }
 
 function SetCenter({center, radius}) {
     const map = useMap();
@@ -26,42 +26,7 @@ function SetCenter({center, radius}) {
 
 function MapComp(props) {
 
-   // console.log(typeof props.bounds);
-
-    console.log(JSON.parse(props.bounds))
-
-    let bounds = JSON.parse(props.bounds);
-
-    for(let i=0; i<bounds.length; i++) {
-        if(bounds[i][0] < bounds[i][1]) {
-            let a = bounds[i][0]
-            bounds[i][0] = bounds[i][1]
-            bounds[i][1] = a
-        }
-    }
-
-    // for(let i=0; i<props.bounds.length; i++) {
-    //     console.log(props.bounds[i])
-    // }
-
-    //console.log(props)
-
-        // let newArray = []
-
-        // console.log(props.bounds)
-
-        // props.bounds.forEach(pair => {
-        //     //console.log(pair[0])
-        //     let a = pair[0]
-        //     pair[0] = pair[1]
-        //     pair[1] = a
-        //     //console.log(pair)
-
-        //     newArray.push(pair)
-        // })
-
-        // console.log(newArray)
-
+    //console.log(JSON.parse(props.geojson))
 
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>
@@ -124,12 +89,14 @@ function MapComp(props) {
                 )
             })}
 
+            {/* <GeoJSON
+                style={{fillColor: 'purple'}}
+                pathOptions={{color: 'purple'}}
+                data={JSON.parse(props.geojson)}
+            /> */}
             
-
-            <Polygon pathOptions={{color: 'purple'}} positions={bounds} />
-
             {props.center.length > 0 && <SetCenter center={props.center} radius={props.radius} />}
-            {props.coords.length > 0 && <SetViewOnClick coords={props.coords} />}
+            {/* {props.bounds.length > 0 && <SetViewOnClick coords={props.bounds} />} */}
         </MapContainer>
     );
   }

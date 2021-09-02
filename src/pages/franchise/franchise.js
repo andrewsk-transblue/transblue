@@ -146,7 +146,7 @@ function Franchise(props) {
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
                             <div className='col-lg-6 col-12'>
-                                {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} />}
+                                {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} geojson={JSON.parse(easybaseData[0].geojson)} />}
                             </div>
                         </div>
                     </div>
