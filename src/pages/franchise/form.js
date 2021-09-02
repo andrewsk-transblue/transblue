@@ -2,25 +2,42 @@ import React, {Component} from 'react';
 import './contact.css';
 
 class Form extends Component {
-    
 
+    state={
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+    }
+
+    onChange = (e) => {
+        this.setState({
+            [e.target.className]: e.target.value
+        })
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        //console.log(this.state)
+    }
 
     render() {
         return(
-            <div className='form-wrapper'>
+            <form className='form-wrapper' onSubmit={this.onSubmit}>
                 <span>
-                    <input className='left-input' placeholder='First Name' />
-                    <input className='right-input' placeholder='Last Name' />
+                    <input onChange={this.onChange} className='left-input firstName' placeholder='First Name' />
+                    <input onChange={this.onChange} className='right-input lastName' placeholder='Last Name' />
                 </span>
                 <span>
-                    <input className='left-input' placeholder='Email'></input>
-                    <input className='right-input' placeholder='Phone Number'></input>
+                    <input onChange={this.onChange} className='left-input email' placeholder='Email'></input>
+                    <input onChange={this.onChange} className='right-input phone' placeholder='Phone Number'></input>
                 </span>
                 <span>
-                    <textarea placeholder='Tell us about your project'></textarea>
+                    <textarea onChange={this.onChange} className='message' placeholder='Tell us about your project'></textarea>
                 </span>
-                <button>SEND MESSAGE</button>
-            </div>
+                <button type='submit'>SEND MESSAGE</button>
+            </form>
         )
     }
 }

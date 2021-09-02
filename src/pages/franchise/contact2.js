@@ -38,7 +38,7 @@ function Contact2(props) {
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6 col-12'>
-                            <Form />
+                            <Form email={props.franchise.email} />
                         </div>
                         <div className='d-none d-md-block col-lg-6 contact-info my-auto'>
                             <h5>{props.franchise.name.toUpperCase()}</h5>
