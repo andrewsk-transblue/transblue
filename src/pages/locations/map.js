@@ -96,7 +96,6 @@ function MapComp(props) {
             /> */}
             
             {props.center.length > 0 && <SetCenter center={props.center} radius={props.radius} />}
-            {/* {props.bounds.length > 0 && <SetViewOnClick coords={props.bounds} />} */}
         </MapContainer>
     );
   }

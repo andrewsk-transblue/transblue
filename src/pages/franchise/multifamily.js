@@ -11,6 +11,10 @@ function Multifamily(props) {
             p1={`At ${props.location.name}, we understand that as a property manager, you are extremely busy. Our professionals make your life easier by turning proposals around quickly.`}
             p2='Our teams attend board meetings and describe projects and services to ensure the delivery to your communities is exactly what it should be, World Class. Transblue is an expert in the Capital Projects that your communities’ budget for each year.'
             p3=''
+            contact={{
+                phone: props.location.phone,
+                email: props.location.email
+            }}
             imageSide='right'
         />
     )
