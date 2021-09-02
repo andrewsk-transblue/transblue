@@ -40,7 +40,7 @@ function Contact2(props) {
                         <div className='col-lg-6 col-12'>
                             <Form email={props.franchise.email} />
                         </div>
-                        <div className='d-none d-md-block col-lg-6 contact-info my-auto'>
+                        <div className='d-none d-lg-block col-lg-6 contact-info my-auto'>
                             <h5>{props.franchise.name.toUpperCase()}</h5>
                             <p>
                                 {props.franchise.address1}, {props.franchise.address2}<br />

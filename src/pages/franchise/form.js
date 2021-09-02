@@ -13,28 +13,28 @@ class Form extends Component {
 
     onChange = (e) => {
         this.setState({
-            [e.target.className]: e.target.value
-        })
+            [e.target.name]: e.target.value
+        }, () => console.log(this.state))
     }
 
     onSubmit = (e) => {
         e.preventDefault();
-        //console.log(this.state)
+        console.log(this.state)
     }
 
     render() {
         return(
             <form className='form-wrapper' onSubmit={this.onSubmit}>
                 <span>
-                    <input onChange={this.onChange} className='left-input firstName' placeholder='First Name' />
-                    <input onChange={this.onChange} className='right-input lastName' placeholder='Last Name' />
+                    <input onChange={this.onChange} className='left-input firstName' name={'firstName'} placeholder='First Name' />
+                    <input onChange={this.onChange} className='right-input' name='lastName' placeholder='Last Name' />
                 </span>
                 <span>
-                    <input onChange={this.onChange} className='left-input email' placeholder='Email'></input>
-                    <input onChange={this.onChange} className='right-input phone' placeholder='Phone Number'></input>
+                    <input onChange={this.onChange} className='left-input' name='email' placeholder='Email'></input>
+                    <input onChange={this.onChange} className='right-input' name='phone' placeholder='Phone Number'></input>
                 </span>
                 <span>
-                    <textarea onChange={this.onChange} className='message' placeholder='Tell us about your project'></textarea>
+                    <textarea onChange={this.onChange} name='message' placeholder='Tell us about your project'></textarea>
                 </span>
                 <button type='submit'>SEND MESSAGE</button>
             </form>
