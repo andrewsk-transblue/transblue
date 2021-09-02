@@ -5,15 +5,18 @@
     z-index: 20;
 }
 
-#mapid button {
-    background-color: navy;
+#mapid a.site-link {
+    background-color: #0b56a4;
     color: white;
-    border: 0px;
-    border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
-    padding: 6px 10px 6px 10px;
+    border-radius: 0px;
+    /* font-family: 'Raleway', sans-serif; */
+    padding: 2px 10px;
     margin-top: 10px;
     font-size: .8em;
+    display: inline-block;
+    margin-top: 8px;
+    letter-spacing: .09em;
+    text-decoration: none;
 }
 
 .locations-banner .overlay {

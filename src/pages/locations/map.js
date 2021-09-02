@@ -42,7 +42,7 @@ function MapComp(props) {
                     Bellingham, WA 98226<br />
                     <i className="fas fa-phone">(360) 935-0808</i>
                     <i className="fas fa-envelope"></i>TransblueMountVernon@transblue.org<br />
-                    <a href={`/franchise/Transblue Mount Vernon`} target='_blank' rel="noreferrer"><button>Website</button></a>
+                    <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
             <Marker position={[48.4201, -122.3375]}>
@@ -52,7 +52,7 @@ function MapComp(props) {
                     Bellingham, WA 98226<br />
                     <i className="fas fa-phone">(360) 935-0808</i>
                     <i className="fas fa-envelope"></i>TransblueMountVernon@transblue.org<br />
-                    <a href={`/franchise/Transblue Mount Vernon`} target='_blank' rel="noreferrer"><button>Website</button></a>
+                    <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
             {/* <Circle center={[39.8283, -98.5795]} radius={10000} fillColor="blue" /> */}
@@ -64,12 +64,12 @@ function MapComp(props) {
                             }
                         }>
                         <Popup>
-                            <b>{location.name}</b> <br /><br />
+                            <b>{location.name.toUpperCase()}</b> <br /><br />
                             {location.address1} {location.address2}<br />
                             {location.city}, {location.state} {location.zipcode}<br />
                             <i className="fas fa-phone"></i> {location.phone}<br />
                             <i className="fas fa-envelope"></i>{location.email}<br />
-                            <a href={`/franchise/${location.name}`} target='_blank' rel="noreferrer"><button>Website</button></a>
+                            <a className='site-link' href={`/locations/${location.state}/${location.urlCity}`} target='_blank' rel="noreferrer">WEBSITE</a>
                         </Popup>
                     </Marker>
                 )
