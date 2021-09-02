@@ -20,6 +20,9 @@ class Form extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state)
+        this.props.onSubmit()
+
+        //ADD MAILGUN HERE
     }
 
     render() {

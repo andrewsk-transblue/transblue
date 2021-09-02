@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Form from './form';
 import './contact.css';
 
 function Contact2(props) {
+    const [isSent, setIsSent] = useState(false);
+
     return(
         <div className='contact2-wrapper'>
+            {isSent && <div className='message-alert centered-text'>
+                THANK YOU!<br />
+                YOUR MESSAGE HAS BEEN SENT
+            </div>}
             <div className='svg-container'>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
                 viewBox="0 0 15 8"  
@@ -38,7 +44,7 @@ function Contact2(props) {
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6 col-12'>
-                            <Form email={props.franchise.email} />
+                            <Form email={props.franchise.email} onSubmit={() => setIsSent(true)} />
                         </div>
                         <div className='d-none d-lg-block col-lg-6 contact-info my-auto'>
                             <h5>{props.franchise.name.toUpperCase()}</h5>

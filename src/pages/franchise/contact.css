@@ -29,6 +29,19 @@
     width: 100%;
 }
 
+.contact2-wrapper .message-alert {
+    position: absolute;
+    top: 275px;
+    z-index: 50;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 175, 0);
+    letter-spacing: .0705em;
+    font-weight: 500;
+}
+
 .contact2-wrapper h3,
 .contact2-wrapper .section-p {
     text-align: center;
