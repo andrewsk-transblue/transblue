@@ -5,7 +5,7 @@ import Footer from '../../components/footer/index';
 import MapContainer from './mapcontainer';
 import ListView from './listView';
 
-//import axios from 'axios';
+import axios from 'axios';
 
 //import bounds from './bounds';
 import locationsHeader from '../../images/location.jpeg';
@@ -20,11 +20,11 @@ function Locations(props) {
         console.log(props)
 
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
-        // let zipcodes = JSON.parse(props.locations[2].zipcodelist);
+        let zipcodes = JSON.parse(props.locations[1].zipcodelist);
 
-        // let str = zipcodes.toString()
+        let str = zipcodes.toString()
 
-        // console.log(str)
+        console.log(str)
 
         // const options = {
         //     method: 'GET',
@@ -40,29 +40,50 @@ function Locations(props) {
         // let filteredArr = []
           
         //   axios.request(options).then(function (response) {
-        //       console.log(response.data);
+        //       console.log(response.data.features);
         //       //console.log(coordinates)
 
-        //       for(let i=0; i<response.data.features.length; i++) {
-        //         //bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
-        //         // if(response.data.features[i].geometry.coordinates[0][0].length > 2) {
-        //         //     bounds = bounds.concat(response.data.features[i].geometry.coordinates[0][0])
-        //         // }
-        //         // else bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
+        //     //   for(let i=0; i<response.data.features.length; i++) {
+        //     //     //bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
+        //     //     // if(response.data.features[i].geometry.coordinates[0][0].length > 2) {
+        //     //     //     bounds = bounds.concat(response.data.features[i].geometry.coordinates[0][0])
+        //     //     // }
+        //     //     // else bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
 
-        //         //multipolygon and regular polygon?
+        //     //     //multipolygon and regular polygon?
 
-        //         if(response.data.features[i].geometry.type === 'Polygon') {
-        //             bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
-        //         }
+        //     //     if(response.data.features[i].geometry.type === 'Polygon') {
+        //     //         bounds = bounds.concat(response.data.features[i].geometry.coordinates[0])
+        //     //     }
 
-        //         else if(response.data.features[i].geometry.type === 'MultiPolygon') {
-        //             for(let j = 0; j<response.data.features[i].geometry.coordinates.length; j++) {
-        //                 bounds = bounds.concat(response.data.features[i].geometry.coordinates[j][0])
-        //             }
-        //         }
+        //     //     else if(response.data.features[i].geometry.type === 'MultiPolygon') {
+        //     //         for(let j = 0; j<response.data.features[i].geometry.coordinates.length; j++) {
+        //     //             bounds = bounds.concat(response.data.features[i].geometry.coordinates[j][0])
+        //     //         }
+        //     //     }
 
-        //       }
+        //       })
+
+
+
+        
+        // let coords = [];
+
+        // for(let i = 0; i<arr.length; i++) {
+        //     for(let j=0; j<arr[i].geometry.coordinates.length; j++) {
+        //         coords = coords.concat(arr[i].geometry.coordinates[j])
+        //     }
+        // }
+
+        // console.log(coords)
+
+        // for(let k=0; k<coords.length; k++) {
+        //     let a = coords[k][0]
+        //     coords[k][0] = coords[k][1]
+        //     coords[k][1] = a 
+        // }
+
+        // console.log(coords)
 
         //       console.log(bounds)
 
@@ -81,7 +102,6 @@ function Locations(props) {
         
         const [viewMap, setViewMap] = useState(true);
 
-
    
         return(
             <Fragment>
@@ -97,6 +117,7 @@ function Locations(props) {
             {!viewMap && <ListView locations={props.locations} zipcode={props.zipcode} />}
             {viewMap > 0 && <MapContainer locations={props.locations} 
             zipcode={props.zipcode} 
+            bounds={props.locations[1].bounds}
             //coordinates={filteredArr}  
              />}
             <Footer locationPage={true} />

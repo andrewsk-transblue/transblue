@@ -26,6 +26,24 @@ function SetCenter({center, radius}) {
 
 function MapComp(props) {
 
+   // console.log(typeof props.bounds);
+
+    console.log(JSON.parse(props.bounds))
+
+    let bounds = JSON.parse(props.bounds);
+
+    for(let i=0; i<bounds.length; i++) {
+        if(bounds[i][0] < bounds[i][1]) {
+            let a = bounds[i][0]
+            bounds[i][0] = bounds[i][1]
+            bounds[i][1] = a
+        }
+    }
+
+    // for(let i=0; i<props.bounds.length; i++) {
+    //     console.log(props.bounds[i])
+    // }
+
     //console.log(props)
 
         // let newArray = []
@@ -108,7 +126,7 @@ function MapComp(props) {
 
             
 
-            {/* <Polygon pathOptions={{color: 'purple'}} positions={props.bounds} /> */}
+            <Polygon pathOptions={{color: 'purple'}} positions={bounds} />
 
             {props.center.length > 0 && <SetCenter center={props.center} radius={props.radius} />}
             {props.coords.length > 0 && <SetViewOnClick coords={props.coords} />}

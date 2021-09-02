@@ -94,7 +94,8 @@ class MapContainer extends Component {
                     {!this.state.isLoading && <MapComp 
                     // bounds={this.props.coordinates} 
                     zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
-                    coords={this.state.bounds} center={this.state.center} radius={this.state.radius}/>}
+                    coords={this.state.bounds} center={this.state.center} radius={this.state.radius}
+                    bounds={this.props.bounds} />}
                     <div className='search-container new-search'>
                         <span className='span-search'>
                             <AutoComplete
