@@ -14,11 +14,10 @@ import './style.css';
 //import locations from './db';
 
 function Locations(props) {
-
         //console.log(props.locations[1].geojson)
 
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
-        let zipcodes = JSON.parse(props.locations[2].zipcodelist);
+        let zipcodes = JSON.parse(props.locations[12].zipcodelist);
 
         let str = zipcodes.toString()
 
@@ -39,7 +38,6 @@ function Locations(props) {
         //     })
         
         const [viewMap, setViewMap] = useState(true);
-
    
         return(
             <Fragment>
