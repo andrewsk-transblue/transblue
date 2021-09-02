@@ -42,6 +42,8 @@ function Franchise(props) {
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
+            console.log(ebData)
+            console.log(JSON.parse(ebData[0].citylist))
             seteasybaseData(ebData);
             //console.log(ebData[0])
             // setCities(JSON.parse(ebData[0].citylist))
