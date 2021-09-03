@@ -93,36 +93,20 @@ function Franchise(props) {
                         }
                     ]} />
 
-                <div className='franchise-services'>
-                    <div className='container-fluid'>
-                        <div className='row'>
-                            <div className='col-lg-5 right-text'>
-                                <h3 className='section-header'>
-                                    LOVE THE LIFE YOU LIVE
-                                </h3>
-                                <p className='section-p'>
-                                    At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
-                                </p>
-                                <p className='section-p'>With over 20 years of experience, you can trust Transblue with your home. We offer a variety of services to make your dream landscape a reality.</p>
-
-                                <button className='cta'>VIEW ALL SERVICES</button>
-                                {/* <p className='section-p'>The process is simple:</p>
-                                <p className='step'>1) CONSULTATION</p>
-                                <p className='section-p'>Our highly knowledgeable team will meet with you and discuss the plans and ideas that you’re processing.</p> */}
-                            </div>
-                            <div className='col-lg-7'>
-                                <div className='row'>
-                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={decks} service='DECKS' /></div>
-                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={pools} service='POOLS' /></div>
-                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                                    <div className='col-12 col-md-6 col-lg-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
-                                </div>
-                            </div>
-                            
+                    <div className='franchise-services container-fluid'>
+                        <div className='row title'>
+                            <h3 className='section-header'>LOVE THE LIFE YOU LIVE</h3>
+                            <p className='section-p'>
+                                At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
+                            </p>
                         </div>
-                        <MoreServices />
+                        <div className='row'>
+                            <div className='col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
+                            <div className='col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
+                            <div className='col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                            <div className='col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                        </div>
                     </div>
-                </div>
                 
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />

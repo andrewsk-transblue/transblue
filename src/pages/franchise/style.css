@@ -28,15 +28,24 @@
     padding-bottom: 90px;
     width: 100%;
     background-color: white;
-    margin: 0px;
 }
 
-.franchise-services .container-fluid {
+.franchise-services.container-fluid {
     width: 93%;
 }
 
+.franchise-services .title {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.title .section-header {
+    margin: 0 auto
+}
+
 .franchise-services button {
-    /* margin: 0 auto; */
     margin-top: 20px;
     margin-left: 0px;
 }
