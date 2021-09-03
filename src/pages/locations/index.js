@@ -17,21 +17,21 @@ function Locations(props) {
         //console.log(props.locations[1].geojson)
 
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
-        let zipcodes = JSON.parse(props.locations[12].zipcodelist);
+        //let zipcodes = JSON.parse(props.locations[12].zipcodelist);
 
-        let str = zipcodes.toString()
+        //let str = zipcodes.toString()
 
-        console.log(str)
+        //console.log(str)
 
-        const options = {
-            method: 'GET',
-            url: 'https://vanitysoft-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/zipcode',
-            params: {zipcode: str},
-            headers: {
-              'x-rapidapi-host': 'vanitysoft-boundaries-io-v1.p.rapidapi.com',
-              'x-rapidapi-key': '7f512eae08mshf45fffd34cc33e2p11d7b8jsn9d08016938ec'
-            }
-          };
+        // const options = {
+        //     method: 'GET',
+        //     url: 'https://vanitysoft-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/zipcode',
+        //     params: {zipcode: str},
+        //     headers: {
+        //       'x-rapidapi-host': 'vanitysoft-boundaries-io-v1.p.rapidapi.com',
+        //       'x-rapidapi-key': '7f512eae08mshf45fffd34cc33e2p11d7b8jsn9d08016938ec'
+        //     }
+        //   };
           
         //   axios.request(options).then(function (response) {
         //       console.log(JSON.stringify(response.data))
