@@ -10,12 +10,19 @@ function Footer(props) {
     const [displaySnow, setDisplaySnow] = useState(false);
     const [displayEV, setDisplayEV] = useState(false);
     const [location, setLocation] = useState('')
+    const [disabled, setDisabled] = useState(true)
 
     function scrollToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         })
+    }
+
+    function enableSearch(location) {
+        console.log(location)
+        setDisabled(false)
+        setLocation(location.place_id)
     }
 
     return(
@@ -73,12 +80,12 @@ function Footer(props) {
                     <span>
                         <AutoComplete
                             apiKey={process.env.REACT_APP_GOOGLE_API}
-                            onPlaceSelected={(location) => setLocation(location.place_id)}
+                            onPlaceSelected={(location) => enableSearch(location)}
                             options={{
                                 types: ['geocode'],
                                 componentRestrictions: { country: "us" }}}
                         />
-                        <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
+                        {!disabled && <a href={`/locations/${location}`}><i className='fas fa-search'></i></a>}
                     </span>
                 </div>}
                 {props.franchise && <div className='col-lg-3 col-md-6 d-none d-md-block footer-contact'>
@@ -137,12 +144,12 @@ function Footer(props) {
                         <span>
                             <AutoComplete
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
-                                onPlaceSelected={(location) => setLocation(location.place_id)}
+                                onPlaceSelected={(location) => enableSearch(location)}
                                 options={{
                                     types: ['geocode'],
                                     componentRestrictions: { country: "us" }}}
                             />
-                            <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>
+                            {!disabled && <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>}
                         </span>
                     </div>
                 </div>
