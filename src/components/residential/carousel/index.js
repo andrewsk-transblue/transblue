@@ -79,8 +79,7 @@ class Carousel extends Component {
         }
         else {
             this.setState({index: text.length - 1})
-        }
-        
+        }       
     }
 
     updateDimensions = () => {
@@ -104,10 +103,10 @@ class Carousel extends Component {
             <hr />
             <div className='row mx-0'>
                 <div className='col-lg-1 col-sm-1 col-md-2 col-1 prev-slide px-0'>
-                    {this.state.index >=0 && <Fragment><img src={images[this.state.index]} alt='' />
+                    {this.state.index > 0 && <Fragment><img src={images[this.state.index-1]} alt='' />
                         <div className='text'>
-                            <h3 className='mt-4 mb-3'>{text[this.state.index].title}</h3>
-                            <p className='section-p'>{text[this.state.index].body}</p>
+                            <h3 className='mt-4 mb-3'>{text[this.state.index-1].title}</h3>
+                            <p className='section-p'>{text[this.state.index-1].body}</p>
                         </div>
                         <div className='carousel-overlay'></div>
                         <button onClick={this.left}><img src={back} className='arrow' alt='Prev Slide' /></button>
@@ -115,25 +114,25 @@ class Carousel extends Component {
                     }
                 </div>
                 <div className='col-lg-5 col-10 col-sm-10 col-md-8 px-0 showing-slide text-center'>
-                    <img src={images[this.state.index+1]} alt='' />
+                    <img src={images[this.state.index]} alt='' />
                     {/* <div className='text'> */}
-                        <h3 className='mt-4 mb-3 text-left'>{text[this.state.index+1].title}</h3>
-                        <p className='section-p text-left'>{text[this.state.index+1].body}</p>
+                        <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
+                        <p className='section-p text-left'>{text[this.state.index].body}</p>
                     {/* </div> */}
                 </div>
     
                 {this.state.cols === 4 && <div className='col-lg-5 px-0 showing-slide'>
-                    <img src={images[this.state.index+2]} alt='' />
-                    <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
-                    <p className='section-p'>{text[this.state.index+2].body}</p>
+                    <img src={images[this.state.index+1]} alt='' />
+                    <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
+                    <p className='section-p'>{text[this.state.index+1].body}</p>
                 </div>}
 
                 <div className='col-lg-1 col-sm-1 col-md-2 col-1 px-0 next-slide'>
-                    {this.state.index + this.state.cols - 1 < images.length && <Fragment>
-                        <img src={this.state.cols === 4 ? images[this.state.index+3] : images[this.state.index + 2]} alt='' />
+                    {this.state.index + this.state.cols - 2 < images.length && <Fragment>
+                        <img src={this.state.cols === 4 ? images[this.state.index+2] : images[this.state.index + 1]} alt='' />
                         <div className='text'>
-                            <h3 className='mt-4 mb-3'>{this.state.cols === 4 ? text[this.state.index+3].title : text[this.state.index+2].title}</h3>
-                            <p className='section-p'>{this.state.cols === 4 ? text[this.state.index+3].body : text[this.state.index+2].body}</p>
+                            <h3 className='mt-4 mb-3'>{this.state.cols === 4 ? text[this.state.index+2].title : text[this.state.index+1].title}</h3>
+                            <p className='section-p'>{this.state.cols === 4 ? text[this.state.index+2].body : text[this.state.index+1].body}</p>
                         </div>
                         <div className='carousel-overlay'></div>
                         <button onClick={this.right}><img src={forward} className='arrow' alt='Next Slide' /></button>

@@ -148,7 +148,6 @@ function Multifamily() {
                 </div>
                 <Footer />
             </div>
-            
         </Fragment>
     )
 }
