@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Fade from 'react-reveal/Fade';
 import Form from './form';
 import './contact.css';
 
@@ -7,10 +8,19 @@ function Contact2(props) {
 
     return(
         <div className='contact2-wrapper'>
-            {isSent && <div className='message-alert centered-text'>
-                THANK YOU!<br />
-                YOUR MESSAGE HAS BEEN SENT
-            </div>}
+            {isSent && 
+            <div className='alert-wrapper'>
+                <Fade>
+                    <div className='message-alert'>
+                        <div className='close'>
+                            <button onClick={() => setIsSent(false)}>X</button>
+                        </div>
+                        THANK YOU!<br />
+                        YOUR MESSAGE HAS BEEN SENT
+                    </div>
+                </Fade>
+            </div>
+            }
             <div className='svg-container'>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
                 viewBox="0 0 15 8"  
