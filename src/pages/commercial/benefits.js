@@ -9,12 +9,12 @@ function Benefits() {
     return(
         <div className='commercial-benefits container-fluid'>
             <div className='row'>
-                <div className='col-lg-6'>
+                <div className='col-12 col-md-6'>
                     <div className='row'>
-                        <div className='col-3 col-lg-2 my-auto text-center pr-0'>
+                        <div className='col-2 col-lg-2 my-auto text-center pr-0'>
                             <img src={customers} alt='' />
                         </div>
-                        <div className='col-9 col-lg-10 my-auto'>
+                        <div className='col-10 col-lg-10 my-auto'>
                             <h4 className='section-header'>SAVE TIME &amp; MONEY</h4>
                             <p className='section-p'>
                             Nunc pellentesque malesuada nunc in varius. Phasellus placerat magna at justo semper.
@@ -23,10 +23,10 @@ function Benefits() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-3 col-lg-2 my-auto text-center pr-0'>
+                        <div className='col-2 col-lg-2 my-auto text-center pr-0'>
                             <img src={customers} alt='' />
                         </div>
-                        <div className='col-9 col-lg-10 my-auto'>
+                        <div className='col-10 col-lg-10 my-auto'>
                             <h4 className='section-header'>INCREASE BUSINESS VALUE</h4>
                             <p className='section-p'>
                             Nunc pellentesque malesuada nunc in varius. Phasellus placerat magna at justo semper.
@@ -34,12 +34,12 @@ function Benefits() {
                         </div>
                     </div>
                 </div>
-                <div className='col-lg-6'>
+                <div className='col-12 col-md-6'>
                     <div className='row'>
-                        <div className='col-3 col-lg-2 my-auto text-center pr-0'>
+                        <div className='col-2 col-lg-2 my-auto text-center pr-0'>
                             <img src={customers} alt='' />
                         </div>
-                        <div className='col-9 col-lg-10 my-auto'>
+                        <div className='col-10 col-lg-10 my-auto'>
                             <h4 className='section-header'>ENHANCE CURB APPEAL</h4>
                             <p className='section-p'>
                             Nunc pellentesque malesuada nunc in varius. Phasellus placerat magna at justo semper.
@@ -48,11 +48,11 @@ function Benefits() {
                     </div>
 
                     <div className='row'>
-                        <div className='col-3 col-lg-2 my-auto text-center pr-0'>
+                        <div className='col-2 col-lg-2 my-auto text-center pr-0'>
                             <img src={customers} alt='' />
                         </div>
-                        <div className='col-9 col-lg-10 my-auto'>
-                            <h4 className='section-header'>GET &amp; RETAIN CUSTOMERS</h4>
+                        <div className='col-10 col-lg-10 my-auto'>
+                            <h4 className='section-header'>RETAIN CUSTOMERS</h4>
                             <p className='section-p'>
                             Nunc pellentesque malesuada nunc in varius. Phasellus placerat magna at justo semper.
                             </p>

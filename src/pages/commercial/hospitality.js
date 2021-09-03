@@ -18,6 +18,14 @@ function Hospitality() {
     return(
         <div className='hospitality-wrapper container-fluid'>
             <div className='row'>
+                <div className='col-12 col-lg-6 order-lg-12'>
+                    <div className='about-slideshow'>
+                        {index === 0 && <Fade opposite duration={1000} ><img src={images[index]} alt='commercial landscaping' /></Fade>}
+                        {index === 1 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
+                        {index === 2 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
+                        {index === 3 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
+                    </div>
+                </div>
                 <div className='col-12 col-lg-6 hospitality-text'>
                     <h6>NO MATTER THE PROJECT,</h6>
                     <h4 className='section-header hospitality-header'>
@@ -36,14 +44,6 @@ function Hospitality() {
                         <img src={check} className='check-icon' /> WE'RE A ONE-STOP SHOP FOR ALL YOUR NEEDS
                     </p>
                     <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p> */}
-                </div>
-                <div className='col-12 col-lg-6'>
-                    <div className='about-slideshow'>
-                        {index === 0 && <Fade opposite duration={1000} ><img src={images[index]} alt='commercial landscaping' /></Fade>}
-                        {index === 1 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
-                        {index === 2 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
-                        {index === 3 && <Fade opposite duration={1000}><img src={images[index]} alt='commercial landscaping' /></Fade>}
-                    </div>
                 </div>
             </div>
         </div>

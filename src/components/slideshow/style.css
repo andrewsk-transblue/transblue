@@ -17,7 +17,7 @@
     font-weight: 200;
     font-size: 3vw;
     font-size: 18px;
-    font-size: clamp(18px, 3vw, 3vw);
+    font-size: clamp(20px, 3vw, 3vw);
     width: 60%;
     line-height: 1.8em;
 }

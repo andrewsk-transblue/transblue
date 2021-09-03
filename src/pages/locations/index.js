@@ -14,13 +14,9 @@ import './style.css';
 //import locations from './db';
 
 function Locations(props) {
-        //console.log(props.locations[1].geojson)
-
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
         //let zipcodes = JSON.parse(props.locations[12].zipcodelist);
-
         //let str = zipcodes.toString()
-
         //console.log(str)
 
         // const options = {
@@ -60,7 +56,6 @@ function Locations(props) {
             <Footer locationPage={true} />
         </Fragment>
         )
-
 }
 
 export default Locations;
