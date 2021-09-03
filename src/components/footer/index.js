@@ -85,6 +85,7 @@ function Footer(props) {
                                 types: ['geocode'],
                                 componentRestrictions: { country: "us" }}}
                         />
+                        {disabled && <i className='fas fa-search disabled'></i>}
                         {!disabled && <a href={`/locations/${location}`}><i className='fas fa-search'></i></a>}
                     </span>
                 </div>}
@@ -149,6 +150,7 @@ function Footer(props) {
                                     types: ['geocode'],
                                     componentRestrictions: { country: "us" }}}
                             />
+                            {disabled && <i className='fas fa-search disabled'></i>}
                             {!disabled && <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>}
                         </span>
                     </div>

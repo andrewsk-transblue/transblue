@@ -98,6 +98,11 @@
     margin: 30px 0px 30px 0px;
 }
 
+.find-location i.disabled {
+    opacity: .6;
+    color: #0b56a4;
+}
+
 .find-location p {
     letter-spacing: .08em;
 }
