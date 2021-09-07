@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
 import design from '../../../images/residential/design.jpg';
+import designSmall from '../../../images/residential/designSmall.jpg';
 import build from '../../../images/residential/build.jpg';
+import buildSmall from '../../../images/residential/buildSmall.jpg';
 import enjoy from '../../../images/residential/enjoy2.jpeg';
+import enjoySmall from '../../../images/residential/enjoy2Small.jpg';
 import forward from '../../../images/residential/forward.png';
 import back from '../../../images/residential/back.png';
 import line from '../../../images/line.png';
@@ -12,16 +15,19 @@ function Design() {
     const slides = [
         {
             img: design,
+            imgSmall: designSmall,
             title: 'DESIGN',
             body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
         },
         {
             img: build,
+            imgSmall: buildSmall,
             title: 'BUILD',
             body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
             img: enjoy,
+            imgSmall: enjoySmall,
             title: 'ENJOY',
             body: 'Begin making unforgettable memories in your new outdoor living space'
         }
@@ -30,7 +36,8 @@ function Design() {
 
     return(
         <div className='design-wrapper'>
-            <img src={slides[index].img} alt='' />
+            <img src={slides[index].img} alt='' className='sm-screen-hide' />
+            <img src={slides[index].imgSmall} alt='' className='lg-screen-hide' />
             <div className='overlay'></div>
             <div className='text container-fluid'>
                 <div className='row mx-0'>

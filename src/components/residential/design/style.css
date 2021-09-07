@@ -6,6 +6,14 @@
     width: 100%;
 }
 
+.design-wrapper img.sm-screen-hide {
+    display: none;
+}
+
+.design-wrapper img.lg-screen-hide {
+    display: block;
+}
+
 .design-wrapper .overlay {
     background-color: rgba(0,0,0,.3);
 }
@@ -20,7 +28,7 @@
 
 .design-wrapper h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 6vw;
+    font-size: 8vw;
     font-weight: 300;
     letter-spacing: 4px;
 }
@@ -73,12 +81,21 @@
 }
 
 @media only screen and (min-width: 576px) {
+    .design-wrapper h3 {
+        font-size: 6vw;
+    }
     .design-wrapper p {
         font-size: 1.2em;
     }
     .design-wrapper .forward,
     .design-wrapper .back {
         width: 40px;
+    }
+    .design-wrapper img.lg-screen-hide {
+        display: none;
+    }
+    .design-wrapper img.sm-screen-hide {
+        display: block;
     }
 }
 
