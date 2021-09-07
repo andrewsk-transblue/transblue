@@ -27,11 +27,10 @@ function Mbridge() {
             </div>
             <div className='container-fluid stats'>
             <div className='row mx-0'>
-                <div className='col-lg-6 mbridge-text'>
+                <div className='col-lg-6 right-text'>
                     <small className='ml-0'>TRANSBLUE GIVES BACK</small>
                     <h6>OUR COMMITMENT TO A BETTER COMMUNITY</h6>
-                    <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt. </p>
-                    <p className='section-p'>Aenean vestibulum lacinia eleifend. Nulla ipsum erat, interdum at viverra lobortis, luctus sit amet lectus.</p>
+                    <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt. Aenean vestibulum lacinia eleifend. Nulla ipsum erat, interdum at viverra lobortis, luctus sit amet lectus.</p>
                     <p className='section-p'>Nullam suscipit euismod elit, ut elementum est vehicula at. Curabitur lobortis diam aliquet, fermentum </p>
                     <a href='/' className='cta'>LEARN MORE</a>
                 </div>

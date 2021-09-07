@@ -16,18 +16,100 @@ import './style.css';
 function Locations(props) {
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
         //let zipcodes = JSON.parse(props.locations[12].zipcodelist);
-        //let str = zipcodes.toString()
-        //console.log(str)
+        let zipcodes = [98001,
+            98002,
+            98092,
+            98071,
+98003,
+            98023,
+            98063,
+            98093,
+98010,
+98022,
+98030,
+            98031,
+            98032,
+            98042,
+            98035,
+            98064,
+            98089,
+98038,
+98047,
+98051,
+98198,
+98321,
+98323,
+98332,
+            98335,
+98338,
+98354,
+98360,
+98371,
+            98372,
+            98373,
+            98374,
+            98375,
+98385,
+98387,
+98388,
+98390,
+            98352,
+98402,
+            98403,
+            98404,
+            98405,
+            98406,
+            98407,
+            98408,
+            98409,
+            98413,
+            98416,
+            98418,
+            98421,
+            98422,
+            98424,
+            98443,
+            98444,
+            98445,
+            98446,
+            98447,
+            98465,
+            98466,
+            98401,
+            98411,
+            98412,
+            98415,
+            98417,
+            98419,
+            98448,
+            98464,
+            98471,
+            98481,
+            98490,
+            98493,
+98438,
+98439,
+            98498,
+            98499,
+            98496,
+            98497,
+98467,
+98025,
+98344,
+98395,
+98396]
+        let str = zipcodes.toString()
+        console.log(str)
 
-        // const options = {
-        //     method: 'GET',
-        //     url: 'https://vanitysoft-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/zipcode',
-        //     params: {zipcode: str},
-        //     headers: {
-        //       'x-rapidapi-host': 'vanitysoft-boundaries-io-v1.p.rapidapi.com',
-        //       'x-rapidapi-key': '7f512eae08mshf45fffd34cc33e2p11d7b8jsn9d08016938ec'
-        //     }
-        //   };
+        const options = {
+            method: 'GET',
+            url: 'https://vanitysoft-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/zipcode',
+            params: {zipcode: str},
+            headers: {
+              'x-rapidapi-host': 'vanitysoft-boundaries-io-v1.p.rapidapi.com',
+              'x-rapidapi-key': '7f512eae08mshf45fffd34cc33e2p11d7b8jsn9d08016938ec'
+            }
+          };
           
         //   axios.request(options).then(function (response) {
         //       console.log(JSON.stringify(response.data))
