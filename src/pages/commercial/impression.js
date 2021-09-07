@@ -11,8 +11,7 @@ function Impression() {
     return(
         <Fragment>
             <div className='impression-wrapper container-fluid px-0'>
-                <img src={impression} alt='Commercial Exterior' className='sm-screen-hide' />
-                <img src={impressionSmall} alt='Commercial Exterior' className='lg-screen-hide' />
+                <img src={impressionSmall} alt='Commercial Exterior' srcSet={`${impressionSmall} 576w, ${impression} 2000w`} />
                 <div className='overlay'></div>
                 <div className='text mx-0 row'>
                     <div className='col-lg-9 col-10'>

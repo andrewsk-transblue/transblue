@@ -7,8 +7,7 @@ function UpgradeNew() {
 
     return(
         <div className='upgrade'>
-            <img src={upgrade} alt='Modern Neon Home' className='sm-screen-hide' />
-            <img src={upgradeSmall} alt='' className='lg-screen-hide' />
+            <img src={upgradeSmall} alt='Modern Neon Home' srcSet={`${upgradeSmall} 576w, ${upgrade} 2000w`} />
             <div className='overlay'></div>
             <div className='text'>
                 <p>Transform your backyard into a</p>

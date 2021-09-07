@@ -6,11 +6,6 @@
 .upgrade img {
     width: 100%;
 }
-
-.upgrade .sm-screen-hide {
-    display: none;
-}
-
 .upgrade .overlay {
     background-color: rgba(0,0,0,.35)
 }
@@ -81,12 +76,6 @@
     .upgrade a {
         font-size: .8em;
         left: 40%;
-    }
-    .upgrade .lg-screen-hide {
-        display: none;
-    }
-    .upgrade .sm-screen-hide {
-        display: block;
     }
 }
 @media only screen and (min-width: 768px) {

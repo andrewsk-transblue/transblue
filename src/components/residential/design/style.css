@@ -6,14 +6,6 @@
     width: 100%;
 }
 
-.design-wrapper img.sm-screen-hide {
-    display: none;
-}
-
-.design-wrapper img.lg-screen-hide {
-    display: block;
-}
-
 .design-wrapper .overlay {
     background-color: rgba(0,0,0,.3);
 }
@@ -90,12 +82,6 @@
     .design-wrapper .forward,
     .design-wrapper .back {
         width: 40px;
-    }
-    .design-wrapper img.lg-screen-hide {
-        display: none;
-    }
-    .design-wrapper img.sm-screen-hide {
-        display: block;
     }
 }
 
