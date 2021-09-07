@@ -83,7 +83,7 @@ code {
 a.cta {
   background-color: #0b56a4;
   color: white !important;
-  padding: 2px 25px;
+  padding: 3px 5px 2px 5px;
   border: 2px solid #0b56a4;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -108,7 +108,7 @@ button.cta {
   font-size: .85em !important;
   font-family: 'Muli', sans-serif !important;
   letter-spacing: .07em !important;
-  padding: 2px 25px !important;
+  padding: 4px 5px 2px 5px !important;
   margin-left: 10px;
 }
 
@@ -166,6 +166,15 @@ button.cta:hover {
 
 .right-input {
     margin-left: 4%;
+}
+
+@media only screen and (min-width: 410px) {
+  a.cta {
+    padding: 6px 13px 4px 13px;
+  }
+  button.cta {
+    padding: 4px 13px 2px 13px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
