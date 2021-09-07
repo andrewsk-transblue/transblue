@@ -66,7 +66,7 @@ class Government extends Component {
                     <meta name="description" content="Transblue Government Services" />
                 </Helmet>
                 <Navbar page='GOVERNMENT' parentPage='gc' />
-                <Header img={govt} title='GOVERNMENT' subtitle='' />
+                <Header img={govt} title='GOVERNMENT' subtitle='' name='government' />
                 {/* <LocationsCta /> */}
                 <ContactCta />
                 <div className='government-body'>

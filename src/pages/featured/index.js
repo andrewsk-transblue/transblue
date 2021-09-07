@@ -94,7 +94,7 @@ function Featured() {
                 <meta name="description" content="Transblue Featured Projects" />
             </Helmet>
             <Navbar page='FEATURED PROJECTS' />
-            <Header img={header2} title='FEATURED PROJECTS' />
+            <Header img={header2} title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
             {/* <LocationsCta /> */}
             <div className='projects-wrapper container-fluid'>
