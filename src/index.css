@@ -83,7 +83,7 @@ code {
 a.cta {
   background-color: #0b56a4;
   color: white !important;
-  padding: 3px 5px 2px 5px;
+  padding: 5px 5px 4px 5px;
   border: 2px solid #0b56a4;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -108,7 +108,7 @@ button.cta {
   font-size: .85em !important;
   font-family: 'Muli', sans-serif !important;
   letter-spacing: .07em !important;
-  padding: 4px 5px 2px 5px !important;
+  padding: 4px 5px 2px 5px;
   margin-left: 10px;
 }
 
@@ -170,10 +170,19 @@ button.cta:hover {
 
 @media only screen and (min-width: 410px) {
   a.cta {
-    padding: 6px 13px 4px 13px;
+    padding: 4px 20px 2px 20px;
   }
   button.cta {
-    padding: 4px 13px 2px 13px;
+    padding: 4px 20px 2px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  a.cta {
+    padding: 4px 25px 2px 25px;
+  }
+  button.cta {
+    padding: 4px 25px 2px 25px;
   }
 }
 
@@ -193,6 +202,12 @@ button.cta:hover {
   .right-text {
     padding-right: 3rem;
   }
+  a.cta {
+    padding: 3px 5px 2px 5px;
+  }
+  button.cta {
+    padding: 4px 5px 2px 5px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -202,6 +217,12 @@ button.cta:hover {
   }
   .section-header {
     margin-top: 1rem !important;
+  }
+  a.cta {
+    padding: 4px 25px 2px 25px;
+  }
+  button.cta {
+    padding: 4px 25px 2px 25px;
   }
 }
 
