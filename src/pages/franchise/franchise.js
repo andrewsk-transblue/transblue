@@ -62,7 +62,7 @@ function Franchise(props) {
             <div className='franchise-wrapper'>
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
                 <Header
-                    img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
+                    // img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
                     region={easybaseData[0].region}
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
