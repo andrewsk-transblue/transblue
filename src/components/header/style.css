@@ -29,3 +29,8 @@
     background: url('../../images//featured/header-2.jpg');
     background-size: cover;
 }
+
+.header-wrapper[name='locations'] {
+    background: url('../../images/location.jpg');
+    background-size: cover;
+}

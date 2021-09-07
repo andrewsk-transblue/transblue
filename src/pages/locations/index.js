@@ -120,7 +120,7 @@ function Locations(props) {
         return(
             <Fragment>
             <Navbar page='LOCATIONS' />
-            <Header img={locationsHeader} title='FIND A LOCATION' subtitle='' />
+            <Header img={locationsHeader} title='FIND A LOCATION' subtitle='' name='locations' />
             <div className='map-view-toggle'>
                 <button onClick={() => setViewMap(false)} className={!viewMap ? 'active' : ''}>
                     <i className="fas fa-list-ul"></i>LIST VIEW</button> 
