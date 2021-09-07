@@ -168,10 +168,6 @@ button.cta:hover {
     margin-left: 4%;
 }
 
-img.sm-screen-hide {
-  display: none;
-}
-
 img.lg-screen-hide {
   display: block;
 }
@@ -182,15 +178,6 @@ img.lg-screen-hide {
   }
   button.cta {
     padding: 4px 20px 2px 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  img.sm-screen-hide {
-    display: block;
-  }
-  img.lg-screen-hide {
-    display: none;
   }
 }
 
