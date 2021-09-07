@@ -27,7 +27,8 @@ img.map-marker {
 .projects-wrapper h4 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .0505em;
-    margin-right: 50px;
+    margin-top: 1.8rem;
+    /* margin-right: 50px; */
 }
 
 .projects-wrapper p {
@@ -68,13 +69,23 @@ img.map-marker {
     z-index: 3;
 } */
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 992px) {
     .projects-wrapper h4,
     .projects-wrapper p {
         padding-left: 1rem;
     }
 
+    .projects-wrapper h4 {
+        margin: 0px 1rem 0px 0px;
+    }
+
     .projects-wrapper .next-project {
         margin-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects-wrapper h4 {
+        margin-top: 3rem;
     }
 }

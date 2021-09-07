@@ -102,12 +102,10 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[0].img} title={projects[0].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6'>
                         <h4 className='mb-3'>{projects[0].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll1}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll1} />
                     </div>
 
                 </div>
@@ -115,24 +113,20 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[1].img} title={projects[1].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[1].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll2}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll2} />
                     </div>
                 </div>
                 <div className='row' ref={myRef2}>
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[2].img} title={projects[2].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[2].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll3}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll3} />
                     </div>
 
                 </div>
@@ -140,12 +134,10 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[3].img} title={projects[3].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[3].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll4}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll4} />
                     </div>
 
                 </div>
@@ -153,12 +145,10 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[4].img} title={projects[4].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[4].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll5}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll5} />
                     </div>
 
                 </div>
@@ -166,12 +156,10 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[5].img} title={projects[5].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[5].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll6}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll6} />
                     </div>
 
                 </div>
@@ -179,12 +167,10 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[6].img} title={projects[6].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[6].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
-                        <div className='blah' onClick={executeScroll7}>
-                            <img className='next-project' src={downarrow} alt='' />
-                        </div>
+                        <img className='next-project' src={downarrow} alt='' onClick={executeScroll7} />
                     </div>
 
                 </div>
@@ -192,7 +178,7 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[7].img} title={projects[7].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[7].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
                         {/* <div className='blah' onClick={executeScroll8}>
@@ -204,7 +190,7 @@ function Featured() {
                     <div className='col-lg-6 order-lg-12'>
                         <FeaturedCard img={projects[8].img} title={projects[7].location} />
                     </div>
-                    <div className='col-lg-6 mt-5'>
+                    <div className='col-lg-6 '>
                         <h4 className='mb-3'>{projects[8].title}</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
                     </div>
