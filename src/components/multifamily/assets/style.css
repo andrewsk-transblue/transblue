@@ -8,23 +8,49 @@
 
 .assets-wrapper .text {
     position: absolute;
-    top: 70%;
-    left: 40px;
+    top: 50%;
+    /* left: 40px; */
     color: white;
     z-index: 35;
 }
 
 .assets-wrapper h3 {
     letter-spacing: 3.8px;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    margin-bottom: 5px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .assets-wrapper p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+
+@media only screen and (min-width: 576px) {
+    .assets-wrapper .text h3 {
+        font-size: 3.6vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .assets-wrapper .text {
+        left: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .assets-wrapper .text {
+        padding-left: 2rem;
+        top: 68%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .assets-wrapper p {
+        font-size: 1.2em;
+    }
 }
