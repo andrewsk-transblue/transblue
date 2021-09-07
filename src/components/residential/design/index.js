@@ -36,8 +36,8 @@ function Design() {
 
     return(
         <div className='design-wrapper'>
-            <img src={slides[index].img} alt='' className='sm-screen-hide' />
-            <img src={slides[index].imgSmall} alt='' className='lg-screen-hide' />
+            <img src={slides[index].imgSmall} alt='' srcSet={`${slides[index].imgSmall} 768w, ${slides[index].img} 2000w`} />
+            {/* <img src={slides[index].imgSmall} alt='' className='lg-screen-hide' /> */}
             <div className='overlay'></div>
             <div className='text container-fluid'>
                 <div className='row mx-0'>
