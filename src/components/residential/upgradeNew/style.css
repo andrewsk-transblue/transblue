@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.upgrade .sm-screen-hide {
+    display: none;
+}
+
 .upgrade .overlay {
     background-color: rgba(0,0,0,.35)
 }
@@ -23,7 +27,7 @@
 .upgrade p:first-of-type {
     color: rgb(204, 204, 204);
     /* font-size: 1.5em; */
-    font-size: .85em;
+    font-size: .9em;
     /* font-size: 16px; */
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1.5px;
@@ -31,10 +35,10 @@
 
 .upgrade p:nth-of-type(2) {
     color: #0080ff;
-    font-size: 1.5em;
+    font-size: 1.85em;
     /* font-size: 4em; */
     font-family: 'Montserrat', sans-serif;
-    padding-left: 30px;
+    padding-left: 10px;
     letter-spacing: .08em;
 }
 
@@ -57,16 +61,32 @@
     border-color: white;
 }
 
+@media only screen and (min-width: 500px) {
+    .upgrade p:first-of-type {
+        font-size: 1.2em;
+    }
+    .upgrade p:nth-of-type(2) {
+        font-size: 2.3em;
+        margin-left: 30px;
+    }
+}
+
 @media only screen and (min-width: 576px) {
     .upgrade p:first-of-type {
         font-size: 1.2em;
     }
     .upgrade p:nth-of-type(2) {
-        font-size: 1.9em;
+        font-size: 2.5em;
     }
     .upgrade a {
         font-size: .8em;
         left: 40%;
+    }
+    .upgrade .lg-screen-hide {
+        display: none;
+    }
+    .upgrade .sm-screen-hide {
+        display: block;
     }
 }
 @media only screen and (min-width: 768px) {
