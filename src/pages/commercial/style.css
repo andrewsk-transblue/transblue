@@ -230,7 +230,7 @@
 
 .impression-wrapper .text {
     position: absolute;
-    top: 68%;
+    top: 50%;
     left: 20px;
     color: white;
     z-index: 35;
@@ -238,7 +238,7 @@
 
 .impression-wrapper .text h3 {
     letter-spacing: 3.8px;
-    font-size: 3.5vw;
+    font-size: 5vw;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-bottom: 15px;
@@ -254,6 +254,12 @@
 .impression-wrapper .next {
     width: 75px;
     height: 60px;
+}
+
+@media only screen and (min-width: 576px) {
+    .impression-wrapper .text h3 {
+        font-size: 3.5vw;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -291,6 +297,7 @@
 @media only screen and (min-width: 992px) {
     .impression-wrapper .text {
         padding-left: 2rem;
+        top: 68%;
     }
     .commercial-about {
         margin-top: 100px;

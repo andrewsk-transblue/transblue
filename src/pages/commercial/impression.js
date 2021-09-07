@@ -1,5 +1,6 @@
 import React, {useRef, Fragment} from 'react';
 import impression from '../../images/commercial/impression.jpg';
+import impressionSmall from '../../images/commercial/impressionSmall.jpg';
 import downarrow from '../../images/commercial/downarrow.png';
 import Refresh from './refresh';
 import './style.css';
@@ -10,7 +11,8 @@ function Impression() {
     return(
         <Fragment>
             <div className='impression-wrapper container-fluid px-0'>
-                <img src={impression} alt='Commercial Exterior' />
+                <img src={impression} alt='Commercial Exterior' className='sm-screen-hide' />
+                <img src={impressionSmall} alt='Commercial Exterior' className='lg-screen-hide' />
                 <div className='overlay'></div>
                 <div className='text mx-0 row'>
                     <div className='col-lg-9 col-10'>
