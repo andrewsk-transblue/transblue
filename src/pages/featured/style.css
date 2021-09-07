@@ -51,8 +51,8 @@ img.map-marker {
 
 .card-wrapper .label h5 {
     position: absolute;
-    top: 85%;
-    left: 40px;
+    top: 75%;
+    left: 10px;
     z-index: 3;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -68,6 +68,13 @@ img.map-marker {
     height: 50px;
     z-index: 3;
 } */
+
+@media only screen and (min-width: 576px) {
+    .card-wrapper .label h5 {
+        top: 85%;
+        left: 40px;
+    }
+}
 
 @media only screen and (min-width: 992px) {
     .projects-wrapper h4,
