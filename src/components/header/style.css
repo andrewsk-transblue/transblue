@@ -34,3 +34,28 @@
     background: url('../../images/location.jpg');
     background-size: cover;
 }
+
+.header-wrapper[region='northwest'] {
+    background: url('../../images/franchiseHeaders/northwest.jpg');
+    background-size: cover;
+}
+
+.header-wrapper[region='midwest'] {
+    background: url('../../images/franchiseHeaders/midwest.jpeg');
+    background-size: cover;
+}
+
+.header-wrapper[region='northeast'] {
+    background: url('../../images/franchiseHeaders/northeast.jpeg');
+    background-size: cover;
+}
+
+.header-wrapper[region='southwest'] {
+    background: url('../../images/franchiseHeaders/southwest.jpg');
+    background-size: cover;
+}
+
+.header-wrapper[region='west'] {
+    background: url('../../images/franchiseHeaders/west.jpeg');
+    background-size: cover;
+}
