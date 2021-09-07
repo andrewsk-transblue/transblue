@@ -137,7 +137,7 @@ button.cta:hover {
   margin-top: 1rem;
   margin-bottom: .9rem;
   /* font-size: clamp(28px, 2vw, 28px); */
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: clamp(25px, 2vw, 28px);
 }
 
 .section-subheader {
