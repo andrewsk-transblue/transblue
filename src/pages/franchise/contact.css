@@ -2,7 +2,7 @@
     background-color: white;;
     position: relative;
     /* height: 625px; */
-    margin-top: 480px;
+    margin-top: 350px;
 }
 
 .contact2-wrapper h2 {
@@ -19,6 +19,14 @@
     left: 0;
     width: 100%;
     display: inline;
+}
+
+.contact2-wrapper .sm-screen-hide {
+    display: none;
+}
+
+.contact2-wrapper .sm-screen-show {
+    display: block;
 }
 
 .contact2-wrapper .contact-form-info {
@@ -138,6 +146,7 @@
 .contact2-wrapper textarea {
     border: 1px solid rgb(202, 202, 202);
     padding: 5px;
+    border-radius: 0px;
 }
 
 .contact2-wrapper span,
@@ -166,11 +175,11 @@
     height: 100px;
 }
 
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
     .contact2-wrapper {
         margin-top: 400px;
     }
-}
+} */
 
 @media only screen and (min-width: 768px) {
     .contact2-wrapper {

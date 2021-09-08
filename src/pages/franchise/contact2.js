@@ -6,6 +6,13 @@ import './contact.css';
 function Contact2(props) {
     const [isSent, setIsSent] = useState(false);
 
+    console.log(window.innerWidth)
+    let height;
+    if(window.innerWidth < 576) height = 12
+    else if(window.innerWidth < 710) height = 10
+    else if(window.innerWidth < 850) height = 8
+    else height = 5
+
     return(
         <div className='contact2-wrapper'>
             {isSent && 
@@ -23,11 +30,12 @@ function Contact2(props) {
             }
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
-                    viewBox="0 0 16 5"  
+                    viewBox={`0 0 16 ${height}`}  
                     width='100%' height='100%'
-                    preserveAspectRatio="xMinYMax meet"
+                    //preserveAspectRatio="xMinYMax meet"
+                    preserveAspectRatio="none"
                     >
-                    <path d="M 0 2 L 16 0 L 16 5 L 0 5 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
+                    <path d={`M 0 2 L 16 0 L 16 ${height} L 0 ${height} Z`} fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
                     <defs>
                     <linearGradient
                         id="linear-gradient"
