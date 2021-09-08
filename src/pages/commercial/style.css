@@ -235,39 +235,56 @@
 
 .impression-wrapper .text {
     position: absolute;
-    top: 50%;
-    left: 20px;
+    top: 30%;
+    left: 0px;
     color: white;
     z-index: 35;
 }
 
 .impression-wrapper .text h3 {
     letter-spacing: 3.8px;
-    font-size: 5vw;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: clamp(19px, 3.5vw, 28px)
 }
 
 .impression-wrapper p {
-    font-size: 1em;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.impression-wrapper .next {
-    width: 75px;
-    height: 60px;
+.impression-wrapper .next-section {
+    width: 40px;
+    height: 30px;
+}
+
+@media only screen and (min-width: 460px) {
+    .impression-wrapper .text {
+        top: 60%;
+    }
 }
 
 @media only screen and (min-width: 576px) {
-    .impression-wrapper .text h3 {
-        font-size: 3.5vw;
+    .impression-wrapper .text {
+        top: 55%;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .impression-wrapper .text {
+        top: 60%;
+        left: 40px;
+    }
+    .impression-wrapper .next-section {
+        width: 75px;
+        height: 60px;
+    }
+    .impression-wrapper p {
+        font-size: 1em;
+    }
     .simple-process {
         position: relative;
     }
