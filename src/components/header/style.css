@@ -34,7 +34,7 @@
 }
 
 .header-wrapper[name='locations'] {
-    background: url('../../images/location.jpg') ;
+    background-image: url('../../images/location.jpg') ;
     background-size: cover;
     background-position: center center;
 }

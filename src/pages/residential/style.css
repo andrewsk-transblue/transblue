@@ -5,9 +5,11 @@
     height: auto; */
     /* height: 600px; */
     height: 100vh;
-    /* width: 100%; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     z-index: -40;
-    background: url('../../images/residential/backyard2.jpeg') no-repeat center center fixed;
+    background-image: url('../../images/residential/backyard2.jpeg');
     background-size: cover;
 }
 
