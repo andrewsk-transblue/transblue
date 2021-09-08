@@ -94,7 +94,7 @@
     color: white;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 .contact2-wrapper .contact-info p {
@@ -181,5 +181,8 @@
 @media only screen and (min-width: 1200px) {
     .contact2-wrapper {
         margin-top: 200px;
+    }
+    .contact2-wrapper .contact-info h5 {
+        margin-top: 40px;
     }
 }
