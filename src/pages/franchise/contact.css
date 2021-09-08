@@ -1,7 +1,8 @@
 .contact2-wrapper {
     background-color: white;;
     position: relative;
-    height: 625px;
+    /* height: 625px; */
+    margin-top: 400px;
 }
 
 .contact2-wrapper h2 {
@@ -12,21 +13,17 @@
     padding-top: 50px;
     /* font-size: clamp() */
 }
-
 .contact2-wrapper .svg-container {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
+    display: inline;
 }
-/* 
-.contact2-wrapper svg {
-    border: 1px solid red;
-} */
 
 .contact2-wrapper .contact-form-info {
     position: absolute;
-    top: 100px;
+    bottom: 30px;
     width: 100%;
 }
 
@@ -167,4 +164,22 @@
 
 .contact2-wrapper textarea {
     height: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact2-wrapper {
+        margin-top: 350px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact2-wrapper {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact2-wrapper {
+        margin-top: 200px;
+    }
 }

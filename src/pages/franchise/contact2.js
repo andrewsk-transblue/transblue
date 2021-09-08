@@ -21,13 +21,13 @@ function Contact2(props) {
                 </Fade>
             </div>
             }
-            <div className='svg-container'>
+            <div>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
-                viewBox="0 0 15 8"  
-                width='100%' height='100%'
+                 viewBox="0 0 16 5"  
+                    width='100%' height='100%'
                 preserveAspectRatio="xMinYMax meet"
                 >
-                    <path d="M 0 5 L 16 3 L 16 8 L 0 8 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
+                    <path d="M 0 2 L 16 0 L 16 5 L 0 5 Z" fill='url(#linear-gradient)' stroke="transparent" strokeWidth=".1"/>
                     <defs>
                     <linearGradient
                         id="linear-gradient"
