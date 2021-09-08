@@ -1,4 +1,4 @@
-legend {
+/* legend {
     background-color: transparent;
     width: 80%;
     margin: 0 auto;
@@ -21,8 +21,7 @@ fieldset p {
     line-height: 1.6em;
     letter-spacing: 2.5px;
     font-size: 1em;
-    /* padding-bottom:10px; */
-}
+} */
 
 .franchise-phone,
 .franchise-email {
@@ -35,12 +34,13 @@ fieldset p {
     letter-spacing: .0705em;
     font-family: 'Roboto';
 }
-.franchise-phone {
-    margin-left: 20px;
+
+.franchise-wrapper .about-container {
+    width: 93%;
 }
 
-.about-container {
-    width: 93%;
+.franchise-wrapper .about-container .contact {
+    margin: 0px 0px 15px 0px;
 }
 
 .about-container h1 {
@@ -49,4 +49,11 @@ fieldset p {
     font-size: 2.1em;
     margin-bottom: 5px;
     line-height: 1.3em;
+    font-size: clamp(30px, 4vw, 30px)
+}
+
+@media only screen and (min-width: 543px) {
+    .franchise-phone {
+        margin-left: 20px;
+    }
 }
