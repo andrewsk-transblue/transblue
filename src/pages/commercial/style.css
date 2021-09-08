@@ -13,7 +13,7 @@
 }
 .marriott-wrapper img {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 /* HOSPITALITY CSS */
@@ -77,6 +77,11 @@
     width: 95%;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.nextstep .section-subheader {
+    line-height: 1.5rem;
+    margin: 0 0 8px 0;
 }
 
 .govt-slider .slick-next::before,
@@ -168,7 +173,7 @@
 .simple-process h1 {
     font-weight: 450;
     color:#ed6a22;
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 3.2vw;
     font-size: 1.8em;
     font-size: clamp(1.9em, 3.3vw, 3.2vw)
@@ -181,7 +186,7 @@
 }
 
 .simple-process h6 {
-    margin-top: 2rem;
+    margin-top: 25px;
 }
 
 .simple-process li {

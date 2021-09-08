@@ -95,7 +95,7 @@ class Commercial extends Component {
                         </div>
                         <div className='col-lg-6 left-text'>
                             <h4 className='section-header'>
-                                <p className='ml-0 mb-0 text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
+                                <p className='text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
                                 HELPING PREGNANT WOMEN IN NEED
                             </h4>
                             <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
