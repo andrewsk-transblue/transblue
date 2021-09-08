@@ -1,9 +1,7 @@
 import React, {Fragment} from 'react';
-// import useFitText from "use-fit-text";
 import icon from '../../../images/residential/whiteicon.png';
 
 function Mission() {
-    // const { fontSize, ref } = useFitText();
     return(
         <Fragment>
             <div className='container-fluid mission w-100'>

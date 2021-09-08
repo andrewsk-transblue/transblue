@@ -16,46 +16,46 @@
 }
 
 .header-wrapper[name='multifamily'] {
-    background: url('../../images//multifamily/header2.jpg') no-repeat center center fixed;
+    background: url('../../images/multifamily/header2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[name='government'] {
-    background: url('../../images/government/govtseattle.jpg');
+    background: url('../../images/government/govtseattle.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[name='featured'] {
-    background: url('../../images//featured/header-2.jpg');
+    background: url('../../images/featured/header-2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[name='locations'] {
-    background: url('../../images/location.jpg');
+    background: url('../../images/location.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[region='northwest'] {
-    background: url('../../images/franchiseHeaders/northwest.jpg');
+    background: url('../../images/franchiseHeaders/northwest.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[region='midwest'] {
-    background: url('../../images/franchiseHeaders/midwest.jpeg');
+    background: url('../../images/franchiseHeaders/midwest.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[region='northeast'] {
-    background: url('../../images/franchiseHeaders/northeast.jpeg');
+    background: url('../../images/franchiseHeaders/northeast.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[region='southwest'] {
-    background: url('../../images/franchiseHeaders/southwest.jpg');
+    background: url('../../images/franchiseHeaders/southwest.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .header-wrapper[region='west'] {
-    background: url('../../images/franchiseHeaders/west.jpeg');
+    background: url('../../images/franchiseHeaders/west.jpeg') no-repeat center center fixed;
     background-size: cover;
 }

@@ -28,7 +28,7 @@ function Residential() {
             <Navbar page='RESIDENTIAL' parentPage='gc' />
             <div className='residential-header container-fluid'>
                 <div className='overlay'></div>
-                <img src={residential} alt='residential header' ></img>
+                {/* <img src={residential} alt='residential header' ></img> */}
                 <div className='centered-text header-text'>
                     RESIDENTIAL
                     <div className='header-subtext'>

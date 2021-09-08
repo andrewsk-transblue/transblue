@@ -5,6 +5,8 @@
     height: auto; */
     height: 600px;
     z-index: -40;
+    background: url('../../images/residential/backyard2.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .residential-body {
