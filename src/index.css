@@ -83,7 +83,7 @@ code {
 a.cta {
   background-color: #0b56a4;
   color: white !important;
-  padding: 5px 5px 4px 5px;
+  padding: 4px 10px 2px 10px;
   border: 2px solid #0b56a4;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -108,7 +108,7 @@ button.cta {
   font-size: .85em !important;
   font-family: 'Muli', sans-serif !important;
   letter-spacing: .07em !important;
-  padding: 4px 5px 2px 5px;
+  padding: 4px 10px 2px 10px;
   margin-left: 10px;
 }
 
