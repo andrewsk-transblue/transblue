@@ -41,15 +41,19 @@ class Navbar extends Component {
         return(
             <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ml-auto`}  >
                 <a className="navbar-brand" href="/">
-                    <img src={logo} id='logo' alt='Transblue Logo'></img><br />
-                    {this.props.franchise && 
+                    <img src={logo} id='logo' alt='Transblue Logo'></img>
+                </a>
+                {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
+                {this.props.franchise && 
+                    <div className='franchise-contact sm-screen-hide'>
+                        <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} 
+                        <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
+                    </div>}
+                {this.props.franchise && 
                     <div className='franchise-contact sm-screen-show'>
                         <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <br />
                         <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
                     </div>}
-                </a>
-                {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
-                {this.props.franchise && <div className='franchise-contact sm-screen-hide'><i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a></div>}
 
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
