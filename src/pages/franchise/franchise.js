@@ -71,9 +71,23 @@ function Franchise(props) {
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
-                <FranchiseLifestyle location={easybaseData[0]} />
+                <div className='franchise-services container-fluid'>
+                        <div className='row title'>
+                            <h3 className='section-header'>LOVE THE LIFE YOU LIVE</h3>
+                            <p className='section-p'>
+                                At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
+                            </p>
+                        </div>
+                        <div className='row'>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={decks} service='DECKS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={pools} service='POOLS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                        </div>
+                    </div>
+                {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
 
-                <Slideshow 
+                {/* <Slideshow 
                     images={[slidesnow, asphalt, fence, solar]}
                     text={[
                         {
@@ -92,22 +106,7 @@ function Franchise(props) {
                             p1: 'LOWER YOUR ENERGY BILL',
                             p2: ''
                         }
-                    ]} />
-
-                    <div className='franchise-services container-fluid'>
-                        <div className='row title'>
-                            <h3 className='section-header'>LOVE THE LIFE YOU LIVE</h3>
-                            <p className='section-p'>
-                                At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
-                            </p>
-                        </div>
-                        <div className='row'>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
-                        </div>
-                    </div>
+                    ]} /> */}
                 
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />
