@@ -33,10 +33,7 @@ class Navbar extends Component {
     }
 
     toggleSmallScreen = () => {
-        console.log(window)
         if(this.state.bgColor === 'transparent' && window.scrollY < window.innerHeight) this.setState({bgColor: 'black'})
-        //if(this.state.bgColor === 'transparent') this.setState({bgColor: 'black'})
-        //else this.setState({bgColor: 'transparent'})
         else if(this.state.bgColor === 'black' && window.scrollY < window.innerWidth / 3) this.setState({bgColor: 'transparent'})
     }
 
