@@ -2,7 +2,7 @@
     background-color: white;;
     position: relative;
     /* height: 625px; */
-    margin-top: 400px;
+    margin-top: 480px;
 }
 
 .contact2-wrapper h2 {
@@ -164,6 +164,12 @@
 
 .contact2-wrapper textarea {
     height: 100px;
+}
+
+@media only screen and (min-width: 576px) {
+    .contact2-wrapper {
+        margin-top: 400px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
