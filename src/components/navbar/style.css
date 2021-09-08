@@ -29,11 +29,19 @@ nav button {
     border-radius: 0px !important;
 }
 
+nav .sm-screen-hide {
+    display: none;
+}
+
+nav .franchise-contact.sm-screen-show {
+    margin-top: 20px;
+}
+
 nav .franchise-contact i {
     margin-right: 7px;
 }
 
-nav .franchise-contact i.fa-phone {
+nav .franchise-contact i.fa-phone:not(.sm-screen-show i.fa-phone) {
     margin-left: 20px;
 }
 
@@ -113,6 +121,12 @@ nav .navbar-nav li a:hover {
 @media only screen and (min-width: 576px) {
     .nav-page {
         font-size: 1.4em;
+    }
+    nav .sm-screen-hide {
+        display: block;
+    }
+    nav .franchise-contact.sm-screen-show {
+        display: none;
     }
 }
 
