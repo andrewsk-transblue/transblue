@@ -32,6 +32,14 @@ class Navbar extends Component {
         }
     }
 
+    toggleSmallScreen = () => {
+        console.log(window)
+        if(this.state.bgColor === 'transparent' && window.scrollY < window.innerHeight) this.setState({bgColor: 'black'})
+        //if(this.state.bgColor === 'transparent') this.setState({bgColor: 'black'})
+        //else this.setState({bgColor: 'transparent'})
+        else if(this.state.bgColor === 'black' && window.scrollY < window.innerWidth / 3) this.setState({bgColor: 'transparent'})
+    }
+
     render() {
         return(
             <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ml-auto`}  >
@@ -39,7 +47,7 @@ class Navbar extends Component {
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
                 {this.props.franchise && <div className='franchise-contact'><i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a></div>}
 
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse flex-column" id="navbarNav">
