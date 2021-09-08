@@ -1,5 +1,5 @@
 .government-body {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .government-body .container-fluid:not(.capabilities-wrapper) {
@@ -16,9 +16,9 @@
     width: 100%;
 }
 
-.government-about img {
+/* .government-about img {
     margin-top: 25px;
-}
+} */
 
 .govt-slider .slick-next::before,
 .govt-slider .slick-prev::before {
