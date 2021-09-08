@@ -16,6 +16,10 @@
     margin-bottom: 0px;
 }
 
+.marriott-wrapper .section-p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
 /* HOSPITALITY CSS */
 .hospitality-wrapper {
     width: 93%;

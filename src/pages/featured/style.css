@@ -28,6 +28,7 @@ img.map-marker {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .0505em;
     margin-top: 1.8rem;
+    margin-bottom: 1rem;
     /* margin-right: 50px; */
 }
 
@@ -80,10 +81,6 @@ img.map-marker {
     .projects-wrapper h4,
     .projects-wrapper p {
         padding-left: 1rem;
-    }
-
-    .projects-wrapper h4 {
-        margin: 0px 1rem 0px 0px;
     }
 
     .projects-wrapper .next-project {

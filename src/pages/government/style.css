@@ -1,5 +1,5 @@
 .government-body {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .government-body .container-fluid:not(.capabilities-wrapper) {
@@ -14,6 +14,10 @@
 .government-about img,
 .asphalt img {
     width: 100%;
+}
+
+.government-about img {
+    margin-top: 25px;
 }
 
 .govt-slider .slick-next::before,
@@ -35,6 +39,10 @@
     margin-top: 80px;
 }
 
+.government-about .section-p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
 .government-body .asphalt p:first-of-type,
 .government-body .slider p:first-of-type {
     font-weight: 500;
@@ -47,8 +55,18 @@
     margin-bottom: .7rem;
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
     .green-solns {
         margin-top: 60px;
+    }
+    .government-body {
+        margin-top: 80px;
+    }
+    .government-about img {
+        margin-top: 0px;
     }
 }

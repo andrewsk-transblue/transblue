@@ -12,11 +12,11 @@ function Dees() {
                 </div>
                 <div className='col-lg-5 col-xl-4 col-12 text'>
                     <div className='section-header'>
-                        <p className='mb-0 text-secondary section-subheader'>TRANSBLUE &amp; DEE'S HOPE</p>
+                        <p className='text-secondary section-subheader'>TRANSBLUE &amp; DEE'S HOPE</p>
                         ABOLISHING SOFT SLAVERY IN UGANDA
                     </div>
-                    <p className='mt-2 section-p'>Some text about how Transblue contributes to Dee's hope in helping young girls in Uganda escape domestic servitude by providing an education and a place to stay.</p>
-                    <p className='mb-4 section-p'>Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros.</p>
+                    <p className='section-p'>Some text about how Transblue contributes to Dee's hope in helping young girls in Uganda escape domestic servitude by providing an education and a place to stay.</p>
+                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros.</p>
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}
                     <a className='cta' href='/blog'>LEARN MORE</a>

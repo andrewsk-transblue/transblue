@@ -4,12 +4,20 @@
     width: 95%;
 }
 
+.dees-container .section-subheader {
+    margin-bottom: 0px;
+}
+
 .dees-container img {
     width: 100%;
 }
 
 .dees-container a {
     text-decoration: none;
+}
+
+.dees-container .section-p:last-of-type {
+    margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -22,7 +30,3 @@
         padding-left: 4rem;
     }
 }
-/* 
-@media only screen and (min-width: 992px) {
-
-} */

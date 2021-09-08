@@ -73,7 +73,7 @@ class Government extends Component {
                     <div className='container-fluid government-about'>
                         <div className='row'>
                             <div className='col-lg-6 order-lg-12 left-text'>
-                                <h4 className='section-header mb-3'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
+                                <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
                                 <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives. After all requirements are met, we guarantee we will deliver the services the your team expects.</p>
                                 <p className='section-p'>From conception to close out, Transblue is the right fit for your property.</p>
                                 <a className='cta' href='/locations'>FIND A LOCATION</a>
