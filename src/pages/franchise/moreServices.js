@@ -10,12 +10,12 @@ function MoreServices() {
     }
     return(
         <Fragment>
-        {/* <div className='row'>
+        <div className='row'>
             {!displayServices ? <button className='cta' onClick={() => toggle(true)}>MORE SERVICES</button> : <button className='cta' onClick={() => toggle(false)}>LESS SERVICES</button>}
-        </div> */}
+        </div>
 
-        
-        {/* {displayServices && <div className='row more-services'>
+
+        {displayServices && <div className='row more-services'>
         <div className='col-lg-3'>
             Concrete<br />
             Patios<br />
@@ -46,14 +46,11 @@ function MoreServices() {
             Siding<br />
             Solar Panels<br />
         </div>
-    </div>} */}
+    </div>}
 
-    {displayServices && <div className='row more-services card-deck mx-0'>
+    {/* {displayServices && <div className='row more-services card-deck mx-0'>
         <div className='col-lg-6 card'>
-            {/* <div className='vector'></div> */}
-            {/* <img src={cardtop} alt='' /> */}
             <h4 className="line-header">
-                {/* <img src={line} alt='' />  */}
                 GENERAL CONTRACTING
             </h4>
             <div className='row'>
@@ -115,7 +112,7 @@ function MoreServices() {
                 <a className='cta' href='/'>GREEN WEBSITE</a>
             </div>
         </div>
-    </div>}
+    </div>} */}
     
     </Fragment>
     )

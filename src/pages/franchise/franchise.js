@@ -84,6 +84,7 @@ function Franchise(props) {
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
                         </div>
+                        <MoreServices />
                     </div>
                 {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
 
