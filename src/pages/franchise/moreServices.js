@@ -16,7 +16,7 @@ function MoreServices() {
 
 
         {displayServices && <div className='row more-services'>
-        <div className='col-lg-3'>
+        <div className='col-md-3 col-6 col-sm-4'>
             Concrete<br />
             Patios<br />
             Flagstone<br />
@@ -24,7 +24,7 @@ function MoreServices() {
             Sustainable Roofs<br />
             Slope Creep<br />
         </div>
-        <div className='col-lg-3'>
+        <div className='col-md-3 col-6 col-sm-4'>
             Structural Support<br />
             Synthetic Turf<br />
             Landscape Design<br />
@@ -32,14 +32,14 @@ function MoreServices() {
             Gates<br />
             Outdoor Kitchens<br />
         </div>
-        <div className='col-lg-3'>
+        <div className='col-md-3 col-6 col-sm-4'>
             Firepits<br />
             Paving<br />
             Striping<br />
             Crack Seal<br />
             Snow Hauling<br />
         </div>
-        <div className='col-lg-3'>
+        <div className='col-md-3 col-6 col-sm-4'>
             De-icing<br />
             Plowing<br />
             Roofing<br />

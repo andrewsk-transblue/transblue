@@ -88,6 +88,7 @@
 
 .more-services {
     margin-top: 40px;
+    font-size: 14px;
 }
 
 .more-services h4 {
@@ -292,6 +293,12 @@
 
 .franchise-lifestyle-wrapper button.cta {
     margin-left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .more-services {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
