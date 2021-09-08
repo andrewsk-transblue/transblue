@@ -15,11 +15,6 @@
 .asphalt img {
     width: 100%;
 }
-
-/* .government-about img {
-    margin-top: 25px;
-} */
-
 .govt-slider .slick-next::before,
 .govt-slider .slick-prev::before {
     color: black;

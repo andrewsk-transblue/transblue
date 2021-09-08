@@ -102,10 +102,10 @@ function Franchise(props) {
                             </p>
                         </div>
                         <div className='row'>
-                            <div className='col-lg-3'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-lg-3'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={decks} service='DECKS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={pools} service='POOLS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
                         </div>
                     </div>
                 

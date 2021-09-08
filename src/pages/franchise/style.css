@@ -35,7 +35,7 @@
 }
 
 .franchise-services .title {
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -43,6 +43,7 @@
 
 .title .section-header {
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .franchise-services button {
@@ -297,4 +298,10 @@
 
 .franchise-lifestyle-wrapper button.cta {
     margin-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+    .franchise-services .title {
+        width: 60%;
+    }
 }
