@@ -10,6 +10,7 @@
     margin-bottom: 10px !important;
     text-align: center;
     padding-top: 50px;
+    /* font-size: clamp() */
 }
 
 .contact2-wrapper .svg-container {
