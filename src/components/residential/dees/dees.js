@@ -7,6 +7,9 @@ function Dees() {
     return(
         <div className='dees-container container-fluid'>
             <div className='row mx-0'>
+                <div className='col-lg-7 col-xl-8 col-12 my-auto order-lg-12'>
+                    <img src={dees} alt='Dees Hope'></img>
+                </div>
                 <div className='col-lg-5 col-xl-4 col-12 text'>
                     <div className='section-header'>
                         <p className='mb-0 text-secondary section-subheader'>TRANSBLUE &amp; DEE'S HOPE</p>
@@ -17,9 +20,6 @@ function Dees() {
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}
                     <a className='cta' href='/blog'>LEARN MORE</a>
-                </div>
-                <div className='col-lg-7 col-xl-8 col-12 my-auto'>
-                    <img src={dees} alt='Dees Hope'></img>
                 </div>
             </div>
         </div>
