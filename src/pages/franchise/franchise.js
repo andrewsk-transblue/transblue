@@ -117,20 +117,20 @@ function Franchise(props) {
                 <Professional />
 
                 <NewReviews />
-                <Services />
+                {/* <Services /> */}
                 <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-lg-6 col-12 cities'>
+                            <div className='col-md-6 col-12 cities'>
                                 <h5>AREAS SERVICED</h5>
                                 <h2>{easybaseData[0].name.toUpperCase()}</h2>
                                 <p className='section-p'>
-                                    {easybaseData[0].phone}
+                                    {easybaseData[0].phone}<br className='sm-screen-show' />
                                     <span className='hours'>Mon-Fri 9:00am - 5:00pm</span>
                                 </p>
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-md-6 col-12'>
                                 {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} geojson={JSON.parse(easybaseData[0].geojson)} />}
                             </div>
                         </div>

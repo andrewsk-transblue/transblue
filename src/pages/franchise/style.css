@@ -210,17 +210,13 @@
 } */
 
 .cities {
-    padding-left: 70px;
+    padding: 0 40px;
 }
 
 .cities .zipcode-list,
 .cities .city-list {
     height: 280px;
     overflow-y: auto;
-}
-
-.cities span {
-    margin-left: 20px;
 }
 
 .cities div,
@@ -263,13 +259,21 @@
     /* background-color: rgb(121, 121, 121); */
 }
 
+.cities h5 {
+    font-size: clamp(17px, 1.4vw, 30px)
+}
+
 .cities h6 {
     /* color: white; */
     font-weight:normal;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 15px;
     font-weight: 600;
-    letter-spacing: .07em;;
+    letter-spacing: .07em;
+}
+
+.cities h2 {
+    font-size: clamp(22px, 2.5vw, 40px)
 }
 
 .franchise-lifestyle-wrapper {
@@ -304,5 +308,15 @@
 @media only screen and (min-width: 992px) {
     .franchise-services .title {
         width: 60%;
+    }
+    .cities {
+        padding-left: 70px;
+        padding-right: 0px;
+    }
+    .cities .sm-screen-show {
+        display: none;
+    }
+    .cities span {
+        margin-left: 20px;
     }
 }
