@@ -6,8 +6,9 @@ import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
 //import ServiceSlides from '../../components/commercial/serviceSlides';
-import Carousel from '../../components/carousel';
+//import Carousel from '../../components/carousel';
 import ServiceList from '../../components/multifamily/services';
+import Refresh from '../../components/refresh';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Snow from '../../components/snow';
@@ -70,34 +71,17 @@ function Multifamily() {
                     <p>INCREASE YOUR PROPERTY VALUE</p>
                     <p>with our World Class services that enhance the beauty of every space </p>
                 </div> */}
-                <div className='container-fluid multifamily-services'>
-                    <div className='row'>
-                        <div className='col-12 text-center title'>
-                        <h4 className='section-header'>REFRESH YOUR MULTIFAMILY RESIDENCE</h4>
-                        {/* <p className='section-p'>With one of our multifamily capital projects</p> */}
-                        <div className='section-p'>
-                            Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space. 
-                        </div>
-                        </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col-lg-4'>
-                            <img src={rooftop} alt='Apartment Rooftop' />
-                            <p>CONCRETE </p>
-                            <div className='section-p mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</div>
-                        </div>
-                        <div className='col-lg-4'>
-                            <img src={pool} alt='Apartment Rooftop' />
-                            <p>POOLS</p>
-                            <div className='section-p mb-4'>We provide swimming pool renovations and installs for community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems. </div>
-                        </div>
-                        <div className='col-lg-4'>
-                            <img src={parkinglot} alt='Apartment Rooftop' />
-                            <p>ASPHALT</p>
-                            <div className='section-p mb-4'>We provide asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping.</div>
-                        </div>
-                    </div>
-                </div>
+                <Refresh
+                    title='REFRESH YOUR MULTIFAMILY RESIDENCE'
+                    images={[rooftop, pool, parkinglot]}
+                    subtitles={['CONCRETE INSTALLATION', 'A BRAND NEW POOL', 'ASPHALT INSTALLATION']}
+                    body={[
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim."
+                    ]}
+
+                 />
                 <Assets />
                 <Snow
                     img={snow}

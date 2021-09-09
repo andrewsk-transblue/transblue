@@ -69,7 +69,6 @@
 .commercial-header img,
 .nextstep img,
 .simple-process img,
-.refresh img,
 .asphalt-wrapper img,
 .green-solns img,
 .impression-wrapper img:not(.next-section) {
@@ -197,33 +196,9 @@
     font-family: 'Montserrat'
 }
 
-.refresh h3 {
-    font-family: 'Raleway', sans-serif;
-    color:  #0b56a4;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin: 0px;
-}
 
-.refresh hr {
-    margin-top: 10px !important;
-}
 
-.refresh h6 {
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    /* font-size: 1.15rem; */
-    color: rgb(59, 59, 59);
-    letter-spacing: .05em;
-}
 
-.refresh {
-    margin: 0 auto;
-    margin-bottom: 80px;
-    padding-top: 80px;
-    width: 93%;
-    font-family: 'Roboto';
-}
 
 .impression-wrapper {
     position: relative;
@@ -355,12 +330,6 @@
         font-size: 1.2em;
     }
 
-    .refresh hr {
-        margin-bottom: 30px !important;
-    }
-    .refresh h6 {
-        font-size: 1.15rem;
-    }
     /* .marriott-wrapper h4.section-header {
         margin-top: 0px !important;
     } */

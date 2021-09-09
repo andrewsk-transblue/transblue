@@ -1,0 +1,24 @@
+.refresh-wrapper {
+    /* padding: 0px; */
+    margin-bottom: 80px;
+    margin-top: 80px;
+    width: 93%;
+}
+
+.refresh-wrapper img {
+    width: 100%;
+}
+
+.refresh-wrapper p:first-of-type {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.2em;
+    letter-spacing: .0705em;
+}
+
+.refresh-wrapper .title .section-p {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
