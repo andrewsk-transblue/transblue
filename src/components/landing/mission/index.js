@@ -8,10 +8,10 @@ function Mission() {
                 <div className='row'>
                     <div className='col-lg-6 col-md-6 col-sm-6'>
                         <div className='row'>
-                            <div className='col-lg-3 col-sm-12 col-md-3 col-4 pr-0 my-auto'>
+                            <div className='col-lg-3 col-sm-12 col-md-3 col-3 px-0 my-auto'>
                                 <img src={icon} alt='happy home' />
                             </div>
-                            <div className='col-lg-9 col-md-9 col-sm-12 col-8'>
+                            <div className='col-lg-9 col-md-9 col-sm-12 col-8 my-auto'>
                                 <h1>TRANSBLUE'S<br /> MISSION</h1>
                             </div>
                         </div>
