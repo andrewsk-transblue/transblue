@@ -1,8 +1,7 @@
 .contact2-wrapper {
     background-color: white;;
     position: relative;
-    /* height: 625px; */
-    margin-top: 350px;
+    height: 625px;
 }
 
 .contact2-wrapper h2 {
@@ -15,7 +14,7 @@
 }
 .contact2-wrapper .svg-container {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     display: inline;
@@ -181,22 +180,22 @@
     }
 } */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .contact2-wrapper {
         margin-top: 350px;
     }
-}
+} */
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
     .contact2-wrapper {
         margin-top: 300px;
     }
-}
+} */
 
 @media only screen and (min-width: 1200px) {
-    .contact2-wrapper {
+    /* .contact2-wrapper {
         margin-top: 200px;
-    }
+    } */
     .contact2-wrapper .contact-info h5 {
         margin-top: 40px;
     }

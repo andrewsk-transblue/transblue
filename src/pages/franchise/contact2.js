@@ -10,7 +10,7 @@ function Contact2(props) {
     let height;
     if(window.innerWidth < 576) height = 12
     else if(window.innerWidth < 710) height = 10
-    else if(window.innerWidth < 850) height = 8
+    else if(window.innerWidth < 875) height = 8
     else height = 5
 
     return(
@@ -29,6 +29,7 @@ function Contact2(props) {
             </div>
             }
             <div>
+                <div className='svg-container'>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
                     viewBox={`0 0 16 ${height}`}  
                     width='100%' height='100%'
@@ -50,6 +51,7 @@ function Contact2(props) {
                     </linearGradient>
                     </defs>
                 </svg>
+                </div>
             </div>
             <div className='contact-form-info'>
                 <h2>GET IN TOUCH.</h2>
