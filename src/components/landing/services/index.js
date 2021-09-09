@@ -67,7 +67,7 @@ function Services() {
                             image={snowSmall}
                             service='SNOW'
                             page='snow'
-                            description='Transblue, a leader in snow and ice management, understands what your property needs. Its simple consistent on time service with a focus on quality. The World Class Experience we deliver at Transblue will ensure that your clients, employees, and stakeholders don’t lose faith in your brand.'
+                            description="Transblue, a leader in snow and ice management, understands what your property needs. It's simple, consistent, on time service with a focus on quality. The World Class Experience we deliver at Transblue will ensure that your clients, employees, and stakeholders don’t lose faith in your brand."
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -75,7 +75,7 @@ function Services() {
                             image={government}
                             service='GOVERNMENT'
                             page='government'
-                            description='Transblue General Contractors provides a full range of construction services to Government Facilities, whether it be Federal Government, Military, Municipality, School Districts, Parks and Recreation, etc. Transblue is positioned to deliver on the projects you’re planning to improve your properties. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.' 
+                            description='Transblue provides a full range of construction services to Government Facilities, whether it be Federal Government, Military, Municipality, School Districts, Parks and Recreation, etc. Transblue is positioned to deliver on the projects you’re planning to improve your properties. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.' 
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -83,7 +83,7 @@ function Services() {
                             image={evSmall}
                             service='EV'
                             page='ev'
-                            description='With a strong focus on making our World a Better Place Transblue’s ESG (environmental, social, and governance) program is World Class. Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc. Has set Transblue apart in the industry as an environmental leader. For a best in class consultation and install, call Transblue Today.'
+                            description='With a strong focus on making our world a better place Transblue’s, ESG (environmental, social, and governance) program is World Class. Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc. has set Transblue apart in the industry as an environmental leader. For a best in class consultation and install, call Transblue Today.'
                         />
                     </div>
                 </div>

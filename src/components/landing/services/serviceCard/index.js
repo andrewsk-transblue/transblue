@@ -10,7 +10,7 @@ function ServiceCard(props) {
                 <div className='service-description'>
                     <div className='description-text centered-text'>
                         <div className='description-header'>{props.service}</div>
-                        {props.description}<br />
+                        <p>{props.description}</p>
                         <a href={`/${props.page}`} ><button className='service-button'>LEARN MORE</button></a>
                     </div>
                 </div>
