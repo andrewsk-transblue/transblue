@@ -49,7 +49,8 @@
 }
 
 .multifamily-services {
-    padding: 0px;
+    /* padding: 0px; */
+    margin-bottom: 80px;
 }
 
 .multifamily-services p:first-of-type {
@@ -60,9 +61,15 @@
     letter-spacing: .0705em;
 }
 
+.multifamily-services .title .section-p {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 .benefits {
     margin: 0 auto;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 100px;
     font-family: 'Roboto';
 }
@@ -79,6 +86,7 @@
     text-align: center;
     padding: 30px 0px 30px 0px;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .benefits-banner p:first-of-type {
@@ -94,7 +102,7 @@
 
 .decks {
     margin-bottom: 60px;
-    padding-top: 80px;
+    margin-top: 100px;
 }
 
 .decks img {
