@@ -28,7 +28,6 @@ fieldset p {
     background-color: #0b56a4;
     color: white;
     padding: 7px 15px 7px 15px;
-    line-height: 50px;
     display: inline;
     font-size: .9em;
     letter-spacing: .0705em;
@@ -39,8 +38,17 @@ fieldset p {
     width: 93%;
 }
 
+.franchise-email {
+    margin-bottom: 10px;
+}
+
 .franchise-wrapper .about-container .contact {
     margin: 0px 0px 15px 0px;
+}
+
+.franchise-wrapper .about-container .contact a {
+    color: white;
+    text-decoration: none !important;
 }
 
 .about-container h1 {

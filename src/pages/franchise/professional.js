@@ -7,7 +7,7 @@ function Professional() {
         <div className='professional-wrapper'>
             <div className='container-fluid'>
                 <h3>OUR PROMISE TO YOU</h3>
-                <p className='section-p'>We are 100% dedicated to customer satisfaction</p>
+                <p className='section-p title'>We are 100% dedicated to customer satisfaction</p>
                 <div className='row'>
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
@@ -37,7 +37,7 @@ function Professional() {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-lg-12 text-center'>
+                    <div className='col-lg-12 contact-modal'>
                         <ContactModal text='SEND US A MESSAGE' />
                     </div>
                 </div>

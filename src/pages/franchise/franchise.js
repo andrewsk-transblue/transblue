@@ -73,7 +73,7 @@ function Franchise(props) {
                 </div>
                 <div className='franchise-services container-fluid'>
                         <div className='row title'>
-                            <h3 className='section-header'>LOVE THE LIFE YOU LIVE</h3>
+                            <h3 className='section-header'>OUTDOOR PROJECTS SIMPLIFIED</h3>
                             <p className='section-p'>
                                 At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
                             </p>

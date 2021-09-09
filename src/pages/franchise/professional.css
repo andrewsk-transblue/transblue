@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.professional-wrapper p:not(.body) {
+.professional-wrapper p.title {
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -22,7 +22,6 @@
 
 .professional-wrapper i {
     margin-bottom: 20px;
-    color: #ed6a22;
     color: #0b56a4;
 }
 
@@ -40,5 +39,7 @@
 }
 
 .professional-wrapper button.cta {
-    margin: 40px 0px 0px 0px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
 }
