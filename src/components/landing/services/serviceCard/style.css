@@ -119,12 +119,6 @@
         padding: 25px;
     }
 }
-/* 
-@media only screen and (max-width: 575px) {
-    .service-title {
-        font-size: 1.7em;
-    }
-} */
 
 @media only screen and (min-width: 576px) {
     .service-title {
