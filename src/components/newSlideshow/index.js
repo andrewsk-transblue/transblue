@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import residential from '../../images/franchise/residential.jpeg';
 import residential2 from '../../images/franchise/residential2.jpg';
 import residential3 from '../../images/franchise/residential3.jpg';
+import residential4 from '../../images/franchise/residential4.jpg';
 import design from '../../images/residential/design.jpg';
 import designSmall from '../../images/residential/designSmall.jpg';
 import build from '../../images/residential/build.jpg';
@@ -20,19 +21,29 @@ function NewSlideshow(props) {
             img: residential,
             imgSmall: designSmall,
             title: 'LOVE THE LIFE YOU LIVE',
-            body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
+            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            // body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
         },
         {
             img: residential2,
             imgSmall: buildSmall,
             title: 'LOVE THE LIFE YOU LIVE',
-            body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
+            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            //body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
             img: residential3,
             imgSmall: enjoySmall,
             title: 'LOVE THE LIFE YOU LIVE',
-            body: 'Begin making unforgettable memories in your new outdoor living space'
+            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            //body: 'Begin making unforgettable memories in your new outdoor living space'
+        },
+        {
+            img: residential4,
+            imgSmall: enjoySmall,
+            title: 'LOVE THE LIFE YOU LIVE',
+            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            //body: 'Begin making unforgettable memories in your new outdoor living space'
         }
     ]
     const [index, setIndex] = useState(0);
@@ -62,10 +73,14 @@ function NewSlideshow(props) {
                             <h3>{slides[2].title}</h3>
                             <p>{slides[2].body}</p>
                         </Fade>}
+                        {index === 3 && <Fade duration={1500}>
+                            <h3>{slides[3].title}</h3>
+                            <p>{slides[3].body}</p>
+                        </Fade>}
                     </div>
                     <div className='col-lg-1 col-1 my-auto px-0'>
-                        <button disabled={index < 2 ? false : true} onClick={() => setIndex(index+1)}>
-                            <img className={index < 2 ? 'forward' : 'forward disabled'} src={forward} alt=''></img>
+                        <button disabled={index < slides.length-1 ? false : true} onClick={() => setIndex(index+1)}>
+                            <img className={index < slides.length-1  ? 'forward' : 'forward disabled'} src={forward} alt=''></img>
                         </button>
                     </div>
                 </div>
@@ -75,6 +90,8 @@ function NewSlideshow(props) {
                     <img className={index === 0 ? 'active' : ''} src={line} alt='Design' />
                     <img className={index === 1 ? 'active' : ''} src={line} alt='Build' />
                     <img className={index === 2 ? 'active' : ''} src={line} alt='Enjoy' />
+                    <img className={index === 3 ? 'active' : ''} src={line} alt='Enjoy' />
+
                 </span>
             </div>
         </div>

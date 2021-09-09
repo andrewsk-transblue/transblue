@@ -23,12 +23,12 @@ fieldset p {
     font-size: 1em;
 } */
 
-.franchise-phone,
-.franchise-email {
+.franchise-phone a,
+.franchise-email a {
     background-color: #0b56a4;
     color: white;
     padding: 7px 15px 7px 15px;
-    display: inline;
+    display: inline-block;
     font-size: .9em;
     letter-spacing: .0705em;
     font-family: 'Roboto';
@@ -38,7 +38,7 @@ fieldset p {
     width: 93%;
 }
 
-.franchise-email {
+.franchise-email a {
     margin-bottom: 10px;
 }
 
