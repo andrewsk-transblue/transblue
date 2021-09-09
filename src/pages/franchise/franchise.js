@@ -5,6 +5,7 @@ import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import About from './about/about';
+import NewSlideshow from '../../components/newSlideshow';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
 import Multifamily from './multifamily';
@@ -86,6 +87,7 @@ function Franchise(props) {
                         </div>
                         <MoreServices />
                     </div>
+                    <NewSlideshow />
                 {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
 
                 {/* <Slideshow 
