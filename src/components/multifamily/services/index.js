@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactModal from '../../contactModal';
 import services from '../../../images/multifamily/services.jpeg';
 import './style.css';
 
@@ -10,7 +11,7 @@ function ServiceList() {
                     <img src={services} alt='' />
                 </div>
                 <div className='col-12 col-lg-6 left-text'>
-                    <h4 className='section-header'>OUR MULTIFAMILY SERVICES</h4>
+                    <h4 className='section-header'>MULTIFAMILY SERVICES</h4>
                     <p className='asterisk section-p'><span>*</span> Snow and Ice Management</p>
                     <p className='asterisk section-p'><span>*</span> Swimming Pool construction and resurfacing</p>
                     <p className='asterisk section-p'><span>*</span> Asphalt Paving</p>
@@ -25,7 +26,8 @@ function ServiceList() {
                     <p className='asterisk section-p'><span>*</span> Electric Vehicle Charging Systems, Solar Power</p>
                     <p className='asterisk section-p'><span>*</span> ESG Service Offerings</p>
                     {/* <p className='section-p'>Give our professionals a call today to discuss your project needs</p> */}
-                    <a className='cta' href='/locations'>FIND A LOCATION</a>
+                    <a className='cta' href='/locations'>LOCATIONS</a>
+                    <ContactModal />
                 </div>
             </div>
         </div>
