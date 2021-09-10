@@ -53,14 +53,15 @@ class Navbar extends Component {
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse flex-column" id="navbarNav">
-                    {this.props.franchise && <ul className="navbar-nav ml-auto flex-row mb-md-1 mt-md-0 mb-3 mt-2">
-                        <li className="nav-item">
-                            <a className="nav-link py-0 pr-3" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
+                <div className="collapse navbar-collapse flex-md-column" id="navbarNav">
+                    {this.props.franchise && 
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item ml-auto">
+                            <a className="nav-link py-0" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item ml-auto">
                             <a 
-                                className="nav-link py-0 pr-3"
+                                className="nav-link py-0"
                                 href={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
                                 target='_blank' rel='noreferrer'
                             >
@@ -68,7 +69,7 @@ class Navbar extends Component {
                             </a>
                         </li>
                     </ul>}
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto flex-md-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>
