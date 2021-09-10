@@ -21,10 +21,6 @@ import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer/index';
-import pools from '../../images/franchise/pools.jpg';
-import decks from '../../images/franchise/decks.jpg';
-import firepit from '../../images/franchise/firepit.jpg';
-import sunroom from '../../images/franchise/sunroom.jpg';
 //import locationsDb from '../locations/db';
 
 import './style.css';
