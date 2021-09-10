@@ -68,7 +68,6 @@ function Featured() {
     const myRef5 = useRef(null);
     const myRef6 = useRef(null);
     const myRef7 = useRef(null);
-    const myRef8 = useRef(null);
 
     const executeScroll1 = () => myRef1.current.scrollIntoView({behavior: 'smooth'});
     const executeScroll2 = () => myRef2.current.scrollIntoView({behavior: 'smooth'});
