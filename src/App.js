@@ -22,7 +22,7 @@ const Privacy = lazy(() => import('./pages/privacy/index'));
 function App() {
   //console.log('rendering App.js')
   const [easybaseData, seteasybaseData] = useState([]);
-  const { db, e } = useEasybase();
+  const { db } = useEasybase();
   const mounted = async() => {
     const ebData = await db("LOCATIONS").return().all();
     seteasybaseData(ebData);
@@ -31,8 +31,6 @@ function App() {
   useEffect(() => {
        mounted();
   }, [])
-
-  console.log('rendering')
 
   return (
       <HelmetProvider>

@@ -4,14 +4,12 @@ import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import FeaturedCard from './featuredCard';
 import Footer from '../../components/footer/index';
-import header from '../../images/featured/header.jpg';
 import header2 from '../../images/featured/header-2.jpg';
 import labrynth from '../../images/featured/labrynth.jpg';
 import floralHills from '../../images/featured/floralhills.jpg';
 import maplewood from '../../images/featured/maplewood.JPG';
 import urbanoasis from '../../images/featured/urbanoasis.jpg';
 import magnolia from '../../images/featured/magnolia.jpg';
-//import freshstairs from '../../images/featured/freshstairs.jpg';
 import retainingdrops from '../../images/featured/retainingdrops.jpg';
 import checkerboard from '../../images/featured/checkerboard.jpg';
 import hoaroofing from '../../images/featured/hoaroofing.jpg';
@@ -30,11 +28,6 @@ const projects = [
         title: 'FLORAL HILLS BACKYARD REFRESHMENT',
         location: 'BOTHELL, WA'
     },
-    // {
-    //     img: freshstairs,
-    //     title: 'FRESH STAIRS AND PORCH',
-    //     location: 'LYNNWOOD, WA'
-    // },
     {
         img: retainingdrops,
         title: 'RETAINING DROPS',
@@ -84,7 +77,6 @@ function Featured() {
     const executeScroll5 = () => myRef5.current.scrollIntoView({behavior: 'smooth'});
     const executeScroll6 = () => myRef6.current.scrollIntoView({behavior: 'smooth'});
     const executeScroll7 = () => myRef7.current.scrollIntoView({behavior: 'smooth'});
-    const executeScroll8 = () => myRef8.current.scrollIntoView({behavior: 'smooth'});
 
     return(
         <Fragment>

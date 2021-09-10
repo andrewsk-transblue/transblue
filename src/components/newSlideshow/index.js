@@ -1,11 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
-import design from '../../images/residential/design.jpg';
-import designSmall from '../../images/residential/designSmall.jpg';
-import build from '../../images/residential/build.jpg';
-import buildSmall from '../../images/residential/buildSmall.jpg';
-import enjoy from '../../images/residential/enjoy2.jpeg';
-import enjoySmall from '../../images/residential/enjoy2Small.jpg';
 import forward from '../../images/residential/forward.png';
 import back from '../../images/residential/back.png';
 import line from '../../images/line.png';
@@ -48,28 +42,28 @@ function NewSlideshow(props) {
     const slides = [
         {
             img: images[0],
-            imgSmall: designSmall,
+            imgSmall: images[0],
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             // body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
         },
         {
             img: images[1],
-            imgSmall: buildSmall,
+            imgSmall: images[1],
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             //body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
             img: images[2],
-            imgSmall: enjoySmall,
+            imgSmall: images[2],
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             //body: 'Begin making unforgettable memories in your new outdoor living space'
         },
         {
             img: images[3],
-            imgSmall: enjoySmall,
+            imgSmall: images[3],
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             //body: 'Begin making unforgettable memories in your new outdoor living space'

@@ -7,7 +7,7 @@ import './style.css';
 function Subcontractor(props) {
 
     const [easybaseData, seteasybaseData] = useState([]);
-    const { db, e } = useEasybase();
+    const { db } = useEasybase();
     const mounted = async() => {
         const ebData = await db("LOCATIONS").where({urlcity: props.match.params.urlCity}).return().all();
         console.log(ebData)

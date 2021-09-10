@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import {useEasybase} from 'easybase-react';
+//import {useEasybase} from 'easybase-react';
 
 function AddLocation(props) {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -7,10 +7,10 @@ function AddLocation(props) {
     let data = props.props;
     // const {db} = useEasybase();
 
-    // function addLocation() {
-    //     db('LOCATIONS').insert(data).one()
-    //     setIsSubmitted(true)
-    // }
+    function addLocation() {
+        //db('LOCATIONS').insert(data).one()
+        setIsSubmitted(true)
+    }
 
     return(
         <Fragment>

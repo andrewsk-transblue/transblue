@@ -33,11 +33,11 @@ function Hospitality() {
                     </h4>
                     <p className='section-p mb-2'>We're a one-stop shop for all your landscaping needs.</p>
                     <p className='hospitality-subheader'>
-                        <img src={check} className='check-icon' /> WE NEVER CUT CORNERS
+                        <img src={check} className='check-icon' alt='' /> WE NEVER CUT CORNERS
                     </p>
                     <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p>
                     <p className='hospitality-subheader'>
-                        <img src={check} className='check-icon' /> WE ALWAYS GO ABOVE &amp; BEYOND
+                        <img src={check} className='check-icon' alt='' /> WE ALWAYS GO ABOVE &amp; BEYOND
                     </p>
                     <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p>
                     {/* <p className='hospitality-subheader'>

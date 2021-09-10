@@ -70,8 +70,8 @@ function Footer(props) {
                     <div className='footer-services-list'>
                         <a href='/'>Home</a> <br />
                         <a href='/locations'>Locations</a><br />
-                        <a href='#'>Blog</a><br />
-                        <a href='#'>Franchise</a><br />
+                        <a href='/blog'>Blog</a><br />
+                        <a href='/blog'>Franchise</a><br />
                     </div>
                 </div>
                 {!props.locationPage && <div className='col-lg-3 col-md-12 d-none d-md-block find-location px-0'>

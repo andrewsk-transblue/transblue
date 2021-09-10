@@ -18,7 +18,7 @@ import Map from './map';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 import MoreServices from './moreServices';
-import FranchiseLifestyle from './lifestyle';
+//import FranchiseLifestyle from './lifestyle';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer/index';
 //import locationsDb from '../locations/db';

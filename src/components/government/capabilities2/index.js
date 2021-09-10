@@ -8,10 +8,10 @@ function Capabilities2() {
         <div className='capabilities-wrapper container-fluid'>
             <div className='row'>
                 <div className='col-lg-6 px-0 page-1'>
-                    <img src={capabilities} className='capabilities-1' />
+                    <img src={capabilities} className='capabilities-1' alt='Government Capabilities Statement' />
                 </div>
                 <div className='col-lg-6 px-0 page-2'>
-                    <img src={capabilities2} className='capabilities-2' />
+                    <img src={capabilities2} className='capabilities-2' alt='Government Capabilities Statement' />
                 </div>
             </div>
         </div>

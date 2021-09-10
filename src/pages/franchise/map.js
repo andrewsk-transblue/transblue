@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { MapContainer, TileLayer, Marker, GeoJSON} from 'react-leaflet';
 import './style.css';
 
 function Map(props) {
     const position = [props.lat, props.lon];
-
-    // console.log(props.geojson)
 
     return(
         <MapContainer center={position} zoom={9} scrollWheelZoom={true} id='mapid'>

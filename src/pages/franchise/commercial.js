@@ -4,8 +4,6 @@ import commercial from '../../images/franchise/commercial.jpeg';
 import './commercial.css';
 
 function Commercial(props) {
-
-    let tel = props.location.phone.replace(/[^A-Z0-9]/ig, "")
     return(
         <Section 
             img={commercial}

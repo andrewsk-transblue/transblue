@@ -11,23 +11,25 @@ import concrete from '../../images/commercial/services/concrete2.jpg';
 import './style.css';
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
       <img 
         className={`${className} arrow left`}
         src={forward}
         onClick={onClick}
+        alt='Next Slide'
         />
     );
   }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
       <img 
         className={`${className} arrow`}
         src={back}
         onClick={onClick}
+        alt='Previous Slide'
         />
     );
   }

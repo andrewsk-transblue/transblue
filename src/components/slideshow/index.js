@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
-import snow from '../../images/commercial/snow.jpg';
-import asphalt from '../../images/commercial/asphalt4.jpg';
-import fence from '../../images/commercial/fence.jpg';
-import solar from '../../images/commercial/solar.jpg';
 import rightarrow from '../../images/residential/forward.png';
 import leftarrow from '../../images/residential/back.png';
 import line from '../../images/line.png';
