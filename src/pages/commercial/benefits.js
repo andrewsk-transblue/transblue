@@ -1,7 +1,4 @@
 import React from 'react';
-import clock from '../../images/commercial/clock.png';
-import money from '../../images/commercial/money.png';
-import curb from '../../images/commercial/curb.png';
 import customers from '../../images/commercial/icons/customers.jpg';
 import './style.css';
 

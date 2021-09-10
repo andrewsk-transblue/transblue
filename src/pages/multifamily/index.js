@@ -13,7 +13,6 @@ import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Snow from '../../components/snow';
 import Footer from '../../components/footer';
-import header from '../../images/multifamily/header.jpeg';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
 import pool from '../../images/multifamily/pool.jpeg';
