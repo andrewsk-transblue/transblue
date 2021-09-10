@@ -34,10 +34,13 @@ function About(props) {
                     </div>
                 </div>
                 <div className='col-lg-6'>
-                    <p className='section-p'>
-                    Transblue’s franchise system is the backbone of its success and unmatched growth. With offices from coast to coast managed by independent business owners, you know that the Transblue teams installing your work in each region are dedicated to a level that far exceed the dedication of an area manager. At {props.name}, we are committed to delivering a World Class installation. We take pride and ownership for every installation..
+                    {/* <p className='section-p'>
+                    Transblue’s franchise system is the backbone of its success and unmatched growth. With offices from coast to coast managed by independent business owners, you know that the Transblue teams installing your work in each region are dedicated to a level that far exceed the dedication of an area manager. At {props.name}, we are committed to delivering a World Class installation. We take pride and ownership for every installation.
                     </p>
-                    {/* <p className='section-p'>Donec non neque imperdiet, pretium ex ut, tristique mi. Suspendisse sed tellus a ipsum viverra pharetra pharetra nec quam. Duis quis consequat justo, vel vulputate nulla. Vivamus sit amet viverra risus. Pellentesque maximus ac mi in efficitur. Sed vitae congue ex. Ut in ultricies elit. Phasellus et tincidunt lacus, aliquam lacinia ex. Nunc accumsan aliquam blandit.</p> */}
+                    <p className='section-p'>
+                        At {props.name}, we are independent business owners. You can be confident that we are dedicated to a level that far exceeds that of an area manager. We are 100% committed to delivering a World Class installation. We take pride and ownership for every installation.
+                    </p> */}
+                    <p className='section-p'>Donec non neque imperdiet, pretium ex ut, tristique mi. Suspendisse sed tellus a ipsum viverra pharetra pharetra nec quam. Duis quis consequat justo, vel vulputate nulla. Vivamus sit amet viverra risus. Pellentesque maximus ac mi in efficitur. Sed vitae congue ex. Ut in ultricies elit. Phasellus et tincidunt lacus, aliquam lacinia ex. Nunc accumsan aliquam blandit.</p>
                 </div>
             </div>
         </div>

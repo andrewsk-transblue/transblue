@@ -13,13 +13,13 @@ import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
 import Map from './map';
-import Slideshow from '../../components/slideshow';
-import Services from './services';
+//import Slideshow from '../../components/slideshow';
+//import Services from './services';
+import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 import MoreServices from './moreServices';
 import FranchiseLifestyle from './lifestyle';
 import NewReviews from '../../components/landing/newReviews/newReviews';
-import ContactModal from '../../components/contactModal';
 import Footer from '../../components/footer/index';
 import pools from '../../images/franchise/pools.jpg';
 import decks from '../../images/franchise/decks.jpg';
@@ -29,18 +29,19 @@ import sunroom from '../../images/franchise/sunroom.jpg';
 
 import './style.css';
 
-
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
+    const [services, setServices] = useState({})
     //const [areas, setAreas] = useState({})
     const { db, e } = useEasybase();
 
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-            console.log(ebData[0].residential)
-            console.log(JSON.parse(ebData[0].citylist))
+            //console.log(JSON.parse(ebData[0].citylist))
             seteasybaseData(ebData);
+            //console.log(regionalServices[ebData[0].region])
+            setServices(regionalServices[ebData[0].region])
             //console.log(ebData[0])
             // setCities(JSON.parse(ebData[0].citylist))
             // setZipcodes(JSON.parse(ebData[0].zipcodelist))
@@ -76,12 +77,12 @@ function Franchise(props) {
                                 At {easybaseData[0].name}, our team of landscape architects and designers put your ideas on paper and design a beautiful, cost effective landscape.
                             </p>
                         </div>
-                        <div className='row'>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={decks} service='DECKS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={pools} service='POOLS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={firepit} service='FIREPITS' /></div>
-                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={sunroom} service='SUNROOMS' /></div>
-                        </div>
+                        {Object.keys(services).length > 0 && <div className='row'>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[0]} service={services.services[0]} /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[1]} service={services.services[1]} /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[2]} service={services.services[2]} /></div>
+                            <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[3]} service={services.services[3]} /></div>
+                        </div>}
                         <MoreServices />
                     </div>
                     <NewSlideshow location={easybaseData[0]} />

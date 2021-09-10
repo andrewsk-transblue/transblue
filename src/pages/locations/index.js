@@ -5,8 +5,6 @@ import Footer from '../../components/footer/index';
 import MapContainer from './mapcontainer';
 import ListView from './listView';
 
-import axios from 'axios';
-
 //import bounds from './bounds';
 import './style.css';
 

@@ -1,9 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
-import residential from '../../images/franchise/residential.jpeg';
-import residential2 from '../../images/franchise/residential2.jpg';
-import residential3 from '../../images/franchise/residential3.jpg';
-import residential4 from '../../images/franchise/residential4.jpg';
 import design from '../../images/residential/design.jpg';
 import designSmall from '../../images/residential/designSmall.jpg';
 import build from '../../images/residential/build.jpg';
