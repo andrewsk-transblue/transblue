@@ -11,7 +11,6 @@ import Mission from '../../components/landing/mission';
 // import Here from '../../components/landing/here';
 import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
-//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import banner2 from '../../images/newLanding/banner2.png';
 import './style.css';
@@ -27,7 +26,6 @@ function NewLanding() {
             <Navbar page='HOME' />
             <Header />
             <ContactCta />
-            {/* <LocationsCta /> */}
             <div className='landing-body'>
                 <div className='container-fluid w-100 who-is-tb text-center'>
                     {/* <div className='row'>

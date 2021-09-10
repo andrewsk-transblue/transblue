@@ -2,7 +2,6 @@ import React, {Fragment, useRef} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
-//import LocationsCta from '../../components/locationsCTA';
 import FeaturedCard from './featuredCard';
 import Footer from '../../components/footer/index';
 import header from '../../images/featured/header.jpg';
@@ -96,7 +95,6 @@ function Featured() {
             <Navbar page='PROJECTS' />
             <Header img={header2} title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
-            {/* <LocationsCta /> */}
             <div className='projects-wrapper container-fluid'>
                 <div className='row'>
                     <div className='col-lg-6 order-lg-12'>

@@ -48,25 +48,6 @@
     text-decoration: none;
 }
 
-.multifamily-services {
-    /* padding: 0px; */
-    margin-bottom: 80px;
-}
-
-.multifamily-services p:first-of-type {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    margin-top: 20px;
-    font-size: 1.2em;
-    letter-spacing: .0705em;
-}
-
-.multifamily-services .title .section-p {
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
 .benefits {
     margin: 0 auto;
     /* margin-top: 80px; */

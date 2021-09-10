@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
-//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
 //import ServiceSlides from '../../components/commercial/serviceSlides';
@@ -33,7 +32,6 @@ function Multifamily() {
 
             <Header img={header2} title='MULTIFAMILY' subtitle='' name='multifamily' />
             <ContactCta />
-            {/* <LocationsCta /> */}
             <div className='multifamily-body'>
                 <div className='container-fluid multifamily-about'>
                     <div className='row'>

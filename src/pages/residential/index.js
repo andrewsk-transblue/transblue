@@ -6,7 +6,6 @@ import Footer from '../../components/footer/index';
 import Lifestyle from '../../components/residential/lifestyle/lifestyle';
 import Dees from '../../components/residential/dees/dees';
 import Quality from '../../components/residential/quality/quality';
-import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import Installation from '../../components/residential/installation';
 import Carousel from '../../components/residential/carousel';
@@ -37,7 +36,6 @@ function Residential() {
             </div>
             {/* <Header img={residential} title='RESIDENTIAL' subtitle='Make your backyard feel like home' /> */}
             <ContactCta />
-            {/* <LocationsCta /> */}
             <div className='residential-body'>
                 <div className='about row'>
                     <p>

@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
-//import LocationsCta from '../../components/locationsCTA';
 import ContactCta from '../../components/contactCta';
 import About from './about';
 import Slideshow from '../../components/slideshow';
@@ -39,7 +38,6 @@ class Commercial extends Component {
                 </Helmet>
                 <Navbar page='COMMERCIAL' parentPage='gc' />
                 <Header name='commercial' img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
-                {/* <LocationsCta /> */}
                 <ContactCta />
                 <About />
                 <Impression />
