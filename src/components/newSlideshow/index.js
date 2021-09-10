@@ -15,31 +15,64 @@ import back from '../../images/residential/back.png';
 import line from '../../images/line.png';
 import './style.css';
 
+import east from '../../images/franchise/residential/east.jpeg';
+import east2 from '../../images/franchise/residential/east2.jpg';
+import east3 from '../../images/franchise/residential/east3.jpg';
+import east4 from '../../images/franchise/residential/east4.jpg';
+import west from '../../images/franchise/residential/west.jpg';
+import west2 from '../../images/franchise/residential/west2.jpg';
+import west3 from '../../images/franchise/residential/west3.jpg';
+import west4 from '../../images/franchise/residential/west4.jpg';
+import northwest from '../../images/franchise/residential/northwest.jpg';
+import northwest2 from '../../images/franchise/residential/northwest2.jpg';
+import northwest3 from '../../images/franchise/residential/northwest3.jpg';
+import northwest4 from '../../images/franchise/residential/northwest4.jpg';
+import southwest from '../../images/franchise/residential/southwest.jpg';
+import southwest2 from '../../images/franchise/residential/southwest2.jpg';
+import southwest3 from '../../images/franchise/residential/southwest3.jpg';
+import southwest4 from '../../images/franchise/residential/southwest4.jpg';
+import midwest from '../../images/franchise/residential/midwest.jpeg';
+import midwest2 from '../../images/franchise/residential/midwest2.jpeg';
+import midwest3 from '../../images/franchise/residential/midwest3.jpeg';
+import midwest4 from '../../images/franchise/residential/midwest4.jpeg';
+
+let residentialImages = {
+    'west': [west, west2, west3, west4],
+    'northwest': [northwest, northwest2, northwest3, northwest4],
+    'southwest': [southwest, southwest2, southwest3, southwest4],
+    'northeast': [east, east2, east3, east4],
+    'midwest': [midwest, midwest2, midwest3, midwest4]
+};
+
 function NewSlideshow(props) {
+    //if(props.location === 'southwest') 
+    //console.log(props.location.region)
+    let images = residentialImages[props.location.region];
+    console.log(images)
     const slides = [
         {
-            img: residential,
+            img: images[0],
             imgSmall: designSmall,
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             // body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
         },
         {
-            img: residential2,
+            img: images[1],
             imgSmall: buildSmall,
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             //body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
-            img: residential3,
+            img: images[2],
             imgSmall: enjoySmall,
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
             //body: 'Begin making unforgettable memories in your new outdoor living space'
         },
         {
-            img: residential4,
+            img: images[3],
             imgSmall: enjoySmall,
             title: 'LOVE THE LIFE YOU LIVE',
             body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',

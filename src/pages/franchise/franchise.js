@@ -88,7 +88,7 @@ function Franchise(props) {
                         </div>
                         <MoreServices />
                     </div>
-                    <NewSlideshow />
+                    <NewSlideshow location={easybaseData[0]} />
                 {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
 
                 {/* <Slideshow 
