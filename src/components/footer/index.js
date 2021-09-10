@@ -69,6 +69,10 @@ function Footer(props) {
                     <h1>OTHER</h1>
                     <div className='footer-services-list'>
                         <a href='/'>Home</a> <br />
+                        {!props.franchise &&
+                        <Fragment>
+                            <a href='/'>Contact</a><br />
+                        </Fragment>}
                         {!props.locationPage && 
                         <Fragment>
                             <a href='/locations'>Locations</a><br />    
@@ -144,6 +148,10 @@ function Footer(props) {
                         </div>}
                         <div><a href='/blog'>BLOG</a><br /></div>
                         <div><a href='/franchise'>FRANCHISE</a><br /></div>
+                        {!props.franchise &&
+                        <div>
+                            <a href='/'>CONTACT</a>
+                        </div>}
                     </div>
                     {!props.locationPage && <div className='find-location'>
                         <p className='mb-2'>FIND A LOCATION</p>
