@@ -27,11 +27,6 @@ import firepit from '../../images/franchise/firepit.jpg';
 import sunroom from '../../images/franchise/sunroom.jpg';
 //import locationsDb from '../locations/db';
 
-import slidesnow from '../../images/commercial/snow.jpg';
-import asphalt from '../../images/commercial/asphalt4.jpg';
-import fence from '../../images/commercial/fence.jpg';
-import solar from '../../images/commercial/solar.jpg';
-
 import './style.css';
 
 
@@ -43,7 +38,7 @@ function Franchise(props) {
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-            console.log(ebData)
+            console.log(ebData[0].residential)
             console.log(JSON.parse(ebData[0].citylist))
             seteasybaseData(ebData);
             //console.log(ebData[0])
@@ -64,6 +59,7 @@ function Franchise(props) {
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
                 <Header
                     // img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
+                    // img={easybaseData[0].residential}
                     region={easybaseData[0].region}
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}

@@ -1,6 +1,4 @@
 import React, {useState, Fragment} from 'react';
-import cardtop from '../../images/cardtop.svg'
-//import line from '../../images/lineblack.PNG';
 
 function MoreServices() {
     const [displayServices, setDisplayServices] = useState(false);
@@ -13,7 +11,6 @@ function MoreServices() {
         <div className='row'>
             {!displayServices ? <button className='cta' onClick={() => toggle(true)}>MORE SERVICES</button> : <button className='cta' onClick={() => toggle(false)}>LESS SERVICES</button>}
         </div>
-
 
         {displayServices && <div className='row more-services'>
         <div className='col-md-3 col-6 col-sm-4'>
