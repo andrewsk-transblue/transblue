@@ -67,6 +67,7 @@ function Franchise(props) {
                     region={easybaseData[0].region}
                     title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
+                    franchise={true}
                 />
                 <ContactCta email={easybaseData[0].email} />
                 <div className='about bg-light'>

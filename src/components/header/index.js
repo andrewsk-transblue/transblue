@@ -6,7 +6,7 @@ function Header(props) {
         <div className='header-wrapper' name={props.name} region={props.region}>
             {/* <img src={props.img} alt='' /> */}
             {props.name !== 'locations' && <div className='overlay'></div>}
-            <div className='header-text'>{props.title}
+            <div className={props.franchise === true ? 'header-text franchise-header' : 'header-text'}>{props.title}
                 <div className='header-subtext'>{props.subtitle}</div>
             </div>
         </div>
