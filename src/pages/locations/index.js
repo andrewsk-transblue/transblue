@@ -8,7 +8,6 @@ import ListView from './listView';
 import axios from 'axios';
 
 //import bounds from './bounds';
-import locationsHeader from '../../images/location.jpeg';
 import './style.css';
 
 //import locations from './db';
@@ -120,7 +119,7 @@ function Locations(props) {
         return(
             <Fragment>
             <Navbar page='LOCATIONS' />
-            <Header img={locationsHeader} title='FIND A LOCATION' subtitle='' name='locations' />
+            <Header title='FIND A LOCATION' subtitle='' name='locations' />
             <div className='map-view-toggle'>
                 <button onClick={() => setViewMap(false)} className={!viewMap ? 'active' : ''}>
                     <i className="fas fa-list-ul"></i>LIST VIEW</button> 
