@@ -30,16 +30,6 @@
     animation-timing-function: ease-in-out;
     background-image: url('../../images/landingHeader/fire-min.jpeg');
 }
-/* 
-#header-overlay {
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.644);
-} */
 
 #header_slide,
 .header,
@@ -150,8 +140,8 @@
 
 .community-stats::after {
     font-size: 4.6vw;
-    animation: textslide 40s infinite linear;
-    content: '';
+    animation: textslide 40s infinite linear 0s;
+    content: '20250 diapers, 320 baby wipe packages, 105 cans of baby food provided to at risk women and children';
     animation-timing-function: ease-in-out;
     z-index: 12;
     color: white;
