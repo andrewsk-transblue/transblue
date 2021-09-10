@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import { Link } from 'react-router-dom';
 import AutoComplete from "react-google-autocomplete";
 import collapse from '../../images/collapse30.png';
@@ -69,14 +69,17 @@ function Footer(props) {
                     <h1>OTHER</h1>
                     <div className='footer-services-list'>
                         <a href='/'>Home</a> <br />
-                        <a href='/locations'>Locations</a><br />
+                        {!props.locationPage && 
+                        <Fragment>
+                            <a href='/locations'>Locations</a><br />    
+                        </Fragment>}
                         <a href='/blog'>Blog</a><br />
                         <a href='/blog'>Franchise</a><br />
                     </div>
                 </div>
                 {!props.locationPage && <div className='col-lg-3 col-md-12 d-none d-md-block find-location px-0'>
                     <p className='mb-2'>FIND A LOCATION</p>
-                    <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
+                    <p className='text-secondary mb-3'>Enter a location to find the nearest Transblue</p>
                     <span>
                         <AutoComplete
                             apiKey={process.env.REACT_APP_GOOGLE_API}
@@ -135,13 +138,16 @@ function Footer(props) {
                     }
                     <div className='others'>
                         <div><a href='/'>HOME</a><br /></div>
-                        <div><a href='/locations'>LOCATIONS</a><br /></div>
+                        {!props.locationPage && 
+                        <div>
+                            <a href='/locations'>LOCATIONS</a><br />    
+                        </div>}
                         <div><a href='/blog'>BLOG</a><br /></div>
                         <div><a href='/franchise'>FRANCHISE</a><br /></div>
                     </div>
-                    <div className='find-location'>
+                    {!props.locationPage && <div className='find-location'>
                         <p className='mb-2'>FIND A LOCATION</p>
-                        <p className='text-secondary mb-4'>Enter a location to find the nearest Transblue</p>
+                        <p className='text-secondary mb-3'>Enter a location to find the nearest Transblue</p>
                         <span>
                             <AutoComplete
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
@@ -153,7 +159,7 @@ function Footer(props) {
                             {disabled && <i className='fas fa-search disabled'></i>}
                             {!disabled && <a href={`/locations/${location}`} ><i className='fas fa-search'></i></a>}
                         </span>
-                    </div>
+                    </div>}
                 </div>
             </div>
             
