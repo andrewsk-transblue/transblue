@@ -56,7 +56,7 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse flex-column" id="navbarNav">
                     {this.props.franchise && <ul className="navbar-nav ml-auto flex-row mb-md-1 mt-md-0 mb-3 mt-2">
                         <li className="nav-item">
-                            <a className="nav-link py-0 pr-3" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase()} HOME`}</a>
+                            <a className="nav-link py-0 pr-3" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
                         </li>
                         <li className="nav-item">
                             <a 
