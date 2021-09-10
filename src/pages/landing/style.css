@@ -148,7 +148,7 @@
     width: 80%;
 }
 
-.community-stats:after {
+.community-stats::after {
     font-size: 4.6vw;
     animation: textslide 40s infinite linear;
     content: '';
