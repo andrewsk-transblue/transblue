@@ -37,6 +37,10 @@ nav button {
     border-radius: 0px !important;
 }
 
+nav .navbar-collapse {
+    margin-top: 20px;
+}
+
 nav .franchise-contact i {
     margin-right: 7px;
 }

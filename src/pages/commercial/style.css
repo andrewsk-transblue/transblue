@@ -1,14 +1,14 @@
 .commercial-about {
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     width: 95%;
 }
 
 
 /* MARRIOTT CSS */
 .marriott-wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     width: 93%;
 }
 .marriott-wrapper img {
@@ -195,10 +195,6 @@
 .simple-process li {
     font-family: 'Montserrat'
 }
-
-
-
-
 
 .impression-wrapper {
     position: relative;
