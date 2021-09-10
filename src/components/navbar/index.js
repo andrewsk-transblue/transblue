@@ -69,7 +69,7 @@ class Navbar extends Component {
                             </a>
                         </li>
                     </ul>}
-                    <ul className="navbar-nav ml-auto flex-md-row">
+                    <ul className="navbar-nav ml-auto flex-lg-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>
