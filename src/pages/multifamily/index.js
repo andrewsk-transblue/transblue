@@ -20,6 +20,7 @@ import snow from '../../images/multifamily/snow.jpg';
 import luxury from '../../images/multifamily/luxury.jpg';
 import './style.css';
 import ContactModal from '../../components/contactModal';
+import ThreeCols from '../../components/threeCol';
 
 function Multifamily() {
     return(
@@ -40,7 +41,7 @@ function Multifamily() {
                             <a href='/locations'>FIND YOUR LOCAL TRANSBLUE</a>
                         </div>
                         <div className='col-lg-6'>
-                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multi-family communities. Our specific multi-family division understands the specific needs of the community and can taylor construction plans to your exact needs. Primarily we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
+                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multi-family communities. Our multi-family division understands the specific needs of your community and can taylor construction plans accordingly. Primarily, we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +69,7 @@ function Multifamily() {
                     <p>INCREASE YOUR PROPERTY VALUE</p>
                     <p>with our World Class services that enhance the beauty of every space </p>
                 </div> */}
-                <Refresh
+                {/* <Refresh
                     title='REFRESH YOUR MULTIFAMILY RESIDENCE'
                     images={[rooftop, pool, parkinglot]}
                     subtitles={['CONCRETE INSTALLATION', 'A BRAND NEW POOL', 'ASPHALT INSTALLATION']}
@@ -77,7 +78,27 @@ function Multifamily() {
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim."
                     ]}
-                 />
+                    
+                 /> */}
+                 <ThreeCols
+                    title='REFRESH YOUR MULTIFAMILY RESIDENCE'
+                    subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'
+                    card1={{
+                        img: rooftop,
+                        title: 'A BRAND NEW ROOF',
+                        body: 'Transblue provides roofing services to communities looking to replace existing roofing structures or install new roofing systems. This includes systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
+                    }}
+                    card2={{
+                        img: pool,
+                        title: 'POOL RENOVATION & CONSTRUCTION',
+                        body: 'Transblue provides Swimming pool renovations and installs to community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems'
+                    }}
+                    card3={{
+                        img: parkinglot,
+                        title: 'ASPHALT SERVICES',
+                        body: 'Transblue provides asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping'
+                    }}
+                />
                 <Assets />
                 <Snow
                     img={snow}

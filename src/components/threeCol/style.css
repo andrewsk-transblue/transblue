@@ -1,13 +1,11 @@
 .three-cols {
     width: 95%;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .three-cols h4 {
     width: 90%;
-    /* text-align: center; */
-    /* border: 1px solid red; */
-    /* margin: 0 auto; */
 }
 
 .three-cols p.subtitle {
