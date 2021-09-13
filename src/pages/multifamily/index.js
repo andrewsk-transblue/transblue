@@ -6,10 +6,12 @@ import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
 //import ServiceSlides from '../../components/commercial/serviceSlides';
 //import Carousel from '../../components/carousel';
-import ServiceList from '../../components/multifamily/services';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
+import ServiceList from '../../components/serviceList';
 import Snow from '../../components/snow';
+import ContactModal from '../../components/contactModal';
+import ThreeCols from '../../components/threeCol';
 import Footer from '../../components/footer';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
@@ -17,9 +19,9 @@ import pool from '../../images/multifamily/pool.jpeg';
 import parkinglot from '../../images/multifamily/asphalt.jpg';
 import snow from '../../images/multifamily/snow.jpg';
 import luxury from '../../images/multifamily/luxury.jpg';
+import services from '../../images/multifamily/services.jpeg';
 import './style.css';
-import ContactModal from '../../components/contactModal';
-import ThreeCols from '../../components/threeCol';
+
 
 function Multifamily() {
     return(
@@ -68,17 +70,6 @@ function Multifamily() {
                     <p>INCREASE YOUR PROPERTY VALUE</p>
                     <p>with our World Class services that enhance the beauty of every space </p>
                 </div> */}
-                {/* <Refresh
-                    title='REFRESH YOUR MULTIFAMILY RESIDENCE'
-                    images={[rooftop, pool, parkinglot]}
-                    subtitles={['CONCRETE INSTALLATION', 'A BRAND NEW POOL', 'ASPHALT INSTALLATION']}
-                    body={[
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim."
-                    ]}
-                    
-                 /> */}
                  <ThreeCols
                     title='REFRESH YOUR MULTIFAMILY RESIDENCE'
                     subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'
@@ -124,7 +115,25 @@ function Multifamily() {
                         'SOLAR POWER': '',
                         'ESG SERVICES': ''
                     }} /> */}
-                <ServiceList />
+                <ServiceList
+                title='MULTIFAMILY SERVICES'
+                subtitle=''
+                img={services}
+                services={[
+                    'Snow and Ice Management',
+                    'Swimming Pool construction and resurfacing',
+                    'Asphalt Paving',
+                    'Large Landscape installs',
+                    'Roofing',
+                    'Siding',
+                    'Painting',
+                    'Remodels and refreshes',
+                    'Concrete work',
+                    'Drainage Systems',
+                    'Decking, fencing and railing systems',
+                    'Electric Vehicle Charging Systems, Solar Power',
+                    'ESG Service Offerings'
+                ]} />
                 <ServiceCard
                      p1='As a property manager, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
                      p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'
