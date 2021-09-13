@@ -7,7 +7,6 @@ import Assets from '../../components/multifamily/assets';
 //import ServiceSlides from '../../components/commercial/serviceSlides';
 //import Carousel from '../../components/carousel';
 import ServiceList from '../../components/multifamily/services';
-import Refresh from '../../components/refresh';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Snow from '../../components/snow';
