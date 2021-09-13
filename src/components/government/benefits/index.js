@@ -20,7 +20,9 @@ function Benefits(props) {
                     <div className='list section-p'>
                         {props.list.map(item => {
                             return(
-                                <Fragment><span><img src={check} alt='' className='check'></img>{item}</span><br /></Fragment>
+                                <Fragment>
+                                    <span><img src={check} alt='' className='check'></img>{item}</span><br />
+                                </Fragment>
                             )
                         })}
                     </div>

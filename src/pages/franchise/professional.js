@@ -2,7 +2,7 @@ import React from 'react';
 import ContactModal from '../../components/contactModal';
 import './professional.css';
 
-function Professional() {
+function Professional(props) {
     return(
         <div className='professional-wrapper'>
             <div className='container-fluid'>
@@ -38,7 +38,7 @@ function Professional() {
                 </div>
                 <div className='row'>
                     <div className='col-lg-12 contact-modal'>
-                        <ContactModal text='SEND US A MESSAGE' />
+                        <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} />
                     </div>
                 </div>
             </div>

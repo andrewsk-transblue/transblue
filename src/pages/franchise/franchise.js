@@ -110,7 +110,7 @@ function Franchise(props) {
 
                 {/* <Whatwedo /> */}
 
-                <Professional />
+                <Professional location={easybaseData[0]} />
 
                 <NewReviews />
                 {/* <Services /> */}
