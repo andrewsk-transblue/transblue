@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactModal from '../contactModal';
 import './style.css';
 
 function Snow(props) {
@@ -13,7 +14,7 @@ function Snow(props) {
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>
                     <p className='section-p'>{props.p3}</p>
-                    <a className='cta' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a>
+                    <a className='cta' href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>SNOW SERVICES</a><ContactModal />
                 </div>
 
             </div>

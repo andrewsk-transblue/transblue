@@ -138,9 +138,8 @@ class Government extends Component {
                     <Snow
                         img={snow}
                         title='GOVERNMENT SNOW SERVICES'
-                        p1='Curabitur lobortis diam aliquet, fermentum ligula eget, egestas nibh. Aenean vitae tincidunt nisi.'
-                        p2='Mauris mattis diam eget turpis tincidunt, ut posuere orci suscipit. Aenean sit amet purus a odio luctus varius vitae vel odio. Nullam suscipit euismod elit, ut elementum est vehicula at.'
-                        p3='Donec nec leo vel augue pretium ultrices id vitae orci. Nulla ac odio eget arcu ullamcorper laoreet.'
+                        p1='Keeping city officials, staff and community members safe is the goal of all Snow and Ice services. Transblue maps out each location to ensure our snow service does not impede city, county or federal business.'
+                        p2='Our goal is always to make life easy, accessible, and safe. Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
                     <Carousel />
                     {/* <ServiceSlides /> */}
