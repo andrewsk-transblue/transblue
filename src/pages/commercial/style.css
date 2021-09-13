@@ -39,8 +39,7 @@
 }
 
 .hospitality-wrapper 
-.hospitality-subheader,
-.green-solns p:first-of-type {
+.hospitality-subheader {
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     color: rgb(59, 59, 59);
