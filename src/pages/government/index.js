@@ -7,6 +7,7 @@ import Capabilities2 from '../../components/government/capabilities2';
 import ThreeCols from '../../components/threeCol';
 import Carousel from '../../components/carousel';
 import Snow from '../../components/snow';
+import ServiceList from '../../components/serviceList';
 import ContactCta from '../../components/contactCta';
 import Green from '../../components/green';
 import Footer from '../../components/footer/index';
@@ -104,50 +105,6 @@ class Government extends Component {
                             body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
                         }}
                     />
-                    <div className='slider container-fluid'>
-                        <h4 className='section-header'>REFRESH YOUR GOVERNMENT BUILDING</h4>
-                        {/* <Slider {...settings}>
-                            <div>
-                                <img src={concreteCropped} alt='Government Asphalt' />
-                                <p className='mt-3'>REMODELING</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                            <div>
-                                <img src={asphaltCropped} alt='Government Asphalt' />
-                                <p className='mt-3'>RETAINING WALLS</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                            <div>
-                                <img src={concreteCropped} alt='Government Paint' />
-                                <p className='mt-3'>FRESH PAINT</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                            <div>
-                                <img src={asphaltCropped} alt='Government Roof' />
-                                <p className='mt-3'>A BRAND NEW ROOF</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                            <div>
-                                <img src={concreteCropped} alt='Government Siding' />
-                                <p className='mt-3'>ALL NEW SIDING</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                        </Slider> */}
-                    </div>
-                    <div className='container-fluid asphalt'>
-                        <div className='row'>
-                            <div className='col-lg-6'>
-                                <img src={asphaltCropped} alt='Government Asphalt' />
-                                <p>ASPHALT INSTALLATION</p>
-                                <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                            <div className='col-lg-6'>
-                                <img src={concreteCropped} alt='Government Concrete' />
-                                <p>CONCRETE INSTALLATION</p>
-                                <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et mauris mauris. Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                        </div>
-                    </div>
                     <Green page='government' />
                     <Snow
                         img={snow}
@@ -156,7 +113,25 @@ class Government extends Component {
                         p2='Keeping city officials, staff and community members safe is always our goal. We map out each location to ensure our snow service does not impede city, county or federal business.'
                         p3='Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
-                    <Carousel />
+                    <ServiceList
+                        title='IF YOU CAN THINK IT, WE CAN BUILD IT'
+                        subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
+                        services={['Snow and Ice Management',
+                            'Swimming Pool construction and resurfacing',
+                            'Asphalt Paving',
+                            'Large Landscape installs',
+                            'Roofing',
+                            'Siding',
+                            'Painting',
+                            'Remodels and refreshes',
+                            'Concrete work',
+                            'Drainage Systems',
+                            'Decking, fencing, and railing systems',
+                            'Electric Vehicle Charging Systems, Solar Power',
+                            'ESG Service Offerings'	
+                        ]}
+                    />
+                    {/* <Carousel /> */}
                     {/* <ServiceSlides /> */}
                 </div>
                 {/* <Capabilities /> */}

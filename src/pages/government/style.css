@@ -15,20 +15,6 @@
 .asphalt img {
     width: 100%;
 }
-.govt-slider .slick-next::before,
-.govt-slider .slick-prev::before {
-    color: black;
-}
-
-.government-body .slider {
-    margin: 0 auto;
-    margin-top: 80px;
-}
-
-.slider img,
-.slider p {
-    width: 95%;
-}
 
 .government-body .asphalt {
     margin-top: 80px;
@@ -38,8 +24,7 @@
     margin-bottom: 1.5rem;
 }
 
-.government-body .asphalt p:first-of-type,
-.government-body .slider p:first-of-type {
+.government-body .asphalt p:first-of-type {
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     color: rgb(59, 59, 59);
