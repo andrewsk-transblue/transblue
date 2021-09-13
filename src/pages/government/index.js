@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Benefits from '../../components/government/benefits';
 import Capabilities2 from '../../components/government/capabilities2';
+import ThreeCols from '../../components/threeCol';
 import Carousel from '../../components/carousel';
 import Snow from '../../components/snow';
 import ContactCta from '../../components/contactCta';
@@ -84,10 +85,28 @@ class Government extends Component {
                     </div>
                     <Benefits />
                     {/* <Capabilities2 /> */}
+                    <ThreeCols 
+                        title='REFRESH YOUR GOVERNMENT BUILDING'
+                        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.'
+                        card1={{
+                            img: concreteCropped,
+                            title: 'CONCRETE INSTALLATION',
+                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam end'
+                        }}
+                        card2={{
+                            img: asphaltCropped,
+                            title: 'ASPHALT REFRESHMENT',
+                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
+                        }}
+                        card3={{
+                            img: concreteCropped,
+                            title: 'FRESH NEW PAINT',
+                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
+                        }}
+                    />
                     <div className='slider container-fluid'>
-                        <h4 className='section-header mb-3'>REFRESH YOUR GOVERNMENT BUILDING</h4>
-                        <hr />
-                        <Slider {...settings}>
+                        <h4 className='section-header'>REFRESH YOUR GOVERNMENT BUILDING</h4>
+                        {/* <Slider {...settings}>
                             <div>
                                 <img src={concreteCropped} alt='Government Asphalt' />
                                 <p className='mt-3'>REMODELING</p>
@@ -113,12 +132,7 @@ class Government extends Component {
                                 <p className='mt-3'>ALL NEW SIDING</p>
                                 <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
                             </div>
-                            <div>
-                                <img src={asphaltCropped} alt='Government Siding' />
-                                <p className='mt-3'>SLOPE CREEP</p>
-                                <p className='section-p'>Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.</p>
-                            </div>
-                        </Slider>
+                        </Slider> */}
                     </div>
                     <div className='container-fluid asphalt'>
                         <div className='row'>
