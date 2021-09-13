@@ -4,13 +4,13 @@ import ev from '../../images/government/evCropped.jpeg';
 import porous from '../../images/multifamily/porous.jpg';
 import './style.css';
 
-function Green() {
+function Green(props) {
     return(
         <div className='container-fluid green-solns'>
         <div className='row'>
             <div className='col-lg-12 title'>
                 <h4 className='section-header'>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT</h4>
-                <p className='section-p'>With one of our commercial green solutions. For more information and full list of green services, visit our <a href=''>green solutions website</a></p>
+                <p className='section-p'>With one of our commercial green solutions. For more information and full list of green services, visit our <a href='' target="_blank" rel="noreferer">green solutions website</a></p>
                 {/* <h3>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT WITH GREEN SOLUTIONS</h3> */}
             </div>
         </div>

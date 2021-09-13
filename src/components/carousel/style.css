@@ -3,16 +3,26 @@
     margin-top: 100px;
     margin-bottom: 80px;
 }
-.slider-container .section-header {
+.slider-container .title {
     margin-bottom: 30px;
+    text-align: center;
 }
-.slider-container p:first-of-type {
+.slider-container .title .section-p,
+.slider-container .title .section-header {
+    width: 90%;
+    margin: 0 auto;
+}
+.slider-container p:first-of-type:not(.section-p) {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
     margin-top: 1.2rem;
     margin-bottom: .7rem;
     font-weight: 500;
+}
+
+.slider-container .title .section-header {
+    margin-bottom: 10px;;
 }
 
 .slider-container p {
