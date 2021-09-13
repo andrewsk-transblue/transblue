@@ -13,17 +13,17 @@ function ThreeCols(props) {
         </div>
         <div className='row'>
         <div className='col-lg-4 col-md-6'>
-                <img src={props.card1.img} alt='Government Solar Roof' />
+                <img src={props.card1.img} alt='' />
                 <p className='subtitle'>{props.card1.title}</p>
                 <p className='section-p mb-4'>{props.card1.body}</p>
             </div>
             <div className='col-lg-4 col-md-6'>
-                <img src={props.card2.img} alt='Government EV Charger' />
+                <img src={props.card2.img} alt='' />
                 <p className='subtitle'>{props.card2.title}</p>
                 <p className='section-p mb-4'>{props.card2.body}</p>
             </div>
             <div className='col-lg-4 col-md-6'>
-                <img src={props.card3.img} alt='Porous Asphalt' />
+                <img src={props.card3.img} alt='' />
                 <p className='subtitle'>{props.card3.title}</p>
                 <p className='section-p mb-4'>{props.card3.body}</p>
             </div>

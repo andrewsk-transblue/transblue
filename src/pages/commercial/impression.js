@@ -34,15 +34,16 @@ function Impression() {
                     title='REFRESH YOUR COMMERCIAL BRAND'
                     subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'
                     card1={{
-                        img: asphalt,
-                        title: 'ASPHALT SERVICES',
-                        body: "We will assess your property's current condition and provide a quote to patch, pave, restore, mill, sealcoat or stripe your existing parking lot areas. We offer full-service paving for new construction. We also offer overlaying services for parking lots with excessive damaged asphalt."
-                    }}
-                    card2={{
                         img: roof,
                         title: 'A BRAND NEW ROOF',
                         body: "At Transblue we provide commercial roofing services, including stripping your old roofing system, making structural repairs as required, and re-roofing with roofing material chosen by you. We install metals, asphalt shingles, green roofs, tiles, torch down, and systems such as flat PVC and TPO."
                     }}
+                    card2={{
+                        img: asphalt,
+                        title: 'ASPHALT SERVICES',
+                        body: "We will assess your property's current condition and provide a quote to patch, pave, restore, mill, sealcoat or stripe your existing parking lot areas. We offer full-service paving for new construction. We also offer overlaying services for parking lots with excessive damaged asphalt."
+                    }}
+
                     card3={{
                         img: paint,
                         title: 'BRAND REFRESHES',
