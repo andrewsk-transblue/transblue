@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
+import Benefits from '../../components/government/benefits';
 import Capabilities2 from '../../components/government/capabilities2';
 import Carousel from '../../components/carousel';
 import Snow from '../../components/snow';
@@ -75,13 +76,14 @@ class Government extends Component {
                             </div>
                             <div className='col-lg-6 order-lg-12 left-text'>
                                 <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
-                                <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives. After all requirements are met, we guarantee we will deliver the services the your team expects.</p>
-                                <p className='section-p'>From conception to close out, Transblue is the right fit for your property.</p>
+                                <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
+                                <p className='section-p'>After all requirements are met, we guarantee we will deliver the services the your team expects. From conception to close out, Transblue is the right fit for your property.</p>
                                 <a className='cta' href='/locations'>FIND A LOCATION</a>
                             </div>
                         </div>
                     </div>
-                    <Capabilities2 />
+                    <Benefits />
+                    {/* <Capabilities2 /> */}
                     <div className='slider container-fluid'>
                         <h4 className='section-header mb-3'>REFRESH YOUR GOVERNMENT BUILDING</h4>
                         <hr />
@@ -132,7 +134,7 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <Green />
+                    <Green page='government' />
                     <Snow
                         img={snow}
                         title='GOVERNMENT SNOW SERVICES'

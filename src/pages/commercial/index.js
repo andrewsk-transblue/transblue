@@ -101,7 +101,7 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
-                <Green />
+                <Green page='commercial' />
                 
                 {/* <Asphalt /> */}
                 <Snow

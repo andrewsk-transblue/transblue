@@ -1,0 +1,13 @@
+.government-body .benefits-wrapper {
+    margin-top: 80px;
+}
+
+.benefits-wrapper .check {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.benefits-wrapper button.cta {
+    margin-left: 0px;
+    margin-top: 20px;
+}
