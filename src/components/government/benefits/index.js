@@ -4,7 +4,7 @@ import Capabilities2 from '../capabilities2';
 import check from '../../../images/check.png';
 import './style.css';
 
-function Benefits() {
+function Benefits(props) {
     const [displayCapabilities, setDisplayCapabilities] = useState(false);
 
     return(
@@ -12,7 +12,7 @@ function Benefits() {
         <div className='benefits-wrapper container-fluid'>
             <div className='row'>
                 <div className='col-12 col-lg-6 order-lg-12'>
-                    {/* <img src={} /> */}
+                    <img src={props.img} />
                 </div>
                 <div className='col-12 col-lg-6 right-text'>
                     <h4 className='section-header'>WHY CHOOSE TRANSBLUE?</h4>

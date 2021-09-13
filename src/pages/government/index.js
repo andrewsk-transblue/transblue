@@ -15,6 +15,7 @@ import Footer from '../../components/footer/index';
 import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
+import benefits from '../../images/government/benefits.jpeg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
@@ -48,7 +49,7 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <Benefits />
+                    <Benefits img={benefits} />
                     {/* <Capabilities2 /> */}
                     <ThreeCols 
                         title='REFRESH YOUR GOVERNMENT BUILDING'
@@ -69,7 +70,7 @@ class Government extends Component {
                             body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
                         }}
                     />
-                    <Green page='government' />
+                    {/* <Green page='government' /> */}
                     <div className='new-green-solns container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-6'>
