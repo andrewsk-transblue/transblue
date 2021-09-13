@@ -49,7 +49,19 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <Benefits img={benefits} />
+                    <Benefits 
+                        img={benefits}
+                        list={[
+                            'We understand the government bidding process',
+                            'We understand Scope of Work Requirements',
+                            'Minority Owned business in specific markets',
+                            'Top notch communication',
+                            'We understand Wage Requirements',
+                            'High level of project reporting',
+                            'Onsite management',
+                            'Superior safety program with track record of 0 injuries'
+                        ]}
+                    />
                     {/* <Capabilities2 /> */}
                     <ThreeCols 
                         title='REFRESH YOUR GOVERNMENT BUILDING'
