@@ -12,7 +12,7 @@ function Benefits() {
         <div className='benefits-wrapper container-fluid'>
             <div className='row'>
                 <div className='col-12 col-lg-6 order-lg-12'>
-                    
+                    {/* <img src={} /> */}
                 </div>
                 <div className='col-12 col-lg-6 right-text'>
                     <h4 className='section-header'>WHY CHOOSE TRANSBLUE?</h4>
