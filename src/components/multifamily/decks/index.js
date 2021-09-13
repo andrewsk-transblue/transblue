@@ -1,5 +1,5 @@
 import React from 'react';
-import fence from '../../../images/multifamily/fence.jpeg';
+import fence from '../../../images/multifamily/fence.jpg';
 import deck from '../../../images/multifamily/deck.jpeg';
 
 function Decks() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import service from '../../../images/commercial/services/service.jpg';
 import concrete from '../../../images/commercial/services/concrete.jpeg';
-import fence from '../../../images/commercial/services/fence.jpeg';
+import fence from '../../../images/commercial/services/fence.jpg';
 import landscaping from '../../../images/commercial/services/landscaping.jpeg';
 import solarpanels from '../../../images/commercial/services/solarpanels.jpeg';
 import snow from '../../../images/commercial/services/snow.png';
