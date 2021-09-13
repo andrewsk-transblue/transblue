@@ -16,51 +16,13 @@ import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
-import Slider from "react-slick";
-//import ServiceSlides from '../../components/commercial/serviceSlides/index';
-//import Capabilities from '../../components/government/capabilities';
+import fence from '../../images/government/govtfence.jpeg';
 import './style.css';
 
 
 class Government extends Component {
 
     render() {
-        const settings = {
-            dots: true,
-            arrows: true,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            initialSlide: 0,
-            className: 'govt-slider',
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
-                  dots: true
-                }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  initialSlide: 2
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-            ]
-          };
         return(
             <Fragment>
                 <Helmet>
@@ -114,8 +76,9 @@ class Government extends Component {
                         p3='Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
                     <ServiceList
+                        img={fence}
                         title='IF YOU CAN THINK IT, WE CAN BUILD IT'
-                        subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
+                        // subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
                         services={['Snow and Ice Management',
                             'Swimming Pool construction and resurfacing',
                             'Asphalt Paving',

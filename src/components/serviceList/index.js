@@ -7,10 +7,10 @@ function ServiceList(props) {
     return(
         <div className='servicelist-wrapper container-fluid'>
             <div className='row'>
-                <div className='col-12 col-lg-6'>
-                    {/* <img src={services} alt='' /> */}
+                <div className='col-12 col-lg-7'>
+                    <img src={props.img} alt='' />
                 </div>
-                <div className='col-12 col-lg-6 left-text'>
+                <div className='col-12 col-lg-5 left-text'>
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.subtitle}</p>
                     {props.services.map(service => {
