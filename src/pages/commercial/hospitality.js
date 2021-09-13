@@ -31,15 +31,21 @@ function Hospitality() {
                     <h4 className='section-header hospitality-header'>
                         YOU CAN COUNT ON TRANSBLUE
                     </h4>
-                    <p className='section-p mb-2'>We're a one-stop shop for all your landscaping needs.</p>
+                    <p className='section-p mb-2'>We're a one-stop shop for all your landscaping needs. We make your life easy, you can set it and forget it.</p>
                     <p className='hospitality-subheader'>
                         <img src={check} className='check-icon' alt='' /> WE NEVER CUT CORNERS
                     </p>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p>
+                    {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p> */}
                     <p className='hospitality-subheader'>
                         <img src={check} className='check-icon' alt='' /> WE ALWAYS GO ABOVE &amp; BEYOND
                     </p>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p>
+                    <p className='hospitality-subheader'>
+                        <img src={check} className='check-icon' alt='' /> GREAT COMMUNICATION, MANAGEMENT, AND EXECUTION
+                    </p>
+                    <p className='hospitality-subheader'>
+                        <img src={check} className='check-icon' alt='' /> FLEXIBLE TURNKEY SOLUTION
+                    </p>
+                    {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis sed odio sed lobortis. Pellentesque.</p> */}
                     {/* <p className='hospitality-subheader'>
                         <img src={check} className='check-icon' /> WE'RE A ONE-STOP SHOP FOR ALL YOUR NEEDS
                     </p>

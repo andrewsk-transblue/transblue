@@ -46,7 +46,7 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
-    margin-top: 1.2rem;
+    /* margin-top: 1.2rem; */
 }
 
 .hospitality-subheader {
@@ -59,7 +59,7 @@
 }
 
 .hospitality-wrapper .check-icon {
-    width: 25px;
+    width: 20px;
 }
 
 .commercial-about img,
