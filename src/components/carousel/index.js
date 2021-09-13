@@ -78,7 +78,7 @@ function Carousel() {
         <div className='slider-container container-fluid'>
             <div className='title'>
                 <h4 className='section-header'>IF YOU CAN THINK IT, WE CAN BUILD IT</h4>
-                <p className='section-p'>We offer a wide variety of services to fit your needs. Call us today to discuss your project.</p>
+                <p className='section-p'>Transblue is your construction resource. We offer a wide variety of services to fit your specific needs, <a href='tel:+8444822583' >call us today </a>to discuss your project.</p>
             </div>
             <Slider {...settings}>
                 <div>
