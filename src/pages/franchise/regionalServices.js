@@ -7,7 +7,9 @@ import nwretaining from '../../images/franchise/services/nwretaining.jpg';
 import nwkitchen from '../../images/franchise/services/nwkitchen.jpg';
 import wdeck from '../../images/franchise/services/wdeck.jpg';
 import wkitchen from '../../images/franchise/services/wkitchen.jpg';
+import nepool from '../../images/franchise/services/nepool.jpg';
 import wpool from '../../images/franchise/services/wpool.jpg';
+import nekitchen from '../../images/franchise/services/nekitchen.jpg';
 
 const regionalServices = {
     'northwest': {
@@ -19,8 +21,8 @@ const regionalServices = {
         images: [wpool, wdeck, nwfirepit, wkitchen]
     },
     'northeast': {
-        services: ['SUNROOMS', 'PATIOS', 'POOLS', ''],
-        imagse: [nwpatiocover , nwfirepit, nwretaining, nwkitchen]
+        services: ['SUNROOMS', 'PATIOS', 'POOLS', 'OUTDOOR KITCHENS'],
+        images: [nwpatiocover , nwfirepit, nepool, nekitchen]
     },
     'midwest': {
         services: ['POOLS', 'SYNTHETIC TURF', 'DECKS', 'PAVERS'],
