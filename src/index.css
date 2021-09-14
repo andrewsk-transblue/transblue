@@ -56,9 +56,15 @@ code {
   font-size: clamp(32px, 4vw, 7em)
 }
 
+
 .header-subtext {
   font-size: .5em;
   letter-spacing: 5px;
+}
+
+.header-text.franchise-header .header-subtext {
+  margin-top: 15px;
+  font-size: .35em;
 }
 
 a.cta {
