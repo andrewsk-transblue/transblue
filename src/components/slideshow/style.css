@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.slideshow .overlay {
+    background-color: rgba(0,0,0,.55);
+}
+
 .slideshow .row {
     margin: 0px;
 }

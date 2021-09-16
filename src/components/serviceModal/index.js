@@ -66,14 +66,12 @@ function ServiceModal() {
                                     <h6>SNOW SERVICES</h6>
                                     Snow Plowing<br />
                                     Snow Hauling<br />
-                                    De-cing<br />
+                                    De-icing<br />
                                     Sidewalk Shoveling<br />
                                     Snow Melting<br />
                                     Rooftop Clearing<br />
                                     Icicle Melting<br />
                                     Truck Brush Services<br />
-
-
                                 </div>
                             </div>
                         </div>

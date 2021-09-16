@@ -13,20 +13,15 @@ function Impression() {
     const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
     return(
         <Fragment>
-            <div className='impression-wrapper container-fluid px-0'>
+            <div className='impression-wrapper'>
                 <img src={impressionSmall} alt='Commercial Exterior' 
                     srcSet={`${impressionSmall} 600w, ${impression} 1500w`} 
                     sizes="(max-width: 600px) 100vw, (max-width: 900px) 100vw"
                 />
                 <div className='overlay'></div>
-                <div className='text mx-0 row'>
-                    <div className='col-lg-9 col-10'>
-                        <h3>FIRST IMPRESSIONS MATTER.</h3>
-                        <p>The exterior of your business is the first thing people see when they arrive or drive by. Make a lasting impression with a beautiful exterior.</p>
-                    </div>
-                    <div className='col-lg-3 col-2 my-auto text-center px-0'>
-                        <div onClick={executeScroll}><img className='next-section' src={downarrow} alt='Next section' /></div>
-                    </div>
+                <div className='text  mx-0'>
+                    <h3>FIRST IMPRESSIONS MATTER.</h3>
+                    <p>The exterior of your business is the first thing people see when they arrive or drive by. Make a lasting impression with a beautiful exterior.</p>
                 </div>
             </div>
             <div ref={myRef}>
