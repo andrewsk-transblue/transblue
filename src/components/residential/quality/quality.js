@@ -1,5 +1,5 @@
 import React from 'react';
-import quality from '../../../images/residential/quality2.jpeg';
+import quality from '../../../images/residential/quality2.jpg';
 import './style.css';
 
 function Quality() {
