@@ -16,19 +16,16 @@ class LocationList extends Component {
     }
 
     componentDidMount = () => {
-        //console.log(this.props)
-
         this.getLocationList()
     }
 
     componentDidUpdate(prevProps) {
         if (this.props !== prevProps) {
-          this.getLocationList()
+            this.getLocationList()
         }
       }
 
     getLocationList = () => {
-        console.log('get location list')
         let locationList = [];
         let userLocation = {
             latitude: this.props.coords[0],
@@ -43,17 +40,14 @@ class LocationList extends Component {
             }
             //console.log(franchiseLocation)
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
-            //console.log(distance)
             if(distance < this.props.radius) {
                 locationList.push(this.props.locations[i])
             }
         }
-        //console.log(locationList)
-        this.setState({locationList: locationList}, () => console.log(this.state.locationList))
+        this.setState({locationList: locationList})
     }
 
     render() {
-        //console.log(this.props)        
         return(
             <div className='container-fluid location-list-container'>
                 {this.state.locationList.length === 0 && <div className='no-locations'>
@@ -61,7 +55,6 @@ class LocationList extends Component {
                     <small>Please try different search criteria</small>
                 </div>}
                 {this.state.locationList.length > 0 && this.state.locationList.map((location, index) => {
-                    //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='row location' >

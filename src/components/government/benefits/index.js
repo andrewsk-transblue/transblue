@@ -16,7 +16,7 @@ function Benefits(props) {
                 </div>
                 <div className='col-12 col-lg-6 right-text'>
                     <h4 className='section-header'>WHY CHOOSE TRANSBLUE?</h4>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.</p>
+                    {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.</p> */}
                     <div className='list section-p'>
                         {props.list.map(item => {
                             return(

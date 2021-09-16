@@ -33,8 +33,7 @@ function Services() {
                     </div>
                     <div className='col-lg-2 col-1 col-sm-1 col-md-1'></div> */}
 
-                    <h3 className='section-header pb-2'>OUR SERVICES</h3>
-                    <hr />
+                    <h3 className='section-header'>WHO ARE OUR CLIENTS?</h3>
                 </div>
                 <div className='row services-cards'>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -43,7 +42,7 @@ function Services() {
                             service='RESIDENTIAL'
                             page='residential'
                             // description= 'Luxury exterior design is our specialty. From outdoor kitchens to gorgeous, functional retaining walls, we’ll build you the backyard retreat of your dreams. '
-                            description='Whether you’re installing a new patio, re-furbishing a swimming pool, building an outdoor kitchen or adding a sun room our expert teams are the best choice for you and your family. Offering over 62 service lines, our turn-key installations are built to make your life easy. Our multi discipline expertise brings all your construction needs under one roof, the Transblue roof. '
+                            description='Whether you’re installing a new patio, refurbishing a swimming pool, building an outdoor kitchen, or adding a sun room, our expert teams are the best choice for you and your family. Offering over 62 service lines, our turn-key installations are built to make your life easy. Our multi discipline expertise brings all your construction needs under one roof, the Transblue roof.'
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>

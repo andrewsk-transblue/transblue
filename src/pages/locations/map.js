@@ -25,9 +25,6 @@ function SetCenter({center, radius}) {
 }
 
 function MapComp(props) {
-
-    //console.log(JSON.parse(props.geojson))
-
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>
             <TileLayer

@@ -41,8 +41,6 @@ class Commercial extends Component {
                 <ContactCta />
                 <About />
                 <Impression />
-                <Marriott />
-                <Hospitality />
                 <Slideshow 
                     images={[slidesnow, asphalt, fence, solar]}
                     text={[
@@ -63,7 +61,9 @@ class Commercial extends Component {
                             p2: ''
                         }
                     ]} />
-                <Benefits />
+                <Marriott />
+                <Hospitality />
+                {/* <Benefits /> */}
                 <div className='simple-process'>
                     <img src={simple} alt='Commercial Landscaping' />
                     <div className='overlay'></div>

@@ -24,6 +24,7 @@ import Footer from '../../components/footer/index';
 //import locationsDb from '../locations/db';
 
 import './style.css';
+import ServiceModal from '../../components/serviceModal';
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
@@ -79,7 +80,7 @@ function Franchise(props) {
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[2]} service={services.services[2]} /></div>
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[3]} service={services.services[3]} /></div>
                         </div>}
-                        <MoreServices />
+                        <ServiceModal />
                     </div>
                     <NewSlideshow location={easybaseData[0]} />
                 {/* <FranchiseLifestyle location={easybaseData[0]} /> */}

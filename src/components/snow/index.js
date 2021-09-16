@@ -9,7 +9,7 @@ function Snow(props) {
                 <div className='col-lg-7 order-lg-12'>
                     <img className='pt-4' src={props.img} alt='Government Snow Services' />
                 </div>
-                <div className='col-lg-5'>
+                <div className='col-lg-5 right-text'>
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>

@@ -10,15 +10,14 @@ function ServiceList(props) {
                 <div className='col-12 col-lg-7'>
                     <img src={props.img} alt='' />
                 </div>
-                <div className='col-12 col-lg-5 left-text'>
-                    <h4 className='section-header'>{props.title}</h4>
+                <div className='col-12 col-lg-5 left-text my-auto'>
+                    <h4 className='section-header' dangerouslySetInnerHTML={{__html: props.title}}></h4>
                     <p className='section-p'>{props.subtitle}</p>
                     {props.services.map(service => {
                         return(
                             <p className='asterisk section-p'><span>*</span>{service}</p>
                         )
-                    })}
-                
+                    })}                
                     <a className='cta' href='/locations'>LOCATIONS</a>
                     <ContactModal />
                 </div>
