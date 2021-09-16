@@ -15,7 +15,7 @@ function ServiceModal() {
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <div className='list container-fluid'>
+                        <div className='container-fluid section-p'>
                             <div className='row'>
                                 <div className='col-12 col-lg-6'>
                                     <h6>GENERAL CONTRACTING</h6>
@@ -52,10 +52,28 @@ function ServiceModal() {
                                 </div>
                                 <div className='col-12 col-lg-3'>
                                     <h6>GREEN SERVICES</h6>
-
+                                    Relamp Projects<br />
+                                    Green Roofs<br />
+                                    Permeable Pavement<br />
+                                    Bioswales<br />
+                                    HVAC<br />
+                                    Water Reclamation<br />
+                                    Solar Panels<br />
+                                    EV Chargers<br />
+                                    Xeriscapes<br />
                                 </div>
                                 <div className='col-12 col-lg-3'>
                                     <h6>SNOW SERVICES</h6>
+                                    Snow Plowing<br />
+                                    Snow Hauling<br />
+                                    De-cing<br />
+                                    Sidewalk Shoveling<br />
+                                    Snow Melting<br />
+                                    Rooftop Clearing<br />
+                                    Icicle Melting<br />
+                                    Truck Brush Services<br />
+
+
                                 </div>
                             </div>
                         </div>
