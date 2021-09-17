@@ -2,10 +2,8 @@
     position: relative;
 }
 
-.camp-images .buttons {
+.camp-images .buttons button {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
     z-index: 3;
 }
 
@@ -13,6 +11,17 @@
     background-color: rgba(255, 255, 255, 0.699);
     border: 0px;
     padding: 5px 10px 5px 10px;
+    width: 30px;
+}
+
+.camp-images .buttons button.prev {
+    right: 53px;
+    bottom: 15px;
+}
+
+.camp-images .buttons button.next {
+    right: 15px;
+    bottom: 15px;
 }
 
 .camp-images .buttons button:hover {

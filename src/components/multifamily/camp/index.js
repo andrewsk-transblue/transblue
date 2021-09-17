@@ -19,8 +19,8 @@ function CampImages() {
         <div className='camp-images'>
             <img src={images[index]} alt='Solid Rock Mission Camp' />
             <div className='buttons'>
-                {index > 0 && <button className='mr-1' onClick={() => changeImage('decrement')}><i className='fas fa-chevron-left'></i></button>}
-                {index + 1 <= images.length - 1 && <button onClick={() => changeImage('increment')}><i className='fas fa-chevron-right'></i></button>}
+                {index > 0 && <button className='prev' onClick={() => changeImage('decrement')}><i className='fas fa-chevron-left'></i></button>}
+                {index + 1 <= images.length - 1 && <button className='next' onClick={() => changeImage('increment')}><i className='fas fa-chevron-right'></i></button>}
             </div>
         </div>
     )

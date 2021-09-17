@@ -116,8 +116,8 @@ class Carousel extends Component {
                 <div className='col-lg-5 col-10 col-sm-10 col-md-8 px-0 showing-slide text-center'>
                     <img src={images[this.state.index]} alt='' />
                     {/* <div className='text'> */}
-                        <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
-                        <p className='section-p text-left'>{text[this.state.index].body}</p>
+                    <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
+                    <p className='section-p text-left'>{text[this.state.index].body}</p>
                     {/* </div> */}
                 </div>
     
