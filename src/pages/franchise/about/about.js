@@ -40,7 +40,7 @@ function About(props) {
                     <p className='section-p'>
                         At {props.name}, we are independent business owners. You can be confident that we are dedicated to a level that far exceeds that of an area manager. We are 100% committed to delivering a World Class installation. We take pride and ownership for every installation.
                     </p> */}
-                    <p className='section-p'>Donec non neque imperdiet, pretium ex ut, tristique mi. Suspendisse sed tellus a ipsum viverra pharetra pharetra nec quam. Duis quis consequat justo, vel vulputate nulla. Vivamus sit amet viverra risus. Pellentesque maximus ac mi in efficitur. Sed vitae congue ex. Ut in ultricies elit. Phasellus et tincidunt lacus, aliquam lacinia ex. Nunc accumsan aliquam blandit.</p>
+                    <p className='section-p'>{props.name} is an award-winning exterior design company serving local families and businesses in the {props.name.slice(10)} community.  Locally owned and operated, and with the experience and dedication to do the job right, our team at {props.name} offers every service you may need to enhance or beautify your exterior space.</p>
                 </div>
             </div>
         </div>
