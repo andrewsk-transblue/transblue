@@ -94,7 +94,7 @@ class Government extends Component {
                                     Transblue installs EV charging systems in government properties. With the ever rising need for EV charging stations. Transblue provides the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. Required to install Electric Charging Stations for your communities. 
                                 </p>
                                 <p className='section-p'>
-                                    For more information or a full list of Transblue Green Services, visit our Green Solutions website or send us a message.
+                                    For more information and a full list of Transblue Green Services, visit our Green Solutions website or send us a message.
                                     
                                 </p>
                                 <a className='cta' href=''>GREEN SOLUTIONS</a>
