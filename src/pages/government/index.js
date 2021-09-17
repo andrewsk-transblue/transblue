@@ -44,7 +44,7 @@ class Government extends Component {
                             <div className='col-lg-6 order-lg-12 left-text'>
                                 <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
                                 <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
-                                <p className='section-p'>After all requirements are met, we guarantee we will deliver the services the your team expects. From conception to close out, Transblue is the right fit for your property.</p>
+                                <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
                                 <a className='cta' href='/locations'>FIND A LOCATION</a>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ class Government extends Component {
                     />
                     <ServiceList
                         img={fence}
-                        title='ONE STOP SHOP'
+                        title='GOVERNMENT SERVICES'
                         // subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
                         services={['Snow and Ice Management',
                             'Swimming Pool construction and resurfacing',
