@@ -7,7 +7,7 @@
 }
 
 .capabilities-wrapper {
-    width: 91%;;
+    width: 91%;
 }
 
 .government-header img,
@@ -30,8 +30,9 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .green-solns {
-        margin-top: 60px;
+    .government-body .new-green-solns {
+        margin-top: 120px;
+        margin-bottom: 20px;
     }
     .government-body {
         margin-top: 80px;

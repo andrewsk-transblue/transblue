@@ -1,6 +1,6 @@
 import React from 'react';
 import solar from '../../images/government/govtsolarCropped.jpeg';
-import ev from '../../images/government/evCropped.jpeg';
+import ev from '../../images/government/evCropped.jpg';
 import porous from '../../images/multifamily/porous.jpg';
 import './style.css';
 

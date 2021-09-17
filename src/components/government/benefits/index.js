@@ -14,7 +14,7 @@ function Benefits(props) {
                 <div className='col-12 col-lg-6 order-lg-12'>
                     <img src={props.img} />
                 </div>
-                <div className='col-12 col-lg-6 right-text'>
+                <div className='col-12 col-lg-6 left-text'>
                     <h4 className='section-header'>WHY CHOOSE TRANSBLUE?</h4>
                     {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.</p> */}
                     <div className='list section-p'>

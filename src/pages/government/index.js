@@ -19,7 +19,7 @@ import benefits from '../../images/government/benefits.jpeg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
-import ev from '../../images/government/evCropped.jpeg';
+import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
 
@@ -49,20 +49,6 @@ class Government extends Component {
                             </div>
                         </div>
                     </div>
-                    <Benefits 
-                        img={benefits}
-                        list={[
-                            'We understand the government bidding process',
-                            'We understand Scope of Work Requirements',
-                            'Minority Owned business in specific markets',
-                            'Top notch communication',
-                            'We understand Wage Requirements',
-                            'High level of project reporting',
-                            'Onsite management',
-                            'Superior safety program with track record of 0 injuries'
-                        ]}
-                    />
-                    {/* <Capabilities2 /> */}
                     <ThreeCols 
                         title='REFRESH YOUR GOVERNMENT BUILDING'
                         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.'
@@ -82,6 +68,20 @@ class Government extends Component {
                             body: 'Transblue provides roofing services to government properties looking to replace existing roofing structures or install new roofing systems. We install roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                         }}
                     />
+                    <Benefits 
+                        img={benefits}
+                        list={[
+                            'We understand the government bidding process',
+                            'We understand Scope of Work Requirements',
+                            'Minority Owned business in specific markets',
+                            'Top notch communication',
+                            'We understand Wage Requirements',
+                            'High level of project reporting',
+                            'Onsite management',
+                            'Superior safety program with track record of 0 injuries'
+                        ]}
+                    />
+                    {/* <Capabilities2 /> */}
                     {/* <Green page='government' /> */}
                     <div className='new-green-solns container-fluid'>
                         <div className='row'>

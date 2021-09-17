@@ -6,7 +6,7 @@ import ContactCta from '../../components/contactCta';
 import About from './about';
 import Slideshow from '../../components/slideshow';
 //import ServiceSlides from '../../components/commercial/serviceSlides/index';
-import Benefits from './benefits';
+//import Benefits from './benefits';
 import Impression from './impression';
 import Marriott from './marriott';
 import Hospitality from './hospitality';
