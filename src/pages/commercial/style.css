@@ -33,11 +33,17 @@
     margin-bottom: 5px;
 }
 
-.hospitality-wrapper img {
+.hospitality-wrapper img:not(#expert) {
     width: 60px;
     height: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.hospitality-wrapper img#expert {
+    width: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .hospitality-wrapper h5 {

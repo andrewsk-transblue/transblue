@@ -6,6 +6,7 @@ import ev from '../../images/commercial/ev.jpg';
 import check from '../../images/checkorange.png';
 import turnkey from '../../images/commercial/icons/turnkey.png';
 import customers from '../../images/commercial/icons/customers.jpg';
+import expert from '../../images/commercial/icons/expert.jpg';
 import './style.css';
 
 function Hospitality() {
@@ -37,7 +38,7 @@ function Hospitality() {
                     <p className='section-p'>We collaborate with clients to provide industry expertise that parallels the project vision, ensuring the project outcome is methodically designed and brought to completion with a World Class finish</p>
                 </div>
                 <div className='col-12 col-md-6 col-lg-4'>
-                    <img src={turnkey} alt='' />
+                    <img src={expert} alt='' id='expert' />
                     <h5>INDUSTRY EXPERTS</h5>
                     <p className='section-p'>Transblue provides industry experts at each turn of the project to ensure that the delivery is as expectation is exceeded.</p>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import commercial from '../../images/commercial/commercial2.jpeg';
+import commercial from '../../images/commercial/commercial2.jpg';
 import './style.css';
 
 function About() {
