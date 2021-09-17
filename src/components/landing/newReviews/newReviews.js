@@ -6,17 +6,17 @@ import './style.css';
 let reviews = [
     {
         review: '"Transblue went above and beyond expectations. They responded to our snow removal request promptly after a record level of snow fall in Gig harbor. JP Sipla and his crew took the extra time to make sure every home owner on the street was able to get to work. Outstanding service."',
-        name: 'Mark Colloy',
+        name: 'Mark C',
         location: 'Lynnwood, WA'
     },
     {
         review: '"I highly recommend Transblue to everyone. Hands down, they are the best in terms of quality, price, communication. They go to extreme limits to ensure their customer is happy."',
-        name: 'Sumit Geol',
+        name: 'Sumit G',
         location: 'Cypress, TX'
     },
     {
         review: '"Transblue is one of a kind. When professionalism meets dedication and a passion for what they do. That is what you will find with Transblue and their employees. I give them my highest recommendation."',
-        name: 'Craig Pannell',
+        name: 'Craig P',
         location: 'Seattle, WA'
     },
     {
