@@ -74,12 +74,12 @@ class Government extends Component {
                         card2={{
                             img: asphaltCropped,
                             title: 'ASPHALT REFRESHMENT',
-                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
+                            body: 'Transblue provides asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping. '
                         }}
                         card3={{
                             img: concreteCropped,
-                            title: 'FRESH NEW PAINT',
-                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam enim.'
+                            title: 'ROOFING SYSTEMS',
+                            body: 'Transblue provides roofing services to government properties looking to replace existing roofing structures or install new roofing systems. We install roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                         }}
                     />
                     {/* <Green page='government' /> */}
