@@ -6,25 +6,26 @@ function Decks() {
     return(
         <div className='decks container-fluid'>
         <div className='row'>
-            <div className='col-lg-4 col-md-12 order-lg-12 px-0'>
+            <div className='col-lg-5 col-md-12 order-lg-12 left-text'>
                 <h4 className='section-header'>INCREASE SECURITY &amp; PRIVACY</h4>
-                <div className='section-p pb-4'>Fencing is key to privacy and needs to be replaced every 15-20 years. Whether your increasing property privacy or just replacing worn out fencing, Transblue is the right choice for you! </div>
+                <p className='section-p'>Transblue understands how to build and rebuild decks on your community properties. We understand that these decks are connected directly to your living space, and that their resurfacing or reconstruction needs to be done quickly and efficiently with a high quality to minimize impact to your life. That is why Transblue is truly the right partner for your decking needs. </p>
+                <p className='section-p'>Fencing is key to privacy and needs to be replaced every 15-20 years. Whether your increasing property privacy or just replacing worn out fencing, Transblue is the right choice for you! </p>
             </div>
-            <div className='col-lg-4 col-md-6 px-0 mb-3'>
-                <img className='decks-image' src={fence} alt='Multifamily Fence' />
-                {/* <p className='mt-2'>FENCE INSTALLATION</p> */}
-                <div className='overlay'></div>
-                <div className='centered-text'>
-                    FENCE INSTALLATION
-                </div>
-            </div>
-            <div className='col-lg-4 col-md-6 px-0 mb-3'>
-                <img className='decks-image' src={deck} alt='Multifamily Deck' />
-                {/* <p className='mt-2'>DECK INSTALLATION</p> */}
-                <div className='overlay'></div>
-                <div className='centered-text'>
-                    DECK INSTALLATION
-                </div>
+            <div className='col-lg-7 col-md-6'>
+                <div className='row'>
+                    <div className='col-lg-6'>
+                        <img className='decks-image' src={fence} alt='Multifamily Fence' />
+                    </div>
+                    <div className='col-lg-6'>
+                        <img className='decks-image' src={deck} alt='Multifamily Deck' />
+                    </div>
+                    <div className='col-lg-6'>
+                        <img className='decks-image' src={fence} alt='Multifamily Fence' />
+                    </div>
+                    <div className='col-lg-6'>
+                        <img className='decks-image' src={deck} alt='Multifamily Deck' />
+                    </div>
+                </div>               
             </div>
 
         </div>

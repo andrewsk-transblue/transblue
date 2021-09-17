@@ -83,25 +83,26 @@
 
 .decks {
     margin-bottom: 60px;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .decks img {
-    width: 95%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.decks .overlay {
+/* .decks .overlay {
     width: 95%;
     background-color: rgba(0,0,0,.35)
-}
+} */
 
-.decks .centered-text {
+/* .decks .centered-text {
     color: white;
     font-size: 1.4em;
     width: 70%;
     letter-spacing: .03em;
     font-family: 'Roboto';
-}
+} */
 
 .camp {
     margin-top: 80px;
@@ -118,10 +119,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .decks h4,
-    .decks .section-p {
-        padding-left: 1rem;
-    }
 
     .decks .section-p {
         padding-bottom: 0px !important;

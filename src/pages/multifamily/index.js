@@ -48,9 +48,9 @@ function Multifamily() {
                 </div>
                 <div className='container-fluid benefits'>
                     <div className='row'>
-                        <div className='col-lg-6 pt-3'>
+                        <div className='col-lg-5 right-text'>
                             <h4 className='section-header'>GET AN EDGE OVER YOUR COMPETITORS</h4>
-                            <ul className='section-p pr-5'>
+                            <ul className='section-p'>
                                 <li>Turnkey installation – all services under 1 roof </li>
                                 <li>Increase your property value</li>
                                 <li>Proactive project management</li>
@@ -61,7 +61,7 @@ function Multifamily() {
                             </ul>
                             <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-lg-7'>
                             <img className='pt-4' src={luxury} alt='Luxury Apartment' />
                         </div>
                     </div>
