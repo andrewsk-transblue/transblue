@@ -75,7 +75,7 @@ class Navbar extends Component {
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                GC
+                                SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <Link className="dropdown-item" to="/residential">RESIDENTIAL</Link>
