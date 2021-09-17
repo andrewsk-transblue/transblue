@@ -34,12 +34,6 @@ function About(props) {
                     </div>
                 </div>
                 <div className='col-lg-6'>
-                    {/* <p className='section-p'>
-                    Transblue’s franchise system is the backbone of its success and unmatched growth. With offices from coast to coast managed by independent business owners, you know that the Transblue teams installing your work in each region are dedicated to a level that far exceed the dedication of an area manager. At {props.name}, we are committed to delivering a World Class installation. We take pride and ownership for every installation.
-                    </p>
-                    <p className='section-p'>
-                        At {props.name}, we are independent business owners. You can be confident that we are dedicated to a level that far exceeds that of an area manager. We are 100% committed to delivering a World Class installation. We take pride and ownership for every installation.
-                    </p> */}
                     <p className='section-p'>{props.name} is an award-winning exterior design company serving local families and businesses in the {props.name.slice(10)} community.  Locally owned and operated, and with the experience and dedication to do the job right, our team at {props.name} offers every service you may need to enhance or beautify your exterior space.</p>
                 </div>
             </div>

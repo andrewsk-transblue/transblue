@@ -45,6 +45,7 @@
     border: 1px solid rgb(167, 167, 167) !important;
     /* height: 40px; */
     padding: 10px 20px;
+    border-radius: 0px;
 }
 
 .contact-form .input-left,
@@ -57,6 +58,7 @@
     border: 1px solid rgb(167, 167, 167) !important;
     height: 80px;
     padding: 15px 20px 20px 20px;
+    border-radius: 0px;
 }
 
 .contact-form input::placeholder,
