@@ -66,7 +66,7 @@ class Carousel extends Component {
 
     right = () => {
         if(this.state.index + 1 < text.length) {
-        this.setState({index: this.state.index+1}, () => (console.log(this.state.index)))
+        this.setState({index: this.state.index+2}, () => (console.log(this.state.index)))
         }
         else {
             this.setState({index: 0})
