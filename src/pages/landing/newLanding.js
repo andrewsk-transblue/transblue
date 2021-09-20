@@ -12,7 +12,6 @@ import Mission from '../../components/landing/mission';
 import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
 import ContactCta from '../../components/contactCta';
-import banner2 from '../../images/newLanding/banner2.png';
 import Core3 from '../../components/landing/core3';
 import './style.css';
 
