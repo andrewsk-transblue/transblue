@@ -17,10 +17,10 @@ function ServiceModal() {
                         </button>
                         <div className='container-fluid section-p'>
                             <div className='row'>
-                                <div className='col-12 col-lg-6'>
+                                <div className='col-12 col-md-6'>
                                     <h6>GENERAL CONTRACTING</h6>
                                     <div className='row'>
-                                        <div className='col-12 col-lg-6'>
+                                        <div className='col-12 col-sm-6'>
                                             Concrete<br />
                                             Patios<br />
                                             Patio Covers <br />
@@ -34,7 +34,7 @@ function ServiceModal() {
                                             Fences<br />
                                             Gates<br />                                            
                                         </div>
-                                        <div className='col-12 col-lg-6'>
+                                        <div className='col-12 col-sm-6'>
                                             Irrigation<br />
                                             Lawn Installation<br/>
                                             Water Features<br />
@@ -50,7 +50,7 @@ function ServiceModal() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-12 col-lg-3'>
+                                <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>GREEN SERVICES</h6>
                                     Relamp Projects<br />
                                     Green Roofs<br />
@@ -62,7 +62,7 @@ function ServiceModal() {
                                     EV Chargers<br />
                                     Xeriscapes<br />
                                 </div>
-                                <div className='col-12 col-lg-3'>
+                                <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>SNOW SERVICES</h6>
                                     Snow Plowing<br />
                                     Snow Hauling<br />

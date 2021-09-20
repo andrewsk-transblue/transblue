@@ -111,7 +111,7 @@ class Navbar extends Component {
                         </li>
 
                         <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="/">LOCATIONS</Link>
+                            <Link className="nav-link" to="/locations">LOCATIONS</Link>
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
