@@ -11,12 +11,14 @@ import turf from '../../../images/residential/carouselTurf-min.jpg';
 import court from '../../../images/residential/carouselCourt-min.jpg';
 //import water from '../../../images/residential/water-min.jpg';
 import retaining from '../../../images/residential/retaining.jpg';
+import sunroom from '../../../images/residential/sunroom.jpg';
+import lawn from '../../../images/residential/lawn.jpg';
 import newWater from '../../../images/residential/carouselWater.jpg';
 import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png'
 import './style.css';
 
-let images = [concrete, fire, kitchen, patio, pool, pavers, deck, fence, turf, court, newWater, retaining];
+let images = [concrete, fire, kitchen, patio, pool, pavers, deck, fence, turf, court, newWater, retaining, sunroom, lawn];
 let text = [
             {
                 title: 'CONCRETE',
@@ -54,6 +56,13 @@ let text = [
             }, {
                 title: 'RETAINING WALLS',
                 body: 'Let Transblue’s team of installers and designers build your next retaining wall. We have the experience you can depend on. Our lead designers have created, designed and installed hundreds of retaining walls.'
+            }, {
+                title: 'SUNROOMS',
+                body: 'Looking for a 4-season room? Look no further. Our team of designers takes your vision and our expertise to deliver the home extension of your dreams. '
+            },
+            {
+                title: 'LAWN INSTALLATION',
+                body: 'At Transblue we pride ourselves in Lawn Installation! Over the last 20 years we have developed techniques that have proven themselves over and over again! We install a World Class Lawn, each time, every time! '
             }
     ]
 
