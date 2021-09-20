@@ -79,9 +79,13 @@ function Franchise(props) {
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[1]} service={services.services[1]} /></div>
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[2]} service={services.services[2]} /></div>
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[3]} service={services.services[3]} /></div>
+                            <div className='service-modal'>
+                                <ServiceModal />
+                            </div>
                         </div>}
-                        <ServiceModal />
+                        
                     </div>
+                    
                     <NewSlideshow location={easybaseData[0]} />
                 {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
 

@@ -40,7 +40,8 @@
     margin-bottom: 15px;
 }
 
-.franchise-services button {
+.franchise-services .service-modal {
+    display: inline-block;
     margin: 0 auto;
     margin-top: 20px;
 }

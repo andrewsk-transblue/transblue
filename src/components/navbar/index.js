@@ -46,7 +46,7 @@ class Navbar extends Component {
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
                 {this.props.franchise && 
                     <div className='franchise-contact'>
-                        <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <br className='sm-screen-show' />
+                        <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <br />
                         <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
                     </div>}
 
