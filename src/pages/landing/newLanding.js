@@ -13,6 +13,7 @@ import Core from '../../components/landing/core';
 import Core2 from '../../components/landing/core2';
 import ContactCta from '../../components/contactCta';
 import banner2 from '../../images/newLanding/banner2.png';
+import Core3 from '../../components/landing/core3';
 import './style.css';
 
 function NewLanding() {
@@ -27,9 +28,6 @@ function NewLanding() {
             <Header />
             <ContactCta />
             <div className='landing-body'>
-                <div className='container-fluid w-100 who-is-tb text-center'>
-
-                </div>
 
                 <Mbridge />
             
@@ -37,6 +35,7 @@ function NewLanding() {
                 {/* <Here /> */}
                 <Core />
                 <Core2 />
+                {/* <Core3 /> */}
                 <NewReviews />
                 <Services />
                 <Footer locationPage={false} />
