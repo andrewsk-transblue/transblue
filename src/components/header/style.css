@@ -45,6 +45,10 @@
     background-position: center center;
 }
 
+.header-wrapper[name='givesback'] .overlay {
+    background-color: rgba(0,0,0,.25);
+}
+
 .header-wrapper[region='northwest'] {
     background-image: url('../../images/franchiseHeaders/northwest.jpg') ;
     background-size: cover;
