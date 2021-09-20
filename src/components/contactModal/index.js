@@ -1,4 +1,5 @@
 import React, {Fragment, Component} from 'react';
+import StoreMsg from '../../utils/db';
 import Captcha from '../captcha/captcha';
 import './style.css';
 const api_key = process.env.REACT_APP_MAILGUN_API;
@@ -6,17 +7,24 @@ const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 class ContactModal extends Component {
-    state={
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
-        isSubmitted: false,
-        disabled: true
+    constructor() {
+        super();
+        
+        this.state={
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            message: '',
+            isSubmitted: false,
+            disabled: true,
+        }
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
+
     onChange = (e) => {
+        console.log(this.state)
         this.setState({
             [e.target.id]: e.target.value
         })
@@ -36,12 +44,23 @@ class ContactModal extends Component {
                     Message: ${this.state.message}`
         };
         //console.log(this.state)
-        this.setState({isSubmitted: true})
+        console.log('submit')
+        //console.log(this.state)
+        const message = {
+            website: 'gc website',
+            name: this.state.firstName,
+            email: this.state.email,
+            phone: this.state.phone,
+            message: this.state.message
+        }
+        //console.log(message)
+        StoreMsg(message);
         // mailgun.messages().send(data, function(error, body) {
         //     console.log(body)
         // })
 
         //need to have users safelist domain
+        this.setState({isSubmitted: true})
     }
 
     enableSubmit = () => {
@@ -91,7 +110,7 @@ class ContactModal extends Component {
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={!formCompleted} data-dismiss="modal" id='submit' type='submit'>SUBMIT</button>
+                                    <input className={!formCompleted ? 'cta disabled' : 'cta'} disabled={!formCompleted}  type='submit' value='SUBMIT'></input>
                                 </div>
                                 <div className='row'>
                                     {!this.state.isSubmitted && <Captcha onChange={this.enableSubmit} />}

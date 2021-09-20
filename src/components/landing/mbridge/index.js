@@ -59,11 +59,11 @@ function Mbridge() {
                     <a href='/' className='cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-6'>
-                    <div className='image-wrapper'>
+                    {/* <div className='image-wrapper'>
                         <div className='overlay'></div>
                         <img src={charity}  alt='community'/>
                         <div className='community-stats centered-text'></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

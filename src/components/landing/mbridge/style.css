@@ -1,9 +1,12 @@
+.card-wrapper {
+    margin-top: 80px;
+}
+
 .card-wrapper img {
     position: absolute;
     bottom: -20px;
     right: -20px;
-    opacity: .7;
-    
+    opacity: .7;   
 }
 
 /* @media only screen and (min-width: 992px) {

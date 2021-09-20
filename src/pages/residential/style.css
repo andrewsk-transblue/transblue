@@ -9,12 +9,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: -40;
-    background-image: url('../../images/residential/backyard2.jpeg');
+    background-image: url('../../images/residential/header.jpg');
     background-size: cover;
 }
 
 .residential-header .overlay {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.55);
 }
 
 .residential-body {

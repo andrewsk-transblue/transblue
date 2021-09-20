@@ -40,7 +40,7 @@ const charities = [
     }
 ]
 
-function GivesBack() {
+function GivesBack(props) {
 
     const [activeButton, setActiveButton] = useState(0)
 
