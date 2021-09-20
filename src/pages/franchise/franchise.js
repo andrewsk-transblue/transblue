@@ -9,6 +9,8 @@ import NewSlideshow from '../../components/newSlideshow';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
 import Multifamily from './multifamily';
+import Govt from './govt';
+import Green from './green';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
@@ -86,31 +88,11 @@ function Franchise(props) {
                     </div>
                     
                     <NewSlideshow location={easybaseData[0]} />
-                {/* <FranchiseLifestyle location={easybaseData[0]} /> */}
-
-                {/* <Slideshow 
-                    images={[slidesnow, asphalt, fence, solar]}
-                    text={[
-                        {
-                            p1: "KEEP YOUR BUSINESS DOORS OPEN",
-                            p2: ''
-                        },
-                        {
-                            p1: 'REFRESH YOUR ASPHALT AND CONCRETE',
-                            p2: ''
-                        },
-                        {
-                            p1: 'INCREASE SECURITY AND PRIVACY',
-                            p2: ''
-                        },
-                        {
-                            p1: 'LOWER YOUR ENERGY BILL',
-                            p2: ''
-                        }
-                    ]} /> */}
                 
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />
+                <Govt location={easybaseData[0]} />
+                <Green location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
 

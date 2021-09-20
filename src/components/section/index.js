@@ -18,7 +18,7 @@ function Section(props) {
                         <div className='col-12'>
                             GET STARTED TODAY!<br />
                             Give us a call at <a href={`tel:+${tel}`}>{props.contact.phone}</a>, <br />
-                            Or <a href={`mailto:${props.contact.email}`}>send us a message</a> and we will get back to you
+                            Or <a href={`mailto:${props.contact.email}`}>send us a message</a> and we will get back to you as soon as possible
                         </div>
                     </div>}
                     {/* <p className='section-p' dangerouslySetInnerHTML={{__html: props.p3}}></p> */}
