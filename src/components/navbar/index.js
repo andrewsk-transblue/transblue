@@ -82,7 +82,6 @@ class Navbar extends Component {
                                 <Link className="dropdown-item" to="/multifamily">MULTIFAMILY</Link>
                                 <Link className='dropdown-item' to="/commercial">COMMERCIAL</Link>
                                 <Link className='dropdown-item' to="/government">GOVERNMENT</Link>
-                                <Link className='dropdown-item' to="/featured">FEATURED PROJECTS</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
@@ -111,13 +110,17 @@ class Navbar extends Component {
                             </div>
                         </li>
 
+                        <li className="nav-item ml-auto">
+                            <Link className="nav-link" to="/">LOCATIONS</Link>
+                        </li>
+
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 OTHER
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 {!this.props.franchise && <a className="dropdown-item" href="/">CONTACT</a>}
-                                <a className="dropdown-item" href="/locations">LOCATIONS</a>
+                                <a className='dropdown-item' href='/featured'>PROJECTS</a>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">FRANCHISE</a>
                                 <a className='dropdown-item' href='/givesback'>GIVING BACK</a>
