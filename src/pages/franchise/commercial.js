@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../../components/section';
-import commercial from '../../images/franchise/commercial.jpeg';
+import commercial from '../../images/franchise/commercial.jpg';
 import './commercial.css';
 
 function Commercial(props) {
