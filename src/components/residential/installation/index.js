@@ -18,8 +18,6 @@ function Installation() {
                     <p className='section-p'>
                         Once the cost and plan is approved, our installation and construction team will provide you with a written time line and project schedule. We stay on schedule from conception to completion.
                         {/* We will stay on task and on schedule and complete the installation of your project from conception to completion. */}
-                        
-                       
                     </p>
                     <a className='cta' href='/locations'>LOCATIONS</a>
                     <ContactModal />

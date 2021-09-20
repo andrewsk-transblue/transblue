@@ -1,0 +1,22 @@
+.givesback-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.givesback-wrapper button {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 0px;
+    border-right: 1px solid gray;
+    border-left: 0px;
+    border-top: 1px solid gray;
+    padding: 12px;
+}
+
+.givesback-wrapper button.active {
+    border-right: 0px;
+}
+
+.givesback-wrapper .header-wrapper .overlay {
+    background-color: transparent !important;
+}

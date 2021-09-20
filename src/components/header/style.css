@@ -39,6 +39,12 @@
     background-position: center center;
 }
 
+.header-wrapper[name='givesback'] {
+    background-image: url('../../images/givesback.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 .header-wrapper[region='northwest'] {
     background-image: url('../../images/franchiseHeaders/northwest.jpg') ;
     background-size: cover;
