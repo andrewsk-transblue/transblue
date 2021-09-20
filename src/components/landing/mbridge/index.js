@@ -6,6 +6,8 @@ import hope from '../../../images/charities/hope2.jpg';
 import card3 from '../../../images/newLanding/card3.png';
 import card4 from '../../../images/newLanding/card4.png';
 import card5 from '../../../images/newLanding/card5.png';
+import whitesnow from '../../../images/landing/whitesnow.png';
+import fire from '../../../images/landing/fire.png';
 import './style.css';
 
 function Mbridge() {
@@ -14,14 +16,35 @@ function Mbridge() {
         <Fragment>
             <div className='card-wrapper container-fluid'>
                 <div className='row'>
-                    <div className='col-12 col-lg-4'>
-                        <img src={card4} alt='' />
+                    <div className='col-12 col-md-6 col-lg-4'>
+                        <div className='card'>
+                            <div className='text'>
+                                <p className='tb-is'>Transblue is</p>
+                                <p className='title'>QUALITY OF LIFE</p>
+                                <p className='body'>Landscapes are more than just backyards. They're birthday parties, holidays, and celebrations with family.</p>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div className='col-12 col-lg-4'>
-                        <img src={card3} alt='' />
+                    <div className='col-12 col-md-6 col-lg-4'>
+                        <div className='card'>
+                        <div className='text'>
+                            <p className='tb-is'>Transblue is</p>
+                            <p className='title'>SAFER WINTERS</p>
+                            <p className='body'>We offer quality snow services that keep your clients safe and your doors open for business.</p>
+                            <img src={whitesnow} alt='' />
+                        </div>
+                        </div>
                     </div>
-                    <div className='col-12 col-lg-4'>
-                        <img src={card5} alt='' />
+                    <div className='col-12 col-md-6 col-lg-4'>
+                        <div className='card'>
+                        <div className='text'>
+                            <p className='tb-is'>Transblue is</p>
+                            <p className='title'>LANDSCAPE DESIGN</p>
+                            <p className='body'>Landscape design enhances your property and increases your home's value.</p>
+                            <img src={fire} alt='' />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

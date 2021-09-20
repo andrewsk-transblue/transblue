@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import Navbar from '../../components/navbar';
 import './style.css';
 
 function GivesBack() {
     return(
-        <div>
-
-        </div>
+        <Fragment>
+            <Navbar />
+        </Fragment>
     )
 }
 
