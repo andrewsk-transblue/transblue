@@ -8,6 +8,7 @@ import card4 from '../../../images/newLanding/card4.png';
 import card5 from '../../../images/newLanding/card5.png';
 import whitesnow from '../../../images/landing/whitesnow.png';
 import fire from '../../../images/landing/fire.png';
+import heart from '../../../images/newLanding/heart.png';
 import './style.css';
 
 function Mbridge() {
@@ -22,7 +23,7 @@ function Mbridge() {
                                 <p className='tb-is'>Transblue is</p>
                                 <p className='title'>QUALITY OF LIFE</p>
                                 <p className='body'>Landscapes are more than just backyards. They're birthday parties, holidays, and celebrations with family.</p>
-                                
+                                <img src={heart} alt='' />
                             </div>
                         </div>
                     </div>
