@@ -120,6 +120,7 @@ class Navbar extends Component {
                                 <a className="dropdown-item" href="/locations">LOCATIONS</a>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">FRANCHISE</a>
+                                <a className='dropdown-item' href='/givesback'>GIVING BACK</a>
                             </div>
                         </li>
                     </ul>

@@ -106,6 +106,7 @@ class MapContainer extends Component {
                                 }}
                             />
                             <select onChange={this.selectRadius} value={this.state.radius} className='ml-2 mr-1' name='radius' id='radius'>
+                                <option value={25}>25mi</option>
                                 <option value={50}>50mi</option>
                                 <option value={75}>75mi</option>
                                 <option value={100}>100mi</option>

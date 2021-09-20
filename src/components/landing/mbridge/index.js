@@ -28,10 +28,11 @@ function Mbridge() {
             <div className='container-fluid stats'>
             <div className='row mx-0'>
                 <div className='col-lg-6 right-text'>
-                    <small className='ml-0'>TRANSBLUE GIVES BACK</small>
-                    <h6>OUR COMMITMENT TO A BETTER COMMUNITY</h6>
-                    <p className='section-p'>Donec id dictum lorem, id sagittis arcu. Vivamus quis convallis sem. In dictum orci at blandit tincidunt. Aenean vestibulum lacinia eleifend. Nulla ipsum erat, interdum at viverra lobortis, luctus sit amet lectus.</p>
-                    <p className='section-p'>Nullam suscipit euismod elit, ut elementum est vehicula at. Curabitur lobortis diam aliquet, fermentum </p>
+                    <h6>BEAUTIFUL COMMUNITIES, INSIDE AND OUT</h6>
+                    <p className='section-p'>At Transblue, we strive to create beautiful communities inside, and out.</p>
+                    <p className='section-p'>
+                    
+                    Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time.</p>
                     <a href='/' className='cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-6'>
@@ -46,7 +47,10 @@ function Mbridge() {
         <div className='container-fluid mbridge'>
             <div className='row mx-0'>
                 <div className='col-lg-12'>
-                    <h4 className='section-header'>TRANSBLUE PARTNERS WITH mBRIDGE</h4>
+                    <div className='title'>
+                    <h4 className='section-header'>TRANSBLUE GIVES BACK</h4>
+                    <div className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at turpis ut velit imperdiet ultricies. Vestibulum sed placerat arcu. Aliquam.</div>
+                    </div>
                     {/* <hr /> */}
                 </div>
             </div>
@@ -56,21 +60,21 @@ function Mbridge() {
                     <p className='text-secondary'>DAWSON PLACE</p>
                     <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
                     <p className='section-p'>Dawsons Place child advocacy center transforms hut to hope for children that have been traumatized by abuse. Transblue has consistently been one of Dawsons’ place primary community supporters.</p>
-                    <a href='/' className='mbridge-cta'>LEARN MORE</a>
+                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
                     <h6>SOFT SLAVERY IN UGANDA</h6>
                     <p className='section-p'>Dee's hope provides young girls a better way.  By providing them security, education, food and shelter, Dee's Hope is helping break young girls out of the nightmare of being someone’s house servant.</p>
-                    <a href='/' className='mbridge-cta'>LEARN MORE</a>
+                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
                     <p className='section-p'>Hope Unlimited through Northwest Incident Support, partners with first responders during crisis situations and provides resources for families during loss or difficult circumstances.</p>
-                    <a href='/' className='mbridge-cta'>LEARN MORE</a>
+                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
             </div>
         </div>
