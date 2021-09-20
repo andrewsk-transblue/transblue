@@ -10,7 +10,7 @@ import fence from '../../../images/residential/carouselFence-min.jpg';
 import turf from '../../../images/residential/carouselTurf-min.jpg';
 import court from '../../../images/residential/carouselCourt-min.jpg';
 //import water from '../../../images/residential/water-min.jpg';
-import retaining from '../../../images/residential/retaining-min.jpg';
+import retaining from '../../../images/residential/retaining.jpg';
 import newWater from '../../../images/residential/carouselWater.jpg';
 import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png'
