@@ -17,7 +17,6 @@ import Map from './map';
 //import Services from './services';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
-import MoreServices from './moreServices';
 //import FranchiseLifestyle from './lifestyle';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer/index';
