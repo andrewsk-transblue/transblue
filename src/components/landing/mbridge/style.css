@@ -1,5 +1,6 @@
 .who-is-tb.card-wrapper {
     margin-top: 80px;
+    width: 93%;
 }
 
 .who-is-tb.card-wrapper img {
@@ -22,6 +23,9 @@
     height: 220px;
     position: relative;
     padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .who-is-tb.card-wrapper .card .text {
