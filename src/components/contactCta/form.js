@@ -21,7 +21,8 @@ function Form(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('testing disabled')
+
+        //send message to incomingleads@transblue.org
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
@@ -31,11 +32,12 @@ function Form(props) {
                     Phone: ${phone}
                     Message: ${message}`
         };
-        // mailgun.messages().send(data, function(error, body) {
-        //     console.log(body)
-        // })
+        mailgun.messages().send(data, function(error, body) {
+            console.log(body)
+        })
         setIsSubmitted(true);
 
+        //add message to database
         let dbData = {
             website: 'GC WEBSITE',
             name: `${firstName} ${lastName}`,
