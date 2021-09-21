@@ -34,13 +34,12 @@ function Footer(props) {
             </div>
             <div className='row mx-0'>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>GENERAL</h1>
+                    <h1>SERVICES</h1>
                     <div className='footer-services-list'>
                         <Link to='/residential'>Residential</Link> <br />
                         <Link to='/commercial'>Commercial</Link><br />
                         <Link to='/multifamily'>Multifamily</Link><br />
                         <Link to='/government'>Government</Link><br />
-                        <Link to='/featured'>Featured Projects</Link>
                         {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
                         <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                     </div>
@@ -59,24 +58,25 @@ function Footer(props) {
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                     <h1>GREEN SERVICES</h1>
                     <div className='footer-services-list'>
-                        <a href='/residential'>About</a> <br />
-                        <a href='/commercial'>Residential</a><br />
-                        <a href='/multifamily'>Commercial</a><br />
-                        <a href='/government'>Multifamily</a><br />
+                        <a href='https://tbev.herokuapp.com/'>About</a> <br />
+                        <a href='https://tbev.herokuapp.com/residential'>Residential</a><br />
+                        <a href='https://tbev.herokuapp.com/commercial'>Commercial</a><br />
+                        <a href='https://tbev.herokuapp.com/multifamily'>Multifamily</a><br />
                     </div>
                 </div>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                     <h1>OTHER</h1>
                     <div className='footer-services-list'>
                         <a href='/'>Home</a> <br />
-                        {!props.franchise &&
-                        <Fragment>
-                            <a href='/'>Contact</a><br />
-                        </Fragment>}
                         {!props.locationPage && 
                         <Fragment>
                             <a href='/locations'>Locations</a><br />    
                         </Fragment>}
+                        <a href='/featured'>Projects</a><br />
+                        {/* {!props.franchise &&
+                        <Fragment>
+                            <a href='/'>Contact</a><br />
+                        </Fragment>} */}
                         <a href='/blog'>Blog</a><br />
                         <a href='/blog'>Franchise</a><br />
                     </div>
@@ -113,7 +113,6 @@ function Footer(props) {
                             <Link to='/commercial'>Commercial</Link><br />
                             <Link to='/multifamily'>Multifamily</Link><br />
                             <Link to='/government'>Government</Link><br />
-                            <Link to='/featured'>Featured Projects</Link>
                             <hr />
                         </div>
                     }
@@ -133,10 +132,10 @@ function Footer(props) {
                     <button onClick={() => setDisplayEV(!displayEV)}>GREEN SERVICES <i className="fas fa-angle-down"></i></button>
                     {displayEV && 
                         <div>
-                            <a href='/residential'>About</a><br />
-                            <a href='/commercial'>Residential</a><br />
-                            <a href='/multifamily'>Commercial</a><br />
-                            <a href='/government'>Multifamily</a><br />
+                            <a href='https://tbev.herokuapp.com/'>About</a><br />
+                            <a href='https://tbev.herokuapp.com/residential'>Residential</a><br />
+                            <a href='https://tbev.herokuapp.com/commercial'>Commercial</a><br />
+                            <a href='https://tbev.herokuapp.com/multifamily'>Multifamily</a><br />
                             <hr />
                         </div>
                     }
@@ -146,6 +145,7 @@ function Footer(props) {
                         <div>
                             <a href='/locations'>LOCATIONS</a><br />    
                         </div>}
+                        <a href='/featured'>PROJECTS</a><br />
                         <div><a href='/blog'>BLOG</a><br /></div>
                         <div><a href='/franchise'>FRANCHISE</a><br /></div>
                         {!props.franchise &&
