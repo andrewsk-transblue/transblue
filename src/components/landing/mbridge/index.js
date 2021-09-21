@@ -1,7 +1,8 @@
 import React, {Fragment} from 'react';
+import heartEarth from '../../../images/newLanding/heart.jpg';
 import dawsonplace from '../../../images/charities/dawsonplace2.png';
 import deeshope from '../../../images/charities/deeshope2.jpg';
-import charity from '../../../images/newLanding/charity.jpeg';
+//import charity from '../../../images/newLanding/charity.jpeg';
 import hope from '../../../images/charities/hope2.jpg';
 //import whitesnow from '../../../images/landing/whitesnow.png';
 import whitesnow from '../../../images/newLanding/snow.png';
@@ -49,21 +50,23 @@ function Mbridge() {
             </div>
             <div className='container-fluid stats'>
             <div className='row mx-0'>
-                <div className='col-lg-6 right-text'>
-                    <h6>BEAUTIFUL COMMUNITIES, INSIDE AND OUT</h6>
-                    <p className='section-p'>At Transblue, we strive to create beautiful communities inside, and out.</p>
-                    <p className='section-p'>
-                    
-                    Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time.</p>
-                    <a href='/' className='cta'>LEARN MORE</a>
-                </div>
-                <div className='col-lg-6'>
+                <div className='col-lg-6 my-auto'>
+                    <img src={heartEarth} alt='' />
                     {/* <div className='image-wrapper'>
                         <div className='overlay'></div>
                         <img src={charity}  alt='community'/>
                         <div className='community-stats centered-text'></div>
                     </div> */}
                 </div>
+                <div className='col-lg-6 left-text'>
+                    <h6>BEAUTIFUL COMMUNITIES, INSIDE AND OUT</h6>
+                    <p className='section-p'>At Transblue, we strive to create beautiful communities inside, and out.</p>
+                    <p className='section-p'>
+                    
+                    Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time.</p>
+                    <a href='/givesback' className='cta'>LEARN MORE</a>
+                </div>
+
             </div>
         </div>
         <div className='container-fluid mbridge'>

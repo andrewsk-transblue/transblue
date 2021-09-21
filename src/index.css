@@ -189,6 +189,7 @@ img.lg-screen-hide {
   } */
   .left-text {
     padding-left: 2rem;
+    padding-right: 2rem;
   }
   .right-text {
     padding-right: 3rem;
