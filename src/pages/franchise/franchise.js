@@ -11,6 +11,7 @@ import Commercial from './commercial.js';
 import Multifamily from './multifamily';
 import Govt from './govt';
 import Green from './green';
+import Snow from './snow';
 import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
@@ -93,6 +94,7 @@ function Franchise(props) {
                 <Multifamily location={easybaseData[0]} />
                 <Govt location={easybaseData[0]} />
                 <Green location={easybaseData[0]} />
+                <Snow location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
 
