@@ -1,6 +1,6 @@
 import { useEasybase } from 'easybase-react';
 import React, {Fragment, Component, useState} from 'react';
-import StoreMsg from '../../utils/db';
+//import StoreMsg from '../../utils/db';
 import Captcha from '../captcha/captcha';
 import './style.css';
 const api_key = process.env.REACT_APP_MAILGUN_API;
@@ -19,18 +19,26 @@ function ContactModal(props) {
 
     const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
 
+    const test = async() => {
+        const test = await db('CONTACT').return().all()
+        console.log(test)
+    }
+
+    test()
+
     function handleSubmit(e) {
         e.preventDefault();
 
-        const data = {
+        let data = {
             website: 'GC WEBSITE',
             name: `${firstName} ${lastName}`,
             phone: phone,
             email: email,
             message: message,
         }
+
         db('CONTACT').insert(data).one()
-        
+ 
     }
 
     return(
