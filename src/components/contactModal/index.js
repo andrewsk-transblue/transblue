@@ -20,16 +20,29 @@ function ContactModal(props) {
     function handleSubmit(e) {
         e.preventDefault();
 
-        let data = {
+        //adding message to database
+        let dbData = {
             website: 'GC WEBSITE',
             name: `${firstName} ${lastName}`,
             phone: phone,
             email: email,
             message: message
         }
+        db('CONTACT').insert(dbData).one()
 
-        db('CONTACT').insert(data).one()
-        //need to set up mailgun here
+        //sending message to incomingleads@transblue.org
+        var data = {
+            from: 'test@test.com',
+            to: 'carters@transblue.org',
+            subject: 'GC Contact Message',
+            text: `Name: ${firstName} ${lastName}
+                    Email: ${email}
+                    Phone: ${phone}
+                    Message: ${message}`
+        };
+        mailgun.messages().send(data, function(error, body) {
+            console.log(body)
+        })
     }
 
     return(
