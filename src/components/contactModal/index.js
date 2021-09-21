@@ -1,9 +1,7 @@
 import { useEasybase } from 'easybase-react';
 import React, {Fragment, Component, useState} from 'react';
-//import StoreMsg from '../../utils/db';
 import Captcha from '../captcha/captcha';
 import './style.css';
-import $ from 'jquery';
 const api_key = process.env.REACT_APP_MAILGUN_API;
 const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
@@ -31,7 +29,7 @@ function ContactModal(props) {
         }
 
         db('CONTACT').insert(data).one()
- 
+        //need to set up mailgun here
     }
 
     return(

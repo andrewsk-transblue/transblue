@@ -37,7 +37,7 @@ function Form(props) {
         setIsSubmitted(true);
 
         let dbData = {
-            website: 'GC Website',
+            website: 'GC WEBSITE',
             name: `${firstName} ${lastName}`,
             email: email,
             phone: phone,

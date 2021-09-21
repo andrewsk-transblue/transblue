@@ -21,7 +21,7 @@ function Mbridge() {
                             <div className='text'>
                                 <p className='tb-is'>Transblue is</p>
                                 <p className='title'>QUALITY OF LIFE</p>
-                                <p className='body'>Landscapes are more than just backyards. They're birthday parties, holidays, and celebrations with family.</p>
+                                <p className='body'>We understand that backyards are more than a beautiful lawn. They're birthday parties, holidays, and celebrations with family.</p>
                                 <img src={heart} alt='' />
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function Mbridge() {
                         <div className='text'>
                             <p className='tb-is'>Transblue is</p>
                             <p className='title'>SAFER WINTERS</p>
-                            <p className='body'>We offer quality snow services that keep your clients safe and your doors open for business.</p>
+                            <p className='body'>We offer snow and ice services that keep your clients safe, and your doors open for business.</p>
                             <img src={whitesnow} alt='' />
                         </div>
                         </div>
@@ -84,21 +84,21 @@ function Mbridge() {
                     <img src={dawsonplace} alt='Dawson Place' />
                     <p className='text-secondary'>DAWSON PLACE</p>
                     <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
-                    <p className='section-p'>Dawsons Place child advocacy center transforms hut to hope for children that have been traumatized by abuse. Transblue has consistently been one of Dawsons’ place primary community supporters.</p>
+                    <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
-                    <h6>SOFT SLAVERY IN UGANDA</h6>
-                    <p className='section-p'>Dee's hope provides young girls a better way.  By providing them security, education, food and shelter, Dee's Hope is helping break young girls out of the nightmare of being someone’s house servant.</p>
+                    <h6>FIGHTING SOFT SLAVERY IN UGANDA</h6>
+                    <p className='section-p'>Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape the nightmare of forced servitude.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <img src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
-                    <p className='section-p'>Hope Unlimited through Northwest Incident Support, partners with first responders during crisis situations and provides resources for families during loss or difficult circumstances.</p>
+                    <p className='section-p'>Through Northwest Incident Support, Hope Unlimited partners with first responders during crisis situations, providing resources for families during loss or difficult circumstances.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
             </div>
