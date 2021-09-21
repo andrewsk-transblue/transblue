@@ -75,7 +75,10 @@ class Carousel extends Component {
 
     right = () => {
         if(this.state.index + 1 < text.length) {
-        this.setState({index: this.state.index+2}, () => (console.log(this.state.index)))
+            if(this.state.cols === 4) {
+                this.setState({index: this.state.index+2})
+            }
+            else this.setState({index: this.state.index+1})
         }
         else {
             this.setState({index: 0})
@@ -84,7 +87,8 @@ class Carousel extends Component {
 
     left = () => {
         if(this.state.index > 0) {
-            this.setState({index: this.state.index-1})
+            if(this.state.cols === 4) this.setState({index: this.state.index-2})
+            else this.setState({index: this.state.index-1})
         }
         else {
             this.setState({index: text.length - 1})
