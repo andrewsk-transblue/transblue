@@ -1,5 +1,5 @@
 .projects-wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     width: 93%;
 }
 
@@ -46,7 +46,7 @@ img.map-marker {
     position: relative;
 }
 
-.card-wrapper .overlay {
+.projects-wrapper .card-wrapper .overlay {
     background-color: rgba(0,0,0,.3);
 }
 

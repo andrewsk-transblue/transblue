@@ -1,8 +1,8 @@
-.card-wrapper {
+.who-is-tb.card-wrapper {
     margin-top: 80px;
 }
 
-.card-wrapper img {
+.who-is-tb.card-wrapper img {
     position: absolute;
     bottom: -20px;
     right: -20px;
@@ -15,7 +15,7 @@
     }
 } */
 
-.card-wrapper .card {
+.who-is-tb.card-wrapper .card {
     background: linear-gradient(116.43deg, #0B56A4 -0.01%, #070E14 103.46%);
     mix-blend-mode: normal;
     padding: 30px;
@@ -24,26 +24,26 @@
     padding: 30px;
 }
 
-.card-wrapper .card .text {
+.who-is-tb.card-wrapper .card .text {
     color: white;
 }
 
-.card-wrapper .card .text .tb-is,
-.card-wrapper .card .text .body {
+.who-is-tb.card-wrapper .card .text .tb-is,
+.who-is-tb.card-wrapper .card .text .body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.card-wrapper .tb-is {
+.who-is-tb.card-wrapper .tb-is {
     margin-bottom: 0px;
     font-weight: 300;
 }
 
-.card-wrapper .text .body {
+.who-is-tb.card-wrapper .text .body {
     font-size: 14px;
     width: 80%;
 }
 
-.card-wrapper .card .text .title {
+.who-is-tb.card-wrapper .card .text .title {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 25px;

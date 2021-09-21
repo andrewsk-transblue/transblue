@@ -40,58 +40,6 @@
     }
 }
 
-/* WHO IS TB CSS */
-
-.who-is-tb {
-    font-family: 'Roboto';
-    color: rgb(192, 192, 192);
-    /* padding: 40px 30px 40px 30px; */
-    padding: 0px;
-    background-color: rgb(37, 37, 37);
-    margin-bottom: 30px;
-}
-
-.who-is-tb small {
-    letter-spacing: .09em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.who-is-tb p:first-of-type {
-    /* padding-bottom: 5px; */
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    /* border-bottom: 1px solid rgb(124, 124, 124); */
-    font-size: 1.4em;
-    letter-spacing: 1.2px;
-    font-weight:lighter;
-    font-family: 'Raleway', sans-serif;
-    /* color: darkorange; */
-    color: rgb(0, 102, 255)
-}
-
-.who-is-tb hr {
-    background-color: rgb(124,124,124);
-    margin-bottom: 10px;
-    margin: 0 auto;
-    height: .5px;
-    width: 80%;
-    border-width: 0;
-}
-
-.who-is-tb p:nth-of-type(2) {
-    line-height: 1.7;
-    font-size: .9em;
-    /* font-size: 16px; */
-    letter-spacing: .07em;
-    margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.who-is-tb img {
-    width: 100%;
-}
-
 .entry {
     /* margin: 0 auto; */
     padding-bottom: 10px;

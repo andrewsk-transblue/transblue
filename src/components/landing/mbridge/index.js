@@ -13,7 +13,7 @@ function Mbridge() {
 
     return(
         <Fragment>
-            <div className='card-wrapper container-fluid'>
+            <div className='who-is-tb card-wrapper container-fluid'>
                 <div className='row'>
                     <div className='col-12 col-md-6 col-lg-4'>
                         <div className='card'>
