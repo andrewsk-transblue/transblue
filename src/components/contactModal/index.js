@@ -47,7 +47,7 @@ function ContactModal(props) {
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <form className='contact-form container-fluid' onSubmit={handleSubmit} >
+                            <form className='contact-form container-fluid' >
                                 <div className='row'>
                                     <h3>{props.location !== undefined ? `${props.location.name.toUpperCase()}` : 'TRANSBLUE GENERAL CONTRACTING'}</h3>
                                     <p className='section-p'>Transblue is a leading provider of construction management services specializing in Multifamily, Residential and Commercial Properties. Expect unmatched efficiency and expertise for all property installations</p>
