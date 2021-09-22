@@ -181,8 +181,8 @@ class Form extends Component {
                             canvasProps={{border: 1}} />}
                         </div>
                         {!this.state.sigSaved && <div className='col-12'>
-                            <button onClick={this.clearSig}>CLEAR</button>
-                            <button onClick={this.trim}>SAVE SIGNATURE</button>                           
+                            <button className='clear' onClick={this.clearSig}>CLEAR</button>
+                            <button className='save' onClick={this.trim}>SAVE SIGNATURE</button>                           
                         </div>}
                         {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
                     </div>

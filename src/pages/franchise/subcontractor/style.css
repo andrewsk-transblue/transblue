@@ -61,6 +61,27 @@
     max-width: 100%;
 }
 
+.subform-wrapper .clear,
+.subform-wrapper .save {
+    background-color: transparent;
+    margin-right: 7px;
+    /* font-family: 'Raleway', sans-serif; */
+    letter-spacing: .05em;
+    padding: 0px 20px;
+}
+
+.subform-wrapper .clear {
+    color: red;
+    border: 2px solid red;
+    border-radius: 0px;
+}
+
+.subform-wrapper .save {
+    color: green;
+    border: 2px solid green;
+    border-radius: 0px;
+}
+
 .subform-wrapper button.cta {
     margin-left: 0px;
     margin-top: 20px;
