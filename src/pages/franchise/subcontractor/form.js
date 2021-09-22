@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component, ref} from 'react';
+import SignatureCanvas from 'react-signature-canvas'
 import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
+
 
 const api_key = process.env.REACT_APP_MAILGUN_API;
 const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
@@ -28,7 +30,8 @@ class Form extends Component {
             insurance: false,
             remoteAccess: false,
             acceptTerms: false,
-            applicationSent: false
+            applicationSent: false,
+            trimmedDataURL: ''
         }
     }
 
@@ -57,7 +60,7 @@ class Form extends Component {
 
         var data = {
             from: 'test@test.com',
-            to: 'carters@transblue.org',
+            to: `carters@transblue.org, ${this.state.email}`,
             subject: 'Subcontractor Application',
             text: ` Business Name: ${this.state.businessName}
                     Name: ${this.state.name}
@@ -77,10 +80,26 @@ class Form extends Component {
                     Ability to access and report information remotely: ${this.state.remoteAccess}`
         };
         //console.log(data)
-        // mailgun.messages().send(data, function(error, body) {
-        //     console.log(body)
-        // })
+        mailgun.messages().send(data, function(error, body) {
+            console.log(body)
+        })
     }
+
+    selectFile = (e) => {
+        var file = e.target.files
+        console.log(file)
+    }
+
+    clearSig = () => {
+        this.sigPad.clear();
+        //console.log('on click:', this.state.trimmedDataURL);
+    }
+        
+    trim = () => {
+        this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png') })
+        this.sigPad.clear();
+    }
+    
     
     render() {
         //console.log(this.props)
@@ -142,8 +161,21 @@ class Form extends Component {
                 </div>
 
                 <div className='row agreement'>
-                    <h6>SUBCONTRACTOR AGREEMENT</h6>                            
+                    <h6>MASTER SUBCONTRACT AGREEMENT</h6>                            
                     <Agreement location={this.props.location} />                           
+                </div>
+
+                <div className='row'>
+                    <span>
+                    <input id='authority' type='radio' onChange={(e) => this.updateRadio(e, true)} required></input>
+                    <label>I have authority to sign on subcontractor's behalf</label>
+                    </span>
+                    <SignatureCanvas minDistance={0} ref={(ref) => { this.sigPad = ref }} />
+                </div>
+                <div className='row'>
+                    <button onClick={this.clearSig}>CLEAR</button>
+                    <button onClick={this.trim}>SAVE SIGNATURE</button>
+                    {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
                 </div>
 
                 <div className='row'>
@@ -156,6 +188,8 @@ class Form extends Component {
                 <div className='row submit'>
                     <button type='submit' disabled={!this.state.acceptTerms} className='cta'>SUBMIT</button>
                 </div>
+
+                {/* <input type='file' onChange={this.selectFile}></input> */}
 
                 {this.state.applicationSent && <div className='application-sent alert alert-success'>
                     Thank you! Your application has been submitted.

@@ -60,7 +60,13 @@
 
 .subform-wrapper input {
     padding-left: 10px;
+    border-radius: 0px;
+    border: 1px solid gray;
 }
+
+/* .subform-wrapper input[type='radio']:checked:after {
+    color: #0b56a4;
+} */
 
 .subform-wrapper input::placeholder {
     font-family: 'Raleway', sans-serif;
@@ -93,7 +99,8 @@
 #liability,
 #insurance,
 #remoteAccess,
-#acceptTerms {
+#acceptTerms,
+#authority {
     margin-right: 5px;
 }
 
