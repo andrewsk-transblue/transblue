@@ -1,10 +1,13 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import { useEasybase } from 'easybase-react';
+import Fade from 'react-reveal/Fade';
 import Navbar from '../../../components/navbar';
 import Form from './form';
+import Footer from '../../../components/footer';
 import './style.css';
 
 function Subcontractor(props) {
+    const [displayAlert, setDisplayAlert] = useState(false);
 
     const [easybaseData, seteasybaseData] = useState([]);
     const { db } = useEasybase();
@@ -21,15 +24,32 @@ function Subcontractor(props) {
 
     //console.log(props)
 
+    // function displayError() {
+    //     setDisplayAlert(true)
+    // }
+
     return(
         <Fragment>
             <Navbar theme='dark' />
-            <div className='subcontractor-wrapper'>
-                <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase()}</h2>
-                <h5>SUBCONTRACTOR APPLICATION</h5>
-                <hr />
-                {easybaseData.length > 0 && <Form location={easybaseData[0]} />}
+            <div className='bg'>
+                <div className='subcontractor-wrapper'>
+                    <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase()}</h2>
+                    <h5>SUBCONTRACTOR APPLICATION</h5>
+                    <hr />
+                    {easybaseData.length > 0 && <Form location={easybaseData[0]} />}
+                    {/* {displayAlert && <div className='alert-wrapper'>
+                        <Fade>
+                            <div className='message-alert'>
+                                <div className='close'>
+                                    <button onClick={() => setDisplayAlert(false)}>X</button>
+                                </div>
+                                PLEASE COMPLETE FORM BEFORE SUBMITTING
+                            </div>
+                        </Fade>
+                    </div>} */}
+                </div>
             </div>
+            <Footer />
         </Fragment>
     )
 }

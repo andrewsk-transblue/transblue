@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
 
@@ -26,7 +27,6 @@ class Form extends Component {
             liability: false,
             insurance: false,
             remoteAccess: false,
-            agreement: '',
             acceptTerms: false,
             applicationSent: false
         }
@@ -42,10 +42,18 @@ class Form extends Component {
         this.setState({[e.target.id]: value})
     } 
 
+    // buttonPress = (enabled) => {
+    //     console.log(enabled)
+    //     if(enabled) this.onSubmit()
+    // }
+
     onSubmit = (e) => {
         e.preventDefault();
         console.log('submitted')
         this.setState({applicationSent: true})
+
+        const email = this.props.location.email
+        console.log(email)
 
         var data = {
             from: 'test@test.com',
@@ -76,6 +84,11 @@ class Form extends Component {
     
     render() {
         //console.log(this.props)
+
+        // let enabled = this.state.businessName.length > 0 && this.state.name.length > 0 && this.state.email.length > 0 && this.state.jobTitle.length > 0 && this.state.address1.length > 0 && this.state.city.length > 0 && this.state.state.length > 0 && this.state.zipcode.length > 0 && this.state.businessPhone.length > 0 && this.state.cellPhone.length > 0 && this.state.EIN.length > 0 && this.state.licenseNo.length > 0 && this.state.acceptTerms
+
+        //console.log(enabled)
+
         return(
             <form className='subform-wrapper'  onSubmit={this.onSubmit}>
                 <div className='row'>
@@ -135,13 +148,13 @@ class Form extends Component {
 
                 <div className='row'>
                     <span>
-                    <input id='acceptTerms' type='radio' checked={this.state.acceptTerms} onChange={(e) => this.updateRadio(e, true)}></input>
+                    <input id='acceptTerms' type='radio' checked={this.state.acceptTerms} onChange={(e) => this.updateRadio(e, true)} required></input>
                     <label>I have read and accept all terms and conditions listed above</label>
                     </span>
                 </div>
 
                 <div className='row submit'>
-                    <button type='submit' className='cta' disabled={!this.state.acceptTerms}>SUBMIT</button>
+                    <button type='submit' disabled={!this.state.acceptTerms} className='cta'>SUBMIT</button>
                 </div>
 
                 {this.state.applicationSent && <div className='application-sent alert alert-success'>
