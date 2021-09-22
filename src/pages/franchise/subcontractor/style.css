@@ -1,7 +1,7 @@
 .subcontractor-wrapper {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 25px;
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     /* position: relative; */
@@ -36,6 +36,8 @@
 .subcontractor-wrapper h2 {
     font-family: 'Raleway', sans-serif;
     color: #0b56a4;
+    font-size: clamp(25px, 2.5vw, 50px);
+    letter-spacing: .05em;
 }
 
 .subcontractor-wrapper h5 {
@@ -139,6 +141,20 @@ label {
 .subform-wrapper .application-sent {
     margin: 20px -15px;
     border-radius: 2px;
+}
+
+@media only screen and (min-width: 576px) {
+    .subcontractor-wrapper {
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .subcontractor-wrapper {
+        width: 80%;
+        padding: 50px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
