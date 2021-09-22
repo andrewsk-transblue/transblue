@@ -56,6 +56,7 @@
 .subform-wrapper canvas {
     border: 1px dashed gray;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .subform-wrapper button.cta {

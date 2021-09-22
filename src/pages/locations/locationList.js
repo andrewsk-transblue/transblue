@@ -32,14 +32,13 @@ class LocationList extends Component {
             longitude: this.props.coords[1]
         }
 
-        //console.log(userLocation)
         for(let i=0; i < this.props.locations.length; i++) {
             let franchiseLocation = {
                 latitude: this.props.locations[i].lat,
                 longitude: this.props.locations[i].lon
             }
-            //console.log(franchiseLocation)
             let distance = geolib.getDistance(userLocation, franchiseLocation) / 1600;
+            
             if(distance < this.props.radius) {
                 locationList.push(this.props.locations[i])
             }

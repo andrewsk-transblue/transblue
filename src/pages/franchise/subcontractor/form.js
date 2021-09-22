@@ -31,7 +31,8 @@ class Form extends Component {
             remoteAccess: false,
             acceptTerms: false,
             applicationSent: false,
-            trimmedDataURL: ''
+            trimmedDataURL: '',
+            sigSaved: false
         }
     }
 
@@ -56,7 +57,7 @@ class Form extends Component {
         this.setState({applicationSent: true})
 
         const email = this.props.location.email
-        console.log(email)
+        //console.log(email)
 
         var data = {
             from: 'test@test.com',
@@ -96,10 +97,9 @@ class Form extends Component {
     }
         
     trim = () => {
-        this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png') })
+        this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png'), sigSaved: true })
         this.sigPad.clear();
     }
-    
     
     render() {
         //console.log(this.props)
@@ -109,7 +109,7 @@ class Form extends Component {
         //console.log(enabled)
 
         return(
-            <form className='subform-wrapper'  onSubmit={this.onSubmit}>
+            <form className='subform-wrapper' onSubmit={this.onSubmit}>
                 <div className='row'>
                     <span>
                         <input className='left-input' placeholder='Business Name' id='businessName' onChange={this.onChange} required></input>
@@ -174,12 +174,16 @@ class Form extends Component {
                 </div>
                 {this.state.authority && 
                     <div className='row'>
-                        <SignatureCanvas 
+                        <div className='col-12'>
+                        {!this.state.sigSaved && <SignatureCanvas 
                             minDistance={0} 
                             ref={(ref) => { this.sigPad = ref }}
-                            canvasProps={{border: 1}} />
-                        <button onClick={this.clearSig}>CLEAR</button>
-                        <button onClick={this.trim}>SAVE SIGNATURE</button>
+                            canvasProps={{border: 1}} />}
+                        </div>
+                        {!this.state.sigSaved && <div className='col-12'>
+                            <button onClick={this.clearSig}>CLEAR</button>
+                            <button onClick={this.trim}>SAVE SIGNATURE</button>                           
+                        </div>}
                         {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
                     </div>
                 }
