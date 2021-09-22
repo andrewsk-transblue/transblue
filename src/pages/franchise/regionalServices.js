@@ -10,6 +10,8 @@ import wkitchen from '../../images/franchise/services/wkitchen.jpg';
 import nepool from '../../images/franchise/services/nepool.jpg';
 import wpool from '../../images/franchise/services/wpool.jpg';
 import nekitchen from '../../images/franchise/services/nekitchen.jpg';
+import spool from '../../images/franchise/services/spool.jpg';
+import spatio from '../../images/franchise/services/spatio.jpg';
 
 const regionalServices = {
     'northwest': {
@@ -30,7 +32,7 @@ const regionalServices = {
     },
     'southwest': {
         services: ['SUNROOMS', 'PATIOS', 'POOLS', 'POOLS'],
-        images: [sunroom, nwpatiocover, pools, pools]
+        images: [sunroom, spatio, spool, pools]
     }
 }
 

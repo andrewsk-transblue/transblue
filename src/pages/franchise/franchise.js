@@ -16,7 +16,6 @@ import Professional from './professional';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
 import Map from './map';
-//import Slideshow from '../../components/slideshow';
 //import Services from './services';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
