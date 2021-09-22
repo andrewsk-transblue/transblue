@@ -42,7 +42,7 @@ let text = [
                 title: 'DECKS',
                 body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
             },{
-                title: 'FENCES',
+                title: 'DECKS & FENCES',
                 body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
             },{
                 title: 'SYNTHETIC TURF',

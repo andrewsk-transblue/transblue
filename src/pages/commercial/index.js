@@ -22,9 +22,13 @@ import simple from '../../images/commercial/simple3.jpg';
 import nextstep4 from '../../images/commercial/nextstep4.png';
 import snow from '../../images/commercial/snow.jpeg';
 import slidesnow from '../../images/commercial/snow.jpg';
+import snowSmall from '../../images/commercial/snowSmall.jpg';
 import asphalt from '../../images/commercial/asphalt4.jpg';
+import asphaltSmall from '../../images/commercial/asphalt4Small.jpg';
 import fence from '../../images/commercial/fence.jpg';
+import fenceSmall from '../../images/commercial/fenceSmall.jpg';
 import solar from '../../images/commercial/solar.jpg';
+import solarSmall from '../../images/commercial/solarSmall.jpg';
 import './style.css';
 
 
@@ -43,6 +47,7 @@ class Commercial extends Component {
                 <Impression />
                 <Slideshow 
                     images={[slidesnow, asphalt, fence, solar]}
+                    smallImages={[snowSmall, asphaltSmall, fenceSmall, solarSmall]}
                     text={[
                         {
                             p1: "KEEP YOUR BUSINESS DOORS OPEN",
