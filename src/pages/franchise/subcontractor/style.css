@@ -53,6 +53,11 @@
     margin-top: 30px;
 }
 
+.subform-wrapper canvas {
+    border: 1px dashed gray;
+    margin-bottom: 30px;
+}
+
 .subform-wrapper button.cta {
     margin-left: 0px;
     margin-top: 20px;

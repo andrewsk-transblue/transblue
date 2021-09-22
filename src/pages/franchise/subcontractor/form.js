@@ -42,7 +42,7 @@ class Form extends Component {
     updateRadio = (e, value) => {
         //console.log(typeof e.target.value)
         //console.log(this.state[e.target.id])
-        this.setState({[e.target.id]: value})
+        this.setState({[e.target.id]: value}, () => console.log(this.state[e.target.id]))
     } 
 
     // buttonPress = (enabled) => {
@@ -170,13 +170,19 @@ class Form extends Component {
                     <input id='authority' type='radio' onChange={(e) => this.updateRadio(e, true)} required></input>
                     <label>I have authority to sign on subcontractor's behalf</label>
                     </span>
-                    <SignatureCanvas minDistance={0} ref={(ref) => { this.sigPad = ref }} />
+                    
                 </div>
-                <div className='row'>
-                    <button onClick={this.clearSig}>CLEAR</button>
-                    <button onClick={this.trim}>SAVE SIGNATURE</button>
-                    {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
-                </div>
+                {this.state.authority && 
+                    <div className='row'>
+                        <SignatureCanvas 
+                            minDistance={0} 
+                            ref={(ref) => { this.sigPad = ref }}
+                            canvasProps={{border: 1}} />
+                        <button onClick={this.clearSig}>CLEAR</button>
+                        <button onClick={this.trim}>SAVE SIGNATURE</button>
+                        {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
+                    </div>
+                }
 
                 <div className='row'>
                     <span>
