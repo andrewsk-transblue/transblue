@@ -38,8 +38,8 @@
     margin-bottom: 10px;
 }
 
-.professional-wrapper button.cta {
-    display: block;
+.professional-wrapper .contact-modal {
+    display: inline-block;
     margin: 0 auto;
     margin-top: 40px;
 }

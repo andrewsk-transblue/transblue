@@ -35,9 +35,7 @@ function Professional(props) {
                         <h5>GREAT COMMUNICATION</h5>
                         <p className='section-p body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
                     </div>
-                </div>
-                <div className='row'>
-                    <div className='col-lg-12 contact-modal'>
+                    <div className='contact-modal'>
                         <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} />
                     </div>
                 </div>
