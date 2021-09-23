@@ -8,8 +8,8 @@
 }
 
 .franchise-snow h2 {
-    color: white;
-    /* color: #0b56a4; */
+    /* color: white; */
+    color: #0b56a4;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 25px;
 }
@@ -30,7 +30,6 @@
     margin-bottom: 30px;
     margin-top: 0px;
     font-family: 'Raleway', sans-serif;
-    color: rgb(196,196,196);
 }
 
 .franchise-snow .section-header {
@@ -49,4 +48,8 @@
 
 .franchise-snow .card hr {
     margin: 0 0 .7rem 0;
+}
+
+.franchise-snow button.cta:hover {
+    background-color: transparent;
 }
