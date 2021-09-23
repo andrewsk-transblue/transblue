@@ -30,8 +30,8 @@ function Snow(props) {
 
                     </div>
                     <div className='col-12 col-lg-8'>
-                        <div className='card-deck'>
-                            <div className='snow-card card'>
+                        <div className='card-deck row'>
+                            <div className='col-12 col-lg-6 card'>
                                 <h3 className='section-header'>OUR SERVICES</h3>
                                 <hr />
                                 <div className='section-p'>
@@ -46,7 +46,7 @@ function Snow(props) {
                                     Rooftop clearing
                                 </div>
                             </div>
-                            <div className='snow-card card'>
+                            <div className='col-12 col-lg-6 card'>
                                 <h3 className='section-header'>OUR CLIENTS</h3>
                                 <hr />
                                 <div className='section-p'>

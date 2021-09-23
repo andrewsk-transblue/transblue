@@ -44,11 +44,11 @@ class Navbar extends Component {
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
                 </a>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
-                {this.props.franchise && 
+                {/* {this.props.franchise && 
                     <div className='franchise-contact'>
                         <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <br />
                         <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
-                    </div>}
+                    </div>} */}
 
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -56,6 +56,12 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse flex-md-column" id="navbarNav">
                     {this.props.franchise && 
                     <ul className="navbar-nav ml-auto">
+                        <li className='nav-item ml-auto'>
+                            <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state}
+                        </li>
+                        <li className='nav-item ml-auto'>
+                            <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
+                        </li>
                         <li className="nav-item ml-auto">
                             <a className="nav-link py-0" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
                         </li>

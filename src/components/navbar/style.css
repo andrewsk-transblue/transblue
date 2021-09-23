@@ -15,8 +15,8 @@ nav.navbar {
 
 nav .navbar-nav li a,
 nav button,
-nav .franchise-contact,
-nav .franchise-contact a {
+nav .navbar-collapse,
+nav .navbar-collapse a {
     color: white !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -24,10 +24,6 @@ nav .franchise-contact a {
     letter-spacing: .05em;
 }
 
-nav .franchise-contact,
-nav .franchise-contact a {
-    font-size: 12px;
-}
 nav .navbar-nav li a,
 nav button {
     font-size: 15px;
@@ -41,8 +37,9 @@ nav .navbar-collapse {
     margin-top: 20px;
 }
 
-nav .franchise-contact i {
+nav .navbar-collapse i {
     margin-right: 7px;
+    margin-left: 7px;
 }
 
 nav button {
