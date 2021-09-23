@@ -4,10 +4,12 @@
 .franchise-snow {
     padding: 50px;
     margin-bottom: 80px;
+    background-image: url('../../images/franchise/snowbg.jpg');
 }
 
 .franchise-snow h2 {
-    color: #0b56a4;
+    color: white;
+    /* color: #0b56a4; */
     font-family: 'Raleway', sans-serif;
     margin-bottom: 25px;
 }
@@ -28,6 +30,7 @@
     margin-bottom: 30px;
     margin-top: 0px;
     font-family: 'Raleway', sans-serif;
+    color: rgb(196,196,196);
 }
 
 .franchise-snow .section-header {
@@ -41,7 +44,7 @@
     background-color: white;
     padding: 30px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.15);
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .franchise-snow .card hr {

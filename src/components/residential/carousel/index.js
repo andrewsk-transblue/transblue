@@ -111,7 +111,7 @@ class Carousel extends Component {
     return(
         <div className='container-fluid carousel px-0'>
             <h2>GET INSPIRED</h2>
-            <p>TRANSBLUE RESIDENTIAL SERVICES</p>
+            <p>FEATURED RESIDENTIAL SERVICES</p>
             {/* <h2>RESIDENTIAL SERVICES</h2> */}
             <hr />
             <div className='row mx-0'>

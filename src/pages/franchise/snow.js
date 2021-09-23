@@ -17,7 +17,7 @@ import './snow.css';
 
 function Snow(props) {
     return(
-        <div className='franchise-snow bg-light'>
+        <div className='franchise-snow'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12 col-lg-4 my-auto right-text'>
