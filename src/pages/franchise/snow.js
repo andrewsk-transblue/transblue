@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../../components/section';
+import snowflake from '../../images/franchise/snow.png';
 import './snow.css';
 
 // function Snow(props) {
@@ -15,7 +16,6 @@ import './snow.css';
 // }
 
 function Snow(props) {
-
     return(
         <div className='franchise-snow bg-light'>
             <div className='container-fluid'>
@@ -23,9 +23,8 @@ function Snow(props) {
                     <div className='col-12 col-lg-4 my-auto right-text'>
                         <h2>SNOW &amp; ICE MANAGEMENT</h2>
                         <p>
-                            Transblue has been providing snow and ice management for nearly 20 years. Let Transblue take care of your property this winter.
-                            {/* At Transblue, we know that quality and cost are the driving forces behind choosing the right snow removal partner for your brand's locations.
-                            Our comprehensive snow removal management plans will help stay on budget, cost control initiatives, project planning and management, and environmental impacts that face your brand's image every day. */}
+                            As a leader in snow and ice management, we understand what your property needs this winter.
+                            {/* Transblue is a leading provider of snow and ice management services. Let Transblue take care of your property this winter. */}                           
                         </p>
                         <a className='cta' href='https://tbsnow.herokuapp.com'>SNOW WEBSITE</a>
 
@@ -60,7 +59,7 @@ function Snow(props) {
                                     Industrial parks<br />
                                     Airports<br />
                                     Medical Facilities<br />
-                                    Federal, state, and local government agencies.<br />
+                                    Federal, state, and local government agencies<br />
                                     Apartments, Condos, HOA’s
                                 </div>
                             </div>
