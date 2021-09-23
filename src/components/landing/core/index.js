@@ -6,10 +6,10 @@ function Core() {
     return(
         <div className='core-wrapper container-fluid d-none d-lg-block'>
             <div className='row'>
-                <div className='col-12 col-md-6 col-lg-5 text-center'>
+                <div className='col-12 col-md-6 col-lg-6 text-center my-auto'>
                     <img src={core} alt='Core Values' />
                 </div>
-                <div className='col-12 col-md-6 col-lg-7 my-auto pl-5'>
+                <div className='col-12 col-md-6 col-lg-6 my-auto pl-5'>
                     <h4 className='section-header'>HAVE GRIT</h4>
                     <p className='section-p'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque malesuada nunc in varius. Phasellus placerat magna at justo semper.

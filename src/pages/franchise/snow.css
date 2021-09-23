@@ -1,0 +1,43 @@
+.franchise-snow .container-fluid {
+    width: 93%;
+}
+.franchise-snow {
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+.franchise-snow h2 {
+    color: #0b56a4;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+}
+
+/* .franchise-snow .section-p {
+    margin-bottom: 25px;
+    font-size: 16px;
+} */
+
+.franchise-snow p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.franchise-snow .section-header {
+    margin-top: 0 !important;
+    font-size: clamp(20px, 1.7vw, 28px);
+    margin-bottom: .5rem;
+}
+
+.franchise-snow .card {
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.15);
+    margin-left: 30px;
+}
+
+.franchise-snow .card hr {
+    margin: 0 0 .7rem 0;
+}

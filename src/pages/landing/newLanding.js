@@ -32,6 +32,7 @@ function NewLanding() {
             
                 <Mission />
                 {/* <Here /> */}
+                <Core3 />
                 <Core />
                 <Core2 />
                 {/* <Core3 /> */}
