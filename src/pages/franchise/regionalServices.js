@@ -12,6 +12,9 @@ import wpool from '../../images/franchise/services/wpool.jpg';
 import nekitchen from '../../images/franchise/services/nekitchen.jpg';
 import spool from '../../images/franchise/services/spool.jpg';
 import spatio from '../../images/franchise/services/spatio.jpg';
+import mwpatio from '../../images/franchise/services/mwpatio.jpg';
+import mwpool from '../../images/franchise/services/mwpool.jpg';
+import mwdeck from '../../images/franchise/services/mwdeck.jpg';
 
 const regionalServices = {
     'northwest': {
@@ -27,8 +30,8 @@ const regionalServices = {
         images: [nwpatiocover , nwfirepit, nepool, nekitchen]
     },
     'midwest': {
-        services: ['SUNROOMS', 'PATIOS', 'DECKS', 'PAVERS'],
-        images: [sunroom, nwfirepit, nwretaining, nwkitchen]
+        services: ['SUNROOMS', 'POOLS', 'PATIOS', 'DECKS'],
+        images: [sunroom, mwpool, mwpatio, mwdeck]
     },
     'southwest': {
         services: ['SUNROOMS', 'PATIOS', 'POOLS', 'POOLS'],
