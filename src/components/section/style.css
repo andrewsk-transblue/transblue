@@ -12,12 +12,25 @@
     margin-top: 15px;
 }
 
-.section-wrapper .left-text .contact,
-.section-wrapper .right-text .contact {
+.section-wrapper .contact {
     border-left: 5px solid #0b56a4;
     margin-left: 0rem;
     margin: 30px 0 0 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     /* border: 1px solid red; */
+}
+
+.section-wrapper .contact-small {
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    border-left: 5px solid #0b56a4;
+    margin-left: 0rem;
+    margin: 0px 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.section-wrapper .section-header {
+    margin-top: 0;
 }
