@@ -5,7 +5,7 @@ import back from '../../images/residential/back.png';
 import line from '../../images/line.png';
 import './style.css';
 
-import east from '../../images/franchise/residential/east.jpeg';
+import east from '../../images/franchise/residential/east.png';
 import east2 from '../../images/franchise/residential/east2.jpg';
 import east3 from '../../images/franchise/residential/east3.jpg';
 import east4 from '../../images/franchise/residential/east4.jpg';
@@ -22,7 +22,7 @@ import southwest2 from '../../images/franchise/residential/southwest2.jpg';
 import southwest3 from '../../images/franchise/residential/southwest3.jpg';
 import southwest4 from '../../images/franchise/residential/southwest4.jpg';
 import midwest from '../../images/franchise/residential/midwest.jpeg';
-import midwest2 from '../../images/franchise/residential/midwest2.jpeg';
+import midwest2 from '../../images/franchise/residential/midwest2.jpg';
 import midwest3 from '../../images/franchise/residential/midwest3.jpeg';
 import midwest4 from '../../images/franchise/residential/midwest4.jpeg';
 

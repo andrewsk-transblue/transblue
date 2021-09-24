@@ -58,8 +58,8 @@ function Mbridge() {
                         <div className='community-stats centered-text'></div>
                     </div> */}
                 </div>
-                <div className='col-lg-6 left-text my-auto'>
-                    <h6>BEAUTIFUL COMMUNITIES, INSIDE AND OUT</h6>
+                <div className='col-lg-6 right-text my-auto'>
+                    <h6>BEAUTIFUL COMMUNITIES, <br />INSIDE AND OUT</h6>
                     <p className='section-p'>At Transblue, we strive to create beautiful communities inside, and out.</p>
                     <p className='section-p'>
                     
