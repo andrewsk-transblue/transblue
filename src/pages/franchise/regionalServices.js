@@ -27,8 +27,8 @@ const regionalServices = {
         images: [nwpatiocover , nwfirepit, nepool, nekitchen]
     },
     'midwest': {
-        services: ['POOLS', 'SYNTHETIC TURF', 'DECKS', 'PAVERS'],
-        images: [pools, nwfirepit, nwretaining, nwkitchen]
+        services: ['SUNROOMS', 'PATIOS', 'DECKS', 'PAVERS'],
+        images: [sunroom, nwfirepit, nwretaining, nwkitchen]
     },
     'southwest': {
         services: ['SUNROOMS', 'PATIOS', 'POOLS', 'POOLS'],

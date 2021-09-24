@@ -20,7 +20,8 @@ class MapContainer extends Component {
             displayMiles: false,
             radius: 50,
             locations: [],
-            disabled: true
+            disabled: true,
+            loading: false
         }
     }
 
@@ -72,6 +73,7 @@ class MapContainer extends Component {
     }
 
     searchLocation = (location_id) => {
+        this.setState({loading: true})
         //console.log(location_id)
         //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
         axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city or address, filter locationList to locations within radius
@@ -79,7 +81,8 @@ class MapContainer extends Component {
                 this.setState({
                     radius: 50,
                     center: [res.data.result.geometry.location.lat, res.data.result.geometry.location.lng],
-                    showLocations: true
+                    showLocations: true,
+                    loading: false
                 })
             })
         }
@@ -117,7 +120,11 @@ class MapContainer extends Component {
                             </select>
                             <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
-                        <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
+                        <div class="d-flex align-items-center">
+                            <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
+                            {this.state.loading && <div className="spinner-border ml-auto text-primary" role="status" aria-hidden="true"></div>}
+                        </div>
+                            
                         <div className='search-results mt-2 pl-3'>
                             <div className='col-lg-12 location-list'>
                                 {this.state.center.length > 0 && <LocationList locations={this.props.locations} coords={this.state.center} radius={this.state.radius} zoomLocation={(lat, lon) => this.zoomLocation(lat, lon)} />}
