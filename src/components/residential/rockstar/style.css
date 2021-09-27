@@ -17,7 +17,8 @@
 
 .rockstar-wrapper .text {
     position: absolute;
-    top: 70%;
+    /* top: 70%; */
+    bottom: 2%;
     width: 95%;
     /* left: 40px; */
     color: white;
@@ -68,9 +69,9 @@
     /* .rockstar-wrapper .text p {
         margin-left: 40px;
     } */
-    .rockstar-wrapper .text {
-        top: 85%;
-    }
+    /* .rockstar-wrapper .text {
+        top: 75%;
+    } */
     #forward {
         width: 50px;
     }
@@ -84,9 +85,9 @@
         width: 50px;
         margin-top: .5rem;
     }
-    .rockstar-wrapper .text {
+    /* .rockstar-wrapper .text {
         top: 90%;
-    }
+    } */
 
     .rockstar-wrapper .text h3 {
         font-size: 35px;
@@ -102,13 +103,13 @@
 @media only screen and (min-width: 975px) {
     #drop {
         width: 70px;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
     #forward {
         width: 80px;
     }
     .rockstar-wrapper .text {
-        top: 90%;
+        /* top: 90%; */
         left: 40px;
     }
     .rockstar-wrapper .text h3 {
