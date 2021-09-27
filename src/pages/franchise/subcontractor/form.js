@@ -76,20 +76,41 @@ class Form extends Component {
         console.log(filledForm)
 
         
-        doc.text(filledForm, 10, 10);
-        doc.save("a4.pdf");
+       // doc.text(, 10, 10);
+        const splitText = doc.splitTextToSize(filledForm, 180)
+        //var splitTitle = doc.splitTextToSize(reportTitle, 180);
+        //doc.text(15,20, splitText)
+        //doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, 40, 180, 160);
+        //doc.save("a4.pdf");
+
+
+        var splitTitle = doc.splitTextToSize(filledForm, 270);
+        var pageHeight = doc.internal.pageSize.height;
+        //doc.setFontType("normal");
+        //doc.setFontSize("11");
+        doc.setFontSize(11);
+        var y = 7;
+        for (var i = 0; i < splitTitle.length; i++) {                
+            if (y > 270) {
+                y = 10;
+                doc.addPage();
+            }
+            doc.text(15, y, splitTitle[i]);
+            y = y + 7;
+        }
+        doc.save('my.pdf');
 
 
         var data = {
             from: 'test@test.com',
-            to: `carters@transblue.org`,
+            to: this.state.email,
             subject: 'Subcontractor Application',
             text: ` Business Name: ${this.state.businessName}
                     Name: ${this.state.name}
                     Job Title: ${this.state.jobTitle}
                     Email: ${this.state.email}
                     Business Phone: ${this.state.businessPhone}
-                    Cell Phone: ${this.state.phone}
+                    Cell Phone: ${this.state.cellPhone}
                     Address: ${this.state.address1}
                     Address Line 2: ${this.state.address2}
                     City: ${this.state.city}
@@ -99,7 +120,9 @@ class Form extends Component {
                     Contractor License Number: ${this.state.licenseNo}
                     Comprehensive Liability Insurance: ${this.state.liability}
                     Certificate of Insurance: ${this.state.insurance}
-                    Ability to access and report information remotely: ${this.state.remoteAccess}`
+                    Ability to access and report information remotely: ${this.state.remoteAccess}
+                    
+                    Subcontractor Agreement: ${filledForm}`
         };
         //console.log(data)
         mailgun.messages().send(data, function(error, body) {
@@ -107,10 +130,10 @@ class Form extends Component {
         })
     }
 
-    selectFile = (e) => {
-        var file = e.target.files
-        console.log(file)
-    }
+    // selectFile = (e) => {
+    //     var file = e.target.files
+    //     console.log(file)
+    // }
 
     clearSig = () => {
         this.sigPad.clear();
