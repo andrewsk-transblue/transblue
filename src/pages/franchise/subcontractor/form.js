@@ -68,29 +68,19 @@ class Form extends Component {
         today = mm + '/' + dd + '/' + yyyy;
         console.log(today)
 
-        const doc = new jsPDF();
+        const doc = new jsPDF({lineHeight: 1.5});
 
 
         var filledForm = this.props.location.variableagreement.replaceAll('${name}', this.state.name).replaceAll('${date}', today)
-        console.log(this.state.name)
-        console.log(filledForm)
-
         
-       // doc.text(, 10, 10);
-        const splitText = doc.splitTextToSize(filledForm, 180)
-        //var splitTitle = doc.splitTextToSize(reportTitle, 180);
-        //doc.text(15,20, splitText)
-        //doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, 40, 180, 160);
-        //doc.save("a4.pdf");
-
-
         var splitTitle = doc.splitTextToSize(filledForm, 270);
-        var pageHeight = doc.internal.pageSize.height;
-        //doc.setFontType("normal");
-        //doc.setFontSize("11");
+
+        //var pageHeight = doc.internal.pageSize.height;
         doc.setFontSize(11);
         var y = 7;
-        for (var i = 0; i < splitTitle.length; i++) {                
+
+        for (var i = 0; i < splitTitle.length; i++) {    
+                       
             if (y > 270) {
                 y = 10;
                 doc.addPage();
@@ -98,6 +88,9 @@ class Form extends Component {
             doc.text(15, y, splitTitle[i]);
             y = y + 7;
         }
+
+        doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, y, 25, 25);
+        doc.text('X_____________________________', 15, y+7)
         doc.save('my.pdf');
 
 
