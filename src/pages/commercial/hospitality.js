@@ -24,7 +24,7 @@ function Hospitality() {
             <h4 className='section-header hospitality-header'>
                 YOU CAN COUNT ON TRANSBLUE
             </h4>
-            <p className='section-p'>We're a one-stop shop for all your commercial construction needs.</p>
+            <p className='section-p'>We're a one-stop shop for all your commercial landscape construction needs.</p>
 
             <div className='row'>
                 <div className='col-12 col-md-6 col-lg-4'>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import drop from '../../../images/residential/drop.png';
 import monohan6 from '../../../images/residential/monohan6.jpg';
+import monohan6small from '../../../images/residential/monohan6small.jpg';
 import forward from '../../../images/residential/forward.png';
 import retainingdrops from '../../../images/residential/retainingdrops.jpg';
 import monohan4 from '../../../images/residential/monohan4.jpg';
@@ -23,10 +24,12 @@ function Rockstar() {
     }
     return(
         <div className='rockstar-wrapper container-fluid px-0'>
-            <img src={images[index]} alt='' />
+            {/* <img src={images[index]} alt='' /> */}
+            <img src={monohan6small} alt='' />
             <div className='text row mx-0 px-0'>
-                <div className='col-lg-10 col-10 my-auto'>
-                    <h3><img id='drop' src={drop} alt='' />DROPS OF JUPITER</h3>
+                <div className='col-2'><img id='drop' src={drop} alt='' /></div>
+                    <div className='col-8 my-auto'>
+                    <h3>DROPS OF JUPITER</h3>
                     <p>The Pat Monahan Project</p>
                 </div>
                 <div className='col-lg-2 col-2 my-auto text-center'>

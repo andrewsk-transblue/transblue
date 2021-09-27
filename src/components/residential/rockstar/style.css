@@ -9,13 +9,15 @@
 
 #drop {
     width: 20px;
+    width: 40px;
     /* width: 55px; */
     margin-right: 10px;
+    margin-top: 1rem;
 }
 
 .rockstar-wrapper .text {
     position: absolute;
-    top: 75%;
+    top: 70%;
     width: 95%;
     /* left: 40px; */
     color: white;
@@ -25,16 +27,17 @@
     letter-spacing: 3.8px;
     /* font-size: 4vw; */
     font-size: 4.8vw;
+    font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
 .rockstar-wrapper .text p {
     font-size: 2.2vw;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-left: 30px;
 }
 
 .rockstar-wrapper .text button {

@@ -90,9 +90,8 @@ class Form extends Component {
         }
 
         doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, y, 25, 25);
-        doc.text('X_____________________________', 15, y+7)
-        doc.save('my.pdf');
-
+        doc.text('X_____________________________', 15, y+32)
+        //doc.save('my.pdf');
 
         var data = {
             from: 'test@test.com',
@@ -115,7 +114,7 @@ class Form extends Component {
                     Certificate of Insurance: ${this.state.insurance}
                     Ability to access and report information remotely: ${this.state.remoteAccess}
                     
-                    Subcontractor Agreement: ${filledForm}`
+                    Subcontractor Agreement: ${filledForm}`,
         };
         //console.log(data)
         mailgun.messages().send(data, function(error, body) {
