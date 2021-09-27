@@ -3,6 +3,12 @@
     background-color: white;
 }
 
+.professional-wrapper .body {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
 .professional-wrapper .container-fluid {
     width: 93%;
 }
@@ -42,4 +48,11 @@
     display: inline-block;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+@media only screen and (min-width: 975px) {
+    .professional-wrapper .body {
+        width: 100%;
+        margin-bottom: 0px;
+    }
 }

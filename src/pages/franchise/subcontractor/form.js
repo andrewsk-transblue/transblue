@@ -93,6 +93,21 @@ class Form extends Component {
         doc.text('X_____________________________', 15, y+32)
         //doc.save('my.pdf');
 
+        //console.log(doc.output('arraybuffer'))
+
+        //let arrayBuffer = doc.output('arraybuffer');
+
+        // var bufferObject = new Buffer.alloc(arrayBuffer.byteLength)
+        // for (var i = 0; i < arrayBuffer.length; i++) {
+        //     bufferObject[i] = arrayBuffer[i];
+        // }
+
+        //console.log(typeof bufferObject)
+
+        //var blob = doc.output('blob')
+
+        //console.log(doc.output('blob'))
+
         var data = {
             from: 'test@test.com',
             to: this.state.email,
@@ -113,8 +128,8 @@ class Form extends Component {
                     Comprehensive Liability Insurance: ${this.state.liability}
                     Certificate of Insurance: ${this.state.insurance}
                     Ability to access and report information remotely: ${this.state.remoteAccess}
-                    
                     Subcontractor Agreement: ${filledForm}`,
+           // attachment: [bufferObject]
         };
         //console.log(data)
         mailgun.messages().send(data, function(error, body) {

@@ -117,7 +117,7 @@ function Multifamily() {
                     }} /> */}
                 <ServiceList
                 title='MULTIFAMILY SERVICES'
-                subtitle=''
+                //subtitle='Transblue is your construction resource. We offer a wide variety of services to fit your specific needs, contact us today to discuss your project.'
                 img={services}
                 services={[
                     'Snow and Ice Management',
