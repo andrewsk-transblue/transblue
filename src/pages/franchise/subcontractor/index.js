@@ -33,7 +33,7 @@ function Subcontractor(props) {
             <Navbar theme='dark' />
             <div className='bg'>
                 <div className='subcontractor-wrapper'>
-                    <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase()}</h2>
+                    <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase().replace('-', ' ')}</h2>
                     <h5>SUBCONTRACTOR APPLICATION</h5>
                     <hr />
                     {easybaseData.length > 0 && <Form location={easybaseData[0]} />}

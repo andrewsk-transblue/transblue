@@ -1,5 +1,6 @@
 import React, {Component, ref} from 'react';
-import SignatureCanvas from 'react-signature-canvas'
+import SignatureCanvas from 'react-signature-canvas';
+import { jsPDF } from "jspdf";
 import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
@@ -59,9 +60,29 @@ class Form extends Component {
         const email = this.props.location.email
         //console.log(email)
 
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+        console.log(today)
+
+        const doc = new jsPDF();
+
+
+        var filledForm = this.props.location.variableagreement.replaceAll('${name}', this.state.name).replaceAll('${date}', today)
+        console.log(this.state.name)
+        console.log(filledForm)
+
+        
+        doc.text(filledForm, 10, 10);
+        doc.save("a4.pdf");
+
+
         var data = {
             from: 'test@test.com',
-            to: `carters@transblue.org, ${this.state.email}`,
+            to: `carters@transblue.org`,
             subject: 'Subcontractor Application',
             text: ` Business Name: ${this.state.businessName}
                     Name: ${this.state.name}
