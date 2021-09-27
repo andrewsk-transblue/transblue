@@ -27,8 +27,8 @@ function Rockstar() {
             {/* <img src={images[index]} alt='' /> */}
             <img src={monohan6small} alt='' />
             <div className='text row mx-0 px-0'>
-                <div className='col-2'><img id='drop' src={drop} alt='' /></div>
-                    <div className='col-8 my-auto'>
+                <div className='text-center col-2 col-sm-1'><img id='drop' src={drop} alt='' /></div>
+                    <div className='col-8 col-sm-9 my-auto'>
                     <h3>DROPS OF JUPITER</h3>
                     <p>The Pat Monahan Project</p>
                 </div>
