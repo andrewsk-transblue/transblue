@@ -7,6 +7,7 @@ import concrete from '../../../images/residential/concrete.jpg'
 //import pavers from '../../../images/residential/carouselPavers-min.jpg';
 import pavers2 from '../../../images/residential/paver.jpg';
 import pool from '../../../images/residential/carouselPool-min.jpg';
+import outdoor from '../../../images/residential/outdoor3.jpg';
 import deck from '../../../images/residential/carouselDeck-min.jpg';
 import fence from '../../../images/residential/carouselFence-min.jpg';
 //import turf from '../../../images/residential/carouselTurf-min.jpg';
@@ -21,7 +22,7 @@ import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png';
 import './style.css';
 
-let images = [kitchen, pool, concrete, pavers2, turf, retaining, sunroom, newWater, patio];
+let images = [kitchen, pool, concrete, pavers2, turf, retaining, sunroom, patio, outdoor ];
 let text = [
             
             {
@@ -44,12 +45,13 @@ let text = [
                 body: ''
             },{
                 title: 'SUNROOMS',
-                body: 'L'
-            },{
-                title: 'WATER FEATURES',
                 body: ''
-            }, {
+            },
+            {
                 title: 'COVERED PATIOS',
+                body: ''
+            },{
+                title: 'OUTDOOR FEATURES',
                 body: ''
             }
             //  {
