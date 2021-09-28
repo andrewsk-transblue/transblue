@@ -30,19 +30,19 @@ import ServiceModal from '../../components/serviceModal';
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
     const [services, setServices] = useState({})
-    //const [areas, setAreas] = useState({})
     const { db, e } = useEasybase();
+    let userLocation = []
 
     useEffect(() => {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-            //console.log(JSON.parse(ebData[0].citylist))
             seteasybaseData(ebData);
-            //console.log(regionalServices[ebData[0].region])
             setServices(regionalServices[ebData[0].region])
-            //console.log(ebData[0])
-            // setCities(JSON.parse(ebData[0].citylist))
-            // setZipcodes(JSON.parse(ebData[0].zipcodelist))
+            if('geolocation' in navigator) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    userLocation = [position.coords.latitude, position.coords.longitude]
+                })
+            }
         }
          mounted();
     }, [])
@@ -114,7 +114,7 @@ function Franchise(props) {
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
                             <div className='col-md-6 col-12'>
-                                {easybaseData[0].lat > 0 && <Map lat={easybaseData[0].lat} lon={easybaseData[0].lon} geojson={JSON.parse(easybaseData[0].geojson)} />}
+                                {easybaseData[0].lat > 0 && <Map userLocation={userLocation} lat={easybaseData[0].lat} lon={easybaseData[0].lon} geojson={JSON.parse(easybaseData[0].geojson)} />}
                             </div>
                         </div>
                     </div>

@@ -21,42 +21,42 @@ const projects = [
     {
         img: labrynth,
         title: 'WINDERMERE LABRYNTH GARDEN',
-        location: 'SEATTLE, WA'
+        location: 'TRANSBLUE SEATTLE'
     },
     {
         img: floralHills,
         title: 'FLORAL HILLS BACKYARD REFRESHMENT',
-        location: 'BOTHELL, WA'
+        location: 'TRANSBLUE BELLEVUE'
     },
     {
         img: retainingdrops,
         title: 'RETAINING DROPS',
-        location: 'SEATTLE, WA'
+        location: 'TRANSBLUE SEATTLE'
     },
     {
         img: magnolia,
         title: 'MAGNOLIA PAVED DRIVEWAY',
-        location: 'SEATTLE, WA'
+        location: 'TRANSBLUE BALLARD'
     },
     {
         img: maplewood,
         title: 'MAPLEWOOD RETAINING WALL',
-        location: 'MAPLEWOOD, WA'
+        location: 'TRANSBLUE SEATTLE'
     },
     {
         img: urbanoasis,
         title: 'URBAN OASIS',
-        location: 'SEATTLE, WA'
+        location: 'TRANSBLUE SEATTLE'
     },
     {
         img: hoaroofing,
         title: 'HOA ROOFING',
-        location: 'NORTH SEATTLE, WA'
+        location: 'TRANSBLUE MT VERNON'
     },
     {
         img: checkerboard,
         title: 'CHECKERBOARD YARD',
-        location: 'SEATTLE, WA'
+        location: 'TRANSBLUE BALLARD'
     }
 ]
 

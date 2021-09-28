@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, GeoJSON} from 'react-leaflet';
 import './style.css';
 
 function Map(props) {
     const position = [props.lat, props.lon];
+    console.log(props.userLocation)
+    // let userLocation;
+    //console.log(userLocation.length)
+    //console.log(userLocation)
+    const [userLocation, setUserLocation] = useState([])
+
+    useEffect(() => {
+        setUserLocation(props.userLocation)
+    }, [props.userLocation])
 
     return(
         <MapContainer center={position} zoom={9} scrollWheelZoom={true} id='mapid'>
@@ -14,6 +23,7 @@ function Map(props) {
                 />
                 
             <Marker position={[props.lat, props.lon]} />
+            {/* {userLocation !== undefined && <Marker position={props.userLocation} />} */}
             <GeoJSON data={props.geojson}
                 style={{fillColor: '#ed6a22'}}
                 pathOptions={{color: '#ed6a22'}}

@@ -6,12 +6,17 @@
 .section-wrapper img {
     width: 100%;
     margin-bottom: 1.5rem;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .section-wrapper b {
     display: block;
     margin-top: 15px;
+}
+
+.section-wrapper .services {
+    padding: 20px;
+    font-family:'Roboto', sans-serif;
 }
 
 .section-wrapper .contact {

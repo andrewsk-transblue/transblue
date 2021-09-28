@@ -17,6 +17,25 @@ function Multifamily(props) {
                 email: props.location.email
             }}
             imageSide='right'
+            services={[
+                'Snow and Ice Management',
+                'Pool Construction',
+                'Pool Resurfacing' ,
+                'Asphalt Paving',
+                'Large Landscape Installs',
+                'Roofing',
+               'Siding',
+               'ESG Service Offerings'
+            ]}
+            services2={[
+                'Painting',
+                'Remodels and refreshes',
+               ' Concrete work',
+               ' Drainage Systems',
+                'Decking, fencing and railing systems',
+                'EV Charging Systems',
+                'Solar Power'
+            ]}
         />
     )
 }

@@ -36,19 +36,19 @@ class Government extends Component {
                 <Header img={govt} title='GOVERNMENT' subtitle='' name='government' />
                 <ContactCta />
                 <div className='government-body'>
-                    <div className='container-fluid government-about'>
-                        <div className='row'>
-                            <div className='col-lg-6 order-lg-12'>
-                                <img src={govtbuilding} alt='Government Building' />
-                            </div>
-                            <div className='col-lg-6 order-lg-12 left-text'>
-                                <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
-                                <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
-                                <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
-                                <a className='cta' href='/locations'>FIND A LOCATION</a>
-                            </div>
-                        </div>
-                    </div>
+                    <Benefits 
+                        img={benefits}
+                        list={[
+                            'We understand the government bidding process',
+                            'We understand Scope of Work Requirements',
+                            'Minority Owned business in specific markets',
+                            'Top notch communication',
+                            'We understand Wage Requirements',
+                            'High level of project reporting',
+                            'Onsite management',
+                            'Superior safety program with track record of 0 injuries'
+                        ]}
+                    />
                     <ThreeCols 
                         title='REFRESH YOUR GOVERNMENT BUILDING'
                         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.'
@@ -68,22 +68,24 @@ class Government extends Component {
                             body: 'Transblue provides roofing services to government properties looking to replace existing roofing structures or install new roofing systems. We install roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                         }}
                     />
-                    <Benefits 
-                        img={benefits}
-                        list={[
-                            'We understand the government bidding process',
-                            'We understand Scope of Work Requirements',
-                            'Minority Owned business in specific markets',
-                            'Top notch communication',
-                            'We understand Wage Requirements',
-                            'High level of project reporting',
-                            'Onsite management',
-                            'Superior safety program with track record of 0 injuries'
-                        ]}
-                    />
+                    <div className='container-fluid government-about'>
+                        <div className='row'>
+                            <div className='col-lg-6 order-lg-12'>
+                                <img src={govtbuilding} alt='Government Building' />
+                            </div>
+                            <div className='col-lg-6 order-lg-12 left-text'>
+                                <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
+                                <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
+                                <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
+                                <a className='cta' href='/locations'>FIND A LOCATION</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                     {/* <Capabilities2 /> */}
-                    {/* <Green page='government' /> */}
-                    <div className='new-green-solns container-fluid'>
+                    <Green page='government' />
+                    {/* <div className='new-green-solns container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-6'>
                                 <img src={ev} alt='Government Green Solutions' />
@@ -101,7 +103,7 @@ class Government extends Component {
                                 <ContactModal />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <Snow
                         img={snow}
                         title='GOVERNMENT SNOW SERVICES'

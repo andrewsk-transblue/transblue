@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './style.css';
 
 function Section(props) {
@@ -14,20 +14,27 @@ function Section(props) {
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>
-                    {props.contact && 
-                        <div className='col-12 d-md-none d-lg-block contact'>
-                            GET STARTED TODAY!<br />
-                            Give us a call at <a href={`tel:+${tel}`}>{props.contact.phone}</a>, <br />
-                            Or <a href={`mailto:${props.contact.email}`}>send us a message</a> and we will get back to you as soon as possible
+                    <div className='services bg-light'>
+                        <div className='row'>
+                            <div className='col-lg-6'>
+                                {props.services.map(service => {
+                                    return(
+                                        <Fragment>{service}<br /></Fragment>
+                                    )
+                                })}
+                            </div>
+                            <div className='col-lg-6'>
+                                {props.services2.map(service => {
+                                    return(
+                                        <Fragment>{service}<br /></Fragment>
+                                    )
+                                })}
+                            </div>
                         </div>
-                    }
+                        
+                    </div>
                     {/* <p className='section-p' dangerouslySetInnerHTML={{__html: props.p3}}></p> */}
                 </div>
-                {props.contact && <div className='col-12 d-none d-md-block d-lg-none contact-small bg-light'>
-                        GET STARTED TODAY!<br />
-                        Give us a call at <a href={`tel:+${tel}`}>{props.contact.phone}</a>, <br />
-                        Or <a href={`mailto:${props.contact.email}`}>send us a message</a> and we will get back to you as soon as possible
-                </div>}
             </div>
         </div>
     )

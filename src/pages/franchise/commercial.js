@@ -18,6 +18,25 @@ function Commercial(props) {
                 phone: props.location.phone,
                 email: props.location.email
             }}
+            services={[
+                'Snow and Ice Management',
+                'Pool Construction',
+                'Pool Resurfacing' ,
+                'Asphalt Paving',
+                'Large Landscape Installs',
+                'Roofing',
+               ' Siding',
+               'ESG Service Offerings'
+            ]}
+            services2={[
+                'Painting',
+                'Remodels and refreshes',
+               ' Concrete work',
+               ' Drainage Systems',
+                'Decking, fencing and railing systems',
+                'EV Charging Systems',
+                'Solar Power'
+            ]}
         />
     )
 }

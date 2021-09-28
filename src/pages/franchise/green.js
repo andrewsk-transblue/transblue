@@ -12,6 +12,19 @@ function Green(props) {
             p1={`Electric vehicles are on the forefront of all government facilities. ${props.location.name} offers world class installation of Electric Vehicle Charges for all of your government facilities. From super-fast DC charges to Level 2 charges Transblue is the right contractor for you. Transblue compliments EV charging with a full range of solar services. Proving renewable energy construction is a core of our business.`}
             p2=''
             contact={props.location}
+            services={[
+                'EV Chargers',
+                'LED Relamp Projects',
+                'Green Roofs',
+                'Solar Power'
+            ]}
+            services2={[
+                'Xeriscapes',
+                'Permeable Pavement',
+                'Bioswales',
+                'HVAC',
+                'Water Reclamation'
+            ]}
         />
     )
 }
