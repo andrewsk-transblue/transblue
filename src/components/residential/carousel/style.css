@@ -130,7 +130,7 @@
     .carousel .prev-slide img:not(.arrow),
     .carousel .prev-slide .text,
     .carousel .next-slide .text {
-        width: 475%;
+        width: 318%;
     }
 
     .next-slide button,

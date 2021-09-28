@@ -26,31 +26,31 @@ let text = [
             
             {
                 title: 'OUTDOOR KITCHENS',
-                body: "Love the life you live. Transblue builds incredible outdoor kitchens. There's nothing better than firing the smoker or grill and getting ready for the entertainment."
+                body: ""
             },{
                 title: 'POOLS & SPAS',
-                body: 'Tired of the heat? Looking to relax and enjoy your homes full potential? Allow Transblue’s team of outdoor living space experts design and build the pool you have been dreaming of.'
+                body: ''
             },{
                 title: 'CONCRETE',
-                body: 'Whether you need an elegant driveway or a sturdy concrete entertaining space we’ve got you covered. We offer remodeling and demolition as well as touch-ups and repair.'
+                body: ''
             },{
                 title: 'PAVERS',
-                body: 'Whether you’re dreaming of an intimate patio, a practical driveway or a luxurious outdoor living space we do it all!'
+                body: ''
             },{
                 title: 'SYNTHETIC TURF',
-                body: "Transblue offers the world's most realistic synthetic turf and synthetic putting greens available in the market today. We are pleased to provide you with an unmatched, professional quality putting green or synthetic lawn for your home."
+                body: ""
             }, {
                 title: 'RETAINING WALLS',
-                body: 'Let Transblue’s team of installers and designers build your next retaining wall. We have the experience you can depend on. Our lead designers have created, designed and installed hundreds of retaining walls.'
+                body: ''
             },{
                 title: 'SUNROOMS',
-                body: 'Looking for a 4-season room? Look no further. Our team of designers takes your vision and our expertise to deliver the home extension of your dreams. '
+                body: 'L'
             },{
                 title: 'WATER FEATURES',
-                body: 'Transblue installs waterfalls, ponds, water features, Koi ponds, and much, much more. At Transblue we will install multi-tiered waterfalls for your home, living space, or calm relaxing walk through your garden, water features enhance entertainment and enjoyment for your family and friends.'
+                body: ''
             }, {
                 title: 'COVERED PATIOS',
-                body: 'Don’t let the weather keep you from going outdoors! From proposal to design to permit, our teams build outdoor living space structures that allow you to enjoy your outdoor space during any rainy event.'
+                body: ''
             }
             //  {
             //     title: 'ATHLETIC COURTS',
@@ -70,9 +70,9 @@ class Carousel extends Component {
     }
 
     right = () => {
-        if(this.state.index + 1 < text.length) {
-            if(this.state.cols === 4) {
-                this.setState({index: this.state.index+2})
+        if(this.state.index < 5) {
+            if(this.state.cols === 5) {
+                this.setState({index: this.state.index+3})
             }
             else this.setState({index: this.state.index+1})
         }
@@ -83,7 +83,7 @@ class Carousel extends Component {
 
     left = () => {
         if(this.state.index > 0) {
-            if(this.state.cols === 4) this.setState({index: this.state.index-2})
+            if(this.state.cols === 5) this.setState({index: this.state.index-3})
             else this.setState({index: this.state.index-1})
         }
         else {
@@ -98,7 +98,7 @@ class Carousel extends Component {
     componentDidMount() {
         window.addEventListener('resize', this.updateDimensions);
         if(window.innerWidth > 992) {
-            this.setState({cols: 4, lastSlide: 3})
+            this.setState({cols: 5, lastSlide: 3})
         }
         //console.log(this.state.cols)
     }
@@ -122,26 +122,36 @@ class Carousel extends Component {
                         </Fragment>
                     }
                 </div>
-                <div className='col-lg-5 col-10 col-sm-10 col-md-8 px-0 showing-slide text-center'>
-                    <img src={images[this.state.index]} alt='' />
-                    {/* <div className='text'> */}
-                    <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
-                    <p className='section-p text-left'>{text[this.state.index].body}</p>
-                    {/* </div> */}
+                <div className='col-lg-10'>
+                    <div className='row'>
+                    <div className='col-lg-4 col-12 col-sm-10 col-md-8 px-0 showing-slide text-center'>
+                        <img src={images[this.state.index]} alt='' />
+                        {/* <div className='text'> */}
+                        <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
+                        <p className='section-p text-left'>{text[this.state.index].body}</p>
+                        {/* </div> */}
+                    </div>
+        
+                    {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
+                        <img src={images[this.state.index+1]} alt='' />
+                        <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
+                        <p className='section-p'>{text[this.state.index+1].body}</p>
+                    </div>}
+
+                    {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
+                        <img src={images[this.state.index+2]} alt='' />
+                        <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
+                        <p className='section-p'>{text[this.state.index+2].body}</p>
+                    </div>}
+                    </div>
                 </div>
-    
-                {this.state.cols === 4 && <div className='col-lg-5 px-0 showing-slide'>
-                    <img src={images[this.state.index+1]} alt='' />
-                    <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
-                    <p className='section-p'>{text[this.state.index+1].body}</p>
-                </div>}
 
                 <div className='col-lg-1 col-sm-1 col-md-2 col-1 px-0 next-slide'>
                     {this.state.index + this.state.cols - 2 < images.length && <Fragment>
-                        <img src={this.state.cols === 4 ? images[this.state.index+2] : images[this.state.index + 1]} alt='' />
+                        <img src={this.state.cols === 5 ? images[this.state.index+3] : images[this.state.index + 1]} alt='' />
                         <div className='text'>
-                            <h3 className='mt-4 mb-3'>{this.state.cols === 4 ? text[this.state.index+2].title : text[this.state.index+1].title}</h3>
-                            <p className='section-p'>{this.state.cols === 4 ? text[this.state.index+2].body : text[this.state.index+1].body}</p>
+                            <h3 className='mt-4 mb-3'>{this.state.cols === 5 ? text[this.state.index+3].title : text[this.state.index+1].title}</h3>
+                            <p className='section-p'>{this.state.cols === 5 ? text[this.state.index+3].body : text[this.state.index+1].body}</p>
                         </div>
                         <div className='carousel-overlay'></div>
                         <button onClick={this.right}><img src={forward} className='arrow' alt='Next Slide' /></button>
