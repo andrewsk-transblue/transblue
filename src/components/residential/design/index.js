@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
 import design from '../../../images/residential/design.jpg';
 import designSmall from '../../../images/residential/designSmall.jpg';
@@ -33,6 +33,12 @@ function Design() {
         }
     ]
     const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        setTimeout(() => {
+            index < 2 ? setIndex(index + 1) : setIndex(0)
+        }, 20000)
+    })
 
     return(
         <div className='design-wrapper'>

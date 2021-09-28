@@ -16,7 +16,7 @@ function Installation() {
                         At Transblue, our team of landscape architects and designers and put your plans on paper to design a beautiful landscape. Our projects are  cost effective and add beautification to your property, no matter the size.
                     </p>
                     <p className='section-p'>
-                        Once the cost and plan is approved, our installation and construction team will provide you with a written time line and project schedule. We stay on schedule from conception to completion.
+                        Once the cost and plan is approved, our installation and construction team will provide you with a written time line and project schedule. At Transblue, we see your project through from concept to completion.
                         {/* We will stay on task and on schedule and complete the installation of your project from conception to completion. */}
                     </p>
                     <a className='cta' href='/locations'>LOCATIONS</a>

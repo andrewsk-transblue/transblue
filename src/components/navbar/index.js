@@ -54,27 +54,7 @@ class Navbar extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse flex-md-column" id="navbarNav">
-                    {this.props.franchise && 
-                    <ul className="navbar-nav ml-auto">
-                        <li className='nav-item ml-auto'>
-                            <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state}
-                        </li>
-                        <li className='nav-item ml-auto'>
-                            <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
-                        </li>
-                        <li className="nav-item ml-auto">
-                            <a className="nav-link py-0" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
-                        </li>
-                        <li className="nav-item ml-auto">
-                            <a 
-                                className="nav-link py-0"
-                                href={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
-                                target='_blank' rel='noreferrer'
-                            >
-                                SUB APPLICATION
-                            </a>
-                        </li>
-                    </ul>}
+
                     <ul className="navbar-nav ml-auto flex-lg-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
@@ -133,6 +113,25 @@ class Navbar extends Component {
                             </div>
                         </li>
                     </ul>
+                    {this.props.franchise && 
+                    <ul className="navbar-nav ml-auto">
+                        
+                        <li className="nav-item ml-auto">
+                            <a className="nav-link py-0" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
+                        </li>
+                        <li className="nav-item ml-auto">
+                            <a 
+                                className="nav-link py-0"
+                                href={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
+                                target='_blank' rel='noreferrer'
+                            >
+                                SUB APPLICATION
+                            </a>
+                        </li>
+                        <li className='nav-item ml-auto'>
+                            <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
+                        </li>
+                    </ul>}
                 </div>
             </nav>
         )

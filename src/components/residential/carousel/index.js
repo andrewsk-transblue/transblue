@@ -18,52 +18,45 @@ import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png'
 import './style.css';
 
-let images = [concrete, fire, kitchen, patio, pool, pavers, deck, fence, turf, court, newWater, retaining, sunroom, lawn];
+let images = [kitchen, pool, concrete, pavers, turf, retaining, sunroom, newWater, patio];
 let text = [
+            
             {
-                title: 'CONCRETE',
-                body: 'Whether you need an elegant driveway or a sturdy concrete entertaining space we’ve got you covered. We offer remodeling and demolition as well as touch-ups and repair.'
-            },{
-                title: 'FIRE FEATURES',
-                body: "Have a warm and cozy evening by the fire with your family with Transblue’s Fire features!"
-            },{
                 title: 'OUTDOOR KITCHENS',
                 body: "Love the life you live. Transblue builds incredible outdoor kitchens. There's nothing better than firing the smoker or grill and getting ready for the entertainment."
-            }, {
-                title: 'COVERED PATIOS',
-                body: 'Don’t let the weather keep you from going outdoors! From proposal to design to permit, our teams build outdoor living space structures that allow you to enjoy your outdoor space during any rainy event.'
-            }, {
+            },{
                 title: 'POOLS & SPAS',
                 body: 'Tired of the heat? Looking to relax and enjoy your homes full potential? Allow Transblue’s team of outdoor living space experts design and build the pool you have been dreaming of.'
+            },{
+                title: 'CONCRETE',
+                body: 'Whether you need an elegant driveway or a sturdy concrete entertaining space we’ve got you covered. We offer remodeling and demolition as well as touch-ups and repair.'
             },{
                 title: 'PAVERS',
                 body: 'Whether you’re dreaming of an intimate patio, a practical driveway or a luxurious outdoor living space we do it all!'
             },{
-                title: 'DECKS',
-                body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
-            },{
-                title: 'DECKS & FENCES',
-                body: 'At Transblue, we build and design custom decks and fences. Our carpenters have built hundreds of decks and fences. When we build decks and fences at Transblue we use premium products.'
-            },{
                 title: 'SYNTHETIC TURF',
                 body: "Transblue offers the world's most realistic synthetic turf and synthetic putting greens available in the market today. We are pleased to provide you with an unmatched, professional quality putting green or synthetic lawn for your home."
             }, {
-                title: 'ATHLETIC COURTS',
-                body: 'Transblue installs top of the line Basketball, Hockey, Tennis, and Pickleball playable courts. Not to mention batting cages, putting greens and all types of courts used to play sports on.'
-            }, {
+                title: 'RETAINING WALLS',
+                body: 'Let Transblue’s team of installers and designers build your next retaining wall. We have the experience you can depend on. Our lead designers have created, designed and installed hundreds of retaining walls.'
+            },{
+                title: 'SUNROOMS',
+                body: 'Looking for a 4-season room? Look no further. Our team of designers takes your vision and our expertise to deliver the home extension of your dreams. '
+            },{
                 title: 'WATER FEATURES',
                 body: 'Transblue installs waterfalls, ponds, water features, Koi ponds, and much, much more. At Transblue we will install multi-tiered waterfalls for your home, living space, or calm relaxing walk through your garden, water features enhance entertainment and enjoyment for your family and friends.'
             }, {
-                title: 'RETAINING WALLS',
-                body: 'Let Transblue’s team of installers and designers build your next retaining wall. We have the experience you can depend on. Our lead designers have created, designed and installed hundreds of retaining walls.'
-            }, {
-                title: 'SUNROOMS',
-                body: 'Looking for a 4-season room? Look no further. Our team of designers takes your vision and our expertise to deliver the home extension of your dreams. '
-            },
-            {
-                title: 'LAWN INSTALLATION',
-                body: 'At Transblue we pride ourselves in Lawn Installation! Over the last 20 years we have developed techniques that have proven themselves over and over again! We install a World Class Lawn, each time, every time! '
+                title: 'COVERED PATIOS',
+                body: 'Don’t let the weather keep you from going outdoors! From proposal to design to permit, our teams build outdoor living space structures that allow you to enjoy your outdoor space during any rainy event.'
             }
+            //  {
+            //     title: 'ATHLETIC COURTS',
+            //     body: 'Transblue installs top of the line Basketball, Hockey, Tennis, and Pickleball playable courts. Not to mention batting cages, putting greens and all types of courts used to play sports on.'
+            // }, 
+            // {
+            //     title: 'LAWN INSTALLATION',
+            //     body: 'At Transblue we pride ourselves in Lawn Installation! Over the last 20 years we have developed techniques that have proven themselves over and over again! We install a World Class Lawn, each time, every time! '
+            // }
     ]
 
 class Carousel extends Component {
