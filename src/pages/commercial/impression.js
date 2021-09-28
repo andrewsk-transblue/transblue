@@ -19,7 +19,7 @@ function Impression() {
                     sizes="(max-width: 600px) 100vw, (max-width: 900px) 100vw"
                 />
                 <div className='overlay'></div>
-                <div className='text  mx-0'>
+                <div className='text'>
                     <h3>FIRST IMPRESSIONS MATTER.</h3>
                     <p>The exterior of your business is the first thing people see when they arrive or drive by. Make a lasting impression with a beautiful exterior.</p>
                 </div>
@@ -30,7 +30,7 @@ function Impression() {
                     subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'
                     card1={{
                         img: roof,
-                        title: 'A BRAND NEW ROOF',
+                        title: 'RETHINK YOUR ROOF',
                         body: "At Transblue we provide commercial roofing services, including stripping your old roofing system, making structural repairs as required, and re-roofing with roofing material chosen by you. We install metals, asphalt shingles, green roofs, tiles, torch down, and systems such as flat PVC and TPO."
                     }}
                     card2={{

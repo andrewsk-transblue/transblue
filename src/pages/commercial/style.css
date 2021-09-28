@@ -214,6 +214,7 @@
 
 .impression-wrapper {
     position: relative;
+    text-shadow: 1px 1px 8px rgb(53, 53, 53);
 }
 
 /* .impression-wrapper img:not(.next-section) {

@@ -1,7 +1,7 @@
 import React from 'react';
-import solar from '../../images/government/govtsolarCropped.jpeg';
-import ev from '../../images/government/evCropped.jpg';
-import porous from '../../images/multifamily/porous.jpg';
+import solar from '../../images/commercial/solar2.jpg';
+import ev from '../../images/commercial/ev2.jpg';
+import livingroof from '../../images/commercial/livingroof.jpg';
 import './style.css';
 
 function Green(props) {
@@ -18,17 +18,17 @@ function Green(props) {
         <div className='col-lg-4 col-md-6'>
                 <img src={solar} alt='Government Solar Roof' />
                 <p className='subtitle'>SOLAR PANELS</p>
-                <p className='section-p mb-4'>Decrease your energy bill by installing solar roofs to create your own energy</p>
+                <p className='section-p mb-4'>Reduce overhead and save on utility bills with solar panels</p>
             </div>
             <div className='col-lg-4 col-md-6'>
                 <img src={ev} alt='Government EV Charger' />
                 <p className='subtitle'>ELECTRIC VEHICLE CHARGERS</p>
-                <p className='section-p mb-4'>Provide green solutions for your employees and contribute to creating a greener world</p>
+                <p className='section-p mb-4'>Increase customer retention and time in your business with EV Chargers</p>
             </div>
             <div className='col-lg-4 col-md-6'>
-                <img src={porous} alt='Porous Asphalt' />
-                <p className='subtitle'>POROUS ASPHALT</p>
-                <p className='section-p mb-4'>Provide green solutions for your employees and contribute to creating a greener world</p>
+                <img src={livingroof} alt='Commercial Living Roof' />
+                <p className='subtitle'>LIVING ROOFS</p>
+                <p className='section-p mb-4'>Diversify marketing and conserve energy with a living roof</p>
             </div>
         </div>
     </div>

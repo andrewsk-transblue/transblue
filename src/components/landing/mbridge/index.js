@@ -61,7 +61,7 @@ function Mbridge() {
                 <div className='col-lg-6 right-text my-auto'>
                     <h6>BEAUTIFUL COMMUNITIES, <br />INSIDE AND OUT</h6>
                     <p className='section-p'>
-                    At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. We love helping people and we love doing a great job for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.</p>
+                    At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. We love helping people and we love doing a World Class job for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.</p>
                     
                     <p className='section-p'> Our passion is to build beautiful projects and we believe in treating your home like ours. We truly care about your project and doing a great job for you. We listen, collaborate, and design. This enables us to turn your project and dream into a reality. Our goal is to always exceed expectations of our customers!
                         {/* At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. */}
