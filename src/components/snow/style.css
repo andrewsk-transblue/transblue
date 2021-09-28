@@ -25,4 +25,7 @@
     .snow-wrapper p {
         padding-right: 2rem;
     }
+    .snow-wrapper {
+        margin-bottom: 100px;
+    }
 }
