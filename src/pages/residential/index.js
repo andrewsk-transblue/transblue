@@ -13,6 +13,7 @@ import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Design from '../../components/residential/design';
 import Rockstar from '../../components/residential/rockstar';
+import HoverImages from '../../components/hoverImages';
 
 import './style.css';
 

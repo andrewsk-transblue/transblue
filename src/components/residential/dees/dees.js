@@ -2,13 +2,15 @@ import React from 'react';
 import './style.css';
 import '../../../App.css'
 import dees from '../../../images/residential/dees.jpg';
+import HoverImages from '../../hoverImages';
 
 function Dees() {
     return(
         <div className='dees-container container-fluid'>
             <div className='row mx-0'>
                 <div className='col-lg-7 col-xl-8 col-12 my-auto order-lg-12'>
-                    <img src={dees} alt='Dees Hope'></img>
+                    {/* <img src={dees} alt='Dees Hope'></img> */}
+                    <HoverImages />
                 </div>
                 <div className='col-lg-5 col-xl-4 col-12 text'>
                     <div className='section-header'>
