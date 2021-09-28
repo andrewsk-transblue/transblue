@@ -81,6 +81,10 @@ class Carousel extends Component {
         else {
             this.setState({index: 0})
         }
+        clearInterval(this.timer)
+        this.timer = setInterval(() => {
+            this.right()
+        }, 45000)
     }
 
     left = () => {
@@ -90,7 +94,11 @@ class Carousel extends Component {
         }
         else {
             this.setState({index: text.length - 1})
-        }       
+        }     
+        clearInterval(this.timer)
+        this.timer = setInterval(() => {
+            this.right()
+        }, 45000)  
     }
 
     updateDimensions = () => {
@@ -102,7 +110,10 @@ class Carousel extends Component {
         if(window.innerWidth > 992) {
             this.setState({cols: 5, lastSlide: 3})
         }
-        
+
+        this.timer = setInterval(() => {
+            this.right()
+        }, 45000)
         //console.log(this.state.cols)
     }
 
