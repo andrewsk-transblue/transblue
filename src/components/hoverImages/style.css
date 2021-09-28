@@ -1,16 +1,20 @@
-.dees-image-container button {
+.hover-image-container {
+    padding-left: 4rem;
+}
+
+.hover-image-container button {
     border: 0px;
     border-radius: 0px;
     background-color: transparent;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
 }
 
-.dees-image-container .modal-body img {
+.hover-image-container .modal-body img {
     width: 100%;
     padding-left: 0px;
 }
 
-.dees-image-container .modal-title {
+.hover-image-container .modal-title {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
 }

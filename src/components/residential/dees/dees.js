@@ -17,8 +17,12 @@ function Dees() {
                         <p className='text-secondary section-subheader'>TRANSBLUE &amp; DEE'S HOPE</p>
                         ABOLISHING SOFT SLAVERY IN UGANDA
                     </div>
-                    <p className='section-p'>Some text about how Transblue contributes to Dee's hope in helping young girls in Uganda escape domestic servitude by providing an education and a place to stay.</p>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros.</p>
+                    {/* <p className='section-p'>At Transblue, a portion of every project goes to helping those in need. By working on these projects, Transblue has been able to give over 20000 dollars to Dee's Hope for Girl's Foundation.</p>
+                    
+                    Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros. */}
+                    <p className='section-p'>
+                    A portion of profit from every Transblue project goes to helping those in need around the globe. One of our mBridge partners, Dee's Hope, is an organization that helps women in Uganda escape domestic servitude by providing shelter, education, etc. Last year, we completed a project that allowed us to donate over $20,000 to Dee's Hope, resulting in the freedom of 17 women from domestic servitude.</p>
+                    
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}
                     <a className='cta' href='/blog'>LEARN MORE</a>

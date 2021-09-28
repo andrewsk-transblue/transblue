@@ -4,7 +4,7 @@ import './style.css';
 
 function HoverImages() {
     return(
-        <div className='row dees-image-container'>
+        <div className='row hover-image-container'>
             <div className='col-12 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#dees">
                     <img src={dees} alt='' />
