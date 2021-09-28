@@ -22,6 +22,7 @@ import snow from '../../images/multifamily/snow.jpg';
 import luxury from '../../images/multifamily/luxury.jpg';
 import services from '../../images/multifamily/services.jpeg';
 import './style.css';
+import Green from '../../components/green';
 
 
 function Multifamily() {
@@ -155,7 +156,8 @@ function Multifamily() {
                     'Electric Vehicle Charging Systems, Solar Power',
                     'ESG Service Offerings'
                 ]} />
-                <ServiceCard
+                <Green page='multifamily' />
+                {/* <ServiceCard
                      p1='As a property manager, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
                      p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'
                      services={['ev', 'solar', 'roofs', 'xeriscapes']}
@@ -165,7 +167,7 @@ function Multifamily() {
                          'A green roof provides a rainwater buffer, purifies the air, reduces the ambient temperature, regulates the indoor temperature, saves energy and encourages biodiversity in the city. Green roofs are part of climate-proof construction.',
                          'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
                      }
-                />
+                /> */}
                
                 <Footer />
             </div>
