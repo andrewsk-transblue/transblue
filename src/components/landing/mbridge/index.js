@@ -74,7 +74,7 @@ function Mbridge() {
                 <div className='col-lg-12'>
                     <div className='title'>
                     <h4 className='section-header'>TRANSBLUE GIVES BACK</h4>
-                    <div className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at turpis ut velit imperdiet ultricies. Vestibulum sed placerat arcu. Aliquam.</div>
+                    <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. We are here for each other.</div>
                     </div>
                     {/* <hr /> */}
                 </div>

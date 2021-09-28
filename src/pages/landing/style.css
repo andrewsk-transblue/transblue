@@ -237,25 +237,26 @@
         /* background-size: 480px 300px; */
     }
     20% {
-        background-image: url('../../images/landingHeader/patio-min.jpeg');
+        background-image: url('../../images/landingHeader/evHeader-min.jpeg');
     }
     30% {
-        background-image: url('../../images/landingHeader/snow-min.jpg');
+        background-image: url('../../images/landingHeader/patio-min.jpeg');
+        
     }
     40% {
         background-image: url('../../images/landingHeader/asphalt.jpeg');
     }
     60% {
-        background-image: url('../../images/landingHeader/evHeader-min.jpeg');
+        background-image: url('../../images/landingHeader/couple-pool-min.jpeg');
     } 
     70% {
         background-image: url('../../images/landingHeader/hoa.jpg');
     }
     80% {
-        background-image: url('../../images/landingHeader/couple-pool-min.jpeg');
+        background-image: url('../../images/landingHeader/familyfirepit-min.jpg');
     }
     100% {
-        background-image: url('../../images/landingHeader/familyfirepit-min.jpg');
+        background-image: url('../../images/landingHeader/snow-min.jpg');
     }
 }
 
