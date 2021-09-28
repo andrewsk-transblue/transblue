@@ -91,6 +91,25 @@ function Multifamily() {
                         body: 'Transblue provides asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping'
                     }}
                 />
+                 <div className='container-fluid camp'>
+                    <div className='row'>
+                        <div className='col-lg-5 order-lg-12 left-text'>
+                            <h4 className='section-header'>CREATING A SOLID FOUNDATION FOR YOUTH</h4>
+                            {/* <div className='section-p mb-3'>Summer is a great time for camps. Camps are transformational in the lives of children and teens. Solid Rock Mission, one of our mBridge partners, hosts camps all summer long for thousands of kids and teens (1782 kids in June).</div>
+                            <div className='section-p mb-3'>This month we have had back to back to back camps. We organized camps in villages and small towns. Over 100 kids showed up to each camp with 1782 attending in June. These kids come from various families and backgrounds with all sorts of hurts and broken stories. Our goal is to always and foremost show them God's love.</div>
+                            <div className='section-p pb-4'>Most of the kids that attended these camps over the course of this month come from broken families. Many of these families lost their loved ones while others had parents that simply left their family. At camp, it is a great opportunity for us to love them and most of all show them God's love.</div> */}
+                            <div className='section-p mb-3'>
+                                Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
+                            </div>
+                            {/* <div className='section-p mb-3'>Summer is a great time for camps. Camps are transformational in the lives of children and teens.</div>
+                            <div className='section-p mb-3'></div> */}
+                            <div className='section-p mb-3'>Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
+                        </div>
+                        <div className='col-lg-7'>
+                            <CampImages />
+                        </div>
+                    </div>
+                </div>
                 <Assets />
                 <Snow
                     img={snow}
@@ -147,25 +166,7 @@ function Multifamily() {
                          'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
                      }
                 />
-                <div className='container-fluid camp'>
-                    <div className='row'>
-                        <div className='col-lg-5 order-lg-12 left-text'>
-                            <h4 className='section-header'>CREATING A SOLID FOUNDATION FOR YOUTH</h4>
-                            {/* <div className='section-p mb-3'>Summer is a great time for camps. Camps are transformational in the lives of children and teens. Solid Rock Mission, one of our mBridge partners, hosts camps all summer long for thousands of kids and teens (1782 kids in June).</div>
-                            <div className='section-p mb-3'>This month we have had back to back to back camps. We organized camps in villages and small towns. Over 100 kids showed up to each camp with 1782 attending in June. These kids come from various families and backgrounds with all sorts of hurts and broken stories. Our goal is to always and foremost show them God's love.</div>
-                            <div className='section-p pb-4'>Most of the kids that attended these camps over the course of this month come from broken families. Many of these families lost their loved ones while others had parents that simply left their family. At camp, it is a great opportunity for us to love them and most of all show them God's love.</div> */}
-                            <div className='section-p mb-3'>
-                                Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
-                            </div>
-                            {/* <div className='section-p mb-3'>Summer is a great time for camps. Camps are transformational in the lives of children and teens.</div>
-                            <div className='section-p mb-3'></div> */}
-                            <div className='section-p mb-3'>Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
-                        </div>
-                        <div className='col-lg-7'>
-                            <CampImages />
-                        </div>
-                    </div>
-                </div>
+               
                 <Footer />
             </div>
         </Fragment>

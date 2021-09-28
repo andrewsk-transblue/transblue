@@ -1,6 +1,6 @@
 import React from 'react';
 import fence from '../../../images/multifamily/fence.jpg';
-import deck from '../../../images/multifamily/deck.jpeg';
+import deck from '../../../images/multifamily/deck.jpg';
 
 function Decks() {
     return(
@@ -13,7 +13,8 @@ function Decks() {
             </div>
             <div className='col-lg-7 col-md-6'>
                 <div className='row'>
-                    <div className='col-lg-6'>
+                    <img src={deck} alt='' />
+                    {/* <div className='col-lg-6'>
                         <img className='decks-image' src={fence} alt='Multifamily Fence' />
                     </div>
                     <div className='col-lg-6'>
@@ -24,7 +25,7 @@ function Decks() {
                     </div>
                     <div className='col-lg-6'>
                         <img className='decks-image' src={deck} alt='Multifamily Deck' />
-                    </div>
+                    </div> */}
                 </div>               
             </div>
 
