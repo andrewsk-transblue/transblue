@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
 import design from '../../../images/residential/design.jpg';
+import design2 from '../../../images/residential/design.png';
 import designSmall from '../../../images/residential/designSmall.jpg';
 import build from '../../../images/residential/build.jpg';
 import buildSmall from '../../../images/residential/buildSmall.jpg';
@@ -14,7 +15,7 @@ import './style.css';
 function Design() {
     const slides = [
         {
-            img: design,
+            img: design2,
             imgSmall: designSmall,
             title: 'DESIGN',
             body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'

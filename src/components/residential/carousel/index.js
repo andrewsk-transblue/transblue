@@ -2,8 +2,10 @@ import React, {Component, Fragment} from 'react';
 import fire from '../../../images/residential/carouselFire-min.jpg';
 import kitchen from '../../../images/residential/carouselKitchen-min.jpg';
 import patio from '../../../images/residential/carouselPatio-min.jpg';
-import concrete from '../../../images/residential/carouselConcrete-min.jpg';
-import pavers from '../../../images/residential/carouselPavers-min.jpg';
+//import concrete from '../../../images/residential/carouselConcrete-min.jpg';
+import concrete from '../../../images/residential/concrete.jpg'
+//import pavers from '../../../images/residential/carouselPavers-min.jpg';
+import pavers2 from '../../../images/residential/paver.jpg';
 import pool from '../../../images/residential/carouselPool-min.jpg';
 import deck from '../../../images/residential/carouselDeck-min.jpg';
 import fence from '../../../images/residential/carouselFence-min.jpg';
@@ -13,13 +15,13 @@ import court from '../../../images/residential/carouselCourt-min.jpg';
 //import water from '../../../images/residential/water-min.jpg';
 import retaining from '../../../images/residential/retaining.jpg';
 import sunroom from '../../../images/residential/sunroom.jpg';
-import lawn from '../../../images/residential/lawn.jpg';
+//import lawn from '../../../images/residential/lawn.jpg';
 import newWater from '../../../images/residential/carouselWater.jpg';
 import forward from '../../../images/forward50.png';
-import back from '../../../images/back50.png'
+import back from '../../../images/back50.png';
 import './style.css';
 
-let images = [kitchen, pool, concrete, pavers, turf, retaining, sunroom, newWater, patio];
+let images = [kitchen, pool, concrete, pavers2, turf, retaining, sunroom, newWater, patio];
 let text = [
             
             {
