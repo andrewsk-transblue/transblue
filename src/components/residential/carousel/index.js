@@ -100,6 +100,7 @@ class Carousel extends Component {
         if(window.innerWidth > 992) {
             this.setState({cols: 5, lastSlide: 3})
         }
+        
         //console.log(this.state.cols)
     }
 
@@ -122,27 +123,27 @@ class Carousel extends Component {
                         </Fragment>
                     }
                 </div>
-                <div className='col-lg-10'>
+                <div className='col-lg-10 col-md-8 col-10'>
                     <div className='row'>
-                    <div className='col-lg-4 col-12 col-sm-10 col-md-8 px-0 showing-slide text-center'>
-                        <img src={images[this.state.index]} alt='' />
-                        {/* <div className='text'> */}
-                        <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
-                        <p className='section-p text-left'>{text[this.state.index].body}</p>
-                        {/* </div> */}
-                    </div>
+                        <div className='col-lg-4 col-12 px-0 showing-slide text-center'>
+                            <img src={images[this.state.index]} alt='' />
+                            {/* <div className='text'> */}
+                            <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
+                            <p className='section-p text-left'>{text[this.state.index].body}</p>
+                            {/* </div> */}
+                        </div>
         
-                    {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
-                        <img src={images[this.state.index+1]} alt='' />
-                        <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
-                        <p className='section-p'>{text[this.state.index+1].body}</p>
-                    </div>}
+                        {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
+                            <img src={images[this.state.index+1]} alt='' />
+                            <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
+                            <p className='section-p'>{text[this.state.index+1].body}</p>
+                        </div>}
 
-                    {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
-                        <img src={images[this.state.index+2]} alt='' />
-                        <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
-                        <p className='section-p'>{text[this.state.index+2].body}</p>
-                    </div>}
+                        {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
+                            <img src={images[this.state.index+2]} alt='' />
+                            <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
+                            <p className='section-p'>{text[this.state.index+2].body}</p>
+                        </div>}
                     </div>
                 </div>
 
