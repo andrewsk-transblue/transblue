@@ -60,10 +60,16 @@ function Mbridge() {
                 </div>
                 <div className='col-lg-6 right-text my-auto'>
                     <h6>BEAUTIFUL COMMUNITIES, <br />INSIDE AND OUT</h6>
-                    <p className='section-p'>At Transblue, we strive to create beautiful communities inside, and out.</p>
                     <p className='section-p'>
+                    At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. We love helping people and we love doing a great job for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.</p>
                     
-                    Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time.</p>
+                    <p className='section-p'> Our passion is to build beautiful projects and we believe in treating your home like ours. We truly care about your project and doing a great job for you. We listen, collaborate, and design. This enables us to turn your project and dream into a reality. Our goal is to always exceed expectations of our customers!
+                        {/* At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. */}
+                    </p>
+                    <p className='section-p'>
+                    {/* At Transblue, we see every project through to the end. We notice and do what’s right by never cutting corners. We monitor all projects to ensure an exceptional final product. */}
+                    {/* Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time. */}
+                    </p>
                     <a href='/givesback' className='cta'>LEARN MORE</a>
                 </div>
 
@@ -74,7 +80,7 @@ function Mbridge() {
                 <div className='col-lg-12'>
                     <div className='title'>
                     <h4 className='section-header'>TRANSBLUE GIVES BACK</h4>
-                    <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems, and increasing wellness in people, society, and the planet. We are here for each other.</div>
+                    <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is dontated to helping those in need around the globe. We are here for each other.</div>
                     </div>
                     {/* <hr /> */}
                 </div>
