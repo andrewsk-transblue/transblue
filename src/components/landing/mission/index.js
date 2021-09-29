@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import icon from '../../../images/residential/whiteicon.png';
+import icon from '../../../images/newLanding/whiteiconSmall.png';
 
 function Mission() {
     return(

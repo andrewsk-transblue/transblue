@@ -44,10 +44,10 @@ class MapContainer extends Component {
             console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
                 console.log(position)
-                // this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                this.setState({
-                    center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
-                })
+                this.setState({center: [position.coords.latitude, position.coords.longitude]})
+                // this.setState({
+                //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
+                // })
               });
         }
 
@@ -127,8 +127,8 @@ class MapContainer extends Component {
                                 <option value={100}>100mi</option>
                                 <option value={200}>200mi</option>
                             </select>
-                            TEST CODE FOR SAFARI
-                            <div>{this.state.center}</div>
+                            {/* TEST CODE FOR SAFARI
+                            <div>{this.state.center}</div> */}
                             <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
                         <div className="d-flex align-items-center">
