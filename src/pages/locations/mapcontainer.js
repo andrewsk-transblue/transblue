@@ -121,7 +121,7 @@ class MapContainer extends Component {
                             </select>
                             <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
-                        <div class="d-flex align-items-center">
+                        <div className="d-flex align-items-center">
                             <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
                             {this.state.loading && <div className="spinner-border ml-auto text-primary" role="status" aria-hidden="true"></div>}
                         </div>

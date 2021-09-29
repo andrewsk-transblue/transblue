@@ -25,6 +25,7 @@ function SetCenter({center, radius}) {
 }
 
 function MapComp(props) {
+    console.log('mapcomp')
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>
             <TileLayer

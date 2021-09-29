@@ -3,20 +3,35 @@ import React, {useEffect, useState} from 'react';
 import locationIcon from '../../images/location.png';
 import mailIcon from '../../images/mail.png';
 import states from './statesDb';
+import axios from 'axios';
 import './style.css';
 
 function ListView(props) {
-    const [state, setState] = useState('Washington');
+    const [state, setState] = useState('Nevada');
     const [stateLocations, setStateLocations] = useState([])
-
-    if('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition(position => {
-            console.log(position)
-        })
-    }
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        setStateLocations(props.locations.filter(location => location.location === state))
+        if('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(position => {
+                //console.log(position)
+                axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
+                    .then(res => {
+                        //console.log(res.data.results[0].address_components[4].long_name)
+                        let userState = res.data.results[0].address_components[4].long_name;
+                        if(states.indexOf(userState)  !== -1) {
+                            setState(userState)
+                            setStateLocations(props.locations.filter(location => location.location === userState))
+                            setLoading(false)
+                        }
+                        else setLoading(false)                        
+                    })
+            })
+        }
+        else {
+            setLoading(false)
+            setStateLocations(props.locations.filter(location => location.location === state))            
+        }
     }, [])
 
     function changeState(e) {
@@ -37,12 +52,12 @@ function ListView(props) {
                 </select>
             </div>
             <div className='row'>
-                {stateLocations.length === 0 && 
+                {(stateLocations.length === 0 && loading === false) && 
                     <div className='no-list-locations'>
                         <h6>NO LOCATIONS AVAILABLE IN {state.toUpperCase()} YET</h6>
                         <p>Please select another state or view locations on our map</p>
                     </div>
-                    }
+                }
                 {stateLocations.length > 0 && stateLocations.map(location => {
                     //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
