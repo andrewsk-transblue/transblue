@@ -118,7 +118,7 @@ function Multifamily() {
                                 page={[
                                     {image: ascent, title: 'ASCENT ROOFING PROJECT', caption: ''},
                                     {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''},
-                                    {image: solidrock2, title: 'SOLID ROCK CAMP', caption: ''},
+                                    {image: solidrock2, title: 'SOLID ROCK CAMP', caption: 'Music station at camp where the kids learn to sing praise songs which they memorize and take home with them. We believe that the message of these songs has the power to impact these children with hope and love.'},
                                     {image: solidrock3, title: 'SOLID ROCK CAMP', caption: ''}
                                 ]}
                             />
