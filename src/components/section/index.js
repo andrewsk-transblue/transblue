@@ -1,7 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
+import downarrow from '../../images/featured/downarrow.png';
 import './style.css';
 
 function Section(props) {
+    const [displayServices, setDisplayServices] = useState(false)
     let tel;
     props.contact ? tel = props.contact.phone.replace(/[^A-Z0-9]/ig, "") : tel = ''
     return(
@@ -14,8 +16,16 @@ function Section(props) {
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>
-                    <div className='services bg-light'>
-                        <div className='row'>
+                    <div className='services'>
+                        <button onClick={() => setDisplayServices(!displayServices)}>
+                            <h6>
+                                {props.name.toUpperCase()} {props.page} SERVICES
+                            </h6>
+                            <img className='expand' src={downarrow} alt='Display Services' />
+                            </button>
+                        {displayServices &&
+                        <div className='row service-list'>
+                            <hr />
                             <div className='col-lg-6'>
                                 {props.services.map(service => {
                                     return(
@@ -30,7 +40,7 @@ function Section(props) {
                                     )
                                 })}
                             </div>
-                        </div>
+                        </div>}
                         
                     </div>
                     {/* <p className='section-p' dangerouslySetInnerHTML={{__html: props.p3}}></p> */}

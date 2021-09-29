@@ -9,6 +9,8 @@ function Commercial(props) {
     console.log(regional[props.location.region])
     return(
         <Section 
+            page='COMMERCIAL'
+            name={props.location.name}
             img={regional[props.location.region][0]}
             title='UPGRADE YOUR BUSINESS'
             p1={`At ${props.location.name}, our teams are focused on making your life simple and reducing the burden that comes with the capital projects required to keep your business looking its best.`}

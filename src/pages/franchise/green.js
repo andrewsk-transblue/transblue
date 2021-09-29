@@ -6,6 +6,9 @@ import regional from './regional';
 function Green(props) {
     return(
         <Section
+        page='GREEN'
+        name={props.location.name}
+
             title='GREEN SOLUTIONS'
             imageSide='right'
             img={regional[props.location.region][2]}

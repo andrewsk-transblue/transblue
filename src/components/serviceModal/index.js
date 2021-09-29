@@ -17,8 +17,8 @@ function ServiceModal() {
                         </button>
                         <div className='container-fluid section-p'>
                             <div className='row'>
-                                <div className='col-12 col-md-6'>
-                                    <h6>GENERAL CONTRACTING</h6>
+                                <div className='col-12 col-md-12'>
+                                    <h6>RESIDENTIAL SERVICES</h6>
                                     <div className='row'>
                                         <div className='col-12 col-sm-6'>
                                             Concrete<br />
@@ -32,7 +32,9 @@ function ServiceModal() {
                                             Synthetic Turf<br />
                                             Landscape Design<br />
                                             Fences<br />
-                                            Gates<br />                                            
+                                            EV Chargers<br />
+                                            Solar Panels<br />
+                                            Green Roofs<br />                                           
                                         </div>
                                         <div className='col-12 col-sm-6'>
                                             Irrigation<br />
@@ -47,10 +49,11 @@ function ServiceModal() {
                                             Crack Seal<br />
                                             Outdoor Kitchens<br />
                                             Firepits<br />
+                                            Gates
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-12 col-sm-6 col-md-3'>
+                                {/* <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>GREEN SERVICES</h6>
                                     Relamp Projects<br />
                                     Green Roofs<br />
@@ -61,8 +64,8 @@ function ServiceModal() {
                                     Solar Panels<br />
                                     EV Chargers<br />
                                     Xeriscapes<br />
-                                </div>
-                                <div className='col-12 col-sm-6 col-md-3'>
+                                </div> */}
+                                {/* <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>SNOW SERVICES</h6>
                                     Snow Plowing<br />
                                     Snow Hauling<br />
@@ -72,7 +75,7 @@ function ServiceModal() {
                                     Rooftop Clearing<br />
                                     Icicle Melting<br />
                                     Truck Brush Services<br />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>      

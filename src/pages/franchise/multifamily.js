@@ -7,6 +7,8 @@ import regional from './regional';
 function Multifamily(props) {
     return(
         <Section
+        name={props.location.name}
+        page='MULTIFAMILY'
             img={regional[props.location.region][1]}
             title='BEAUTIFY YOUR MULTIFAMILY RESIDENCE'
             p1={`At ${props.location.name}, we understand that as a property manager, you are extremely busy. Our professionals make your life easier by turning proposals around quickly.`}
