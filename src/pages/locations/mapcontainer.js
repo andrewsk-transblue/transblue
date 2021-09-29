@@ -127,8 +127,8 @@ class MapContainer extends Component {
                                 <option value={100}>100mi</option>
                                 <option value={200}>200mi</option>
                             </select>
-                            {/* TEST CODE FOR SAFARI
-                            <div>{this.state.center}</div> */}
+                            TEST CODE FOR SAFARI
+                            <div>{this.props.zipcode}</div>
                             <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
                         <div className="d-flex align-items-center">
