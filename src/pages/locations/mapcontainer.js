@@ -30,6 +30,7 @@ class MapContainer extends Component {
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
+
         //console.log('getCurrentPosition' in navigator.geolocation)
 
         if(this.props.zipcode !== undefined) {
@@ -37,8 +38,10 @@ class MapContainer extends Component {
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ('getCurrentPosition' in navigator.geolocation) {
+        else if ('getCurrentPosition' in navigator.geolocation || 'geolocation' in navigator) {
             console.log('geolocation on')
+            console.log('geolocation' in navigator)
+            console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
                 console.log(position)
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
@@ -121,6 +124,8 @@ class MapContainer extends Component {
                                 <option value={100}>100mi</option>
                                 <option value={200}>200mi</option>
                             </select>
+                            TEST CODE FOR SAFARI
+                            <div>{this.state.center}</div>
                             <button disabled={this.state.disabled} id='location-search' className={this.state.disabled ? 'disabled' : ''} onClick={() => this.searchLocation(this.state.location_id)}>GO</button>
                         </span>
                         <div className="d-flex align-items-center">
