@@ -151,6 +151,7 @@ function Multifamily() {
                         'SOLAR POWER': '',
                         'ESG SERVICES': ''
                     }} /> */}
+                <Green page='multifamily' />
                 <ServiceList
                 title='MULTIFAMILY SERVICES'
                 //subtitle='Transblue is your construction resource. We offer a wide variety of services to fit your specific needs, contact us today to discuss your project.'
@@ -170,7 +171,6 @@ function Multifamily() {
                     'Electric Vehicle Charging Systems, Solar Power',
                     'ESG Service Offerings'
                 ]} />
-                <Green page='multifamily' />
                 {/* <ServiceCard
                      p1='As a property manager, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
                      p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'

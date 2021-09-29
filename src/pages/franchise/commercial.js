@@ -9,6 +9,7 @@ function Commercial(props) {
     console.log(regional[props.location.region])
     return(
         <Section 
+        location={props.location}
             page='COMMERCIAL'
             name={props.location.name}
             img={regional[props.location.region][0]}

@@ -30,10 +30,10 @@
     }
 } */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 750px) {
     .green-solns h4,
     .green-solns .title .section-p {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
         text-align: center;
     }
@@ -46,7 +46,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .green-solns h4 {
+    .green-solns h4,
+    .green-solns .title .section-p {
         width: 50%;
     }
 }

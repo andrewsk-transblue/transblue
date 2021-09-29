@@ -5,6 +5,7 @@ import govtFence from '../../images/government/govtfence.jpeg'
 function Govt(props) {
     return(
         <Section
+        location={props.location}
         page='GOVERNMENT'
             img={govtFence}
             name={props.location.name}

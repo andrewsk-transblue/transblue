@@ -29,13 +29,17 @@
     letter-spacing: .05em;;
 }
 
-.section-wrapper button {
+.section-wrapper button:not(.cta) {
     background-color: transparent;;
     border-radius: 0px;;
     padding: 15px 15px 15px 30px;
     width: 100%;
     border: 0px;
     text-align: left;
+}
+
+.section-wrapper button.cta {
+    margin-left: 0px;
 }
 
 .section-wrapper .services {

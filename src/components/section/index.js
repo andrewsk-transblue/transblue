@@ -1,11 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import downarrow from '../../images/featured/downarrow.png';
+import ContactModal from '../contactModal';
 import './style.css';
 
 function Section(props) {
     const [displayServices, setDisplayServices] = useState(false)
     let tel;
     props.contact ? tel = props.contact.phone.replace(/[^A-Z0-9]/ig, "") : tel = ''
+    console.log(props.location)
     return(
         <div className='section-wrapper container-fluid'>
             <div className='row'>
@@ -16,6 +18,7 @@ function Section(props) {
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>
+                    <ContactModal location={props.location} />
                     <div className='services'>
                         <button onClick={() => setDisplayServices(!displayServices)}>
                             <h6>

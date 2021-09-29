@@ -45,6 +45,8 @@ function ContactModal(props) {
         })
     }
 
+    console.log(props.location)
+
     return(
         <Fragment>
                 <button className='cta' data-toggle="modal" data-target="#exampleModalCenter">

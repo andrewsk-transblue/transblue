@@ -7,6 +7,7 @@ import regional from './regional';
 function Multifamily(props) {
     return(
         <Section
+        location={props.location}
         name={props.location.name}
         page='MULTIFAMILY'
             img={regional[props.location.region][1]}
