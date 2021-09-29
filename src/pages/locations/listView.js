@@ -53,7 +53,7 @@ function ListView(props) {
                 </select>
             </div>
             <div className='row'>
-                {(stateLocations.length === 0 && loading === false) && 
+                {stateLocations.length === 0 && loading === false && 
                     <div className='no-list-locations'>
                         <h6>NO LOCATIONS AVAILABLE IN {state.toUpperCase()} YET</h6>
                         <p>Please select another state or view locations on our map</p>

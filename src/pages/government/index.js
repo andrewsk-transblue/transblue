@@ -113,6 +113,7 @@ class Government extends Component {
                         // p2='Keeping city officials, staff and community members safe is always our goal. We map out each location to ensure our snow service does not impede city, county or federal business.'
                         p3='Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
+                    <FirstResponders />
                     <ServiceList
                         img={fence}
                         title='GOVERNMENT SERVICES'

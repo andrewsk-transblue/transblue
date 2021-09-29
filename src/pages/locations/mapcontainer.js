@@ -95,7 +95,7 @@ class MapContainer extends Component {
         return(
             <div className='map-container'>
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
-                    {(!this.state.isLoading && this.state.center.length > 0) && <MapComp 
+                    {!this.state.isLoading && this.state.center.length > 0 && <MapComp 
                     zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
                     center={this.state.center} radius={this.state.radius}
                     // geojson={this.props.geojson} 
