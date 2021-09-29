@@ -17,6 +17,9 @@ function Contact(props) {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(true);
+    const [submitted, setIsSubmitted] = useState(false);
+    const [error, setError] = useState(false)
+
 
     const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
 
@@ -45,6 +48,8 @@ function Contact(props) {
         };
         mailgun.messages().send(data, function(error, body) {
             console.log(body)
+            if(body.message === "Queued. Thank you.") setIsSubmitted(true)
+            else setError(true)
         })
     }
 
@@ -87,13 +92,20 @@ function Contact(props) {
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={disabled} onClick={handleSubmit} data-dismiss='modal' >SUBMIT</button>
+                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} onClick={handleSubmit} >SUBMIT</button>
+                                </div>
+                                <div className='row'>
+                                    {submitted && <div className='submit-alert'>THANK YOU! YOUR FORM HAS BEEN SUBMITTED</div>}
+                                    {/* {error && } */}
+                                    {error && <div className='error-alert'>OOPS THERE WAS AN ERROR! PLEASE TRY AGAIN</div>}
                                 </div>
                                 {/* <div className='row'>
                                     <Captcha onChange={() => setDisabled(false)} />
                                 </div> */}
                             </form>
+                            
                 </div>
+                
             </div>
         </div>
     )

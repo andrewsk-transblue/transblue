@@ -27,32 +27,32 @@ let text = [
             
             {
                 title: 'OUTDOOR KITCHENS',
-                body: ""
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
                 title: 'POOLS & SPAS',
-                body: ''
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
                 title: 'CONCRETE',
-                body: ''
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
                 title: 'PAVERS',
-                body: ''
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
                 title: 'SYNTHETIC TURF',
-                body: ""
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             }, {
                 title: 'RETAINING WALLS',
-                body: ''
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
                 title: 'SUNROOMS',
-                body: ''
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },
             {
                 title: 'COVERED PATIOS',
-                body: ''
+                body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },{
                 title: 'OUTDOOR FEATURES',
-                body: ''
+                body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             }
             //  {
             //     title: 'ATHLETIC COURTS',

@@ -1,3 +1,7 @@
 .first-wrapper img {
     width: 100%;
 }
+
+.first-wrapper .section-header {
+    margin-top: 0px !important;
+}
