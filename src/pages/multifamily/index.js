@@ -116,10 +116,10 @@ function Multifamily() {
                             {/* <CampImages /> */}
                             <HoverImages 
                                 page={[
+                                    {image: ascent, title: 'ASCENT ROOFING PROJECT', caption: ''},
                                     {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''},
                                     {image: solidrock2, title: 'SOLID ROCK CAMP', caption: ''},
-                                    {image: ascent, title: 'ASCENT ROOFING PROJECT', caption: ''},
-                                    {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''}
+                                    {image: solidrock3, title: 'SOLID ROCK CAMP', caption: ''}
                                 ]}
                             />
                         </div>

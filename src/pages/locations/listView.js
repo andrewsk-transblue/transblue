@@ -1,18 +1,43 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 //import locations from './db';
 import locationIcon from '../../images/location.png';
 import mailIcon from '../../images/mail.png';
+import states from './statesDb';
 import './style.css';
 
 function ListView(props) {
-    console.log(typeof props)
-    const [state, setState] = useState('')
-    
+    const [state, setState] = useState('Washington');
+    const [stateLocations, setStateLocations] = useState([])
+
+    if('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(position => {
+            console.log(position)
+        })
+    }
+
+    useEffect(() => {
+        setStateLocations(props.locations.filter(location => location.location === state))
+    }, [])
+
+    function changeState(e) {
+        setStateLocations(props.locations.filter(location => location.location === e.target.value))
+    }
+
     return(
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
-                {props.locations.map(location => {
-                    console.log(location)
+                <select class="browser-default custom-select" onChange={changeState}>
+                    <option>{state}</option>
+                    {states.map(state => {
+                        return(
+                            <option value={state}>{state}</option>
+                        )
+                    })}
+                </select>
+            </div>
+            <div className='row'>
+                {stateLocations.length > 0 && stateLocations.map(location => {
+                    //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
