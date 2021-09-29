@@ -62,48 +62,44 @@ function Contact(props) {
             <div className='contact-container container'>
                 <div className='row'>
                     <div className='contact-info my-auto'>
-                        <h3>{props.location.name.toUpperCase()}</h3>
+                        <h4>{props.location.name.toUpperCase()}</h4>
                         <p>{props.location.address1} {props.location.address2}<br />
                         {props.location.city} {props.location.state} {props.location.zipcode}</p>
                         <p>{props.location.email}</p>
                         <p>{props.location.phone}</p>
                     </div>
                     
-                        <form className='contact-form' >
-                                <div className='row'>
-                                    <div className='col-sm-6 my-1 input-left'>
-                                        <input placeholder='First Name' id='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
-                                    </div>
-                                    <div className='col-sm-6 my-1 input-right'>
-                                        <input placeholder='Last Name' id='lastName' value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col-sm-6 my-2 input-left'>
-                                        <input placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                                    </div>
-                                    <div className='col-sm-6 my-2 input-right'>
-                                        <input placeholder='Phone Number' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)}></input>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col-sm-12 px-0 mt-2'>
-                                        <textarea placeholder='What can we help you with?' id='message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} onClick={handleSubmit} >SUBMIT</button>
-                                </div>
-                                <div className='row'>
-                                    {submitted && <div className='submit-alert'>THANK YOU! YOUR FORM HAS BEEN SUBMITTED</div>}
-                                    {/* {error && } */}
-                                    {error && <div className='error-alert'>OOPS THERE WAS AN ERROR! PLEASE TRY AGAIN</div>}
-                                </div>
-                                {/* <div className='row'>
-                                    <Captcha onChange={() => setDisabled(false)} />
-                                </div> */}
-                            </form>
-                            
+                    <form className='contact-form' >
+                        <div className='row'>
+                            <div className='col-sm-6 my-1 input-left'>
+                                <input placeholder='First Name' id='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
+                            </div>
+                            <div className='col-sm-6 my-1 input-right'>
+                                <input placeholder='Last Name' id='lastName' value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
+                            </div>
+                        </div>
+                        <div className='row'>
+                            <div className='col-sm-6 my-2 input-left'>
+                                <input placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                            </div>
+                            <div className='col-sm-6 my-2 input-right'>
+                                <input placeholder='Phone Number' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+                            </div>
+                        </div>
+                        <div className='row'>
+                            <div className='col-sm-12 px-0 mt-2'>
+                                <textarea placeholder='What can we help you with?' id='message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                            </div>
+                        </div>
+                        <div className='row'>
+                            <button className={!formCompleted ? 'cta disabled' : 'cta'} onClick={handleSubmit} >SUBMIT</button>
+                        </div>
+                        <div className='row'>
+                            {submitted && <div className='submit-alert'>THANK YOU! YOUR FORM HAS BEEN SUBMITTED</div>}
+                            {/* {error && } */}
+                            {error && <div className='error-alert'>OOPS THERE WAS AN ERROR! PLEASE TRY AGAIN</div>}
+                        </div>
+                    </form>
                 </div>
                 
             </div>

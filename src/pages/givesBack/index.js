@@ -8,35 +8,49 @@ import './style.css';
 const charities = [
     {
         name: 'ABOUT MBRIDGE',
-        description: ''
+        description: [
+            'The partners at mBridge bring a deep understanding of both the for-profit businesses and the nonprofit sectors together with extensive experience working with missions organizations around the world. We work closely with both missions workers and those interested in missional causes that will have the greatest impact.',
+            'mBridge is dedicated to helping people maximize their potential through earnest giving to deserving organizations. We curate noble causes we believe in—those causes that put the most effort toward those most in need—and connect you with them so you can do the most good.',
+            'mBridge builds connections between people that believe and are willing to live out the Great Commission (Matthew 28:20). Our sole purpose is to see the people come into a transformative relationship with Jesus Christ. We believe that the Great Commission is something that every follower of Jesus should take seriously, stewarding the time, talents, and treasures that God has graciously provided each of us.',
+            'All of us want to make make a difference in this world. Many of us have been abundantly blessed through great opportunities and hard work. The desire to “give back” and make a difference in the lives of others is one of the driving forces behind mBridge. We believe in changing the world with the gospel both in word and in deeds.'
+        ]
     },
     {
         name: "DEE'S HOPE",
-        description: ''
+        description: [
+            'Dee was a house girl and understands how girls are abused and trapped in domestic servitude. Domestic servitude is soft slavery. House girls are most often abused physically and sexually. Dee is personally motivated to rescue girls. Last year, they went grew from 7 to 17 girls that were rescued and provided an education.',
+            ''
+        ]
     },
     {
         name: 'DAWSON PLACE',
-        description: ''
+        description: []
     },
     {
         name: 'SOLID ROCK MISSION',
-        description: ''
+        description: [
+            'Solid Rock Mission reaches into rural and war torn regions of southern and eastern Ukraine. These are communities where the Russian Orthodox Church is firmly established but has been ineffective in ministering to the younger generation. Alcoholism and the break down of the family is rampant. Children and youth are often victims of abuse or politically radicalized. Solid Rock Mission has built a mission school and discipleship center that is expanding throughout the region through camps and retreats reaching this young generation for Christ.',
+            'Last year, over 4000 children and youth attended Solid Rock summer camps with over 1000 committing their lives to Christ. These are then introduced to missions camps to learn more about walking with Christ and serving their communities and families.'
+        ]
     },
     {
         name: 'HOPE UNLIMITED',
-        description: ''
-    },
-    {
-        name: 'NORTHWEST INCIDENT SUPPORT',
-        description: ''
+        description: [
+            'Hope unlimited provides critical support to both our first responders and the families of Snohomish County that are in crisis. They provide comfort, support and training during crisis events in our county.',
+            'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.'
+        ]
     },
     {
         name: 'GRACE & FAVOR',
-        description: ''
+        description: []
     },
     {
         name: 'HEED',
-        description: []
+        description: [
+            'HEED has been instrumental in transforming a community. What started as a rural village without any infrastructure has blossomed into a functioning community with clean water, strong schools and pathways to transformation.',
+            'HEED has gathered a team that understands what is needed for a community development in Africa.',
+            'HEED serves a 5- village area with over 6000 people. Primary projects: High school, primary school, community clinic, village church, and demonstration farm. Pre-covid over 600 kids in school. Before HEED, few children attended school but now 87% of children aged 6-12 attend school'
+        ]
     }
 ]
 
@@ -78,11 +92,11 @@ function GivesBack(props) {
                     <div className='col-12 col-md-8 col-lg-9'>
                         <div className='body'>
                             <h3 className='section-header'>{charities[activeButton].name}</h3>
-                            <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sagittis magna, sit amet scelerisque risus facilisis eu. Pellentesque mattis lacus risus, nec tincidunt risus facilisis a. Nulla hendrerit dui eu sapien imperdiet finibus. Morbi a tincidunt ligula. Nam eget elementum metus, gravida molestie ante. Aliquam pulvinar leo vulputate tincidunt tempor. In aliquet condimentum nisl, non imperdiet turpis hendrerit et. Donec justo neque, consequat vitae placerat quis, condimentum vel diam. Integer elementum hendrerit risus, ut maximus tellus eleifend vitae. In elementum laoreet lacus, vel sagittis nisi. Ut facilisis urna nisl, quis placerat ligula eleifend ac. Donec euismod faucibus sem eget accumsan.</p>
-                            <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sagittis magna, sit amet scelerisque risus facilisis eu. Pellentesque mattis lacus risus, nec tincidunt risus facilisis a. Nulla hendrerit dui eu sapien imperdiet finibus. Morbi a tincidunt ligula. Nam eget elementum metus, gravida molestie ante. Aliquam pulvinar leo vulputate tincidunt tempor. In aliquet condimentum nisl, non imperdiet turpis hendrerit et. Donec justo neque, consequat vitae placerat quis, condimentum vel diam. Integer elementum hendrerit risus, ut maximus tellus eleifend vitae. In elementum laoreet lacus, vel sagittis nisi. Ut facilisis urna nisl, quis placerat ligula eleifend ac. Donec euismod faucibus sem eget accumsan.</p>
-                            <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sagittis magna, sit amet scelerisque risus facilisis eu. Pellentesque mattis lacus risus, nec tincidunt risus facilisis a. Nulla hendrerit dui eu sapien imperdiet finibus. Morbi a tincidunt ligula. Nam eget elementum metus, gravida molestie ante. Aliquam pulvinar leo vulputate tincidunt tempor. In aliquet condimentum nisl, non imperdiet turpis hendrerit et. Donec justo neque, consequat vitae placerat quis, condimentum vel diam. Integer elementum hendrerit risus, ut maximus tellus eleifend vitae. In elementum laoreet lacus, vel sagittis nisi. Ut facilisis urna nisl, quis placerat ligula eleifend ac. Donec euismod faucibus sem eget accumsan.</p>
-                            <p className='section-p'></p>
-                            <p className='section-p'></p>
+                            {charities[activeButton].description.map(p => {
+                                return(
+                                    <p className='section-p'>{p}</p>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
