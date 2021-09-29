@@ -36,7 +36,7 @@ class MapContainer extends Component {
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ('geolocation' in navigator) {
+        else if ('getCurrentPosition' in navigator) {
             console.log('geolocation on')
             navigator.geolocation.getCurrentPosition((position) => {
                 console.log(position)
@@ -90,6 +90,7 @@ class MapContainer extends Component {
 
     render() {
         //console.log(this.props)
+        console.log('map container')
         return(
             <div className='map-container'>
                     {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}

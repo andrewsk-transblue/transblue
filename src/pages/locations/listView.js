@@ -12,7 +12,7 @@ function ListView(props) {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        if('geolocation' in navigator) {
+        if('getCurrentPosition' in navigator) {
             navigator.geolocation.getCurrentPosition(position => {
                 //console.log(position)
                 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
@@ -30,7 +30,8 @@ function ListView(props) {
         }
         else {
             setLoading(false)
-            setStateLocations(props.locations.filter(location => location.location === state))            
+            setStateLocations(props.locations.filter(location => location.location === state))
+            console.log(props.locations.filter(location => location.location === state))       
         }
     }, [])
 
