@@ -20,6 +20,7 @@ function ListView(props) {
     }, [])
 
     function changeState(e) {
+        setState(e.target.value)
         setStateLocations(props.locations.filter(location => location.location === e.target.value))
     }
 
@@ -36,6 +37,12 @@ function ListView(props) {
                 </select>
             </div>
             <div className='row'>
+                {stateLocations.length === 0 && 
+                    <div className='no-list-locations'>
+                        <h6>NO LOCATIONS AVAILABLE IN {state.toUpperCase()} YET</h6>
+                        <p>Please select another state or view locations on our map</p>
+                    </div>
+                    }
                 {stateLocations.length > 0 && stateLocations.map(location => {
                     //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
