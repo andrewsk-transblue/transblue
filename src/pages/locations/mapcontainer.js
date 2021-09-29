@@ -30,13 +30,14 @@ class MapContainer extends Component {
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 2000)
+        //console.log('getCurrentPosition' in navigator.geolocation)
 
         if(this.props.zipcode !== undefined) {
             //console.log('searched zipcode')
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ('getCurrentPosition' in navigator) {
+        else if ('getCurrentPosition' in navigator.geolocation) {
             console.log('geolocation on')
             navigator.geolocation.getCurrentPosition((position) => {
                 console.log(position)
