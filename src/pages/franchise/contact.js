@@ -50,8 +50,8 @@ function Contact(props) {
 
 
     return(
-        <div className='contact-wrapper'>
-            <h1>QUESTIONS?</h1>
+        <div className='contact-wrapper bg-light'>
+            <h1>HAVE QUESTIONS?</h1>
             <h3 className='title'>SEND US A MESSAGE</h3>
 
             <div className='contact-container container'>
