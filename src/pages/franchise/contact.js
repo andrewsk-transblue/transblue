@@ -52,19 +52,19 @@ function Contact(props) {
     return(
         <div className='contact-wrapper'>
             <h1>QUESTIONS?</h1>
-            <h3>SEND US A MESSAGE</h3>
+            <h3 className='title'>SEND US A MESSAGE</h3>
 
             <div className='contact-container container'>
                 <div className='row'>
-                    {/* <div className='col-12 col-lg-4 contact-info my-auto'>
+                    <div className='contact-info my-auto'>
                         <h3>{props.location.name.toUpperCase()}</h3>
                         <p>{props.location.address1} {props.location.address2}<br />
                         {props.location.city} {props.location.state} {props.location.zipcode}</p>
                         <p>{props.location.email}</p>
                         <p>{props.location.phone}</p>
-                    </div> */}
-                    <div className='col-12 col-lg-12'>
-                        <form className='contact-form container-fluid' >
+                    </div>
+                    
+                        <form className='contact-form' >
                                 <div className='row'>
                                     <div className='col-sm-6 my-1 input-left'>
                                         <input placeholder='First Name' id='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
@@ -93,7 +93,6 @@ function Contact(props) {
                                     <Captcha onChange={() => setDisabled(false)} />
                                 </div> */}
                             </form>
-                    </div>
                 </div>
             </div>
         </div>
