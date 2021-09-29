@@ -10,7 +10,14 @@ function Dees() {
             <div className='row mx-0'>
                 <div className='col-lg-7 col-xl-8 col-12 my-auto order-lg-12'>
                     {/* <img src={dees} alt='Dees Hope'></img> */}
-                    <HoverImages />
+                    <HoverImages 
+                    page={[
+                        {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' }
+
+                    ]} />
                 </div>
                 <div className='col-lg-5 col-xl-4 col-12 text'>
                     <div className='section-header'>

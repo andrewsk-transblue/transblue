@@ -9,6 +9,7 @@ import Assets from '../../components/multifamily/assets';
 import CampImages from '../../components/multifamily/camp';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import ServiceList from '../../components/serviceList';
+import HoverImages from '../../components/hoverImages';
 import Snow from '../../components/snow';
 import ContactModal from '../../components/contactModal';
 import ThreeCols from '../../components/threeCol';
@@ -23,6 +24,11 @@ import luxury from '../../images/multifamily/luxury.jpg';
 import services from '../../images/multifamily/services.jpeg';
 import './style.css';
 import Green from '../../components/green';
+
+import solidrock from '../../images/multifamily/solidRock/1.png';
+import solidrock2 from '../../images/multifamily/solidRock/2.png';
+import solidrock3 from '../../images/multifamily/solidRock/3.png';
+import ascent from '../../images/multifamily/solidRock/ascent.png';
 
 
 function Multifamily() {
@@ -107,7 +113,15 @@ function Multifamily() {
                             <div className='section-p mb-3'>Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
                         </div>
                         <div className='col-lg-7'>
-                            <CampImages />
+                            {/* <CampImages /> */}
+                            <HoverImages 
+                                page={[
+                                    {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''},
+                                    {image: solidrock2, title: 'SOLID ROCK CAMP', caption: ''},
+                                    {image: ascent, title: 'ASCENT ROOFING PROJECT', caption: ''},
+                                    {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''}
+                                ]}
+                            />
                         </div>
                     </div>
                 </div>
