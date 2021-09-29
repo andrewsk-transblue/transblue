@@ -26,11 +26,11 @@ function ListView(props) {
     return(
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
-                <select class="browser-default custom-select" onChange={changeState}>
-                    <option>{state}</option>
+                <select className="browser-default custom-select" onChange={changeState}>
+                    <option className='first-option' value={state}>{state.toUpperCase()}</option>
                     {states.map(state => {
                         return(
-                            <option value={state}>{state}</option>
+                            <option value={state}>{state.toUpperCase()}</option>
                         )
                     })}
                 </select>
