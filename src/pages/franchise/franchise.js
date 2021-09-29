@@ -9,6 +9,7 @@ import NewSlideshow from '../../components/newSlideshow';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
 import Multifamily from './multifamily';
+import Contact from './contact';
 import Govt from './govt';
 import Green from './green';
 import Snow from './snow';
@@ -91,6 +92,7 @@ function Franchise(props) {
                 
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />
+                <Contact location={easybaseData[0]} />
                 <Govt location={easybaseData[0]} />
                 <Green location={easybaseData[0]} />
                 <Snow location={easybaseData[0]} />

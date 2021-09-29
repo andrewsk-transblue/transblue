@@ -125,7 +125,7 @@ function Locations(props) {
                     <i className="fas fa-map"></i>MAP VIEW
                 </button>
             </div>
-            {!viewMap && <ListView locations={props.locations} zipcode={props.zipcode} />}
+            {!viewMap && <ListView locations={props.locations} zipcode={props.zipcode}  />}
             {viewMap > 0 && <MapContainer locations={props.locations} 
             zipcode={props.zipcode} 
             //bounds={props.locations[1].bounds}

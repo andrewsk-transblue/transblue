@@ -32,13 +32,14 @@ class MapContainer extends Component {
         }, 2000)
 
         if(this.props.zipcode !== undefined) {
-            console.log('searched zipcode')
+            //console.log('searched zipcode')
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ('getCurrentPosition' in navigator) {
+        else if ('geolocation' in navigator) {
             console.log('geolocation on')
             navigator.geolocation.getCurrentPosition((position) => {
+                console.log(position)
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
               });
         }
@@ -132,6 +133,8 @@ class MapContainer extends Component {
                         </div>
                     </div>
                 </div>
+
+                //need to get userLocation into listview somehow
         )
     }
 }

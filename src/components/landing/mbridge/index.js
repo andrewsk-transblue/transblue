@@ -8,6 +8,7 @@ import hope from '../../../images/charities/hope2.jpg';
 import whitesnow from '../../../images/newLanding/snow.png';
 import fire from '../../../images/landing/fire.png';
 import heart from '../../../images/newLanding/heart.png';
+import worldclass from '../../../images/landing/worldclass.jpg';
 import './style.css';
 
 function Mbridge() {
@@ -51,15 +52,15 @@ function Mbridge() {
             <div className='container-fluid stats'>
             <div className='row'>
                 <div className='col-lg-6 my-auto'>
-                    <img src={heartEarth} alt='' />
+                    <img src={worldclass} alt='' />
                     {/* <div className='image-wrapper'>
                         <div className='overlay'></div>
                         <img src={charity}  alt='community'/>
                         <div className='community-stats centered-text'></div>
                     </div> */}
                 </div>
-                <div className='col-lg-6 right-text my-auto'>
-                    <h6>BEAUTIFUL COMMUNITIES, <br />INSIDE AND OUT</h6>
+                <div className='col-lg-6 left-text my-auto'>
+                    <h6>WORLD CLASS GENERAL CONTRACTORS</h6>
                     <p className='section-p'>
                     At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. We love helping people and we love doing a World Class job for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.</p>
                     
@@ -70,7 +71,7 @@ function Mbridge() {
                     {/* At Transblue, we see every project through to the end. We notice and do what’s right by never cutting corners. We monitor all projects to ensure an exceptional final product. */}
                     {/* Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time. */}
                     </p>
-                    <a href='/givesback' className='cta'>LEARN MORE</a>
+                    {/* <a href='/givesback' className='cta'>LEARN MORE</a> */}
                 </div>
 
             </div>

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 //import locations from './db';
 import locationIcon from '../../images/location.png';
 import mailIcon from '../../images/mail.png';
 import './style.css';
 
 function ListView(props) {
+    console.log(typeof props)
+    const [state, setState] = useState('')
+    
     return(
         <div className='listview-wrapper container-fluid'>
             <div className='row'>

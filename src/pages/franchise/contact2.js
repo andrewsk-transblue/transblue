@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
 import Form from './form';
-import './contact.css';
+import './contact2.css';
 
 function Contact2(props) {
     const [isSent, setIsSent] = useState(false);
