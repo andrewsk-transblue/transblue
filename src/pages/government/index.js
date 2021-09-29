@@ -5,6 +5,7 @@ import Header from '../../components/header';
 import Benefits from '../../components/government/benefits';
 import Capabilities2 from '../../components/government/capabilities2';
 import ThreeCols from '../../components/threeCol';
+import FirstResponders from '../../components/government/firstResponders';
 import Carousel from '../../components/carousel';
 import ContactModal from '../../components/contactModal';
 import Snow from '../../components/snow';
@@ -19,7 +20,7 @@ import benefits from '../../images/government/benefits.jpeg';
 import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
-import ev from '../../images/government/evCropped.jpg';
+//import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
 
