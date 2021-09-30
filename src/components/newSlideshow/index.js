@@ -50,8 +50,8 @@ function NewSlideshow(props) {
         {
             img: images[1],
             imgSmall: images[1],
-            title: 'LOVE THE LIFE YOU LIVE',
-            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            title: 'THERE ARE NO LIMITS',
+            body: 'Make your backyard reflect you. If you can think it, we can build it',
             //body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
