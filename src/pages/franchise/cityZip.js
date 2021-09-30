@@ -36,8 +36,13 @@ class CityZip extends Component {
                     <h6>ZIPCODES:</h6>
                     <div className='zipcode-list'>
                         {this.state.zipcodes.map(zipcode => {
+                            var zip;
+                            if(zipcode.toString().length === 4) {
+                                zip = '0' + zipcode
+                            }
+                            else zip = zipcode
                             return(
-                                <div>{zipcode}</div>
+                                <div>{zip}</div>
                             )
                         })}
                     </div>
