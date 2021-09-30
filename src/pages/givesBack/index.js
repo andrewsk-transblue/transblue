@@ -22,10 +22,10 @@ const charities = [
             ''
         ]
     },
-    {
-        name: 'DAWSON PLACE',
-        description: []
-    },
+    // {
+    //     name: 'DAWSON PLACE',
+    //     description: []
+    // },
     {
         name: 'SOLID ROCK MISSION',
         description: [
@@ -40,10 +40,10 @@ const charities = [
             'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.'
         ]
     },
-    {
-        name: 'GRACE & FAVOR',
-        description: []
-    },
+    // {
+    //     name: 'GRACE & FAVOR',
+    //     description: []
+    // },
     {
         name: 'MARKED',
         description: [
