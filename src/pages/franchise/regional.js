@@ -12,6 +12,7 @@ import mwev from '../../images/franchise/mwev.jpg';
 
 import necommercial from '../../images/franchise/necommercial.jpg';
 import nemulti from '../../images/franchise/nemulti.jpg';
+import neev from '../../images/franchise/neev.jpg';
 
 
 const regional = {
@@ -19,7 +20,7 @@ const regional = {
     'northwest': [nwcommercial, nwmulti, nwev],
     'southwest': [wcommercial, smulti, wev] ,
     'midwest': [mwcommercial, mwmulti, mwev],
-    'northeast': [necommercial, nemulti]
+    'northeast': [necommercial, nemulti, neev]
 }
 
 export default regional;

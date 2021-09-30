@@ -30,7 +30,7 @@ let residentialImages = {
     'west': [west, west2, west3, west4],
     'northwest': [northwest, northwest3, northwest2, northwest4],
     'southwest': [southwest, southwest2, southwest3, southwest4],
-    'northeast': [east, east2, east3, east4],
+    'northeast': [east, east3, east2, east4],
     'midwest': [midwest, midwest2, midwest3, midwest4]
 };
 
@@ -38,7 +38,7 @@ function NewSlideshow(props) {
     //if(props.location === 'southwest') 
     //console.log(props.location.region)
     let images = residentialImages[props.location.region];
-    console.log(images)
+    //console.log(images)
     const slides = [
         {
             img: images[0],
@@ -69,6 +69,7 @@ function NewSlideshow(props) {
             //body: 'Begin making unforgettable memories in your new outdoor living space'
         }
     ]
+
     const [index, setIndex] = useState(0);
 
     return(
