@@ -28,7 +28,7 @@ import midwest4 from '../../images/franchise/residential/midwest4.jpeg';
 
 let residentialImages = {
     'west': [west, west2, west3, west4],
-    'northwest': [northwest, northwest2, northwest3, northwest4],
+    'northwest': [northwest, northwest3, northwest2, northwest4],
     'southwest': [southwest, southwest2, southwest3, southwest4],
     'northeast': [east, east2, east3, east4],
     'midwest': [midwest, midwest2, midwest3, midwest4]
