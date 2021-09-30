@@ -35,11 +35,12 @@ function Form() {
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
-            subject: 'GC Contact Page Message',
-            text: `Name: ${firstName} ${lastName}
-                    Email: ${email}
-                    Phone: ${phone}
-                    Message: ${message}`
+            subject: 'Contact Page Message',
+            text: 
+            `Name: ${firstName} ${lastName}
+            Email: ${email}
+            Phone: ${phone}
+            Message: ${message}`
         };
         mailgun.messages().send(data, function(error, body) {
             console.log(body)

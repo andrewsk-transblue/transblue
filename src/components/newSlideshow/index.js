@@ -57,8 +57,8 @@ function NewSlideshow(props) {
         {
             img: images[2],
             imgSmall: images[2],
-            title: 'LOVE THE LIFE YOU LIVE',
-            body: 'Create the perfect outdoor living space for your friends and family to gather and make new memories',
+            title: 'CREATE YOUR SANCTUARY',
+            body: 'Extend your home into your backyard. Connect with nature and connect with the environment',
             //body: 'Begin making unforgettable memories in your new outdoor living space'
         },
         {
