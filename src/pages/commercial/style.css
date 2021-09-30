@@ -230,7 +230,7 @@
     top: 95%;
     left: 3.5%;
     transform: translate(0, -95%);
-    width: 50%;
+    width: 90%;
     color: white;
     z-index: 40;
 }
@@ -260,6 +260,9 @@
     .impression-wrapper .next-section {
         width: 75px;
         height: 60px;
+    }
+    .impression-wrapper .text {
+        width: 75%;
     }
     .impression-wrapper p {
         font-size: 1em;
@@ -311,6 +314,9 @@
     }
     .schedule h1 {
         margin-bottom: 25px;
+    }
+    .impression-wrapper .text {
+        width: 60%;
     }
 }
 

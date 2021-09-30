@@ -5,7 +5,7 @@ import './style.css';
 function HoverImages(props) {
     return(
         <div className='row hover-image-container'>
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic1">
                     <img src={props.page[0].image} alt='' />
                 </button>
@@ -28,7 +28,7 @@ function HoverImages(props) {
                     </div>
                 </div>
             </div>
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic2">
                     <img src={props.page[1].image} alt='' />
                 </button>
@@ -51,7 +51,7 @@ function HoverImages(props) {
                     </div>
                 </div>
             </div>
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic3">
                     <img src={props.page[2].image} alt='' />
                 </button>
@@ -74,7 +74,7 @@ function HoverImages(props) {
                     </div>
                 </div>
             </div>
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4">
                     <img src={props.page[3].image} alt='' />
                 </button>

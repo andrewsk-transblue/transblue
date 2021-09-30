@@ -1,6 +1,4 @@
-.dees-container .hover-image-container {
-    padding-left: 4rem;
-}
+
 
 .hover-image-container button {
     border: 0px;
@@ -17,4 +15,10 @@
 .hover-image-container .modal-title {
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
+}
+
+@media only screen and (min-width: 978px) {
+    .dees-container .hover-image-container {
+        padding-left: 4rem;
+    }
 }
