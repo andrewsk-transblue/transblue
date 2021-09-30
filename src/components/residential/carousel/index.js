@@ -1,30 +1,23 @@
 import React, {Component, Fragment} from 'react';
-import fire from '../../../images/residential/carouselFire-min.jpg';
 import kitchen from '../../../images/residential/carouselKitchen-min.jpg';
-import patio from '../../../images/residential/carouselPatio-min.jpg';
-//import concrete from '../../../images/residential/carouselConcrete-min.jpg';
 import concrete from '../../../images/residential/concrete.jpg'
-//import pavers from '../../../images/residential/carouselPavers-min.jpg';
 import pavers2 from '../../../images/residential/paver.jpg';
 import pool from '../../../images/residential/carouselPool-min.jpg';
 import outdoor from '../../../images/residential/outdoor3.jpg';
-import deck from '../../../images/residential/carouselDeck-min.jpg';
-import fence from '../../../images/residential/carouselFence-min.jpg';
-//import turf from '../../../images/residential/carouselTurf-min.jpg';
+import outdoorliving from '../../../images/residential/outdoorliving.jpg';
+import enclosure from '../../../images/residential/enclosure.jpg';
 import turf from '../../../images/residential/turf.png';
-import court from '../../../images/residential/carouselCourt-min.jpg';
-//import water from '../../../images/residential/water-min.jpg';
 import retaining from '../../../images/residential/retaining.jpg';
-import sunroom from '../../../images/residential/sunroom.jpg';
-//import lawn from '../../../images/residential/lawn.jpg';
-import newWater from '../../../images/residential/carouselWater.jpg';
 import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png';
 import './style.css';
 
-let images = [kitchen, pool, concrete, pavers2, turf, retaining, sunroom, patio, outdoor ];
+let images = [outdoorliving, kitchen, pool, concrete, pavers2, turf, retaining, enclosure, outdoor ];
 let text = [
-            
+            {
+                title: 'OUTDOOR LIVING SPACE',
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
+            },
             {
                 title: 'OUTDOOR KITCHENS',
                 body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
@@ -44,12 +37,8 @@ let text = [
                 title: 'RETAINING WALLS',
                 body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
-                title: 'SUNROOMS',
+                title: 'PATIO ENCLOSURES',
                 body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
-            },
-            {
-                title: 'COVERED PATIOS',
-                body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },{
                 title: 'OUTDOOR FEATURES',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
