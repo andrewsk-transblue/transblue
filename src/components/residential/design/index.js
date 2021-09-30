@@ -36,10 +36,11 @@ function Design() {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        setTimeout(() => {
+        const interval = setInterval(() => {
             index < 2 ? setIndex(index + 1) : setIndex(0)
-        }, 20000)
-    })
+        }, 20000);
+        return () => clearInterval(interval)
+    }, [index])
 
     return(
         <div className='design-wrapper'>

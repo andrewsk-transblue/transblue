@@ -52,8 +52,8 @@ function MapComp(props) {
                     <b>Transblue Mount Vernon</b><br /><br />
                     4152 Meridian Street, STE 105 #31<br />
                     Bellingham, WA 98226<br />
-                    <i className="fas fa-phone">(360) 935-0808</i>
-                    <i className="fas fa-envelope"></i>TransblueMountVernon@transblue.org<br />
+                    <i className="fas fa-phone"></i>(360) 935-0808<br />
+                    <i className="fas fa-envelope"></i>MtVernon@transblue.org<br />
                     <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
@@ -62,8 +62,8 @@ function MapComp(props) {
                     <b>Transblue Mount Vernon</b><br /><br />
                     4152 Meridian Street, STE 105 #31<br />
                     Bellingham, WA 98226<br />
-                    <i className="fas fa-phone">(360) 935-0808</i>
-                    <i className="fas fa-envelope"></i>TransblueMountVernon@transblue.org<br />
+                    <i className="fas fa-phone"></i>(360) 935-0808<br />
+                    <i className="fas fa-envelope"></i>MtVernon@transblue.org<br />
                     <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
