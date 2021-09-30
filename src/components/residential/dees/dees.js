@@ -33,7 +33,7 @@ function Dees() {
                     
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}
-                    <a className='cta' href='/blog'>LEARN MORE</a>
+                    <a className='cta' href='/givesback'>LEARN MORE</a>
                 </div>
             </div>
         </div>
