@@ -23,6 +23,7 @@ import CityZip from './cityZip';
 //import FranchiseLifestyle from './lifestyle';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer/index';
+import zipcodes from 'zipcodes'
 //import locationsDb from '../locations/db';
 
 import './style.css';
@@ -38,6 +39,11 @@ function Franchise(props) {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             seteasybaseData(ebData);
+            console.log(JSON.parse(ebData[0].zipcodelist)[0])
+            let zip = JSON.parse(ebData[0].zipcodelist)[0]
+            var num = '0' + zip
+            console.log(num)
+            console.log(zipcodes.lookup(num))
             setServices(regionalServices[ebData[0].region])
             if('geolocation' in navigator) {
                 navigator.geolocation.getCurrentPosition((position) => {
