@@ -15,10 +15,11 @@ function Form() {
     const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(true);
 
-    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
+    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0;
 
     function handleSubmit(e) {
         e.preventDefault();
+        console.log('submit')
 
         //adding message to database
         let dbData = {
@@ -42,6 +43,8 @@ function Form() {
         };
         mailgun.messages().send(data, function(error, body) {
             console.log(body)
+            if(body.message == 'Queued. Thank you.') console.log('success!')
+            else console.log('error')
         })
     }
 
@@ -71,7 +74,7 @@ function Form() {
                 </div>
             </div>
             <div className='row'>
-                <button className={!formCompleted ? 'disabled' : ''} disabled={disabled} onClick={handleSubmit} data-dismiss='modal' >SEND MESSAGE</button>
+                <button className={!formCompleted ? 'disabled' : ''} onClick={handleSubmit} data-dismiss='modal' >SEND MESSAGE</button>
             </div>
             <div className='row'>
                 {/* <Captcha onChange={() => setDisabled(false)} /> */}
