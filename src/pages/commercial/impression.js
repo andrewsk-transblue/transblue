@@ -5,6 +5,7 @@ import downarrow from '../../images/commercial/downarrow.png';
 import paint from '../../images/commercial/paint.jpg';
 import roof from '../../images/commercial/roof.jpg';
 import asphalt from '../../images/commercial/asphalt2.jpg';
+import refresh from '../../images/commercial/refresh.jpg';
 import ThreeCols from '../../components/threeCol';
 import './style.css';
 
@@ -40,7 +41,7 @@ function Impression() {
                     }}
 
                     card3={{
-                        img: paint,
+                        img: refresh,
                         title: 'BRAND REFRESHES',
                         body: "Is your brand looking tired and in need of a face lift? Transblue can transform the exterior with a new design, façade, construction and paint! Ready for the inside as well? We offer new carpet, tiles, paint, and complete overhauls."
                     }}
