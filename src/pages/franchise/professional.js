@@ -35,7 +35,7 @@ function Professional(props) {
                         </svg> */}
                         <i className="fas fa-seedling fa-2x"></i> 
                         <h5>GREAT COMMUNICATION</h5>
-                        <p className='section-p body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue cursus sagittis. Nam vel enim.</p>
+                        <p className='section-p body'>We pride ourselves on excellent communication from start to finish of our projects. You can count on only one point of contact, no matter how many trades are involved</p>
                     </div>
                     <div className='contact-modal'>
                         <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} />
