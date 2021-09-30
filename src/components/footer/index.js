@@ -40,8 +40,6 @@ function Footer(props) {
                         <Link to='/commercial'>Commercial</Link><br />
                         <Link to='/multifamily'>Multifamily</Link><br />
                         <Link to='/government'>Government</Link><br />
-                        {/* <a href='https://tbsnow.herokuapp.com/' target='_blank' rel='noreferrer'>Snow</a><br />
-                        <a href='https://tbev.herokuapp.com/' target='_blank' rel='noreferrer'>Electric Vehicles</a><br /> */}
                     </div>
                 </div>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
@@ -73,10 +71,6 @@ function Footer(props) {
                             <a href='/locations'>Locations</a><br />    
                         </Fragment>}
                         <a href='/featured'>Projects</a><br />
-                        {/* {!props.franchise &&
-                        <Fragment>
-                            <a href='/'>Contact</a><br />
-                        </Fragment>} */}
                         <a href='/blog'>Blog</a><br />
                         <a href='/blog'>Franchise</a><br />
                     </div>

@@ -5,7 +5,7 @@ function ServiceModal() {
     return(
         <Fragment>
             <button className='cta' data-toggle="modal" data-target="#serviceModal">
-                VIEW ALL SERVICES
+                ALL RESIDENTIAL SERVICES
             </button>
             
             <div className='service-modal-wrapper'>
