@@ -79,6 +79,8 @@ const charities = [
 function GivesBack(props) {
 
     const [activeButton, setActiveButton] = useState(0)
+    
+    //charities.filter(charity => props.section === charity.name)
 
     return(
         <Fragment>

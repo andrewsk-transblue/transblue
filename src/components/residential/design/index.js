@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
-import design from '../../../images/residential/design.jpg';
+//import design from '../../../images/residential/design.jpg';
 import design2 from '../../../images/residential/design.png';
-import designSmall from '../../../images/residential/designSmall.jpg';
+import designSmall from '../../../images/residential/designSmall.png';
 import build from '../../../images/residential/build.jpg';
 import buildSmall from '../../../images/residential/buildSmall.jpg';
 import enjoy from '../../../images/residential/enjoy2.jpeg';
