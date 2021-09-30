@@ -19,6 +19,7 @@ const Featured = lazy(() => import('./pages/featured'));
 const Form = lazy(() => import('./pages/addLocation/form'));
 const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
+const Contact = lazy(() => import('./pages/contact'))
 
 function App() {
   //console.log('rendering App.js')
@@ -57,6 +58,7 @@ function App() {
             <Route exact path='/add' component={Form} />
             <Route exact path='/privacy' component={Privacy} />
             <Route exact path='/givesback' component={GivesBack} />
+            <Route exact path='/contact' component={Contact} />
           </Suspense>
         </Router>
       </HelmetProvider>
