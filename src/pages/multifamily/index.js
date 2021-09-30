@@ -62,12 +62,14 @@ function Multifamily() {
                         <div className='col-lg-5 right-text'>
                             <h4 className='section-header'>GET AN EDGE OVER YOUR COMPETITORS</h4>
                             <ul className='section-p'>
-                                <li>Turnkey installation – all services under 1 roof </li>
-                                <li>Increase your property value</li>
-                                <li>Proactive project management</li>
-                                <li>On time and on budget projects</li>
                                 <li>Multi-discipline subject matter construction experts</li>
+                                <li>Turnkey installation – all services under 1 roof </li>
+                                <li>One point of contact no matter how many trades are involved</li>
+                                {/* <li>Increase your property value</li> */}
+                                <li>Proactive project management</li>
                                 <li>Collaborative team members and flexible service offerings</li>
+                                <li>On time and on budget projects</li>
+                                <li>Fastest return on proposals in industry</li>
                                 <li>Financing available for qualifying projects</li>
                             </ul>
                             <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
