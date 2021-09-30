@@ -56,7 +56,12 @@ const projects = [
     {
         img: checkerboard,
         title: 'CHECKERBOARD YARD',
-        location: 'TRANSBLUE BALLARD'
+        location: 'TRANSBLUE BALLARD',
+        description: ['For this project, our clients wanted to maximize their backyard’s usability with a fun and inventive design. Their home exterior, although neat, was rather empty. They wanted a large landscape to be the main focal point in their backyard.',
+        'It was decided that the large open area would feature a large checkerboard pattern! This design would be eye-catching and fresh, taking their empty space to one perfect for entertaining. We first installed 60+ square pavers to lay out the pattern.',
+        'The empty spaces were then expertly filled by high-quality synthetic grass. Not only does this set-up save our client a lot of cash on water expenses, but it also is great for the environment.'
+        ]
+        
     }
 ]
 
@@ -169,7 +174,10 @@ function Featured() {
                     </div>
                     <div className='col-lg-6 '>
                         <h4>{projects[7].title}</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim pretium est, vel faucibus est.</p>
+                        {projects[7].description.map(p => {
+                            return(<p>{p}</p>)
+                        })}
+                        
                         {/* <div className='blah' onClick={executeScroll8}>
                             <img className='next-project' src={downarrow} alt='' />
                         </div> */}
