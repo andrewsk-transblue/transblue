@@ -20,7 +20,7 @@ import mwdeck from '../../images/franchise/services/mwdeck.jpg';
 
 const regionalServices = {
     'northwest': {
-        services: ['PATIO COVERS', 'FIREPITS', 'DECKS', 'OUTDOOR KITCHEN'],
+        services: ['PATIO COVERS', 'FIREPITS', 'DECKS', 'OUTDOOR KITCHENS'],
         images: [nwpatiocover , nwfirepit, nwdecks, nwkitchen ]
     },
     'west': {
@@ -36,8 +36,8 @@ const regionalServices = {
         images: [sunroom, mwpool, mwpatio, mwdeck]
     },
     'southwest': {
-        services: ['SUNROOMS', 'PATIOS', 'POOLS', 'OUTDOOR KITCHENS'],
-        images: [sunroom, spatio, spool, swkitchen]
+        services: ['OUTDOOR KITCHENS', 'SUNROOMS', 'PATIOS', 'POOLS', ],
+        images: [ swkitchen, sunroom, spatio, spool]
     }
 }
 

@@ -106,7 +106,11 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
-                <Green page='commercial' />
+                <Green 
+                page='commercial'
+                solar='Reduce overhead and save on utility bills with solar panels'
+                ev='Increase customer retention and time spent in your business with EV Chargers'
+                roof='Diversify marketing and conserve energy with a living roof' />
                 
                 {/* <Asphalt /> */}
                 <Snow

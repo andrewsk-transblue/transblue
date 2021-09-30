@@ -85,7 +85,12 @@ class Government extends Component {
 
 
                     {/* <Capabilities2 /> */}
-                    <Green page='government' />
+                    <Green 
+                    page='government'
+                    solar='Reduce overhead and save on utility bills with solar panels'
+                    ev=''
+                    roof='Save money on cost of energy and local storm water fees'
+                     />
                     {/* <div className='new-green-solns container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-6'>

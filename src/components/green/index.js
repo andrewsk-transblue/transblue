@@ -18,17 +18,17 @@ function Green(props) {
         <div className='col-lg-4 col-md-6'>
                 <img src={solar} alt='Government Solar Roof' />
                 <p className='subtitle'>SOLAR PANELS</p>
-                <p className='section-p mb-4'>Reduce overhead and save on utility bills with solar panels</p>
+                <p className='section-p mb-4'>{props.solar}</p>
             </div>
             <div className='col-lg-4 col-md-6'>
                 <img src={ev} alt='Government EV Charger' />
                 <p className='subtitle'>ELECTRIC VEHICLE CHARGERS</p>
-                <p className='section-p mb-4'>Increase customer retention and time in your business with EV Chargers</p>
+                <p className='section-p mb-4'>{props.ev}</p>
             </div>
             <div className='col-lg-4 col-md-6'>
                 <img src={livingroof} alt='Commercial Living Roof' />
                 <p className='subtitle'>LIVING ROOFS</p>
-                <p className='section-p mb-4'>Diversify marketing and conserve energy with a living roof</p>
+                <p className='section-p mb-4'>{props.roof}</p>
             </div>
         </div>
     </div>

@@ -152,7 +152,11 @@ function Multifamily() {
                         'SOLAR POWER': '',
                         'ESG SERVICES': ''
                     }} /> */}
-                <Green page='multifamily' />
+                <Green 
+                    page='multifamily'
+                    solar='Reduce overhead and save on utility bills with solar panels'
+                    ev='Increase resident retention and value of your property with EV Chargers'
+                    roof='Save money on cost of energy and local storm water fees' />
                 <ServiceList
                 title='MULTIFAMILY SERVICES'
                 //subtitle='Transblue is your construction resource. We offer a wide variety of services to fit your specific needs, contact us today to discuss your project.'
