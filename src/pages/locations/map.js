@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { useEasybase } from 'easybase-react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -15,6 +16,7 @@ import './style.css';
 // }
 
 function SetCenter({center, radius}) {
+    
     const map = useMap();
     var rad = radius * 1609;
 
@@ -25,7 +27,17 @@ function SetCenter({center, radius}) {
 }
 
 function MapComp(props) {
-    console.log('mapcomp')
+    const [easybaseData, seteasybaseData] = useState([]);
+    const { db } = useEasybase();
+    const mounted = async() => {
+      const ebData = await db("LOCATIONS").return().all();
+      seteasybaseData(ebData);
+      //console.log(ebData)
+    }
+    useEffect(() => {
+        mounted()
+    })
+    //console.log('mapcomp')
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>
             <TileLayer
@@ -54,7 +66,7 @@ function MapComp(props) {
                 </Popup>
             </Marker>
             {/* <Circle center={[39.8283, -98.5795]} radius={10000} fillColor="blue" /> */}
-            {locationsDb.map(location => {
+            {easybaseData.map(location => {
                 return(
                     <Marker position={[`${location.lat}`, `${location.lon}`]}
                         eventHandlers={{

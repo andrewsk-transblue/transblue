@@ -37,6 +37,7 @@ function ListView(props) {
 
     function changeState(e) {
         setState(e.target.value)
+        //console.log(e.target.value)
         setStateLocations(props.locations.filter(location => location.location === e.target.value))
     }
 
@@ -60,6 +61,7 @@ function ListView(props) {
                     </div>
                 }
                 {stateLocations.length > 0 && stateLocations.map(location => {
+                    console.log(stateLocations)
                     //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
