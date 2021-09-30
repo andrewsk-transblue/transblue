@@ -7,7 +7,7 @@ import axios from 'axios';
 import './style.css';
 
 function ListView(props) {
-    const [state, setState] = useState('California');
+    const [state, setState] = useState('Washington');
     const [stateLocations, setStateLocations] = useState([])
     const [loading, setLoading] = useState(true)
 

@@ -3,9 +3,6 @@ const states = [
     'Colorado',
     'Connecticut',
     'Massachusetts',
-    'Oklahoma',
-    'Ohio',
-    'Oregon',
     'Texas',
     'Virginia',
     'Washington'
