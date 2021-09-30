@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/index';
 import Header from '../../components/landing/header';
 import NewReviews from '../../components/landing/newReviews/newReviews';
 import Services from '../../components/landing/services/index';
+import Professional from '../franchise/professional';
 import Footer from '../../components/footer';
 import Mbridge from '../../components/landing/mbridge';
 // import Nepal from '../../components/landing/nepal';
@@ -36,6 +37,7 @@ function NewLanding() {
                 <Core />
                 <Core2 /> */}
                 {/* <Core3 /> */}
+                <Professional />
                 <NewReviews />
                 <Services />
                 <Footer locationPage={false} />

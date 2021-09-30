@@ -12,6 +12,10 @@
     width: calc(95% + 30px)
 }
 
+.landing-body .professional-wrapper {
+    margin-top: 100px;
+}
+
 /* HEADER CSS */
 .header {
     position: fixed;
