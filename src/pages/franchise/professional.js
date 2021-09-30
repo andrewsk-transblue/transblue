@@ -24,8 +24,6 @@ function Professional(props) {
                             </svg> */}
                         </h5>
                         <p className='section-p body'>Your satisfaction is always our top priority and we strive to provide a World Class service we are proud of on every project
-                         {/* We provide a thorough consultation to understand your goals, and to ensure the project is completed according ot your preferences  */}
-                         {/* We start every project by providing a thorough consultation to understand your goals and the needs of the project. We do this to guarantee that the project is completed according to your preferences. */}
                         </p>
                     </div>
                     

@@ -32,11 +32,12 @@ function MapComp(props) {
     const mounted = async() => {
       const ebData = await db("LOCATIONS").return().all();
       seteasybaseData(ebData);
-      //console.log(ebData)
+      console.log('map ebData')
+      console.log(ebData)
     }
     useEffect(() => {
         mounted()
-    })
+    }, [])
     //console.log('mapcomp')
 
     return (
@@ -68,6 +69,7 @@ function MapComp(props) {
             </Marker>
             {/* <Circle center={[39.8283, -98.5795]} radius={10000} fillColor="blue" /> */}
             {easybaseData.map(location => {
+                //console.log(location)
                 return(
                     <Marker position={[`${location.lat}`, `${location.lon}`]}
                         eventHandlers={{
@@ -80,7 +82,7 @@ function MapComp(props) {
                             {location.city}, {location.state} {location.zipcode}<br />
                             <i className="fas fa-phone"></i> {location.phone}<br />
                             <i className="fas fa-envelope"></i>{location.email}<br />
-                            <a className='site-link' href={`/locations/${location.state}/${location.urlCity}`} target='_blank' rel="noreferrer">WEBSITE</a>
+                            <a className='site-link' href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel="noreferrer">WEBSITE</a>
                         </Popup>
                     </Marker>
                 )
