@@ -45,11 +45,33 @@ const charities = [
         description: []
     },
     {
-        name: 'HEED',
+        name: 'MARKED',
+        description: [
+            'Mexico also leads the world in child prostitution distributing over 60% of the worlds child pornography. 63% of those under the age of 15 claim to have encountered sexual violence through organized crime at least once throughout their short lives',
+            'The streets of these towns are ripe for gang violence with many of the young boys getting involved at just 11 years of age. By joining these gangs, they start the clock on the last years of their young lives with a life expectancy of only 3 years',
+            'Marked provides options for orphaned children to have a safe alternatives to gangs and abuse though creative programs and orphan support services.',
+            'Marked has seen those statistics begin to change for good among the communities they serve. Reduced crime rates and increased job opportunities for families allowing thousands of children to come out of the workforce and putting them back into school, now with over a 95% enrollment rate.'
+        ]
+    },
+    {
+        name: 'HLC CHURCH NEPAL',
+        description: [
+            'Founder led: Pastor Jit Lama understands how to stand in a culture that is anti-christian. Nepal persecutes Christians though many cultural laws that inhibit the freedom of worship. HLC church is a strong relational reproducing church in the heart of Katmandu. They serve the poor, help those who are in need and proclaim the gospel of Jesus.',
+            'Last year, they reached out and served 200+ families in crisis due to natural disasters and the pandemic. They are always serving those around them, whether they are believers or not. They were evicted from their long term lease, but managed to purchase property and are now building a new church. They are flourishing in the midst of a very difficult culture.'
+        ]
+    },
+    {
+        name: 'HEED UGANDA',
         description: [
             'HEED has been instrumental in transforming a community. What started as a rural village without any infrastructure has blossomed into a functioning community with clean water, strong schools and pathways to transformation.',
             'HEED has gathered a team that understands what is needed for a community development in Africa.',
             'HEED serves a 5- village area with over 6000 people. Primary projects: High school, primary school, community clinic, village church, and demonstration farm. Pre-covid over 600 kids in school. Before HEED, few children attended school but now 87% of children aged 6-12 attend school'
+        ]
+    },
+    {
+        name: 'MISSION GREEN',
+        description: [
+            'Mission Green plants Eucalyptus trees for Education. 1 acre of trees planted provides 20 student tuitions for school. 1 acre of trees will produce multiple harvests for secondary income. 1 acre of trees can be planted for only $500.00 yet it will produce over $9000.00 after harvest in 6 years.'
         ]
     }
 ]

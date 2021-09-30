@@ -75,7 +75,7 @@ function HoverImages(props) {
                 </div>
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
-                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4">
+                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4" id='last-btn'>
                     <img src={props.page[3].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic4' tabIndex="-1" role="dialog">

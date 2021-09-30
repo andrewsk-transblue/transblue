@@ -5,6 +5,11 @@
     border-radius: 0px;
     background-color: transparent;
     margin-bottom: 32px;
+
+}
+
+.hover-image-container button#last-btn{
+    margin-bottom: 0px;
 }
 
 .hover-image-container .modal-body img {
