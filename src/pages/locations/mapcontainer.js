@@ -38,13 +38,13 @@ class MapContainer extends Component {
             this.searchLocation(this.props.zipcode)
         }
 
-        else if ('getCurrentPosition' in navigator.geolocation || 'geolocation' in navigator) {
+        else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
             console.log('geolocation on')
             console.log('geolocation' in navigator)
             console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
-                console.log(position)
-                this.setState({center: [position.coords.latitude, position.coords.longitude]})
+                //this.setState({center: [position.coords.latitude, position.coords.longitude]})
+                this.setState({center: [29.95123, -90.06549]})
                 // this.setState({
                 //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
                 // })
