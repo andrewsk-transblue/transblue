@@ -17,31 +17,44 @@ function ListView(props) {
         if('getCurrentPosition' in navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 //console.log(position)
-                console.log(reverse.lookup(position.coords.latitude, position.coords.longitude))
-                axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
-                // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=29.95123,-90.06549&key=${process.env.REACT_APP_GOOGLE_API}`)
+                //console.log(reverse.lookup(position.coords.latitude, position.coords.longitude, 'us'))
 
-                    .then(res => {
-                        //console.log(res.data.results[0].address_components[4].long_name)
-                        let userState = res.data.results[0].address_components[4].long_name;
-                        console.log(res)
-                        console.log(userState)
-                        if(states.indexOf(userState)  !== -1) {
-                            setState(userState)
-                            setStateLocations(props.locations.filter(location => location.location === userState))
-                            setLoading(false)
-                        }
-                        else {
-                            setLoading(false)
-                            setStateLocations(state)
-                        }                        
-                    })
+                let userState = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
+                console.log(userState)
+                if(states.indexOf(userState)  !== -1) {
+                    setState(userState)
+                    setStateLocations(props.locations.filter(location => location.location === userState))
+                    setLoading(false)
+                }
+                else {
+                    setLoading(false)
+                    setStateLocations(props.locations.filter(location => location.location === state))
+                }
+
+                // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
+                // // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=29.95123,-90.06549&key=${process.env.REACT_APP_GOOGLE_API}`)
+
+                //     .then(res => {
+                //         //console.log(res.data.results[0].address_components[4].long_name)
+                //         let userState = res.data.results[0].address_components[4].long_name;
+                //         //console.log(res)
+                //         //console.log(userState)
+                //         if(states.indexOf(userState)  !== -1) {
+                //             setState(userState)
+                //             setStateLocations(props.locations.filter(location => location.location === userState))
+                //             setLoading(false)
+                //         }
+                //         else {
+                //             setLoading(false)
+                //             setStateLocations(props.locations.filter(location => location.location === state))
+                //         }                        
+                //     })
             })
         }
         else {
             setLoading(false)
             setStateLocations(props.locations.filter(location => location.location === state))
-            console.log(props.locations.filter(location => location.location === state))       
+            //console.log(props.locations.filter(location => location.location === state))       
         }
     }, [])
 
@@ -71,7 +84,7 @@ function ListView(props) {
                     </div>
                 }
                 {stateLocations.length > 0 && stateLocations.map(location => {
-                    console.log(stateLocations)
+                    //console.log(stateLocations)
                     //console.log(location)
                     let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
                     return(
