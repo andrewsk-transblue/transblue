@@ -3,7 +3,6 @@ import { useEasybase } from 'easybase-react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 
-import locationsDb from './db';
 import comingSoon from './comingSoon';
 
 import './style.css';
