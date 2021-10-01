@@ -14,6 +14,7 @@ import Govt from './govt';
 import Green from './green';
 import Snow from './snow';
 import Professional from './professional';
+import Reviews from './reviews';
 import Contact2 from './contact2';
 //import getAreas from './addCityZip';
 import Map from './map';
@@ -104,7 +105,8 @@ function Franchise(props) {
 
                 <Professional location={easybaseData[0]} />
 
-                <NewReviews />
+                {/* <NewReviews /> */}
+                <Reviews location={easybaseData[0]} />
                 {/* <Services /> */}
                 <div className='map'>
                     <div className='container-fluid'>
