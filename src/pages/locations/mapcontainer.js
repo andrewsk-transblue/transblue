@@ -36,9 +36,11 @@ class MapContainer extends Component {
         if(this.props.zipcode !== undefined) {
             //console.log('searched zipcode')
             this.searchLocation(this.props.zipcode)
+            alert('testing')
         }
 
         else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
+            alert('geolocation on')
             console.log('geolocation on')
             console.log('geolocation' in navigator)
             console.log('getCurrentPosition' in navigator.geolocation)
@@ -52,6 +54,7 @@ class MapContainer extends Component {
         }
 
         else {
+            alert('using seattle')
             console.log('using seattle as default')
             this.setState({
                 center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off

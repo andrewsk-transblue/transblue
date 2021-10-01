@@ -6,6 +6,8 @@ import states from './statesDb';
 import axios from 'axios';
 import './style.css';
 
+const reverse = require('reverse-geocode')
+
 function ListView(props) {
     const [state, setState] = useState('Washington');
     const [stateLocations, setStateLocations] = useState([])
@@ -15,6 +17,7 @@ function ListView(props) {
         if('getCurrentPosition' in navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 //console.log(position)
+                console.log(reverse.lookup(position.coords.latitude, position.coords.longitude))
                 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
                 // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=29.95123,-90.06549&key=${process.env.REACT_APP_GOOGLE_API}`)
 
