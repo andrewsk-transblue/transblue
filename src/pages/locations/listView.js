@@ -15,12 +15,13 @@ function ListView(props) {
 
     useEffect(() => {
         if('getCurrentPosition' in navigator.geolocation) {
+            alert('geolocation on')
             navigator.geolocation.getCurrentPosition(position => {
                 //console.log(position)
                 //console.log(reverse.lookup(position.coords.latitude, position.coords.longitude, 'us'))
 
                 let userState = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-                console.log(userState)
+                //console.log(userState)
                 if(states.indexOf(userState)  !== -1) {
                     setState(userState)
                     setStateLocations(props.locations.filter(location => location.location === userState))
@@ -30,25 +31,6 @@ function ListView(props) {
                     setLoading(false)
                     setStateLocations(props.locations.filter(location => location.location === state))
                 }
-
-                // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${process.env.REACT_APP_GOOGLE_API}`)
-                // // axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=29.95123,-90.06549&key=${process.env.REACT_APP_GOOGLE_API}`)
-
-                //     .then(res => {
-                //         //console.log(res.data.results[0].address_components[4].long_name)
-                //         let userState = res.data.results[0].address_components[4].long_name;
-                //         //console.log(res)
-                //         //console.log(userState)
-                //         if(states.indexOf(userState)  !== -1) {
-                //             setState(userState)
-                //             setStateLocations(props.locations.filter(location => location.location === userState))
-                //             setLoading(false)
-                //         }
-                //         else {
-                //             setLoading(false)
-                //             setStateLocations(props.locations.filter(location => location.location === state))
-                //         }                        
-                //     })
             })
         }
         else {
