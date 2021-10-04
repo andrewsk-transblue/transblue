@@ -31,7 +31,10 @@ function ListView(props) {
                     setLoading(false)
                     setStateLocations(props.locations.filter(location => location.location === state))
                 }
-            })
+            }, err => {
+                setLoading(false)
+                setStateLocations(props.locations.filter(location => location.location === state))
+            }, {timeout: 10000})
         }
         else {
             setLoading(false)

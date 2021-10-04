@@ -37,30 +37,18 @@ class MapContainer extends Component {
         }
 
         else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
-            //alert(navigator.userAgent)
-
-            navigator.permissions.query({name:'geolocation'})
-                .then(result => alert(result.state))
-
-            //alert('geolocation on')
-            //console.log('geolocation on')
-            //console.log('geolocation' in navigator)
-            //console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
-                //console.log(position)
-                //console.log(navigator.userAgent)
-                //alert(`${position.coords.latitude}, ${position.coords.longitude}`)
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                //this.setState({center: [29.95123, -90.06549], isLoading: false})
                 // this.setState({
                 //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
                 // })
-              }, err => {
-                    this.setState({
-                        center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
-                        isLoading: false 
-                    })
-              }, {timeout:5000});
+                }, err => alert(err), {timeout: 5000})
+                // err => {
+                //     this.setState({
+                //         center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                //         isLoading: false 
+                //     })
+                // }, {timeout: 10000});
         }
 
         else {
