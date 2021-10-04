@@ -70,6 +70,7 @@ function Contact(props) {
                     </div>
                     
                     <form className='contact-form' >
+                        <h4>{props.location.name.toUpperCase()}</h4>
                         <div className='row'>
                             <div className='col-sm-6 my-1 input-left'>
                                 <input placeholder='First Name' id='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
