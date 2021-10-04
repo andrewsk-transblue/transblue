@@ -64,7 +64,7 @@ code {
 
 .header-text.franchise-header .header-subtext {
   margin-top: 15px;
-  font-size: .35em;
+  font-size: .5em;
 }
 
 a.cta {
@@ -216,5 +216,7 @@ img.lg-screen-hide {
   button.cta {
     padding: 4px 25px 2px 25px;
   }
+  .header-text.franchise-header .header-subtext {
+    font-size: .4em;
+  }
 }
-

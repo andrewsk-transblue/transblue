@@ -4,7 +4,7 @@
 }
 
 .professional-wrapper .body {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 25px;
 }
@@ -48,6 +48,18 @@
     display: inline-block;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+@media only screen and (min-width: 520px) {
+    .professional-wrapper .body {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    .professional-wrapper .body {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 975px) {
