@@ -44,9 +44,11 @@ class MapContainer extends Component {
             console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
                 //console.log(position)
-                alert(`${position.coords.latitude}, ${position.coords.longitude}`)
-                //this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                this.setState({center: [29.95123, -90.06549], isLoading: false})
+                console.log(navigator.userAgent.indexOf('Chrome'))
+                alert(navigator.userAgent)
+                //alert(`${position.coords.latitude}, ${position.coords.longitude}`)
+                this.setState({center: [position.coords.latitude, position.coords.longitude]})
+                //this.setState({center: [29.95123, -90.06549], isLoading: false})
                 // this.setState({
                 //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
                 // })
