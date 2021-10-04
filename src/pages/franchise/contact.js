@@ -96,7 +96,7 @@ function Contact(props) {
                             <button className={!formCompleted ? 'cta disabled' : 'cta'} onClick={handleSubmit} >SUBMIT</button>
                         </div>
                         <div className='row'>
-                            {submitted && <div className='submit-alert'>THANK YOU! YOUR FORM HAS BEEN SUBMITTED</div>}
+                            {submitted && <div className='submit-alert'>THANK YOU! YOUR MESSAGE HAS BEEN SENT</div>}
                             {/* {error && } */}
                             {error && <div className='error-alert'>OOPS THERE WAS AN ERROR! PLEASE TRY AGAIN</div>}
                         </div>

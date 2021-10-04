@@ -3,7 +3,7 @@ import capabilities from '../../../images/government/capabilities.png';
 import capabilities2 from '../../../images/government/capabilities2.png';
 import './style.css';
 
-function Capabilities2() {
+function Capabilities2(props) {
     return(
         <Fragment>
         <div className='capabilities-wrapper container-fluid'>
@@ -19,6 +19,7 @@ function Capabilities2() {
         <a className='capabilities-download cta' href={process.env.PUBLIC_URL + '/capabilities.pdf'} download>
             DOWNLOAD STATEMENT
         </a>
+        <button className='cta' onClick={props.hideStatement} id='hide-statement'>HIDE STATEMENT</button>
         </Fragment>
     )
 }

@@ -32,7 +32,7 @@ function Benefits(props) {
         </div>
         {displayCapabilities &&
             <Slide bottom>
-                 <Capabilities2 />
+                 <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />
             </Slide>}
         </Fragment>
     )

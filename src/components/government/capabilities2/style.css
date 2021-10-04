@@ -4,31 +4,23 @@
     box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
 }
 
-/* .capabilities-wrapper .page-1,
-.capabilities-wrapper .page-2 {
-    border: 1.5px solid #0b56a4;
-} */
-
 .capabilities-wrapper img {
     width: 100%;
 }
 
 a.capabilities-download {
     display: inline-block;
-    margin-left: calc(3.5% + 16px);
+    margin-left: 4.5%;
     margin-top: 30px;
 }
 
-/* .capabilities-wrapper .capabilities-1,
-.capabilities-wrapper .capabilities-2 {
-    border: 1.5px solid #0b56a4;
-} */
-
-/* .capabilities-wrapper .page-2 {
-    border-left: 0px;
-    border-bottom: 0px;
+button#hide-statement {
+    margin-left: 4.5%;
+    margin-top: 10px;
 }
 
-.capabilities-1 {
-    border-right: 0;
-} */
+@media only screen and (min-width: 444px) {
+    button#hide-statement {
+        margin-left: 10px;
+    }
+}
