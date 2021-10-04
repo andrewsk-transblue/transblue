@@ -2,7 +2,9 @@ import React from 'react';
 import './style.css';
 import '../../../App.css'
 import dees from '../../../images/residential/dees.jpg';
-import windermere from '../../../images/residential/windermere.jpg';
+//import windermere from '../../../images/residential/windermere.jpg';
+import oasis from '../../../images/residential/oasis.jpg';
+import oasis2 from '../../../images/residential/oasis3.jpg';
 import HoverImages from '../../hoverImages';
 
 function Dees() {
@@ -13,8 +15,8 @@ function Dees() {
                     {/* <img src={dees} alt='Dees Hope'></img> */}
                     <HoverImages 
                     page={[
-                        {image: windermere, title: "WINDERMERE LABYRINTH", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
-                        {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: oasis, title: "SEATTLE URBAN OASIS", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: oasis2, title: "SEATTLE URBAN OASIS", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' }
 
@@ -29,7 +31,7 @@ function Dees() {
                     
                     Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros. */}
                     <p className='section-p'>
-                    A portion of profit from every Transblue project goes to helping those in need around the globe. One of our mBridge partners, Dee's Hope, is an organization that helps women in Uganda escape domestic servitude by providing shelter, education, etc. Last year, we completed a project that allowed us to donate over $20,000 to Dee's Hope, resulting in the freedom of 17 women from domestic servitude.</p>
+                    A portion of profit from every Transblue project goes to helping those in need around the globe. One of our mBridge partners, Dee's Hope, is an organization that helps women in Uganda escape domestic servitude by providing shelter, education, etc. Last year, we completed our Urban Oasis project that allowed us to donate over $20,000 to Dee's Hope, resulting in the freedom of 17 women from domestic servitude.</p>
                     
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}
