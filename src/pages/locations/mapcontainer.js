@@ -42,13 +42,14 @@ class MapContainer extends Component {
                 // this.setState({
                 //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
                 // })
-                }, err => alert(err), {timeout: 5000})
-                // err => {
-                //     this.setState({
-                //         center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
-                //         isLoading: false 
-                //     })
-                // }, {timeout: 10000});
+                },
+                err => {
+                    alert(err)
+                    this.setState({
+                        center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                        isLoading: false 
+                    })
+                }, {timeout: 10000});
         }
 
         else {

@@ -13,7 +13,7 @@ function Dees() {
                     {/* <img src={dees} alt='Dees Hope'></img> */}
                     <HoverImages 
                     page={[
-                        {image: windermere, title: "WINDERMERE LABIRYNTH", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: windermere, title: "WINDERMERE LABYRINTH", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' }
