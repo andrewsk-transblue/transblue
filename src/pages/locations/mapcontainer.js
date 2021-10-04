@@ -44,7 +44,7 @@ class MapContainer extends Component {
                 // })
                 },
                 err => {
-                    alert(err)
+                    console.log(err)
                     this.setState({
                         center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
                         isLoading: false 
