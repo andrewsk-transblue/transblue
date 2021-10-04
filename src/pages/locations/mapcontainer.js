@@ -49,7 +49,7 @@ class MapContainer extends Component {
                         center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
                         isLoading: false 
                     })
-                }, {timeout: 10000});
+                }, {timeout: 5000});
         }
 
         else {
