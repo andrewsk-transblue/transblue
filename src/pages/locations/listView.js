@@ -15,7 +15,7 @@ function ListView(props) {
 
     useEffect(() => {
         if('getCurrentPosition' in navigator.geolocation) {
-            alert('geolocation on')
+            //alert('geolocation on')
             navigator.geolocation.getCurrentPosition(position => {
                 //console.log(position)
                 //console.log(reverse.lookup(position.coords.latitude, position.coords.longitude, 'us'))

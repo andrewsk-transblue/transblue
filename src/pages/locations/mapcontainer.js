@@ -20,8 +20,7 @@ class MapContainer extends Component {
             displayMiles: false,
             radius: 50,
             locations: [],
-            disabled: true,
-            loading: false
+            disabled: true
         }
     }
 
@@ -38,14 +37,15 @@ class MapContainer extends Component {
         }
 
         else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
-            alert('geolocation on')
-            console.log('geolocation on')
-            console.log('geolocation' in navigator)
-            console.log('getCurrentPosition' in navigator.geolocation)
+            alert(navigator.userAgent)
+
+            //alert('geolocation on')
+            //console.log('geolocation on')
+            //console.log('geolocation' in navigator)
+            //console.log('getCurrentPosition' in navigator.geolocation)
             navigator.geolocation.getCurrentPosition((position) => {
                 //console.log(position)
-                console.log(navigator.userAgent.indexOf('Chrome'))
-                alert(navigator.userAgent)
+                //console.log(navigator.userAgent)
                 //alert(`${position.coords.latitude}, ${position.coords.longitude}`)
                 this.setState({center: [position.coords.latitude, position.coords.longitude]})
                 //this.setState({center: [29.95123, -90.06549], isLoading: false})
@@ -87,7 +87,7 @@ class MapContainer extends Component {
     }
 
     searchLocation = (location_id) => {
-        this.setState({loading: true})
+        this.setState({isLoading: true})
         //console.log(location_id)
         //this.setState({radius: 50}) //reset radius to 50mi when user searches a new city
         axios.get(`https://my-tb-cors.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${location_id}&key=AIzaSyAC_A-wjPLaf2_VKJQqetSY08bxsvLsUk4`) //get lat and lon of city or address, filter locationList to locations within radius
@@ -139,7 +139,7 @@ class MapContainer extends Component {
                         </span>
                         <div className="d-flex align-items-center">
                             <h5><i className="fas fa-map-marker-alt"></i>LOCATIONS</h5>
-                            {this.state.loading && <div className="spinner-border ml-auto text-primary" role="status" aria-hidden="true"></div>}
+                            {this.state.isLoading && <div className="spinner-border ml-auto text-primary" role="status" aria-hidden="true"></div>}
                         </div>
                             
                         <div className='search-results mt-2 pl-3'>
