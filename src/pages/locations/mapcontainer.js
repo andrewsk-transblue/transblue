@@ -37,7 +37,10 @@ class MapContainer extends Component {
         }
 
         else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
-            alert(navigator.userAgent)
+            //alert(navigator.userAgent)
+
+            navigator.permissions.query({name:'geolocation'})
+                .then(result => alert(result.state))
 
             //alert('geolocation on')
             //console.log('geolocation on')
@@ -52,7 +55,12 @@ class MapContainer extends Component {
                 // this.setState({
                 //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
                 // })
-              }, err => alert(err), {timeout:5000});
+              }, err => {
+                    this.setState({
+                        center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                        isLoading: false 
+                    })
+              }, {timeout:5000});
         }
 
         else {
