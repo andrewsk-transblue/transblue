@@ -59,7 +59,7 @@ function Contact(props) {
             <h1>HAVE QUESTIONS?</h1>
             <h3 className='title'>SEND US A MESSAGE</h3>
 
-            <div className='contact-container container'>
+            <div className='contact-container container-fluid'>
                 <div className='row'>
                     <div className='contact-info my-auto'>
                         <h4>{props.location.name.toUpperCase()}</h4>
