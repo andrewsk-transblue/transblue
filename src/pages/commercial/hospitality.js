@@ -1,23 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import Fade from 'react-reveal/Fade';
-import snow from '../../images/commercial/plow.jpg';
-import asphalt from '../../images/commercial/asphalt.jpg';
-import ev from '../../images/commercial/ev.jpg';
-import check from '../../images/checkorange.png';
+import React from 'react';
 import turnkey from '../../images/commercial/icons/turnkey.png';
 import customers from '../../images/commercial/icons/customers.jpg';
 import expert from '../../images/commercial/icons/expert.jpg';
 import './style.css';
 
 function Hospitality() {
-    const images = [snow, asphalt, ev];
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        setTimeout(() => {
-            index < images.length -1 ? setIndex(index + 1) : setIndex(0)
-        }, 5000)
-    })
     return(
         <div className='hospitality-wrapper container-fluid'>
             <h6>NO MATTER THE PROJECT,</h6>
