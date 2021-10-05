@@ -5,7 +5,7 @@ function Mission() {
     return(
         <Fragment>
             <div className='container-fluid mission w-100'>
-                <div className='row'>
+                <div className='row wrapper'>
                     <div className='col-lg-6 col-md-6 col-sm-6'>
                         <div className='row'>
                             <div className='col-lg-3 col-sm-12 col-md-3 col-3 px-0 my-auto'>

@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.landing-body .mission .wrapper {
+    background-color: transparent;
+}
+
 .landing-body .container-fluid:not(.who-is-tb) {
     width: 95%;
 }

@@ -43,6 +43,7 @@ function Multifamily() {
             <Header img={header2} title='MULTIFAMILY' subtitle='' name='multifamily' />
             <ContactCta />
             <div className='multifamily-body'>
+                <div className='wrapper'>
                 <div className='container-fluid multifamily-about'>
                     <div className='row'>
                         <div className='col-lg-6'>
@@ -128,7 +129,9 @@ function Multifamily() {
                         </div>
                     </div>
                 </div>
+                </div>
                 <Assets />
+                <div className='wrapper'>
                 <Snow
                     img={snow}
                     title='KEEP YOUR COMMUNITY SAFE'
@@ -136,24 +139,6 @@ function Multifamily() {
                     p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
                     p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
                 />
-                {/* <ServiceSlides /> */}
-                {/* <Carousel
-                    services={{
-                        'SNOW & ICE': '',
-                        'SWIMMING POOLS': '',
-                        'ASPHALT': '',
-                        'LANDSCAPE INSTALLS': '',
-                        'ROOFING': '',
-                        'SIDING': '',
-                        'PAINTING': '',
-                        'REMODELS': '',
-                        'CONCRETE': '',
-                        'DRAINAGE SYSTEMS': '',
-                        'DECKS & FENCES': '',
-                        'EV CHARGING': '',
-                        'SOLAR POWER': '',
-                        'ESG SERVICES': ''
-                    }} /> */}
                 <Green 
                     page='multifamily'
                     solar='Reduce overhead and save on utility bills with solar panels'
@@ -178,18 +163,7 @@ function Multifamily() {
                     'Electric Vehicle Charging Systems, Solar Power',
                     'ESG Service Offerings'
                 ]} />
-                {/* <ServiceCard
-                     p1='As a property manager, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
-                     p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'
-                     services={['ev', 'solar', 'roofs', 'xeriscapes']}
-                     body={
-                         ['The need for EV charging stations is on the rise. Transblue provides the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. required to install Electric Charging Stations for your communities.',
-                         'Solar power systems derive clean, pure energy from the sun. Installing solar panels on your home helps combat greenhouse gas emissions and reduces our collective dependence on fossil fuel. Traditional electricity is sourced from fossil fuels such as coal and natural gas.',
-                         'A green roof provides a rainwater buffer, purifies the air, reduces the ambient temperature, regulates the indoor temperature, saves energy and encourages biodiversity in the city. Green roofs are part of climate-proof construction.',
-                         'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
-                     }
-                /> */}
-               
+                </div>
             </div>
             <Footer />
         </Fragment>

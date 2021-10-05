@@ -25,7 +25,7 @@ function Impression() {
                     <p>The exterior of your business is the first thing people see when they arrive or drive by. Make a lasting impression with a beautiful exterior.</p>
                 </div>
             </div>
-            <div ref={myRef}>
+            <div ref={myRef} className='wrapper'>
                 <ThreeCols
                     title='REFRESH YOUR COMMERCIAL BRAND'
                     subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'

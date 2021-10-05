@@ -31,13 +31,14 @@ function NewLanding() {
             <div className='landing-body'>
                 <div className='wrapper'>
                 <Mbridge />
-            
+                </div>
                 <Mission />
                 {/* <Here /> */}
                 {/* <Core3 />
                 <Core />
                 <Core2 /> */}
                 {/* <Core3 /> */}
+                <div className='wrapper'>
                 <Professional />
                 <NewReviews />
                 <Services />

@@ -44,7 +44,9 @@ class Commercial extends Component {
                 <Header name='commercial' img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
                 <ContactCta />
                 <div className='commercial-body'>
-                <About />
+                <div className='wrapper'>
+                    <About />
+                </div>
                 <Impression />
                 <Slideshow 
                     images={[slidesnow, asphalt, fence, solar]}
@@ -67,8 +69,10 @@ class Commercial extends Component {
                             p2: ''
                         }
                     ]} />
-                <Marriott />
-                <Hospitality />
+                <div className='wrapper'>
+                    <Marriott />
+                    <Hospitality />
+                </div>
                 {/* <Benefits /> */}
                 <div className='simple-process'>
                     <img src={simple} alt='Commercial Landscaping' />
@@ -92,6 +96,7 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='wrapper'>
                 <div className='nextstep container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6'>
@@ -121,9 +126,9 @@ class Commercial extends Component {
                     p2='Our comprehensive snow removal management plans will help with costing on budgets and costs control initiatives, project planning and management, and environmental impacts that that face your brands image every day. '
                     // p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
                 />
-
-                {/* <Carousel /> */}
                 </div>
+                </div>
+
                 <Footer />
             </Fragment>
         )
