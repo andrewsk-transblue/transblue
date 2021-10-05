@@ -27,8 +27,9 @@ function NewLanding() {
             <Navbar page='HOME' />
             <Header />
             <ContactCta />
+            
             <div className='landing-body'>
-
+                <div className='wrapper'>
                 <Mbridge />
             
                 <Mission />
@@ -40,6 +41,7 @@ function NewLanding() {
                 <Professional />
                 <NewReviews />
                 <Services />
+                </div>
                 <Footer locationPage={false} />
             </div>
         </Fragment>
