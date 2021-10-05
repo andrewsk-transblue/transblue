@@ -1,5 +1,8 @@
 .government-body {
     margin-top: 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .government-body .container-fluid:not(.capabilities-wrapper) {

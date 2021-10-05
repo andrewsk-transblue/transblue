@@ -23,6 +23,12 @@
     background-color: white;
 }
 
+.residential-body .wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .residential-body .section-header {
     font-size: 1.7em;
     font-family: 'Montserrat', sans-serif;

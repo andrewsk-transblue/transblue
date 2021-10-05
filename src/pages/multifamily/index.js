@@ -190,8 +190,8 @@ function Multifamily() {
                      }
                 /> */}
                
-                <Footer />
             </div>
+            <Footer />
         </Fragment>
     )
 }

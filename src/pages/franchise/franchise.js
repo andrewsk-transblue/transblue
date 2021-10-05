@@ -70,6 +70,7 @@ function Franchise(props) {
                     franchise={true}
                 />
                 <ContactCta email={easybaseData[0].email} />
+                <div className='wrapper'>
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
@@ -91,18 +92,19 @@ function Franchise(props) {
                         </div>}
                         
                     </div>
-                    
-                    <NewSlideshow location={easybaseData[0]} />
-                
+                </div>
+                <NewSlideshow location={easybaseData[0]} />
+                <div className='wrapper'>
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />
                 <Contact location={easybaseData[0]} />
                 <Govt location={easybaseData[0]} />
                 <Green location={easybaseData[0]} />
+                </div>
                 <Snow location={easybaseData[0]} />
 
                 {/* <Whatwedo /> */}
-
+                <div className='wrapper'>
                 <Professional location={easybaseData[0]} />
 
                 {/* <NewReviews /> */}
@@ -125,6 +127,7 @@ function Franchise(props) {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} franchise={easybaseData[0]} />
                 {/* <div className='container-fluid contact-container'>

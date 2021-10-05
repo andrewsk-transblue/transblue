@@ -42,14 +42,21 @@ function Residential() {
                     Transblue takes a holistic approach to your project. We believe that each project is a collaboration of your vision and our expertise. Our teams will guide you through the process and ensure you love what your are building and your dreams not only come true but become an investment that returns not only ROI but that brings family closer together! Projects are not just beautiful materials and designs, they are birthday parties, BBQ’s, anniversaries and relaxing afternoons! 
                     </p>
                 </div>
+                <div className='wrapper'>
                 <Quality />
                 <Lifestyle />
+                </div>
                 <UpgradeNew />
+                <div className='wrapper'>
                 <Installation />
+                </div>
                 <Carousel />
                 <Design />
+                <div className='wrapper'>
                 <Dees />
+                </div>
                 <Rockstar />
+                <div className='wrapper'>
                 <ServiceCard
                     p1='As a homeowner, being on the right side of the environment is not only great for our world, but it also makes you feel better. You’re doing your part. You’re reducing our footprint. These are project that you can truly take pride in. Not only do you love and enjoy them, but its just the right thing to do.'
                     p2='Transblue offers a full range of ESG (environmental, social, and governance) services. These services include; Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc.'
@@ -61,6 +68,7 @@ function Residential() {
                         'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
                     }
                  />
+                 </div>
                 <Footer />
             </div>
         </Fragment>

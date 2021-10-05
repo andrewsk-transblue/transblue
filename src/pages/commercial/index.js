@@ -43,6 +43,7 @@ class Commercial extends Component {
                 <Navbar page='COMMERCIAL' parentPage='gc' />
                 <Header name='commercial' img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
                 <ContactCta />
+                <div className='commercial-body'>
                 <About />
                 <Impression />
                 <Slideshow 
@@ -122,7 +123,7 @@ class Commercial extends Component {
                 />
 
                 {/* <Carousel /> */}
-
+                </div>
                 <Footer />
             </Fragment>
         )

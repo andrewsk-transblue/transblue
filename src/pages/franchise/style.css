@@ -17,6 +17,12 @@
     background-color: rgba(0,0,0,0.5)
 } */
 
+.franchise-wrapper .wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .franchise-services {
     padding-top: 50px;
     padding-bottom: 90px;

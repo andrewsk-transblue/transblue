@@ -5,8 +5,8 @@ import regional from './regional';
 import './commercial.css';
 
 function Commercial(props) {
-    console.log(props)
-    console.log(regional[props.location.region])
+    //console.log(props)
+    //console.log(regional[props.location.region])
     return(
         <Section 
         location={props.location}
