@@ -12,7 +12,7 @@ function Professional(props) {
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
                         <h5> PROFESSIONAL WORK</h5>
-                        <p className='section-p body'>Our company pays special attention to the details of every project to ensure the complete satisfaction of each and every client</p>
+                        <p className='section-p body'>We pay special attention to the details of every project to ensure the complete satisfaction of each and every client</p>
                     </div>
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
@@ -23,7 +23,7 @@ function Professional(props) {
                                 <path d="M75,98 L98,98 L98,75" fill="none" stroke="black" stroke-width="3" />
                             </svg> */}
                         </h5>
-                        <p className='section-p body'>Your satisfaction is always our top priority and we strive to provide a World Class service we are proud of on every project
+                        <p className='section-p body'>We strive to provide a World Class service we are proud of on every project. Your satisfaction is always our top priority.
                         </p>
                     </div>
                     

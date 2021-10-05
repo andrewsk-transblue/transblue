@@ -9,7 +9,7 @@
 }
 
 .landing-body .container-fluid.mbridge {
-    width: calc(95% + 30px)
+    width: 95%;
 }
 
 .landing-body .professional-wrapper {
@@ -108,6 +108,7 @@
 
 .mbridge {
     margin-top: 50px;
+    padding: 0px;
 }
 
 /* .mbridge .col-sm-12 {

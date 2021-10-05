@@ -53,11 +53,6 @@ function Mbridge() {
             <div className='row'>
                 <div className='col-lg-6 my-auto'>
                     <img src={worldclass} alt='' />
-                    {/* <div className='image-wrapper'>
-                        <div className='overlay'></div>
-                        <img src={charity}  alt='community'/>
-                        <div className='community-stats centered-text'></div>
-                    </div> */}
                 </div>
                 <div className='col-lg-6 left-text my-auto'>
                     <h6>WORLD CLASS GENERAL CONTRACTORS</h6>
@@ -65,13 +60,7 @@ function Mbridge() {
                     At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. We love helping people and we love doing a World Class job for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.</p>
                     
                     <p className='section-p'> Our passion is to build beautiful projects and we believe in treating your home like ours. We truly care about your project and doing a great job for you. We listen, collaborate, and design. This enables us to turn your project and dream into a reality. Our goal is to always exceed expectations of our customers!
-                        {/* At Transblue, we have been in the business of transforming lifestyles through landscape construction for over 17 years. */}
                     </p>
-                    <p className='section-p'>
-                    {/* At Transblue, we see every project through to the end. We notice and do what’s right by never cutting corners. We monitor all projects to ensure an exceptional final product. */}
-                    {/* Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profits from each and every Transblue project is donated to charities around the globe. We aim to make the world a better place, one project at a time. */}
-                    </p>
-                    {/* <a href='/givesback' className='cta'>LEARN MORE</a> */}
                 </div>
 
             </div>
@@ -83,7 +72,6 @@ function Mbridge() {
                     <h4 className='section-header'>TRANSBLUE GIVES BACK</h4>
                     <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is dontated to helping those in need around the globe. We are here for each other.</div>
                     </div>
-                    {/* <hr /> */}
                 </div>
             </div>
             <div className='row mx-0'>
