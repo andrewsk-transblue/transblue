@@ -15,8 +15,8 @@ function Dees() {
                     {/* <img src={dees} alt='Dees Hope'></img> */}
                     <HoverImages 
                     page={[
-                        {image: oasis, title: "SEATTLE URBAN OASIS", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
-                        {image: oasis2, title: "SEATTLE URBAN OASIS", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
+                        {image: oasis, title: "SEATTLE URBAN OASIS", caption: 'Two 45 foot retaining walls with a water feature that drops into the patio, creating a tranquil, deep, private patio space' },
+                        {image: oasis2, title: "SEATTLE URBAN OASIS", caption: 'The space was surrounded by environmentally, pet and child friendly synthetic turf. The turf was of the highest quality and provides an outdoor living space that requires zero maintenance.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' },
                         {image: dees, title: "DEES HOPE", caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies.' }
 
