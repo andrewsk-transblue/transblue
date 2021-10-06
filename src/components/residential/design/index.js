@@ -69,7 +69,7 @@ function Design() {
                             <p>{slides[2].body}</p>
                         </Fade>}
                     </div>
-                    <div className='col-lg-4 d-none d-xl-block'></div>
+                    <div className='col-lg-4 d-none d-lg-block'></div>
                     <div className='col-lg-1 col-1 my-auto px-0'>
                         <button disabled={index < 2 ? false : true} onClick={() => setIndex(index+1)}>
                             <img className={index < 2 ? 'forward' : 'forward disabled'} src={forward} alt=''></img>
