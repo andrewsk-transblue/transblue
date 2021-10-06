@@ -43,18 +43,18 @@ function Footer(props) {
                     </div>
                 </div>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>SNOW SERVICES</h1>
+                    <h1>SNOW <br />REMOVAL</h1>
                     <div className='footer-services-list'>
                         <a href='https://tbsnow.herokuapp.com/'>About</a> <br />
-                        <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
-                        <a href='https://tbsnow.herokuapp.com/software'>Our Software</a><br />
+                        {/* <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
+                        <a href='https://tbsnow.herokuapp.com/software'>Our Software</a><br /> */}
                         <a href='https://tbsnow.herokuapp.com/gallery'>Gallery</a><br />
                         <a href='https://tbsnow.herokuapp.com/faq' target='_blank' rel='noreferrer'>FAQ</a><br />
                         <a href='https://tbev.herokuapp.com/pricing' target='_blank' rel='noreferrer'>Pricing</a><br />
                     </div>
                 </div>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>GREEN SERVICES</h1>
+                    <h1>GREEN SOLUTIONS</h1>
                     <div className='footer-services-list'>
                         <a href='https://tbev.herokuapp.com/'>About</a> <br />
                         <a href='https://tbev.herokuapp.com/residential'>Residential</a><br />
@@ -110,20 +110,20 @@ function Footer(props) {
                             <hr />
                         </div>
                     }
-                    <button onClick={() => setDisplaySnow(!displaySnow)}>SNOW SERVICES <i className="fas fa-angle-down"></i></button>
+                    <button onClick={() => setDisplaySnow(!displaySnow)}>SNOW REMOVAL<i className="fas fa-angle-down"></i></button>
                     {displaySnow && 
                         <div>
                             <a href='https://tbsnow.herokuapp.com/'>About</a><br />
-                            <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
+                            {/* <a href='https://tbsnow.herokuapp.com/operate'>How We Operate</a><br />
                             <a href='https://tbsnow.herokuapp.com/software'>Our Software</a><br />
-                            <a href='https://tbsnow.herokuapp.com/emergency'>Emergency &amp; Risk</a><br />
+                            <a href='https://tbsnow.herokuapp.com/emergency'>Emergency &amp; Risk</a><br /> */}
                             <a href='https://tbsnow.herokuapp.com/pricing'>Pricing</a><br />
                             <a href='https://tbsnow.herokuapp.com/gallery'>Gallery</a><br />
                             <a href='https://tbsnow.herokuapp.com/faq'>FAQ</a><br />
                             <hr />
                         </div>
                     }
-                    <button onClick={() => setDisplayEV(!displayEV)}>GREEN SERVICES <i className="fas fa-angle-down"></i></button>
+                    <button onClick={() => setDisplayEV(!displayEV)}>GREEN SOLUTIONS<i className="fas fa-angle-down"></i></button>
                     {displayEV && 
                         <div>
                             <a href='https://tbev.herokuapp.com/'>About</a><br />
