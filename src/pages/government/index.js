@@ -17,11 +17,12 @@ import govt from '../../images/government/govtseattle.jpg';
 import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
 import benefits from '../../images/government/benefits.jpeg';
-import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
 import roof from '../../images/government/roof.jpg';
 import ev from '../../images/government/ev.jpg';
+import lightrail from '../../images/government/lightrail.jpg';
+import govtBenefits from '../../images/government/govt.jpg';
 //import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
@@ -41,7 +42,7 @@ function Government() {
                     <div className='container-fluid government-about'>
                         <div className='row'>
                             <div className='col-lg-6 order-lg-12'>
-                                <img src={govtbuilding} alt='Government Building' />
+                                <img src={lightrail} alt='Government Building' />
                             </div>
                             <div className='col-lg-6 order-lg-12 left-text'>
                                 <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
@@ -56,7 +57,7 @@ function Government() {
                         </Slide>}
                     </div>
                     <Benefits 
-                        img={benefits}
+                        img={govtBenefits}
                         list={[
                             'We understand the government bidding process',
                             'We understand Scope of Work Requirements',
@@ -89,7 +90,7 @@ function Government() {
                     />
                     <Snow
                         img={snow}
-                        title='GOVERNMENT SNOW SERVICES'
+                        title='GOVERNMENT SNOW &amp; ICE MANAGEMENT'
                         p1='At Transblue, we provide comprehensive snow and ice management plans for government properties. This includes plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
                         p2='Keeping city officials, staff and community members safe is always our goal.'
                         // p2='Keeping city officials, staff and community members safe is always our goal. We map out each location to ensure our snow service does not impede city, county or federal business.'
