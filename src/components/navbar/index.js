@@ -72,7 +72,7 @@ class Navbar extends Component {
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                GREEN SERVICES
+                                GREEN SOLUTIONS
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="https://tbev.herokuapp.com/">ABOUT</a>
@@ -83,13 +83,13 @@ class Navbar extends Component {
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                SNOW SERVICES
+                                SNOW REMOVAL
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">ABOUT</a>
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
+                                {/* <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">EMERGENCY &amp; RISK</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a>
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a> */}
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">GALLERY</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">PRICING</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
