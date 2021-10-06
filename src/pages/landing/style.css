@@ -38,6 +38,12 @@
     height: 100vh;
 }
 
+.landing-header::after {
+    animation: headerText 40s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    content: 'LUXURY EXTERIOR DESIGN';
+}
+
 #header_slide {
     width: 100%;
     height: 100vh;
@@ -247,26 +253,25 @@
         background-image: url('../../images/landingHeader/fire-min.jpeg');
         /* background-size: 480px 300px; */
     }
-    20% {
+    12% {
         background-image: url('../../images/landingHeader/evHeader-min.jpeg');
     }
-    30% {
-        background-image: url('../../images/landingHeader/patio-min.jpeg');
-        
+    25% {
+        background-image: url('../../images/landingHeader/fire-min.jpeg');
     }
-    40% {
+    37% {
         background-image: url('../../images/landingHeader/asphalt.jpeg');
     }
-    60% {
+    50% {
         background-image: url('../../images/landingHeader/couple-pool-min.jpeg');
     } 
-    70% {
+    62% {
         background-image: url('../../images/landingHeader/hoa.jpg');
     }
-    80% {
+    75% {
         background-image: url('../../images/landingHeader/familyfirepit-min.jpg');
     }
-    100% {
+    88% {
         background-image: url('../../images/landingHeader/snow-min.jpg');
     }
 }
@@ -275,26 +280,27 @@
     0% {
         content: 'LUXURY EXTERIOR DESIGN'
     }
-    20% {
-        content: 'LUXURY EXTERIOR DESIGN'
-    }
-    30% {
-        content: 'Reliable Snow Removal'
-    }
-    40% {
-        content: 'QUALITY ASPHALT INSTALLATION'
-    }
-    60% {
+    12% {
         content: 'A GREENER WORLD'
     }
-    70% {
-        content: 'BEAUTIFUL COMMUNITY LIVING'
-    }
-    80% {
+    25% {
         content: 'LUXURY EXTERIOR DESIGN'
     }
-    100% {
+    37% {
+        content: 'QUALITY ASPHALT INSTALLATION'
+    }
+    50% {
         content: 'LUXURY EXTERIOR DESIGN'
+    }
+    62% {
+        content: 'LUXURY EXTERIOR DESIGN'
+    }
+    75% {
+        content: 'LUXURY EXTERIOR DESIGN'
+
+    }
+    88% {
+        content: 'RELIABLE SNOW REMOVAL'
     }
 }
 

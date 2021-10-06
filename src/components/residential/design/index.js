@@ -13,7 +13,6 @@ import line from '../../../images/line.png';
 import './style.css';
 
 function Design() {
-    console.log('design component loaded')
     //console.log(window.innerHeight)
     const slides = [
         {
