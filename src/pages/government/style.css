@@ -9,10 +9,6 @@
     width: 93%;
 }
 
-.capabilities-wrapper {
-    width: 91%;
-}
-
 .government-header img,
 .government-about img,
 .asphalt img,
@@ -28,6 +24,10 @@
     margin-bottom: 50px;
 }
 
+.government-about button.cta {
+    margin-left: 0px;
+}
+
 /* .government-body .new-green-solns a.cta {
     margin-top: 10px;
 } */
@@ -38,7 +38,7 @@
 
 @media only screen and (min-width: 750px) {
     .government-about {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 }
 

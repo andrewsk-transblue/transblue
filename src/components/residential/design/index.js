@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Fade from 'react-reveal/Fade';
 //import design from '../../../images/residential/design.jpg';
 import design2 from '../../../images/residential/design.png';
@@ -13,6 +13,8 @@ import line from '../../../images/line.png';
 import './style.css';
 
 function Design() {
+    console.log('design component loaded')
+    //console.log(window.innerHeight)
     const slides = [
         {
             img: design2,

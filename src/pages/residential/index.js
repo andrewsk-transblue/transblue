@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import handleViewport from 'react-in-viewport';
 import Navbar from '../../components/navbar/index';
 // import Header from '../../components/header';
 import Footer from '../../components/footer/index';
@@ -16,7 +17,20 @@ import Rockstar from '../../components/residential/rockstar';
 
 import './style.css';
 
+
+//BLOCK ABOVE DESIGN COMPONENT THAT TRIGGERS DESIGN ANIMATION
+const Block = (props: { inViewport: boolean }) => {
+    const { inViewport, forwardedRef } = props;
+    return (
+      <div className="viewport-block" ref={forwardedRef}>
+      </div>
+    );
+  };
+const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
+
 function Residential() {
+    const [displayDesign, setDisplayDesign] = useState(false);
+
     return(
         <Fragment>
             <Helmet>
@@ -51,7 +65,8 @@ function Residential() {
                 <Installation />
                 </div>
                 <Carousel />
-                <Design />
+                <ViewportBlock onEnterViewport={() => setDisplayDesign(true)} />
+                {displayDesign && <Design />}
                 <div className='wrapper'>
                 <Dees />
                 </div>

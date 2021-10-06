@@ -1,5 +1,5 @@
 .snow-wrapper {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 93%;
     margin-bottom: 80px;
 }
@@ -19,6 +19,9 @@
 @media only screen and (min-width: 990px) {
     .snow-wrapper img {
         padding-top: 0px !important;
+    }
+    .snow-wrapper {
+        margin-top: 80px;
     }
 }
 
