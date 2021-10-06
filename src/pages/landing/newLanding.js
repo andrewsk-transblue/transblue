@@ -15,7 +15,7 @@ import './style.css';
 
 const reverse = require('reverse-geocode')
 
-let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona']
+let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona', 'Georgia', 'Florida', 'South Carolina', 'Hawaii', 'Mississippi', 'Alabama', 'Tennessee', 'Nevada', 'New Mexico']
 
 function NewLanding() {
     const [noSnow, setNoSnow] = useState(false)
@@ -24,9 +24,9 @@ function NewLanding() {
         if('getCurrentPosition' in navigator.geolocation ) {
             navigator.geolocation.getCurrentPosition(position => {
                 console.log(position)
-                // let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-                // console.log(state)
-                let state = 'Arizona'
+                let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
+                console.log(state)
+                //let state = 'Arizona'
                 if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
             })
         }
