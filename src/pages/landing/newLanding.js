@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/landing/header';
@@ -10,13 +10,27 @@ import Mbridge from '../../components/landing/mbridge';
 // import Nepal from '../../components/landing/nepal';
 import Mission from '../../components/landing/mission';
 // import Here from '../../components/landing/here';
-import Core from '../../components/landing/core';
-import Core2 from '../../components/landing/core2';
 import ContactCta from '../../components/contactCta';
-import Core3 from '../../components/landing/core3';
 import './style.css';
 
+const reverse = require('reverse-geocode')
+
+let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona']
+
 function NewLanding() {
+    const [noSnow, setNoSnow] = useState(false)
+
+    useEffect(() => {
+        if('getCurrentPosition' in navigator.geolocation ) {
+            navigator.geolocation.getCurrentPosition(position => {
+                console.log(position)
+                // let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
+                // console.log(state)
+                let state = 'Arizona'
+                if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
+            })
+        }
+    }, [])
 
     return(
         <Fragment>
@@ -41,7 +55,7 @@ function NewLanding() {
                 <div className='wrapper'>
                 <Professional />
                 <NewReviews />
-                <Services />
+                <Services noSnow={noSnow} />
                 </div>
                 <Footer locationPage={false} />
             </div>
