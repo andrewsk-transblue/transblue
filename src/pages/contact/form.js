@@ -13,7 +13,7 @@ function Form() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
-    const [disabled, setDisabled] = useState(true);
+    //const [disabled, setDisabled] = useState(true);
 
     const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0;
 

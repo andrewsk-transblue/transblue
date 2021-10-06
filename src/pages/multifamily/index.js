@@ -89,17 +89,19 @@ function Multifamily() {
                     card1={{
                         img: rooftop,
                         title: 'RETHINK YOUR ROOF',
-                        body: 'Transblue provides roofing services to communities looking to replace existing roofing structures or install new roofing systems. This includes systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
+                        // body: 'Transblue provides roofing services for communities looking to replace existing roofing structures or install new roofing systems. This includes systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more',
+                        body: 'We specialize in replacing and installing roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                     }}
                     card2={{
                         img: pool,
                         title: 'POOL RENOVATION & CONSTRUCTION',
-                        body: 'Transblue provides Swimming pool renovations and installs to community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems'
+                        // body: 'Transblue provides Swimming pool renovations and installs to community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems',
+                        body: 'Call us today to discuss swimming pool renovations and installations. We specialize in replastering, retiling, redecking, and installing up to grade drainage systems'
                     }}
                     card3={{
                         img: parkinglot,
                         title: 'ASPHALT SERVICES',
-                        body: 'Transblue provides asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping'
+                        body: 'We specialize in asphalt services that include paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping'
                     }}
                 />
                  <div className='container-fluid camp'>

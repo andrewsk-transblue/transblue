@@ -21,6 +21,7 @@ import concreteCropped from '../../images/government/govtconcreteCropped.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
 import roof from '../../images/government/roof.jpg';
+import ev from '../../images/government/ev.jpg';
 //import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
@@ -52,22 +53,22 @@ class Government extends Component {
                         ]}
                     />
                     <ThreeCols 
-                        title='REFRESH YOUR GOVERNMENT BUILDING'
-                        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.'
+                        // title='REFRESH YOUR GOVERNMENT BUILDING'
+                        // subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at sapien non arcu pharetra volutpat.'
                         card1={{
-                            img: concreteCropped,
-                            title: 'CONCRETE INSTALLATION',
-                            body: 'Nullam commodo tristique enim, a congue leo fermentum eu. Vivamus ut diam end'
+                            img: ev,
+                            title: 'GREEN ENERGY SERVICES',
+                            body: 'We provide the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. Required to install Electric Charging Stations for your government facility.'
                         }}
                         card2={{
                             img: asphaltCropped,
                             title: 'ASPHALT REFRESHMENT',
-                            body: 'Transblue provides asphalt services that including paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping. '
+                            body: 'We provide asphalt services such as paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping. '
                         }}
                         card3={{
                             img: roof,
                             title: 'ROOFING SYSTEMS',
-                            body: 'Transblue provides roofing services to government properties looking to replace existing roofing structures or install new roofing systems. We install roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
+                            body: 'We replace and install new roofing systems for government properties, including: flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                         }}
                     />
                     <div className='container-fluid government-about'>
@@ -80,18 +81,17 @@ class Government extends Component {
                                 <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
                                 <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
                                 <a className='cta' href='/locations'>FIND A LOCATION</a>
+                                <ContactModal />
                             </div>
                         </div>
                     </div>
-
-
                     {/* <Capabilities2 /> */}
-                    <Green 
+                    {/* <Green 
                     page='government'
                     solar='Reduce overhead and save on utility bills with solar panels'
-                    ev=''
+                    ev='We provide the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. Required to install Electric Charging Stations for your building'
                     roof='Save money on cost of energy and local storm water fees'
-                     />
+                     /> */}
                     {/* <div className='new-green-solns container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-6'>

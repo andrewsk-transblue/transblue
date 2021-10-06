@@ -11,30 +11,31 @@ function Lifestyle() {
     return(
         <div className='container-fluid lifestyle-container'>
             <div className='row mx-0'>
+            <div className='col-lg-4 col-md-6 my-auto'>
+                <div className='image-container'>
+                    <img src={fire} alt='Bond with Family' />
+                    <div className='lifestyle-overlay'></div>
+                    <div className='lifestyle-text centered-text'>
+                        BOND WITH FAMILY
+                    </div>
+                </div>
+                </div>
                 <div className='col-lg-4 col-md-6 my-auto'>
                     <div className='image-container'>
                         <img src={friends} alt='Celebrate Your Friends' />
                         <div className='lifestyle-overlay'></div>
                         <div className='lifestyle-text centered-text'>
-                            Celebrate your Friends
+                            CELEBRATE YOUR FRIENDS
                         </div>
                     </div>
                 </div>
-                <div className='col-lg-4 col-md-6 my-auto'>
-                    <div className='image-container'>
-                        <img src={fire} alt='Bond with Family' />
-                        <div className='lifestyle-overlay'></div>
-                        <div className='lifestyle-text centered-text'>
-                            Bond with Family
-                        </div>
-                    </div>
-                </div>
+
                 <div className='col-lg-4 col-md-6 my-auto'>
                     <div className='image-container'>
                         <img src={couple} alt='Love your Life' />
                         <div className='lifestyle-overlay'></div>
                         <div className='lifestyle-text centered-text'>
-                            Love your Life
+                            LOVE YOUR LIFE
                         </div>
                     </div>
                 </div>
