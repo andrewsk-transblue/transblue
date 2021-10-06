@@ -17,16 +17,13 @@ function Green(props) {
             contact={props.location}
             services={[
                 'EV Chargers',
-                'LED Relamp Projects',
                 'Green Roofs',
                 'Solar Power'
             ]}
             services2={[
                 'Xeriscapes',
                 'Permeable Pavement',
-                'Bioswales',
-                'HVAC',
-                'Water Reclamation'
+                'Bioswales'
             ]}
         />
     )

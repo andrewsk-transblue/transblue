@@ -48,10 +48,26 @@ let reviews = [
 
 class NewReviews extends Component {
     state={
-        activeReview: 0
+        activeReview: 0,
     }
 
-    changeReview(operation) {
+    componentDidMount() {
+        this.interval = setInterval(() => {
+            //console.log('interval')
+            this.nextSlide()
+        }, 25000)
+    }
+
+    nextSlide() {
+        if(this.state.activeReview < reviews.length-1) {
+            this.setState({activeReview: this.state.activeReview + 1})
+        }
+        else this.setState({activeReview: 0})
+    }
+
+    changeReview = (operation) => {
+        clearInterval(this.interval)
+
         if(operation === 'decrement') {
             if(this.state.activeReview > 0) {
                 this.setState({activeReview: this.state.activeReview - 1})
@@ -64,6 +80,10 @@ class NewReviews extends Component {
             }
             else this.setState({activeReview: 0})
         }
+        this.interval = setInterval(() => {
+           // console.log('new interval')
+            this.nextSlide()
+        }, 25000)
     }
 
     render() {
