@@ -1,8 +1,6 @@
 .dees-container {
     margin: 0 auto;
-    margin-top: 60px;
     width: 95%;
-
 }
 
 .dees-container .section-subheader {
@@ -24,11 +22,5 @@
 @media only screen and (max-width: 992px) {
     .dees-container .text {
         margin-bottom: 40px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .dees-container {
-        margin-top: 100px;
-        margin-bottom: 80px;
     }
 }

@@ -111,21 +111,27 @@ class Commercial extends Component {
                         p2='Our comprehensive snow removal management plans will help with costing on budgets and costs control initiatives, project planning and management, and environmental impacts that that face your brands image every day. '
                         // p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
                     />
-                                    <div className='nextstep container-fluid'>
-                    <div className='row'>
-                        <div className='col-lg-6'>
-                            <img src={nextstep4} alt='Next Step Pregnancy' />
-                        </div>
-                        <div className='col-lg-6 left-text'>
-                            <h4 className='section-header'>
-                                <p className='text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
-                                HELPING PREGNANT WOMEN IN NEED
-                            </h4>
-                            <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
-                            <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are provided free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
+                    
+                </div>
+                <div className='charity-wrapper bg-light'>
+                     <div className='wrapper'>
+                         <h1>TRANSBLUE GIVES BACK</h1>
+                         <div className='nextstep container-fluid'>
+                        <div className='row'>
+                            <div className='col-lg-6'>
+                                <img src={nextstep4} alt='Next Step Pregnancy' />
+                            </div>
+                            <div className='col-lg-6 left-text'>
+                                <h4 className='section-header'>
+                                    <p className='text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
+                                    HELPING PREGNANT WOMEN IN NEED
+                                </h4>
+                                <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
+                                <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are provided free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                     </div>
                 </div>
                 </div>
 

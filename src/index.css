@@ -159,6 +159,26 @@ img.lg-screen-hide {
   display: block;
 }
 
+.charity-wrapper {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-top: 80px;
+}
+
+.charity-wrapper .wrapper {
+  width: 93%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.charity-wrapper h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #0b56a4;
+  letter-spacing: .05em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 410px) {
   a.cta {
     padding: 4px 20px 2px 20px;

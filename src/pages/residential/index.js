@@ -81,8 +81,14 @@ function Residential() {
                         'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
                     }
                  />
-                <Dees />
-                 </div>
+                
+                </div>
+                <div className='charity-wrapper bg-light'>
+                     <div className='wrapper'>
+                         <h1>TRANSBLUE GIVES BACK</h1>
+                        <Dees />
+                     </div>
+                </div>
                 <Footer />
             </div>
         </Fragment>

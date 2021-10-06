@@ -5,8 +5,15 @@
     margin: 0 auto;
 }
 
-.government-body .container-fluid:not(.capabilities-wrapper) {
+.government-body .container-fluid:not(.capabilities-wrapper):not(.first-wrapper) {
     width: 93%;
+}
+
+.government-body .wrapper,
+.charity-wrapper .wrapper {
+    width: 93%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .government-header img,

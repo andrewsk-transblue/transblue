@@ -2,7 +2,6 @@ import React from 'react';
 import firstresponder from '../../../images/government/firstresponder.jpg';
 import './style.css';
 
-
 function FirstResponders() {
     return(
         <div className='first-wrapper container-fluid'>

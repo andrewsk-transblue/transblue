@@ -87,32 +87,6 @@ function Government() {
                             body: 'We replace and install new roofing systems for government properties, including: flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                         }}
                     />
-                    {/* <Capabilities2 /> */}
-                    {/* <Green 
-                    page='government'
-                    solar='Reduce overhead and save on utility bills with solar panels'
-                    ev='We provide the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. Required to install Electric Charging Stations for your building'
-                    roof='Save money on cost of energy and local storm water fees'
-                     /> */}
-                    {/* <div className='new-green-solns container-fluid'>
-                        <div className='row'>
-                            <div className='col-12 col-lg-6'>
-                                <img src={ev} alt='Government Green Solutions' />
-                            </div>
-                            <div className='col-12 col-lg-6 left-text'>
-                                <h4 className='section-header'>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT</h4>
-                                <p className='section-p'>
-                                    Transblue installs EV charging systems in government properties. With the ever rising need for EV charging stations. Transblue provides the electrical engineering, trenching, electrical upgrades, concrete work, asphalt work, permitting, etc. Required to install Electric Charging Stations for your communities. 
-                                </p>
-                                <p className='section-p'>
-                                    For more information and a full list of Transblue Green Services, visit our Green Solutions website or send us a message.
-                                    
-                                </p>
-                                <a className='cta' href=''>GREEN SOLUTIONS</a>
-                                <ContactModal />
-                            </div>
-                        </div>
-                    </div> */}
                     <Snow
                         img={snow}
                         title='GOVERNMENT SNOW SERVICES'
@@ -140,9 +114,13 @@ function Government() {
                             'ESG Service Offerings'
                         ]}
                     />
-                    <FirstResponders />
-                    {/* <Carousel /> */}
-                    {/* <ServiceSlides /> */}
+                </div>
+
+                <div className='charity-wrapper bg-light'>
+                     <div className='wrapper'>
+                         <h1>TRANSBLUE GIVES BACK</h1>
+                        <FirstResponders />
+                     </div>
                 </div>
                 {/* <Capabilities /> */}
                 <Footer />

@@ -1,14 +1,7 @@
 .first-wrapper img {
     width: 100%;
-    margin-bottom: 50px;
 }
 
 .first-wrapper .section-header {
     margin-top: 0px !important;
-}
-
-@media only screen and (min-width: 992px) {
-    .first-wrapper {
-        margin-bottom: 80px;
-    }
 }
