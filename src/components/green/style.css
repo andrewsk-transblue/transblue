@@ -1,5 +1,6 @@
 .green-solns {
     width: 95%;
+    margin-top: 50px;
 }
 
 .green-solns h4 {
@@ -46,6 +47,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .green-solns {
+        margin-top: 80px;
+    }
     .green-solns h4,
     .green-solns .title .section-p {
         width: 50%;

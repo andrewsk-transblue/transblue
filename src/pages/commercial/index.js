@@ -97,7 +97,21 @@ class Commercial extends Component {
                     </div>
                 </div>
                 <div className='wrapper'>
-                <div className='nextstep container-fluid'>
+                    <Green 
+                    page='commercial'
+                    solar='Reduce overhead and save on utility bills with solar panels'
+                    ev='Increase customer retention and customer dwell time with EV Chargers'
+                    roof='Diversify marketing and conserve energy with a living roof' />
+                    
+                    {/* <Asphalt /> */}
+                    <Snow
+                        img={snow}
+                        title='KEEP CUSTOMERS &amp; EMPLOYEES SAFE'
+                        p1='Transblue specializes in providing commercial snow removal services to multisite commercial, retail, industrial, and government facilities.'
+                        p2='Our comprehensive snow removal management plans will help with costing on budgets and costs control initiatives, project planning and management, and environmental impacts that that face your brands image every day. '
+                        // p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
+                    />
+                                    <div className='nextstep container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6'>
                             <img src={nextstep4} alt='Next Step Pregnancy' />
@@ -112,20 +126,6 @@ class Commercial extends Component {
                         </div>
                     </div>
                 </div>
-                <Green 
-                page='commercial'
-                solar='Reduce overhead and save on utility bills with solar panels'
-                ev='Increase customer retention and customer dwell time with EV Chargers'
-                roof='Diversify marketing and conserve energy with a living roof' />
-                
-                {/* <Asphalt /> */}
-                <Snow
-                    img={snow}
-                    title='KEEP CUSTOMERS &amp; EMPLOYEES SAFE'
-                    p1='Transblue specializes in providing commercial snow removal services to multisite commercial, retail, industrial, and government facilities.'
-                    p2='Our comprehensive snow removal management plans will help with costing on budgets and costs control initiatives, project planning and management, and environmental impacts that that face your brands image every day. '
-                    // p3='Nam elementum turpis id ipsum fermentum dapibus. In mollis venenatis purus, vitae iaculis ex hendrerit sed. Nunc congue nibh ut ipsum blandit, quis auctor neque tincidunt.'
-                />
                 </div>
                 </div>
 

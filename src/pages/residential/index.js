@@ -67,9 +67,7 @@ function Residential() {
                 <Carousel />
                 <ViewportBlock onEnterViewport={() => setDisplayDesign(true)} />
                 {displayDesign && <Design />}
-                <div className='wrapper'>
-                <Dees />
-                </div>
+
                 <Rockstar />
                 <div className='wrapper'>
                 <ServiceCard
@@ -83,6 +81,7 @@ function Residential() {
                         'The first and most obvious benefit of a xeriscape is that it requires very little water. This is essential in an era plagued by low rain and snow fall. In a well-executed xeriscape, you can reduce water usage by as much as 70 percent! The less you depend on water to enhance your landscape, the better.']
                     }
                  />
+                <Dees />
                  </div>
                 <Footer />
             </div>
