@@ -51,7 +51,7 @@ function Multifamily() {
                             <a href='/locations'>FIND YOUR LOCAL TRANSBLUE</a>
                         </div>
                         <div className='col-lg-6'>
-                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multi-family communities. Our multi-family division understands the specific needs of your community and can taylor construction plans accordingly. Primarily, we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
+                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multifamily communities. Our multifamily division understands the specific needs of your community and can tailor construction plans accordingly. Primarily, we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
                         </div>
                     </div>
                 </div>

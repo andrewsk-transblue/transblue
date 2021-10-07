@@ -50,7 +50,7 @@ const projects = [
     },
     {
         img: hoaroofing,
-        title: 'HOA ROOFING',
+        title: 'ASCENT HOA ROOFING',
         location: 'TRANSBLUE MT VERNON'
     },
     {
