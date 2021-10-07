@@ -60,7 +60,9 @@ function App() {
             <Route exact path='/privacy' component={Privacy} />
             <Route exact path='/givesback' component={GivesBack} />
             <Route exact path='/contact' component={Contact} />
-            <Route exact path='/finance' component={Finance} />
+            <Route exact path='/finance' render={() => 
+                <Finance locations={easybaseData} />
+            } />
           </Suspense>
         </Router>
       </HelmetProvider>
