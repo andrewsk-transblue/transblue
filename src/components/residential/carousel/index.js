@@ -118,7 +118,7 @@ class Carousel extends Component {
                     {this.state.index > 0 && <Fragment><img src={images[this.state.index-1]} alt='' />
                         <div className='text'>
                             <h3 className='mt-4 mb-3'>{text[this.state.index-1].title}</h3>
-                            <p className='section-p'>{text[this.state.index-1].body}</p>
+                            {/* <p className='section-p'>{text[this.state.index-1].body}</p> */}
                         </div>
                         <div className='carousel-overlay'></div>
                         <button onClick={this.left}><img src={back} className='arrow' alt='Prev Slide' /></button>
@@ -131,20 +131,20 @@ class Carousel extends Component {
                             <img src={images[this.state.index]} alt='' />
                             {/* <div className='text'> */}
                             <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
-                            <p className='section-p text-left'>{text[this.state.index].body}</p>
+                            {/* <p className='section-p text-left'>{text[this.state.index].body}</p> */}
                             {/* </div> */}
                         </div>
         
                         {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
                             <img src={images[this.state.index+1]} alt='' />
                             <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
-                            <p className='section-p'>{text[this.state.index+1].body}</p>
+                            {/* <p className='section-p'>{text[this.state.index+1].body}</p> */}
                         </div>}
 
                         {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
                             <img src={images[this.state.index+2]} alt='' />
                             <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
-                            <p className='section-p'>{text[this.state.index+2].body}</p>
+                            {/* <p className='section-p'>{text[this.state.index+2].body}</p> */}
                         </div>}
                     </div>
                 </div>
@@ -154,7 +154,7 @@ class Carousel extends Component {
                         <img src={this.state.cols === 5 ? images[this.state.index+3] : images[this.state.index + 1]} alt='' />
                         <div className='text'>
                             <h3 className='mt-4 mb-3'>{this.state.cols === 5 ? text[this.state.index+3].title : text[this.state.index+1].title}</h3>
-                            <p className='section-p'>{this.state.cols === 5 ? text[this.state.index+3].body : text[this.state.index+1].body}</p>
+                            {/* <p className='section-p'>{this.state.cols === 5 ? text[this.state.index+3].body : text[this.state.index+1].body}</p> */}
                         </div>
                         <div className='carousel-overlay'></div>
                         <button onClick={this.right}><img src={forward} className='arrow' alt='Next Slide' /></button>
