@@ -81,20 +81,23 @@ class Navbar extends Component {
                                 <a className='dropdown-item' href="https://tbev.herokuapp.com/commercial">COMMERCIAL</a>
                             </div>
                         </li>
-                        <li className="nav-item dropdown ml-auto">
+                        <li className="nav-item ml-auto">
+                            <a className="nav-link" href="https://tbsnow.herokuapp.com/">SNOW REMOVAL</a>
+                        </li>
+                        {/* <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SNOW REMOVAL
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">ABOUT</a>
-                                {/* <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
+                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">EMERGENCY &amp; RISK</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a> */}
+                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">GALLERY</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">PRICING</a>
                                 <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
                             </div>
-                        </li>
+                        </li> */}
 
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/locations">LOCATIONS</Link>
