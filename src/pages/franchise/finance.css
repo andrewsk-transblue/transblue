@@ -1,0 +1,46 @@
+.finance-bg {
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    position: relative;
+    /* background-image: url('../../images/financeBg.jpg'); */
+
+    margin-bottom: 100px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.finance-bg[data-region='southwest'] {
+    background-image: url('../../images/financeBg.jpg');
+}
+
+.finance-bg[data-region='west'] {
+    background-image: url('../../images/financeBg.jpg');
+}
+
+.finance-bg[data-region='northwest'] {
+    background-image: url('../../images/financeBgNw.jpg');
+}
+
+.franchise-finance {
+    background-color: rgb(61, 61, 61);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px;
+}
+
+.franchise-finance:hover {
+    background-color: rgb(99, 99, 99);
+    transition: .5s;
+}
+
+.franchise-finance a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;
+}

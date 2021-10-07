@@ -22,9 +22,9 @@ import Map from './map';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 //import FranchiseLifestyle from './lifestyle';
-import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer/index';
-import zipcodes from 'zipcodes'
+import zipcodes from 'zipcodes';
+import Finance from './finance';
 //import locationsDb from '../locations/db';
 
 import './style.css';
@@ -98,18 +98,15 @@ function Franchise(props) {
                 <Commercial location={easybaseData[0]} />
                 <Multifamily location={easybaseData[0]} />
                 <Contact location={easybaseData[0]} />
+                <Finance location={easybaseData[0]} />
+
                 <Govt location={easybaseData[0]} />
                 <Green location={easybaseData[0]} />
                 </div>
                 <Snow location={easybaseData[0]} />
-
-                {/* <Whatwedo /> */}
                 <div className='wrapper'>
                 <Professional location={easybaseData[0]} />
-
-                {/* <NewReviews /> */}
                 <Reviews location={easybaseData[0]} />
-                {/* <Services /> */}
                 <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
@@ -129,6 +126,7 @@ function Franchise(props) {
                     </div>
                 </div>
                 </div>
+
                 <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} franchise={easybaseData[0]} />
                 {/* <div className='container-fluid contact-container'>
                     <div className='contact-overlay'></div>
