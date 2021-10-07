@@ -1,6 +1,13 @@
 .finance-wrapper {
+    background-image: url('../../images/financeBg.jpg');
     height: 100vh;
-    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.finance-wrapper .overlay {
+    background-color: rgba(0,0,0,.3);
 }
 
 .finance-wrapper .dropdown-wrapper {
@@ -10,10 +17,22 @@
     transform: translate(-50%, -50%);
     background-color: #0b56a4;
     padding: 40px;
+    z-index: 50;
 }
 
 .finance-wrapper .dropdown-wrapper h5 {
     color: white;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
+    margin-bottom: 20px;
+}
+
+.finance-wrapper .dropdown-wrapper select {
+    border: 0px;
+}
+
+.finance-wrapper .dropdown-wrapper a {
+    background-color: gray;
+    color: white;
+
 }

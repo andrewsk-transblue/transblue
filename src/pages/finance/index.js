@@ -24,15 +24,15 @@ function Finance(props) {
         <Fragment>
             <Navbar />
             <div className='finance-wrapper'>
+                <div className='overlay'></div>
                 <div className='dropdown-wrapper'>
                     <h5>SELECT A TRANSBLUE LOCATION TO APPLY FOR FINANCING</h5>
                     <div className="input-group">
-                        <select className="custom-select" onChange={(e) => changeLocation(e.target.value)}>
-                            <option>SELECT A LOCATION</option>
+                        <select className="custom-select" onChange={(e) => changeLocation(e.target.value)} defaultValue='SELECT A LOCATION' >
+                            <option disabled >SELECT A LOCATION</option>
                             {locationList.length > 0 && locationList.map(franchise => {
                                 //console.log(location)
                                 return(
-                                    //<option value={franchise.name}>{franchise.name.toUpperCase()}</option>
                                     <option value={franchise.name}>{franchise.name.toUpperCase()}</option>
                                 )
                             })}
