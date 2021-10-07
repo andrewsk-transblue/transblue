@@ -31,18 +31,13 @@ class MapContainer extends Component {
             this.setState({initialLoad: false, isLoading: false})
         }, 2000)
 
-        //console.log('getCurrentPosition' in navigator.geolocation)
-
         if(this.props.zipcode !== undefined) {
             this.searchLocation(this.props.zipcode)
         }
 
         else if ('getCurrentPosition' in navigator.geolocation || "geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
-                this.setState({center: [position.coords.latitude, position.coords.longitude]})
-                // this.setState({
-                //     center: [47.6062, -122.3321] //default center to seattle if there's no criteria and geolocation is off
-                // })
+                    this.setState({center: [position.coords.latitude, position.coords.longitude]})
                 },
                 err => {
                     console.log(err)
@@ -105,7 +100,7 @@ class MapContainer extends Component {
         return(
             <div className='map-container'>
                     {this.state.initialLoad && <div className='map-placeholder'><img src={map} alt='map' /></div>}
-                    {!this.state.isLoading && this.state.center.length > 0 && <MapComp 
+                    {this.state.center.length > 0 && <MapComp 
                     zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
                     center={this.state.center} radius={this.state.radius}
                     // geojson={this.props.geojson} 
