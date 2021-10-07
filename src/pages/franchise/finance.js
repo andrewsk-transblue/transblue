@@ -5,7 +5,7 @@ function Finance(props) {
     return(
         <div className='finance-bg' data-region={props.location.region}>
             <div className='franchise-finance text-center'>
-                <a href='https://app.gethearth.com/partners/transblue-norfolk' target='_blank' rel='noreferrer'>GET FINANCED</a>
+                <a href={`https://app.gethearth.com/partners/${props.location.name.replace(/\s+/g, '-')}`} target='_blank' rel='noreferrer'>GET FINANCED</a>
             </div>
         </div>
     )
