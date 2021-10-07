@@ -27,6 +27,10 @@
     background-image: url('../../images/financeBgNw.jpg');
 }
 
+.finance-bg[data-region='midwest'] {
+    background-image: url('../../images/financeBgMw.jpg');
+}
+
 .franchise-finance {
     background-color: rgb(61, 61, 61);
     position: absolute;
