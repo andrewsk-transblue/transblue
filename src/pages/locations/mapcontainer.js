@@ -20,14 +20,15 @@ class MapContainer extends Component {
             displayMiles: false,
             radius: 50,
             locations: [],
-            disabled: true
+            disabled: true,
+            initialLoad: true
         }
     }
 
     
     componentDidMount() {
         setTimeout(() => {
-            this.setState({isLoading: false})
+            this.setState({initialLoad: false, isLoading: false})
         }, 2000)
 
         //console.log('getCurrentPosition' in navigator.geolocation)
@@ -103,7 +104,7 @@ class MapContainer extends Component {
         console.log('map container')
         return(
             <div className='map-container'>
-                    {this.state.isLoading && <div className='map-placeholder'><img src={map} alt='map' /></div>}
+                    {this.state.initialLoad && <div className='map-placeholder'><img src={map} alt='map' /></div>}
                     {!this.state.isLoading && this.state.center.length > 0 && <MapComp 
                     zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
                     center={this.state.center} radius={this.state.radius}
