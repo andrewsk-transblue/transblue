@@ -48,22 +48,22 @@ function MapComp(props) {
             {/* marker for mount vernon in everett, for everett citizens to find easier */}
             <Marker position={[47.9790, -122.2021]}>
                 <Popup>
-                    <b>Transblue Mount Vernon</b><br /><br />
+                    <b>Transblue Mt Vernon</b><br /><br />
                     4152 Meridian Street, STE 105 #31<br />
                     Bellingham, WA 98226<br />
                     <i className="fas fa-phone"></i>(360) 935-0808<br />
-                    <i className="fas fa-envelope"></i>MtVernon@transblue.org<br />
-                    <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
+                    <i className="fas fa-envelope"></i>MtVernonLeads@transblue.org<br />
+                    <a className='site-link' href={`/locations/WA/mt-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
             <Marker position={[48.4201, -122.3375]}>
                 <Popup>
-                    <b>Transblue Mount Vernon</b><br /><br />
+                    <b>Transblue Mt Vernon</b><br /><br />
                     4152 Meridian Street, STE 105 #31<br />
                     Bellingham, WA 98226<br />
                     <i className="fas fa-phone"></i>(360) 935-0808<br />
-                    <i className="fas fa-envelope"></i>MtVernon@transblue.org<br />
-                    <a className='site-link' href={`/locations/WA/mount-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
+                    <i className="fas fa-envelope"></i>MtVernonLeads@transblue.org<br />
+                    <a className='site-link' href={`/locations/WA/mt-vernon`} target='_blank' rel="noreferrer">WEBSITE</a>
                 </Popup>
             </Marker>
             {/* <Circle center={[39.8283, -98.5795]} radius={10000} fillColor="blue" /> */}
