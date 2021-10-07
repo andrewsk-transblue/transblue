@@ -11,8 +11,12 @@
     background-position: center center;
 }
 
+.finance-bg[data-region='northeast'] {
+    background-image: url('../../images/financeBgNe.jpg');
+}
+
 .finance-bg[data-region='southwest'] {
-    background-image: url('../../images/financeBg.jpg');
+    background-image: url('../../images/financeBgSw.jpg');
 }
 
 .finance-bg[data-region='west'] {
