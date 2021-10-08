@@ -13,6 +13,10 @@ nav.navbar {
     padding-right: 3.5%;
 }
 
+nav.navbar.topPadding {
+    top: 35px !important
+}
+
 nav .navbar-nav li a,
 nav button,
 nav .navbar-collapse,

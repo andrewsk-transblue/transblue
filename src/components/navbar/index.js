@@ -6,6 +6,7 @@ import './style.css';
 class Navbar extends Component {
     state={
         bgColor: 'transparent',
+        topPadding: 'topPadding'
         // scrollHeight: 300
     }
 
@@ -23,10 +24,12 @@ class Navbar extends Component {
             document.addEventListener('scroll', () => {
                 let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
                 let displayPage = window.scrollY >300 ? true : false;
+                let topPadding = window.scrollY > 30 ? '' : 'topPadding';
                 this.setState({
                     bgColor: bgColor,
                     displayPage: displayPage,
-                    tel: tel
+                    tel: tel,
+                    topPadding: topPadding
                 })
             })
         }
@@ -39,7 +42,7 @@ class Navbar extends Component {
 
     render() {
         return(
-            <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ml-auto`}  >
+            <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
                 <a className="navbar-brand" href="/">
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
                 </a>

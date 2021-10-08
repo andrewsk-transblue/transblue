@@ -1,0 +1,19 @@
+.franchise-nav {
+    background-color: #ed6a22;
+    background-color: rgb(39, 39, 39);
+    z-index: 50;
+    line-height: 30px;
+    padding-left: 3.5%;
+}
+
+.franchise-nav a {
+    color: white;
+    font-family:'Raleway', sans-serif;
+    letter-spacing: .05em;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.franchise-nav a:hover {
+    color: #ed6a22;
+}
