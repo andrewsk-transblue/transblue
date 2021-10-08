@@ -16,7 +16,7 @@ import './style.css';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = 'UA-209757751-2' // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 const reverse = require('reverse-geocode')
