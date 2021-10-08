@@ -50,6 +50,7 @@ function Residential() {
             </Helmet>
             <Navbar page='RESIDENTIAL' parentPage='gc' />
             <FranchiseNav />
+
             <div className='residential-header container-fluid'>
                 <div className='overlay'></div>
                 {/* <img src={residential} alt='residential header' ></img> */}

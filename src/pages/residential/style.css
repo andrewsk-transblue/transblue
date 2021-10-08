@@ -11,6 +11,8 @@
     z-index: -40;
     background-image: url('../../images/residential/header2.jpg');
     background-size: cover;
+    top: 0;
+    left:0;
 }
 
 .residential-header .overlay {

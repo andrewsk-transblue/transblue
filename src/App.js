@@ -40,6 +40,7 @@ function App() {
         <Router>
           <Suspense fallback={<div>Loading...</div>}>
             <Route exact path='/' component={NewLanding} />
+            <Route exact path='/landing' component={NewLanding} />
             <Route exact path='/residential' component={Residential} />
             <Route exact path='/commercial' component={Commercial} />
             <Route exact path='/multifamily' component={Multifamily} />
@@ -60,9 +61,9 @@ function App() {
             <Route exact path='/privacy' component={Privacy} />
             <Route exact path='/givesback' component={GivesBack} />
             <Route exact path='/contact' component={Contact} />
-            <Route exact path='/finance' render={() => 
-                <Finance locations={easybaseData} />
-            } />
+            {easybaseData.length > 0 &&  <Route exact path='/finance' >
+              <Finance locations={easybaseData} />
+            </Route>}
           </Suspense>
         </Router>
       </HelmetProvider>

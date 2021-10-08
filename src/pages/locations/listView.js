@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 //import locations from './db';
 import locationIcon from '../../images/location.png';
 import mailIcon from '../../images/mail.png';
@@ -103,7 +104,7 @@ function ListView(props) {
                                 </div>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <a className='web-link' href={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel='noreferrer'>WEBSITE</a>
+                                        <Link className='web-link' to={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel='noreferrer'>WEBSITE</Link>
                                     </div>
                                 </div>
                             </div>

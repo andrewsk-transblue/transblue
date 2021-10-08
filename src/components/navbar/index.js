@@ -43,9 +43,9 @@ class Navbar extends Component {
     render() {
         return(
             <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" to="/">
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
-                </a>
+                </Link>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
                 {/* {this.props.franchise && 
                     <div className='franchise-contact'>
@@ -111,11 +111,11 @@ class Navbar extends Component {
                                 OTHER
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className='dropdown-item' href='/finance'>GET FINANCED</a>
-                                {!this.props.franchise && <a className="dropdown-item" href="/contact">CONTACT</a>}
-                                <a className='dropdown-item' href='/featured'>PROJECTS</a>
+                                <Link className='dropdown-item' to='/finance'>GET FINANCED</Link>
+                                {!this.props.franchise && <Link className="dropdown-item" to="/contact">CONTACT</Link>}
+                                <Link className='dropdown-item' to='/featured'>PROJECTS</Link>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
-                                <a className='dropdown-item' href='/givesback'>GIVING BACK</a>
+                                <Link className='dropdown-item' to='/givesback'>GIVING BACK</Link>
                             </div>
                         </li>
                     </ul>
@@ -123,16 +123,16 @@ class Navbar extends Component {
                     <ul className="navbar-nav ml-auto">
                         
                         <li className="nav-item ml-auto">
-                            <a className="nav-link py-0" href={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</a>
+                            <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
                         </li>
                         <li className="nav-item ml-auto">
-                            <a 
+                            <Link 
                                 className="nav-link py-0"
-                                href={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
+                                to={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
                                 target='_blank' rel='noreferrer'
                             >
                                 SUB APPLICATION
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav-item ml-auto'>
                             <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
