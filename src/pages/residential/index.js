@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import handleViewport from 'react-in-viewport';
 import Navbar from '../../components/navbar/index';
@@ -18,6 +18,9 @@ import Rockstar from '../../components/residential/rockstar';
 
 import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 //BLOCK ABOVE DESIGN COMPONENT THAT TRIGGERS DESIGN ANIMATION
 const Block = (props: { inViewport: boolean }) => {
@@ -31,6 +34,13 @@ const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 function Residential() {
     const [displayDesign, setDisplayDesign] = useState(false);
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Residential Page'
+          });
+    }, [])
 
     return(
         <Fragment>

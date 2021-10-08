@@ -1,10 +1,20 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import Navbar from '../../components/navbar';
 import Form from './form';
 import Footer from '../../components/footer';
 import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function Contact() {
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: `Visited Contact Page`
+        });
+    }, [])
     return(
         <Fragment>
             <Navbar />

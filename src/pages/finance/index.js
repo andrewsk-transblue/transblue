@@ -4,13 +4,21 @@ import FranchiseNav from '../../components/franchiseNav';
 import Footer from '../../components/footer';
 import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function Finance(props) {
     //console.log(props.locations)
     const [locationList, setLocationList] = useState([])
     const [location, setLocation] = useState('')
 
     useEffect(() => {
-        console.log(props.locations)
+        ReactGA.event({
+            category: 'User',
+            action: `Visited Finance Page`
+        });
+        //console.log(props.locations)
         if(props.locations !== undefined) setLocationList(props.locations)
         console.log(locationList)
     }, [props.locations])

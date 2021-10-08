@@ -1,4 +1,4 @@
-import React, {Fragment, useRef} from 'react';
+import React, {Fragment, useEffect, useRef} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
@@ -16,6 +16,10 @@ import hoaroofing from '../../images/featured/hoaroofing.jpg';
 import downarrow from '../../images/featured/downarrow.png';
 import './style.css';
 import ContactCta from '../../components/contactCta';
+
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const projects = [
     {
@@ -81,6 +85,13 @@ function Featured() {
     const executeScroll5 = () => myRef5.current.scrollIntoView({behavior: 'smooth'});
     const executeScroll6 = () => myRef6.current.scrollIntoView({behavior: 'smooth'});
     const executeScroll7 = () => myRef7.current.scrollIntoView({behavior: 'smooth'});
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: `Visited Featured Page`
+        });
+    }, [])
 
     return(
         <Fragment>

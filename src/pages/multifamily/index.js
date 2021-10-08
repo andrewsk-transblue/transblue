@@ -1,13 +1,9 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
-//import ServiceSlides from '../../components/commercial/serviceSlides';
-//import Carousel from '../../components/carousel';
-import CampImages from '../../components/multifamily/camp';
-import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import ServiceList from '../../components/serviceList';
 import HoverImages from '../../components/hoverImages';
 import Snow from '../../components/snow';
@@ -22,16 +18,26 @@ import parkinglot from '../../images/multifamily/asphalt.jpg';
 import snow from '../../images/multifamily/snow.jpg';
 import luxury from '../../images/multifamily/luxury.jpg';
 import services from '../../images/multifamily/services.jpeg';
-import './style.css';
 import Green from '../../components/green';
 
 import solidrock from '../../images/multifamily/solidRock/1.png';
 import solidrock2 from '../../images/multifamily/solidRock/2.png';
 import solidrock3 from '../../images/multifamily/solidRock/3.png';
 import ascent from '../../images/multifamily/solidRock/ascent.png';
+import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function Multifamily() {
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Multifamily Page'
+          });
+    }, [])
     return(
         <Fragment>
             <Helmet>

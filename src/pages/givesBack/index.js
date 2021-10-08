@@ -1,9 +1,13 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
 import givesback from '../../images/givesback.jpg';
 import './style.css';
+
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const charities = [
     {
@@ -81,6 +85,13 @@ function GivesBack(props) {
     const [activeButton, setActiveButton] = useState(0)
     
     //charities.filter(charity => props.section === charity.name)
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Gives Back Page'
+          });
+    }, [])
 
     return(
         <Fragment>

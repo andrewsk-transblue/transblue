@@ -1,4 +1,4 @@
-import React, {useState, Fragment } from 'react';
+import React, {useState, Fragment, useEffect } from 'react';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Footer from '../../components/footer/index';
@@ -10,9 +10,18 @@ import zipcodes from 'zipcodes';
 //import bounds from './bounds';
 import './style.css';
 
-//import locations from './db';
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function Locations(props) {
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Locations Page'
+          });
+    }, [])
         //console.log(typeof JSON.parse(props.locations[0].zipcodelist.toString()))
         //let zipcodes = JSON.parse(props.locations[12].zipcodelist);
         let zipcodeArray = [

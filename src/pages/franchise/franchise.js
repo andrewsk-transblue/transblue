@@ -25,10 +25,12 @@ import CityZip from './cityZip';
 import Footer from '../../components/footer/index';
 import zipcodes from 'zipcodes';
 import Finance from './finance';
-//import locationsDb from '../locations/db';
-
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
+
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
@@ -37,6 +39,11 @@ function Franchise(props) {
     let userLocation = []
 
     useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: `Visited ${props.name} Page`
+            });
+            
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             //console.log(ebData)

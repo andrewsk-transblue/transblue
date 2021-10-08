@@ -31,8 +31,18 @@ import solar from '../../images/commercial/solar.jpg';
 import solarSmall from '../../images/commercial/solarSmall.jpg';
 import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 class Commercial extends Component {
+
+    componentDidMount() {
+        ReactGA.event({
+            category: 'User',
+            action: `Visited Commercial Page`
+        });
+    }
     render() {
         return(
             <Fragment>
