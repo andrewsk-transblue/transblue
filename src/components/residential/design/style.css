@@ -1,5 +1,20 @@
 .design-wrapper {
     position: relative;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.design-wrapper[data-index='0'] {
+    background-image: url('../../../images/residential/design.png');
+}
+
+.design-wrapper[data-index='1'] {
+    background-image: url('../../../images/residential/build.jpg');
+}
+
+.design-wrapper[data-index='2'] {
+    background-image: url('../../../images/residential/enjoy2.jpeg');
 }
 
 .design-wrapper img:not(.forward):not(.back) {
@@ -74,6 +89,9 @@
 }
 
 @media only screen and (min-width: 576px) {
+    .design-wrapper {
+        height: 400px;
+    }
     .design-wrapper h3 {
         font-size: 6vw;
     }
@@ -93,5 +111,11 @@
     .design-wrapper .forward,
     .design-wrapper .back {
         width: 60px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .design-wrapper {
+        height: 600px;
     }
 }

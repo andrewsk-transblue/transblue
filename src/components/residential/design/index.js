@@ -1,12 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Fade from 'react-reveal/Fade';
 //import design from '../../../images/residential/design.jpg';
-import design2 from '../../../images/residential/design.png';
-import designSmall from '../../../images/residential/designSmall.png';
-import build from '../../../images/residential/build.jpg';
-import buildSmall from '../../../images/residential/buildSmall.jpg';
-import enjoy from '../../../images/residential/enjoy2.jpeg';
-import enjoySmall from '../../../images/residential/enjoy2Small.jpg';
 import forward from '../../../images/residential/forward.png';
 import back from '../../../images/residential/back.png';
 import line from '../../../images/line.png';
@@ -16,20 +10,14 @@ function Design() {
     //console.log(window.innerHeight)
     const slides = [
         {
-            img: design2,
-            imgSmall: designSmall,
             title: 'DESIGN',
             body: 'Schedule a free consultation where together, we will design the perfect landscape to fit your needs'
         },
         {
-            img: build,
-            imgSmall: buildSmall,
             title: 'BUILD',
             body: 'Sit back and relax while our professionals turn your dream landscape into a reality'
         },
         {
-            img: enjoy,
-            imgSmall: enjoySmall,
             title: 'ENJOY',
             body: 'Begin making unforgettable memories in your new outdoor living space'
         }
@@ -44,8 +32,8 @@ function Design() {
     }, [index])
 
     return(
-        <div className='design-wrapper'>
-            <img src={slides[index].imgSmall} alt='' srcSet={`${slides[index].imgSmall} 500w, ${slides[index].img} 1400w`} sizes='(max-width: 500px) 500px, 1400px' />
+        <div className='design-wrapper' data-index={index}>
+            {/* <img src={slides[index].imgSmall} alt='' srcSet={`${slides[index].imgSmall} 500w, ${slides[index].img} 1400w`} sizes='(max-width: 500px) 500px, 1400px' /> */}
             <div className='overlay'></div>
             <div className='text container-fluid'>
                 <div className='row mx-0'>

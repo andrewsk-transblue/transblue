@@ -1,6 +1,4 @@
 import React from 'react';
-import upgrade from '../../../images/residential/upgrade.jpg';
-import upgradeSmall from '../../../images/residential/upgradeSmall.jpg';
 import './style.css';
 
 function UpgradeNew() {
