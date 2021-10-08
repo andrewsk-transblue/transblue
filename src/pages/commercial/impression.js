@@ -1,8 +1,6 @@
 import React, {useRef, Fragment} from 'react';
 import impression from '../../images/commercial/impression.jpg';
 import impressionSmall from '../../images/commercial/impressionSmall.jpg';
-import downarrow from '../../images/commercial/downarrow.png';
-import paint from '../../images/commercial/paint.jpg';
 import roof from '../../images/commercial/roof.jpg';
 import asphalt from '../../images/commercial/asphalt2.jpg';
 import refresh from '../../images/commercial/refresh.jpg';
@@ -11,7 +9,6 @@ import './style.css';
 
 function Impression() {
     const myRef = useRef(null)
-    const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
     return(
         <Fragment>
             <div className='impression-wrapper'>
