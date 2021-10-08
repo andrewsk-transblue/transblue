@@ -1,9 +1,8 @@
 .franchise-nav {
-    background-color: #ed6a22;
     background-color: rgb(39, 39, 39);
     z-index: 50;
     line-height: 30px;
-    padding-left: 3.5%;
+    padding-right: calc(3.5% + 20px);
 }
 
 .franchise-nav a {

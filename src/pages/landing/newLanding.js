@@ -13,6 +13,12 @@ import Mission from '../../components/landing/mission';
 import ContactCta from '../../components/contactCta';
 import './style.css';
 
+
+//REACT GOOGLE ANALYTICS
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-209757751-2"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 const reverse = require('reverse-geocode')
 
 let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona', 'Georgia', 'Florida', 'South Carolina', 'Hawaii', 'Mississippi', 'Alabama', 'Tennessee', 'Nevada', 'New Mexico']
@@ -21,6 +27,10 @@ function NewLanding() {
     const [noSnow, setNoSnow] = useState(false)
 
     useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Landing Page'
+          });
         if('getCurrentPosition' in navigator.geolocation ) {
             navigator.geolocation.getCurrentPosition(position => {
                 console.log(position)

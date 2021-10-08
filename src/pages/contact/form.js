@@ -35,6 +35,7 @@ function Form() {
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
+            // to: 'incomingleads@transblue.org',
             subject: 'Contact Page Message',
             text: 
             `Name: ${firstName} ${lastName}

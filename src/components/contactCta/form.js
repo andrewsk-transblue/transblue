@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import Captcha from '../captcha/captcha';
 import { useEasybase } from 'easybase-react';
 import './style.css';
@@ -26,6 +26,7 @@ function Form(props) {
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
+            // to: 'incomingleads@transblue.org',
             subject: 'GC Contact Message',
             text: `Name: ${firstName} ${lastName}
                     Email: ${email}

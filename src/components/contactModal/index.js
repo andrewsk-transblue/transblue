@@ -34,6 +34,7 @@ function ContactModal(props) {
         var data = {
             from: 'test@test.com',
             to: 'carters@transblue.org',
+            // to: 'incomingleads@transblue.org',
             subject: 'GC Contact Message',
             text: `Name: ${firstName} ${lastName}
                     Email: ${email}
