@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Slide from 'react-reveal/Slide'
 import Navbar from '../../components/navbar/index';
@@ -26,9 +26,20 @@ import govtBenefits from '../../images/government/govt.jpg';
 //import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 
 function Government() {
-        const [displayCapabilities, setDisplayCapabilities] = useState(false);
+    const [displayCapabilities, setDisplayCapabilities] = useState(false);
+
+    useEffect(() => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Visited Government Page'
+          });
+    }, [])
         return(
             <Fragment>
                 <Helmet>
