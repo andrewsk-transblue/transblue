@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import handleViewport from 'react-in-viewport';
 import Navbar from '../../components/navbar/index';
+import FranchiseNav from '../../components/franchiseNav';
 // import Header from '../../components/header';
 import Footer from '../../components/footer/index';
 import Lifestyle from '../../components/residential/lifestyle/lifestyle';
@@ -38,6 +39,7 @@ function Residential() {
                 <meta name="description" content="Transblue Residential Services" />
             </Helmet>
             <Navbar page='RESIDENTIAL' parentPage='gc' />
+            <FranchiseNav />
             <div className='residential-header container-fluid'>
                 <div className='overlay'></div>
                 {/* <img src={residential} alt='residential header' ></img> */}

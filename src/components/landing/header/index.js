@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import Franchise from '../../../pages/franchise/franchise';
+import FranchiseNav from '../../franchiseNav';
 
 function Header() {
         return(
-            <div className='header'>
+            <Fragment>
+                <FranchiseNav />
+                <div className='header'>
                 <div id='header_slide'>
                     <div className='header-text landing-header'>
                         
@@ -10,6 +14,7 @@ function Header() {
                     <div className='overlay'></div>
                 </div>
             </div>
+            </Fragment>
         )
 }
 
