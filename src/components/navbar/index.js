@@ -22,7 +22,7 @@ class Navbar extends Component {
 
         else {
             document.addEventListener('scroll', () => {
-                let bgColor = window.scrollY > window.innerWidth / 3 ? 'black' : 'transparent';
+                let bgColor = window.scrollY > window.innerHeight / 2 ? 'black' : 'transparent';
                 let displayPage = window.scrollY >300 ? true : false;
                 let topPadding = window.scrollY > 30 ? '' : 'topPadding';
                 this.setState({
