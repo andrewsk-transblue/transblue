@@ -16,8 +16,10 @@ import './style.css';
 // }
 
 function About(props) {
+    //console.log(props)
+
     let tel = props.phone.replace(/[^A-Z0-9]/ig, "");
-    console.log(tel)
+    //console.log(tel)
     return (
         <div className='container-fluid about-container'>
             <div className='row'>

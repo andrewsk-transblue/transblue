@@ -5,9 +5,6 @@ import './style.css';
 
 function Section(props) {
     const [displayServices, setDisplayServices] = useState(false)
-    let tel;
-    props.contact ? tel = props.contact.phone.replace(/[^A-Z0-9]/ig, "") : tel = ''
-    console.log(props.location)
     return(
         <div className='section-wrapper container-fluid'>
             <div className='row'>

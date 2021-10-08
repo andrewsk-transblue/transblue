@@ -52,7 +52,10 @@ class LocationList extends Component {
                     <small>Please try different search criteria</small>
                 </div>}
                 {this.state.locationList.length > 0 && this.state.locationList.map((location, index) => {
-                    let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
+                    let phone;
+                    if(location.callblue) phone = location.callbluephone
+                    else phone = location.officephone
+                    let telLink = phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='row location' >
                             <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>
@@ -62,7 +65,7 @@ class LocationList extends Component {
                                     {location.address1}, {location.address2}<br />
                                     {location.city}, {location.state} {location.zipcode}<br />
                                     <div className='location-contact'>
-                                        <a href={`tel:+${telLink}`}><i className="fas fa-phone"></i>{location.phone}<br /></a>
+                                        <a href={`tel:+${telLink}`}><i className="fas fa-phone"></i>{phone}<br /></a>
                                         <i className="fas fa-envelope"></i>{location.email}<br /> 
                                     </div>                               
                                     <span>

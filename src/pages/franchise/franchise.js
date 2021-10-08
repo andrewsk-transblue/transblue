@@ -72,7 +72,7 @@ function Franchise(props) {
                 <ContactCta email={easybaseData[0].email} />
                 <div className='wrapper'>
                 <div className='about bg-light'>
-                    <About phone={easybaseData[0].phone} email={easybaseData[0].email} name={easybaseData[0].name} />
+                    <About phone={easybaseData[0].callbluephone} email={easybaseData[0].email} name={easybaseData[0].name} />
                 </div>
                 <div className='franchise-services container-fluid'>
                         <div className='row title'>
