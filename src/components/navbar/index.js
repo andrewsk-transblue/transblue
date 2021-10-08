@@ -115,7 +115,6 @@ class Navbar extends Component {
                                 {!this.props.franchise && <a className="dropdown-item" href="/contact">CONTACT</a>}
                                 <a className='dropdown-item' href='/featured'>PROJECTS</a>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">FRANCHISE</a>
                                 <a className='dropdown-item' href='/givesback'>GIVING BACK</a>
                             </div>
                         </li>
