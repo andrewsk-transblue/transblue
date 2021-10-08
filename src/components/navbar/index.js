@@ -42,7 +42,7 @@ class Navbar extends Component {
 
     render() {
         return(
-            <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
+            <nav className={`navbar navbar-expand-xl bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
                 <Link className="navbar-brand" to="/">
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
                 </Link>

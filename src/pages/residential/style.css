@@ -1,9 +1,6 @@
 .residential-header {
     position: fixed;
     padding: 0px;
-    /* max-width: 100%;
-    height: auto; */
-    /* height: 600px; */
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
