@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
+import FranchiseNav from '../../components/franchiseNav';
+import Footer from '../../components/footer';
 import './style.css';
 
 function Finance(props) {
@@ -23,6 +24,7 @@ function Finance(props) {
     return(
         <Fragment>
             <Navbar />
+            <FranchiseNav />
             <div className='finance-wrapper'>
                 <div className='overlay'></div>
                 <div className='dropdown-wrapper'>
