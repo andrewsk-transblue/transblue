@@ -1,6 +1,10 @@
 .upgrade {
     position: relative;
     margin-top: 60px;
+    height: 300px;
+    background-image: url('../../../images/residential/upgrade.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .upgrade img {
@@ -44,8 +48,8 @@
     /* font-size: .8em; */
     font-size: .6em;
     letter-spacing: 1.5px;
-    border: 1px solid rgb(204, 204, 204);
-    padding: 3px 10px;
+    border: 2px solid rgb(204, 204, 204);
+    padding: 3px 20px;
     text-decoration: none;
     position: absolute;
     left: 50%;
@@ -83,9 +87,15 @@
     .upgrade p:nth-of-type(2) {
         font-size: 3em;
     }
+    .upgrade {
+        height: 400px;
+    }
 }
 
 @media only screen and (min-width: 990px) {
+    .upgrade {
+        height: 500px;
+    }
     .upgrade p:first-of-type {
         font-size: 1.5em;
         margin-bottom: 0px;
