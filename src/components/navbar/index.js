@@ -56,9 +56,9 @@ class Navbar extends Component {
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse flex-md-column" id="navbarNav">
+                <div className="collapse navbar-collapse flex-lg-column" id="navbarNav">
 
-                    <ul className="navbar-nav ml-auto flex-lg-row">
+                    <ul className="navbar-nav ml-auto flex-xl-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>
