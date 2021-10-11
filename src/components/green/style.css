@@ -1,14 +1,3 @@
-.green-solns {
-    width: 95%;
-    margin-top: 50px;
-}
-
-.green-solns h4 {
-    width: 90%;
-    /* text-align: center; */
-    /* border: 1px solid red; */
-    /* margin: 0 auto; */
-}
 
 .green-solns p.subtitle {
     font-weight: 500;
@@ -21,9 +10,6 @@
     margin-bottom: .7rem;
 }
 
-.green-solns img {
-    width: 100%;
-}
 /* 
 @media only screen and (min-width: 1200px) {
     .green-solns hr {
@@ -31,7 +17,7 @@
     }
 } */
 
-@media only screen and (min-width: 750px) {
+/* @media only screen and (min-width: 750px) {
     .green-solns h4,
     .green-solns .title .section-p {
         width: 80%;
@@ -54,4 +40,4 @@
     .green-solns .title .section-p {
         width: 50%;
     }
-}
+} */

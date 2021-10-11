@@ -32,7 +32,7 @@ import solarSmall from '../../images/commercial/solarSmall.jpg';
 import './style.css';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 class Commercial extends Component {

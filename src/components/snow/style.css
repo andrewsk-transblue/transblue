@@ -22,7 +22,7 @@
     margin-top: 8px;
 }
 
-@media only screen and (min-width: 370px) {
+@media only screen and (min-width: 415px) {
     .snow-wrapper button.cta {
         display: inline;
         margin-left: 10px;

@@ -38,7 +38,7 @@ function Residential() {
     useEffect(() => {
         ReactGA.event({
             category: 'User',
-            action: 'Visited Residential Page'
+            action: 'Visited GC Residential Page'
           });
     }, [])
 

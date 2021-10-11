@@ -1,6 +1,6 @@
 {
   "name": "transblue",
-  "homepage": "https://transblue2.herokuapp.com/",
+  "homepage": ".",
   "version": "0.1.0",
   "engines": {
     "node": "16.x"
