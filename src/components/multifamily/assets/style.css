@@ -1,5 +1,13 @@
 .assets-wrapper {
     position: relative;
+    height: 400px;
+    background-image: url('../../../images/multifamily/assets.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.assets-wrapper .next-section {
+    display: none;
 }
 
 .assets-wrapper .overlay {
@@ -8,7 +16,7 @@
 
 .assets-wrapper .text {
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     /* left: 40px; */
     color: white;
     z-index: 35;
@@ -23,7 +31,7 @@
 }
 
 .assets-wrapper p {
-    font-size: 1em;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -40,17 +48,26 @@
     .assets-wrapper .text {
         left: 3.5%;
     }
+    .assets-wrapper .next-section {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .assets-wrapper .text {
         /* padding-left: 3.5%; */
-        top: 68%;
+        bottom: 5%;
+    }
+    .assets-wrapper {
+        height: 500px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .assets-wrapper p {
         font-size: 1.2em;
+    }
+    .assets-wrapper {
+        height: 600px;
     }
 }
