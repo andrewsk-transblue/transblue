@@ -5,6 +5,10 @@ import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
 
+import Html2Pdf from 'js-html2pdf';
+
+import {Preview, print} from 'react-html2pdf';
+
 
 const api_key = process.env.REACT_APP_MAILGUN_API;
 const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
@@ -33,7 +37,8 @@ class Form extends Component {
             acceptTerms: false,
             applicationSent: false,
             trimmedDataURL: '',
-            sigSaved: false
+            sigSaved: false,
+            filledForm: ''
         }
     }
 
@@ -70,27 +75,45 @@ class Form extends Component {
 
         const doc = new jsPDF({lineHeight: 1.5});
 
+       //var exporter = new Html2Pdf(element, options);
 
-        var filledForm = this.props.location.variableagreement.replaceAll('${name}', this.state.name).replaceAll('${date}', today)
+
+
+        var filledForm = 
+            this.props.location.variableagreement
+            .replaceAll('${name}', this.state.name)
+            .replaceAll('${day}', dd)
+            .replaceAll('${month}', mm)
+            .replaceAll('${year}', yyyy)
+            .replaceAll('${trimmedDataURL}', this.state.trimmedDataURL)
+            .replaceAll('${title}', this.state.jobTitle)
+            .replaceAll('${EIN}', this.state.EIN)
+            .replaceAll('${licenseNo}', this.state.licenseNo)
+            .replaceAll('${jobTitle}', this.state.jobTitle)
+            // .replaceAll('${bondNumber}', this.state.)
+
+        this.setState({filledForm: filledForm})
+
+        print('a', 'pdf')
         
-        var splitTitle = doc.splitTextToSize(filledForm, 270);
+        //var splitTitle = doc.splitTextToSize(filledForm, 270);
 
         //var pageHeight = doc.internal.pageSize.height;
-        doc.setFontSize(11);
-        var y = 7;
+        // doc.setFontSize(11);
+        // var y = 7;
 
-        for (var i = 0; i < splitTitle.length; i++) {    
+        // for (var i = 0; i < splitTitle.length; i++) {    
                        
-            if (y > 270) {
-                y = 10;
-                doc.addPage();
-            }
-            doc.text(15, y, splitTitle[i]);
-            y = y + 7;
-        }
+        //     if (y > 270) {
+        //         y = 10;
+        //         doc.addPage();
+        //     }
+        //     doc.text(15, y, splitTitle[i]);
+        //     y = y + 7;
+        // }
 
-        doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, y, 25, 25);
-        doc.text('X_____________________________', 15, y+32)
+        //doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, y, 25, 25);
+        //doc.text('X_____________________________', 15, y+32)
         //doc.save('my.pdf');
 
         //console.log(doc.output('arraybuffer'))
@@ -255,6 +278,13 @@ class Form extends Component {
                 {this.state.applicationSent && <div className='application-sent alert alert-success'>
                     Thank you! Your application has been submitted.
                 </div>}
+
+                
+                <Preview id='pdf'>
+                    <div dangerouslySetInnerHTML={{__html: this.state.filledForm}}>
+                    </div>
+                </Preview>
+                <button onClick={() => print('a', 'pdf')}>PRINT</button>
             </form>
         )
     }

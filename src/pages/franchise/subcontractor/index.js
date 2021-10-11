@@ -2,6 +2,7 @@ import React, {Fragment, useState, useEffect} from 'react';
 import { useEasybase } from 'easybase-react';
 import Fade from 'react-reveal/Fade';
 import Navbar from '../../../components/navbar';
+import FranchiseNav from '../../../components/franchiseNav';
 import Form from './form';
 import Footer from '../../../components/footer';
 import './style.css';
@@ -31,6 +32,7 @@ function Subcontractor(props) {
     return(
         <Fragment>
             <Navbar theme='dark' />
+            <FranchiseNav />
             <div className='bg'>
                 <div className='subcontractor-wrapper'>
                     <h2>TRANSBLUE {props.match.params.urlCity.toUpperCase().replace('-', ' ')}</h2>

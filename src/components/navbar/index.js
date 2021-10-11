@@ -13,8 +13,6 @@ class Navbar extends Component {
     componentDidMount() {
         let tel;
         this.props.franchise === true ? tel = this.props.phone.replace(/[^A-Z0-9]/ig, "") : tel = '';
-        // if(window.innerWidth < 992) this.setState({scrollHeight: 0})
-        // this.props.page === 'CONTACT' ? this.setState({bgColor: 'black'}) :
         
         if(this.props.theme === 'dark') {
             this.setState({bgColor: 'black'})
@@ -24,15 +22,19 @@ class Navbar extends Component {
             document.addEventListener('scroll', () => {
                 let bgColor = window.scrollY > window.innerHeight / 2 ? 'black' : 'transparent';
                 let displayPage = window.scrollY >300 ? true : false;
-                let topPadding = window.scrollY > 30 ? '' : 'topPadding';
+                //console.log(window.scrollY)
                 this.setState({
                     bgColor: bgColor,
                     displayPage: displayPage,
                     tel: tel,
-                    topPadding: topPadding
                 })
             })
         }
+
+        document.addEventListener('scroll', () => {
+            let topPadding = window.scrollY > 30 ? '' : 'topPadding';
+            this.setState({topPadding: topPadding})
+        })
     }
 
     toggleSmallScreen = () => {
