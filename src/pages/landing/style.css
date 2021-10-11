@@ -46,7 +46,7 @@
     width: 90%;
     animation: headerText 40s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    content: '';
+    content: 'LUXURY EXTERIOR DESIGN';
 }
 
 #header_slide {
