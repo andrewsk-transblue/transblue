@@ -219,6 +219,10 @@
 .impression-wrapper {
     position: relative;
     text-shadow: 1px 1px 8px rgb(53, 53, 53);
+    height: 400px;
+    background-image: url('../../images/commercial/impression.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 /* .impression-wrapper img:not(.next-section) {
@@ -254,17 +258,17 @@
     letter-spacing: 1px;
 }
 
-.impression-wrapper .next-section {
+/* .impression-wrapper .next-section {
     width: 40px;
     height: 30px;
-}
+} */
 
 
 @media only screen and (min-width: 768px) {
-    .impression-wrapper .next-section {
+    /* .impression-wrapper .next-section {
         width: 75px;
         height: 60px;
-    }
+    } */
     .impression-wrapper .text {
         width: 75%;
     }
@@ -315,12 +319,18 @@
     .schedule h1 {
         margin-bottom: 25px;
     }
+    .impression-wrapper {
+        height: 500px;
+    }
     .impression-wrapper .text {
         width: 60%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
+    .impression-wrapper {
+        height: 600px;
+    }
     .simple-process .container-fluid {
         width: 1140px;
     }

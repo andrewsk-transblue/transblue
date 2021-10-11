@@ -1,6 +1,4 @@
 import React, {useRef, Fragment} from 'react';
-import impression from '../../images/commercial/impression.jpg';
-import impressionSmall from '../../images/commercial/impressionSmall.jpg';
 import roof from '../../images/commercial/roof.jpg';
 import asphalt from '../../images/commercial/asphalt2.jpg';
 import refresh from '../../images/commercial/refresh.jpg';
@@ -12,10 +10,6 @@ function Impression() {
     return(
         <Fragment>
             <div className='impression-wrapper'>
-                <img src={impressionSmall} alt='Commercial Exterior' 
-                    srcSet={`${impressionSmall} 600w, ${impression} 1500w`} 
-                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 100vw"
-                />
                 <div className='overlay'></div>
                 <div className='text'>
                     <h3>FIRST IMPRESSIONS MATTER.</h3>
