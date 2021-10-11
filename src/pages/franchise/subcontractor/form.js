@@ -74,11 +74,7 @@ class Form extends Component {
         console.log(today)
 
         const doc = new jsPDF({lineHeight: 1.5});
-
-       //var exporter = new Html2Pdf(element, options);
-
-
-
+          
         var filledForm = 
             this.props.location.variableagreement
             .replaceAll('${name}', this.state.name)
@@ -94,7 +90,18 @@ class Form extends Component {
 
         this.setState({filledForm: filledForm})
 
-        print('a', 'pdf')
+        var element = document.getElementById('pdf');
+        console.log(element)
+
+        var options = {
+            filename: 'my-file.pdf'
+          };
+
+        var exporter = new Html2Pdf(element, options);
+        
+        //exporter.getPdf(options);
+
+        //print('a', 'pdf')
         
         //var splitTitle = doc.splitTextToSize(filledForm, 270);
 
@@ -155,9 +162,9 @@ class Form extends Component {
            // attachment: [bufferObject]
         };
         //console.log(data)
-        mailgun.messages().send(data, function(error, body) {
-            console.log(body)
-        })
+        // mailgun.messages().send(data, function(error, body) {
+        //     console.log(body)
+        // })
     }
 
     // selectFile = (e) => {
@@ -280,11 +287,11 @@ class Form extends Component {
                 </div>}
 
                 
-                <Preview id='pdf'>
-                    <div dangerouslySetInnerHTML={{__html: this.state.filledForm}}>
+                <Preview>
+                    <div id='pdf' dangerouslySetInnerHTML={{__html: this.state.filledForm}}>
                     </div>
                 </Preview>
-                <button onClick={() => print('a', 'pdf')}>PRINT</button>
+                {/* <button onClick={() => print('a', 'pdf')}>PRINT</button> */}
             </form>
         )
     }
