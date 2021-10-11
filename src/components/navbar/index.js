@@ -58,7 +58,7 @@ class Navbar extends Component {
                 </button>
                 <div className="collapse navbar-collapse flex-lg-column" id="navbarNav">
 
-                    <ul className="navbar-nav ml-auto flex-xl-row">
+                    <ul className="navbar-nav ml-auto flex-lg-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>

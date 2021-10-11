@@ -29,7 +29,7 @@ import './style.css';
 import ServiceModal from '../../components/serviceModal';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Franchise(props) {
@@ -43,7 +43,7 @@ function Franchise(props) {
             category: 'User',
             action: `Visited ${props.name} Page`
             });
-            
+
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             //console.log(ebData)
@@ -67,7 +67,7 @@ function Franchise(props) {
                 <meta name="description" content="Transblue Government Services" />
             </Helmet>
             <div className='franchise-wrapper'>
-                <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].phone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
+                <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].callbluephone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
                 <Header
                     // img={`${process.env.PUBLIC_URL}/images/${easybaseData[0].image}`}
                     // img={easybaseData[0].residential}
