@@ -72,8 +72,12 @@ function ListView(props) {
                 }
                 {stateLocations.length > 0 && stateLocations.map(location => {
                     //console.log(stateLocations)
-                    //console.log(location)
-                    let telLink = location.phone.replace(/[^A-Z0-9]/ig, "");
+                    console.log(location)
+                    let phone;
+                    if(props.callblue) phone = location.callbluephone;
+                    else phone = location.officephone;
+
+                    let telLink = phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
                             <div className='listview-location'>
@@ -98,7 +102,7 @@ function ListView(props) {
                                     <div className='col-10 pr-0'>
                                         <p className='section-p'>
                                             {location.email}<br />
-                                            <a href={`tel:+${telLink}`}>{location.phone}</a>
+                                            <a href={`tel:+${telLink}`}>{phone}</a>
                                         </p>
                                     </div>
                                 </div>
