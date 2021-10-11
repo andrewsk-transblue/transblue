@@ -1,6 +1,24 @@
+
+.slideshow[data-index='0'] {
+    background-image: url('../../images/commercial/snow.jpg');
+}
+.slideshow[data-index='1'] {
+    background-image: url('../../images/commercial/asphalt4.jpg');
+}
+.slideshow[data-index='2'] {
+    background-image: url('../../images/commercial/fence.jpg');
+}
+.slideshow[data-index='3'] {
+    background-image: url('../../images/commercial/solar.jpg');
+}
+
 .slideshow {
     position: relative;
     padding: 0px;
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+    /* background-image: url('../../images/commercial/snow.jpg'); */
 }
 
 .slideshow .overlay {
@@ -9,10 +27,6 @@
 
 .slideshow .row {
     margin: 0px;
-}
-
-.slideshow-image {
-    width: 100%;
 }
 
 .slideshow-text {
@@ -77,11 +91,17 @@
     .slideshow button .prev-slide {
         width: 40px;
     }
+    .slideshow {
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .slideshow button .next-slide,
     .slideshow button .prev-slide {
         width: 60px;
+    }
+    .slideshow {
+        height: 550px;
     }
 }
