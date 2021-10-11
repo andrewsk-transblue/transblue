@@ -34,6 +34,8 @@
 .franchise-finance {
     background-color: rgb(61, 61, 61);
     position: absolute;
+    width: 80%;
+    max-width: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -48,7 +50,11 @@
 .franchise-finance a {
     color: white !important;
     text-decoration: none;
-    font-size: 30px;
+    font-size: clamp(20px, 2.8vw, 30px);
     font-family: 'Raleway', sans-serif;
     letter-spacing: .05em;
+}
+
+@media only screen and (min-width: 576px) {
+
 }
