@@ -156,7 +156,7 @@ label {
     font-weight: bold;
 }
 
-.agreement p {
+.agreement p.agreement-wrapper {
     height: 75px;
     overflow-y: auto;
     font-size: .6em;
