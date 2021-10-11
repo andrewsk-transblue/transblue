@@ -18,6 +18,8 @@
     background-color: #0b56a4;
     padding: 40px;
     z-index: 50;
+    width: 90%;
+    max-width: 600px;
 }
 
 .finance-wrapper .dropdown-wrapper h5 {

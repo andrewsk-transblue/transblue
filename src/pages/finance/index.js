@@ -5,13 +5,17 @@ import Footer from '../../components/footer';
 import './style.css';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Finance(props) {
     //console.log(props.locations)
     const [locationList, setLocationList] = useState([])
     const [location, setLocation] = useState('')
+
+    let buttonText;
+    if(window.innerWidth < 420) buttonText = 'GO'
+    else buttonText = 'GET FINANCED'
 
     useEffect(() => {
         ReactGA.event({
@@ -53,7 +57,7 @@ function Finance(props) {
                                 className="btn btn-outline-secondary" 
                                 target='_blank'
                                 rel='noreferrer'
-                                >GET FINANCED
+                                >{buttonText}
                             </a>
                         </div>
                     </div>
