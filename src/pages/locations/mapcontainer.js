@@ -99,7 +99,7 @@ class MapContainer extends Component {
         console.log('map container')
         return(
             <div className='map-container'>
-                    {this.state.initialLoad && <div className='map-placeholder'><img src={map} alt='map' /></div>}
+                    {this.state.initialLoad && <div className='map-placeholder'></div>}
                     {this.state.center.length > 0 && <MapComp 
                     zoomLocation={(lat, lon) => this.zoomLocation(lat,lon)}
                     center={this.state.center} radius={this.state.radius}
