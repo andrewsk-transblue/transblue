@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import './contact2.css';
 
-class Form extends Component {
+import{ init } from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
+init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
+class Form extends Component {
     state={
         firstName: '',
         lastName: '',
@@ -19,10 +22,24 @@ class Form extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state)
         this.props.onSubmit()
 
-        //ADD MAILGUN HERE
+        //EMAILJS
+        let templateParams = {
+            website: 'GC WEBSITE',
+            from_name: `${this.state.firstName} ${this.state.lastName}`,
+            to_email: 'carters@transblue.org',
+            reply_to: this.state.email,
+            phone: this.state.phone,
+            message: this.state.message
+           }
+
+        emailjs.send(
+        'service_61uwfqo',
+        'template_dqy1grk',
+            templateParams,
+            process.env.REACT_APP_REACTJS_USER
+        )
     }
 
     render() {

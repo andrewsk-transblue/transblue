@@ -23,7 +23,7 @@ import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 //import FranchiseLifestyle from './lifestyle';
 import Footer from '../../components/footer/index';
-import zipcodes from 'zipcodes';
+//import zipcodes from 'zipcodes';
 import Finance from './finance';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
