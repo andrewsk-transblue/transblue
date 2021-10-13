@@ -30,7 +30,7 @@ function Form(props) {
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org',
+            to_email: 'carters@transblue.org', //CHANGE THIS TO INCOMINGLEADS
             reply_to: email,
             phone: phone,
             message: message
@@ -38,7 +38,7 @@ function Form(props) {
 
         emailjs.send(
         'service_61uwfqo',
-        'template_dqy1grk',
+        'template_dqy1grk', //CONTACT TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )

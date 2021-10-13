@@ -56,9 +56,9 @@ class Form extends Component {
         let templateParams = {
             subject: 'Subcontractor Application',
             from_name: this.props.location.name,
-            to_email: 'carters@transblue.org',
+            to_email: 'carters@transblue.org', //CHANGE THIS TO this.props.location.officeemail
             to_name: this.state.name,
-            reply_to: 'carters@transblue.org',
+            reply_to: 'carters@transblue.org', //CHANGE THIS TO this.state.email
             message_html: `${this.props.location.htmlagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
             businessName: this.state.businessName,
             email: this.state.email,
@@ -75,9 +75,10 @@ class Form extends Component {
             signature: this.state.trimmedDataURL
            }
 
+        //SEND EMAIL TO FRANCHISE EMAIL WITH EMAILJS
         emailjs.send(
         'service_61uwfqo',
-        'template_zlj2blu',
+        'template_zlj2blu', //SUBCONTRACTOR TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )

@@ -28,15 +28,15 @@ class Form extends Component {
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${this.state.firstName} ${this.state.lastName}`,
-            to_email: 'carters@transblue.org',
-            reply_to: this.state.email,
+            to_email: 'carters@transblue.org', //CHANGE THIS TO this.props.location.email to send to LOCATIONLEADS@TRANSBLUE.ORG
+            reply_to: this.state.email, //CALL BLUE CAN REPLY TO USER
             phone: this.state.phone,
             message: this.state.message
            }
 
         emailjs.send(
         'service_61uwfqo',
-        'template_dqy1grk',
+        'template_dqy1grk', //CONTACT TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )

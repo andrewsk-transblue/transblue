@@ -39,15 +39,15 @@ function Contact(props) {
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org',
-            reply_to: email, //when callblue responds, send to user
+            to_email: 'carters@transblue.org', //CHANGE TO props.location.email to send to LOCATIONLEADS@TRANSBLUE.ORG
+            reply_to: email, //CALL BLUE CAN REPLY TO USER
             phone: phone,
             message: message
         }
 
         emailjs.send(
         'service_61uwfqo',
-        'template_dqy1grk',
+        'template_dqy1grk', //CONTACT TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )
