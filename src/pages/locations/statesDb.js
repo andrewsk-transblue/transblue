@@ -1,5 +1,6 @@
 const states = [ 
     'California',
+    'Colorado',
     'Connecticut',
     'Louisiana',
     'Massachusetts',

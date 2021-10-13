@@ -9,6 +9,9 @@ import Html2Pdf from 'js-html2pdf';
 
 import {Preview, print} from 'react-html2pdf';
 
+import{ init } from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
+init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 const api_key = process.env.REACT_APP_MAILGUN_API;
 const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
@@ -38,8 +41,13 @@ class Form extends Component {
             applicationSent: false,
             trimmedDataURL: '',
             sigSaved: false,
-            filledForm: ''
+            filledForm: '',
+            imgSrc: ''
         }
+    }
+
+    componentDidMount() {
+        console.log(this.props.location.subagreement)
     }
 
     onChange = (e) => {
@@ -47,22 +55,46 @@ class Form extends Component {
     }
 
     updateRadio = (e, value) => {
-        //console.log(typeof e.target.value)
-        //console.log(this.state[e.target.id])
         this.setState({[e.target.id]: value}, () => console.log(this.state[e.target.id]))
-    } 
-
-    // buttonPress = (enabled) => {
-    //     console.log(enabled)
-    //     if(enabled) this.onSubmit()
-    // }
+    }
 
     onSubmit = (e) => {
         e.preventDefault();
         console.log('submitted')
+
+        let templateParams = {
+            subject: 'Subcontractor Application',
+            from_name: this.props.location.name,
+            to_email: 'carters@transblue.org',
+            to_name: this.state.name,
+            reply_to: 'carters@transblue.org',
+            message_html: `${this.props.location.subagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
+            businessName: this.state.businessName,
+            email: this.state.email,
+            jobTitle: this.state.jobTitle,
+            address: `${this.state.address1}, ${this.state.address2} ${this.state.city}, ${this.state.state} ${this.state.zipcode}`,
+            businessPhone: this.state.businessPhone,
+            cellPhone: this.state.cellPhone,
+            EIN: this.state.EIN,
+            licenseNo: this.state.licenseNo,
+            liability: this.state.liability,
+            insurance: this.state.insurance,
+            remoteAccess: this.state.remoteAccess,
+            acceptTerms: this.state.acceptTerms,
+            signature: this.state.trimmedDataURL
+           }
+
+        emailjs.send(
+        'service_61uwfqo',
+        'template_zlj2blu',
+            templateParams,
+        'user_iLZ3jXyTzXi5zQFlgf5DG'
+        )
+
+        
         this.setState({applicationSent: true})
 
-        const email = this.props.location.email
+        //const email = this.props.location.email
         //console.log(email)
 
         var today = new Date();
@@ -71,9 +103,9 @@ class Form extends Component {
         var yyyy = today.getFullYear();
 
         today = mm + '/' + dd + '/' + yyyy;
-        console.log(today)
+        //console.log(today)
 
-        const doc = new jsPDF({lineHeight: 1.5});
+        console.log(this.state.trimmedDataURL)
           
         var filledForm = 
             this.props.location.variableagreement
@@ -86,61 +118,85 @@ class Form extends Component {
             .replaceAll('${EIN}', this.state.EIN)
             .replaceAll('${licenseNo}', this.state.licenseNo)
             .replaceAll('${jobTitle}', this.state.jobTitle)
-            // .replaceAll('${bondNumber}', this.state.)
+            .replaceAll('${bondNumber}', this.state.cellPhone)
+            
 
-        this.setState({filledForm: filledForm})
+        //console.log()
+        //console.log(filledForm.toString())
 
-        var element = document.getElementById('pdf');
-        console.log(element)
+        //const encodedToken = Buffer.from('U1ZNRSCr9DfneN4UKlWidhmLEyzXga49:', 'ascii').toString('base64')
+        //options.headers.Authorization = `Basic ${encodedToken}`
 
-        var options = {
-            filename: 'my-file.pdf'
-          };
 
-        var exporter = new Html2Pdf(element, options);
-        
-        //exporter.getPdf(options);
-
-        //print('a', 'pdf')
-        
-        //var splitTitle = doc.splitTextToSize(filledForm, 270);
-
-        //var pageHeight = doc.internal.pageSize.height;
-        // doc.setFontSize(11);
-        // var y = 7;
-
-        // for (var i = 0; i < splitTitle.length; i++) {    
-                       
-        //     if (y > 270) {
-        //         y = 10;
-        //         doc.addPage();
+        // let data = JSON.stringify({
+        //     "data": {
+        //       "html": filledForm,
+        //       "css": `
+        //         body { font-size: 14px; color: #171717; }
+        //         .header-one { text-decoration: underline; }
+        //         .header-two { font-style: underline; }
+        //       `
         //     }
-        //     doc.text(15, y, splitTitle[i]);
-        //     y = y + 7;
-        // }
+        // })
 
-        //doc.addImage(this.state.trimmedDataURL, 'JPEG', 15, y, 25, 25);
-        //doc.text('X_____________________________', 15, y+32)
-        //doc.save('my.pdf');
+        // console.log(data)
 
-        //console.log(doc.output('arraybuffer'))
+        // var config = {
+        //     method: 'post',
+        //     url: 'https://my-tb-cors.herokuapp.com/https://app.useanvil.com/api/v1/generate-pdf',
+        //     headers: {
+        //         Authorization: `Basic ${encodedToken}`,
+        //         'Content-Type': 'application/json'
+        //      },
+        //     data: data,
+        //     responseType: 'blob'
+        //   };
+          
+        //   axios(config)
+        //   .then(function (response) {
+        //     //console.log(JSON.stringify(response.data));
+        //     const blob = new Blob([response.data], { type: 'application/pdf' });
+        //     const url = URL.createObjectURL(blob);
+        //     window.open(url, '_blank');
+        //   })
+        //   .catch(function (error) {
+        //     console.log(error);
+        //   });
 
-        //let arrayBuffer = doc.output('arraybuffer');
+        // let raw = JSON.stringify({
+        //         "data": {
+        //           "html": filledForm,
+        //           "css": `
+        //             body { font-size: 14px; color: #171717; }
+        //             .header-one { text-decoration: underline; }
+        //             .header-two { font-style: underline; }
+        //           `
+        //         }
+        // })
 
-        // var bufferObject = new Buffer.alloc(arrayBuffer.byteLength)
-        // for (var i = 0; i < arrayBuffer.length; i++) {
-        //     bufferObject[i] = arrayBuffer[i];
-        // }
+        let b64 = this.state.trimmedDataURL
+        console.log(b64)
+        var pos = b64.indexOf('base64,');
+        if (pos !== -1)
+        {
+            b64 = b64.substr(pos + 7);
+            console.log(b64)
+        }
+        var buf = Buffer.from(b64, 'base64')
 
-        //console.log(typeof bufferObject)
+        let blob = new Blob([buf])
 
-        //var blob = doc.output('blob')
+        const filename = 'signature.png';
+        //const text = "Example test content."
+        //console.log(this.state.trimmedDataURL)
+        const attch = new mailgun.Attachment({data: blob, filename: filename, cid: filename})
 
-        //console.log(doc.output('blob'))
+        console.log(Buffer.isBuffer(attch))
+        console.log(Buffer.isBuffer(buf))
 
         var data = {
             from: 'test@test.com',
-            to: this.state.email,
+            to: 'carters@transblue.org',
             subject: 'Subcontractor Application',
             text: ` Business Name: ${this.state.businessName}
                     Name: ${this.state.name}
@@ -157,20 +213,18 @@ class Form extends Component {
                     Contractor License Number: ${this.state.licenseNo}
                     Comprehensive Liability Insurance: ${this.state.liability}
                     Certificate of Insurance: ${this.state.insurance}
-                    Ability to access and report information remotely: ${this.state.remoteAccess}
-                    Subcontractor Agreement: ${filledForm}`,
-           // attachment: [bufferObject]
+                    Ability to access and report information remotely: ${this.state.remoteAccess}`,
+            html: `Subcontractor Agreement: ${filledForm}`,
+            attachment: [attch]
         };
+        
         //console.log(data)
         // mailgun.messages().send(data, function(error, body) {
         //     console.log(body)
         // })
     }
 
-    // selectFile = (e) => {
-    //     var file = e.target.files
-    //     console.log(file)
-    // }
+    // <img data-imagetype="AttachmentByCid" data-imageerror="AttNotFound" originalsrc="cid:signature.png" alt=""></img>
 
     clearSig = () => {
         this.sigPad.clear();
@@ -178,16 +232,12 @@ class Form extends Component {
     }
         
     trim = () => {
+        // console.log(this.sigPad.getTrimmedCanvas().toDataURL('image/png'))
         this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png'), sigSaved: true })
         this.sigPad.clear();
     }
     
     render() {
-        //console.log(this.props)
-
-        // let enabled = this.state.businessName.length > 0 && this.state.name.length > 0 && this.state.email.length > 0 && this.state.jobTitle.length > 0 && this.state.address1.length > 0 && this.state.city.length > 0 && this.state.state.length > 0 && this.state.zipcode.length > 0 && this.state.businessPhone.length > 0 && this.state.cellPhone.length > 0 && this.state.EIN.length > 0 && this.state.licenseNo.length > 0 && this.state.acceptTerms
-
-        //console.log(enabled)
 
         return(
             <form className='subform-wrapper' onSubmit={this.onSubmit}>
@@ -203,7 +253,7 @@ class Form extends Component {
 
                     <span>
                         <input className='left-input' placeholder='Street Address' id='address1' onChange={this.onChange} required />
-                        <input className='right-input' placeholder='Address Line 2 (optional)' id='address2' onChange={this.onChange} required />
+                        <input className='right-input' placeholder='Address Line 2 (optional)' id='address2' onChange={this.onChange} />
                     </span>
                     <span>
                         <input className='center-left-input' placeholder='City' id='city' onChange={this.onChange} required />
@@ -286,7 +336,9 @@ class Form extends Component {
                     Thank you! Your application has been submitted.
                 </div>}
 
-                
+                {/* {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} />} */}
+
+                {/* {this.state.imgSrc.length > 0 && <img src={this.state.imgSrc} />} */}
                 <Preview>
                     <div id='pdf' dangerouslySetInnerHTML={{__html: this.state.filledForm}}>
                     </div>
