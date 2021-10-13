@@ -59,7 +59,7 @@ class Form extends Component {
             to_email: 'carters@transblue.org',
             to_name: this.state.name,
             reply_to: 'carters@transblue.org',
-            message_html: `${this.props.location.subagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
+            message_html: `${this.props.location.htmlagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
             businessName: this.state.businessName,
             email: this.state.email,
             jobTitle: this.state.jobTitle,

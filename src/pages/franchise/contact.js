@@ -40,7 +40,7 @@ function Contact(props) {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
             to_email: 'carters@transblue.org',
-            reply_to: email,
+            reply_to: email, //when callblue responds, send to user
             phone: phone,
             message: message
         }
@@ -52,7 +52,6 @@ function Contact(props) {
             process.env.REACT_APP_REACTJS_USER
         )
     }
-
 
     return(
         <div className='contact-wrapper bg-light'>
