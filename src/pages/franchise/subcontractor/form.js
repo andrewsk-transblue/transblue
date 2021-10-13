@@ -1,21 +1,12 @@
 import React, {Component, ref} from 'react';
 import SignatureCanvas from 'react-signature-canvas';
-import { jsPDF } from "jspdf";
 import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
 
-import Html2Pdf from 'js-html2pdf';
-
-import {Preview, print} from 'react-html2pdf';
-
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
-
-const api_key = process.env.REACT_APP_MAILGUN_API;
-const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 class Form extends Component {
     constructor() {
@@ -93,146 +84,14 @@ class Form extends Component {
 
         
         this.setState({applicationSent: true})
-
-        //const email = this.props.location.email
-        //console.log(email)
-
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-        var yyyy = today.getFullYear();
-
-        today = mm + '/' + dd + '/' + yyyy;
-        //console.log(today)
-
-        console.log(this.state.trimmedDataURL)
-          
-        var filledForm = 
-            this.props.location.variableagreement
-            .replaceAll('${name}', this.state.name)
-            .replaceAll('${day}', dd)
-            .replaceAll('${month}', mm)
-            .replaceAll('${year}', yyyy)
-            .replaceAll('${trimmedDataURL}', this.state.trimmedDataURL)
-            .replaceAll('${title}', this.state.jobTitle)
-            .replaceAll('${EIN}', this.state.EIN)
-            .replaceAll('${licenseNo}', this.state.licenseNo)
-            .replaceAll('${jobTitle}', this.state.jobTitle)
-            .replaceAll('${bondNumber}', this.state.cellPhone)
-            
-
-        //console.log()
-        //console.log(filledForm.toString())
-
-        //const encodedToken = Buffer.from('U1ZNRSCr9DfneN4UKlWidhmLEyzXga49:', 'ascii').toString('base64')
-        //options.headers.Authorization = `Basic ${encodedToken}`
-
-
-        // let data = JSON.stringify({
-        //     "data": {
-        //       "html": filledForm,
-        //       "css": `
-        //         body { font-size: 14px; color: #171717; }
-        //         .header-one { text-decoration: underline; }
-        //         .header-two { font-style: underline; }
-        //       `
-        //     }
-        // })
-
-        // console.log(data)
-
-        // var config = {
-        //     method: 'post',
-        //     url: 'https://my-tb-cors.herokuapp.com/https://app.useanvil.com/api/v1/generate-pdf',
-        //     headers: {
-        //         Authorization: `Basic ${encodedToken}`,
-        //         'Content-Type': 'application/json'
-        //      },
-        //     data: data,
-        //     responseType: 'blob'
-        //   };
-          
-        //   axios(config)
-        //   .then(function (response) {
-        //     //console.log(JSON.stringify(response.data));
-        //     const blob = new Blob([response.data], { type: 'application/pdf' });
-        //     const url = URL.createObjectURL(blob);
-        //     window.open(url, '_blank');
-        //   })
-        //   .catch(function (error) {
-        //     console.log(error);
-        //   });
-
-        // let raw = JSON.stringify({
-        //         "data": {
-        //           "html": filledForm,
-        //           "css": `
-        //             body { font-size: 14px; color: #171717; }
-        //             .header-one { text-decoration: underline; }
-        //             .header-two { font-style: underline; }
-        //           `
-        //         }
-        // })
-
-        let b64 = this.state.trimmedDataURL
-        console.log(b64)
-        var pos = b64.indexOf('base64,');
-        if (pos !== -1)
-        {
-            b64 = b64.substr(pos + 7);
-            console.log(b64)
-        }
-        var buf = Buffer.from(b64, 'base64')
-
-        let blob = new Blob([buf])
-
-        const filename = 'signature.png';
-        //const text = "Example test content."
-        //console.log(this.state.trimmedDataURL)
-        const attch = new mailgun.Attachment({data: blob, filename: filename, cid: filename})
-
-        console.log(Buffer.isBuffer(attch))
-        console.log(Buffer.isBuffer(buf))
-
-        var data = {
-            from: 'test@test.com',
-            to: 'carters@transblue.org',
-            subject: 'Subcontractor Application',
-            text: ` Business Name: ${this.state.businessName}
-                    Name: ${this.state.name}
-                    Job Title: ${this.state.jobTitle}
-                    Email: ${this.state.email}
-                    Business Phone: ${this.state.businessPhone}
-                    Cell Phone: ${this.state.cellPhone}
-                    Address: ${this.state.address1}
-                    Address Line 2: ${this.state.address2}
-                    City: ${this.state.city}
-                    State: ${this.state.state}
-                    Zipcode: ${this.state.zipcode}
-                    Tax ID: ${this.state.EIN}
-                    Contractor License Number: ${this.state.licenseNo}
-                    Comprehensive Liability Insurance: ${this.state.liability}
-                    Certificate of Insurance: ${this.state.insurance}
-                    Ability to access and report information remotely: ${this.state.remoteAccess}`,
-            html: `Subcontractor Agreement: ${filledForm}`,
-            attachment: [attch]
-        };
-        
-        //console.log(data)
-        // mailgun.messages().send(data, function(error, body) {
-        //     console.log(body)
-        // })
     }
 
-    // <img data-imagetype="AttachmentByCid" data-imageerror="AttNotFound" originalsrc="cid:signature.png" alt=""></img>
 
     clearSig = () => {
         this.sigPad.clear();
-        //console.log('on click:', this.state.trimmedDataURL);
     }
         
     trim = () => {
-        // console.log(this.sigPad.getTrimmedCanvas().toDataURL('image/png'))
         this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png'), sigSaved: true })
         this.sigPad.clear();
     }
@@ -330,20 +189,9 @@ class Form extends Component {
                     <button type='submit' disabled={!this.state.acceptTerms} className='cta'>SUBMIT</button>
                 </div>
 
-                {/* <input type='file' onChange={this.selectFile}></input> */}
-
                 {this.state.applicationSent && <div className='application-sent alert alert-success'>
                     Thank you! Your application has been submitted.
                 </div>}
-
-                {/* {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} />} */}
-
-                {/* {this.state.imgSrc.length > 0 && <img src={this.state.imgSrc} />} */}
-                <Preview>
-                    <div id='pdf' dangerouslySetInnerHTML={{__html: this.state.filledForm}}>
-                    </div>
-                </Preview>
-                {/* <button onClick={() => print('a', 'pdf')}>PRINT</button> */}
             </form>
         )
     }
