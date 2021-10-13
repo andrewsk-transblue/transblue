@@ -3,11 +3,13 @@ import Captcha from '../captcha/captcha';
 import { useEasybase } from 'easybase-react';
 import './style.css';
 
-const api_key = process.env.REACT_APP_MAILGUN_API;
-const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+// const api_key = process.env.REACT_APP_MAILGUN_API;
+// const domain = 'sandboxcf6c7b2e02cc4d50947369ccf5924304.mailgun.org';
+// var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
-
+import{ init } from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
+init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 function Form(props) {
     const { db } = useEasybase();
@@ -23,20 +25,24 @@ function Form(props) {
         e.preventDefault();
 
         //send message to incomingleads@transblue.org
-        var data = {
-            from: 'test@test.com',
-            to: 'carters@transblue.org',
-            // to: 'incomingleads@transblue.org',
-            subject: 'GC Contact Message',
-            text: `Name: ${firstName} ${lastName}
-                    Email: ${email}
-                    Phone: ${phone}
-                    Message: ${message}`
-        };
-        mailgun.messages().send(data, function(error, body) {
-            console.log(body)
-        })
         setIsSubmitted(true);
+
+        let templateParams = {
+            website: 'GC WEBSITE',
+            from_name: `${firstName} ${lastName}`,
+            to_email: 'carters@transblue.org',
+            reply_to: email,
+            phone: phone,
+            message: message
+           }
+
+        emailjs.send(
+        'service_61uwfqo',
+        'template_dqy1grk',
+            templateParams,
+            process.env.REACT_APP_REACTJS_USER
+        )
+
 
         //add message to database
         let dbData = {

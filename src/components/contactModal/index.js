@@ -30,9 +30,7 @@ function ContactModal(props) {
             message: message
         }
         db('CONTACT').insert(dbData).one()
-
-        console.log(email)
-
+        
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
