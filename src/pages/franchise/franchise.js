@@ -132,7 +132,7 @@ function Franchise(props) {
                             </div>
                             <div className='col-md-6 col-12'>
                                 {easybaseData[0].lat > 0 && <Map userLocation={userLocation} lat={easybaseData[0].lat} lon={easybaseData[0].lon} 
-                                    //geojson={JSON.parse(easybaseData[0].geojson)}
+                                    geojson={JSON.parse(easybaseData[0].geojson)}
                                  />}
                             </div>
                         </div>

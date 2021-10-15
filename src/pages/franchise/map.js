@@ -31,10 +31,10 @@ function Map(props) {
                 
             <Marker position={[props.lat, props.lon]} />
             {/* {userLocation !== undefined && <Marker position={props.userLocation} />} */}
-            {/* <GeoJSON data={props.geojson}
+            <GeoJSON data={props.geojson}
                 style={{fillColor: '#ed6a22'}}
                 pathOptions={{color: '#ed6a22'}}
-            /> */}
+            />
         </MapContainer>
     )
 }
