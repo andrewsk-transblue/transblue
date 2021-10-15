@@ -27,12 +27,14 @@ import Footer from '../../components/footer/index';
 import Finance from './finance';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
+import db from './reviewDb';
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Franchise(props) {
+    console.log(props)
     const [easybaseData, seteasybaseData] = useState([]);
     const [services, setServices] = useState({})
     const { db, e } = useEasybase();
@@ -47,6 +49,7 @@ function Franchise(props) {
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
             //console.log(ebData)
+            //console.log(ebData[0].citylist)
             seteasybaseData(ebData);
             //console.log(ebData)
             setServices(regionalServices[ebData[0].region])
@@ -113,7 +116,8 @@ function Franchise(props) {
                 <Snow location={easybaseData[0]} />
                 <div className='wrapper'>
                 <Professional location={easybaseData[0]} />
-                <Reviews location={easybaseData[0]} />
+                {/* ONLY RENDER REVIEWS IF REVIEWS IN REVIEWSDB.JS */}
+                {db[easybaseData[0]] !== undefined && <Reviews location={easybaseData[0]} />}
                 <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
@@ -127,7 +131,9 @@ function Franchise(props) {
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
                             <div className='col-md-6 col-12'>
-                                {easybaseData[0].lat > 0 && <Map userLocation={userLocation} lat={easybaseData[0].lat} lon={easybaseData[0].lon} geojson={JSON.parse(easybaseData[0].geojson)} />}
+                                {easybaseData[0].lat > 0 && <Map userLocation={userLocation} lat={easybaseData[0].lat} lon={easybaseData[0].lon} 
+                                    //geojson={JSON.parse(easybaseData[0].geojson)}
+                                 />}
                             </div>
                         </div>
                     </div>

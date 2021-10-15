@@ -11,6 +11,7 @@ class Reviews extends Component {
     }
 
     componentDidMount() {
+        console.log(db['transblue sarah'])
         this.setState({reviews: db[this.props.location.name]})
         console.log(db[this.props.location.name])
     }
