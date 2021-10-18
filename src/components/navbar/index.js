@@ -80,10 +80,10 @@ class Navbar extends Component {
                                 GREEN SOLUTIONS
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="https://tbev.herokuapp.com/">ABOUT</a>
-                                <a className="dropdown-item" href="https://tbev.herokuapp.com/residential">RESIDENTIAL</a>
-                                <a className="dropdown-item" href="https://tbev.herokuapp.com/multifamily">MULTIFAMILY</a>
-                                <a className='dropdown-item' href="https://tbev.herokuapp.com/commercial">COMMERCIAL</a>
+                                <a className="dropdown-item" href="http://green.transblue.com/">ABOUT</a>
+                                <a className="dropdown-item" href="http://green.transblue.com/residential">RESIDENTIAL</a>
+                                <a className="dropdown-item" href="http://green.transblue.com/multifamily">MULTIFAMILY</a>
+                                <a className='dropdown-item' href="http://green.transblue.com/commercial">COMMERCIAL</a>
                             </div>
                         </li>
                         <li className="nav-item ml-auto">
