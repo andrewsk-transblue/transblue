@@ -37,6 +37,21 @@
     padding-left: 30px;
 }
 
+.footer-container .links {
+    width: 100%;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-container .links a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: .05em;
+}
+
 .footer-services h1,
 .footer-contact h1 {
     font-size: 1em;

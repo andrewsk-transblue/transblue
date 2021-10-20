@@ -32,7 +32,7 @@ function Footer(props) {
                     <button onClick={scrollToTop}><img src={collapse} alt='back to top' /></button>
                 </div>
             </div>
-            <div className='row mx-0'>
+            {/* <div className='row mx-0'>
                 <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
                     <h1>SERVICES</h1>
                     <div className='footer-services-list'>
@@ -152,7 +152,15 @@ function Footer(props) {
                         </span>
                     </div>}
                 </div>
-            </div>
+            </div> */}
+
+            <span className='links'>
+                <a href='/'>HOME</a>
+                <a href='http://snow.transblue.com/'>SNOW SERVICES</a>
+                <a href='http://green.transblue.com/'>GREEN SERVICES</a>
+                <a href='/blog'>BLOG</a>
+                <a href='/locations'>LOCATIONS</a>
+            </span>
             
             <div className='social-media'>
                 <span>
