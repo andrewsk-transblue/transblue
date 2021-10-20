@@ -31,10 +31,6 @@ const images = [
     {
         img: monohan3,
         imgSmall: monohan3small
-    },
-    {
-        img: monohan,
-        imgSmall: monohansmall
     }
 ]
 
@@ -59,7 +55,7 @@ function Rockstar() {
                 <div className='text-center col-2 col-sm-1'><img id='drop' src={drop} alt='' /></div>
                     <div className='col-8 col-sm-9 my-auto'>
                     <h3>DROPS OF JUPITER</h3>
-                    <p>The Pat Monahan Project</p>
+                    <p>The Monahan Project</p>
                 </div>
                 <div className='col-lg-2 col-2 my-auto text-center'>
                     <button onClick={nextSlide}><img id='forward' src={forward} alt='Next Slide' /></button>
