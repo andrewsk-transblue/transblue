@@ -29,7 +29,7 @@ function Map(props) {
                 // url='https://api.mapbox.com/styles/v1/sarahmariecarter/ckt259o46010e18njaz84sofg.html?fresh=true&title=view&access_token=pk.eyJ1Ijoic2FyYWhtYXJpZWNhcnRlciIsImEiOiJja3A4dGE2eGUwYmhhMm9ueHQxYm81aG1jIn0.IL6ap7-sSL2WXIipenrzUQ'
                 />
                 
-            <Marker position={[props.lat, props.lon]} />
+            {/* <Marker position={[props.lat, props.lon]} /> */}
             {/* {userLocation !== undefined && <Marker position={props.userLocation} />} */}
             <GeoJSON data={props.geojson}
                 style={{fillColor: '#ed6a22'}}

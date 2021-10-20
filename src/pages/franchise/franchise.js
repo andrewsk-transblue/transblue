@@ -30,14 +30,14 @@ import ServiceModal from '../../components/serviceModal';
 import db from './reviewDb';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Franchise(props) {
-    console.log(props)
     const [easybaseData, seteasybaseData] = useState([]);
     const [services, setServices] = useState({})
     const { db, e } = useEasybase();
+    const [displaySnow, setDisplaySnow] = useState(true);
     let userLocation = []
 
     useEffect(() => {
@@ -48,16 +48,13 @@ function Franchise(props) {
 
         const mounted = async() => {
             const ebData = await db("LOCATIONS").return().where(e.eq('urlCity', props.match.params.urlCity)).all();
-            //console.log(ebData)
-            //console.log(ebData[0].citylist)
+            let region = ebData[0].region
+            //hide snow component for southwest and west regions
+            if(region === 'southwest' || region === 'west') setDisplaySnow(false)
+
             seteasybaseData(ebData);
-            //console.log(ebData)
-            setServices(regionalServices[ebData[0].region])
-            if('geolocation' in navigator) {
-                navigator.geolocation.getCurrentPosition((position) => {
-                    userLocation = [position.coords.latitude, position.coords.longitude]
-                })
-            }
+
+            setServices(regionalServices[region])
         }
          mounted();
     }, [])
@@ -105,19 +102,23 @@ function Franchise(props) {
                 </div>
                 <NewSlideshow location={easybaseData[0]} />
                 <div className='wrapper'>
-                <Commercial location={easybaseData[0]} />
-                <Multifamily location={easybaseData[0]} />
-                <Contact location={easybaseData[0]} />
-                <Finance location={easybaseData[0]} />
+                    <Commercial location={easybaseData[0]} />
+                    <Multifamily location={easybaseData[0]} />
+                    <Contact location={easybaseData[0]} />
+                    <Finance location={easybaseData[0]} />
 
-                <Govt location={easybaseData[0]} />
-                <Green location={easybaseData[0]} />
+                    <Govt location={easybaseData[0]} />
+                    <Green location={easybaseData[0]} />
                 </div>
-                <Snow location={easybaseData[0]} />
+
+                {displaySnow && <Snow location={easybaseData[0]} />}
+
                 <div className='wrapper'>
-                <Professional location={easybaseData[0]} />
+                    <Professional location={easybaseData[0]} />
+
                 {/* ONLY RENDER REVIEWS IF REVIEWS IN REVIEWSDB.JS */}
                 {db[easybaseData[0]] !== undefined && <Reviews location={easybaseData[0]} />}
+
                 <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
@@ -131,7 +132,7 @@ function Franchise(props) {
                                 <CityZip cities={JSON.parse(easybaseData[0].citylist)} zipcodes={JSON.parse(easybaseData[0].zipcodelist)} />
                             </div>
                             <div className='col-md-6 col-12'>
-                                {easybaseData[0].lat > 0 && <Map userLocation={userLocation} lat={easybaseData[0].lat} lon={easybaseData[0].lon} 
+                                {easybaseData[0].lat > 0 && <Map  lat={easybaseData[0].lat} lon={easybaseData[0].lon} 
                                     geojson={JSON.parse(easybaseData[0].geojson)}
                                  />}
                             </div>

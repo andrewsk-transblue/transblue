@@ -47,10 +47,11 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
-    "build": "react-scripts build",
+    "build": "react-scripts build && compress-cra",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -73,5 +74,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sarahm16/transblue/issues"
+  },
+  "devDependencies": {
+    "compress-create-react-app": "^1.1.3"
   }
 }

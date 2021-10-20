@@ -87,7 +87,7 @@ class Navbar extends Component {
                             </div>
                         </li>
                         <li className="nav-item ml-auto">
-                            <a className="nav-link" href="https://tbsnow.herokuapp.com/">SNOW REMOVAL</a>
+                            <a className="nav-link" href="http://snow.transblue.com/">SNOW REMOVAL</a>
                         </li>
                         {/* <li className="nav-item dropdown ml-auto">
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
