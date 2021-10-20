@@ -6,7 +6,8 @@ import './style.css';
 class Navbar extends Component {
     state={
         bgColor: 'transparent',
-        topPadding: 'topPadding'
+        topPadding: 'topPadding',
+        rightPadding: false
         // scrollHeight: 300
     }
 
@@ -42,6 +43,11 @@ class Navbar extends Component {
         else if(this.state.bgColor === 'black' && window.scrollY < window.innerWidth / 3) this.setState({bgColor: 'transparent'})
     }
 
+    toggleFranchisePadding = (bool) => {
+        //console.log('toggle padding')
+        this.setState({rightPadding: bool}, () => console.log(this.state.rightPadding))
+    }
+
     render() {
         return(
             <nav className={`navbar navbar-expand-xl bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
@@ -65,10 +71,10 @@ class Navbar extends Component {
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>
                         <li className="nav-item dropdown ml-auto">
-                            <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SERVICES
                             </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown1">
                                 <Link className="dropdown-item" to="/residential">RESIDENTIAL</Link>
                                 <Link className="dropdown-item" to="/multifamily">MULTIFAMILY</Link>
                                 <Link className='dropdown-item' to="/commercial">COMMERCIAL</Link>
@@ -76,10 +82,10 @@ class Navbar extends Component {
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 GREEN SOLUTIONS
                             </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown2">
                                 <a className="dropdown-item" href="http://green.transblue.com/">ABOUT</a>
                                 <a className="dropdown-item" href="http://green.transblue.com/residential">RESIDENTIAL</a>
                                 <a className="dropdown-item" href="http://green.transblue.com/multifamily">MULTIFAMILY</a>
@@ -89,30 +95,16 @@ class Navbar extends Component {
                         <li className="nav-item ml-auto">
                             <a className="nav-link" href="http://snow.transblue.com/">SNOW REMOVAL</a>
                         </li>
-                        {/* <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                SNOW REMOVAL
-                            </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/">ABOUT</a>
-                                <a className="dropdown-item" href="https://tbsnow.herokuapp.com/operate">HOW WE OPERATE</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/emergency">EMERGENCY &amp; RISK</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/software">OUR SOFTWARE</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/gallery">GALLERY</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/pricing">PRICING</a>
-                                <a className='dropdown-item' href="https://tbsnow.herokuapp.com/faq">FAQ</a>
-                            </div>
-                        </li> */}
 
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/locations">LOCATIONS</Link>
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={() => this.toggleFranchisePadding(!this.state.rightPadding)}>
                                 OTHER
                             </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown">
+                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">
                                 <Link className='dropdown-item' to='/finance'>GET FINANCED</Link>
                                 {!this.props.franchise && <Link className="dropdown-item" to="/contact">CONTACT</Link>}
                                 <Link className='dropdown-item' to='/featured'>PROJECTS</Link>
@@ -122,24 +114,24 @@ class Navbar extends Component {
                         </li>
                     </ul>
                     {this.props.franchise && 
-                    <ul className="navbar-nav ml-auto">
-                        
-                        <li className="nav-item ml-auto">
-                            <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
-                        </li>
-                        <li className="nav-item ml-auto">
-                            <Link 
-                                className="nav-link py-0"
-                                to={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
-                                target='_blank' rel='noreferrer'
-                            >
-                                SUB APPLICATION
-                            </Link>
-                        </li>
-                        <li className='nav-item ml-auto'>
-                            <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
-                        </li>
-                    </ul>}
+                        <ul className="navbar-nav ml-auto">
+                            
+                            <li className="nav-item ml-auto">
+                                <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
+                            </li>
+                            <li className="nav-item ml-auto">
+                                <Link 
+                                    className="nav-link py-0"
+                                    to={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
+                                    target='_blank' rel='noreferrer'
+                                >
+                                    SUB APPLICATION
+                                </Link>
+                            </li>
+                            <li className='nav-item ml-auto'>
+                                <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
+                            </li>
+                        </ul>}
                 </div>
             </nav>
         )
