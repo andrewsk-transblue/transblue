@@ -102,24 +102,29 @@ function Franchise(props) {
                 </div>
                 <NewSlideshow location={easybaseData[0]} />
                 <div className='wrapper'>
-                    <Commercial location={easybaseData[0]} />
                     <Multifamily location={easybaseData[0]} />
-                    <Contact location={easybaseData[0]} />
-                    <Finance location={easybaseData[0]} />
-
-                    <Govt location={easybaseData[0]} />
-                    <Green location={easybaseData[0]} />
                 </div>
 
                 {displaySnow && <Snow location={easybaseData[0]} />}
 
                 <div className='wrapper'>
+                    <Contact location={easybaseData[0]} />
+                </div>
+                    <Finance location={easybaseData[0]} />
+                <div className='wrapper'>
+                    <Commercial location={easybaseData[0]} />
+                    <Govt location={easybaseData[0]} />
+                    <Green location={easybaseData[0]} />
+                </div>
+
+
+                <div className='wrapper'>
                     <Professional location={easybaseData[0]} />
 
-                {/* ONLY RENDER REVIEWS IF REVIEWS IN REVIEWSDB.JS */}
-                {db[easybaseData[0]] !== undefined && <Reviews location={easybaseData[0]} />}
+                    {/* ONLY RENDER REVIEWS IF REVIEWS IN REVIEWSDB.JS */}
+                    {db[easybaseData[0]] !== undefined && <Reviews location={easybaseData[0]} />}
 
-                <div className='map'>
+                    <div className='map'>
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-md-6 col-12 cities'>
