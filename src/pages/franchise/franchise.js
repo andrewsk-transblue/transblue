@@ -116,8 +116,6 @@ function Franchise(props) {
                     <Govt location={easybaseData[0]} />
                     <Green location={easybaseData[0]} />
                 </div>
-
-
                 <div className='wrapper'>
                     <Professional location={easybaseData[0]} />
 

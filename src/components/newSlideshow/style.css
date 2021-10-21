@@ -3,6 +3,22 @@
     margin-bottom: 100px;
 }
 
+.slideshow-wrapper .text button.cta {
+    color: rgb(221, 221, 221)  !important;
+    border: 2px solid rgb(221, 221, 221) !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.slideshow-wrapper .text button.cta:hover {
+    color: white !important;
+    border-color: white !important;
+    background-color: transparent !important;
+}
+
 .slideshow-wrapper img:not(.forward):not(.back) {
     width: 100%;
 }

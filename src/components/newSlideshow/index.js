@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import forward from '../../images/residential/forward.png';
 import back from '../../images/residential/back.png';
 import line from '../../images/line.png';
+import ServiceModal from '../serviceModal';
 import './style.css';
 
 import east from '../../images/franchise/residential/east.png';
@@ -101,6 +102,7 @@ function NewSlideshow(props) {
                             <h3>{slides[3].title}</h3>
                             <p>{slides[3].body}</p>
                         </Fade>}
+                        <ServiceModal />
                     </div>
                     <div className='col-lg-1 col-1 my-auto px-0'>
                         <button disabled={index < slides.length-1 ? false : true} onClick={() => setIndex(index+1)}>

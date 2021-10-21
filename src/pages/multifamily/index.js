@@ -154,9 +154,10 @@ function Multifamily() {
                                 <div className='col-lg-5 order-lg-12 left-text'>
                                     <h4 className='section-header'>CREATING A SOLID FOUNDATION FOR YOUTH</h4>
                                     <div className='section-p mb-3'>
+                                        Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
+                                    <div className='section-p mb-3'>
                                         Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
                                     </div>
-                                    <div className='section-p mb-3'>Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
                                 </div>
                                 <div className='col-lg-7'>
                                     <HoverImages 
