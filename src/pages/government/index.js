@@ -27,12 +27,12 @@ import govtBenefits from '../../images/government/govt.jpg';
 import './style.css';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = process.env.REACT_GOOGLE_ANALYTICS_ID; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 
 function Government() {
-    const [displayCapabilities, setDisplayCapabilities] = useState(false);
+    const [displayCapabilities, setDisplayCapabilities] = useState(true);
 
     useEffect(() => {
         ReactGA.event({
@@ -59,13 +59,10 @@ function Government() {
                                 <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
                                 <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
                                 <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
-                                <button className='cta' onClick={() => setDisplayCapabilities(!displayCapabilities)}>VIEW OUR CAPABILITIES STATEMENT</button>
+                                {!displayCapabilities && <button className='cta' onClick={() => setDisplayCapabilities(true)}>VIEW OUR CAPABILITIES STATEMENT</button>}
                             </div>
                         </div>
-                        {displayCapabilities &&
-                        <Slide bottom>
-                            <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />
-                        </Slide>}
+                        {displayCapabilities && <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />}
                     </div>
                     <Benefits 
                         img={govtBenefits}

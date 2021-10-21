@@ -21,21 +21,7 @@ function Services(props) {
 
         return(
             <div className='container-fluid services-container'>
-                <div className='col-lg-12'>
-                    {/* <div className='col-lg-2 col-1 col-sm-1 col-md-1'></div> */}
-                    {/* <div className='col-lg-2 col-3 col-sm-3 col-md-3 pr-0'>
-                        <div className='line left  mr-auto'></div>
-                    </div>
-                    <h1 className='col-lg-4 col-4 col-sm-4 col-md-4 title px-0 mx-0'>
-                        Our Services
-                    </h1>
-                    <div className='col-lg-2 col-3 col-sm-3 col-md-3 pl-0'>
-                        <div className='line'></div>
-                    </div>
-                    <div className='col-lg-2 col-1 col-sm-1 col-md-1'></div> */}
-
-                    <h3 className='section-header'>WHO ARE OUR CLIENTS?</h3>
-                </div>
+                <h3 className='section-header'>WHO ARE OUR CLIENTS?</h3>
                 <div className='row services-cards'>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
                         <ServiceCard
