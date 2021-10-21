@@ -7,9 +7,7 @@ import Services from '../../components/landing/services/index';
 import Professional from '../franchise/professional';
 import Footer from '../../components/footer';
 import Mbridge from '../../components/landing/mbridge';
-// import Nepal from '../../components/landing/nepal';
 import Mission from '../../components/landing/mission';
-// import Here from '../../components/landing/here';
 import ContactCta from '../../components/contactCta';
 import './style.css';
 
@@ -57,11 +55,6 @@ function NewLanding() {
                 <Mbridge />
                 </div>
                 <Mission />
-                {/* <Here /> */}
-                {/* <Core3 />
-                <Core />
-                <Core2 /> */}
-                {/* <Core3 /> */}
                 <div className='wrapper'>
                 <Professional />
                 <NewReviews />
