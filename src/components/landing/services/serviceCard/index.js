@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './style.css';
 
 function ServiceCard(props) {
@@ -6,7 +7,9 @@ function ServiceCard(props) {
         <div className='container service-container'>
             <div className='service-image'>
                 <div className='service-overlay'></div>
-                <a href={`/${props.page}`}><img src={props.image} id='service-image' alt={`${props.service}`} /></a>
+                <a href={`/${props.page}`}>
+                    <LazyLoadImage src={props.image} id='service-image' alt={`${props.service}`} />
+                </a>
                 <div className='service-description'>
                     <div className='description-text centered-text'>
                         <div className='description-header'>{props.service}</div>

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import heartEarth from '../../../images/newLanding/heart.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import dawsonplace from '../../../images/charities/dawsonplace2.png';
 import deeshope from '../../../images/charities/deeshope2.jpg';
 //import charity from '../../../images/newLanding/charity.jpeg';
@@ -52,7 +52,10 @@ function Mbridge() {
             <div className='container-fluid stats'>
             <div className='row'>
                 <div className='col-lg-6 my-auto'>
-                    <img src={worldclass} alt='' />
+                <LazyLoadImage
+                    alt=''
+                    src={worldclass} // use normal <img> attributes as props
+                />
                 </div>
                 <div className='col-lg-6 left-text my-auto'>
                     <h6>WORLD CLASS GENERAL CONTRACTORS</h6>
@@ -76,21 +79,24 @@ function Mbridge() {
             </div>
             <div className='row mx-0'>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <img src={dawsonplace} alt='Dawson Place' />
+                    <LazyLoadImage
+                        alt='Dawson Place'
+                        src={dawsonplace} // use normal <img> attributes as props
+                    />
                     <p className='text-secondary'>DAWSON PLACE</p>
                     <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
                     <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <img src={deeshope} alt='Dees Hope' />
+                    <LazyLoadImage src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
                     <h6>FIGHTING SOFT SLAVERY IN UGANDA</h6>
                     <p className='section-p'>Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape the nightmare of forced servitude.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <img src={hope} alt='Hope Unlimited' />
+                    <LazyLoadImage src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
                     <p className='section-p'>Through Northwest Incident Support, Hope Unlimited partners with first responders during crisis situations, providing resources for families during loss or difficult circumstances.</p>

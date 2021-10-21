@@ -44,7 +44,6 @@ class Navbar extends Component {
     }
 
     toggleFranchisePadding = (bool) => {
-        //console.log('toggle padding')
         this.setState({rightPadding: bool}, () => console.log(this.state.rightPadding))
     }
 
@@ -66,7 +65,7 @@ class Navbar extends Component {
                 </button>
                 <div className="collapse navbar-collapse flex-lg-column" id="navbarNav">
 
-                    <ul className="navbar-nav ml-auto flex-lg-row">
+                    <ul className="navbar-nav ml-auto flex-xl-row">
                         <li className="nav-item ml-auto">
                             <Link className="nav-link" to="/">HOME</Link>
                         </li>
@@ -101,8 +100,8 @@ class Navbar extends Component {
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={() => this.toggleFranchisePadding(!this.state.rightPadding)}>
-                                OTHER
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            OTHER
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">
                                 <Link className='dropdown-item' to='/finance'>GET FINANCED</Link>
@@ -115,7 +114,6 @@ class Navbar extends Component {
                     </ul>
                     {this.props.franchise && 
                         <ul className="navbar-nav ml-auto">
-                            
                             <li className="nav-item ml-auto">
                                 <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
                             </li>
