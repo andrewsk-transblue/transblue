@@ -4,7 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 function Captcha(props) {
     return(
         <ReCAPTCHA
-            sitekey="6Le5pz0bAAAAAGUh97rIum2usNBvVsyrg2JtYu4y"
+            sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
             onChange={props.onChange}
         />
     )
