@@ -7,7 +7,7 @@ function HoverImages(props) {
         <div className='row hover-image-container'>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic1">
-                    <LazyLoadImage src={props.page[0].image} alt='' />
+                    <LazyLoadImage effect='blur' src={props.page[0].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic1' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -30,7 +30,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic2">
-                    <LazyLoadImage src={props.page[1].image} alt='' />
+                    <LazyLoadImage effect='blur' src={props.page[1].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic2' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -53,7 +53,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic3">
-                    <LazyLoadImage src={props.page[2].image} alt='' />
+                    <LazyLoadImage effect='blur' src={props.page[2].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic3' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -76,7 +76,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4" id='last-btn'>
-                    <LazyLoadImage src={props.page[3].image} alt='' />
+                    <LazyLoadImage effect='blur' src={props.page[3].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic4' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">

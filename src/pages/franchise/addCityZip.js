@@ -1,36 +1,36 @@
-import zipcodes from 'zipcodes';
+// import zipcodes from 'zipcodes';
 
-//////CODE TO CREATE OBJECT OF CITIES AND CORRESPONDING ZIPCODES
+// //////CODE TO CREATE OBJECT OF CITIES AND CORRESPONDING ZIPCODES
 
 
-let cityArray = [];
+// let cityArray = [];
 
-function getAreas(zipcodeArray) {
-    zipcodeArray.forEach(zipcode => {
-        // console.log(zipcodes.lookup(zipcode))
-        //console.log(zipcodes.lookup(zipcode))
-        let city = zipcodes.lookup(zipcode).city;
-        //console.log(zipcodes.lookup(zipcode))
-        if(cityArray.indexOf(city) === -1) {
-            cityArray.push(city)
-        }
-    })
+// function getAreas(zipcodeArray) {
+//     zipcodeArray.forEach(zipcode => {
+//         // console.log(zipcodes.lookup(zipcode))
+//         //console.log(zipcodes.lookup(zipcode))
+//         let city = zipcodes.lookup(zipcode).city;
+//         //console.log(zipcodes.lookup(zipcode))
+//         if(cityArray.indexOf(city) === -1) {
+//             cityArray.push(city)
+//         }
+//     })
     
-    let locations = {};
+//     let locations = {};
     
-    cityArray.forEach(city => {
-        locations[city] = []
-    })
+//     cityArray.forEach(city => {
+//         locations[city] = []
+//     })
     
-    zipcodeArray.forEach(zipcode => {
-        let city = zipcodes.lookup(zipcode).city
-        locations[city].push(zipcode)
-    })
+//     zipcodeArray.forEach(zipcode => {
+//         let city = zipcodes.lookup(zipcode).city
+//         locations[city].push(zipcode)
+//     })
     
-    //console.log(locations)
+//     //console.log(locations)
 
-    return locations;
-}
+//     return locations;
+// }
 
-export default getAreas;
+// export default getAreas;
 

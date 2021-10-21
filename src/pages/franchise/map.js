@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, GeoJSON} from 'react-leaflet';
 import './style.css';
-import zipcodes from 'zipcodes';
 
 function Map(props) {
     const position = [props.lat, props.lon];
@@ -13,13 +12,6 @@ function Map(props) {
     useEffect(() => {
         setUserLocation(props.userLocation)
     }, [props.userLocation])
-
-    // zipcodeArray.forEach(zipcode => {
-    //     var hills = zipcodes.lookup(zipcode)
-    //     if(cities.indexOf(hills.city) === -1) cities.push(hills.city)
-    // })    
-
-    //console.log(cities)
 
     return(
         <MapContainer center={position} zoom={9} scrollWheelZoom={true} id='mapid'>
