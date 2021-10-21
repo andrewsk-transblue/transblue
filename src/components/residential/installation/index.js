@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import installation from '../../../images/residential/installation.jpeg';
 import ContactModal from '../../contactModal';
 import './style.css';
@@ -8,7 +9,7 @@ function Installation() {
         <div className='installation-wrapper container-fluid'>
             <div className='row'>
                 <div className='col-12 col-lg-6'>
-                    <img src={installation} alt='' />
+                    <LazyLoadImage src={installation} alt='' />
                 </div>
                 <div className='col-12 col-lg-6 left-text'>
                     <h4 className='section-header'>DESIGN, INSTALLATION, CONSTRUCTION</h4>

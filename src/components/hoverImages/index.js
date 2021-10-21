@@ -1,5 +1,5 @@
 import React from 'react';
-import dees from '../../images/residential/dees.jpg';
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 import './style.css';
 
 function HoverImages(props) {
@@ -7,7 +7,7 @@ function HoverImages(props) {
         <div className='row hover-image-container'>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic1">
-                    <img src={props.page[0].image} alt='' />
+                    <LazyLoadImage src={props.page[0].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic1' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -19,7 +19,7 @@ function HoverImages(props) {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <img src={props.page[0].image} alt='' />
+                            <LazyLoadImage src={props.page[0].image} alt='' />
                         </div>
                         <div className="modal-footer section-p">
                             {props.page[0].caption}
@@ -30,7 +30,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic2">
-                    <img src={props.page[1].image} alt='' />
+                    <LazyLoadImage src={props.page[1].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic2' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -53,7 +53,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic3">
-                    <img src={props.page[2].image} alt='' />
+                    <LazyLoadImage src={props.page[2].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic3' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -76,7 +76,7 @@ function HoverImages(props) {
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
                 <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4" id='last-btn'>
-                    <img src={props.page[3].image} alt='' />
+                    <LazyLoadImage src={props.page[3].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic4' tabIndex="-1" role="dialog">
                     <div className="modal-dialog" role="document">
@@ -88,7 +88,7 @@ function HoverImages(props) {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <img src={props.page[3].image} alt='' />
+                            <LazyLoadImage src={props.page[3].image} alt='' />
                         </div>
                         <div className="modal-footer section-p">
                             {props.page[3].caption}

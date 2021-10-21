@@ -11,6 +11,7 @@ import retaining from '../../../images/residential/retaining.jpg';
 import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png';
 import './style.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 let images = [outdoorliving, kitchen, pool, concrete, pavers2, turf, retaining, enclosure, outdoor ];
 let text = [
@@ -121,14 +122,14 @@ class Carousel extends Component {
                             {/* <p className='section-p'>{text[this.state.index-1].body}</p> */}
                         </div>
                         <div className='carousel-overlay'></div>
-                        <button onClick={this.left}><img src={back} className='arrow' alt='Prev Slide' /></button>
+                        <button onClick={this.left}><LazyLoadImage src={back} className='arrow' alt='Prev Slide' /></button>
                         </Fragment>
                     }
                 </div>
                 <div className='col-lg-10 col-md-8 col-10'>
                     <div className='row'>
                         <div className='col-lg-4 col-12 px-0 showing-slide text-center'>
-                            <img src={images[this.state.index]} alt='' />
+                            <LazyLoadImage src={images[this.state.index]} alt='' />
                             {/* <div className='text'> */}
                             <h3 className='mt-4 mb-3 text-left'>{text[this.state.index].title}</h3>
                             {/* <p className='section-p text-left'>{text[this.state.index].body}</p> */}
@@ -136,13 +137,13 @@ class Carousel extends Component {
                         </div>
         
                         {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
-                            <img src={images[this.state.index+1]} alt='' />
+                            <LazyLoadImage src={images[this.state.index+1]} alt='' />
                             <h3 className='mt-4 mb-3'>{text[this.state.index+1].title}</h3>
                             {/* <p className='section-p'>{text[this.state.index+1].body}</p> */}
                         </div>}
 
                         {this.state.cols === 5 && <div className='col-lg-4 px-0 showing-slide'>
-                            <img src={images[this.state.index+2]} alt='' />
+                            <LazyLoadImage src={images[this.state.index+2]} alt='' />
                             <h3 className='mt-4 mb-3'>{text[this.state.index+2].title}</h3>
                             {/* <p className='section-p'>{text[this.state.index+2].body}</p> */}
                         </div>}
@@ -151,13 +152,13 @@ class Carousel extends Component {
 
                 <div className='col-lg-1 col-sm-1 col-md-2 col-1 px-0 next-slide'>
                     {this.state.index + this.state.cols - 2 < images.length && <Fragment>
-                        <img src={this.state.cols === 5 ? images[this.state.index+3] : images[this.state.index + 1]} alt='' />
+                        <LazyLoadImage src={this.state.cols === 5 ? images[this.state.index+3] : images[this.state.index + 1]} alt='' />
                         <div className='text'>
                             <h3 className='mt-4 mb-3'>{this.state.cols === 5 ? text[this.state.index+3].title : text[this.state.index+1].title}</h3>
                             {/* <p className='section-p'>{this.state.cols === 5 ? text[this.state.index+3].body : text[this.state.index+1].body}</p> */}
                         </div>
                         <div className='carousel-overlay'></div>
-                        <button onClick={this.right}><img src={forward} className='arrow' alt='Next Slide' /></button>
+                        <button onClick={this.right}><LazyLoadImage src={forward} className='arrow' alt='Next Slide' /></button>
                         </Fragment>
                     }
                 </div>

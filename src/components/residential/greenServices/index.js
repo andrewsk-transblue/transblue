@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ev from '../../../images/residential/ev.jpeg';
 //import solar from '../../../images/residential/solar.jpg';
 import roof from '../../../images/residential/roof.jpg';
@@ -31,7 +32,7 @@ class GreenServices extends Component {
             <div className='container-fluid green-services'>
                 <div className='row'>
                     <div className='col-lg-6 images px-0'>
-                        <img src={services[this.state.slideNo].img} alt='Residential Electric Vehicle' />
+                        <LazyLoadImage src={services[this.state.slideNo].img} alt='Residential Electric Vehicle' />
                         <h6>
                             {this.state.slideNo > 0 && <button onClick={this.prevSlide}><i className='fas fa-chevron-left mr-3'></i></button>}
                             {services[this.state.slideNo].title}

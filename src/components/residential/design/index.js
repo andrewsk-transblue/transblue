@@ -1,5 +1,6 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 //import design from '../../../images/residential/design.jpg';
 import forward from '../../../images/residential/forward.png';
 import back from '../../../images/residential/back.png';
@@ -39,7 +40,7 @@ function Design() {
                 <div className='row mx-0'>
                     <div className='col-lg-1 col-1 my-auto px-0'>
                         <button disabled={index > 0 ? false : true} onClick={() => setIndex(index-1)}>
-                            <img className={index > 0 ? 'back' : 'back disabled'} src={back} alt='' />
+                            <LazyLoadImage className={index > 0 ? 'back' : 'back disabled'} src={back} alt='' />
                         </button>
                     </div>
                     <div className='col-lg-6 col-10 my-auto pl-4'>
@@ -59,7 +60,7 @@ function Design() {
                     <div className='col-lg-4 d-none d-lg-block'></div>
                     <div className='col-lg-1 col-1 my-auto px-0'>
                         <button disabled={index < 2 ? false : true} onClick={() => setIndex(index+1)}>
-                            <img className={index < 2 ? 'forward' : 'forward disabled'} src={forward} alt=''></img>
+                            <LazyLoadImage className={index < 2 ? 'forward' : 'forward disabled'} src={forward} alt='' />
                         </button>
                     </div>
                 </div>

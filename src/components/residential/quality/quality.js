@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import quality from '../../../images/residential/quality2.jpg';
 import './style.css';
 
@@ -25,7 +26,7 @@ function Quality() {
                     {/* <h6>THIS IS TRANSBLUE.</h6> */}
                 </div>
                 <div className='col-lg-6'>
-                    <img src={quality} alt='Family BBQ' />
+                    <LazyLoadImage src={quality} alt='Family BBQ' />
                 </div>
             </div>
         </div>

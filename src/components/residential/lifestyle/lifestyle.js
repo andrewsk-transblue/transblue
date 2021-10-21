@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import friends from '../../../images/residential/friends.jpg';
 import fire from '../../../images/residential/fire.jpeg';
 import couple from '../../../images/residential/couple.png';
@@ -13,7 +13,7 @@ function Lifestyle() {
             <div className='row mx-0'>
             <div className='col-lg-4 col-md-6 my-auto'>
                 <div className='image-container'>
-                    <img src={fire} alt='Bond with Family' />
+                    <LazyLoadImage src={fire} alt='Bond with Family' />
                     <div className='lifestyle-overlay'></div>
                     <div className='lifestyle-text centered-text'>
                         BOND WITH FAMILY
@@ -22,7 +22,7 @@ function Lifestyle() {
                 </div>
                 <div className='col-lg-4 col-md-6 my-auto'>
                     <div className='image-container'>
-                        <img src={friends} alt='Celebrate Your Friends' />
+                        <LazyLoadImage src={friends} alt='Celebrate Your Friends' />
                         <div className='lifestyle-overlay'></div>
                         <div className='lifestyle-text centered-text'>
                             CELEBRATE YOUR FRIENDS
@@ -32,7 +32,7 @@ function Lifestyle() {
 
                 <div className='col-lg-4 col-md-6 my-auto'>
                     <div className='image-container'>
-                        <img src={couple} alt='Love your Life' />
+                        <LazyLoadImage src={couple} alt='Love your Life' />
                         <div className='lifestyle-overlay'></div>
                         <div className='lifestyle-text centered-text'>
                             LOVE YOUR LIFE

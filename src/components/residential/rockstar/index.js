@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 import drop from '../../../images/residential/drop.png';
 import monohan6 from '../../../images/residential/monohan6.jpg';
 import monohan6small from '../../../images/residential/monohan6small.jpg';
@@ -9,8 +10,6 @@ import monohan4 from '../../../images/residential/monohan4.jpg';
 import monohan4small from '../../../images/residential/monohan4small.jpg';
 import monohan3 from '../../../images/residential/monohan3.jpg';
 import monohan3small from '../../../images/residential/monohan3small.jpg';
-import monohan from '../../../images/residential/monohan.jpg';
-import monohansmall from '../../../images/residential/monohansmall.jpg';
 import './style.css';
 
 //const images = [monohan6, retainingdrops, monohan4, monohan3, monohan]
@@ -48,7 +47,7 @@ function Rockstar() {
     return(
         <div className='rockstar-wrapper container-fluid px-0'>
             {/* <img src={images[index]} alt='' /> */}
-            <img src={images[index].imgSmall} 
+            <LazyLoadImage src={images[index].imgSmall} 
                 srcSet={`${images[index].imgSmall} 600w, ${images[index].img} 1400w`} sizes='(max-width: 600px) 600px, 1400px'
              />
             <div className='text row mx-0 px-0'>
