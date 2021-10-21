@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import handleViewport from 'react-in-viewport';
 import Navbar from '../../components/navbar/index';
@@ -10,10 +10,10 @@ import Dees from '../../components/residential/dees/dees';
 import Quality from '../../components/residential/quality/quality';
 import ContactCta from '../../components/contactCta';
 import Installation from '../../components/residential/installation';
-import Carousel from '../../components/residential/carousel';
+//import Carousel from '../../components/residential/carousel';
 import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
-import Design from '../../components/residential/design';
+//import Design from '../../components/residential/design';
 import Rockstar from '../../components/residential/rockstar';
 
 import './style.css';
@@ -21,6 +21,9 @@ import './style.css';
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
+
+const Carousel = lazy(() => import ('../../components/residential/carousel'));
+const Design = lazy(() => import('../../components/residential/design'))
 
 //BLOCK ABOVE DESIGN COMPONENT THAT TRIGGERS DESIGN ANIMATION
 const Block = (props: { inViewport: boolean }) => {

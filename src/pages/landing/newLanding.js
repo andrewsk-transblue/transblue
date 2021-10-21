@@ -1,9 +1,9 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState, lazy, Suspense} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/landing/header';
 import NewReviews from '../../components/landing/newReviews/newReviews';
-import Services from '../../components/landing/services/index';
+//import Services from '../../components/landing/services/index';
 import Professional from '../franchise/professional';
 import Footer from '../../components/footer';
 import Mbridge from '../../components/landing/mbridge';
@@ -11,13 +11,15 @@ import Mission from '../../components/landing/mission';
 import ContactCta from '../../components/contactCta';
 import './style.css';
 
-
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
+const Services = lazy(() => import('../../components/landing/services/index'))
+
 const reverse = require('reverse-geocode')
+
 
 let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona', 'Georgia', 'Florida', 'South Carolina', 'Hawaii', 'Mississippi', 'Alabama', 'Tennessee', 'Nevada', 'New Mexico']
 
@@ -56,9 +58,9 @@ function NewLanding() {
                 </div>
                 <Mission />
                 <div className='wrapper'>
-                <Professional />
-                <NewReviews />
-                <Services noSnow={noSnow} />
+                    <Professional />
+                    <NewReviews />
+                    <Services noSnow={noSnow} />
                 </div>
                 <Footer locationPage={false} />
             </div>

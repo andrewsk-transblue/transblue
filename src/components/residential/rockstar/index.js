@@ -10,6 +10,7 @@ import monohan4 from '../../../images/residential/monohan4.jpg';
 import monohan4small from '../../../images/residential/monohan4small.jpg';
 import monohan3 from '../../../images/residential/monohan3.jpg';
 import monohan3small from '../../../images/residential/monohan3small.jpg';
+
 import './style.css';
 
 //const images = [monohan6, retainingdrops, monohan4, monohan3, monohan]

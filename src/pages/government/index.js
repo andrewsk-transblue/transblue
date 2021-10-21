@@ -1,22 +1,17 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import Slide from 'react-reveal/Slide'
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Benefits from '../../components/government/benefits';
 import Capabilities2 from '../../components/government/capabilities2';
 import ThreeCols from '../../components/threeCol';
 import FirstResponders from '../../components/government/firstResponders';
-import ContactModal from '../../components/contactModal';
 import Snow from '../../components/snow';
 import ServiceList from '../../components/serviceList';
 import ContactCta from '../../components/contactCta';
-import Green from '../../components/green';
 import Footer from '../../components/footer/index';
 import govt from '../../images/government/govtseattle.jpg';
-import govtbuilding from '../../images/government/govtbuilding2.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
-import benefits from '../../images/government/benefits.jpeg';
 import snow from '../../images/government/govtsnow.jpg';
 import fence from '../../images/government/govtfence.jpeg';
 import roof from '../../images/government/roof.jpg';
