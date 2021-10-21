@@ -2,11 +2,9 @@ import React from 'react';
 
 import residential from '../../../images/serviceCards/residential.jpeg';
 
-import evSmall from '../../../images/serviceCards/evSmall.jpg';
-//import evMed from '../../../images/serviceCards/evMed.jpg';
+import ev from '../../../images/serviceCards/evSmall.jpg';
 
 import snowSmall from '../../../images/serviceCards/snowSmall.jpg';
-//import snowMed from '../../../images/serviceCards/snowMed.jpg';
 
 import multifamily from '../../../images/serviceCards/commercial.jpg';
 import commercial from '../../../images/serviceCards/commercial.jpeg';
@@ -90,7 +88,7 @@ function Services(props) {
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
                         <ServiceCard 
-                            image={evSmall}
+                            image={ev}
                             service='EV'
                             page='ev'
                             description='With a strong focus on making our world a better place Transblue’s, ESG (environmental, social, and governance) program is World Class. Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc. has set Transblue apart in the industry as an environmental leader. For a best in class consultation and install, call Transblue Today.'
