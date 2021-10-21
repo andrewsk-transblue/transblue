@@ -1,15 +1,15 @@
 import React, {Fragment} from 'react';
 import './style.css';
 
-function ServiceModal() {
+function ServiceModal(props) {
     return(
         <Fragment>
-            <button className='cta' data-toggle="modal" data-target="#serviceModal">
-                ALL RESIDENTIAL SERVICES
+            <button className='cta' data-toggle="modal" data-target={`#serviceModal`}>
+                VIEW ALL SERVICES
             </button>
             
             <div className='service-modal-wrapper'>
-            <div className="modal fade" id="serviceModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div className="modal fade" id={`serviceModal`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
@@ -17,7 +17,7 @@ function ServiceModal() {
                         </button>
                         <div className='container-fluid section-p'>
                             <div className='row'>
-                                <div className='col-12 col-md-12'>
+                                <div className='col-12 col-md-6'>
                                     <h6>RESIDENTIAL SERVICES</h6>
                                     <div className='row'>
                                         <div className='col-12 col-sm-6'>
@@ -53,7 +53,8 @@ function ServiceModal() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className='col-12 col-sm-6 col-md-3'>
+                                <div className='col-12 col-sm-6 col-md-3'>
+                                    {/* <div className={`col-12 col-sm-6 col-md-3 ${props.service}`}> */}
                                     <h6>GREEN SERVICES</h6>
                                     Relamp Projects<br />
                                     Green Roofs<br />
@@ -64,8 +65,8 @@ function ServiceModal() {
                                     Solar Panels<br />
                                     EV Chargers<br />
                                     Xeriscapes<br />
-                                </div> */}
-                                {/* <div className='col-12 col-sm-6 col-md-3'>
+                                </div>
+                                <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>SNOW SERVICES</h6>
                                     Snow Plowing<br />
                                     Snow Hauling<br />
@@ -75,7 +76,7 @@ function ServiceModal() {
                                     Rooftop Clearing<br />
                                     Icicle Melting<br />
                                     Truck Brush Services<br />
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>      
