@@ -39,12 +39,22 @@
 }
 
 .landing-header {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align:center;
+    z-index: 50;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 300;
+    font-size: clamp(40px, 4vw, 7em);
+    letter-spacing: 5px;
+    /* animation: fadeIn 16s linear infinite 0s; */
 }
 
-.landing-header::after {
+/* .landing-header::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +65,6 @@
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
     content: 'LUXURY EXTERIOR DESIGN';
-    position: absolute;
     text-align:center;
     z-index: 50;
     color: white;
@@ -63,7 +72,7 @@
     font-weight: 300;
     font-size: clamp(40px, 4vw, 7em);
     letter-spacing: 5px;
-}
+} */
 
 #header_slide {
     width: 100%;
@@ -72,7 +81,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 100s linear infinite 0s;
+    animation: slideBg 104s linear infinite 0s;
     animation-timing-function: ease-in-out;
     background-image: url('../../images/landingHeader/fire-min.jpeg');
 }
@@ -84,11 +93,6 @@
     @supports not (height: clamp(300px, 600px, 900px)) {
         height: min(max(300px, 600px), 900px)
     }
-}
-
-.entry {
-    /* margin: 0 auto; */
-    padding-bottom: 10px;
 }
 
 .stats {
@@ -110,27 +114,12 @@
     margin-top: 3px;
 }
 
-.stats small {
-    font-family:'Raleway', sans-serif;
-    font-size: 16px;
-}
-/* 
-.stats .image-wrapper {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 30px;
-} */
-
 .stats img {
     width: 100%;
     margin-bottom: 20px;
 }
 .stats .overlay {
     background-color: rgba(0,0,0,.5);
-}
-
-.community-stats {
-    width: 80%;
 }
 
 .mbridge {
@@ -230,34 +219,6 @@
     margin-top: 20px;
 }
 
-@-webkit-keyframes headerText {
-    0% {
-        content: 'LUXURY EXTERIOR DESIGN'
-    }
-    12% {
-        content: 'A GREENER WORLD'
-    }
-    25% {
-        content: 'LUXURY EXTERIOR DESIGN'
-    }
-    37% {
-        content: 'QUALITY ASPHALT INSTALLATION'
-    }
-    50% {
-        content: 'LUXURY EXTERIOR DESIGN'
-    }
-    62% {
-        content: 'BEAUTIFUL COMMUNITY LIVING'
-    }
-    75% {
-        content: 'LUXURY EXTERIOR DESIGN'
-
-    }
-    88% {
-        content: 'RELIABLE SNOW REMOVAL'
-    }
-}
-
 @media only screen and (max-width: 990px) {
     .mbridge button:not(.sm-screen-btn) {
         margin-bottom: 40px;
@@ -265,7 +226,6 @@
 }
 
 /* HEADER ANIMATIONS CSS */
-
 @keyframes slideBg {
     0% {
         background-image: url('../../images/landingHeader/fire-min.jpeg');
@@ -322,12 +282,46 @@
     }
 }
 
-@media only screen and (min-width: 520px) {
-    .entry {
-        padding: 0px 15%;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    .community-stats {
-        width: 50%;
+    10% {
+        opacity: 1
+    }
+    80% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes headerText {
+    0% {
+        content: 'LUXURY EXTERIOR DESIGN'
+    }
+    12% {
+        content: 'A GREENER WORLD'
+    }
+    25% {
+        content: 'LUXURY EXTERIOR DESIGN'
+    }
+    37% {
+        content: 'QUALITY ASPHALT INSTALLATION'
+    }
+    50% {
+        content: 'LUXURY EXTERIOR DESIGN'
+    }
+    62% {
+        content: 'BEAUTIFUL COMMUNITY LIVING'
+    }
+    75% {
+        content: 'LUXURY EXTERIOR DESIGN'
+
+    }
+    88% {
+        content: 'RELIABLE SNOW REMOVAL'
     }
 }
 
@@ -376,12 +370,6 @@
 } */
 
 @media only screen and (min-width: 992px) {
-    .entry {
-        padding: 0px 20px;
-    }
-    .community-stats:after {
-        font-size: 1.35em;
-    }
     .mbridge {
         margin-top: 30px;
     }
