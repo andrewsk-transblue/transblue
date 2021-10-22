@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Captcha from '../../components/captcha/captcha';
 import './contact2.css';
 
 import{ init } from 'emailjs-com';
@@ -11,13 +12,23 @@ class Form extends Component {
         lastName: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        formCompleted: false,
+        disabled: true
     }
 
     onChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         }, () => console.log(this.state))
+
+        const formCompleted = 
+            this.state.firstName.length > 0 
+            && this.state.lastName.length > 0
+            && this.state.email.length > 0
+            && this.state.message.length > 0
+        
+        if(formCompleted) this.setState({formCompleted: true})
     }
 
     onSubmit = (e) => {
@@ -42,6 +53,10 @@ class Form extends Component {
         )
     }
 
+    enableForm = () => {
+        this.setState({disabled: false})
+    }
+
     render() {
         return(
             <form className='form-wrapper' onSubmit={this.onSubmit}>
@@ -56,7 +71,8 @@ class Form extends Component {
                 <span>
                     <textarea onChange={this.onChange} name='message' placeholder='Tell us about your project'></textarea>
                 </span>
-                <button type='submit'>SEND MESSAGE</button>
+                {!this.state.disabled && <button type='submit'>SEND MESSAGE</button>}
+                {(this.state.disabled && this.state.formCompleted) && <Captcha onChange={this.enableForm} />}
             </form>
         )
     }
