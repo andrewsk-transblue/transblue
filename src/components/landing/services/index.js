@@ -35,7 +35,7 @@ function Services(props) {
                             service='COMMERCIAL'
                             page='commercial'
                             link='/residential'
-                            description='Our teams are focused on making your life simple and reducing the burden that comes with the capital projects required to keep your business looking its best. Our experts offer a full range of services from swimming pool construction, roofing, siding, asphalt, concrete, painting, decking, fencing and interior remodels, to Electrical Vehicles and Solar installs to Snow and Ice management and everything in between. ' 
+                            description='Our teams are focused on making your life simple and reducing the burden that comes with the capital projects required to keep your business looking its best. Our experts offer a full range of services from roofing, siding, asphalt, concrete, decking, fencing, to EV chargers and Solar installs, to Snow &amp; Ice management and everything in between.'
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -71,7 +71,7 @@ function Services(props) {
                             service='GOVERNMENT'
                             page='government'
                             link='/government'
-                            description='Transblue provides a full range of construction services to Government Facilities, whether it be Federal Government, Military, Municipality, School Districts, Parks and Recreation, etc. Transblue is positioned to deliver on the projects you’re planning to improve your properties. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.' 
+                            description='Transblue provides a full range of construction services to Government Facilities, including Federal Government, Military, Municipality, School Districts, etc. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.'
                         />
                     </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
@@ -80,7 +80,7 @@ function Services(props) {
                             service='EV'
                             page='ev'
                             link='http://green.transblue.com/'
-                            description='With a strong focus on making our world a better place Transblue’s, ESG (environmental, social, and governance) program is World Class. Installing Electric Vehicle Charging Systems, Solar Energy, Xeriscape Initiatives, Water management programs,  Green Roofs, Lighting Projects, etc. has set Transblue apart in the industry as an environmental leader. For a best in class consultation and install, call Transblue Today.'
+                            description='At Transblue, we focus on making our world a better place with our World Class ESG (environmental, social, and governance) Program. Our experience in the industry has set Transblue apart as an environmental leader. For a best in class consultation and install, call Transblue Today.'
                         />
                     </div>
                 </div>
