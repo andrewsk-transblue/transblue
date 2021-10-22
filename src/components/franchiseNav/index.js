@@ -4,7 +4,13 @@ import './style.css';
 function FranchiseNav() {
     return(
         <div className='franchise-nav text-right'>
-            <a href='/test'>JOIN OUR FRANCHISE TEAM</a>
+            <a 
+                href='https://transbluefranchise.com/'
+                target="_blank"
+                rel='noreferrer'
+            >
+                JOIN OUR FRANCHISE TEAM
+            </a>
         </div>
     )
 }
