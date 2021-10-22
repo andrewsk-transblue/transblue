@@ -51,7 +51,9 @@
     transform: translate(-50%, -50%);
     width: 90%;
     animation: headerText 100s linear infinite;
+    -webkit-animation: headerText 100s linear infinite;
     animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
     content: 'LUXURY EXTERIOR DESIGN';
     position: absolute;
     text-align:center;
@@ -129,17 +131,6 @@
 
 .community-stats {
     width: 80%;
-}
-
-.community-stats::after {
-    font-size: 4.6vw;
-    animation: textslide 40s infinite linear 0s;
-    content: '20250 diapers, 320 baby wipe packages, 105 cans of baby food provided to at risk women and children';
-    animation-timing-function: ease-in-out;
-    z-index: 12;
-    color: white;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 300;
 }
 
 .mbridge {
@@ -239,31 +230,31 @@
     margin-top: 20px;
 }
 
-
-@keyframes textslide {
+@-webkit-keyframes headerText {
     0% {
-        content: '20250 diapers, 320 baby wipe packages, 105 cans of baby food provided to at risk women and children'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
-    20% {
-        content: '510 items of clothing & shoes donated to at risk women and children'
+    12% {
+        content: 'A GREENER WORLD'
     }
-    40% {
-        content: '1000 lbs of food and supplies provided to members of Crow Nation'
+    25% {
+        content: 'LUXURY EXTERIOR DESIGN'
+    }
+    37% {
+        content: 'QUALITY ASPHALT INSTALLATION'
     }
     50% {
-        content: 'A safe place to live and school tuition for 17 girls in domestic servitude in Uganda'
+        content: 'LUXURY EXTERIOR DESIGN'
     }
-    60% {
-        content: 'Clean water access to the village of Bukumula, Uganda'
+    62% {
+        content: 'BEAUTIFUL COMMUNITY LIVING'
     }
-    70% {
-        content: '94 free pregnancy tests and 56 free ultrasounds performed'
+    75% {
+        content: 'LUXURY EXTERIOR DESIGN'
+
     }
-    80% {
-        content: '4000 children and youth sent to Solid Rock Summer Camps'
-    }
-    100% {
-        content: '50 fruit trees planted in Bukumula and Mbale, Uganda'
+    88% {
+        content: 'RELIABLE SNOW REMOVAL'
     }
 }
 
