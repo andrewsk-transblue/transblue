@@ -17,7 +17,7 @@ function ServiceModal(props) {
                         </button>
                         <div className='container-fluid section-p'>
                             <div className='row'>
-                                <div className='col-12 col-md-6'>
+                                <div className={props.snow ? 'col-12 col-md-6' : 'col-12 col-sm-8'}>
                                     <h6>RESIDENTIAL SERVICES</h6>
                                     <div className='row'>
                                         <div className='col-12 col-sm-6'>
@@ -53,7 +53,7 @@ function ServiceModal(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-12 col-sm-6 col-md-3'>
+                                <div className={props.snow ? 'col-12 col-sm-6 col-md-3' : 'col-12 col-sm-4'}>
                                     {/* <div className={`col-12 col-sm-6 col-md-3 ${props.service}`}> */}
                                     <h6>GREEN SERVICES</h6>
                                     Relamp Projects<br />
@@ -66,7 +66,7 @@ function ServiceModal(props) {
                                     EV Chargers<br />
                                     Xeriscapes<br />
                                 </div>
-                                <div className='col-12 col-sm-6 col-md-3'>
+                                {props.snow && <div className='col-12 col-sm-6 col-md-3'>
                                     <h6>SNOW SERVICES</h6>
                                     Snow Plowing<br />
                                     Snow Hauling<br />
@@ -76,7 +76,7 @@ function ServiceModal(props) {
                                     Rooftop Clearing<br />
                                     Icicle Melting<br />
                                     Truck Brush Services<br />
-                                </div>
+                                </div>}
                             </div>
                         </div>
                     </div>      

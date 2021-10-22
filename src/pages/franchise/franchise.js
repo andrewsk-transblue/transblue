@@ -88,7 +88,7 @@ function Franchise(props) {
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[2]} service={services.services[2]} /></div>
                             <div className='col-lg-3 col-12 col-sm-6'><ServiceCard image={services.images[3]} service={services.services[3]} /></div>
                             <div className='service-modal'>
-                                <ServiceModal service='all' />
+                                <ServiceModal service='all' snow={displaySnow} />
                             </div>
                         </div>}
                         
