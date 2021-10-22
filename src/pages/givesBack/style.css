@@ -3,6 +3,10 @@
     margin-bottom: 80px;
 }
 
+.givesback-wrapper.sm-screen-hide {
+    display: none;
+}
+
 .givesback-wrapper button.lg-screen-menu {
     width: 100%;
     background-color: transparent;
@@ -35,7 +39,7 @@
     background-color: transparent;
     border: 0px;
     text-align: left;
-    padding: 5px 20px;
+    padding: 5px 20px 5px 0px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -49,6 +53,15 @@
 
 .givesback-wrapper .header-wrapper .overlay {
     background-color: transparent !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .givesback-wrapper.givesback-wrapper.sm-screen-hide {
+        display: block;
+    }
+    .givesback-wrapper.lg-screen-hide {
+        display: none
+    }
 }
 
 @media only screen and (min-width: 992px) {

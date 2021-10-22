@@ -123,7 +123,7 @@ function GivesBack(props) {
                 </div>
             </div>
 
-            <div className='container gives-back-wrapper lg-screen-hide'>
+            <div className='container givesback-wrapper lg-screen-hide'>
                 {charities.map((charity, index) => {
                     return(
                         <Fragment>
