@@ -44,7 +44,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    animation: headerText 100s linear infinite 0s;
+    animation: headerText 100s linear infinite;
     animation-timing-function: ease-in-out;
     content: 'LUXURY EXTERIOR DESIGN';
 }
