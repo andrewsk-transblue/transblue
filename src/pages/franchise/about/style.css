@@ -38,6 +38,10 @@ fieldset p {
     width: 93%;
 }
 
+.franchise-email {
+    margin-right: 20px;
+}
+
 .franchise-email a {
     margin-bottom: 10px;
 }
@@ -58,10 +62,4 @@ fieldset p {
     margin-bottom: 15px;
     line-height: 1.3em;
     font-size: clamp(30px, 4vw, 30px)
-}
-
-@media only screen and (min-width: 543px) {
-    .franchise-phone {
-        margin-left: 20px;
-    }
 }
