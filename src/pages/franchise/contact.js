@@ -20,7 +20,7 @@ function Contact(props) {
     const [error, setError] = useState(false)
 
 
-    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
+    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0;
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -92,7 +92,8 @@ function Contact(props) {
                             </div>
                         </div>
                         <div className='row'>
-                            <button className={!formCompleted ? 'cta disabled' : 'cta'} onClick={handleSubmit} >SUBMIT</button>
+                            {!disabled && <button className='cta' onClick={handleSubmit} >SUBMIT</button>}
+                            {(disabled && formCompleted) && <Captcha onChange={() => setDisabled(false)} />}
                         </div>
                         <div className='row'>
                             {submitted && <div className='submit-alert'>THANK YOU! YOUR MESSAGE HAS BEEN SENT</div>}
