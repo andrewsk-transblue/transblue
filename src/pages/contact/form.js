@@ -1,6 +1,6 @@
 import { useEasybase } from 'easybase-react';
 import React, {Fragment, Component, useState} from 'react';
-//import Captcha from '../captcha/captcha';
+import Captcha from '../../components/captcha/captcha';
 import './style.css';
 
 import{ init } from 'emailjs-com';
@@ -14,6 +14,7 @@ function Form() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
+    const [disabled, setDisabled] = useState(true)
     //const [disabled, setDisabled] = useState(true);
 
     const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0;
@@ -76,11 +77,10 @@ function Form() {
                 </div>
             </div>
             <div className='row'>
-                <button className={!formCompleted ? 'disabled' : ''} onClick={handleSubmit} data-dismiss='modal' >SEND MESSAGE</button>
+                {!disabled && <button onClick={handleSubmit} data-dismiss='modal' >SEND MESSAGE</button>}
+                {disabled && <Captcha onChange={() => setDisabled(false)} />}
             </div>
-            <div className='row'>
-                {/* <Captcha onChange={() => setDisabled(false)} /> */}
-            </div>
+
         </form>
     )
 }
