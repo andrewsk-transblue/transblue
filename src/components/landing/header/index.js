@@ -8,8 +8,7 @@ function Header() {
                 <FranchiseNav />
                 <div className='header'>
                 <div id='header_slide'>
-                    <div className='header-text landing-header'>
-                        
+                    <div className='landing-header'>
                     </div>
                     <div className='overlay'></div>
                 </div>
