@@ -26,10 +26,6 @@ const charities = [
             ''
         ]
     },
-    // {
-    //     name: 'DAWSON PLACE',
-    //     description: []
-    // },
     {
         name: 'SOLID ROCK MISSION',
         description: [
@@ -44,10 +40,6 @@ const charities = [
             'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.'
         ]
     },
-    // {
-    //     name: 'GRACE & FAVOR',
-    //     description: []
-    // },
     {
         name: 'MARKED',
         description: [
@@ -83,6 +75,7 @@ const charities = [
 function GivesBack(props) {
 
     const [activeButton, setActiveButton] = useState(0)
+    const [activeCharity, setActiveCharity] = useState('');
     
     //charities.filter(charity => props.section === charity.name)
 
@@ -93,11 +86,20 @@ function GivesBack(props) {
           });
     }, [])
 
-    return(
+    function setDisplayCharity(index) {
+        // if(index === activeButton) {
+        //     setActiveButton(-1)
+        // }
+        // else setActiveButton(index)
+
+        setActiveButton(index)
+    }
+
+    return( 
         <Fragment>
             <Navbar />
             <Header name='givesback' img={givesback} title='TRANSBLUE GIVES BACK' />
-            <div className='container givesback-wrapper'>
+            <div className='container givesback-wrapper sm-screen-hide'>
                 <div className='row'>
                     <div className='col-md-4 col-lg-3 d-none d-md-block'>
                         {charities.map((charity, index) => {
@@ -107,22 +109,6 @@ function GivesBack(props) {
                                 </Fragment>
                             )
                         })}
-                    </div>
-                    <div className='col-12 d-md-none'>
-                        <div className="dropdown">
-                            <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {charities[activeButton].name}
-                            </button>
-                            <div className="dropdown-menu" aria-labelledby="#dropdownMenuButton">
-                                {charities.map((charity, index) => {
-                                    return(
-                                        <Fragment>
-                                            <button className={activeButton === index ? 'active sm-screen-menu' : 'sm-screen-menu'} onClick={() => setActiveButton(index)}>{charity.name}</button><br />
-                                        </Fragment>
-                                    )
-                                })}
-                            </div>
-                        </div>
                     </div>
                     <div className='col-12 col-md-8 col-lg-9'>
                         <div className='body'>
@@ -136,6 +122,28 @@ function GivesBack(props) {
                     </div>
                 </div>
             </div>
+
+            <div className='container gives-back-wrapper lg-screen-hide'>
+                {charities.map((charity, index) => {
+                    return(
+                        <Fragment>
+                            <button className='sm-screen-menu' onClick={() => setDisplayCharity(index)}>{charity.name}</button><br />
+                           
+                            {activeButton == index &&                                 
+                                charity.description.map(p => {
+                                    return(
+                                        <p className='section-p'>
+                                        {charity.description[0]}
+                                    </p>
+                                    )
+                                })        
+                            }
+                            
+                        </Fragment>
+                    )
+                })}
+            </div>
+
             <Footer />
         </Fragment>
     )
