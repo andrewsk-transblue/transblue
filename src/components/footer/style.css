@@ -43,6 +43,7 @@
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-bottom: 10px;
+    line-height: 2rem !important;
 }
 
 .footer-container .links a {

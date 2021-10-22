@@ -1,13 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component, lazy} from 'react';
 import axios from 'axios';
 import MapComp from './map';
 import LocationList from './locationList';
-import map from '../../images/map.png';
+//import map from '../../images/map.png';
 import AutoComplete from "react-google-autocomplete";
-
-
-
 import './style.css';
+
+//const AutoComplete = lazy(() => import('react-google-autocomplete'))
 
 class MapContainer extends Component {
     constructor() {
@@ -24,7 +23,6 @@ class MapContainer extends Component {
             initialLoad: true
         }
     }
-
     
     componentDidMount() {
         setTimeout(() => {
@@ -111,7 +109,8 @@ class MapContainer extends Component {
                                 placeholder='Enter city or address'
                                 apiKey={process.env.REACT_APP_GOOGLE_API}
                                 onPlaceSelected={(location) =>
-                                    this.selectLocation(location.place_id) 
+                                    {console.log(location)
+                                    this.selectLocation(location.place_id) }
                                     // this.searchLocation(location.place_id)
                                 }
                                 options={{

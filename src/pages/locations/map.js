@@ -7,15 +7,7 @@ import comingSoon from './comingSoon';
 
 import './style.css';
 
-// function SetViewOnClick({ coords }) {
-//     const map = useMap();
-//     map.fitBounds(coords)
-    
-//     return null;
-// }
-
-function SetCenter({center, radius}) {
-    
+function SetCenter({center, radius}) { 
     const map = useMap();
     var rad = radius * 1609;
 
@@ -31,13 +23,14 @@ function MapComp(props) {
     const mounted = async() => {
       const ebData = await db("LOCATIONS").return().all();
       seteasybaseData(ebData);
-      console.log('map ebData')
-      console.log(ebData)
+    //   console.log('map ebData')
+    //   console.log(ebData)
     }
+
     useEffect(() => {
         mounted()
     }, [])
-    //console.log('mapcomp')
+
 
     return (
         <MapContainer center={props.center} zoom={5} scrollWheelZoom={true} id='mapid'>

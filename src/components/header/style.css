@@ -42,7 +42,7 @@
 .header-wrapper[name='givesback'] {
     background-image: url('../../images/givesback.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: 83%;
 }
 
 .header-wrapper[name='givesback'] .overlay {

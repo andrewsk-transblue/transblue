@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactModal from '../../components/contactModal';
-import asphalt from '../../images/multifamily/asphalt.jpg';
+import asphalt from '../../images/commercial/asphalt.jpg';
 import './style.css';
 
 function Marriott() {

@@ -1,6 +1,5 @@
 import React, {useState, Fragment} from 'react';
 import { Link } from 'react-router-dom';
-import AutoComplete from "react-google-autocomplete";
 import collapse from '../../images/collapse30.png';
 import './style.css';
 

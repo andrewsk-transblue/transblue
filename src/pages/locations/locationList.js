@@ -5,7 +5,6 @@ import './style.css';
 
 const geolib = require('geolib');
 
-
 class LocationList extends Component {
     state={
         isLoading: true,
@@ -40,6 +39,7 @@ class LocationList extends Component {
             if(distance < this.props.radius) {
                 locationList.push(this.props.locations[i])
             }
+            //locationList.push(this.props.locations[i])
         }
         this.setState({locationList: locationList})
     }

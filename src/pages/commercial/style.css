@@ -1,7 +1,8 @@
 .commercial-body .wrapper {
-    width: 100%;
+    width: 93%;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 .commercial-about {
