@@ -157,8 +157,10 @@ function Footer(props) {
                 <a href='/'>HOME</a>
                 <a href='http://snow.transblue.com/'>SNOW SERVICES</a>
                 <a href='http://green.transblue.com/'>GREEN SERVICES</a>
+                {/* <br /> */}
                 <a href='/blog'>BLOG</a>
                 <a href='/locations'>LOCATIONS</a>
+                {/* <a href='/'>FRANCHISE</a> */}
             </span>
             
             <div className='social-media'>

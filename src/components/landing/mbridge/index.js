@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import dawsonplace from '../../../images/charities/dawsonplace2.png';
 import deeshope from '../../../images/charities/deeshope2.jpg';
@@ -9,9 +9,23 @@ import whitesnow from '../../../images/newLanding/snow.png';
 import fire from '../../../images/landing/fire.png';
 import heart from '../../../images/newLanding/heart.png';
 import worldclass from '../../../images/landing/worldclass.jpg';
+import downarrow from '../../../images/featured/downarrow.png';
+
 import './style.css';
 
 function Mbridge() {
+    const [displayDawson, setDisplayDawson] = useState(false)
+    const [displayDees, setDisplayDees] = useState(false);
+    const [displayHope, setDisplayHope] = useState(false);
+
+    useEffect(() => {
+        console.log(window.innerWidth)
+        if(window.innerWidth > 769) {
+            setDisplayDawson(true)
+            setDisplayDees(true)
+            setDisplayHope(true)
+        }
+    }, [])
 
     return(
         <Fragment>
@@ -78,29 +92,46 @@ function Mbridge() {
                 </div>
             </div>
             <div className='row mx-0'>
-                <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <LazyLoadImage
-                        alt='Dawson Place'
-                        src={dawsonplace} // use normal <img> attributes as props
-                    />
-                    <p className='text-secondary'>DAWSON PLACE</p>
-                    <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
-                    <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
-                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                <div className='col-lg-4 col-md-6 col-sm-8 col-12'>
+                    <button className='sm-screen-btn' onClick={() => setDisplayDawson(!displayDawson)}>
+                        <h6>DAWSON PLACE <img className='expand' src={downarrow} /></h6>
+                    </button>
+                    {displayDawson && 
+                        <Fragment>
+                            <LazyLoadImage
+                                alt='Dawson Place'
+                                src={dawsonplace} // use normal <img> attributes as props
+                            />
+                            <p className='text-secondary'>DAWSON PLACE</p>
+                            <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
+                            <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
+                            <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                        </Fragment>
+                    }
                 </div>
-                <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <LazyLoadImage src={deeshope} alt='Dees Hope' />
+                <div className='col-lg-4 col-md-6 col-sm-8 col-12'>
+                <button className='sm-screen-btn' onClick={() => setDisplayDees(!displayDees)}>
+                    <h6>DEES HOPE <img className='expand' src={downarrow} /></h6>
+                </button>
+                    {displayDees && 
+                    <Fragment>
+                        <LazyLoadImage src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
                     <h6>FIGHTING SOFT SLAVERY IN UGANDA</h6>
                     <p className='section-p'>Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape the nightmare of forced servitude.</p>
-                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a></Fragment>}
                 </div>
-                <div className='col-lg-4 col-md-6 col-sm-12'>
+                <div className='col-lg-4 col-md-6 col-sm-8 col-12'>
+                    <button className='sm-screen-btn' onClick={() => setDisplayHope(!displayHope)}>
+                        <h6>HOPE UNLIMITED <img className='expand' src={downarrow} /></h6>
+                    </button>
+                    {displayHope && <Fragment>
                     <LazyLoadImage src={hope} alt='Hope Unlimited' />
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
                     <p className='section-p'>Through Northwest Incident Support, Hope Unlimited partners with first responders during crisis situations, providing resources for families during loss or difficult circumstances.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                    </Fragment>}
                 </div>
             </div>
         </div>

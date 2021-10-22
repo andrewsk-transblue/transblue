@@ -177,6 +177,14 @@
     color:rgb(71, 71, 71);
 }
 
+.mbridge button.sm-screen-btn {
+    padding-left: 0px;
+}
+
+.mbridge img.expand {
+    width: 20px;
+}
+
 .mbridge .title {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -246,7 +254,7 @@
 }
 
 @media only screen and (max-width: 990px) {
-    .mbridge button {
+    .mbridge button:not(.sm-screen-btn) {
         margin-bottom: 40px;
     }
 }
@@ -313,9 +321,6 @@
     .entry {
         padding: 0px 15%;
     }
-    /* .reviews-title span {
-        font-size: 3vw;
-    } */
     .community-stats {
         width: 50%;
     }
@@ -336,16 +341,11 @@
     }
 }
 
-/* @media only screen and (min-width: 746px) {
-    .mbridge .col-sm-12:first-of-type,
-    .mbridge .col-sm-12:last-of-type {
-        padding-right: 15px;
+@media only screen and (min-width: 750px) {
+    .mbridge button.sm-screen-btn {
+        display: none;
     }
-
-    .mbridge .col-sm-12:nth-of-type(2) {
-        padding-left: 15px;
-    }
-} */
+}
 
 @media only screen and (min-width: 768px) {
     .mbridge .title {
