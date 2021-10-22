@@ -49,8 +49,11 @@
     content: 'LUXURY EXTERIOR DESIGN';
 }
 
-#header_slide {
+.landing-header {
     position: relative;
+}
+
+#header_slide {
     width: 100%;
     height: 100vh;
     background-position: center center;
