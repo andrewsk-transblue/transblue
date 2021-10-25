@@ -75,7 +75,6 @@ const charities = [
 function GivesBack(props) {
 
     const [activeButton, setActiveButton] = useState(0)
-    const [activeCharity, setActiveCharity] = useState('');
     
     //charities.filter(charity => props.section === charity.name)
 
@@ -87,12 +86,12 @@ function GivesBack(props) {
     }, [])
 
     function setDisplayCharity(index) {
-        // if(index === activeButton) {
-        //     setActiveButton(-1)
-        // }
-        // else setActiveButton(index)
+        if(index === activeButton) {
+            setActiveButton(-1)
+        }
+        else setActiveButton(index)
 
-        setActiveButton(index)
+        //setActiveButton(index)
     }
 
     return( 
@@ -110,16 +109,17 @@ function GivesBack(props) {
                             )
                         })}
                     </div>
-                    <div className='col-12 col-md-8 col-lg-9'>
+                    {/* SMALL SCREEN MENU CHANGES INDEX TO -1 SO WE MUST ACCOUNT FOR THAT */}
+                    {activeButton > -1 && <div className='col-12 col-md-8 col-lg-9'>
                         <div className='body'>
-                            <h3 className='section-header'>{charities[activeButton].name}</h3>
+                            <h3 className='section-header'></h3>
                             {charities[activeButton].description.map(p => {
                                 return(
                                     <p className='section-p'>{p}</p>
                                 )
                             })}
                         </div>
-                    </div>
+                    </div>}
                 </div>
             </div>
 
@@ -128,13 +128,14 @@ function GivesBack(props) {
                     return(
                         <Fragment>
                             <button className='sm-screen-menu' onClick={() => setDisplayCharity(index)}>{charity.name}</button><br />
-                           
+
                             {activeButton == index &&                                 
                                 charity.description.map(p => {
+                                    console.log(index)
                                     return(
                                         <p className='section-p'>
-                                        {charity.description[0]}
-                                    </p>
+                                            {charity.description[0]}
+                                        </p>
                                     )
                                 })        
                             }
