@@ -40,7 +40,8 @@ class MapContainer extends Component {
                 err => {
                     console.log(err)
                     this.setState({
-                        center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                        //center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                        center: [29.9435514, -95.7154727],
                         isLoading: false 
                     })
                 }, {timeout: 5000});
@@ -50,7 +51,7 @@ class MapContainer extends Component {
             alert('using seattle')
             console.log('using seattle as default')
             this.setState({
-                center: [47.6062, -122.3321], //default center to seattle if there's no criteria and geolocation is off
+                center: [29.9435514, -95.7154727], //default center to seattle if there's no criteria and geolocation is off
                 isLoading: false 
             })
         }
