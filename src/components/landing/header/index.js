@@ -23,7 +23,7 @@ function Header() {
             else index = 0
             console.log(index)
             setText(textArray[index])
-        }, 12000)
+        }, 10800)
     }, [])
 
     return(

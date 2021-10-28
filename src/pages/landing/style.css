@@ -81,8 +81,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 104s linear infinite 0s;
-    animation-timing-function: ease-in-out;
+    animation: slideBg 104s infinite 0s;
+    animation-timing-function: cubic-bezier(.05,.9,.9,.95);
     background-image: url('../../images/landingHeader/fire-min.jpeg');
 }
 
