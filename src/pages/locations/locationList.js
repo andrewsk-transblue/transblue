@@ -56,6 +56,13 @@ class LocationList extends Component {
                     if(location.callblue) phone = location.callbluephone
                     else phone = location.officephone
                     let telLink = phone.replace(/[^A-Z0-9]/ig, "");
+
+                    let zipcode = location.zipcode;
+
+                    if(location.zipcode.toString().length === 4) {
+                        zipcode = `0${location.zipcode}`
+                    }
+
                     return(
                         <div className='row location' >
                             <div className='col-lg-1 col-1 pl-0 pt-3 index'>{index + 1}</div>
@@ -63,7 +70,7 @@ class LocationList extends Component {
                                 <p>{location.name.toUpperCase()}</p>
                                 <div className='location-body'>
                                     {location.address1}, {location.address2}<br />
-                                    {location.city}, {location.state} {location.zipcode}<br />
+                                    {location.city}, {location.state} {zipcode}<br />
                                     <div className='location-contact'>
                                         <a href={`tel:+${telLink}`}><i className="fas fa-phone"></i>{phone}<br /></a>
                                         <i className="fas fa-envelope"></i>{location.email}<br /> 

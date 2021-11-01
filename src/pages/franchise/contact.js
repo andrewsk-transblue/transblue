@@ -53,6 +53,12 @@ function Contact(props) {
         )
     }
 
+    let zipcode = props.location.zipcode;
+
+    if(props.location.zipcode.toString().length === 4) {
+        zipcode = `0${props.location.zipcode}`
+    }
+
     return(
         <div className='contact-wrapper bg-light'>
             <h1>HAVE QUESTIONS?</h1>
@@ -63,7 +69,7 @@ function Contact(props) {
                     <div className='contact-info my-auto'>
                         <h4>{props.location.name.toUpperCase()}</h4>
                         <p>{props.location.address1} {props.location.address2}<br />
-                        {props.location.city} {props.location.state} {props.location.zipcode}</p>
+                        {props.location.city} {props.location.state} {zipcode}</p>
                         <p>{props.location.email}</p>
                         <p>{props.location.phone}</p>
                     </div>

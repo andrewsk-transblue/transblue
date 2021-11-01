@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import locationIcon from '../../images/location.png';
 import mailIcon from '../../images/mail.png';
 // import states from './statesDb';
-import axios from 'axios';
+//import axios from 'axios';
 import './style.css';
 
 const reverse = require('reverse-geocode')
@@ -86,6 +86,14 @@ function ListView(props) {
                     if(props.callblue) phone = location.callbluephone;
                     else phone = location.officephone;
 
+                    console.log(location.zipcode.toString().length)
+
+                    let zipcode = location.zipcode;
+
+                    if(location.zipcode.toString().length === 4) {
+                        zipcode = `0${location.zipcode}`
+                    }
+
                     let telLink = phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
@@ -100,7 +108,7 @@ function ListView(props) {
                                     <div className='col-10 pr-0'>
                                         <p className='section-p'>
                                             {location.address1}{location.address2.length > 0 && `, ${location.address2}`}<br />
-                                            {location.city} {location.state}, {location.zipcode}
+                                            {location.city} {location.state}, {zipcode}
                                         </p>
                                     </div>
                                 </div>

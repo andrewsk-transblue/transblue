@@ -13,6 +13,13 @@ function Contact2(props) {
     else if(window.innerWidth < 875) height = 8
     else height = 5
 
+
+    let zipcode = props.franchise.zipcode;
+
+    if(props.franchise.zipcode.toString().length === 4) {
+        zipcode = `0${props.franchise.zipcode}`
+    }
+
     return(
         <div className='contact2-wrapper'>
             {isSent && 
@@ -70,7 +77,7 @@ function Contact2(props) {
                             <h5>{props.franchise.name.toUpperCase()}</h5>
                             <p>
                                 {props.franchise.address1}, {props.franchise.address2}<br />
-                                {props.franchise.city}, {props.franchise.state} {props.franchise.zipcode}
+                                {props.franchise.city}, {props.franchise.state} {zipcode}
                             </p>
                             <p>
                                 {props.email}<br />
