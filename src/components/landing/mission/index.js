@@ -17,7 +17,7 @@ function Mission() {
                         </div>
                     </div>
                     <div className='col-lg-6 col-md-6 col-sm-6 my-auto'>
-                        <p>We were founded on the principle of God, Family, then Business. We don't just build outdoor living spaces. We build communities. We build charities. We build to bless our clients, our employees, and our surroundings.</p>
+                        <p>We were founded on the principle of God, Family, then Business. We don't just build outdoor construction. We build communities. We build charities. We build to bless our clients, our employees, and our surroundings.</p>
                     </div>
                 </div>
             </div>

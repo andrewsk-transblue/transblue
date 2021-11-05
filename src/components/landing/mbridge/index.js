@@ -35,7 +35,7 @@ function Mbridge() {
                         <div className='card'>
                             <div className='text'>
                                 <p className='tb-is'>Transblue is</p>
-                                <p className='title'>QUALITY OF LIFE</p>
+                                <p className='title'>EXTERIOR CONSTRUCTION</p>
                                 <p className='body'>We understand that backyards are more than a beautiful lawn. They're birthday parties, holidays, and celebrations with family.</p>
                                 <img src={heart} alt='' />
                             </div>
@@ -103,7 +103,7 @@ function Mbridge() {
                                 src={dawsonplace} // use normal <img> attributes as props
                             />
                             <p className='text-secondary'>DAWSON PLACE</p>
-                            <h6>HEALING FOR CHILD ABUSE VICTIMS</h6>
+                            <h6>HEALING FOR CHILDREN</h6>
                             <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
                             <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
                         </Fragment>
@@ -117,7 +117,7 @@ function Mbridge() {
                     <Fragment>
                         <LazyLoadImage src={deeshope} alt='Dees Hope' />
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
-                    <h6>FIGHTING SOFT SLAVERY IN UGANDA</h6>
+                    <h6>FIGHTING FOR UNDERPRIVELEGED WOMEN</h6>
                     <p className='section-p'>Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape the nightmare of forced servitude.</p>
                     <a href='/givesback' className='mbridge-cta'>LEARN MORE</a></Fragment>}
                 </div>

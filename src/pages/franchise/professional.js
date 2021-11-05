@@ -11,8 +11,8 @@ function Professional(props) {
                 <div className='row'>
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
-                        <h5> PROFESSIONAL WORK</h5>
-                        <p className='section-p body'>We pay special attention to the details of every project to ensure the complete satisfaction of each and every client</p>
+                        <h5>TURNKEY SOLUTIONS</h5>
+                        <p className='section-p body'>Our flexible turnkey solution allows you to focus on managing your business rather than managing contractors</p>
                     </div>
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
