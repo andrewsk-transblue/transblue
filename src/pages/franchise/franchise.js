@@ -55,6 +55,9 @@ function Franchise(props) {
          mounted();
     }, [])
 
+    let name = easybaseData[0].name.slice(10)
+    //console.log(name)
+
     return(
         easybaseData.length > 0 && 
             <Fragment>
@@ -67,7 +70,7 @@ function Franchise(props) {
                 <Header
                     region={easybaseData[0].region}
                     title={easybaseData[0].name.toUpperCase()}
-                    subtitle={`Serving ${easybaseData[0].city}, ${easybaseData[0].state} and surrounding areas`}
+                    subtitle={`Serving ${name}, ${easybaseData[0].state} and surrounding areas`}
                     franchise={true}
                 />
                 <ContactCta email={easybaseData[0].email} />

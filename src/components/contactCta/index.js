@@ -15,7 +15,7 @@ function ContactCta(props) {
     })
     return(
         displayCTA && <div className='contact-cta'>
-            <button id='cta' onClick={() => setDisplayForm(true)}>GET MORE INFO</button>
+            <button id='cta' onClick={() => setDisplayForm(true)}>CONTACT US</button>
             {/* {displayForm &&  */}
                 <Slide right when={displayForm} exit={true} collapse>
                     <div className='form'>
