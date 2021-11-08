@@ -4,6 +4,7 @@ import FranchiseNav from '../../franchiseNav';
 
 function Header() {
     const [text, setText] = useState('LUXURY EXTERIOR DESIGN');
+    //const [index, setIndex] = useState(0)
 
     let index = 0;
     const textArray = [
@@ -14,16 +15,22 @@ function Header() {
         'LUXURY EXTERIOR DESIGN',
         'BEAUTIFUL COMMUNITY LIVING',
         'LUXURY EXTERIOR DESIGN',
-        'RELIABLE SNOW REMOVAL'
+        'RELIABLE SNOW REMOVAL',
+
     ]
 
     useEffect(() => {
-        setInterval(() => {
-            if(index < textArray.length - 1) index += 1
-            else index = 0
-            console.log(index)
+        setTimeout(() => {
+            index += 1
             setText(textArray[index])
-        }, 10800)
+            console.log(index)
+            setInterval(() => {
+                if(index < textArray.length - 1) index += 1
+                else index=0
+                console.log(index)  
+                setText(textArray[index])          
+            }, 13000)
+        }, 6000)
     }, [])
 
     return(
