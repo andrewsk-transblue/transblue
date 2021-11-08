@@ -66,10 +66,32 @@ function Mbridge() {
             <div className='container-fluid stats'>
             <div className='row'>
                 <div className='col-lg-6 my-auto'>
-                <LazyLoadImage
-                    alt=''
-                    src={worldclass} // use normal <img> attributes as props
-                />
+                    <div className='row'>
+                        <div className='col-6'>
+                            <LazyLoadImage
+                                alt=''
+                                src={worldclass} // use normal <img> attributes as props
+                            />
+                        </div>
+                        <div className='col-6'>
+                            <LazyLoadImage
+                                alt=''
+                                src={worldclass} // use normal <img> attributes as props
+                            />
+                        </div>                                                
+                        <div className='col-6'>
+                            <LazyLoadImage
+                                alt=''
+                                src={worldclass} // use normal <img> attributes as props
+                            />
+                        </div>
+                        <div className='col-6'>
+                            <LazyLoadImage
+                                alt=''
+                                src={worldclass} // use normal <img> attributes as props
+                            />
+                        </div>                    </div>
+
                 </div>
                 <div className='col-lg-6 left-text my-auto'>
                     <h6>WORLD CLASS GENERAL CONTRACTORS</h6>

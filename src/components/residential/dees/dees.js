@@ -26,7 +26,7 @@ function Dees() {
                 <div className='col-lg-5 col-xl-4 col-12 text'>
                     <div className='section-header'>
                         <p className='text-secondary section-subheader'>TRANSBLUE &amp; DEE'S HOPE</p>
-                        ABOLISHING SOFT SLAVERY IN UGANDA
+                        FIGHTING FOR UNDERPRIVELEGED WOMEN
                     </div>
                     {/* <p className='section-p'>At Transblue, a portion of every project goes to helping those in need. By working on these projects, Transblue has been able to give over 20000 dollars to Dee's Hope for Girl's Foundation.</p>
                     

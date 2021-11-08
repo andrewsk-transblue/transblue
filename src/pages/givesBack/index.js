@@ -11,7 +11,7 @@ ReactGA.initialize(TRACKING_ID);
 
 const charities = [
     {
-        name: 'ABOUT MBRIDGE',
+        name: 'MBRIDGE',
         description: [
             'The partners at mBridge bring a deep understanding of both the for-profit businesses and the nonprofit sectors together with extensive experience working with missions organizations around the world. We work closely with both missions workers and those interested in missional causes that will have the greatest impact.',
             'mBridge is dedicated to helping people maximize their potential through earnest giving to deserving organizations. We curate noble causes we believe in—those causes that put the most effort toward those most in need—and connect you with them so you can do the most good.',
