@@ -53,28 +53,16 @@ function ListView(props) {
         getStates()
     }, [])
 
-    function changeState(e) {
-        setState(e.target.value)
-        //console.log(e.target.value)
-        setStateLocations(props.locations.filter(location => location.location === e.target.value))
-    }
-
     return(
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
-                <select className="browser-default custom-select" onChange={changeState}>
+                <select className="browser-default custom-select">
                     <option className='first-option' value=''>SELECT REGION</option>
                     <option value='northwest'>NORTHWEST</option>
                     <option value='northeast'>NORTHEAST</option>
                     <option value='west'>WEST</option>
                     <option value='southwest'>SOUTHWEST</option>
                     <option value='midwest'>MIDWEST</option>
-                    {/* {stateList.map(state => {
-                        console.log(stateList)
-                        return(
-                            <option value={state}>{state.toUpperCase()}</option>
-                        )
-                    })} */}
                 </select>
             </div>
             <div className='row'>
