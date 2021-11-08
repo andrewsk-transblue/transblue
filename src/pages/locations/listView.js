@@ -15,43 +15,6 @@ function ListView(props) {
     const [stateLocations, setStateLocations] = useState([])
     const [loading, setLoading] = useState(true)
     const [stateList, setStateList] = useState([])
-    
-    
-    const getStates = () => {
-        //dynamically create list of states with Transblue locations from database
-        for(let i=0; i<props.locations.length; i++) {
-            if(stateList.indexOf(props.locations[i].location) === -1) stateList.push(props.locations[i].location)
-        }
-        setStateList(stateList)
-    }
-
-    useEffect(() => {
-        if('getCurrentPosition' in navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(position => {
-                let userState = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-                if(stateList.indexOf(userState)  !== -1) {
-                    setState(userState)
-                    setStateLocations(props.locations.filter(location => location.location === userState))
-                    setLoading(false)
-                }
-                else {
-                    setLoading(false)
-                    setStateLocations(props.locations.filter(location => location.location === state))
-                }
-            }, err => {
-                console.log(err)
-                setLoading(false)
-                setStateLocations(props.locations.filter(location => location.location === state))
-            }, {timeout: 5000})
-        }
-        else {
-            setLoading(false)
-            setStateLocations(props.locations.filter(location => location.location === state))
-            //console.log(props.locations.filter(location => location.location === state))       
-        }
-
-        getStates()
-    }, [])
 
     return(
         <div className='listview-wrapper container-fluid'>
