@@ -130,7 +130,7 @@ function Mbridge() {
                             <p className='text-secondary'>DAWSON PLACE</p>
                             <h6>HEALING FOR CHILDREN</h6>
                             <p className='section-p'>Dawson Place child advocacy center transforms hurt to hope for children traumatized by abuse. Transblue is consistently one of Dawson Place's primary community supporters.</p>
-                            <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                            <a href='/givesback/dawson' className='mbridge-cta'>LEARN MORE</a>
                         </Fragment>
                     }
                 </div>
@@ -144,7 +144,7 @@ function Mbridge() {
                     <p className='text-secondary'>DEE'S HOPE FOR GIRLS FOUNDATION</p>
                     <h6>FIGHTING FOR UNDERPRIVELEGED WOMEN</h6>
                     <p className='section-p'>Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape the nightmare of forced servitude.</p>
-                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a></Fragment>}
+                    <a href='/givesback/dees' className='mbridge-cta'>LEARN MORE</a></Fragment>}
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-8 col-12'>
                     <button className='sm-screen-btn' onClick={() => setDisplayHope(!displayHope)}>
@@ -155,7 +155,7 @@ function Mbridge() {
                     <p className='text-secondary'>HOPE UNLIMITED</p>
                     <h6>FIRE AND POLICE CHAPLAINCY</h6>
                     <p className='section-p'>Through Northwest Incident Support, Hope Unlimited partners with first responders during crisis situations, providing resources for families during loss or difficult circumstances.</p>
-                    <a href='/givesback' className='mbridge-cta'>LEARN MORE</a>
+                    <a href='/givesback/hope' className='mbridge-cta'>LEARN MORE</a>
                     </Fragment>}
                 </div>
             </div>

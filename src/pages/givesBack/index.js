@@ -12,6 +12,7 @@ ReactGA.initialize(TRACKING_ID);
 const charities = [
     {
         name: 'MBRIDGE',
+        url: 'mbridge',
         description: [
             'The partners at mBridge bring a deep understanding of both the for-profit businesses and the nonprofit sectors together with extensive experience working with missions organizations around the world. We work closely with both missions workers and those interested in missional causes that will have the greatest impact.',
             'mBridge is dedicated to helping people maximize their potential through earnest giving to deserving organizations. We curate noble causes we believe in—those causes that put the most effort toward those most in need—and connect you with them so you can do the most good.',
@@ -20,7 +21,13 @@ const charities = [
         ]
     },
     {
+        name: 'DAWSON PLACE',
+        url: 'dawson',
+        description: ['']
+    },
+    {
         name: "DEE'S HOPE",
+        url: 'dees',
         description: [
             'Dee was a house girl and understands how girls are abused and trapped in domestic servitude. Domestic servitude is soft slavery. House girls are most often abused physically and sexually. Dee is personally motivated to rescue girls. Last year, they went grew from 7 to 17 girls that were rescued and provided an education.',
             ''
@@ -28,6 +35,7 @@ const charities = [
     },
     {
         name: 'SOLID ROCK MISSION',
+        url: 'solidrock',
         description: [
             'Solid Rock Mission reaches into rural and war torn regions of southern and eastern Ukraine. These are communities where the Russian Orthodox Church is firmly established but has been ineffective in ministering to the younger generation. Alcoholism and the break down of the family is rampant. Children and youth are often victims of abuse or politically radicalized. Solid Rock Mission has built a mission school and discipleship center that is expanding throughout the region through camps and retreats reaching this young generation for Christ.',
             'Last year, over 4000 children and youth attended Solid Rock summer camps with over 1000 committing their lives to Christ. These are then introduced to missions camps to learn more about walking with Christ and serving their communities and families.'
@@ -35,6 +43,7 @@ const charities = [
     },
     {
         name: 'HOPE UNLIMITED',
+        url:'hope',
         description: [
             'Hope unlimited provides critical support to both our first responders and the families of Snohomish County that are in crisis. They provide comfort, support and training during crisis events in our county.',
             'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.'
@@ -42,6 +51,7 @@ const charities = [
     },
     {
         name: 'MARKED',
+        url: 'marked',
         description: [
             'Mexico also leads the world in child prostitution distributing over 60% of the worlds child pornography. 63% of those under the age of 15 claim to have encountered sexual violence through organized crime at least once throughout their short lives',
             'The streets of these towns are ripe for gang violence with many of the young boys getting involved at just 11 years of age. By joining these gangs, they start the clock on the last years of their young lives with a life expectancy of only 3 years',
@@ -51,6 +61,7 @@ const charities = [
     },
     {
         name: 'HLC CHURCH NEPAL',
+        url: 'hlc',
         description: [
             'Founder led: Pastor Jit Lama understands how to stand in a culture that is anti-christian. Nepal persecutes Christians though many cultural laws that inhibit the freedom of worship. HLC church is a strong relational reproducing church in the heart of Katmandu. They serve the poor, help those who are in need and proclaim the gospel of Jesus.',
             'Last year, they reached out and served 200+ families in crisis due to natural disasters and the pandemic. They are always serving those around them, whether they are believers or not. They were evicted from their long term lease, but managed to purchase property and are now building a new church. They are flourishing in the midst of a very difficult culture.'
@@ -58,6 +69,7 @@ const charities = [
     },
     {
         name: 'HEED UGANDA',
+        url: 'heed',
         description: [
             'HEED has been instrumental in transforming a community. What started as a rural village without any infrastructure has blossomed into a functioning community with clean water, strong schools and pathways to transformation.',
             'HEED has gathered a team that understands what is needed for a community development in Africa.',
@@ -66,6 +78,7 @@ const charities = [
     },
     {
         name: 'MISSION GREEN',
+        url: 'mission',
         description: [
             'Mission Green plants Eucalyptus trees for Education. 1 acre of trees planted provides 20 student tuitions for school. 1 acre of trees will produce multiple harvests for secondary income. 1 acre of trees can be planted for only $500.00 yet it will produce over $9000.00 after harvest in 6 years.'
         ]
@@ -73,6 +86,8 @@ const charities = [
 ]
 
 function GivesBack(props) {
+
+    //console.log(props.match.params.charity)
 
     const [activeButton, setActiveButton] = useState(0)
     
@@ -83,6 +98,13 @@ function GivesBack(props) {
             category: 'User',
             action: 'Visited Gives Back Page'
           });
+        if(props.match.params.charity) {
+            for(let i=0; i<charities.length; i++) {
+                if(charities[i].url === props.match.params.charity) {
+                    setActiveButton(i)
+                }
+            }
+        }
     }, [])
 
     function setDisplayCharity(index) {

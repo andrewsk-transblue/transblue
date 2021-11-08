@@ -59,6 +59,7 @@ function App() {
             <Route exact path='/featured' component={Featured} />
             <Route exact path='/add' component={Form} />
             <Route exact path='/privacy' component={Privacy} />
+            <Route exact path='/givesback/:charity' component={GivesBack} />
             <Route exact path='/givesback' component={GivesBack} />
             <Route exact path='/contact' component={Contact} />
             {easybaseData.length > 0 &&  <Route exact path='/finance' >
