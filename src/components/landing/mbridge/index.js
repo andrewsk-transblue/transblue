@@ -9,6 +9,9 @@ import whitesnow from '../../../images/newLanding/snow.png';
 import fire from '../../../images/landing/fire.png';
 import heart from '../../../images/newLanding/heart.png';
 import worldclass from '../../../images/landing/worldclass.jpg';
+import quality from '../../../images/newLanding/quality6.jpg';
+import quality2 from '../../../images/newLanding/quality5.jpg';
+import quality4 from '../../../images/newLanding/quality4.jpg';
 import downarrow from '../../../images/featured/downarrow.png';
 
 import './style.css';
@@ -70,19 +73,19 @@ function Mbridge() {
                         <div className='col-6'>
                             <LazyLoadImage
                                 alt=''
-                                src={worldclass} // use normal <img> attributes as props
+                                src={quality} // use normal <img> attributes as props
                             />
                         </div>
                         <div className='col-6'>
                             <LazyLoadImage
                                 alt=''
-                                src={worldclass} // use normal <img> attributes as props
+                                src={quality4} // use normal <img> attributes as props
                             />
                         </div>                                                
                         <div className='col-6'>
                             <LazyLoadImage
                                 alt=''
-                                src={worldclass} // use normal <img> attributes as props
+                                src={quality2} // use normal <img> attributes as props
                             />
                         </div>
                         <div className='col-6'>

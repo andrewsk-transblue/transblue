@@ -1,3 +1,15 @@
+.green-solns h4,
+.green-solns .title .section-p {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.green-solns {
+    width: 95%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 .green-solns p.subtitle {
     font-weight: 500;
@@ -10,6 +22,9 @@
     margin-bottom: .7rem;
 }
 
+.green-solns img {
+    width: 100%;
+}
 /* 
 @media only screen and (min-width: 1200px) {
     .green-solns hr {
@@ -17,12 +32,11 @@
     }
 } */
 
-/* @media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
     .green-solns h4,
     .green-solns .title .section-p {
-        width: 80%;
-        margin: 0 auto;
         text-align: center;
+        margin: 0 auto;
     }
     .green-solns .title .section-p {
         margin-bottom: 30px;
@@ -33,11 +47,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .green-solns {
-        margin-top: 80px;
+    .green-solns .title {
+        margin-bottom: 20px;
     }
-    .green-solns h4,
-    .green-solns .title .section-p {
-        width: 50%;
-    }
-} */
+}
