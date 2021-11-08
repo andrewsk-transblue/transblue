@@ -80,53 +80,11 @@ function ListView(props) {
                     </div>
                 }
                 {stateLocations.length > 0 && stateLocations.map(location => {
-                    //console.log(stateLocations)
-                    // console.log(location)
-                    let phone;
-                    if(props.callblue) phone = location.callbluephone;
-                    else phone = location.officephone;
-
-                    console.log(location.zipcode.toString().length)
-
-                    let zipcode = location.zipcode;
-
-                    if(location.zipcode.toString().length === 4) {
-                        zipcode = `0${location.zipcode}`
-                    }
-
-                    let telLink = phone.replace(/[^A-Z0-9]/ig, "");
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
                             <div className='listview-location'>
                                 <div className='row'>
-                                    <h5>{location.name.toUpperCase()}</h5>
-                                </div>
-                                <div className='row'>
-                                    <div className='col-1 pr-0'>
-                                        <img className='location-icon' src={locationIcon} alt='' />
-                                    </div>
-                                    <div className='col-10 pr-0'>
-                                        <p className='section-p'>
-                                            {location.address1}{location.address2.length > 0 && `, ${location.address2}`}<br />
-                                            {location.city} {location.state}, {zipcode}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col-1 pr-0'>
-                                        <img src={mailIcon} alt='' />
-                                    </div>
-                                    <div className='col-10 pr-0'>
-                                        <p className='section-p'>
-                                            {location.email}<br />
-                                            <a href={`tel:+${telLink}`}>{phone}</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div className='col-12'>
-                                        <Link className='web-link' to={`/locations/${location.state}/${location.urlcity}`} target='_blank' rel='noreferrer'>WEBSITE</Link>
-                                    </div>
+                                    <h5>{`${location.name.toUpperCase().slice(10)}, ${location.state}`}</h5>
                                 </div>
                             </div>
                         </div>
