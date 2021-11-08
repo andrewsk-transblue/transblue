@@ -18,14 +18,17 @@ function ListView(props) {
     }
 
     function setRegion(e) {
-        console.log(e.target.value)
-        let locationList = []
-        for(let i=0; i<props.locations.length; i++) {
-            if(props.locations[i].region === e.target.value) {
-                locationList.push(props.locations[i])
+        if(e.target.value === 'all') setLocations(props.locations)
+
+        else {
+            let locationList = []
+            for(let i=0; i<props.locations.length; i++) {
+                if(props.locations[i].region === e.target.value) {
+                    locationList.push(props.locations[i])
+                }
             }
+            setLocations(locationList)
         }
-        setLocations(locationList)
     }
     
     
@@ -75,6 +78,7 @@ function ListView(props) {
             <div className='row'>
                 <select className="browser-default custom-select" onChange={setRegion}>
                     <option className='first-option' value=''>SELECT REGION</option>
+                    <option value='all'>ALL REGIONS</option>
                     <option value='northwest'>NORTHWEST</option>
                     <option value='northeast'>NORTHEAST</option>
                     <option value='west'>WEST</option>
