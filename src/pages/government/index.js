@@ -57,7 +57,7 @@ function Government() {
                                 {!displayCapabilities && <button className='cta' onClick={() => setDisplayCapabilities(true)}>VIEW OUR CAPABILITIES STATEMENT</button>}
                             </div>
                         </div>
-                        {displayCapabilities && <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />}
+                        {/* {displayCapabilities && <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />} */}
                     </div>
                     <Benefits 
                         img={govtBenefits}

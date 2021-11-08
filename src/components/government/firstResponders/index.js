@@ -14,7 +14,7 @@ function FirstResponders() {
                     <p className='section-p'>Hope Unlimited, one of our mBridge partners, provides critical support to both our first responders and the families of Snohomish County that are in crisis. They provide comfort, support and training during crisis events in our county.</p>
                     <p className='section-p'>Hope Unlimited serves 13 different first responder agencies and 1 hospital each of the following counties: Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident.</p>
                     {/* <p className='section-p'>They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.</p> */}
-                    <a href='https://www.youtube.com/watch?v=OYaija3jk-8' className='cta' target='_blank' rel='noreferrer'>LEARN MORE</a>
+                    <a href='https://www.youtube.com/watch?v=ddYhFI8NU3w' className='cta' target='_blank' rel='noreferrer'>LEARN MORE</a>
                 </div>
             </div>
         </div>
