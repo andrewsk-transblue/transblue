@@ -149,7 +149,7 @@ function Multifamily() {
                 <div className='charity-wrapper bg-light'>
                      <div className='wrapper'>
                          <h1>TRANSBLUE GIVES BACK</h1>
-                         <div className='container-fluid camp'>
+                         <div className='container-fluid'>
                             <div className='row'>
                                 <div className='col-lg-5 order-lg-12 left-text'>
                                     <h4 className='section-header'>CREATING A SOLID FOUNDATION FOR YOUTH</h4>
@@ -158,6 +158,7 @@ function Multifamily() {
                                     <div className='section-p mb-3'>
                                         Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
                                     </div>
+                                    <a href='https://www.youtube.com/watch?v=yPTjyTrF_8c' target="_blank" rel='noreferrer' className='cta'>LEARN MORE</a>
                                 </div>
                                 <div className='col-lg-7'>
                                     <HoverImages 

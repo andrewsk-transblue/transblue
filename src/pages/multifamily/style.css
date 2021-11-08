@@ -12,6 +12,10 @@
     width: 92%;
 }
 
+.multifamily-body .charity-wrapper .section-header {
+    margin-top: 0px !important;
+}
+
 /* .multifamily-body .multifamily-about {
     padding: 90px 0px 90px 0px;
 } */
