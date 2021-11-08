@@ -31,19 +31,13 @@ function Locations(props) {
             <Navbar page='LOCATIONS' />
             <Header title='FIND A LOCATION' subtitle='' name='locations' />
             <div className='map-view-toggle'>
-                <button onClick={() => setViewMap(false)} className={!viewMap ? 'active' : ''}>
+                {/* <button onClick={() => setViewMap(false)} className={!viewMap ? 'active' : ''}>
                     <i className="fas fa-list-ul"></i>LIST VIEW</button> 
                 <button onClick={() => setViewMap(true)} className={viewMap ? 'active' : ''}>
                     <i className="fas fa-map"></i>MAP VIEW
-                </button>
+                </button> */}
             </div>
-            {!viewMap && <ListView locations={props.locations} zipcode={props.zipcode}  />}
-            {viewMap > 0 && <MapContainer locations={props.locations} 
-            zipcode={props.zipcode} 
-            //bounds={props.locations[1].bounds}
-            // geojson={props.locations[13].geojson}
-            //coordinates={filteredArr}  
-             />}
+            <ListView locations={props.locations} zipcode={props.zipcode}  />
             <Footer locationPage={true} />
         </Fragment>
         )
