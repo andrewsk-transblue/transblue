@@ -10,6 +10,8 @@ import monohan4 from '../../../images/residential/monohan4.jpg';
 import monohan4small from '../../../images/residential/monohan4small.jpg';
 import monohan3 from '../../../images/residential/monohan3.jpg';
 import monohan3small from '../../../images/residential/monohan3small.jpg';
+import monohan7 from '../../../images/residential/monohan7.jpg';
+import monohan8 from '../../../images/residential/monohan8.jpg';
 
 import './style.css';
 
@@ -31,6 +33,14 @@ const images = [
     {
         img: monohan3,
         imgSmall: monohan3small
+    },
+    {
+        img: monohan7,
+        imgSmall: monohan7
+    },
+    {
+        img: monohan8,
+        imgSmall: monohan8
     }
 ]
 
