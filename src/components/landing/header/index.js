@@ -20,17 +20,20 @@ function Header() {
     ]
 
     useEffect(() => {
+        let interval;
         setTimeout(() => {
             index += 1
             setText(textArray[index])
             console.log(index)
-            setInterval(() => {
+            interval = setInterval(() => {
                 if(index < textArray.length - 1) index += 1
                 else index=0
                 console.log(index)  
                 setText(textArray[index])          
             }, 13000)
         }, 6000)
+
+        return () => window.clearInterval(interval)
     }, [])
 
     return(
