@@ -12,7 +12,7 @@ import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
-const MapContainer = lazy(() => import('./mapcontainer'))
+//const MapContainer = lazy(() => import('./mapcontainer'))
 const ListView = lazy(() => import('./listView'))
 
 function Locations(props) {

@@ -1,10 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
-//import locations from './db';
-import locationIcon from '../../images/location.png';
-import mailIcon from '../../images/mail.png';
-// import states from './statesDb';
-//import axios from 'axios';
 import './style.css';
 
 const reverse = require('reverse-geocode')
