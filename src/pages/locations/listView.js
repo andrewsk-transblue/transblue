@@ -10,6 +10,23 @@ function ListView(props) {
     const [stateLocations, setStateLocations] = useState([])
     const [loading, setLoading] = useState(true)
     const [stateList, setStateList] = useState([])
+    //const [region, setRegion] = useState('')
+    const [locations, setLocations] = useState([])
+
+    const getLocations = () => {
+       
+    }
+
+    function setRegion(e) {
+        console.log(e.target.value)
+        let locationList = []
+        for(let i=0; i<props.locations.length; i++) {
+            if(props.locations[i].region === e.target.value) {
+                locationList.push(props.locations[i])
+            }
+        }
+        setLocations(locationList)
+    }
     
     
     // const getStates = () => {
@@ -22,7 +39,7 @@ function ListView(props) {
 
     useEffect(() => {
         //console.log(prop)
-        setStateLocations(props.locations)
+        setLocations(props.locations)
     }, [])
 
     // useEffect(() => {
@@ -56,7 +73,7 @@ function ListView(props) {
     return(
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
-                <select className="browser-default custom-select">
+                <select className="browser-default custom-select" onChange={setRegion}>
                     <option className='first-option' value=''>SELECT REGION</option>
                     <option value='northwest'>NORTHWEST</option>
                     <option value='northeast'>NORTHEAST</option>
@@ -66,13 +83,13 @@ function ListView(props) {
                 </select>
             </div>
             <div className='row'>
-                {stateLocations.length === 0 && loading === false && 
+                {locations.length === 0 && loading === false && 
                     <div className='no-list-locations'>
                         <h6>NO LOCATIONS AVAILABLE IN {state.toUpperCase()} YET</h6>
                         <p>Please select another state or view locations on our map</p>
                     </div>
                 }
-                {stateLocations.length > 0 && stateLocations.map(location => {
+                {locations.length > 0 && locations.map(location => {
                     return(
                         <div className='col-12 col-md-6 col-lg-4'>
                             <div className='listview-location'>

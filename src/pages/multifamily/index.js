@@ -160,7 +160,6 @@ function Multifamily() {
                                     </div>
                                     <a href='/givesback/solidrock' className='cta'>LEARN MORE</a>
                                     {/* <a href='https://www.youtube.com/watch?v=yPTjyTrF_8c' target="_blank" rel='noreferrer' className='cta'>LEARN MORE</a> */}
-
                                 </div>
                                 <div className='col-lg-7'>
                                     <HoverImages 
