@@ -158,7 +158,9 @@ function Multifamily() {
                                     <div className='section-p mb-3'>
                                         Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
                                     </div>
-                                    <a href='https://www.youtube.com/watch?v=yPTjyTrF_8c' target="_blank" rel='noreferrer' className='cta'>LEARN MORE</a>
+                                    <a href='/givesback/solidrock' className='cta'>LEARN MORE</a>
+                                    {/* <a href='https://www.youtube.com/watch?v=yPTjyTrF_8c' target="_blank" rel='noreferrer' className='cta'>LEARN MORE</a> */}
+
                                 </div>
                                 <div className='col-lg-7'>
                                     <HoverImages 
