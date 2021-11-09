@@ -114,7 +114,7 @@ class Navbar extends Component {
                         </li>
                     </ul>
                     {this.props.franchise && 
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav ml-auto franchise-info">
                             <li className="nav-item ml-auto">
                                 <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
                             </li>

@@ -17,6 +17,10 @@ nav.navbar.topPadding {
     top: 30px
 }
 
+nav .franchise-info {
+    margin-right: 80px;
+}
+
 nav .navbar-nav li a,
 nav button,
 nav .navbar-collapse,
