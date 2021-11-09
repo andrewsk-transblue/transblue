@@ -32,6 +32,7 @@ ReactGA.initialize(TRACKING_ID);
 function Franchise(props) {
     const [easybaseData, seteasybaseData] = useState([]);
     const [services, setServices] = useState({})
+    const [name, setName] = useState('')
     const { db, e } = useEasybase();
     const [displaySnow, setDisplaySnow] = useState(true);
     let userLocation = []
@@ -49,13 +50,14 @@ function Franchise(props) {
             if(region === 'southwest' || region === 'west') setDisplaySnow(false)
 
             seteasybaseData(ebData);
+            setName(ebData[0].name.slice(10))
 
             setServices(regionalServices[region])
         }
          mounted();
     }, [])
-
-    let name = easybaseData[0].name.slice(10)
+    //let name = easybaseData[0].name.slice(10)
+    
     //console.log(name)
 
     return(

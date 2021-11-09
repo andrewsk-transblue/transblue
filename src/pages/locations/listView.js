@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
+import beverlyhills from '../../images/locations/beverlyhills.jpg';
 
 const reverse = require('reverse-geocode')
 
@@ -30,48 +31,11 @@ function ListView(props) {
             setLocations(locationList)
         }
     }
-    
-    
-    // const getStates = () => {
-    //     //dynamically create list of states with Transblue locations from database
-    //     for(let i=0; i<props.locations.length; i++) {
-    //         if(stateList.indexOf(props.locations[i].location) === -1) stateList.push(props.locations[i].location)
-    //     }
-    //     setStateList(stateList)
-    // }
 
     useEffect(() => {
         //console.log(prop)
         setLocations(props.locations)
     }, [])
-
-    // useEffect(() => {
-    //     if('getCurrentPosition' in navigator.geolocation) {
-    //         navigator.geolocation.getCurrentPosition(position => {
-    //             let userState = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-    //             if(stateList.indexOf(userState)  !== -1) {
-    //                 setState(userState)
-    //                 setStateLocations(props.locations.filter(location => location.location === userState))
-    //                 setLoading(false)
-    //             }
-    //             else {
-    //                 setLoading(false)
-    //                 setStateLocations(props.locations.filter(location => location.location === state))
-    //             }
-    //         }, err => {
-    //             console.log(err)
-    //             setLoading(false)
-    //             setStateLocations(props.locations.filter(location => location.location === state))
-    //         }, {timeout: 5000})
-    //     }
-    //     else {
-    //         setLoading(false)
-    //         setStateLocations(props.locations.filter(location => location.location === state))
-    //         //console.log(props.locations.filter(location => location.location === state))       
-    //     }
-
-    //     getStates()
-    // }, [])
 
     return(
         <div className='listview-wrapper container-fluid'>
@@ -93,14 +57,15 @@ function ListView(props) {
                         <p>Please select another state or view locations on our map</p>
                     </div>
                 }
-                {locations.length > 0 && locations.map(location => {
+                {locations.length > 0 && locations.map((location, index) => {
                     return(
-                        <div className='col-12 col-md-6 col-lg-4'>
-                            <div className='listview-location'>
-                                <div className='row'>
-                                    <h5>{`${location.name.toUpperCase().slice(10)}, ${location.state}`}</h5>
+                        <div className='col-12 col-md-6 col-lg-4 mb-5 text-center'>
+                            <a href={`/locations/${location.state}/${location.urlcity}`} target="_blank" rel='noreferrer'>
+                                <div className={`location-${index} location`}>
+                                    {location.skyline && <img src={location.skyline} />}
+                                    <h4>{`${location.name.toUpperCase().slice(10)}, ${location.state}`}</h4>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     )
                 })}
