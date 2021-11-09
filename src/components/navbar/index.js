@@ -118,15 +118,6 @@ class Navbar extends Component {
                             <li className="nav-item ml-auto">
                                 <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
                             </li>
-                            <li className="nav-item ml-auto">
-                                <Link 
-                                    className="nav-link py-0"
-                                    to={`/locations/${this.props.state}/${this.props.urlCity}/subcontractor`}
-                                    target='_blank' rel='noreferrer'
-                                >
-                                    SUB APPLICATION
-                                </Link>
-                            </li>
                             <li className='nav-item ml-auto'>
                                 <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
                             </li>
