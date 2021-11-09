@@ -178,7 +178,6 @@ function Footer(props) {
                     <a href='https://www.instagram.com/transblue_/?hl=en'><i className="fab fa-instagram"></i></a>
                 </span>
             </div>
-
             <div className='terms'>
                 <span>
                     <a href='/privacy'>PRIVACY POLICY</a>
