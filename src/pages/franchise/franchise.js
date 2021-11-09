@@ -9,7 +9,6 @@ import NewSlideshow from '../../components/newSlideshow';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
 import Multifamily from './multifamily';
-import Contact from './contact';
 import Govt from './govt';
 import Green from './green';
 import Snow from './snow';
@@ -107,10 +106,6 @@ function Franchise(props) {
                 {displaySnow && <Snow location={easybaseData[0]} />}
 
                 <div className='wrapper'>
-                    <Contact location={easybaseData[0]} />
-                </div>
-                    <Finance location={easybaseData[0]} />
-                <div className='wrapper'>
                     <Commercial location={easybaseData[0]} />
                     <Govt location={easybaseData[0]} />
                     <Green location={easybaseData[0]} />
@@ -142,6 +137,8 @@ function Franchise(props) {
                     </div>
                 </div>
                 </div>
+
+                <Finance location={easybaseData[0]} />
 
                 <Contact2 name={easybaseData[0].name} phone={easybaseData[0].phone} email={easybaseData[0].email} location={`${easybaseData[0].city}, ${easybaseData[0].state}`} franchise={easybaseData[0]} />
                 {/* <div className='container-fluid contact-container'>
