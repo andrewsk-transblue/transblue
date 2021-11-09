@@ -19,7 +19,7 @@ function Multifamily(props) {
                 phone: props.location.phone,
                 email: props.location.email
             }}
-            imageSide='right'
+            imageSide='left'
             services={[
                 'Snow and Ice Management',
                 'Pool Construction',
