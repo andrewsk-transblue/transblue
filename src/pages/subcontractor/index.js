@@ -41,6 +41,7 @@ function Subcontractor(props) {
     return(
         <Fragment>
             <Navbar theme='dark' />
+            <FranchiseNav />
             <div className='bg'>
                 <select className='browser-default custom-select' onChange={selectLocation}>
                     {easybaseData.length > 0 && easybaseData.map(location => {
@@ -50,7 +51,7 @@ function Subcontractor(props) {
                     })}
                 </select>
                 {displayForm && <div className='subcontractor-wrapper'>
-                    <h2>TRANSBLUE {location.name.toUpperCase()}</h2>
+                    <h2>{location.name.toUpperCase()}</h2>
                     <h5>SUBCONTRACTOR APPLICATION</h5>
                     <hr />
                     {easybaseData.length > 0 && <Form location={location} />}
