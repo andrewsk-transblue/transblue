@@ -7,7 +7,7 @@ import back from '../../../images/residential/back.png';
 import line from '../../../images/line.png';
 import './style.css';
 
-function Design() {
+function Design(props) {
     //console.log(window.innerHeight)
     const slides = [
         {
@@ -26,11 +26,18 @@ function Design() {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            index < 2 ? setIndex(index + 1) : setIndex(0)
-        }, 20000);
-        return () => clearInterval(interval)
-    }, [index])
+        if(props.display) {
+            setTimeout(() => {
+                console.log('testing setTimeout instead of interval')
+                index < 2 ? setIndex(index + 1) : setIndex(0)
+            }, 20000)
+        }
+        else {
+            setIndex(0)
+        }
+        // else clearInterval(interval)
+        // return () => clearInterval(interval)
+    }, [index, props.display])
 
     return(
         <div className='design-wrapper' data-index={index}>

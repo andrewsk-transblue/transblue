@@ -48,10 +48,11 @@
 }
 
 .footer-container .contact a {
-    margin: 0px 10px;
+    margin: 0px 10px 0px 10px;
     letter-spacing: .03em;
     text-decoration: none;
     color: rgb(192, 192, 192);
+    display: inline-block
 }
 
 .footer-container .links a {

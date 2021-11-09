@@ -81,8 +81,9 @@ function Residential() {
                 <Installation />
                 </div>
                 <Carousel />
-                <ViewportBlock onEnterViewport={() => setDisplayDesign(true)} />
-                {displayDesign && <Design />}
+                <ViewportBlock onEnterViewport={() => setDisplayDesign(true)} onLeaveViewport={() => setDisplayDesign(false)} />
+                <Design display={displayDesign} />
+                {/* <Design /> */}
 
                 <Rockstar />
                 <div className='wrapper'>
