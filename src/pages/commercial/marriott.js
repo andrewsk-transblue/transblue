@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContactModal from '../../components/contactModal';
 import asphalt from '../../images/commercial/asphalt.jpg';
 import './style.css';
 
 function Marriott() {
+    const [displayVideo, setDisplayVideo] = useState(false);
+
     return(
         <div className='marriott-wrapper container-fluid'>
             <div className='row'>
                 <div className='col-lg-7 col-12'>
-                    <img src={asphalt} alt='Marriott Asphalt' />
+                    <div className='video-wrapper'>
+                        {!displayVideo && <img src={asphalt} alt='Marriott Asphalt' />}
+                        {!displayVideo && <button className='play' onClick={() => setDisplayVideo(true)}><i className="far fa-play-circle fa-5x"></i></button>}
+                        {displayVideo && <iframe width="560" src="https://www.youtube.com/embed/TaMI1-TwOmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+                    </div>
                 </div>
                 <div className='col-lg-5 col-12 left-text'>
                     <h4 className='section-header'>THE MARRIOTT PROJECT</h4>

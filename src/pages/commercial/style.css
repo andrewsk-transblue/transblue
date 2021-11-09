@@ -19,9 +19,30 @@
     margin-top: 100px;
     width: 93%;
 }
-.marriott-wrapper img {
+
+.marriott-wrapper .video-wrapper {
+    position: relative;
+}
+
+.marriott-wrapper iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.marriott-wrapper .video-wrapper img {
     width: 100%;
     margin-bottom: 0px;
+}
+
+.marriott-wrapper .video-wrapper button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 0px;
 }
 
 .marriott-wrapper .section-p:last-of-type {
