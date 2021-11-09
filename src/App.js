@@ -48,7 +48,6 @@ function App() {
             {/* <Route exact path='/featured' component={Projects} /> */}
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
             <Route exact path='/locations/:state/:urlCity' component={Franchise} />
-            <Route exact path='/locations/:state/:urlCity/subcontractor' component={Subcontractor} />
             <Route exact path='/subcontractor' component={Subcontractor} />
             <Route exact path='/locations/:zipcode' render={(props) => {
                 const zipcode = props.match.params.zipcode;
