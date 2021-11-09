@@ -27,8 +27,8 @@ function Multifamily(props) {
                 'Asphalt Paving',
                 'Large Landscape Installs',
                 'Roofing',
-               'Siding',
-               'ESG Service Offerings'
+                'Siding',
+                'ESG Service Offerings'
             ]}
             services2={[
                 'Painting',

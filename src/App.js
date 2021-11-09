@@ -14,7 +14,7 @@ const Multifamily = lazy(() => import ('./pages/multifamily/index'));
 const Government = lazy(() => import ('./pages/government/index'));
 const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
-const Subcontractor = lazy(() => import('./pages/franchise/subcontractor/index'));
+const Subcontractor = lazy(() => import('./pages/subcontractor/index'));
 const Featured = lazy(() => import('./pages/featured'));
 const Form = lazy(() => import('./pages/addLocation/form'));
 const Privacy = lazy(() => import('./pages/privacy/index'));
@@ -49,6 +49,7 @@ function App() {
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
             <Route exact path='/locations/:state/:urlCity' component={Franchise} />
             <Route exact path='/locations/:state/:urlCity/subcontractor' component={Subcontractor} />
+            <Route exact path='/subcontractor' component={Subcontractor} />
             <Route exact path='/locations/:zipcode' render={(props) => {
                 const zipcode = props.match.params.zipcode;
                 return <Locations locations={easybaseData} zipcode={zipcode} />
