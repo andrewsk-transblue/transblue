@@ -43,6 +43,7 @@ function Subcontractor(props) {
             <Navbar theme='dark' />
             <FranchiseNav />
             <div className='bg'>
+                <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6>
                 <select className='browser-default custom-select' onChange={selectLocation}>
                     {easybaseData.length > 0 && easybaseData.map(location => {
                         return(
