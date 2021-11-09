@@ -153,6 +153,11 @@ function Footer(props) {
                 </div>
             </div> */}
 
+            <span className='contact'>
+                <a href='tel:+8444822583'><i className='fas fa-phone'></i> (844) 482-2583</a>
+                <a href='mailto:inquiries@transblue.com'><i className='fas fa-envelope'></i> inquiries@transblue.com</a>
+            </span>
+
             <span className='links'>
                 <a href='/'>HOME</a>
                 <a href='http://snow.transblue.com/'>SNOW SERVICES</a>
