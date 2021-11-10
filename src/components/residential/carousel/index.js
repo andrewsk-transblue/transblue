@@ -3,6 +3,7 @@ import kitchen from '../../../images/residential/carouselKitchen-min.jpg';
 import concrete from '../../../images/residential/concrete.jpg'
 import pavers2 from '../../../images/residential/paver.jpg';
 import pool from '../../../images/residential/carouselPool-min.jpg';
+import interior from '../../../images/residential/interior.jpg';
 import outdoor from '../../../images/residential/outdoor3.jpg';
 import outdoorliving from '../../../images/residential/outdoorliving.jpg';
 import enclosure from '../../../images/residential/enclosure.jpg';
@@ -13,7 +14,7 @@ import back from '../../../images/back50.png';
 import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-let images = [outdoorliving, kitchen, pool, concrete, pavers2, turf, retaining, enclosure, outdoor ];
+let images = [outdoorliving, kitchen, interior, pool, concrete, pavers2, turf, retaining, enclosure, outdoor ];
 let text = [
             {
                 title: 'OUTDOOR LIVING SPACE',
@@ -22,7 +23,11 @@ let text = [
             {
                 title: 'OUTDOOR KITCHENS',
                 body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
-            },{
+            }, {
+                title: 'INTERIOR REMODELING',
+                body: ''
+            },
+            {
                 title: 'POOLS & SPAS',
                 body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie."
             },{
