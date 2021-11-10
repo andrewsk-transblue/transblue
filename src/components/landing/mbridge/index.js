@@ -13,6 +13,7 @@ import quality from '../../../images/newLanding/quality6.jpg';
 import quality2 from '../../../images/newLanding/quality5.jpg';
 import quality4 from '../../../images/newLanding/quality4.jpg';
 import downarrow from '../../../images/featured/downarrow.png';
+import fence from '../../../images/newLanding/fence.png';
 
 import './style.css';
 
@@ -40,7 +41,7 @@ function Mbridge() {
                                 <p className='tb-is'>Transblue is</p>
                                 <p className='title'>EXTERIOR CONSTRUCTION</p>
                                 <p className='body'>We understand that backyards are more than a beautiful lawn. They're birthday parties, holidays, and celebrations with family.</p>
-                                <img src={heart} alt='' />
+                                <img src={fence} alt='' />
                             </div>
                         </div>
                     </div>
