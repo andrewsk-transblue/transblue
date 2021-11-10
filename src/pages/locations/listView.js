@@ -41,7 +41,7 @@ function ListView(props) {
         <div className='listview-wrapper container-fluid'>
             <div className='row'>
                 <select className="browser-default custom-select" onChange={setRegion}>
-                    <option className='first-option' value=''>SELECT REGION</option>
+                    <option className='first-option' value=''>FILTER BY REGION</option>
                     <option value='all'>ALL REGIONS</option>
                     <option value='northwest'>NORTHWEST</option>
                     <option value='northeast'>NORTHEAST</option>
