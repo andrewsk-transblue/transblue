@@ -98,7 +98,7 @@ function Franchise(props) {
                         
                     </div>
                 </div>
-                <NewSlideshow location={easybaseData[0]} />
+                {/* <NewSlideshow location={easybaseData[0]} /> */}
                 <div className='wrapper'>
                     <Multifamily location={easybaseData[0]} />
                 </div>
