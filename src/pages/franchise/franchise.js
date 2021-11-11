@@ -95,7 +95,6 @@ function Franchise(props) {
                                 <ServiceModal service='all' snow={displaySnow} />
                             </div>
                         </div>}
-                        
                     </div>
                 </div>
                 {/* <NewSlideshow location={easybaseData[0]} /> */}

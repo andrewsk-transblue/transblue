@@ -12,7 +12,7 @@ function Professional(props) {
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
                         <h5>TURNKEY SOLUTIONS</h5>
-                        <p className='section-p body'>Our flexible turnkey solution allows you to focus on managing your business rather than managing contractors</p>
+                        <p className='section-p body'>Our flexible turnkey solutions are affordable and simple. At Transblue, we provide quality work while ensuring your day to day life and operations are not disrupted.</p>
                     </div>
                     <div className='col-12 col-lg-4 text-center'>
                         <i className="fas fa-seedling fa-2x"></i>
