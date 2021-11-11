@@ -1,6 +1,5 @@
 import React from 'react';
 import Section from '../../components/section';
-import multifamily from '../../images/franchise/multifamily.jpeg';
 import regional from './regional';
 //import './multifamily.css';
 

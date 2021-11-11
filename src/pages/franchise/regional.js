@@ -14,7 +14,6 @@ import necommercial from '../../images/franchise/necommercial.jpg';
 import nemulti from '../../images/franchise/nemulti.jpg';
 import neev from '../../images/franchise/neev.jpg';
 
-
 const regional = {
     'west': [wcommercial, wmulti, wev],
     'northwest': [nwcommercial, nwmulti, nwev],
