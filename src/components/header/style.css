@@ -54,13 +54,6 @@
     background-size: cover;
     background-position: center center;
 }
-
-.header-wrapper[region='midwest'] {
-    background-image: url('../../images/franchiseHeaders/midwest.jpeg') ;
-    background-size: cover;
-    background-position: center center;
-}
-
 .header-wrapper[region='east'] {
     background-image: url('../../images/franchiseHeaders/east.jpeg');
     background-size: cover;
@@ -72,7 +65,6 @@
     background-size: cover;
     background-position: center center;
 }
-
 .header-wrapper[region='west'] {
     background-image: url('../../images/franchiseHeaders/west.jpeg') ;
     background-size: cover;
