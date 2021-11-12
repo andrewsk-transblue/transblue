@@ -46,7 +46,7 @@ const charities = [
         url:'hope',
         description: [
             'Hope unlimited provides critical support to both our first responders and the families of Snohomish County that are in crisis. They provide comfort, support and training during crisis events in our county.',
-            'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs. team members.'
+            'They serve13 different first responder agencies and 1 hospital each of the following counties: i Snohomish, Island, and South Skagit Counties. They had 363 calls for service in 2020 – this means that a chaplain was requested by the fire, police or hospital for assistance in a critical incident. They are adding a new resiliency training programs for first responders to help them cope with challenges of their jobs.'
         ]
     },
     {
@@ -140,6 +140,8 @@ function GivesBack(props) {
                                     <p className='section-p'>{p}</p>
                                 )
                             })}
+                            {/* {charities[activeButton].link &&
+                            <a href='https://www.youtube.com/watch?v=ddYhFI8NU3w'>LEARN MORE ABOUT </a>} */}
                         </div>
                     </div>}
                 </div>

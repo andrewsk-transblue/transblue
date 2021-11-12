@@ -13,7 +13,7 @@ function Marriott() {
                     <div className='video-wrapper'>
                         {!displayVideo && <img src={asphalt} alt='Marriott Asphalt' />}
                         {!displayVideo && <button className='play' onClick={() => setDisplayVideo(true)}><i className="far fa-play-circle fa-5x"></i></button>}
-                        {displayVideo && <iframe width="560" src="https://www.youtube.com/embed/TaMI1-TwOmI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+                        {displayVideo && <iframe src="https://www.youtube.com/embed/TaMI1-TwOmI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
                     </div>
                 </div>
                 <div className='col-lg-5 col-12 left-text'>
