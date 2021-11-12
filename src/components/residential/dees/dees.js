@@ -32,7 +32,7 @@ function Dees() {
                     
                     Lorem ipsum dolor sit amet, consectetu a elit. Praesent eget elementum sem. Vivamus id m libero, eget ornare eros. */}
                     <p className='section-p'>
-                    A portion of profit from every Transblue project goes to helping those in need around the globe. One of our mBridge partners, Dee's Hope, is an organization that helps young girls and women in Uganda escape domestic servitude by providing shelter, education, etc. Last year, we completed our Urban Oasis project that allowed us to donate over $20,000 to Dee's Hope, resulting in the freedom of 17 women and young girls from domestic servitude.</p>
+                    A portion of profit from every Transblue project goes to helping those in need around the globe.Dee's Hope is an organization that helps young girls and women in Uganda escape domestic servitude by providing shelter, education, etc. We completed our Urban Oasis project and similar projects that allowed us to donate over $20,000 to Dee's Hope, resulting in the freedom of 17 women and young girls.</p>
                     
                     {/* <p className='pr-2 mb-3 text-secondary'> Sed tincidunt ex nulla, id interdum odio aliquet vel. Praesent accumsan condimentum eros non luctus. */}
                     {/* </p> */}

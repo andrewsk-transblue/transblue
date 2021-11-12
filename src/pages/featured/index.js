@@ -105,7 +105,7 @@ function Featured() {
             <div className='projects-wrapper container-fluid'>
                 <div className='row'>
                     <div className='col-lg-6 order-lg-12'>
-                        <FeaturedCard img={projects[0].img} title={projects[0].location} />
+                        <FeaturedCard img={projects[0].img} />
                     </div>
                     <div className='col-lg-6'>
                         <h4>{projects[0].title}</h4>
