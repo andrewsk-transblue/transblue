@@ -13,7 +13,7 @@ import Snow from '../../components/snow';
 import Footer from '../../components/footer/index';
 import Fade from 'react-reveal/Fade';
 import headerBg from '../../images/commercial/header2.jpg';
-import simple from '../../images/commercial/simple3.jpg';
+import simple from '../../images/commercial/simple.jpg';
 import nextstep4 from '../../images/commercial/nextstep4.png';
 import snow from '../../images/commercial/snow.jpeg';
 import './style.css';
@@ -76,7 +76,7 @@ class Commercial extends Component {
                         <div className='row'>
                             <div className='col-lg-8 my-auto pr-0'>
                                 <h1 className='w-100'>Running a business is hard.</h1>
-                                <h3 className='mb-3'><i>Designing your landscape shouldn't be.</i></h3>
+                                <h3 className='mb-3'><i>Handling construction management shouldn't be.</i></h3>
                                 <h6>Our professionals simplify the process with:</h6>
                                 <Fade right cascade>
                                     <ul>
