@@ -7,6 +7,31 @@
     /* position: relative; */
 }
 
+.bg h2 {
+    color: #ed6a22;
+    color: #0b56a4;
+    font-family: 'Raleway';
+    letter-spacing: .05em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.bg .vip {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.bg h5 {
+    font-family: 'Raleway';
+    margin: 0 auto;
+    width: 60%;
+    text-align :center;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    letter-spacing: .03em;
+}
+
 .bg select {
     width: 40%;
     margin: 0 auto !important;

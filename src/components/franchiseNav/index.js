@@ -4,7 +4,7 @@ import './style.css';
 function FranchiseNav() {
     return(
         <div className='franchise-nav text-right'>
-            <a href='/'>BECOME AN EMPLOYEE</a>
+            <a href='/careers'>CAREERS</a>
             <a 
                 href='https://transbluefranchise.com/'
                 target="_blank"

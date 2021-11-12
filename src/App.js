@@ -21,6 +21,7 @@ const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
 const Finance = lazy(() => import('./pages/finance'));
+const Careers = lazy(() => import('./pages/careers'))
 
 function App() {
   //console.log('rendering App.js')
@@ -65,6 +66,7 @@ function App() {
             {easybaseData.length > 0 &&  <Route exact path='/finance' >
               <Finance locations={easybaseData} />
             </Route>}
+            <Route exact path='/careers' component={Careers} />
           </Suspense>
         </Router>
       </HelmetProvider>
