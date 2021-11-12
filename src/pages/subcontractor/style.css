@@ -16,10 +16,17 @@
     margin-bottom: 16px;
 }
 
-.bg .vip {
+.bg img.vip {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg .vip:not(img.vip) {
     width: 95%;
     margin: 0 auto;
     margin-bottom: 80px;
+
 }
 
 .bg h5 {
@@ -50,7 +57,7 @@
     height: 100%;
     padding-top: 120px;
     padding-bottom: 100px;
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
 }
 
 /* .subcontractor-wrapper .alert-wrapper {
