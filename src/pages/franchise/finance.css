@@ -8,7 +8,7 @@
     background-position: center center;
 }
 
-.finance-bg[data-region='northeast'] {
+.finance-bg[data-region='east'] {
     background-image: url('../../images/financeBgNe.jpg');
 }
 

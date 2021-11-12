@@ -1,6 +1,6 @@
 const images = {
     'northwest': 'northwest.jpg',
-    'northeast': 'northeast.jpeg',
+    'east': 'east.jpeg',
     'midwest': 'midwest.jpeg',
     'southwest': 'southwest.jpg',
     'west': 'west.jpg'

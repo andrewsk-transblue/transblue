@@ -9,6 +9,7 @@ import wkitchen from '../../images/franchise/services/wkitchen.jpg';
 import wpool from '../../images/franchise/services/wpool.jpg';
 import nekitchen from '../../images/franchise/services/nekitchen.jpg';
 import neconcrete from '../../images/franchise/services/neconcrete.jpg';
+import neinterior from '../../images/franchise/services/neinterior.jpg';
 import spool from '../../images/franchise/services/spool.jpg';
 import spatio from '../../images/franchise/services/spatio.jpg';
 import swkitchen from '../../images/franchise/services/swkitchen.jpg';
@@ -25,9 +26,9 @@ const regionalServices = {
         services: ['POOLS', 'DECKS', 'FIREPITS', 'OUTDOOR KITCHENS'],
         images: [wpool, wdeck, nwfirepit, wkitchen]
     },
-    'northeast': {
-        services: ['OUTDOOR KITCHENS', 'SNOW REMOVAL', 'CONCRETE','SUNROOMS' ],
-        images: [nekitchen , nesnow, neconcrete, sunroom]
+    'east': {
+        services: ['OUTDOOR KITCHENS', 'SNOW REMOVAL', 'INTERIOR REMODEL','SUNROOMS' ],
+        images: [nekitchen , nesnow, neinterior, sunroom]
     },
     'midwest': {
         services: ['SUNROOMS', 'POOLS', 'PATIOS', 'DECKS'],

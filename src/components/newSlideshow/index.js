@@ -31,7 +31,7 @@ let residentialImages = {
     'west': [west, west2, west3, west4],
     'northwest': [northwest, northwest3, northwest2, northwest4],
     'southwest': [southwest, southwest2, southwest3, southwest4],
-    'northeast': [east, east3, east2, east4],
+    'east': [east, east3, east2, east4],
     'midwest': [midwest, midwest2, midwest3, midwest4]
 };
 

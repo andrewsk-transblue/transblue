@@ -37,6 +37,7 @@ function ServiceModal(props) {
                                             Green Roofs<br />                                           
                                         </div>
                                         <div className='col-12 col-sm-6'>
+                                            Interior Remodeling<br />
                                             Irrigation<br />
                                             Lawn Installation<br/>
                                             Water Features<br />

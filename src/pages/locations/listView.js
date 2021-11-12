@@ -40,10 +40,9 @@ function ListView(props) {
                     <option className='first-option' value=''>FILTER BY REGION</option>
                     <option value='all'>ALL REGIONS</option>
                     <option value='northwest'>NORTHWEST</option>
-                    <option value='northeast'>NORTHEAST</option>
+                    <option value='east'>EAST</option>
                     <option value='west'>WEST</option>
                     <option value='southwest'>SOUTHWEST</option>
-                    <option value='midwest'>MIDWEST</option>
                 </select>
             </div>
             <div className='row'>

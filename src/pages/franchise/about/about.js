@@ -15,7 +15,7 @@ function About(props) {
             </div>
             <div className='row'>
                 <div className='col-lg-6'>
-                    <h1>A LANDSCAPING COMPANY<br /> YOU CAN TRUST</h1>
+                    <h1>A CONSTRUCTION COMPANY<br /> YOU CAN TRUST</h1>
                     <div className='row contact'>
                         <div className='franchise-email'><a href='mailto:incomingleads@transblue.org'><i className="fas fa-envelope"></i> {props.email}</a></div>
                         <div className='franchise-phone'><a href={`tel:+${tel}`}><i className="fas fa-phone"></i>  {props.phone}</a></div>

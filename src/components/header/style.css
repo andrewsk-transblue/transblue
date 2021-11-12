@@ -61,8 +61,8 @@
     background-position: center center;
 }
 
-.header-wrapper[region='northeast'] {
-    background-image: url('../../images/franchiseHeaders/northeast.jpeg') ;
+.header-wrapper[region='east'] {
+    background-image: url('../../images/franchiseHeaders/east.jpeg');
     background-size: cover;
     background-position: center center;
 }

@@ -20,8 +20,8 @@ class Form extends Component {
         lat: 'Latitude',
         lon: 'Longitude',
         location: '',
-        region: 'northeast',
-        image: 'northeast.jpeg',
+        region: 'east',
+        image: 'east.jpeg',
         phone: '',
         email: ''
         /////need to add locations
@@ -98,7 +98,7 @@ class Form extends Component {
                     <select id='region' onChange={this.selectRegion} defaultValue={'Region'} required>
                         <option value='Region' disabled>Region</option>
                         <option value='northwest'>Northwest</option>
-                        <option value='northeast'>Northeast</option>
+                        <option value='east'>East</option>
                         <option value='west'>West</option>
                         <option value='southwest'>Southwest</option>
                         <option value='midwest'>Midwest</option>

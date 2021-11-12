@@ -70,7 +70,8 @@ function Franchise(props) {
                 <Navbar page='' franchise={true} city={`${easybaseData[0].city}`} state={`${easybaseData[0].state}`} phone={`${easybaseData[0].callbluephone}`} name={`${easybaseData[0].name}`} urlCity={`${easybaseData[0].urlcity}`}  />
                 <Header
                     region={easybaseData[0].region}
-                    title={easybaseData[0].name.toUpperCase()}
+                    title='TRANSBLUE'
+                    // title={easybaseData[0].name.toUpperCase()}
                     subtitle={`Serving ${name}, ${easybaseData[0].state} and surrounding areas`}
                     franchise={true}
                 />
