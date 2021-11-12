@@ -121,6 +121,10 @@
     width: 95%;
 }
 
+.nextstep .section-header {
+    margin-top: 0px !important;
+}
+
 .nextstep .section-subheader {
     font-family: 'Raleway', sans-serif;
     color: rgb(92, 92, 92);

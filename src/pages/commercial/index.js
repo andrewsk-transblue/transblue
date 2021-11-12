@@ -38,7 +38,7 @@ class Commercial extends Component {
                     <meta name="description" content="Transblue Commercial Services" />
                 </Helmet>
                 <Navbar page='COMMERCIAL' parentPage='gc' />
-                <Header name='commercial' img={headerBg} title='COMMERCIAL' subtitle='Your Business Landscaping Solution' />
+                <Header name='commercial' img={headerBg} title='COMMERCIAL' subtitle='Your Business Construction Solution' />
                 <ContactCta />
                 <div className='commercial-body'>
                 <div className='wrapper'>
@@ -119,10 +119,10 @@ class Commercial extends Component {
                             <div className='col-lg-6 left-text'>
                                 <h4 className='section-header'>
                                     <p className='text-secondary section-subheader'>TRANSBLUE AND NEXT STEP PREGNANCY CLINIC</p>
-                                    HELPING PREGNANT WOMEN IN NEED
+                                    SUPPORT FOR EXPECTING MOTHERS
                                 </h4>
                                 <p className='section-p'>It's important to us at Transblue to do things in the community and for the community.</p>
-                                <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, women are provided free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
+                                <p className='section-p pb-4'>Next Step Pregnancy clinic an amazing organization that supports pregnant women with limited resources. Without insurance, mothers are provided free diapers, formula, pregnancy tests, ultrasounds, and more. Transblue provided complimentary commercial landscaping for Next Step with the goal of creating an exterior that is as beautiful as the work that they do.</p>
                             </div>
                         </div>
                     </div>

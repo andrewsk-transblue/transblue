@@ -1,6 +1,5 @@
 import React from 'react';
 import Section from '../../components/section';
-import evCropped from '../../images/government/evCropped.jpg';
 import regional from './regional';
 
 function Green(props) {

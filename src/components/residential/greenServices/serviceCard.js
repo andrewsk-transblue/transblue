@@ -65,7 +65,7 @@ function ServiceCard(props) {
                         {/* {text[index].body} */}
                         {body[index]}
                     </p>
-                    <a className='mr-1' href='https://tbev.herokuapp.com/'>LEARN MORE</a>
+                    <a className='mr-1' href='https://green.transblue.com'>LEARN MORE</a>
                     <button onClick={() => changeSlide('decrement')}><img src={leftarrow} alt='Prev Slide' /></button>
                     <button onClick={() => changeSlide('increment')}><img src={rightarrow} alt='Next Slide' /></button>
                 </div>

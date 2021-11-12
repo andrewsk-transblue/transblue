@@ -45,7 +45,7 @@ class GreenServices extends Component {
                         <hr />
                         <p className='section-p'>We are committed to the future beauty of our outdoors. For that reason we offer an array of projects that help minimize your carbon footprint.</p>
                         <p className='section-p mb-4'>We provide proffesional grade Electric vehicle charge installations and retrofitting. To conserve power useage we also provide solar paneling installations for roofing and shade structures. </p>
-                        <a href='https://tbev.herokuapp.com/'>LEARN MORE</a>
+                        <a href='https://green.transblue.com'>LEARN MORE</a>
                     </div>
                     
                 </div>
