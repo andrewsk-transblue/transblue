@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Navbar from '../../components/navbar';
 import FranchiseNav from '../../components/franchiseNav';
 import Form from './form';
+import Promise from './promise';
 import Footer from '../../components/footer';
 import vip from '../../images/subcontractor/vip.jpeg';
 import './style.css';
@@ -58,6 +59,7 @@ function Subcontractor(props) {
                         </div>
                     </div>
                 </div>
+                <Promise />
                 <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6>
                 <select className='browser-default custom-select' onChange={selectLocation}>
                     <option value=''>Select Location</option>
