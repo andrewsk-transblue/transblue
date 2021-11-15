@@ -10,6 +10,7 @@ import './style.css';
 
 function Core() {
     return(
+        <div className='core-bg'>
         <div className='core-wrapper'>
             <div className='row'>
                 <div className='col-lg-5 pr-5'>
@@ -50,7 +51,7 @@ function Core() {
                         </div>
 
                         <div className='col-4'>
-                            <Fade duration={1200} delay={2500}>
+                            <Fade duration={1200} delay={2000}>
                             <img src={through} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
@@ -58,6 +59,7 @@ function Core() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

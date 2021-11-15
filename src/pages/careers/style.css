@@ -6,8 +6,8 @@
     margin-top: -100px;
     background-color: white;
     z-index: 5;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    padding: 50px 70px 70px 70px;
+    box-shadow: 0px 1px 20px 8px rgba(0,0,0,0.1);
+    padding: 50px 70px 60px 70px;
     position: relative;
 }
 
@@ -22,17 +22,10 @@
     margin-bottom: 25px;
 }
 
-.apply-bg {
-    width: 100%;
-    background-color: #f8f8f8;
-    padding: 80px 0px;
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
-
 .apply-wrapper {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .apply-wrapper h2,
@@ -75,9 +68,18 @@
 
 
 /* CORE VALUES CSS */
+
+.core-bg {
+    background-color: #f8f8f8;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 90px 0px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
 .core-wrapper {
     margin: 0 auto;
-    margin-top: 100px;
     width: 85%;
 }
 

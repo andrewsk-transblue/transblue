@@ -8,6 +8,7 @@ function ContactCta(props) {
     const [displayCTA, setDisplayCTA] = useState(false);
 
     useEffect(() => {
+        console.log(props.email)
         window.addEventListener('scroll', () => {
             if(window.scrollY > 400) setDisplayCTA(true)
             else setDisplayCTA(false)
@@ -19,7 +20,7 @@ function ContactCta(props) {
             {/* {displayForm &&  */}
                 <Slide right when={displayForm} exit={true} collapse>
                     <div className='form'>
-                        <Form email={props.email} onClick={() => setDisplayForm(false)} />
+                        <Form email={props.email} location={props.location} onClick={() => setDisplayForm(false)} />
                     </div>
                 </Slide>
         </div>

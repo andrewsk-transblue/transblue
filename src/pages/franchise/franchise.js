@@ -34,7 +34,6 @@ function Franchise(props) {
     const [name, setName] = useState('')
     const { db, e } = useEasybase();
     const [displaySnow, setDisplaySnow] = useState(true);
-    let userLocation = []
 
     useEffect(() => {
         ReactGA.event({
@@ -75,7 +74,7 @@ function Franchise(props) {
                     subtitle={`Serving ${name}, ${easybaseData[0].state} and surrounding areas`}
                     franchise={true}
                 />
-                <ContactCta email={easybaseData[0].email} />
+                <ContactCta email={easybaseData[0].email} location={easybaseData[0].name} />
                 <div className='wrapper'>
                 <div className='about bg-light'>
                     <About phone={easybaseData[0].callbluephone} email={easybaseData[0].email} name={easybaseData[0].name} />

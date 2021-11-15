@@ -24,17 +24,23 @@ function Form(props) {
     function handleSubmit(e) {
         e.preventDefault();
 
-        //send message to incomingleads@transblue.org
         setIsSubmitted(true);
 
+        //send message to incomingleads@transblue.org or franchises email address
+        let to_email;
+        props.email ? to_email = props.email : to_email = 'incomingleads@transblue.org';
+
+        let website;
+        props.location ? website = `GC Website - ${props.location}` : website = 'GC Website'
+
         let templateParams = {
-            website: 'GC WEBSITE',
+            website: website,
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO INCOMINGLEADS
+            to_email: 'carters@transblue.org', //CHANGE THIS TO props.email or incoming leads
             reply_to: email,
             phone: phone,
             message: message
-           }
+        }
 
         emailjs.send(
         'service_61uwfqo',

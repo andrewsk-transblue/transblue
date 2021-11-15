@@ -1,11 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 
-function Apply(props) {
+import{ init } from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
+init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
-    // useEffect(() => {
-    //     console.log(props.locations)
-    // }, [])
+function Apply(props) {
+    const [email, setEmail] = useState('')
+
+    function selectLocation(e) {
+        console.log(e.target.value)
+        setEmail(e.target.value)
+    }
+
+    function submit() {
+
+    }
 
     return(
         <div className='apply-bg'>
@@ -21,19 +31,21 @@ function Apply(props) {
                     </div>
                     {/* <div className='col-lg-1'></div> */}
                     <div className='col-lg-6 my-auto pl-5'>
-                        <h6>SELECT A LOCATION</h6>
-                        <select className='custom-select'>
-                            <option value=''>SELECT LOCATION</option>
-                            {props.locations.map(location => {
-                                return(
-                                    <option>{location.name}</option>
-                                )
-                            })}
-                        </select>
-                        <h6>UPLOAD YOUR RESUME</h6>
-                        <input placeholder='Find your resume'></input>
-                        <br />
-                        <button>SUBMIT</button>
+                        <form>
+                            <h6>SELECT A LOCATION</h6>
+                            <select className='custom-select' onChange={selectLocation}>
+                                <option value=''>SELECT LOCATION</option>
+                                {props.locations.map(location => {
+                                    return(
+                                        <option value={location.email}>{location.name}</option>
+                                    )
+                                })}
+                            </select>
+                            <h6>UPLOAD YOUR RESUME</h6>
+                            <input type='file' placeholder='Find your resume' required></input>
+                            <br />
+                            <button onClick={submit} type='submit'>SUBMIT</button>
+                        </form>
                     </div>
                 </div>
             </div>
