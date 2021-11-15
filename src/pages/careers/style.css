@@ -35,7 +35,8 @@
     margin: 0 auto;
 }
 
-.apply-wrapper h2 {
+.apply-wrapper h2,
+.core-wrapper h2 {
     font-family: 'Raleway';
     color: #0b56a4;
     letter-spacing: .05em;
@@ -75,7 +76,9 @@
 
 /* CORE VALUES CSS */
 .core-wrapper {
-    margin-top: 80px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 85%;
 }
 
 .core-wrapper .subheader {
@@ -87,4 +90,8 @@
     font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
     margin-top: 1.2rem;
+}
+
+.core-wrapper img {
+    width: 100%;
 }
