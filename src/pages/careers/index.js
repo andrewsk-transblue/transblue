@@ -19,7 +19,6 @@ function Careers(props) {
         <Fragment>
             <Header title='TRANSBLUE CAREERS' />
             <Navbar />
-            <button onClick={scrollToApply}>SCROLL</button>
             <About scroll={scrollToApply} />
             <Core />
             <What />
