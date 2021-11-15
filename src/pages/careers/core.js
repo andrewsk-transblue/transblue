@@ -15,7 +15,7 @@ function Core() {
             <div className='row'>
                 <div className='col-lg-5 pr-5'>
                     <h2>WHO ARE WE?</h2>
-                    <p className='section-p'>At Transblue, we prioritize the well being of our employees, our customers, and the community. We have curated a list of our core values that we live by, both in and out of the workplace. </p>
+                    <p className='section-p'>At Transblue, we prioritize the well being of our employees, our customers, and the community. We have curated a list of our core values that we live by both in and out of the workplace.</p>
                     <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est ex. Sed enim orci, porttitor nec volutpat a, fringilla eu dui. Cras elit ex.</p>
                 </div>
                 <div className='col-lg-1'></div>

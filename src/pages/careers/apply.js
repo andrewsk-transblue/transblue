@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import './style.css';
 
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
-function Apply(props) {
+const Apply = forwardRef((props) => {
     const [email, setEmail] = useState('')
+
+    console.log(props)
 
     function selectLocation(e) {
         console.log(e.target.value)
@@ -18,29 +20,13 @@ function Apply(props) {
         let messageParams = {
             to_email: 'carters@transblue.org', //need to change to franchise specific email
         }
-        //emailjs.send()
-
-        // emailjs.sendForm('service_61uwfqo', 'template_cjk37bd',   
-        // e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
-        //     .then((result) => {
-        //         alert('email sent successfully');
-        //     }, (error) => {
-        //         alert('error sending email');
-        //     });
-        //     //clears the form after sending the email
-        //     e.target.reset();
-        // }
-
-        console.log(e.target)
 
         emailjs.sendForm('service_61uwfqo', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
             .then(res => console.log(res))
-
-        //emailjs.sendForm('user_iLZ3jXyTzXi5zQFlgf5DG', 'user_iLZ3jXyTzXi5zQFlgf5DG', this);
     }
 
     return(
-        <div className='apply-bg'>
+        <div className='apply-bg' ref={props.innerRef}>
             <div className='apply-wrapper'>
                 <div className='row'>
                     <div className='col-lg-6 pr-5'>
@@ -72,6 +58,6 @@ function Apply(props) {
             </div>
         </div>
     )
-}
+})
 
 export default Apply;

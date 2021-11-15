@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
 import About from './about';
@@ -9,14 +9,22 @@ import Core from './core';
 import What from './what';
 
 function Careers(props) {
+    const applyRef = useRef(null)
+
+    function scrollToApply() {
+        applyRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+    
     return(
         <Fragment>
             <Header title='TRANSBLUE CAREERS' />
             <Navbar />
-            <About />
+            <button onClick={scrollToApply}>SCROLL</button>
+            <About scroll={scrollToApply} />
             <Core />
             <What />
-            <Apply locations={props.locations} />
+            
+            <Apply locations={props.locations} innerRef={applyRef} />
             <Footer />
         </Fragment>
     )
