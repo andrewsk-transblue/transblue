@@ -7,11 +7,6 @@
     /* position: relative; */
 }
 
-.bg p.apply {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .bg h2 {
     color: #ed6a22;
     color: #0b56a4;
@@ -33,7 +28,7 @@
     margin-bottom: 80px;
 }
 
-.bg h5:not(.promise-wrapper h5):not(.subcontractor-wrapper h5) {
+.bg h5:not(.promise-wrapper h5):not(.subcontractor-wrapper h5):not(.apply-wrapper h5) {
     font-family: 'Raleway';
     margin: 0 auto;
     width: 60%;
@@ -107,6 +102,27 @@
 
 .promise-wrapper .fa-times-circle {
     color: red;
+}
+
+.apply-wrapper {
+    width: 80%;
+    background: rgb(11,57,84);
+    background: linear-gradient(22deg, rgba(11,57,84,1) 18%, rgba(11,86,164,1) 73%);
+    margin: 0 auto;
+    padding: 50px 50px 30px 50px;
+    margin-bottom: 50px;
+}
+
+.apply-wrapper h2 {
+    color: white;
+}
+
+.apply-wrapper h5 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: .03em;
+    font-weight: normal;
 }
 
 /* .subcontractor-wrapper .alert-wrapper {

@@ -61,31 +61,36 @@ function Subcontractor(props) {
                 </div>
                 <Promise />
                 {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
-                <h2>IT'S EASY TO APPLY!</h2>
-                <p className='section-p apply'>Just select from our list of locations, fill out our form, and submit!</p>
-                <select className='browser-default custom-select' onChange={selectLocation}>
-                    <option value=''>SELECT A LOCATION</option>
-                    {easybaseData.length > 0 && easybaseData.map(location => {
-                        return(
-                            <option value={location.name}>{location.name}</option>
-                        )
-                    })}
-                </select>
-                {displayForm && <div className='subcontractor-wrapper'>
-                    <h2>{location.name.toUpperCase()}</h2>
-                    <h5>SUBCONTRACTOR APPLICATION</h5>
-                    <hr />
-                    {easybaseData.length > 0 && <Form location={location} />}
-                    {/* {displayAlert && <div className='alert-wrapper'>
-                        <Fade>
-                            <div className='message-alert'>
-                                <div className='close'>
-                                    <button onClick={() => setDisplayAlert(false)}>X</button>
+                <div className='apply-wrapper'>
+                    <h2>IT'S EASY TO APPLY!</h2>
+                    <h5>Just select from our list of locations, fill out our form below, and submit!</h5>
+                    <select className='browser-default custom-select' onChange={selectLocation}>
+                        <option value=''>SELECT A LOCATION</option>
+                        {easybaseData.length > 0 && easybaseData.map(location => {
+                            return(
+                                <option value={location.name}>{location.name}</option>
+                            )
+                        })}
+                    </select>
+                </div>
+                {displayForm && 
+                <div className='promise-bg'>
+                    <div className='subcontractor-wrapper'>
+                        <h2>{location.name.toUpperCase()}</h2>
+                        <h5>SUBCONTRACTOR APPLICATION</h5>
+                        <hr />
+                        {easybaseData.length > 0 && <Form location={location} />}
+                        {/* {displayAlert && <div className='alert-wrapper'>
+                            <Fade>
+                                <div className='message-alert'>
+                                    <div className='close'>
+                                        <button onClick={() => setDisplayAlert(false)}>X</button>
+                                    </div>
+                                    PLEASE COMPLETE FORM BEFORE SUBMITTING
                                 </div>
-                                PLEASE COMPLETE FORM BEFORE SUBMITTING
-                            </div>
-                        </Fade>
-                    </div>} */}
+                            </Fade>
+                        </div>} */}
+                    </div>
                 </div>}
             </div>
             <Footer />

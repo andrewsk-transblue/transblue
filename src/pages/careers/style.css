@@ -22,12 +22,12 @@
     margin-bottom: 25px;
 }
 
-.apply-wrapper {
+.career-wrapper .apply-wrapper {
     width: 85%;
     margin: 0 auto;
 }
 
-.apply-wrapper h2,
+.career-wrapper .apply-wrapper h1,
 .core-wrapper h2,
 .what-wrapper h2 {
     font-family: 'Raleway';
@@ -36,7 +36,7 @@
     margin-bottom: 20px;
 }
 
-.apply-wrapper h5 {
+.career-wrapper .apply-wrapper h5 {
     font-family: 'Raleway';
     color: rgb(73, 73, 73);
     color: #0b56a4;
@@ -58,7 +58,7 @@
     background-color: white;
 }
 
-.apply-wrapper button {
+.career-wrapper .apply-wrapper button {
     background-color: #0b56a4;
     border: 0px;
     color: white;

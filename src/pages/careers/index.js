@@ -16,16 +16,15 @@ function Careers(props) {
     }
     
     return(
-        <Fragment>
+        <div className='career-wrapper'>
             <Header title='TRANSBLUE CAREERS' />
             <Navbar />
             <About scroll={scrollToApply} />
             <Core />
             <What />
-            
             <Apply locations={props.locations} innerRef={applyRef} />
             <Footer />
-        </Fragment>
+        </div>
     )
 }
 
