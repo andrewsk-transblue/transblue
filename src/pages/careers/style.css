@@ -1,0 +1,13 @@
+.about-wrapper {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.about-wrapper h2 {
+    font-family: 'Raleway';
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
