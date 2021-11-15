@@ -33,7 +33,7 @@
     margin-bottom: 80px;
 }
 
-.bg h5:not(.promise-wrapper h5) {
+.bg h5:not(.promise-wrapper h5):not(.subcontractor-wrapper h5) {
     font-family: 'Raleway';
     margin: 0 auto;
     width: 60%;
@@ -67,13 +67,14 @@
 .promise-bg {
     width: 100%;
     background-color: #f8f8f8;
-    padding: 50px 0px;
+    padding: 80px 0px;
+    margin-bottom: 80px;
+
 }
 
 .promise-wrapper {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 80px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
     padding: 40px;
 }

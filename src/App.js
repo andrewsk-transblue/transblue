@@ -66,7 +66,9 @@ function App() {
             {easybaseData.length > 0 &&  <Route exact path='/finance' >
               <Finance locations={easybaseData} />
             </Route>}
-            <Route exact path='/careers' component={Careers} />
+            {easybaseData.length > 0 && <Route exact path='/careers'>
+              <Careers locations={easybaseData} />
+              </Route>}
           </Suspense>
         </Router>
       </HelmetProvider>
