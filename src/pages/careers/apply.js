@@ -13,8 +13,30 @@ function Apply(props) {
         setEmail(e.target.value)
     }
 
-    function submit() {
+    function submit(e) {
+        e.preventDefault();
+        let messageParams = {
+            to_email: 'carters@transblue.org', //need to change to franchise specific email
+        }
+        //emailjs.send()
 
+        // emailjs.sendForm('service_61uwfqo', 'template_cjk37bd',   
+        // e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
+        //     .then((result) => {
+        //         alert('email sent successfully');
+        //     }, (error) => {
+        //         alert('error sending email');
+        //     });
+        //     //clears the form after sending the email
+        //     e.target.reset();
+        // }
+
+        console.log(e.target)
+
+        emailjs.sendForm('service_61uwfqo', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
+            .then(res => console.log(res))
+
+        //emailjs.sendForm('user_iLZ3jXyTzXi5zQFlgf5DG', 'user_iLZ3jXyTzXi5zQFlgf5DG', this);
     }
 
     return(
@@ -24,14 +46,13 @@ function Apply(props) {
                     <div className='col-lg-6 pr-5'>
                         <h2>APPLYING IS EASY!</h2>
                         <p className='section-p'>
-                            At Transblue, we don't believe in wasting your time. We won't make you go through the hoops of creating an account and filling out a bunch of information about yourself, only to upload your resume with exactly the same information.
-                            
+                            At Transblue, we don't believe in wasting your time. We won't make you go through the hoops of creating an account and filling out a bunch of information about yourself, only to upload your resume with exactly the same information.                            
                         </p>
                         <p className='section-p'>Just select which location you would like to apply to, upload your resume, and submit! Simple as that.</p>
                     </div>
                     {/* <div className='col-lg-1'></div> */}
                     <div className='col-lg-6 my-auto pl-5'>
-                        <form>
+                        <form onSubmit={submit}>
                             <h6>SELECT A LOCATION</h6>
                             <select className='custom-select' onChange={selectLocation}>
                                 <option value=''>SELECT LOCATION</option>
@@ -42,9 +63,9 @@ function Apply(props) {
                                 })}
                             </select>
                             <h6>UPLOAD YOUR RESUME</h6>
-                            <input type='file' placeholder='Find your resume' required></input>
+                            <input name='resume' type='file' placeholder='Find your resume' required></input>
                             <br />
-                            <button onClick={submit} type='submit'>SUBMIT</button>
+                            <button type='submit'>SUBMIT</button>
                         </form>
                     </div>
                 </div>
