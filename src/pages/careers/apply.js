@@ -53,7 +53,7 @@ function Apply(props) {
                     {/* <div className='col-lg-1'></div> */}
                     <div className='col-lg-6 my-auto pl-5'>
                         <form onSubmit={submit}>
-                            <h6>SELECT A LOCATION</h6>
+                            <h5>SELECT A LOCATION</h5>
                             <select className='custom-select' onChange={selectLocation}>
                                 <option value=''>SELECT LOCATION</option>
                                 {props.locations.map(location => {
@@ -62,7 +62,7 @@ function Apply(props) {
                                     )
                                 })}
                             </select>
-                            <h6>UPLOAD YOUR RESUME</h6>
+                            <h5>UPLOAD YOUR RESUME</h5>
                             <input name='resume' type='file' placeholder='Find your resume' required></input>
                             <br />
                             <button type='submit'>SUBMIT</button>

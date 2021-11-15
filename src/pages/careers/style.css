@@ -25,20 +25,22 @@
 .apply-wrapper {
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .apply-wrapper h2,
-.core-wrapper h2 {
+.core-wrapper h2,
+.what-wrapper h2 {
     font-family: 'Raleway';
     color: #0b56a4;
     letter-spacing: .05em;
     margin-bottom: 20px;
 }
 
-.apply-wrapper h6 {
+.apply-wrapper h5 {
     font-family: 'Raleway';
     color: rgb(73, 73, 73);
+    color: #0b56a4;
+    font-weight: bold;
     letter-spacing: .05em;
     margin-bottom: 10px;
 }
@@ -53,6 +55,7 @@
     border-radius: 5px;
     border: 1px solid #ced4da;
     width: 80%;     
+    background-color: white;
 }
 
 .apply-wrapper button {
@@ -68,13 +71,13 @@
 
 
 /* CORE VALUES CSS */
-
-.core-bg {
+.core-bg,
+.apply-bg {
     background-color: #f8f8f8;
     width: 100%;
     background-color: #f8f8f8;
     padding: 90px 0px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     margin-top: 80px;
 }
 
@@ -100,4 +103,15 @@
 
 .core-wrapper .bottom-row {
     margin-top: -13%;
+}
+
+/* WHAT WE DO CSS */
+.what-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.what-wrapper iframe {
+    width: 100%;
 }

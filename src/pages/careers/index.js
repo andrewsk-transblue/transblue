@@ -6,6 +6,7 @@ import Apply from './apply';
 import Footer from '../../components/footer';
 import './style.css';
 import Core from './core';
+import What from './what';
 
 function Careers(props) {
     return(
@@ -14,6 +15,7 @@ function Careers(props) {
             <Navbar />
             <About />
             <Core />
+            <What />
             <Apply locations={props.locations} />
             <Footer />
         </Fragment>
