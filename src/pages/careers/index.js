@@ -3,6 +3,7 @@ import Header from '../../components/header';
 import Navbar from '../../components/navbar';
 import About from './about';
 import Apply from './apply';
+import Footer from '../../components/footer';
 import './style.css';
 
 function Careers(props) {
@@ -13,6 +14,7 @@ function Careers(props) {
             <Navbar />
             <About />
             <Apply locations={props.locations} />
+            <Footer />
         </Fragment>
     )
 }
