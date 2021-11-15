@@ -14,7 +14,7 @@ import back from '../../../images/back50.png';
 import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-let images = [outdoorliving, kitchen, interior, pool, concrete, pavers2, turf, retaining, enclosure, outdoor ];
+let images = [outdoorliving, kitchen, interior, pool, concrete, pavers2, turf, retaining, enclosure, outdoor, outdoor, outdoor ];
 let text = [
             {
                 title: 'OUTDOOR LIVING SPACE',
@@ -48,6 +48,14 @@ let text = [
             },{
                 title: 'OUTDOOR FEATURES',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
+            },
+            {
+                title: 'OUTDOOR FEATURES',
+                body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
+            },
+            {
+                title: 'OUTDOOR FEATURES',
+                body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             }
             //  {
             //     title: 'ATHLETIC COURTS',
@@ -67,7 +75,7 @@ class Carousel extends Component {
     }
 
     right = () => {
-        if(this.state.index < 5) {
+        if(this.state.index < 8) {
             if(this.state.cols === 5) {
                 this.setState({index: this.state.index+3})
             }

@@ -52,10 +52,9 @@ function Core() {
 
                         <div className='col-4'>
                             <Fade duration={1200} delay={1500}>
-                            <img src={through} className='bottom-row' alt=''/>
+                                <img src={through} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
-
                     </div>
                 </div>
             </div>
