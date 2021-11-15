@@ -93,5 +93,9 @@
 }
 
 .core-wrapper img {
-    width: 100%;
+    width: 120%;
+}
+
+.core-wrapper .bottom-row {
+    margin-top: -13%;
 }

@@ -37,21 +37,21 @@ function Core() {
                             </Fade>
                         </div>
 
-                        <div className='col-4'  >
+                        <div className='col-4'>
                             <Fade duration={1200} delay={1200}>
-                                <img src={help} alt=''/>
+                                <img src={help} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
 
                         <div className='col-4'>
                             <Fade duration={1200} delay={1600}>
-                                <img src={eachother} alt=''/>
+                                <img src={eachother} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
 
                         <div className='col-4'>
                             <Fade duration={1200} delay={2500}>
-                            <img src={through} alt=''/>
+                            <img src={through} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
 
