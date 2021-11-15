@@ -5,14 +5,15 @@ import About from './about';
 import Apply from './apply';
 import Footer from '../../components/footer';
 import './style.css';
+import Core from './core';
 
 function Careers(props) {
-    console.log(props)
     return(
         <Fragment>
             <Header title='TRANSBLUE CAREERS' />
             <Navbar />
             <About />
+            <Core />
             <Apply locations={props.locations} />
             <Footer />
         </Fragment>

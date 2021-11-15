@@ -1,15 +1,21 @@
 .about-wrapper {
     width: 90%;
-    max-width: 700px;
+    max-width: 750px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: -100px;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: 50px 70px 70px 70px;
+    position: relative;
 }
 
 .about-wrapper h2 {
     font-family: 'Raleway';
     margin-bottom: 25px;
     margin-top: 15px;
+    color:rgb(83, 83, 83);
 }
 
 .about-wrapper p {
@@ -64,4 +70,21 @@
     letter-spacing: .08em;;
     font-family: 'Raleway';
     margin-left: 5px;
+}
+
+
+/* CORE VALUES CSS */
+.core-wrapper {
+    margin-top: 80px;
+}
+
+.core-wrapper .subheader {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    /* color: rgb(59, 59, 59); */
+    color: #0b56a4;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .06em;
+    margin-top: 1.2rem;
 }
