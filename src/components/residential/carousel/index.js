@@ -9,12 +9,14 @@ import outdoorliving from '../../../images/residential/outdoorliving.jpg';
 import enclosure from '../../../images/residential/enclosure.jpg';
 import turf from '../../../images/residential/turf.png';
 import retaining from '../../../images/residential/retaining.jpg';
+import garage from '../../../images/residential/garage.jpg';
+import sport from '../../../images/residential/sport.jpg';
 import forward from '../../../images/forward50.png';
 import back from '../../../images/back50.png';
 import './style.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-let images = [outdoorliving, kitchen, interior, pool, concrete, pavers2, turf, retaining, enclosure, outdoor, outdoor, outdoor ];
+let images = [outdoorliving, kitchen, interior, pool, concrete, pavers2, turf, retaining, enclosure, outdoor, garage, sport ];
 let text = [
             {
                 title: 'OUTDOOR LIVING SPACE',
@@ -50,11 +52,11 @@ let text = [
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },
             {
-                title: 'OUTDOOR FEATURES',
+                title: 'GARAGE ADD ONS',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },
             {
-                title: 'OUTDOOR FEATURES',
+                title: 'ATHLETIC COURTS',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             }
             //  {
@@ -118,6 +120,10 @@ class Carousel extends Component {
             this.right()
         }, 45000)
         //console.log(this.state.cols)
+    }
+
+    componentWillUnmount = () => {
+        clearInterval(this.timer)
     }
 
     render() {
