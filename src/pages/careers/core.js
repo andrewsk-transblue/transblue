@@ -27,31 +27,31 @@ function Core() {
                             </Fade>
                         </div>
                         <div className='col-4'>
-                            <Fade duration={1200} delay={400}>
+                            <Fade duration={1200} delay={300}>
                                 <img src={nimble} alt='' />
                             </Fade>
                         </div>
 
                         <div className='col-4'>
-                            <Fade duration={1200} delay={800}>
+                            <Fade duration={1200} delay={600}>
                                 <img src={grit} alt='' />
                             </Fade>
                         </div>
 
                         <div className='col-4'>
-                            <Fade duration={1200} delay={1200}>
+                            <Fade duration={1200} delay={900}>
                                 <img src={help} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
 
                         <div className='col-4'>
-                            <Fade duration={1200} delay={1600}>
+                            <Fade duration={1200} delay={1200}>
                                 <img src={eachother} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
 
                         <div className='col-4'>
-                            <Fade duration={1200} delay={2000}>
+                            <Fade duration={1200} delay={1500}>
                             <img src={through} className='bottom-row' alt=''/>
                             </Fade>
                         </div>
