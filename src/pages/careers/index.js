@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from '../../components/header';
+import Navbar from '../../components/navbar';
 import './style.css';
 
 function Careers() {
     return(
-        <div></div>
+        <Fragment>
+            <Header title='TRANSBLUE CAREERS' />
+            <Navbar />
+        </Fragment>
     )
 }
 
