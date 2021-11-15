@@ -60,7 +60,9 @@ function Subcontractor(props) {
                     </div>
                 </div>
                 <Promise />
-                <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6>
+                {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
+                <h2>IT'S EASY TO APPLY!</h2>
+                <p className='section-p apply'>Just select from our list of locations, fill out our form, and submit!</p>
                 <select className='browser-default custom-select' onChange={selectLocation}>
                     <option value=''>Select Location</option>
                     {easybaseData.length > 0 && easybaseData.map(location => {
