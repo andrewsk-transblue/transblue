@@ -3,6 +3,7 @@ import './style.css';
 
 function Promise() {
     return(
+        <div className='promise-bg'>
         <div className='promise-wrapper'>
             <div className='row'>
                 <div className='col-lg-12 text-center my-auto'>
@@ -38,6 +39,7 @@ function Promise() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
