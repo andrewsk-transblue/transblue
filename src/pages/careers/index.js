@@ -20,7 +20,7 @@ function Careers(props) {
             <Header title='TRANSBLUE CAREERS' />
             <Navbar />
             <About scroll={scrollToApply} />
-            <Core />
+            <Core scroll={scrollToApply} />
             <What />
             <Apply locations={props.locations} innerRef={applyRef} />
             <Footer />

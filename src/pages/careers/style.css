@@ -86,6 +86,11 @@
     width: 85%;
 }
 
+.core-wrapper button {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
 .core-wrapper .subheader {
     font-weight: 500;
     font-family: 'Raleway', sans-serif;

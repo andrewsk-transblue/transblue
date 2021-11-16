@@ -8,15 +8,16 @@ import help from '../../images/careers/help.png';
 import eachother from '../../images/careers/eachother.png';
 import './style.css';
 
-function Core() {
+function Core(props) {
     return(
         <div className='core-bg'>
         <div className='core-wrapper'>
             <div className='row'>
-                <div className='col-lg-5 pr-5'>
-                    <h2>WHO ARE WE?</h2>
-                    <p className='section-p'>At Transblue, we prioritize the well being of our employees, our customers, and the community. We have curated a list of our core values that we live by both in and out of the workplace.</p>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est ex. Sed enim orci, porttitor nec volutpat a, fringilla eu dui. Cras elit ex.</p>
+                <div className='col-lg-5 pr-5 my-auto'>
+                    <h2>WE ARE A COMPANY WITH VALUES</h2>
+                    <p className='section-p'>At Transblue, we prioritize the well being of our employees, our customers, and the community. We have curated a list of core values that we see as our standard of living, both in and out of the workplace.</p>
+                    <button className='cta' onClick={props.scroll}>APPLY NOW</button>
+                    {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est ex. Sed enim orci, porttitor nec volutpat a, fringilla eu dui. Cras elit ex.</p> */}
                 </div>
                 <div className='col-lg-1'></div>
                 <div className='col-lg-6 my-auto'>
