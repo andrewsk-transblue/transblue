@@ -10,6 +10,7 @@ import Respect from './respect';
 import vip from '../../images/subcontractor/vip.jpeg';
 import './style.css';
 import Growing from './growing';
+import Tools from './tools';
 
 function Subcontractor(props) {
     const applicationRef = useRef(null)
@@ -66,6 +67,7 @@ function Subcontractor(props) {
                 </div>
                 <Respect />
                 <Growing />
+                <Tools />
                 <Promise />
                 {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
                 <div className='apply-wrapper'>
