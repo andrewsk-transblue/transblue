@@ -13,8 +13,20 @@
     margin-top: 25px;
 }
 
-.projects-wrapper img {
+.projects-wrapper img.intro-img {
     width: 100%;
     max-width: 525px;
     height: 300px;
+}
+
+.projects-wrapper button {
+    background-color: transparent;
+    border: 0px;
+    font-size: 14px;
+    padding: 0px;
+    letter-spacing: .03em;
+}
+
+.projects-wrapper button .arrow {
+    transform:scale(.8,.8)
 }

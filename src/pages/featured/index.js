@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useRef} from 'react';
+import React, {Fragment, useEffect, useRef, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
@@ -15,6 +15,7 @@ import checkerboard from '../../images/featured/checkerboard.jpg';
 import hoaroofing from '../../images/featured/hoaroofing.jpg';
 import './style.css';
 import ContactCta from '../../components/contactCta';
+import rightarrow from '../../images/residential/rightarrow.png';
 
 import featuredDb from './db';
 
@@ -23,6 +24,8 @@ const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKIN
 ReactGA.initialize(TRACKING_ID);
 
 function Featured() {
+
+    const [activeProject, setActiveProject] = useState(-1);
 
     useEffect(() => {
         ReactGA.event({
@@ -42,15 +45,15 @@ function Featured() {
             <ContactCta />
             <div className='projects-wrapper container-fluid'>
                 <div className='row'>
-                {Object.keys(featuredDb).map(project => {
-                    console.log(project)
+                {Object.keys(featuredDb).map((project, index) => {
+                    //console.log(project)
                     return(
                         <div className='col-lg-6'>
-                            <img src={featuredDb[project].introImg} alt='' style={{width: '100%'}} />
+                            <img className='intro-img' src={featuredDb[project].introImg} alt='' style={{width: '100%'}} />
                             <p className='project-title'>{project}</p>
                             <p className='section-p'>{featuredDb[project].intro}</p>
 
-                            <button>LEARN MORE</button>
+                            <button onClick={() => setActiveProject(index)}>LEARN MORE <img className='arrow' src={rightarrow} alt='' /></button>
                         </div>
                     )
                 })}
