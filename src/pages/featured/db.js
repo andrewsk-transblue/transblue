@@ -13,6 +13,9 @@ const featuredDb = {
     }, 
     'COMPLETE TRANSFORMATION': {
         intro: 'This yard in Seattle went through the drastic changes and was completely transformed. Uninviting old asphalt yard became a bright and lively artificial grass, full of opportunities for fun and enjoyment.'
+    },
+    'A TRENDY LANDSCAPE': {
+        intro: 'Any backyard can become an artistic masterpiece with a little creativity. We transformed this landscape into a unique and environmentally friendly backyard with tons of pizzazz. How did we do it? Read on to find out!'
     }
 }
 

@@ -53,3 +53,7 @@
 .image-wrapper[data-project = 'COMPLETE TRANSFORMATION'] {
     background-image: url('../../featured/transformation3.jpg');
 }
+
+.image-wrapper[data-project = 'A TRENDY LANDSCAPE'] {
+    background-image: url('../../featured/trendy3.jpg');
+}
