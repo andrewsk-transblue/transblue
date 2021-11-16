@@ -1,5 +1,5 @@
 .projects-wrapper {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     width: 90%;
     margin-top: 100px;
 }
@@ -29,4 +29,27 @@
 
 .projects-wrapper button .arrow {
     transform:scale(.8,.8)
+}
+
+.projects-wrapper .image-wrapper {
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image-wrapper[data-project = '5 STAR ASPHALT REFRESHMENT'] {
+    background-image: url('../../featured/asphalt3.jpg');
+}
+
+.image-wrapper[data-project = 'ROOFING DONE RIGHT'] {
+    background-image: url('../../featured/roofing3.jpg');
+}
+
+.image-wrapper[data-project = 'URBAN OASIS'] {
+    background-image: url('../../featured/urban4.jpg');
+}
+
+.image-wrapper[data-project = 'COMPLETE TRANSFORMATION'] {
+    background-image: url('../../featured/transformation3.jpg');
 }

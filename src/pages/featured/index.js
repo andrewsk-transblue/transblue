@@ -48,8 +48,8 @@ function Featured() {
                 {Object.keys(featuredDb).map((project, index) => {
                     //console.log(project)
                     return(
-                        <div className='col-lg-6'>
-                            <img className='intro-img' src={featuredDb[project].introImg} alt='' style={{width: '100%'}} />
+                        <div className='col-lg-6 mb-5'>
+                            <div className='image-wrapper' data-project={project}></div>
                             <p className='project-title'>{project}</p>
                             <p className='section-p'>{featuredDb[project].intro}</p>
 
