@@ -6,6 +6,7 @@ import FranchiseNav from '../../components/franchiseNav';
 import Form from './form';
 import Promise from './promise';
 import Footer from '../../components/footer';
+import Respect from './respect';
 import vip from '../../images/subcontractor/vip.jpeg';
 import './style.css';
 
@@ -49,7 +50,7 @@ function Subcontractor(props) {
             <FranchiseNav />
             <div className='bg'>
                 <h2>TRANSBLUE SUBCONTRACTORS</h2>
-                <h5>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h5>
+                <h5 className='title'>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h5>
 
                 <div className='vip'>
                     <div className='row'>
@@ -62,6 +63,7 @@ function Subcontractor(props) {
                         </div>
                     </div>
                 </div>
+                <Respect />
                 <Promise />
                 {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
                 <div className='apply-wrapper'>
