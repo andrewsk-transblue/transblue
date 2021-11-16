@@ -16,13 +16,11 @@ import hoaroofing from '../../images/featured/hoaroofing.jpg';
 import './style.css';
 import ContactCta from '../../components/contactCta';
 
+import featuredDb from './db';
+
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
-
-const projects = [
-
-]
 
 function Featured() {
 
@@ -43,7 +41,20 @@ function Featured() {
             <Header img={header2} title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
             <div className='projects-wrapper container-fluid'>
-                
+                <div className='row'>
+                {Object.keys(featuredDb).map(project => {
+                    console.log(project)
+                    return(
+                        <div className='col-lg-6'>
+                            <img src={featuredDb[project].introImg} alt='' style={{width: '100%'}} />
+                            <p className='project-title'>{project}</p>
+                            <p className='section-p'>{featuredDb[project].intro}</p>
+
+                            <button>LEARN MORE</button>
+                        </div>
+                    )
+                })}
+                </div>
             </div>
             <Footer />
         </Fragment>
