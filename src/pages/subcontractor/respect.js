@@ -13,11 +13,8 @@ function Respect() {
                 </div>
                 <div className='col-lg-1'></div>
                 <div className='col-lg-6 my-auto left-text'>
-                    {/* WE WILL */}
-                    <div className='row mx-0'><i className='far fa-gem mt-2 mr-3 fa-2x'></i> <h5> We will treat you the way you want to be treated</h5></div>
-                     {/* WE WILL */}
-                    <div className='row mx-0'><i className='far fa-handshake mt-2 mr-3 fa-2x'></i> <h5> We will always be fair, courteous, and respectful</h5></div>
-                    {/* WE WILL */}
+                    <div className='row mx-0 mb-4'><i className='far fa-gem mt-2 mr-3 fa-2x'></i> <h5> We will treat you the way you want to be treated</h5></div>
+                    <div className='row mx-0 mb-4'><i className='far fa-handshake mt-2 mr-3 fa-2x'></i> <h5> We will always be fair, courteous, and respectful</h5></div>
                     <div className='row mx-0'><i className='fas fa-user-friends mt-2 mr-3 fa-2x'></i> <h5> We will not only treat you as a partner, but as family</h5></div>
                 </div>
             </div>
