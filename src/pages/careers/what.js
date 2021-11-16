@@ -10,7 +10,9 @@ function What() {
                 </div>
                 <div className='col-lg-6 my-auto left-text my-auto'>
                     <h2>WHAT DO WE DO?</h2>
-                    <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus enim vel turpis porttitor pulvinar. Ut sodales metus augue, id rutrum metus tincidunt nec. Aliquam suscipit ullamcorper felis, a consequat nulla vehicula in. Cras egestas laoreet feugiat. Sed tempor tristique ipsum malesuada efficitur.</p>
+                    <p className='section-p'>We are in the business of making people happy. We do everything from building dream backyards, to providing no hassle commercial services, to changing people's lives through charity. Join our team today and become part of something bigger than yourself.</p>
+                    <p className='section-p'>Watch our video to find out more about the services we provide.</p>
+                    {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus enim vel turpis porttitor pulvinar. Ut sodales metus augue, id rutrum metus tincidunt nec. Aliquam suscipit ullamcorper felis, a consequat nulla vehicula in. Cras egestas laoreet feugiat. Sed tempor tristique ipsum malesuada efficitur.</p> */}
                     {/* <p className='section-p'>Suspendisse gravida, nulla vitae gravida lacinia, dolor elit mollis arcu, ac tempor libero ante eget est. Vestibulum vestibulum tellus risus, nec accumsan dolor accumsan ut. Maecenas suscipit enim risus, vel sagittis urna elementum sed.</p> */}
                 </div>
             </div>
