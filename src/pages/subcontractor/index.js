@@ -35,8 +35,8 @@ function Subcontractor(props) {
     }, [])
 
     function selectLocation(e) {
-        console.log(e.target.value)
-        console.log(easybaseData)
+        //console.log(e.target.value)
+        //console.log(easybaseData)
         for(let i=0; i<easybaseData.length; i++) {
             if(easybaseData[i].name === e.target.value) {
                 setLocation(easybaseData[i])
@@ -61,7 +61,7 @@ function Subcontractor(props) {
                     <div className='row'>
                         <div className='col-lg-6'>
                             <h2>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h2>
-                            <button className='cta ml-0'>APPLY</button>
+                            <button className='cta ml-0'>APPLY NOW</button>
                         </div>
                         <div className='col-lg-6 left-text my-auto'>
                         {/* <h4 className='section-header'></h4> */}
@@ -73,8 +73,7 @@ function Subcontractor(props) {
                 <Respect />
                 <Growing />
                 <Tools />
-                {/* <Promise /> */}
-                {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
+                <Promise />
                 <div className='apply-wrapper'>
                     <h2>IT'S EASY TO APPLY!</h2>
                     <h5>Just select from our list of locations, fill out our form below, and submit!</h5>
