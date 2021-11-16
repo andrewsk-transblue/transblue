@@ -68,7 +68,7 @@ function Subcontractor(props) {
                 <Respect />
                 <Growing />
                 <Tools />
-                <Promise />
+                {/* <Promise /> */}
                 {/* <h6>SELECT A LOCATION FOR SUBCONTRACTOR APPLICATION</h6> */}
                 <div className='apply-wrapper'>
                     <h2>IT'S EASY TO APPLY!</h2>
