@@ -59,14 +59,6 @@ let text = [
                 title: 'ATHLETIC COURTS',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             }
-            //  {
-            //     title: 'ATHLETIC COURTS',
-            //     body: 'Transblue installs top of the line Basketball, Hockey, Tennis, and Pickleball playable courts. Not to mention batting cages, putting greens and all types of courts used to play sports on.'
-            // }, 
-            // {
-            //     title: 'LAWN INSTALLATION',
-            //     body: 'At Transblue we pride ourselves in Lawn Installation! Over the last 20 years we have developed techniques that have proven themselves over and over again! We install a World Class Lawn, each time, every time! '
-            // }
     ]
 
 class Carousel extends Component {

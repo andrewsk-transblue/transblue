@@ -1,4 +1,4 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {Fragment, useState, useEffect, useRef} from 'react';
 import { useEasybase } from 'easybase-react';
 import Fade from 'react-reveal/Fade';
 import Navbar from '../../components/navbar';
@@ -10,6 +10,7 @@ import vip from '../../images/subcontractor/vip.jpeg';
 import './style.css';
 
 function Subcontractor(props) {
+    const applicationRef = useRef(null)
     const [displayAlert, setDisplayAlert] = useState(false);
     const [displayForm, setDisplayForm] = useState(false);
     const [location, setLocation] = useState({})
@@ -38,6 +39,8 @@ function Subcontractor(props) {
                 setDisplayForm(true)
             }
         }
+
+        applicationRef.current.scrollIntoView({ behavior: 'smooth' })
     }
 
     return(
@@ -73,6 +76,7 @@ function Subcontractor(props) {
                         })}
                     </select>
                 </div>
+                <div ref={applicationRef}></div>
                 {displayForm && 
                 <div className='promise-bg'>
                     <div className='subcontractor-wrapper'>
