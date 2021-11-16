@@ -6,8 +6,8 @@ function Respect() {
     return(
         <div className='respect-wrapper'>
             <div className='row'>
-                <div className='col-lg-5 my-auto'>
-                    <h1>WE WERE BUILT<br />ON RESPECT.</h1>
+                <div className='col-lg-5 my-auto pl-0'>
+                    <h2>WE WERE BUILT<br />ON RESPECT.</h2>
                     <p className='section-p'>At Transblue, we believe respect is the foundation of any successful business.</p>
                     <button className='cta ml-0 mt-3'>APPLY NOW</button>
                 </div>

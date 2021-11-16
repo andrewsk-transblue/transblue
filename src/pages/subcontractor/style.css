@@ -273,20 +273,22 @@ label {
 
 
 .respect-wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-.respect-wrapper h1 {
+.respect-wrapper h2 {
     font-family: 'Raleway';
     color: #0b56a4;
     margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.3em;
 }
 
 .respect-wrapper h5 {
     color: rgb(97, 97, 97);
-    width: 70%;
+    width: 80%;
     /* margin-bottom: 35px; */
     font-weight: 400;
     letter-spacing: .03em;
