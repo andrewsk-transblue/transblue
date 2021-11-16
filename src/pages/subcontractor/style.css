@@ -8,12 +8,10 @@
 }
 
 .bg h2 {
-    color: #ed6a22;
-    color: #0b56a4;
     font-family: 'Raleway';
     letter-spacing: .05em;
-    text-align: center;
     margin-bottom: 16px;
+    color: rgb(73, 73, 73);
 }
 
 .bg img.vip {
@@ -23,7 +21,8 @@
 }
 
 .bg .vip:not(img.vip) {
-    width: 95%;
+    width:85%;
+    text-align: left !important;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -48,7 +47,7 @@
 .bg {
     width: 100%;
     height: 100%;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 100px;
     /* background-color: rgb(243, 243, 243); */
 }
@@ -109,6 +108,7 @@
 
 .apply-wrapper h2 {
     color: white;
+    text-align: center;
 }
 
 .apply-wrapper h5 {
@@ -318,7 +318,7 @@ label {
     position: absolute;
     z-index: 5;
     top: 20%;
-    left: 7%;
+    left: 10%;
 }
 
 .growing-wrapper h1 {
@@ -359,7 +359,7 @@ label {
     letter-spacing: .05em;
     font-family: 'Raleway';
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .tools-bg h6 {
@@ -370,14 +370,13 @@ label {
 }
 
 .tools-bg img {
-    margin-bottom: 30px;
-    width: 80px;
+    margin-bottom: 20px;
+    width: 70px;
 }
 
 .tools-bg p {
     font-size: 18px;
-    width: 85%;
-    margin: 0 auto;
+    color: rgb(73, 73, 73);
 }
 
 @media only screen and (min-width: 576px) {

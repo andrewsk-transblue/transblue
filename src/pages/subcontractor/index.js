@@ -11,6 +11,7 @@ import vip from '../../images/subcontractor/vip.jpeg';
 import './style.css';
 import Growing from './growing';
 import Tools from './tools';
+import Header from '../../components/header';
 
 function Subcontractor(props) {
     const applicationRef = useRef(null)
@@ -48,18 +49,22 @@ function Subcontractor(props) {
 
     return(
         <Fragment>
-            <Navbar theme='dark' />
-            <FranchiseNav />
+            <Navbar />
+            <Header title='SUBCONTRACTORS' 
+            // subtitle='Join our growing network of construction professionals'
+             />
             <div className='bg'>
-                <h2>TRANSBLUE SUBCONTRACTORS</h2>
-                <h5 className='title'>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h5>
+                {/* <h2>TRANSBLUE SUBCONTRACTORS</h2> */}
+                {/* <h1 className='title'>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h1> */}
 
                 <div className='vip'>
                     <div className='row'>
-                        <div className='col-lg-6 my-auto'>
-                            <img className='vip' src={vip} alt='' />
+                        <div className='col-lg-6'>
+                            <h2>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h2>
+                            <button className='cta ml-0'>APPLY</button>
                         </div>
-                        <div className='col-lg-6 right-text my-auto'>
+                        <div className='col-lg-6 left-text my-auto'>
+                        {/* <h4 className='section-header'></h4> */}
                             <p className='section-p'>At Transblue we believe that our service partners are the back-bone of our business, without our partners we don’t exist. We will treat our partners better than any other competitor in the business!</p>
                             <p className='section-p'>We live by our VIP PROMISE. It is a promise to every current and future service partner. VIP stands for “Very Important Partner” and our Transblue promise to you.</p>
                         </div>

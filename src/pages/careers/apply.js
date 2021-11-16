@@ -30,7 +30,7 @@ const Apply = forwardRef((props) => {
             <div className='apply-wrapper'>
                 <div className='row'>
                     <div className='col-lg-6 pr-5'>
-                        <h1>APPLYING IS EASY!</h1>
+                        <h2>APPLYING IS EASY!</h2>
                         <p className='section-p'>
                             At Transblue, we don't believe in wasting your time. We won't make you go through the hoops of creating an account and filling out a bunch of information about yourself, only to upload your resume with exactly the same information.                            
                         </p>
