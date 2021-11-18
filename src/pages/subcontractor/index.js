@@ -14,7 +14,8 @@ import Tools from './tools';
 import Header from '../../components/header';
 
 function Subcontractor(props) {
-    const applicationRef = useRef(null)
+    const applicationRef = useRef(null);
+    const applyRef = useRef(null);
     const [displayAlert, setDisplayAlert] = useState(false);
     const [displayForm, setDisplayForm] = useState(false);
     const [location, setLocation] = useState({})
@@ -30,7 +31,6 @@ function Subcontractor(props) {
     }
 
     useEffect(() => {
-        console.log('rendering')
         mounted();
     }, [])
 
@@ -47,6 +47,10 @@ function Subcontractor(props) {
         applicationRef.current.scrollIntoView({ behavior: 'smooth' })
     }
 
+    function scrollToApply() {
+        applyRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+
     return(
         <Fragment>
             <Navbar />
@@ -61,7 +65,7 @@ function Subcontractor(props) {
                     <div className='row'>
                         <div className='col-lg-6'>
                             <h2>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h2>
-                            <button className='cta ml-0'>APPLY NOW</button>
+                            <button onClick={scrollToApply} className='cta ml-0'>APPLY NOW</button>
                         </div>
                         <div className='col-lg-6 left-text my-auto'>
                         {/* <h4 className='section-header'></h4> */}
@@ -70,10 +74,11 @@ function Subcontractor(props) {
                         </div>
                     </div>
                 </div>
-                <Growing />
-                <Respect />
+                <Growing scrollToApply={scrollToApply} />
+                <Respect scrollToApply={scrollToApply} />
                 <Tools />
                 {/* <Promise /> */}
+                <div ref={applyRef}></div>
                 <div className='apply-wrapper'>
                     <h2>IT'S EASY TO APPLY!</h2>
                     <h5>Just select from our list of locations, fill out our form below, and submit!</h5>
