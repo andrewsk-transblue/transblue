@@ -8,7 +8,7 @@ function OpenProject(props) {
 
     return(
         <div className='openproject-wrapper'>
-            <h4>{props.project}</h4>
+            <h2>{props.project}</h2>
             {project.body.map(paragraph => {
                 return(
                     <div className='row'>

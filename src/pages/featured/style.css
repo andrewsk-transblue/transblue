@@ -69,6 +69,13 @@
     font-size: 18px;
 }
 
+.openproject-wrapper h2 {
+    font-family:'Raleway';
+    letter-spacing: .03em;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 button.reset-projects {
     background-color: transparent;
     margin-left: 5%;
