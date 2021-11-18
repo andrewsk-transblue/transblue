@@ -10,7 +10,7 @@ function Header() {
     const textArray = [
         'LUXURY EXTERIOR DESIGN',
         'A GREENER WORLD',
-        'LUXURY EXTERIOR DESIGN',
+        'LUXURY INTERIOR DESIGN',
         'QUALITY ASPHALT INSTALLATION',
         'LUXURY EXTERIOR DESIGN',
         'BEAUTIFUL COMMUNITY LIVING',
