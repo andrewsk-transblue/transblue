@@ -1,7 +1,7 @@
 .projects-wrapper {
     margin-bottom: 80px;
     width: 90%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .projects-wrapper p.project-title {
@@ -67,4 +67,13 @@
 
 .openproject-wrapper p {
     font-size: 18px;
+}
+
+button.reset-projects {
+    background-color: transparent;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: 0px;
+    letter-spacing: .03em;
+    padding-left: 0px;
 }

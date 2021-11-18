@@ -8,7 +8,7 @@ import header2 from '../../images/featured/header-2.jpg';
 import './style.css';
 import ContactCta from '../../components/contactCta';
 import rightarrow from '../../images/residential/rightarrow.png';
-
+import leftarrow from '../../images/residential/leftarrow.png';
 import featuredDb from './db';
 
 import ReactGA from 'react-ga';
@@ -37,7 +37,7 @@ function Featured() {
             <Header img={header2} title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
 
-            {activeProject !== '' && <button onClick={() => setActiveProject('')}>BACK TO ALL PROJECTS</button>}
+            {activeProject !== '' && <button className='reset-projects' onClick={() => setActiveProject('')}><img src={leftarrow} /> BACK TO ALL PROJECTS</button>}
 
             <div className='projects-wrapper container-fluid'>
                 {activeProject === '' && <div className='row'>
