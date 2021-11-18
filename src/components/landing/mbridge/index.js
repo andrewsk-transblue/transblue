@@ -59,8 +59,8 @@ function Mbridge() {
                         <div className='card'>
                         <div className='text'>
                             <p className='tb-is'>Transblue is</p>
-                            <p className='title'>LANDSCAPE DESIGN</p>
-                            <p className='body'>Landscape design enhances your property and increases your home's value.</p>
+                            <p className='title'>BEAUTIFUL DESIGN</p>
+                            <p className='body'>Indoor and outdoor design enhance your property and increases your home's value.</p>
                             <img src={fire} alt='' />
                         </div>
                         </div>
