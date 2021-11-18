@@ -1,58 +1,14 @@
 import React, {useState} from 'react';
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 import drop from '../../../images/residential/drop.png';
-import monohan6 from '../../../images/residential/monohan6.jpg';
-import monohan6small from '../../../images/residential/monohan6small.jpg';
 import forward from '../../../images/residential/forward.png';
-import retainingdrops from '../../../images/residential/retainingdrops.jpg';
-import retainingdropssmall from '../../../images/residential/retainingdropssmall.jpg';
-import monohan4 from '../../../images/residential/monohan4.jpg';
-import monohan4small from '../../../images/residential/monohan4small.jpg';
-import monohan3 from '../../../images/residential/monohan3.jpg';
-import monohan3small from '../../../images/residential/monohan3small.jpg';
-import monohan7 from '../../../images/residential/monohan7.jpg';
-import monohan8 from '../../../images/residential/monohan8.jpg';
-import monohan9 from '../../../images/residential/monohan9.jpg';
-
 import './style.css';
-
-//const images = [monohan6, retainingdrops, monohan4, monohan3, monohan]
-
-const images = [
-    {
-        img: monohan6,
-        imgSmall: monohan6small
-    },
-    {
-        img: retainingdrops,
-        imgSmall: retainingdropssmall
-    },
-    {
-        img: monohan4,
-        imgSmall: monohan4small
-    },
-    {
-        img: monohan3,
-        imgSmall: monohan3small
-    },
-    {
-        img: monohan7,
-        imgSmall: monohan7
-    },
-    {
-        img: monohan8,
-        imgSmall: monohan8
-    },{
-        img: monohan9,
-        imgsmall: monohan9
-    }
-]
 
 function Rockstar() {
     const [index, setIndex] = useState(0);
 
     function nextSlide() {
-        if(index < images.length-1) {
+        if(index < 6) {
             setIndex(index+1)
         }
         else {
@@ -62,9 +18,7 @@ function Rockstar() {
     return(
         <div className='rockstar-wrapper container-fluid px-0'>
             {/* <img src={images[index]} alt='' /> */}
-            <LazyLoadImage src={images[index].imgSmall} 
-                srcSet={`${images[index].imgSmall} 600w, ${images[index].img} 1400w`} sizes='(max-width: 600px) 600px, 1400px'
-             />
+            <div className='bg-image' data-image={`image-${index}`}></div>
             <div className='text row mx-0 px-0'>
                 <div className='text-center col-2 col-sm-1'><img id='drop' src={drop} alt='' /></div>
                     <div className='col-8 col-sm-9 my-auto'>
