@@ -1,9 +1,31 @@
-import asphalt from '../../featured/asphalt3.jpg';
+//import asphalt from '../../featured/asphalt3.jpg';
 import roofing from '../../featured/roofing3.jpg';
+
+import asphalt1 from '../../featured/asphalt1.jpg';
+import asphalt2 from '../../featured/asphalt2.jpg';
+import asphalt3 from '../../featured/asphalt3.jpg';
 
 const featuredDb = {
     '5 STAR ASPHALT REFRESHMENT': {
-        intro: 'A leading hospitality corporation approached us with a project that spanned across the state of Washington. Their goal was to get their hotel exteriors looking fresh and inviting to match their indoor reservations.'
+        intro: 'A leading hospitality corporation approached us with a project that spanned across the state of Washington. Their goal was to get their hotel exteriors looking fresh and inviting to match their indoor reservations.',
+        body: [
+            {
+                img: asphalt1,
+                p: 'A leading hospitality corporation approached us with a project that spanned across the state of Washington. Their goal was to get their hotel exteriors looking fresh and inviting to match their indoor reservations. Their asphalt parking lots were dilapidated, filled with cracks and the paint was worn out and difficult to read. We recommended a hybrid approach to refreshing their asphalt.'                
+            },
+            {
+                img: asphalt2,
+                p: `Transblue provided these different services across the commercial properties:<br /><br />
+
+                – Seal coating parts of the asphalt with good structural integrity <br />
+                – Crack sealing deeper cracks and holes present in the asphalt <br />
+                – Lot striping parking lot, handicap signs and entrances.<br />
+                – Complete demolishing and replacement for areas that are deeply compromised and deteriorated.`
+            }, {
+                img: asphalt3,
+                p: `This project was meticulously  completed with minimal impact to hotel guests. Transblue added aesthetic and structural value to the properties as a whole, and gave hotel managers piece of mind!`
+            }
+        ]
     },
     'ROOFING DONE RIGHT': {
         intro: 'Roofing project in a multifamily community neighborhood, just outside of Seattle Washington.'

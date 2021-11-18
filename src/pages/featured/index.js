@@ -36,6 +36,9 @@ function Featured() {
             <Navbar page='PROJECTS' />
             <Header img={header2} title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
+
+            {activeProject !== '' && <button onClick={() => setActiveProject('')}>BACK TO ALL PROJECTS</button>}
+
             <div className='projects-wrapper container-fluid'>
                 {activeProject === '' && <div className='row'>
                 {Object.keys(featuredDb).map((project, index) => {
