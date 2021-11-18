@@ -12,6 +12,7 @@ import monohan3 from '../../../images/residential/monohan3.jpg';
 import monohan3small from '../../../images/residential/monohan3small.jpg';
 import monohan7 from '../../../images/residential/monohan7.jpg';
 import monohan8 from '../../../images/residential/monohan8.jpg';
+import monohan9 from '../../../images/residential/monohan9.jpg';
 
 import './style.css';
 
@@ -41,6 +42,9 @@ const images = [
     {
         img: monohan8,
         imgSmall: monohan8
+    },{
+        img: monohan9,
+        imgsmall: monohan9
     }
 ]
 
