@@ -49,6 +49,18 @@
     background-color: rgba(0,0,0,.25);
 }
 
+.header-wrapper[name='subcontractor'] {
+    background-image: url('../../images/subcontractor/header.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-wrapper[name='careers'] {
+    background-image: url('../../images/careers/header.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 .header-wrapper[region='northwest'] {
     background-image: url('../../images/franchiseHeaders/northwest.jpg') ;
     background-size: cover;

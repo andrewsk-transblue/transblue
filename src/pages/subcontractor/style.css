@@ -17,6 +17,7 @@
 
 .bg .vip {
     width:85%;
+    max-width: 1300px;
     text-align: left !important;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -94,6 +95,7 @@
 
 .apply-wrapper {
     width: 80%;
+    max-width: 1300px;
     background: rgb(11,57,84);
     background: linear-gradient(22deg, rgba(11,57,84,1) 18%, rgba(11,86,164,1) 73%);
     margin: 0 auto;
@@ -269,6 +271,7 @@ label {
 
 .respect-wrapper {
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -345,7 +348,7 @@ label {
 
 .tools-wrapper {
     width: 95%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 

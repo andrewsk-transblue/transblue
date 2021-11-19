@@ -17,7 +17,7 @@ function Careers(props) {
     
     return(
         <div className='career-wrapper'>
-            <Header title='TRANSBLUE CAREERS' />
+            <Header title='TRANSBLUE CAREERS' name='careers' />
             <Navbar />
             <About scroll={scrollToApply} />
             <Core scroll={scrollToApply} />

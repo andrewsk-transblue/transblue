@@ -14,7 +14,7 @@ function Snow(props) {
                             As a leader in snow and ice management, we understand what your property needs this winter.
                             {/* Transblue is a leading provider of snow and ice management services. Let Transblue take care of your property this winter. */}                           
                         </p>
-                        <a className='cta' href='https://tbsnow.herokuapp.com'>SNOW WEBSITE</a>
+                        <a className='cta' href='https://snow.transblue.com'>SNOW WEBSITE</a>
 
                     </div>
                     <div className='col-12 col-lg-8'>

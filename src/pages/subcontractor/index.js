@@ -7,11 +7,12 @@ import Form from './form';
 import Promise from './promise';
 import Footer from '../../components/footer';
 import Respect from './respect';
-import vip from '../../images/subcontractor/vip.jpeg';
-import './style.css';
 import Growing from './growing';
 import Tools from './tools';
 import Header from '../../components/header';
+import header from '../../images/subcontractor/header.jpg';
+import './style.css';
+
 
 function Subcontractor(props) {
     const applicationRef = useRef(null);
@@ -54,13 +55,11 @@ function Subcontractor(props) {
     return(
         <Fragment>
             <Navbar />
-            <Header title='SUBCONTRACTORS' 
-            // subtitle='Join our growing network of construction professionals'
+            <Header 
+                title='SUBCONTRACTORS' 
+                name='subcontractor'
              />
             <div className='bg'>
-                {/* <h2>TRANSBLUE SUBCONTRACTORS</h2> */}
-                {/* <h1 className='title'>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h1> */}
-
                 <div className='vip'>
                     <div className='row'>
                         <div className='col-lg-6'>

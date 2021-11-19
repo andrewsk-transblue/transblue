@@ -7,7 +7,6 @@ import hope from '../../../images/charities/hope2.jpg';
 //import whitesnow from '../../../images/landing/whitesnow.png';
 import whitesnow from '../../../images/newLanding/snow.png';
 import fire from '../../../images/landing/fire.png';
-import heart from '../../../images/newLanding/heart.png';
 import worldclass from '../../../images/landing/worldclass.jpg';
 import quality from '../../../images/newLanding/quality6.jpg';
 import quality2 from '../../../images/newLanding/quality5.jpg';
