@@ -13,12 +13,11 @@ if (rootElement.hasChildNodes()) {
   hydrate(
   <EasybaseProvider ebconfig={ebconfig}>
     <App />
-  </EasybaseProvider>
-  , rootElement);
+  </EasybaseProvider>, rootElement);
 } else {
   render(  
   <EasybaseProvider ebconfig={ebconfig}>
-    <App />,
+    <App />
   </EasybaseProvider>, 
   rootElement);
 }
