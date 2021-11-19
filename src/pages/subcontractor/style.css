@@ -37,6 +37,7 @@
     margin: 0 auto !important;
     display: block;
     margin-bottom: 50px !important;
+    max-width: 390px;
 }
 
 .bg {

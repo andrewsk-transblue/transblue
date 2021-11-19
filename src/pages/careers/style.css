@@ -55,7 +55,8 @@
     padding: .3rem .75rem;   
     border-radius: 5px;
     border: 1px solid #ced4da;
-    width: 80%;     
+    width: 100%;     
+    max-width: 390px;
     background-color: white;
 }
 
