@@ -33,7 +33,7 @@
 }
 
 .bg select {
-    width: 40%;
+    width: 100%;
     margin: 0 auto !important;
     display: block;
     margin-bottom: 50px !important;
@@ -343,7 +343,7 @@ label {
 }
 
 .tools-wrapper {
-    width: 90%;
+    width: 95%;
     max-width: 1000px;
     margin: 0 auto;
 }

@@ -47,7 +47,8 @@
 
 .apply-wrapper select {
     margin-bottom: 40px;
-    width: 80%;
+    width: 100%;
+    max-width: 390px;
 }
 
 .apply-wrapper input {

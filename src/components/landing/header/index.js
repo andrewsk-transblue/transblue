@@ -15,8 +15,7 @@ function Header() {
         'LUXURY EXTERIOR DESIGN',
         'BEAUTIFUL COMMUNITY LIVING',
         'LUXURY EXTERIOR DESIGN',
-        'RELIABLE SNOW REMOVAL',
-
+        'RELIABLE SNOW REMOVAL'
     ]
 
     useEffect(() => {
@@ -24,7 +23,7 @@ function Header() {
         setTimeout(() => {
             index += 1
             setText(textArray[index])
-            console.log(index)
+            // console.log(index)
             interval = setInterval(() => {
                 if(index < textArray.length - 1) index += 1
                 else index=0
@@ -32,7 +31,6 @@ function Header() {
                 setText(textArray[index])          
             }, 13000)
         }, 6000)
-
         return () => window.clearInterval(interval)
     }, [])
 
