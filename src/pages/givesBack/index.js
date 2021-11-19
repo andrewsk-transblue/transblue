@@ -23,7 +23,7 @@ const charities = [
     {
         name: 'DAWSON PLACE',
         url: 'dawson',
-        description: ['']
+        description: ["Dawson Place Child Advocacy Center is a nonprofit organization providing safety, justice, and healing to victims of child physical and secual abuse, assault, and neglect. Dawson Place has every service needed for victims and their families to receive the help they need. the Child Advocacy Center model minimizes the number of times a child has to tell their story, by bringing each professional needed for a case into one building, reducing the trauma of a victim's experience."]
     },
     {
         name: "DEE'S HOPE",
