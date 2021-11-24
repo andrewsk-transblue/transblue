@@ -36,7 +36,7 @@ function Form(props) {
         let templateParams = {
             website: website,
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO props.email or incoming leads
+            to_email: to_email, //CHANGE THIS TO props.email or incoming leads
             reply_to: email,
             phone: phone,
             message: message
