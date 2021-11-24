@@ -16,7 +16,7 @@ function Core(props) {
                 <div className='col-lg-5 pr-5 my-auto'>
                     <h2>A COMPANY<br /> WITH VALUES</h2>
                     <p className='section-p'>At Transblue, we prioritize the well being of our employees, our customers, and the community. We have curated a list of core values that we see as our standard of living, both in and out of the workplace.</p>
-                    <button className='cta' onClick={props.scroll}>APPLY NOW</button>
+                    <button className='cta mb-5' onClick={props.scroll}>APPLY NOW</button>
                     {/* <p className='section-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est ex. Sed enim orci, porttitor nec volutpat a, fringilla eu dui. Cras elit ex.</p> */}
                 </div>
                 <div className='col-lg-1'></div>

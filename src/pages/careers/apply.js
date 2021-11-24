@@ -17,10 +17,8 @@ const Apply = forwardRef((props) => {
 
     function submit(e) {
         e.preventDefault();
-        let messageParams = {
-            to_email: 'carters@transblue.org', //need to change to franchise specific email
-        }
 
+        //console.log(email)
         emailjs.sendForm('service_61uwfqo', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
             .then(res => console.log(res))
     }
@@ -37,18 +35,19 @@ const Apply = forwardRef((props) => {
                         <p className='section-p'>Just select which location you would like to apply to, upload your resume, and submit! Simple as that.</p>
                     </div>
                     {/* <div className='col-lg-1'></div> */}
-                    <div className='col-lg-6 my-auto pl-5'>
+                    <div className='col-lg-6 my-auto pl-lg-5'>
                         <form onSubmit={submit}>
                             <h5>SELECT A LOCATION</h5>
                             <select className='custom-select' onChange={selectLocation}>
                                 <option value=''>SELECT LOCATION</option>
                                 {props.locations.map(location => {
                                     return(
-                                        <option value={location.email}>{location.name}</option>
+                                        <option value={location.officeemail}>{location.name}</option>
                                     )
                                 })}
                             </select>
                             <h5>UPLOAD YOUR RESUME</h5>
+                            <input name='email' style={{display: 'none'}} value={email}></input>
                             <input name='resume' type='file' placeholder='Find your resume' required></input>
                             <br />
                             <button type='submit'>SUBMIT</button>

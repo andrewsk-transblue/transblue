@@ -49,7 +49,6 @@ function Form(props) {
             process.env.REACT_APP_REACTJS_USER
         )
 
-
         //add message to database
         let dbData = {
             website: 'GC WEBSITE',

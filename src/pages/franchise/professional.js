@@ -3,6 +3,7 @@ import ContactModal from '../../components/contactModal';
 import './professional.css';
 
 function Professional(props) {
+    console.log(props)
     return(
         <div className='professional-wrapper'>
             <div className='container-fluid'>
@@ -38,7 +39,7 @@ function Professional(props) {
                         <p className='section-p body'>We pride ourselves on excellent communication from start to finish of our projects. You can count on only one point of contact, no matter how many trades are involved</p>
                     </div>
                     <div className='contact-modal'>
-                        <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} email={props.location.email} />
+                        <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} />
                     </div>
                 </div>
             </div>
