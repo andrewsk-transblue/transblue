@@ -8,10 +8,7 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 const Apply = forwardRef((props) => {
     const [email, setEmail] = useState('')
 
-    console.log(props)
-
     function selectLocation(e) {
-        console.log(e.target.value)
         setEmail(e.target.value)
     }
 

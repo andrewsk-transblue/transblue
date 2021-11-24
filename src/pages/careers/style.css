@@ -7,18 +7,25 @@
     background-color: white;
     z-index: 5;
     box-shadow: 0px 1px 20px 8px rgba(0,0,0,0.1);
-    padding: 50px 70px 60px 70px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     position: relative;
 }
 
 .about-wrapper h2 {
+    margin: 0 auto;
     font-family: 'Raleway';
     margin-bottom: 25px;
     margin-top: 15px;
     color:rgb(83, 83, 83);
+    width: 90%;
+    max-width: 500px;
 }
 
 .about-wrapper p {
+    width: 86%;
+    max-width: 500px;
+    margin: 0 auto;
     margin-bottom: 25px;
 }
 
