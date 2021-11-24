@@ -64,7 +64,7 @@ function Subcontractor(props) {
                     <div className='row'>
                         <div className='col-lg-6'>
                             <h2>JOIN OUR GROWING NETWORK OF CONSTRUCTION PROFESSIONALS</h2>
-                            <button onClick={scrollToApply} className='cta ml-0'>APPLY NOW</button>
+                            <button onClick={scrollToApply} className='cta ml-0 mb-4 mb-md-0'>APPLY NOW</button>
                         </div>
                         <div className='col-lg-6 left-text my-auto'>
                         {/* <h4 className='section-header'></h4> */}

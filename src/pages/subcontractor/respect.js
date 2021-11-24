@@ -7,9 +7,9 @@ function Respect(props) {
         <div className='respect-wrapper'>
             <div className='row'>
                 <div className='col-lg-5 my-auto pl-0'>
-                    <h2>WE WERE BUILT<br />ON RESPECT.</h2>
+                    <h2 className='mb-2 mb-md-3'>WE WERE BUILT<br />ON RESPECT.</h2>
                     <p className='section-p'>At Transblue, we believe respect is the foundation of any successful business.</p>
-                    <button className='cta ml-0 mt-3' onClick={props.scrollToApply}>APPLY NOW</button>
+                    <button className='cta ml-0 mt-0 mt-md-3 mb-4' onClick={props.scrollToApply}>APPLY NOW</button>
                 </div>
                 <div className='col-lg-1'></div>
                 <div className='col-lg-6 my-auto left-text'>
