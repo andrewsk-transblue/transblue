@@ -8,6 +8,9 @@ import * as emailjs from 'emailjs-com'
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 function ContactModal(props) {
+
+    console.log(props.email)
+
     const { db } = useEasybase();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -31,10 +34,16 @@ function ContactModal(props) {
         }
         db('CONTACT').insert(dbData).one()
 
+        let to_email;
+        if(props.email) {
+            to_email = props.email
+        }
+        else to_email = 'incomingleads@transblue.org';
+
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
+            to_email: to_email, //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
             reply_to: email,
             phone: phone,
             message: message

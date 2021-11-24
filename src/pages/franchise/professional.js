@@ -38,7 +38,7 @@ function Professional(props) {
                         <p className='section-p body'>We pride ourselves on excellent communication from start to finish of our projects. You can count on only one point of contact, no matter how many trades are involved</p>
                     </div>
                     <div className='contact-modal'>
-                        <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} />
+                        <ContactModal text='SEND US A MESSAGE' franchise={true} location={props.location} email={props.location.email} />
                     </div>
                 </div>
             </div>

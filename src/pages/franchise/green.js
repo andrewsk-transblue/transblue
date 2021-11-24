@@ -7,6 +7,7 @@ function Green(props) {
         <Section
         page='GREEN'
         name={props.location.name}
+        email={props.location.email}
 
             title='GREEN SOLUTIONS'
             imageSide='right'

@@ -6,6 +6,7 @@ function Govt(props) {
     return(
         <Section
         location={props.location}
+        email={props.location.email}
         page='GOVERNMENT'
             img={govtFence}
             name={props.location.name}

@@ -48,7 +48,6 @@ class Navbar extends Component {
     }
 
     render() {
-        console.log(this.props)
         return(
             <nav className={`navbar navbar-expand-xl bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
                 <Link className="navbar-brand" to="/">

@@ -15,7 +15,7 @@ function Section(props) {
                     <h4 className='section-header'>{props.title}</h4>
                     <p className='section-p'>{props.p1}</p>
                     <p className='section-p'>{props.p2}</p>
-                    <ContactModal location={props.location} />
+                    <ContactModal location={props.location} email={props.email} />
                     <div className='services'>
                         <button onClick={() => setDisplayServices(!displayServices)}>
                             <h6>

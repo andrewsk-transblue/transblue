@@ -39,7 +39,7 @@ class Form extends Component {
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${this.state.firstName} ${this.state.lastName}`,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO this.props.location.email to send to LOCATIONLEADS@TRANSBLUE.ORG
+            to_email: this.props.email, //CHANGE THIS TO this.props.email to send to LOCATIONLEADS@TRANSBLUE.ORG
             reply_to: this.state.email, //CALL BLUE CAN REPLY TO USER
             phone: this.state.phone,
             message: this.state.message
@@ -58,6 +58,7 @@ class Form extends Component {
     }
 
     render() {
+        
         return(
             <form className='form-wrapper' onSubmit={this.onSubmit}>
                 <span>
