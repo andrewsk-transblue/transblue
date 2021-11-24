@@ -51,6 +51,7 @@
     font-weight: bold;
     letter-spacing: .05em;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .apply-wrapper select {
@@ -72,9 +73,10 @@
     background-color: #0b56a4;
     border: 0px;
     color: white;
-    padding: 2px 20px 2px 20px;
+    padding: 4px 30px 4px 30px;
     margin-top: 30px;
-    letter-spacing: .08em;;
+    font-size: 14px;
+    letter-spacing: .15em;;
     font-family: 'Raleway';
     margin-left: 5px;
 }

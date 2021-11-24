@@ -5,8 +5,16 @@ import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
+let positionsList = [
+    'Project Manager',
+    'Sales Manager',
+    'General Manager',
+    'Office Admin'
+]
+
 const Apply = forwardRef((props) => {
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
+    const [position, setPosition] = useState('')
 
     function selectLocation(e) {
         setEmail(e.target.value)
@@ -43,7 +51,19 @@ const Apply = forwardRef((props) => {
                                     )
                                 })}
                             </select>
+
+                            <h5>WHICH POSITION ARE YOU APPLYING FOR?</h5>
+                            <select className='custom-select' onChange={(e) => setPosition(e.target.value)}>
+                                <option value=''>SELECT A POSITION</option>
+                                {positionsList.map(position => {
+                                    return(
+                                        <option value={position}>{position}</option>
+                                    )
+                                })}
+                            </select>
+
                             <h5>UPLOAD YOUR RESUME</h5>
+                            <input name='position' style={{display: 'none'}} value={position}></input>
                             <input name='email' style={{display: 'none'}} value={email}></input>
                             <input name='resume' type='file' placeholder='Find your resume' required></input>
                             <br />

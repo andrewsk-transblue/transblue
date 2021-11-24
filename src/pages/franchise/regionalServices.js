@@ -8,7 +8,6 @@ import wdeck from '../../images/franchise/services/wdeck.jpg';
 import wkitchen from '../../images/franchise/services/wkitchen.jpg';
 import wpool from '../../images/franchise/services/wpool.jpg';
 import nekitchen from '../../images/franchise/services/nekitchen.jpg';
-import neconcrete from '../../images/franchise/services/neconcrete.jpg';
 import neinterior from '../../images/franchise/services/neinterior.jpg';
 import spool from '../../images/franchise/services/spool.jpg';
 import spatio from '../../images/franchise/services/spatio.jpg';
