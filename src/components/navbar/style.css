@@ -3,7 +3,8 @@
     background-color: transparent !important;
 }
 .bg-dark.black,
-.dropdown-menu.black {
+.dropdown-menu.black,
+.dropdown-locations {
     background-color: rgba(24, 24, 24, 0.9) !important;
     backdrop-filter: blur(2px);
 }
@@ -20,6 +21,8 @@ nav.navbar.topPadding {
 nav .franchise-info {
     margin-right: 80px;
 }
+
+
 
 nav .navbar-nav li a,
 nav button,

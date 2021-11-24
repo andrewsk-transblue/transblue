@@ -88,7 +88,7 @@ const featuredDb = {
                 img: urban3,
                 p: `In addition to that the pavers were installed for the slope walk-way on the side of the house. We used large 2ft by 2ft pavers that enhance the feel of the property and create an incredibly relaxing backyard space. Now this back yard is perfect for relaxing with friends and family or entertaining guests for special events!<br /><br />
 
-                After that Transblue installed two beautiful 45 foot retaining walls. The base wall was 4ft tall and the upper wall a perfect 2 feet in height. The upper wall was intentionally spaced for gorgeous landscape plantings to be installed in the bed space separating the two walls.
+                After that Transblue installed two beautiful 4 foot retaining walls. The base wall was 4ft tall and the upper wall a perfect 2 feet in height. The upper wall was intentionally spaced for gorgeous landscape plantings to be installed in the bed space separating the two walls.
                 `
             },
             {

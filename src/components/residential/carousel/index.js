@@ -52,7 +52,7 @@ let text = [
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },
             {
-                title: 'GARAGE ADD ONS',
+                title: 'ADDITIONS',
                 body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie.'
             },
             {

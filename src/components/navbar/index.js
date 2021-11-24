@@ -48,6 +48,7 @@ class Navbar extends Component {
     }
 
     render() {
+        console.log(this.props)
         return(
             <nav className={`navbar navbar-expand-xl bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
                 <Link className="navbar-brand" to="/">
@@ -73,7 +74,7 @@ class Navbar extends Component {
                             <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SERVICES
                             </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown1">
+                            <div className={`dropdown-menu ${this.state.bgColor}`}  aria-labelledby="navbarDropdown1">
                                 <Link className="dropdown-item" to="/residential">RESIDENTIAL</Link>
                                 <Link className="dropdown-item" to="/multifamily">MULTIFAMILY</Link>
                                 <Link className='dropdown-item' to="/commercial">COMMERCIAL</Link>
@@ -103,7 +104,7 @@ class Navbar extends Component {
                             <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             OTHER
                             </button>
-                            <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">
+                            <div className={this.props.page === 'LOCATIONS' ? `dropdown-menu dropdown-locations` : `dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">
                                 <Link to='/subcontractor' className='dropdown-item'>SUBCONTRACTORS</Link>
                                 <Link className='dropdown-item' to='/finance'>GET FINANCED</Link>
                                 {!this.props.franchise && <Link className="dropdown-item" to="/contact">CONTACT</Link>}

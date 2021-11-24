@@ -60,7 +60,7 @@ class Commercial extends Component {
                             p2: ''
                         },
                         {
-                            p1: 'LOWER YOUR ENERGY BILL',
+                            p1: 'REDUCE YOUR CARBON FOOTPRINT',
                             p2: ''
                         }
                     ]} />
