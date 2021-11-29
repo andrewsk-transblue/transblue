@@ -54,11 +54,6 @@ class Navbar extends Component {
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
                 </Link>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
-                {/* {this.props.franchise && 
-                    <div className='franchise-contact'>
-                        <i className='fas fa-map-marker-alt' />{this.props.city}, {this.props.state} <br />
-                        <i className='fas fa-phone' /><a href={`tel:+${this.state.tel}`} >{this.props.phone}</a>
-                    </div>} */}
 
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -113,15 +108,6 @@ class Navbar extends Component {
                             </div>
                         </li>
                     </ul>
-                    {/* {this.props.franchise && 
-                        <ul className="navbar-nav ml-auto franchise-info">
-                            <li className="nav-item ml-auto">
-                                <Link className="nav-link py-0" to={`/locations/${this.props.state}/${this.props.urlCity}`}>{`${this.props.name.toUpperCase().slice(10)} HOME`}</Link>
-                            </li>
-                            <li className='nav-item ml-auto'>
-                                <a href={`tel:+${this.state.tel}`} >{this.props.phone} <i className='fas fa-phone' /></a>
-                            </li>
-                        </ul>} */}
                 </div>
             </nav>
         )

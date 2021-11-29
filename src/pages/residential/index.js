@@ -1,19 +1,16 @@
-import React, { Fragment, useState, useEffect, lazy, Suspense } from 'react';
+import React, { Fragment, useState, useEffect, lazy } from 'react';
 import { Helmet } from 'react-helmet-async';
 import handleViewport from 'react-in-viewport';
 import Navbar from '../../components/navbar/index';
 import FranchiseNav from '../../components/franchiseNav';
-// import Header from '../../components/header';
 import Footer from '../../components/footer/index';
 import Lifestyle from '../../components/residential/lifestyle/lifestyle';
 import Dees from '../../components/residential/dees/dees';
 import Quality from '../../components/residential/quality/quality';
 import ContactCta from '../../components/contactCta';
 import Installation from '../../components/residential/installation';
-//import Carousel from '../../components/residential/carousel';
 import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
-//import Design from '../../components/residential/design';
 import Rockstar from '../../components/residential/rockstar';
 
 import './style.css';
