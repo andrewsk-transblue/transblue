@@ -16,7 +16,6 @@ const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/subcontractor/index'));
 const Featured = lazy(() => import('./pages/featured'));
-const Form = lazy(() => import('./pages/addLocation/form'));
 const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
@@ -61,7 +60,6 @@ function App() {
               <Locations locations={easybaseData} />
             </Route>}
             <Route exact path='/featured' component={Featured} />
-            <Route exact path='/add' component={Form} />
             <Route exact path='/privacy' component={Privacy} />
             <Route exact path='/givesback/:charity' component={GivesBack} />
             <Route exact path='/givesback' component={GivesBack} />
