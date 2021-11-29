@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Fade from 'react-reveal/Fade';
 import rightarrow from '../../images/residential/forward.png';
 import leftarrow from '../../images/residential/back.png';
 import line from '../../images/line.png';
