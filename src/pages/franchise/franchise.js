@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState, lazy} from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
@@ -15,18 +15,20 @@ import Snow from './snow';
 import Professional from './professional';
 import Reviews from './reviews';
 import Contact2 from './contact2';
-import Map from './map';
+//import Map from './map';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 import Footer from '../../components/footer/index';
 import Finance from './finance';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
-import db from './reviewDb';
+//import db from './reviewDb';
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 ReactGA.initialize(TRACKING_ID);
+
+const Map = lazy(() => import('./map'))
 
 function Franchise(props) {
     console.log(props)
