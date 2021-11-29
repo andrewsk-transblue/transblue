@@ -18,10 +18,9 @@ ReactGA.initialize(TRACKING_ID);
 
 const Services = lazy(() => import('../../components/landing/services/index'))
 
-const reverse = require('reverse-geocode')
+//const reverse = require('reverse-geocode')
 
-
-let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona', 'Georgia', 'Florida', 'South Carolina', 'Hawaii', 'Mississippi', 'Alabama', 'Tennessee', 'Nevada', 'New Mexico']
+// let noSnowStates = ['California', 'Texas', 'Louisiana', 'Arizona', 'Georgia', 'Florida', 'South Carolina', 'Hawaii', 'Mississippi', 'Alabama', 'Tennessee', 'Nevada', 'New Mexico']
 
 function NewLanding() {
     const [noSnow, setNoSnow] = useState(false)
@@ -34,10 +33,10 @@ function NewLanding() {
         if('getCurrentPosition' in navigator.geolocation ) {
             navigator.geolocation.getCurrentPosition(position => {
                 console.log(position)
-                let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-                console.log(state)
+                //let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
+                //console.log(state)
                 //let state = 'Arizona'
-                if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
+                //if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
             })
         }
     }, [])
