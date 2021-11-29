@@ -1,7 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import Slide from 'react-reveal/Slide'
 import ContactModal from '../../contactModal';
-import Capabilities2 from '../capabilities2';
 import check from '../../../images/check.png';
 import './style.css';
 

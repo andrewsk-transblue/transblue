@@ -1,9 +1,8 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import Benefits from '../../components/government/benefits';
-import Capabilities2 from '../../components/government/capabilities2';
 import ThreeCols from '../../components/threeCol';
 import FirstResponders from '../../components/government/firstResponders';
 import Snow from '../../components/snow';
@@ -53,11 +52,9 @@ function Government() {
                                 <h4 className='section-header'>KEEP YOUR SERVICES RUNNING SMOOTHLY</h4>
                                 <p className='section-p'>Transblue is strongly positioned to deliver World Class services to any local or federal government building. We understand the RFP process and the requirements necessary to participate in your initiatives.</p>
                                 <p className='section-p'>After all requirements are met, we guarantee we will deliver the services that your team expects. From conception to close out, Transblue is the right fit for your property.</p>
-                                {/* {!displayCapabilities && <button className='cta' onClick={() => setDisplayCapabilities(true)}>VIEW OUR CAPABILITIES STATEMENT</button>} */}
                                 <ContactModal text='CONTACT US FOR CAPABILITIES STATEMENT' />
                             </div>
                         </div>
-                        {/* {displayCapabilities && <Capabilities2 hideStatement={() => setDisplayCapabilities(false)} />} */}
                     </div>
                     <Benefits 
                         img={govtBenefits}
@@ -126,7 +123,6 @@ function Government() {
                         <FirstResponders />
                      </div>
                 </div>
-                {/* <Capabilities /> */}
                 <Footer />
             </Fragment>
         )
