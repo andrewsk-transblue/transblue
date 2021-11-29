@@ -1,29 +1,24 @@
-import React, {Fragment, useEffect, useState, lazy, Suspense} from 'react';
+import React, {Fragment, useEffect, useState, lazy} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/landing/header';
-import NewReviews from '../../components/landing/newReviews/newReviews';
-//import Services from '../../components/landing/services/index';
-//import Professional from '../franchise/professional';
+//import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer';
-//import Mbridge from '../../components/landing/mbridge';
 import Mission from '../../components/landing/mission';
-//import ContactCta from '../../components/contactCta';
 import './style.css';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
-//import axios from 'axios';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 const Services = lazy(() => import('../../components/landing/services/index'));
 const Professional = lazy(() => import('../franchise/professional'));
 const Mbridge = lazy(() => import('../../components/landing/mbridge'));
-const ContactCta = lazy(() => import('../../components/contactCta'))
+const ContactCta = lazy(() => import('../../components/contactCta'));
+const NewReviews = lazy(() => import('../../components/landing/newReviews/newReviews'))
 
 function NewLanding() {
-    const [noSnow, setNoSnow] = useState(false)
 
     useEffect(() => {
         ReactGA.event({
@@ -64,7 +59,7 @@ function NewLanding() {
                 <div className='wrapper'>
                     <Professional />
                     <NewReviews />
-                    <Services noSnow={noSnow} />
+                    <Services />
                 </div>
                 <Footer locationPage={false} />
             </div>

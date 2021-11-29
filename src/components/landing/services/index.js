@@ -11,9 +11,7 @@ import './style.css';
 
 import ServiceCard from './serviceCard/index';
 
-function Services(props) {
-
-    console.log(props.noSnow)
+function Services() {
 
         return(
             <div className='container-fluid services-container'>
@@ -47,7 +45,8 @@ function Services(props) {
                             description='As a property manager, you are extremely busy. Our focus is being your resource. Our expert teams turn proposals around quickly to make your life easier! Our teams attend board meetings and describe projects and services to ensure the delivery to your communities is exactly what it should be, World Class.'
                         />
                     </div>
-                    {!props.noSnow && <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
+                    
+                    <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
                         <ServiceCard
                             image={snowSmall}
                             service='SNOW'
@@ -55,16 +54,7 @@ function Services(props) {
                             link='http://snow.transblue.com/'
                             description="Transblue, a leader in snow and ice management, understands what your property needs. It's simple, consistent, on time service with a focus on quality. The World Class Experience we deliver at Transblue will ensure that your clients, employees, and stakeholders don’t lose faith in your brand."
                         />
-                    </div>}
-                    {props.noSnow && <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
-                        <ServiceCard
-                            image={asphalt}
-                            service='ASPHALT'
-                            page='commercial'
-                            link='/commercial'
-                            description="Transblue, a leader in snow and ice management, understands what your property needs. It's simple, consistent, on time service with a focus on quality. The World Class Experience we deliver at Transblue will ensure that your clients, employees, and stakeholders don’t lose faith in your brand."
-                        />
-                    </div>}
+                    </div>
                     <div className='col-lg-4 col-12 col-sm-6 col-md-6'>
                         <ServiceCard
                             image={government}

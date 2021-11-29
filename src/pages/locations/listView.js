@@ -2,17 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './style.css';
 
 function ListView(props) {
-    
-    const [state, setState] = useState('Washington');
-    const [stateLocations, setStateLocations] = useState([])
-    const [loading, setLoading] = useState(true)
-    const [stateList, setStateList] = useState([])
-    //const [region, setRegion] = useState('')
     const [locations, setLocations] = useState([])
-
-    const getLocations = () => {
-       
-    }
 
     function setRegion(e) {
         if(e.target.value === 'all') setLocations(props.locations)
@@ -46,12 +36,6 @@ function ListView(props) {
                 </select>
             </div>
             <div className='row'>
-                {locations.length === 0 && loading === false && 
-                    <div className='no-list-locations'>
-                        <h6>NO LOCATIONS AVAILABLE IN {state.toUpperCase()} YET</h6>
-                        <p>Please select another state or view locations on our map</p>
-                    </div>
-                }
                 {locations.length > 0 && locations.map((location, index) => {
                     return(
                         <div className='col-12 col-md-6 col-lg-4 mb-5 text-center'>

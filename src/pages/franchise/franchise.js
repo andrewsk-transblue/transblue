@@ -4,7 +4,6 @@ import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import About from './about/about';
-import NewSlideshow from '../../components/newSlideshow';
 import ServiceCard from './serviceCard';
 import Commercial from './commercial.js';
 import Multifamily from './multifamily';
@@ -69,7 +68,7 @@ function Franchise(props) {
                 <Header
                     region={location.region}
                     title='TRANSBLUE'
-                    // title={location.name.toUpperCase()}
+                    //title={location.name.toUpperCase()}
                     subtitle={`Serving ${name}, ${location.state} and surrounding areas`}
                     franchise={true}
                 />
@@ -96,7 +95,6 @@ function Franchise(props) {
                         </div>}
                     </div>
                 </div>
-                {/* <NewSlideshow location={location} /> */}
                 <div className='wrapper'>
                     <Multifamily location={location} />
                 </div>
