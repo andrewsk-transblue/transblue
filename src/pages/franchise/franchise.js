@@ -1,6 +1,5 @@
 import React, {Fragment, useEffect, useState, lazy} from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
@@ -22,7 +21,7 @@ import Footer from '../../components/footer/index';
 import Finance from './finance';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
-//import db from './reviewDb';
+import db from './reviewDb';
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
@@ -31,12 +30,10 @@ ReactGA.initialize(TRACKING_ID);
 const Map = lazy(() => import('./map'))
 
 function Franchise(props) {
-    console.log(props)
-    const [easybaseData, seteasybaseData] = useState([]);
+    //console.log(props)
     const [location, setLocation] = useState({})
     const [services, setServices] = useState({})
     const [name, setName] = useState('')
-    const { db, e } = useEasybase();
     const [displaySnow, setDisplaySnow] = useState(true);
 
     useEffect(() => {
@@ -55,11 +52,10 @@ function Franchise(props) {
                 return
             }
         }
-
-        console.log(location)
+        //console.log(location)
     }, [])
 
-    console.log(Object.keys(location))
+    //console.log(Object.keys(location))
 
     return(
         Object.keys(location).length > 0 && 
@@ -142,12 +138,7 @@ function Franchise(props) {
 
                 <Finance location={location} />
 
-                <Contact2 name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`} franchise={location} />
-                {/* <div className='container-fluid contact-container'>
-                    <div className='contact-overlay'></div>
-                    <Contact name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`}/>
-                </div> */}
-                
+                <Contact2 name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`} franchise={location} />               
             </div>
             <Footer locationPage={true} franchise={true} location={location} />
         </Fragment>

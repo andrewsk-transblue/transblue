@@ -8,7 +8,7 @@ import NewReviews from '../../components/landing/newReviews/newReviews';
 import Footer from '../../components/footer';
 //import Mbridge from '../../components/landing/mbridge';
 import Mission from '../../components/landing/mission';
-import ContactCta from '../../components/contactCta';
+//import ContactCta from '../../components/contactCta';
 import './style.css';
 
 //REACT GOOGLE ANALYTICS
@@ -19,7 +19,8 @@ ReactGA.initialize(TRACKING_ID);
 
 const Services = lazy(() => import('../../components/landing/services/index'));
 const Professional = lazy(() => import('../franchise/professional'));
-const Mbridge = lazy(() => import('../../components/landing/mbridge'))
+const Mbridge = lazy(() => import('../../components/landing/mbridge'));
+const ContactCta = lazy(() => import('../../components/contactCta'))
 
 function NewLanding() {
     const [noSnow, setNoSnow] = useState(false)
