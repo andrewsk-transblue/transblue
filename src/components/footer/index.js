@@ -3,25 +3,12 @@ import { Link } from 'react-router-dom';
 import collapse from '../../images/collapse30.png';
 import './style.css';
 
-function Footer(props) {
-
-    const [displayServices, setDisplayServices] = useState(false);
-    const [displaySnow, setDisplaySnow] = useState(false);
-    const [displayEV, setDisplayEV] = useState(false);
-    const [location, setLocation] = useState('')
-    const [disabled, setDisabled] = useState(true)
-
+function Footer() {
     function scrollToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         })
-    }
-
-    function enableSearch(location) {
-        console.log(location)
-        setDisabled(false)
-        setLocation(location.place_id)
     }
 
     return(
@@ -31,127 +18,6 @@ function Footer(props) {
                     <button onClick={scrollToTop}><img src={collapse} alt='back to top' /></button>
                 </div>
             </div>
-            {/* <div className='row mx-0'>
-                <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>SERVICES</h1>
-                    <div className='footer-services-list'>
-                        <Link to='/residential'>Residential</Link> <br />
-                        <Link to='/commercial'>Commercial</Link><br />
-                        <Link to='/multifamily'>Multifamily</Link><br />
-                        <Link to='/government'>Government</Link><br />
-                    </div>
-                </div>
-                <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>SNOW <br />REMOVAL</h1>
-                    <div className='footer-services-list'>
-                        <a href='http://snow.transblue.com/'>About</a> <br />
-                    </div>
-                </div>
-                <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>GREEN SOLUTIONS</h1>
-                    <div className='footer-services-list'>
-                        <a href='http://green.transblue.com/'>About</a> <br />
-                        <a href='http://green.transblue.com/residential'>Residential</a><br />
-                        <a href='http://green.transblue.com/commercial'>Commercial</a><br />
-                        <a href='http://green.transblue.com/multifamily'>Multifamily</a><br />
-                    </div>
-                </div>
-                <div className='footer-services d-none d-md-block col-lg-2 col-md-3'>
-                    <h1>OTHER</h1>
-                    <div className='footer-services-list'>
-                        <a href='/'>Home</a> <br />
-                        {!props.locationPage && 
-                        <Fragment>
-                            <a href='/locations'>Locations</a><br />    
-                        </Fragment>}
-                        <a href='/featured'>Projects</a><br />
-                        <a href='/blog'>Blog</a><br />
-                        <a href='/blog'>Franchise</a><br />
-                    </div>
-                </div>
-                {!props.locationPage && <div className='col-lg-3 col-md-12 d-none d-md-block find-location px-0'>
-                    <p className='mb-2'>FIND A LOCATION</p>
-                    <p className='text-secondary mb-3'>Enter a location to find the nearest Transblue</p>
-                    <span>
-                        <AutoComplete
-                            apiKey={process.env.REACT_APP_GOOGLE_API}
-                            onPlaceSelected={(location) => enableSearch(location)}
-                            options={{
-                                types: ['geocode'],
-                                componentRestrictions: { country: "us" }}}
-                        />
-                        {disabled && <i className='fas fa-search disabled'></i>}
-                        {!disabled && <a href={`/locations/${location}`}><i className='fas fa-search'></i></a>}
-                    </span>
-                </div>}
-                {props.franchise && <div className='col-lg-3 col-md-6 d-none d-md-block footer-contact'>
-                    <h1>CONTACT INFO</h1>
-                    <p className='my-0'>{props.location.address1}<br />
-                    {props.location.address2}<br />
-                    {props.location.city} {props.location.state}, {props.location.zipcode}<br /></p>
-                    <p className='mt-2'>{props.location.callbluephone}</p>
-                </div>}
-            </div>
-            <div className='row mx-0 small-screen-services'>
-                <div className='col-sm-12 d-block d-md-none'>
-                    <button onClick={() => setDisplayServices(!displayServices)}>GENERAL SERVICES <i className="fas fa-angle-down"></i></button>
-                    {displayServices && 
-                        <div>
-                            <Link to='/residential'>Residential</Link><br />
-                            <Link to='/commercial'>Commercial</Link><br />
-                            <Link to='/multifamily'>Multifamily</Link><br />
-                            <Link to='/government'>Government</Link><br />
-                            <hr />
-                        </div>
-                    }
-                    <button onClick={() => setDisplaySnow(!displaySnow)}>SNOW REMOVAL<i className="fas fa-angle-down"></i></button>
-                    {displaySnow && 
-                        <div>
-                            <a href='http://snow.transblue.com/'>About</a><br />
-                            <hr />
-                        </div>
-                    }
-                    <button onClick={() => setDisplayEV(!displayEV)}>GREEN SOLUTIONS<i className="fas fa-angle-down"></i></button>
-                    {displayEV && 
-                        <div>
-                            <a href='http://green.transblue.com/'>About</a><br />
-                            <a href='http://green.transblue.com/residential'>Residential</a><br />
-                            <a href='http://green.transblue.com/commercial'>Commercial</a><br />
-                            <a href='http://green.transblue.com/multifamily'>Multifamily</a><br />
-                            <hr />
-                        </div>
-                    }
-                    <div className='others'>
-                        <div><a href='/'>HOME</a><br /></div>
-                        {!props.locationPage && 
-                        <div>
-                            <a href='/locations'>LOCATIONS</a><br />    
-                        </div>}
-                        <a href='/featured'>PROJECTS</a><br />
-                        <div><a href='/blog'>BLOG</a><br /></div>
-                        <div><a href='/franchise'>FRANCHISE</a><br /></div>
-                        {!props.franchise &&
-                        <div>
-                            <a href='/'>CONTACT</a>
-                        </div>}
-                    </div>
-                    {!props.locationPage && <div className='find-location'>
-                        <p className='mb-2'>FIND A LOCATION</p>
-                        <p className='text-secondary mb-3'>Enter a location to find the nearest Transblue</p>
-                        <span>
-                            <AutoComplete
-                                apiKey={process.env.REACT_APP_GOOGLE_API}
-                                onPlaceSelected={(location) => enableSearch(location)}
-                                options={{
-                                    types: ['geocode'],
-                                    componentRestrictions: { country: "us" }}}
-                            />
-                            {disabled && <i className='fas fa-search disabled'></i>}
-                            {!disabled && <a href={`http://transblue.com/locations/${location}`} ><i className='fas fa-search'></i></a>}
-                        </span>
-                    </div>}
-                </div>
-            </div> */}
 
             <span className='contact'>
                 <a href='tel:+8444822583'><i className='fas fa-phone'></i> (844) 482-2583</a>
