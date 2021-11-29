@@ -1,7 +1,5 @@
 import React, {useRef, Fragment} from 'react';
 import Decks from '../decks';
-import assets from '../../../images/multifamily/assets.png';
-import assetsSmall from '../../../images/multifamily/assetsSmall.png';
 import downarrow from '../../../images/commercial/downarrow.png';
 import './style.css';
 
@@ -11,7 +9,6 @@ function Assets() {
     return(
         <Fragment>
             <div className='assets-wrapper container-fluid w-100 px-0'>
-                {/* <img src={assetsSmall} alt='Multifamily Residence' srcSet={`${assetsSmall} 576w, ${assets} 2000w`} /> */}
                 <div className='overlay'></div>
                 <div className='text row mx-0'>
                     <div className='col-lg-9 col-10 pl-4'>

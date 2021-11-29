@@ -34,7 +34,7 @@ function Featured() {
                 <meta name="description" content="Transblue Featured Projects" />
             </Helmet>
             <Navbar page='PROJECTS' />
-            <Header img={header2} title='FEATURED PROJECTS' name='featured' />
+            <Header title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
 
             {activeProject !== '' && <button className='reset-projects' onClick={() => setActiveProject('')}><img src={leftarrow} /> BACK TO ALL PROJECTS</button>}
