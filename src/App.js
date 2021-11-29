@@ -48,12 +48,15 @@ function App() {
             <Route exact path='/government' component={Government} />
             {/* <Route exact path='/featured' component={Projects} /> */}
             {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
-            <Route exact path='/locations/:state/:urlCity' component={Franchise} />
+            {/* <Route exact path='/locations/:state/:urlCity' component={Franchise} /> */}
+            
             <Route exact path='/subcontractor' component={Subcontractor} />
-            <Route exact path='/locations/:zipcode' render={(props) => {
-                const zipcode = props.match.params.zipcode;
-                return <Locations locations={easybaseData} zipcode={zipcode} />
-            }} />
+            {easybaseData.length > 0 && <Route exact path='/locations/:state/:urlCity' render={(props) => {
+                //const zipcode = props.match.params.zipcode;
+                const state = props.match.params.state;
+                const urlCity = props.match.params.urlCity;
+                return <Franchise locations={easybaseData} state={state} urlCity={urlCity} />
+            }} />}
             {easybaseData.length > 0 && <Route exact path='/locations'>
               <Locations locations={easybaseData} />
             </Route>}
