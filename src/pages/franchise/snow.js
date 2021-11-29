@@ -1,6 +1,4 @@
 import React from 'react';
-import Section from '../../components/section';
-import snowflake from '../../images/franchise/snow.png';
 import './snow.css';
 
 function Snow(props) {
