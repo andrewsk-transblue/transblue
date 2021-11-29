@@ -49,7 +49,8 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
     "sitemap": "babel-node ./sitemap-generator.js",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "postbuild": "tar -cvzf transblue2.tar.gz ./build"
   },
   "eslintConfig": {
     "extends": [
@@ -62,7 +63,7 @@
     "not dead",
     "not op_mini all"
   ],
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Transblue World Class General Contractors",
   "main": "server.js",
   "repository": {
     "type": "git",

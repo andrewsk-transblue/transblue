@@ -13,6 +13,7 @@ import './style.css';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
+import axios from 'axios';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -30,15 +31,20 @@ function NewLanding() {
             category: 'User',
             action: 'Visited Landing Page'
           });
-        if('getCurrentPosition' in navigator.geolocation ) {
-            navigator.geolocation.getCurrentPosition(position => {
-                console.log(position)
-                //let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-                //console.log(state)
-                //let state = 'Arizona'
-                //if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
-            })
-        }
+          //console.log(navigator.geolocation)
+        // if('getCurrentPosition' in navigator.geolocation ) {
+        //     axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY')
+        //         .then(res => console.log(res))
+        //     // import('reverse-geocode').then((reverse) => {
+        //     //     navigator.geolocation.getCurrentPosition(position => {
+        //     //         console.log(position)
+        //     //         let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
+        //     //         console.log(state)
+        //     //         //let state = 'Arizona'
+        //     //         if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
+        //     //     })
+        //     // })            
+        // }
     }, [])
 
     return(
