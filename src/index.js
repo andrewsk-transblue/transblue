@@ -18,7 +18,7 @@ if (rootElement.hasChildNodes()) {
   render(  
   <EasybaseProvider ebconfig={ebconfig}>
     <App />
-  </EasybaseProvider>, 
+  </EasybaseProvider>,
   rootElement);
 }
 

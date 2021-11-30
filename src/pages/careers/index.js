@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
 import About from './about';
@@ -17,6 +17,10 @@ function Careers(props) {
     
     return(
         <div className='career-wrapper'>
+            <Helmet>
+                <title>Transblue Careers</title>
+                <meta name="description" content="Become part of our Transblue Family today!" />
+            </Helmet>
             <Header title='TRANSBLUE CAREERS' name='careers' />
             <Navbar />
             <About scroll={scrollToApply} />
