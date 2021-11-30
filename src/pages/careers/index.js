@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
 import About from './about';

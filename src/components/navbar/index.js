@@ -1,5 +1,4 @@
 import React,  {Component} from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import './style.css';
 
@@ -50,9 +49,9 @@ class Navbar extends Component {
     render() {
         return(
             <nav className={`navbar navbar-expand-xl bg-dark navbar-dark fixed-top ${this.state.bgColor} ${this.props.page} ${this.state.topPadding} ml-auto`}  >
-                <Link className="navbar-brand" to="/">
+                <a className="navbar-brand" href="/">
                     <img src={logo} id='logo' alt='Transblue Logo'></img>
-                </Link>
+                </a>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
 
                 <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,17 +61,17 @@ class Navbar extends Component {
 
                     <ul className="navbar-nav ml-auto flex-xl-row">
                         <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="/">HOME</Link>
+                            <a className="nav-link" href="/">HOME</a>
                         </li>
                         <li className="nav-item dropdown ml-auto">
                             <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`}  aria-labelledby="navbarDropdown1">
-                                <Link className="dropdown-item" to="/residential">RESIDENTIAL</Link>
-                                <Link className="dropdown-item" to="/multifamily">MULTIFAMILY</Link>
-                                <Link className='dropdown-item' to="/commercial">COMMERCIAL</Link>
-                                <Link className='dropdown-item' to="/government">GOVERNMENT</Link>
+                                <a className="dropdown-item" href="/residential">RESIDENTIAL</a>
+                                <a className="dropdown-item" href="/multifamily">MULTIFAMILY</a>
+                                <a className='dropdown-item' href="/commercial">COMMERCIAL</a>
+                                <a className='dropdown-item' href="/government">GOVERNMENT</a>
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
@@ -91,7 +90,7 @@ class Navbar extends Component {
                         </li>
 
                         <li className="nav-item ml-auto">
-                            <Link className="nav-link" to="/locations">LOCATIONS</Link>
+                            <a className="nav-link" href="/locations">LOCATIONS</a>
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
@@ -99,12 +98,12 @@ class Navbar extends Component {
                             OTHER
                             </button>
                             <div className={this.props.page === 'LOCATIONS' ? `dropdown-menu dropdown-locations` : `dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">
-                                <Link to='/subcontractor' className='dropdown-item'>SUBCONTRACTORS</Link>
-                                <Link className='dropdown-item' to='/finance'>GET FINANCED</Link>
-                                {!this.props.franchise && <Link className="dropdown-item" to="/contact">CONTACT</Link>}
-                                <Link className='dropdown-item' to='/featured'>PROJECTS</Link>
+                                <a href='/subcontractor' className='dropdown-item'>SUBCONTRACTORS</a>
+                                <a className='dropdown-item' href='/finance'>GET FINANCED</a>
+                                {!this.props.franchise && <a className="dropdown-item" href="/contact">CONTACT</a>}
+                                <a className='dropdown-item' href='/featured'>PROJECTS</a>
                                 <a className='dropdown-item' href="/blog">BLOG</a>
-                                <Link className='dropdown-item' to='/givesback'>GIVING BACK</Link>
+                                <a className='dropdown-item' href='/givesback'>GIVING BACK</a>
                             </div>
                         </li>
                     </ul>

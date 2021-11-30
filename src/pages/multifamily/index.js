@@ -42,7 +42,7 @@ function Multifamily() {
         <Fragment>
             <Helmet>
                 <title>Transblue Multifamily</title>
-                <meta name="description" content="Transblue Multifamily Services" />
+                <meta name="description" content="Transblue provides a number of multifamily services to HOAs and CAIs, including paving, snow removal, amenity installation, and everything in between." />
             </Helmet>
             <Navbar page='MULTIFAMILY' parentPage='gc'  />
 

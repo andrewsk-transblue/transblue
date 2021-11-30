@@ -1,5 +1,4 @@
-import React, {useState, Fragment} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import collapse from '../../images/collapse30.png';
 import './style.css';
 

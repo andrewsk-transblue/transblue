@@ -37,7 +37,7 @@ function Government() {
             <Fragment>
                 <Helmet>
                     <title>Transblue Government</title>
-                    <meta name="description" content="Transblue Government Services" />
+                    <meta name="description" content="Transblue will take care of all of your Government outdoor construction needs, from asphalt to EV chargers to snow removal and everything in between!" />
                 </Helmet>
                 <Navbar page='GOVERNMENT' parentPage='gc' />
                 <Header img={govt} title='GOVERNMENT' subtitle='' name='government' />

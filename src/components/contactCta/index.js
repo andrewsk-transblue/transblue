@@ -17,12 +17,11 @@ function ContactCta(props) {
     return(
         displayCTA && <div className='contact-cta'>
             <button id='cta' onClick={() => setDisplayForm(true)}>CONTACT US</button>
-            {/* {displayForm &&  */}
-                <Slide right when={displayForm} exit={true} collapse>
-                    <div className='form'>
-                        <Form email={props.email} location={props.location} onClick={() => setDisplayForm(false)} />
-                    </div>
-                </Slide>
+            <Slide right when={displayForm} exit={true} collapse>
+                <div className='form'>
+                    <Form email={props.email} location={props.location} onClick={() => setDisplayForm(false)} />
+                </div>
+            </Slide>
         </div>
     )
 }

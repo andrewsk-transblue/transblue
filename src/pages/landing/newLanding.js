@@ -43,8 +43,8 @@ function NewLanding() {
     return(
         <Fragment>
             <Helmet>
-                <title>Transblue Home</title>
-                <meta name="description" content="Transblue - World Class General Contractors" />
+                <title>Transblue World Class General Contractors</title>
+                <meta name="description" content="Transblue cares about our customers and their homes and businesses. From retaining walls to asphalt to snow removal, we get the job done right." />
             </Helmet>
             <Navbar page='HOME' />
             <Header />
