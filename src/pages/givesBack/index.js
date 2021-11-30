@@ -1,4 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
@@ -118,6 +119,10 @@ function GivesBack(props) {
 
     return( 
         <Fragment>
+            <Helmet>
+                <title>Transblue Gives Back</title>
+                <meta name="description" content="At Transblue, we believe in doing things for the community and in the community." />
+            </Helmet>
             <Navbar />
             <Header name='givesback' img={givesback} title='TRANSBLUE GIVES BACK' />
             <div className='container givesback-wrapper sm-screen-hide'>

@@ -47,6 +47,7 @@ function Franchise(props) {
                 let region = props.locations[i].region
                 setLocation(props.locations[i])
                 setServices(regionalServices[region])
+                setName(props.locations[i].name.slice(10))
                 if(region === 'southwest' || region === 'west') setDisplaySnow(false)
                 return
             }
@@ -61,7 +62,7 @@ function Franchise(props) {
             <Fragment>
             <Helmet>
                 <title>{location.name}</title>
-                <meta name="description" content="Transblue Government Services" />
+                <meta name="description" content={`World Class General Contracting services offered in ${name}, ${location.state} and surrounding areas`} />
             </Helmet>
             <div className='franchise-wrapper'>
                 <Navbar page='' franchise={true} city={`${location.city}`} state={`${location.state}`} phone={`${location.callbluephone}`} name={`${location.name}`} urlCity={`${location.urlcity}`}  />

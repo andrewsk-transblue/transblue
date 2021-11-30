@@ -29,7 +29,7 @@ function Featured() {
         <Fragment>
             <Helmet>
                 <title>Featured Projects</title>
-                <meta name="description" content="Transblue Featured Projects" />
+                <meta name="description" content="Get inspired with one of our latest and greatest projects that we completed for happy clients" />
             </Helmet>
             <Navbar page='PROJECTS' />
             <Header title='FEATURED PROJECTS' name='featured' />
