@@ -23,13 +23,12 @@ const Finance = lazy(() => import('./pages/finance'));
 const Careers = lazy(() => import('./pages/careers'))
 
 function App() {
-  //console.log('rendering App.js')
   const [easybaseData, seteasybaseData] = useState([]);
   const { db } = useEasybase();
   const mounted = async() => {
     const ebData = await db("LOCATIONS").return().all();
     seteasybaseData(ebData);
-}
+  }
 
   useEffect(() => {
        mounted();
@@ -45,13 +44,8 @@ function App() {
             <Route exact path='/commercial' component={Commercial} />
             <Route exact path='/multifamily' component={Multifamily} />
             <Route exact path='/government' component={Government} />
-            {/* <Route exact path='/featured' component={Projects} /> */}
-            {/* <Route exact path='/franchise/:name' component={Franchise} /> */}
-            {/* <Route exact path='/locations/:state/:urlCity' component={Franchise} /> */}
-            
             <Route exact path='/subcontractor' component={Subcontractor} />
             {easybaseData.length > 0 && <Route exact path='/locations/:state/:urlCity' render={(props) => {
-                //const zipcode = props.match.params.zipcode;
                 const state = props.match.params.state;
                 const urlCity = props.match.params.urlCity;
                 return <Franchise locations={easybaseData} state={state} urlCity={urlCity} />

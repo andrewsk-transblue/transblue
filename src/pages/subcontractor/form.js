@@ -1,6 +1,5 @@
 import React, {Component, ref} from 'react';
 import SignatureCanvas from 'react-signature-canvas';
-import Fade from 'react-reveal/Fade';
 import Agreement from './agreement';
 import './style.css';
 
@@ -37,9 +36,9 @@ class Form extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log(this.props.location.subagreement)
-    }
+    // componentDidMount() {
+    //     console.log(this.props.location.subagreement)
+    // }
 
     onChange = (e) => {
         this.setState({[e.target.id]: e.target.value})
@@ -56,9 +55,9 @@ class Form extends Component {
         let templateParams = {
             subject: 'Subcontractor Application',
             from_name: this.props.location.name,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO this.props.location.officeemail
+            to_email: this.props.location.officeemail, //CHANGE THIS TO this.props.location.officeemail
             to_name: this.state.name,
-            reply_to: 'carters@transblue.org', //CHANGE THIS TO this.state.email
+            reply_to: this.state.email, //CHANGE THIS TO this.state.email
             message_html: `${this.props.location.htmlagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
             businessName: this.state.businessName,
             email: this.state.email,

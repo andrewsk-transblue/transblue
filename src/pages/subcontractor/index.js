@@ -1,16 +1,12 @@
 import React, {Fragment, useState, useEffect, useRef} from 'react';
 import { useEasybase } from 'easybase-react';
-import Fade from 'react-reveal/Fade';
 import Navbar from '../../components/navbar';
-import FranchiseNav from '../../components/franchiseNav';
 import Form from './form';
-import Promise from './promise';
 import Footer from '../../components/footer';
 import Respect from './respect';
 import Growing from './growing';
 import Tools from './tools';
 import Header from '../../components/header';
-import header from '../../images/subcontractor/header.jpg';
 import './style.css';
 
 

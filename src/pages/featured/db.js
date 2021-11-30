@@ -1,5 +1,4 @@
 //import asphalt from '../../featured/asphalt3.jpg';
-import roofing from '../../featured/roofing3.jpg';
 
 import asphalt1 from '../../featured/asphalt1.jpg';
 import asphalt2 from '../../featured/asphalt2.jpg';
@@ -22,7 +21,6 @@ import urban5 from '../../featured/urban5.jpg';
 import trendy1 from '../../featured/trendy1.jpg';
 import trendy2 from '../../featured/trendy2.jpg';
 import trendy3 from '../../featured/trendy3.jpg';
-import trendy4 from '../../featured/trendy4.jpg';
 
 const featuredDb = {
     '5 STAR ASPHALT REFRESHMENT': {

@@ -1,10 +1,9 @@
-import React, {Fragment, useEffect, useRef, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import OpenProject from './openProject';
 import Footer from '../../components/footer/index';
-import header2 from '../../images/featured/header-2.jpg';
 import './style.css';
 import ContactCta from '../../components/contactCta';
 import rightarrow from '../../images/residential/rightarrow.png';
@@ -12,7 +11,6 @@ import leftarrow from '../../images/residential/leftarrow.png';
 import featuredDb from './db';
 
 import ReactGA from 'react-ga';
-
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 

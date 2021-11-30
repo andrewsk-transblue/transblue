@@ -1,10 +1,6 @@
 import React, {Fragment, useEffect, useState, lazy} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
-import Header from '../../components/landing/header';
-//import NewReviews from '../../components/landing/newReviews/newReviews';
-import Footer from '../../components/footer';
-import Mission from '../../components/landing/mission';
 import './style.css';
 
 //REACT GOOGLE ANALYTICS
@@ -16,7 +12,10 @@ const Services = lazy(() => import('../../components/landing/services/index'));
 const Professional = lazy(() => import('../franchise/professional'));
 const Mbridge = lazy(() => import('../../components/landing/mbridge'));
 const ContactCta = lazy(() => import('../../components/contactCta'));
-const NewReviews = lazy(() => import('../../components/landing/newReviews/newReviews'))
+const NewReviews = lazy(() => import('../../components/landing/newReviews/newReviews'));
+const Mission = lazy(() => import('../../components/landing/mission'));
+const Footer = lazy(() => import('../../components/footer'));
+const Header = lazy(() => import('../../components/landing/header'));
 
 function NewLanding() {
 
