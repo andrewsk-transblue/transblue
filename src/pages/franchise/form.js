@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
-import Captcha from '../../components/captcha/captcha';
+import React, {Component, lazy} from 'react';
 import './contact2.css';
 
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
+
+const Captcha = lazy(() => import('../../components/captcha/captcha'))
 
 class Form extends Component {
     state={
