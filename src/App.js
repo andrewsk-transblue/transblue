@@ -20,17 +20,21 @@ const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
 const Finance = lazy(() => import('./pages/finance'));
-const Careers = lazy(() => import('./pages/careers'))
+const Careers = lazy(() => import('./pages/careers'));
 
 function App() {
   const [easybaseData, seteasybaseData] = useState([]);
   const { db } = useEasybase();
+  
   const mounted = async() => {
+    
     const ebData = await db("LOCATIONS").return().all();
+    console.log(ebData)
     seteasybaseData(ebData);
   }
 
   useEffect(() => {
+    console.log('testing')
        mounted();
   }, [])
 

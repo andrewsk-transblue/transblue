@@ -81,7 +81,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 104s infinite;
+    animation: slideBg 104s infinite ease-in-out;
     /* animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
     background-image: url('../../images/landingHeader/fire-min.jpeg');
 }
@@ -99,10 +99,6 @@
     margin-top: 40px;
     margin-bottom: 30px;
 }
-
-/* .stats .col-lg-6:first-of-type {
-    padding-right: 40px;
-} */
 
 .stats h6 {
     font-size: clamp(25px, 2vw, 2vw);

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
@@ -10,11 +10,16 @@ import Core from './core';
 import What from './what';
 
 function Careers(props) {
+    const [locations,setLocations] = useState([])
     const applyRef = useRef(null)
 
     function scrollToApply() {
         applyRef.current.scrollIntoView({ behavior: 'smooth' })
     }
+
+    useEffect(() => {
+        console.log(props.locations)
+    }, [props.locations])
     
     return(
         <div className='career-wrapper'>
