@@ -1,6 +1,6 @@
 .landing-body {
     position: absolute;
-    top: 600px;
+    top: 100vh;
     background-color: white;
     width: 100%;
 }
@@ -89,10 +89,11 @@
 #header_slide,
 .header,
 #header-overlay {
-    height: clamp(300px, 600px, 900px);
+    height: 100vh;
+    /* height: clamp(300px, 100vh, 100vh);
     @supports not (height: clamp(300px, 600px, 900px)) {
         height: min(max(300px, 600px), 900px)
-    }
+    } */
 }
 
 .stats {
