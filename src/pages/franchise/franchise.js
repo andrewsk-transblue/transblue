@@ -43,7 +43,7 @@ function Franchise(props) {
         let urlCity = props.urlCity;
 
         for(let i=0; i<props.locations.length; i++) {
-            if(props.locations[i].urlcity === urlCity) {
+            if(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase()) {
                 let region = props.locations[i].region
                 setLocation(props.locations[i])
                 setServices(regionalServices[region])

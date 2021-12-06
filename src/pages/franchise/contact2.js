@@ -11,7 +11,7 @@ function Contact2(props) {
     if(window.innerWidth < 576) height = 12
     else if(window.innerWidth < 710) height = 10
     else if(window.innerWidth < 875) height = 8
-    //else if(window.innerWidth > 1200) height = 5;
+    else if(window.innerWidth > 1200 && window.innerWidth < 1300) height = 5;
     else if(window.innerWidth > 1265) height = 4;
     else height = 5
 

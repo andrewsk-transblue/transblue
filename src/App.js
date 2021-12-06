@@ -45,11 +45,15 @@ function App() {
             <Route exact path='/' component={NewLanding} />
             <Route exact path='/landing' component={NewLanding} />
             <Route exact path='/residential' component={Residential} />
+            <Route exact path='/residential-services' component={Residential} />
             <Route exact path='/commercial' component={Commercial} />
+            <Route exact path='/commercial-services' component={Commercial} />
             <Route exact path='/multifamily' component={Multifamily} />
+            <Route exact path='/multifamily-construction' component={Multifamily} />
             <Route exact path='/government' component={Government} />
+            <Route exact path='/government-services' component={Government} />
             <Route exact path='/subcontractor' component={Subcontractor} />
-            {easybaseData.length > 0 && <Route exact path='/locations/:state/:urlCity' render={(props) => {
+            {easybaseData.length > 0 && <Route path='/locations/:state/:urlCity' render={(props) => {
                 const state = props.match.params.state;
                 const urlCity = props.match.params.urlCity;
                 return <Franchise locations={easybaseData} state={state} urlCity={urlCity} />
@@ -58,6 +62,7 @@ function App() {
               <Locations locations={easybaseData} />
             </Route>}
             <Route exact path='/featured' component={Featured} />
+            <Route exact path='/featured-projects' component={Featured} />
             <Route exact path='/privacy' component={Privacy} />
             <Route exact path='/givesback/:charity' component={GivesBack} />
             <Route exact path='/givesback' component={GivesBack} />

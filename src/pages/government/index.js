@@ -97,7 +97,7 @@ function Government() {
                         p3='Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
                     <ServiceList
-                        img={fence}
+                        page='government'
                         title='GOVERNMENT SERVICES'
                         // subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
                         services={['Snow and Ice Management',

@@ -18,8 +18,9 @@
 .rockstar-wrapper .text {
     position: absolute;
     /* top: 70%; */
-    bottom: 2%;
+    bottom: 3%;
     width: 95%;
+    margin-left: 3%;
     /* left: 40px; */
     color: white;
 }
@@ -91,22 +92,10 @@
     background-image: url('../../../images/residential/monohan9.jpg');
 }
 
-@media only screen and (min-width: 490px) {
-    .rockstar-wrapper .text {
-        top: 80%;
-    }
-}
-
 @media only screen and (min-width: 576px) {
     #drop {
         width: 35px;
     }
-    /* .rockstar-wrapper .text p {
-        margin-left: 40px;
-    } */
-    /* .rockstar-wrapper .text {
-        top: 75%;
-    } */
     #forward {
         width: 50px;
     }

@@ -19,7 +19,7 @@ function Footer() {
             </div>
 
             <span className='contact'>
-                <a href='tel:+8444822583'><i className='fas fa-phone'></i> (844) 482-2583</a>
+                <a href='tel:+18444822583'><i className='fas fa-phone'></i>  +1 (844) 482-2583</a>
                 <a href='mailto:inquiries@transblue.com'><i className='fas fa-envelope'></i> inquiries@transblue.com</a>
             </span>
 
