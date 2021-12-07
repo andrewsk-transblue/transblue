@@ -1,0 +1,55 @@
+.hq-bg {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.hq-bg .form-wrapper {
+    background-color: white;
+    padding: 40px;
+}
+
+.hq-bg h3 {
+    font-family: 'Raleway';
+    letter-spacing: .03em;
+}
+
+.hq-bg input:not(input.radio):not(input.checkbox):not(input.initials) {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.hq-bg input.radio {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hq-bg .msa1 {
+    border: 1px solid black;
+    height: 200px;
+    overflow: auto;
+    padding: 20px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.hq-bg button {
+    border: 2px solid #0b56a4;
+    padding: 0px 20px;
+    color: #0b56a4;
+    background-color: transparent;
+    margin-top: 30px;
+    letter-spacing: .04em;
+}
+
+.hq-bg button:hover {
+    background-color: #0b56a4;
+    color: white;
+    transition: .5s;
+}
+
+.hq-bg button.disabled {
+    opacity: .4;
+}

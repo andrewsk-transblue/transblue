@@ -17,20 +17,16 @@ function Footer() {
                     <button onClick={scrollToTop}><img src={collapse} alt='back to top' /></button>
                 </div>
             </div>
-
             <span className='contact'>
                 <a href='tel:+18444822583'><i className='fas fa-phone'></i>  +1 (844) 482-2583</a>
                 <a href='mailto:inquiries@transblue.com'><i className='fas fa-envelope'></i> inquiries@transblue.com</a>
             </span>
-
             <span className='links'>
                 <a href='/'>HOME</a>
                 <a href='http://snow.transblue.com/'>SNOW SERVICES</a>
                 <a href='http://green.transblue.com/'>GREEN SERVICES</a>
-                {/* <br /> */}
                 <a href='/blog'>BLOG</a>
                 <a href='/locations'>LOCATIONS</a>
-                {/* <a href='/'>FRANCHISE</a> */}
             </span>
             
             <div className='social-media'>

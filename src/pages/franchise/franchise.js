@@ -43,19 +43,17 @@ function Franchise(props) {
         let urlCity = props.urlCity;
 
         for(let i=0; i<props.locations.length; i++) {
+            //console.log(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase())
             if(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase()) {
-                let region = props.locations[i].region
-                setLocation(props.locations[i])
-                setServices(regionalServices[region])
-                setName(props.locations[i].name.slice(10))
-                if(region === 'southwest' || region === 'west') setDisplaySnow(false)
+                let region = props.locations[i].region;
+                setLocation(props.locations[i]);
+                setServices(regionalServices[region]);
+                setName(props.locations[i].name.slice(10));
+                if(region === 'southwest' || region === 'west') setDisplaySnow(false);
                 return
             }
-        }
-        //console.log(location)
+        }        
     }, [])
-
-    //console.log(Object.keys(location))
 
     return(
         Object.keys(location).length > 0 && 

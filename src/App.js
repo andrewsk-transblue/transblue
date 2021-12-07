@@ -7,6 +7,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import NewLanding from './pages/landing/newLanding';
 import './App.css';
 import { useEasybase } from 'easybase-react';
+import HQSubcontractor from './pages/hqsubcontractor';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./pages/commercial/index'));
@@ -73,6 +74,8 @@ function App() {
             {easybaseData.length > 0 && <Route exact path='/careers'>
               <Careers locations={easybaseData} />
               </Route>}
+            
+            <Route exact path='/hqsubs' component={HQSubcontractor} />
           </Suspense>
         </Router>
       </HelmetProvider>

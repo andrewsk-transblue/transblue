@@ -37,7 +37,7 @@ class Form extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.location.subagreement)
+        console.log(this.props.location.officeemail)
     }
 
     onChange = (e) => {
@@ -55,11 +55,11 @@ class Form extends Component {
         let templateParams = {
             subject: 'Subcontractor Application',
             from_name: this.props.location.name,
-            //to_email: this.props.location.officeemail, //CHANGE THIS TO this.props.location.officeemail
-            to_email: 'carters@transblue.org',
+            to_email: this.props.location.officeemail, //CHANGE THIS TO this.props.location.officeemail
+            //to_email: 'carters@transblue.org',
             to_name: this.state.name,
-            reply_to: 'carters@transblue.org',
-            //reply_to: this.state.email, //CHANGE THIS TO this.state.email
+            //reply_to: 'carters@transblue.org',
+            reply_to: this.state.email, //CHANGE THIS TO this.state.email
             message_html: `${this.props.location.htmlagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
             businessName: this.state.businessName,
             email: this.state.email,
@@ -77,13 +77,23 @@ class Form extends Component {
             nameMatch: true
         }
 
-        //SEND EMAIL TO FRANCHISE EMAIL WITH EMAILJS
+        //SEND EMAIL TO SUBCONTRACTOR APPLICANT
         emailjs.send(
         'service_61uwfqo',
         'template_zlj2blu', //SUBCONTRACTOR TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )
+
+        //SEND APPLICATION TO FRANCHISEE
+        emailjs.send(
+            'service_61uwfqo',
+            'template_2p9vcql',
+            templateParams,
+            process.env.REACT_APP_REACTJS_USER
+        )
+
+        // templateParams[to_email] = 
         
         this.setState({applicationSent: true})
     }
@@ -162,17 +172,17 @@ class Form extends Component {
 
                 <div className='row'>
                     <span>
-                    <input id='authority' type='radio' onChange={(e) => this.updateRadio(e, true)} required></input>
-                    <label>I have authority to sign on subcontractor's behalf</label><br />
+                    {/* <input id='authority' type='radio' onChange={(e) => this.updateRadio(e, true)} required></input>
+                    <label>I have authority to sign on subcontractor's behalf</label><br /> */}
                     Please retype your name:<br />
                     <input placeholder='Your name' onChange={this.checkName}></input>
                         {!this.state.nameMatch && 
                             <div><i className='fas fa-times' style={{color: 'red'}}></i> Does not match name above</div>
                         }<br />
                     </span>
-                    
                 </div>
-                {this.state.authority && 
+                
+                {/* {this.state.authority && 
                     <div className='row'>
                         <div className='col-12'>
                         {!this.state.sigSaved && <SignatureCanvas 
@@ -186,7 +196,7 @@ class Form extends Component {
                         </div>}
                         {this.state.trimmedDataURL.length > 0 && <img src={this.state.trimmedDataURL} alt='' />}
                     </div>
-                }
+                } */}
 
                 <div className='row'>
                     <span>

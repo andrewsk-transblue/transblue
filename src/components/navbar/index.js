@@ -7,7 +7,6 @@ class Navbar extends Component {
         bgColor: 'transparent',
         topPadding: 'topPadding',
         rightPadding: false
-        // scrollHeight: 300
     }
 
     componentDidMount() {
