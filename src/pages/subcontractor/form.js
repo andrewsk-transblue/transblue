@@ -79,7 +79,7 @@ class Form extends Component {
 
         //SEND EMAIL TO SUBCONTRACTOR APPLICANT
         emailjs.send(
-        'service_61uwfqo',
+        'service_gekurtf',
         'template_zlj2blu', //SUBCONTRACTOR TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
@@ -87,7 +87,7 @@ class Form extends Component {
 
         //SEND APPLICATION TO FRANCHISEE
         emailjs.send(
-            'service_61uwfqo',
+            'service_gekurtf',
             'template_2p9vcql',
             templateParams,
             process.env.REACT_APP_REACTJS_USER
@@ -181,7 +181,7 @@ class Form extends Component {
                         }<br />
                     </span>
                 </div>
-                
+
                 {/* {this.state.authority && 
                     <div className='row'>
                         <div className='col-12'>

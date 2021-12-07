@@ -11,7 +11,8 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 function HQSubcontractor() {
     const [displayMSA1, setDisplayMSA1] = useState(false);
     const [displayMSA, setDisplayMSA] = useState(false);
-    const [disabled, setDisabled] = useState(true)
+    const [disabled, setDisabled] = useState(true);
+    const [submitted, setIsSubmitted] = useState(false);
 
     function displayMsa() {
         setDisplayMSA(true);
@@ -19,9 +20,12 @@ function HQSubcontractor() {
     }
 
     function submit(e) {
+        
         e.preventDefault();
-        emailjs.sendForm('service_61uwfqo', 'template_vjdl3op', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
+        emailjs.sendForm('service_gekurtf', 'template_vjdl3op', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
             .then(res => console.log(res))
+
+        setIsSubmitted(true);
     }
     
     return(
@@ -97,14 +101,14 @@ function HQSubcontractor() {
                             <label className="radio-inline"><input type="radio" className='radio' name="liability" value={false} />No</label>
                         </div>
                         <div className='col-lg-4'>
-                            <label>Can you provide a Certificate of Insurance? *</label>
-                            <label className="radio-inline"><input type="radio" className='radio' name="certificate" value={true} />Yes</label>
-                            <label className="radio-inline"><input type="radio" className='radio' name="certificate" value={false} />No</label>
-                        </div>
-                        <div className='col-lg-4'>
                             <label>Do your employees have the ability to access and report information to Transblue remotely from a job site (Laptop, Tablet, Smart Phone, etc.)? *</label>
                             <label className="radio-inline"><input type="radio" className='radio' name="remoteAccess" value={true} />Yes</label>
                             <label className="radio-inline"><input type="radio" className='radio' name="remoteAccess" value={false} />No</label>
+                        </div>
+                        <div className='col-lg-4'>
+                            <label>Can you provide a Certificate of Insurance? *</label>
+                            <label className="radio-inline"><input type="radio" className='radio' name="certificate" value={true} />Yes</label>
+                            <label className="radio-inline"><input type="radio" className='radio' name="certificate" value={false} />No</label>
                         </div>
                     </div>
                     <button type='button' onClick={() => setDisplayMSA1(true)}>NEXT</button>
@@ -144,6 +148,9 @@ function HQSubcontractor() {
                         </div>
                         <Captcha onChange={() => setDisabled(false)} />
                         <button type='submit' className={disabled ? 'disabled' : ''} disabled={disabled}>SUBMIT</button>
+                        {submitted && <div className='submitted alert-success p-2 text-center'>
+                            <b>Thank you!</b> Your subcontractor application for Transblue has been submitted
+                        </div>}
                     </div>
                 }
             </form>

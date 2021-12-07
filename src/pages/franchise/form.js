@@ -47,7 +47,7 @@ class Form extends Component {
            }
 
         emailjs.send(
-        'service_61uwfqo',
+        'service_gekurtf',
         'template_dqy1grk', //CONTACT TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER

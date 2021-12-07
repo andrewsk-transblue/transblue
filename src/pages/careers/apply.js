@@ -24,7 +24,7 @@ const Apply = forwardRef((props) => {
         e.preventDefault();
 
         //console.log(email)
-        emailjs.sendForm('service_61uwfqo', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
+        emailjs.sendForm('service_gekurtf', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
             .then(res => console.log(res))
     }
 
