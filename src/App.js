@@ -39,6 +39,8 @@ function App() {
        mounted();
   }, [])
 
+  console.log(JSON.stringify(``))
+
   return (
       <HelmetProvider>
         <Router>
@@ -75,7 +77,7 @@ function App() {
               <Careers locations={easybaseData} />
               </Route>}
             
-            <Route exact path='/hqsubs' component={HQSubcontractor} />
+            <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
           </Suspense>
         </Router>
       </HelmetProvider>

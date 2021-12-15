@@ -38,7 +38,7 @@ function Form() {
         let templateParams = {
             website: 'GC WEBSITE',
             from_name: `${firstName} ${lastName}`,
-            to_email: 'carters@transblue.org', //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
+            to_email: 'incomingleads@transblue.org', //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
             reply_to: email,
             phone: phone,
             message: message

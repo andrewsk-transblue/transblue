@@ -59,7 +59,7 @@ function Mbridge() {
                         <div className='text'>
                             <p className='tb-is'>Transblue is</p>
                             <p className='title'>BEAUTIFUL DESIGN</p>
-                            <p className='body'>Indoor and outdoor design enhance your property and increases your home's value.</p>
+                            <p className='body'>Indoor and outdoor design enhances your property and increases your home's value.</p>
                             <img src={fire} alt='' />
                         </div>
                         </div>
@@ -112,7 +112,7 @@ function Mbridge() {
                 <div className='col-lg-12'>
                     <div className='title'>
                     <h4 className='section-header'>TRANSBLUE GIVES BACK</h4>
-                    <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is dontated to helping those in need around the globe. We are here for each other.</div>
+                    <div className='section-p'>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is donated to helping those in need around the globe. We are here for each other.</div>
                     </div>
                 </div>
             </div>
