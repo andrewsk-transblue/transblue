@@ -12,6 +12,12 @@
     padding-top: 50px;
     /* font-size: clamp() */
 }
+
+.contact2-wrapper h2.lg-screen-title,
+.contact2-wrapper .section-p.lg-screen-title {
+    padding-top: 0px;
+    display: none;
+}
 .contact2-wrapper .svg-container {
     position: absolute;
     bottom: 0;
@@ -205,5 +211,17 @@
     } */
     .contact2-wrapper .contact-info h5 {
         margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .contact2-wrapper h2.lg-screen-title,
+    .contact2-wrapper .section-p.lg-screen-title {
+        display: block;
+    }
+
+    .contact2-wrapper h2.sm-screen-title,
+    .contact2-wrapper .section-p.sm-screen-title {
+        display: none;
     }
 }

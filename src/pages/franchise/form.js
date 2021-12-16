@@ -62,6 +62,10 @@ class Form extends Component {
         
         return(
             <form className='form-wrapper' onSubmit={this.onSubmit}>
+                <h2 className='lg-screen-title'>GET IN TOUCH.</h2>
+                <p className='section-p lg-screen-title w-100'>
+                    We are happy to provide a complimentary quote or answer any questions you may have.
+                </p>
                 <span>
                     <input onChange={this.onChange} className='left-input firstName' name={'firstName'} placeholder='First Name' />
                     <input onChange={this.onChange} className='right-input' name='lastName' placeholder='Last Name' />

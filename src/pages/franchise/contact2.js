@@ -11,10 +11,9 @@ function Contact2(props) {
     if(window.innerWidth < 576) height = 12
     else if(window.innerWidth < 710) height = 10
     else if(window.innerWidth < 875) height = 8
-    else if(window.innerWidth > 1200 && window.innerWidth < 1300) height = 5;
-    else if(window.innerWidth > 1265) height = 4;
+    else if(window.innerWidth > 1200 && window.innerWidth < 1335) height = 5;
+    else if(window.innerWidth > 1335) height = 4;
     else height = 5
-
 
     let zipcode = props.franchise.zipcode;
 
@@ -63,8 +62,8 @@ function Contact2(props) {
                 </div>
             </div>
             <div className='contact-form-info'>
-                <h2>GET IN TOUCH.</h2>
-                <p className='section-p'>
+                <h2 className='sm-screen-title'>GET IN TOUCH.</h2>
+                <p className='section-p sm-screen-title'>
                     We are happy to provide a complimentary quote or answer any questions you may have.
                 </p>
                 {/* <p className='section-p'>
