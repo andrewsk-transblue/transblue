@@ -95,22 +95,12 @@ class Form extends Component {
                     else this.setState({error: true})
                 })
             }
-
             else this.setState({error: true})
         })
     }
 
     checkName = (e) => {
         e.target.value.toLowerCase().trim() == this.state.name.toLowerCase().trim() ? this.setState({nameMatch: true}) : this.setState({nameMatch: false})
-    }
-
-    clearSig = () => {
-        this.sigPad.clear();
-    }
-        
-    trim = () => {
-        this.setState({ trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL('image/png'), sigSaved: true })
-        this.sigPad.clear();
     }
     
     render() {
