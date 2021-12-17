@@ -30,15 +30,11 @@ class Form extends Component {
             insurance: false,
             remoteAccess: false,
             acceptTerms: false,
-            applicationSent: false,
-            trimmedDataURL: '',
-            sigSaved: false,
-            filledForm: '',
             imgSrc: '',
             nameMatch: false,
             retypeName: '',
-            applicantSuccess: false,
-            franchiseSuccess: false
+            franchiseSuccess: false,
+            error: false
         }
     }
 
@@ -58,17 +54,12 @@ class Form extends Component {
         e.preventDefault();
         console.log('submitted');
 
-        //console.log(this.props.location.officeemail)
-
         let templateParams = {
             subject: 'Subcontractor Application',
             from_name: this.props.location.name,
-            to_email: 'no-reply@transblue.org', //CHANGE THIS TO this.props.location.officeemail
-            //to_email: this.props.location.officeemail,
+            to_email: this.props.location.officeemail, //CHANGE THIS TO this.props.location.officeemail
             to_name: this.state.name,
-            //reply_to: 'carters@transblue.org',
             reply_to: this.state.email, //CHANGE THIS TO this.state.email
-            //message_html: `${this.props.location.htmlagreement} <br /> SIGNATURE: <img src='cid:signature' />`,
             businessName: this.state.businessName,
             email: this.state.email,
             jobTitle: this.state.jobTitle,
@@ -101,13 +92,15 @@ class Form extends Component {
                     process.env.REACT_APP_REACTJS_USER
                 ).then(res => {
                     if(res.status === 200) this.setState({franchiseSuccess: true})
+                    else this.setState({error: true})
                 })
             }
+
+            else this.setState({error: true})
         })
     }
 
     checkName = (e) => {
-        // this.onChange();
         e.target.value.toLowerCase().trim() == this.state.name.toLowerCase().trim() ? this.setState({nameMatch: true}) : this.setState({nameMatch: false})
     }
 
@@ -181,23 +174,22 @@ class Form extends Component {
 
                 <div className='row'>
                     <span>
-                    {/* <input id='authority' type='radio' onChange={(e) => this.updateRadio(e, true)} required></input>
-                    <label>I have authority to sign on subcontractor's behalf</label><br /> */}
-                    Please retype your name:<br />
-                    <input placeholder='Your name' onChange={this.checkName} id='retypeName'></input>
+                        Please retype your name:<br />
+                        <input placeholder='Your name' onChange={this.checkName} id='retypeName'></input>
                         {!this.state.nameMatch && 
                             <div><i className='fas fa-times' style={{color: 'red'}}></i> Does not match name above</div>
                         }<br />
                         {this.state.nameMatch && 
                             <span><i className='fas fa-check' style={{color: 'green'}}></i> Name matches</span>
-                        }<br />
+                        }
+                        <br />
                     </span>
                 </div>
 
                 <div className='row'>
                     <span>
-                    <input id='acceptTerms' type='radio' checked={this.state.acceptTerms} onChange={(e) => this.updateRadio(e, true)} required></input>
-                    <label>I have read and accept all terms and conditions listed above</label>
+                        <input id='acceptTerms' type='radio' checked={this.state.acceptTerms} onChange={(e) => this.updateRadio(e, true)} required></input>
+                        <label>I have read and accept all terms and conditions listed above</label>
                     </span>
                 </div>
 
@@ -205,8 +197,8 @@ class Form extends Component {
                     <button type='submit' disabled={!this.state.acceptTerms} className='cta'>SUBMIT</button>
                 </div>
 
-                {this.state.applicationSent && <div className='application-sent alert alert-success'>
-                    Thank you! Your application has been submitted.
+                {this.state.error && <div className='application-sent alert alert-danger'>
+                    Oops! There was an error, please try again
                 </div>}
             </form>
         )

@@ -116,24 +116,6 @@
     font-weight: normal;
 }
 
-/* .subcontractor-wrapper .alert-wrapper {
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: white;
-    padding: 30px;
-    border: 1px solid gray;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: .05em;
-}
-
-.subcontractor-wrapper .alert-wrapper button {
-    background-color: transparent;
-    border: 0px;
-    font-size: 16px;
-} */
-
 .subcontractor-wrapper h2 {
     font-family: 'Raleway', sans-serif;
     color: #0b56a4;
@@ -154,15 +136,6 @@
 
 .subform-wrapper {
     margin-top: 30px;
-}
-
-.subform-wrapper canvas {
-    border: 1px dashed gray;
-    margin-bottom: 30px;
-    max-width: 100%;
-    height: 300px;
-    max-height: 100%;
-    position: relative;
 }
 
 .subform-wrapper .clear,
@@ -189,6 +162,7 @@
 .subform-wrapper button.cta {
     margin-left: 0px;
     margin-top: 20px;
+    padding: 2px 20px;
 }
 
 .subform-wrapper input {
@@ -330,9 +304,14 @@ label {
     font-size: 20px;
 }
 
+.respect-wrapper button.cta {
+    padding: 2px 20px;
+}
+
 .growing-wrapper button.cta {
     color: white !important;
-    bordeR: 2px solid white !important;
+    border: 2px solid white !important;
+    padding: 2px 20px;
 }
 
 .growing-wrapper button.cta:hover {
