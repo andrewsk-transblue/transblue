@@ -116,7 +116,6 @@ class Form extends Component {
                         <input className='left-input' placeholder='Email' id='email' onChange={this.onChange} required value={this.state.email} />
                         <input className='right-input' placeholder='Job Title' id='jobTitle' onChange={this.onChange} required value={this.state.jobTitle} />
                     </span>
-
                     <span>
                         <input className='left-input' placeholder='Street Address' id='address1' onChange={this.onChange} required value={this.state.address1} />
                         <input className='right-input' placeholder='Address Line 2 (optional)' id='address2' onChange={this.onChange} value={this.state.address2} />
