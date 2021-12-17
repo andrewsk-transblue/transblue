@@ -45,6 +45,7 @@ function Franchise(props) {
         for(let i=0; i<props.locations.length; i++) {
             //console.log(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase())
             if(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase()) {
+                console.log(props.locations[i].msafile)
                 let region = props.locations[i].region;
                 setLocation(props.locations[i]);
                 setServices(regionalServices[region]);

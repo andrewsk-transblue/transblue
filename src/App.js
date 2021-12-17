@@ -22,6 +22,7 @@ const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
 const Finance = lazy(() => import('./pages/finance'));
 const Careers = lazy(() => import('./pages/careers'));
+const Success = lazy(() => import('./pages/subcontractor/success'));
 
 function App() {
   const [easybaseData, seteasybaseData] = useState([]);
@@ -78,6 +79,7 @@ function App() {
               </Route>}
             
             <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
+            <Route exact path='/subcontractor/success' component={Success} />
           </Suspense>
         </Router>
       </HelmetProvider>

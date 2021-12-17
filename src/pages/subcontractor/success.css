@@ -1,0 +1,29 @@
+.success-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.success-wrapper h3 {
+    font-family: 'Raleway';
+    letter-spacing: .06em;
+    font-weight: 500;
+}
+
+.success-wrapper img.arrow {
+    width: 15px;
+}
+
+.success-wrapper img.success {
+    width: 100px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.success-wrapper a {
+    font-family: 'Raleway';
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Redirect } from 'react-router-dom';
 import Captcha from '../../components/captcha/captcha';
 // /import SignatureCanvas from 'react-signature-canvas';
 import Agreement from './agreement';
@@ -36,23 +37,13 @@ class Form extends Component {
             imgSrc: '',
             nameMatch: false,
             retypeName: '',
-            msa1: '',
-            msa2: ''
+            applicantSuccess: false,
+            franchiseSuccess: false
         }
     }
 
     componentDidMount() {
-
-        // divide msa agreement into two variables so it can be sent in emailjs as variables
-        let halfPoint = Math.round(this.props.location.htmlagreement.length / 2);
-        let fullPoint = this.props.location.htmlagreement.length;
-        let msa1 = this.props.location.htmlagreement.substring(0, halfPoint);
-        let msa2 = this.props.location.htmlagreement.substring(halfPoint, fullPoint);
-
-        this.setState({
-            msa1: msa1,
-            msa2: msa2
-        })
+        console.log(this.props.location.msafile)
     }
 
     onChange = (e) => {
@@ -89,7 +80,8 @@ class Form extends Component {
             liability: this.state.liability,
             insurance: this.state.insurance,
             remoteAccess: this.state.remoteAccess,
-            acceptTerms: this.state.acceptTerms
+            acceptTerms: this.state.acceptTerms,
+            msafile: `<a href=${this.props.location.msafile}>MSA LINK</a>`
         }
 
         // SEND EMAIL TO SUBCONTRACTOR APPLICANT
@@ -98,40 +90,19 @@ class Form extends Component {
         'template_zlj2blu', //SUBCONTRACTOR TEMPLATE
             templateParams,
             process.env.REACT_APP_REACTJS_USER
-        )
-
-        //SEND APPLICATION TO FRANCHISEE
-        emailjs.send(
-            'service_gekurtf',
-            'template_2p9vcql',
-            templateParams,
-            process.env.REACT_APP_REACTJS_USER
-        )
-        
-        // clear form when user submits
-        this.setState({
-            applicationSent: true,
-            businessName: '',
-            name: '',
-            email: '',
-            jobTitle: '',
-            address1: '',
-            address2: '',
-            city: '',
-            state: '',
-            zipcode: '',
-            businessPhone: '',
-            cellPhone: '',
-            EIN: '',
-            licenseNo: '',
-            liability: false,
-            insurance: false,
-            remoteAccess: false,
-            acceptTerms: false,
-            trimmedDataURL: '',
-            sigSaved: false,
-            filledForm: '',
-            imgSrc: '',
+        ).then(res => {
+            if(res.status === 200) {
+                this.setState({applicantSuccess: true})
+                //SEND APPLICATION TO FRANCHISEE
+                emailjs.send(
+                    'service_gekurtf',
+                    'template_2p9vcql',
+                    templateParams,
+                    process.env.REACT_APP_REACTJS_USER
+                ).then(res => {
+                    if(res.status === 200) this.setState({franchiseSuccess: true})
+                })
+            }
         })
     }
 
@@ -150,8 +121,8 @@ class Form extends Component {
     }
     
     render() {
-
         return(
+            this.state.franchiseSuccess ? <Redirect to='/subcontractor/success' /> :
             <form className='subform-wrapper' onSubmit={this.onSubmit}>
                 <div className='row'>
                     <span>
