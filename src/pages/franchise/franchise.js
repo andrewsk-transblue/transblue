@@ -21,6 +21,7 @@ import Awards from './awards';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
 import db from './reviewDb';
+import awardsDb from './awardsDb';
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
@@ -137,7 +138,7 @@ function Franchise(props) {
 
                 <Contact2 name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`} franchise={location} />               
             </div>
-            <Awards location={location.urlcity} />
+            {awardsDb[location.urlcity] && <Awards location={location.urlcity} />}
             <Footer locationPage={true} franchise={true} location={location} />
         </Fragment>
     )

@@ -9,7 +9,7 @@ function Awards(props) {
             <h2>AWARDS &amp; CERTIFICATES</h2>
             <div className='row'>
                 {awards.length === 2 && 
-                    <div className='col-lg-3'></div>
+                    <div className='col-lg-3 col-md-3'></div>
                 }
                 {awards.map(award => {
                     return(
@@ -19,7 +19,7 @@ function Awards(props) {
                     )
                 })}
                 {awards.length === 2 && 
-                    <div className='col-lg-3'></div>
+                    <div className='col-lg-3 col-md-3'></div>
                 }
             </div>
         </div>
