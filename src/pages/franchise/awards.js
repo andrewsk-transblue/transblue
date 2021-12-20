@@ -9,17 +9,17 @@ function Awards(props) {
             <h2>AWARDS &amp; CERTIFICATES</h2>
             <div className='row'>
                 {awards.length === 2 && 
-                    <div className='col-lg-4'></div>
+                    <div className='col-lg-3'></div>
                 }
                 {awards.map(award => {
                     return(
-                        <div className='col my-auto text-center pt-4'>
-                            <img src={award} alt='' style={{width: '130px'}} />
+                        <div className='col col-6 col-lg-3 col-md-3 my-auto text-center pt-4'>
+                            <img src={award} alt='' style={{width: '80%'}} />
                         </div>
                     )
                 })}
                 {awards.length === 2 && 
-                    <div className='col-lg-4'></div>
+                    <div className='col-lg-3'></div>
                 }
             </div>
         </div>
