@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import { Redirect } from 'react-router-dom';
-import Captcha from '../../components/captcha/captcha';
-// /import SignatureCanvas from 'react-signature-canvas';
 import Agreement from './agreement';
 import './style.css';
 
@@ -39,7 +37,7 @@ class Form extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.location.msafile)
+        console.log(this.props.location.officeemail)
     }
 
     onChange = (e) => {
@@ -100,7 +98,7 @@ class Form extends Component {
     }
 
     checkName = (e) => {
-        e.target.value.toLowerCase().trim() == this.state.name.toLowerCase().trim() ? this.setState({nameMatch: true}) : this.setState({nameMatch: false})
+        e.target.value.toLowerCase().trim() === this.state.name.toLowerCase().trim() ? this.setState({nameMatch: true}) : this.setState({nameMatch: false})
     }
     
     render() {

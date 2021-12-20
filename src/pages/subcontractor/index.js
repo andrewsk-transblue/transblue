@@ -10,19 +10,15 @@ import Header from '../../components/header';
 import './style.css';
 
 
-function Subcontractor(props) {
+function Subcontractor() {
     const applicationRef = useRef(null);
     const applyRef = useRef(null);
-    const [displayAlert, setDisplayAlert] = useState(false);
     const [displayForm, setDisplayForm] = useState(false);
     const [location, setLocation] = useState({})
 
     const [easybaseData, seteasybaseData] = useState([]);
     const { db } = useEasybase();
     const mounted = async() => {
-        //const ebData = await db("LOCATIONS").where({urlcity: props.match.params.urlCity}).return().all();
-        //console.log(ebData)
-
         const ebData = await db('LOCATIONS').return().all()
         seteasybaseData(ebData);
     }
@@ -32,8 +28,6 @@ function Subcontractor(props) {
     }, [])
 
     function selectLocation(e) {
-        //console.log(e.target.value)
-        //console.log(easybaseData)
         for(let i=0; i<easybaseData.length; i++) {
             if(easybaseData[i].name === e.target.value) {
                 setLocation(easybaseData[i])
@@ -63,7 +57,6 @@ function Subcontractor(props) {
                             <button onClick={scrollToApply} className='cta ml-0 mb-4 mb-md-0'>APPLY NOW</button>
                         </div>
                         <div className='col-lg-6 left-text my-auto'>
-                        {/* <h4 className='section-header'></h4> */}
                             <p className='section-p'>At Transblue we believe that our service partners are the back-bone of our business, without our partners we don’t exist. We will treat our partners better than any other competitor in the business!</p>
                             <p className='section-p'>We live by our VIP PROMISE. It is a promise to every current and future service partner. VIP stands for “Very Important Partner” and our Transblue promise to you.</p>
                         </div>
@@ -72,7 +65,6 @@ function Subcontractor(props) {
                 <Growing scrollToApply={scrollToApply} />
                 <Respect scrollToApply={scrollToApply} />
                 <Tools />
-                {/* <Promise /> */}
                 <div ref={applyRef}></div>
                 <div className='apply-wrapper'>
                     <h2>IT'S EASY TO APPLY!</h2>
@@ -94,16 +86,6 @@ function Subcontractor(props) {
                         <h5>SUBCONTRACTOR APPLICATION</h5>
                         <hr />
                         {easybaseData.length > 0 && <Form location={location} />}
-                        {/* {displayAlert && <div className='alert-wrapper'>
-                            <Fade>
-                                <div className='message-alert'>
-                                    <div className='close'>
-                                        <button onClick={() => setDisplayAlert(false)}>X</button>
-                                    </div>
-                                    PLEASE COMPLETE FORM BEFORE SUBMITTING
-                                </div>
-                            </Fade>
-                        </div>} */}
                     </div>
                 </div>}
             </div>

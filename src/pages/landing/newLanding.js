@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState, lazy} from 'react';
+import React, {Fragment, useEffect, lazy} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import './style.css';

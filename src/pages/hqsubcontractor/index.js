@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Captcha from '../../components/captcha/captcha';
 import msaPage1 from './msaPage1';
 import msa from './msa';
@@ -14,17 +14,10 @@ function HQSubcontractor() {
     const [disabled, setDisabled] = useState(true);
     const [submitted, setIsSubmitted] = useState(false);
 
-    function displayMsa() {
-        setDisplayMSA(true);
-        setDisplayMSA1(false)
-    }
-
     function submit(e) {
-        
         e.preventDefault();
         emailjs.sendForm('service_gekurtf', 'template_vjdl3op', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
             .then(res => console.log(res))
-
         setIsSubmitted(true);
     }
     

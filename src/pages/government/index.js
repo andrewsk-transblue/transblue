@@ -12,7 +12,6 @@ import Footer from '../../components/footer/index';
 import govt from '../../images/government/govtseattle.jpg';
 import asphaltCropped from '../../images/government/govtasphaltCropped.jpg';
 import snow from '../../images/government/govtsnow.jpg';
-import fence from '../../images/government/govtfence.jpeg';
 import roof from '../../images/government/roof.jpg';
 import ev from '../../images/government/ev.jpg';
 import lightrail from '../../images/government/lightrail.jpg';
@@ -93,13 +92,11 @@ function Government() {
                         title='GOVERNMENT SNOW &amp; ICE MANAGEMENT'
                         p1='At Transblue, we provide comprehensive snow and ice management plans for government properties. This includes plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
                         p2='Keeping city officials, staff and community members safe is always our goal.'
-                        // p2='Keeping city officials, staff and community members safe is always our goal. We map out each location to ensure our snow service does not impede city, county or federal business.'
                         p3='Send us a message today or visit our snow website to learn about the World Class Snow services we offer, and how Transblue can help you this winter.'
                     />
                     <ServiceList
                         page='government'
                         title='GOVERNMENT SERVICES'
-                        // subtitle='At Transblue, we offer a variety of services to meet you exact needs. Give us a call today or send us a message to learn about what we can do for your government building.'
                         services={['Snow and Ice Management',
                             'Swimming Pool construction and resurfacing',
                             'Asphalt Paving',

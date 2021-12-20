@@ -13,11 +13,11 @@ import Snow from './snow';
 import Professional from './professional';
 import Reviews from './reviews';
 import Contact2 from './contact2';
-//import Map from './map';
 import regionalServices from './regionalServices';
 import CityZip from './cityZip';
 import Footer from '../../components/footer/index';
 import Finance from './finance';
+import Awards from './awards';
 import './style.css';
 import ServiceModal from '../../components/serviceModal';
 import db from './reviewDb';
@@ -43,8 +43,7 @@ function Franchise(props) {
         let urlCity = props.urlCity;
 
         for(let i=0; i<props.locations.length; i++) {
-            //console.log(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase())
-            if(props.locations[i].urlcity.toLowerCase() == urlCity.toLowerCase()) {
+            if(props.locations[i].urlcity.toLowerCase() === urlCity.toLowerCase()) {
                 console.log(props.locations[i].msafile)
                 let region = props.locations[i].region;
                 setLocation(props.locations[i]);
@@ -138,6 +137,7 @@ function Franchise(props) {
 
                 <Contact2 name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`} franchise={location} />               
             </div>
+            <Awards location={location.urlcity} />
             <Footer locationPage={true} franchise={true} location={location} />
         </Fragment>
     )
