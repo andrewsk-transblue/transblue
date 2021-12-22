@@ -32,7 +32,8 @@ class Form extends Component {
             nameMatch: false,
             retypeName: '',
             franchiseSuccess: false,
-            error: false
+            error: false,
+            cc: ''
         }
     }
 
@@ -52,6 +53,10 @@ class Form extends Component {
         e.preventDefault();
         console.log('submitted');
 
+        let cc = '';
+
+        if(this.props.location.officeemail === 'spokane@transblue.org') cc = 'johnsong@transblue.com'
+
         let templateParams = {
             subject: 'Subcontractor Application',
             from_name: this.props.location.name,
@@ -70,7 +75,8 @@ class Form extends Component {
             insurance: this.state.insurance,
             remoteAccess: this.state.remoteAccess,
             acceptTerms: this.state.acceptTerms,
-            msafile: `<a href=${this.props.location.msafile}>MSA LINK</a>`
+            msafile: `<a href=${this.props.location.msafile}>MSA LINK</a>`,
+            cc: cc
         }
 
         // SEND EMAIL TO SUBCONTRACTOR APPLICANT
@@ -82,6 +88,7 @@ class Form extends Component {
         ).then(res => {
             if(res.status === 200) {
                 this.setState({applicantSuccess: true})
+                
                 //SEND APPLICATION TO FRANCHISEE
                 emailjs.send(
                     'service_gekurtf',
