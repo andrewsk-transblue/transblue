@@ -7,6 +7,7 @@ import Respect from './respect';
 import Growing from './growing';
 import Tools from './tools';
 import Header from '../../components/header';
+import axios from 'axios';
 import './style.css';
 
 
@@ -17,10 +18,13 @@ function Subcontractor() {
     const [location, setLocation] = useState({})
 
     const [easybaseData, seteasybaseData] = useState([]);
-    const { db } = useEasybase();
     const mounted = async() => {
-        const ebData = await db('LOCATIONS').return().all()
-        seteasybaseData(ebData);
+
+        axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
+            .then(res => {
+                console.log(res)
+                seteasybaseData(res.data)
+            })
     }
 
     useEffect(() => {

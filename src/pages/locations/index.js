@@ -12,6 +12,7 @@ ReactGA.initialize(TRACKING_ID);
 const ListView = lazy(() => import('./listView'))
 
 function Locations(props) {
+    console.log(props)
     useEffect(() => {
         ReactGA.event({
             category: 'User',

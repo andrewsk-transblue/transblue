@@ -23,14 +23,14 @@ function Commercial(props) {
                 email: props.location.email
             }}
             services={[
-                'Snow and Ice Management',
                 'Pool Construction',
                 'Pool Resurfacing' ,
                 'Asphalt Paving',
                 'Large Landscape Installs',
                 'Roofing',
-               ' Siding',
-               'ESG Service Offerings'
+               'Siding',
+               'ESG Service Offerings',
+               props.displaySnow && 'Snow and Ice Management'
             ]}
             services2={[
                 'Painting',

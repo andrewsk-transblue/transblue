@@ -22,7 +22,6 @@ function Multifamily(props) {
             }}
             imageSide='left'
             services={[
-                'Snow and Ice Management',
                 'Pool Construction',
                 'Pool Resurfacing' ,
                 'Asphalt Paving',
@@ -38,7 +37,8 @@ function Multifamily(props) {
                ' Drainage Systems',
                 'Decking, fencing and railing systems',
                 'EV Charging Systems',
-                'Solar Power'
+                'Solar Power',
+                props.displaySnow && 'Snow and Ice Management'
             ]}
         />
     )

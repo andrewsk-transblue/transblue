@@ -96,14 +96,14 @@ function Franchise(props) {
                     </div>
                 </div>
                 <div className='wrapper'>
-                    <Multifamily location={location} />
+                    <Multifamily displaySnow={displaySnow} location={location} />
                 </div>
 
                 {displaySnow && <Snow location={location} />}
 
                 <div className='wrapper'>
-                    <Commercial location={location} />
-                    <Govt location={location} />
+                    <Commercial displaySnow={displaySnow} location={location} />
+                    <Govt displaySnow={displaySnow} location={location} />
                     <Green location={location} />
                 </div>
                 <div className='wrapper'>

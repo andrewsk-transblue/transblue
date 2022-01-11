@@ -81,8 +81,9 @@ function Contact2(props) {
                                 {props.franchise.city}, {props.franchise.state} {zipcode}
                             </p>
                             <p>
-                                {props.email}<br />
-                                {props.phone}
+                                {props.franchise.callbluephone}<br />
+                                {props.email}
+                                
                             </p>
                             <span>                    
                                 <a href='https://www.linkedin.com/company/transblue-general-contractor'><i className="fab fa-linkedin-in"></i></a>

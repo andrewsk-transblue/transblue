@@ -32,7 +32,7 @@ function Form() {
             email: email,
             message: message
         }
-        db('CONTACT').insert(dbData).one()
+        //db('CONTACT').insert(dbData).one()
 
         //SEND MESSAGE TO INCOMINGLEADS USING EMAILJS
         let templateParams = {

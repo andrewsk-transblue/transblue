@@ -78,12 +78,15 @@ class Navbar extends Component {
                                 GREEN SOLUTIONS
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown2">
-                                <a className="dropdown-item" href="http://green.transblue.com/">ABOUT</a>
+                                <a className="dropdown-item" href="https://green.transblue.com/">ABOUT</a>
                                 <a className="dropdown-item" href="http://green.transblue.com/residential">RESIDENTIAL</a>
-                                <a className="dropdown-item" href="http://green.transblue.com/multifamily">MULTIFAMILY</a>
-                                <a className='dropdown-item' href="http://green.transblue.com/commercial">COMMERCIAL</a>
+                                <a className="dropdown-item" href="https://green.transblue.com/multifamily">MULTIFAMILY</a>
+                                <a className='dropdown-item' href="https://green.transblue.com/commercial">COMMERCIAL</a>
                             </div>
                         </li>
+                        {/* <li className="nav-item ml-auto">
+                            <a className="nav-link" href="http://green.transblue.com/">GREEN SOLUTIONS</a>
+                        </li> */}
                         <li className="nav-item ml-auto">
                             <a className="nav-link" href="http://snow.transblue.com/">SNOW REMOVAL</a>
                         </li>

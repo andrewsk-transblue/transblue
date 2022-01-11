@@ -59,7 +59,7 @@ function Form(props) {
             phone: phone,
             message: message
         }
-        db('CONTACT').insert(dbData).one() 
+        //db('CONTACT').insert(dbData).one() 
     }
 
     return(

@@ -33,7 +33,7 @@ function ContactModal(props) {
             email: email,
             message: message
         }
-        db('CONTACT').insert(dbData).one()
+        //db('CONTACT').insert(dbData).one()
 
         let to_email;
         if(props.email) {

@@ -8,6 +8,7 @@ import NewLanding from './pages/landing/newLanding';
 import './App.css';
 import { useEasybase } from 'easybase-react';
 import HQSubcontractor from './pages/hqsubcontractor';
+import axios from 'axios';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./pages/commercial/index'));
@@ -29,10 +30,12 @@ function App() {
   const { db } = useEasybase();
   
   const mounted = async() => {
-    
-    const ebData = await db("LOCATIONS").return().all();
-    console.log(ebData)
-    seteasybaseData(ebData);
+
+    axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
+      .then(res => {
+        console.log(res)
+        seteasybaseData(res.data)
+      })
   }
 
   useEffect(() => {
