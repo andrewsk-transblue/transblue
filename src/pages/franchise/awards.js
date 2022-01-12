@@ -8,19 +8,27 @@ function Awards(props) {
         <div className='awards-wrapper' style={{width: '90%', margin: '0 auto'}}>
             <h2>AWARDS &amp; CERTIFICATES</h2>
             <div className='row'>
-                {awards.length === 2 && 
-                    <div className='col-lg-3 col-md-3'></div>
-                }
                 {awards.map(award => {
-                    return(
-                        <div className='col col-6 col-lg-3 col-md-3 my-auto text-center pt-4'>
-                            <img src={award} alt='' style={{width: '80%'}} />
+                    if(award.indexOf('static') === -1) {
+                        return(
+                            <div className='col my-auto text-center pt-4'>
+                                <a 
+                                    href='https://www.bbb.org/us/ma/foxboro/profile/general-contractor/transblue-norfolk-0021-549040#sealclick'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <img src={award} alt='' style={{width: '150px'}} />
+                                </a>
+                            </div>
+                        )
+                    }
+
+                    else return(
+                        <div className='col my-auto text-center pt-4'>
+                            <img src={award} alt='' style={{width: '150px'}} />
                         </div>
                     )
                 })}
-                {awards.length === 2 && 
-                    <div className='col-lg-3 col-md-3'></div>
-                }
             </div>
         </div>
     )
