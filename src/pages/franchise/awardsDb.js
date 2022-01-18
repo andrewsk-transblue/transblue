@@ -7,7 +7,7 @@ import homeadvisor from '../../images/awards/homeadvisor.png';
 import bbb from '../../images/awards/bbb.png';
 
 let awardsDb = {
-    'spokane': [asm, cai, veteran, westplains],
+    'spokane': [asm, cai, veteran, westplains, homeadvisor],
     'norfolk': [torch, homeadvisor, bbb]
 }
 
