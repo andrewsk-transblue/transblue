@@ -6,7 +6,6 @@ import {
 import { HelmetProvider } from 'react-helmet-async';
 import NewLanding from './pages/landing/newLanding';
 import './App.css';
-import { useEasybase } from 'easybase-react';
 import HQSubcontractor from './pages/hqsubcontractor';
 import axios from 'axios';
 
@@ -27,7 +26,6 @@ const Success = lazy(() => import('./pages/subcontractor/success'));
 
 function App() {
   const [easybaseData, seteasybaseData] = useState([]);
-  const { db } = useEasybase();
   
   const mounted = async() => {
 

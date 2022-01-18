@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import './style.css';
 
@@ -22,9 +21,7 @@ function ListView(props) {
     useEffect(() => {
         //console.log(prop)
         setLocations(props.locations)
-        console.log(props.locations[0].skylineURI)
-
-    }, [])
+    }, [props.locations])
 
     return(
         <div className='listview-wrapper container-fluid'>

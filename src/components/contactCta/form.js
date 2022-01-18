@@ -1,5 +1,4 @@
-import React, {useState, lazy} from 'react';
-import { useEasybase } from 'easybase-react';
+import React, {useState} from 'react';
 import Captcha from '../captcha/captcha';
 import './style.css';
 
@@ -14,7 +13,6 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 // const Captcha = lazy(() => import('../captcha/captcha'))
 
 function Form(props) {
-    const { db } = useEasybase();
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')

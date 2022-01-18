@@ -1,4 +1,3 @@
-import { useEasybase } from 'easybase-react';
 import React, {Fragment, Component, useState, lazy} from 'react';
 import './style.css';
 
@@ -9,10 +8,6 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 const Captcha = lazy(() => import('../captcha/captcha'));
 
 function ContactModal(props) {
-
-    console.log(props.email)
-
-    const { db } = useEasybase();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');

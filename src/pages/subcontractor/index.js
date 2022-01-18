@@ -1,5 +1,4 @@
 import React, {Fragment, useState, useEffect, useRef} from 'react';
-import { useEasybase } from 'easybase-react';
 import Navbar from '../../components/navbar';
 import Form from './form';
 import Footer from '../../components/footer';
