@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
@@ -10,7 +11,8 @@ import Core from './core';
 import What from './what';
 
 function Careers(props) {
-    const [locations,setLocations] = useState([])
+    const [locations,setLocations] = useState([]);
+    const [submitted, setSubmitted] = useState(false);
     const applyRef = useRef(null)
 
     function scrollToApply() {
@@ -22,6 +24,7 @@ function Careers(props) {
     }, [props.locations])
     
     return(
+        submitted ? <Redirect to='/success' /> :
         <div className='career-wrapper'>
             <Helmet>
                 <title>Transblue Careers</title>
@@ -32,7 +35,7 @@ function Careers(props) {
             <About scroll={scrollToApply} />
             <Core scroll={scrollToApply} />
             <What />
-            <Apply locations={props.locations} innerRef={applyRef} />
+            <Apply locations={props.locations} innerRef={applyRef} redirect={() => setSubmitted(true)} />
             <Footer />
         </div>
     )

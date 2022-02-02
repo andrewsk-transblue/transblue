@@ -14,7 +14,7 @@ let positionsList = [
 
 const Apply = forwardRef((props) => {
     const [email, setEmail] = useState('');
-    const [position, setPosition] = useState('')
+    const [position, setPosition] = useState('');
 
     function selectLocation(e) {
         setEmail(e.target.value)
@@ -25,7 +25,9 @@ const Apply = forwardRef((props) => {
 
         //console.log(email)
         emailjs.sendForm('service_gekurtf', 'template_cjk37bd', e.target, 'user_iLZ3jXyTzXi5zQFlgf5DG')
-            .then(res => console.log(res))
+            .then(res => {
+                props.redirect();
+            })
     }
 
     return(

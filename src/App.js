@@ -31,7 +31,6 @@ function App() {
 
     axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
       .then(res => {
-        console.log(res)
         seteasybaseData(res.data)
       })
   }
@@ -80,7 +79,7 @@ function App() {
               </Route>}
             
             <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
-            <Route exact path='/subcontractor/success' component={Success} />
+            <Route exact path='/success' component={Success} />
           </Suspense>
         </Router>
       </HelmetProvider>

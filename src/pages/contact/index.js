@@ -20,7 +20,6 @@ function Contact() {
         <Fragment>
             <FranchiseNav />
             <Navbar />
-
             <div className='contact-page-wrapper'>
                 <div className='overlay'></div>                
                 <Form />

@@ -54,8 +54,12 @@ class Form extends Component {
         console.log('submitted');
 
         let cc = '';
+        let bcc = ''
 
-        if(this.props.location.officeemail === 'spokane@transblue.org') cc = 'johnsong@transblue.com'
+        if(this.props.location.officeemail === 'spokane@transblue.com') {
+            cc = 'johnsong@transblue.com';
+            bcc = 'johnsonz@transblue.com'
+        }
 
         let templateParams = {
             subject: 'Subcontractor Application',
@@ -76,7 +80,8 @@ class Form extends Component {
             remoteAccess: this.state.remoteAccess,
             acceptTerms: this.state.acceptTerms,
             msafile: `<a href=${this.props.location.msafile}>MSA LINK</a>`,
-            cc: cc
+            cc: cc,
+            bcc: bcc
         }
 
         // SEND EMAIL TO SUBCONTRACTOR APPLICANT
@@ -110,7 +115,7 @@ class Form extends Component {
     
     render() {
         return(
-            this.state.franchiseSuccess ? <Redirect to='/subcontractor/success' /> :
+            this.state.franchiseSuccess ? <Redirect to='/success' /> :
             <form className='subform-wrapper' onSubmit={this.onSubmit}>
                 <div className='row'>
                     <span>
