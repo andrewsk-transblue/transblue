@@ -5,6 +5,7 @@ import Navbar from '../../components/navbar';
 import ContactCta from '../../components/contactCta';
 import Footer from '../../components/footer';
 import headerBg from '../../images/commercial/header2.jpg';
+import Hospitality from './hospitality';
 
 import enterprise from './logos/enterprise.jpg';
 import albertsons from './logos/albertsons.png';
@@ -49,7 +50,6 @@ function Commercial() {
             : setIndex(0)
     }
 
-
     return(
         <Fragment>
                 <Helmet>
@@ -66,7 +66,7 @@ function Commercial() {
                 <div className='container-fluid about-wrapper'>
                     <div className='row'>
                         <div className='col-lg-6'>
-                            <h1>FAST &amp; RELIABLE <br />COMMERCIAL SERVICES</h1>
+                            <h1>FAST &amp; RELIABLE <br />COMMERCIAL CONSTRUCTION</h1>
                             {/* <a className='cta' href='/operate'>HOW WE OPERATE</a> */}
                         </div>
                         <div className='col-lg-6'>
@@ -74,7 +74,8 @@ function Commercial() {
                                 At Transblue, we are engaged with our customers as we design and build their capital projects. We understand that time, quality, and budget are keys to ensuring a World Class Delivery.
                             </p>
                             <p className='section-p'>
-                                When working with Transblue, you can experience a company focused on the customer experience. We strive to provide a World Class experience for both you and your customer. When fulfilling project deliverables, our primary objective is ensuring your customers don't lose faith in your brand.
+                                When working with Transblue, you can experience a company focused on the customer experience. We strive to provide a World Class experience for both you and your customer. 
+                                {/* When fulfilling project deliverables, our primary objective is ensuring your customers don't lose faith in your brand. */}
                             </p>
                         </div>
                     </div>
@@ -97,6 +98,7 @@ function Commercial() {
                         </div>
                     </div>
                 </div>
+                <Hospitality />
                 <div className='brands-wrapper container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-5 my-auto px-lg-5'>

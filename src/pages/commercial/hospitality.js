@@ -27,7 +27,7 @@ function Hospitality() {
                 <div className='col-12 col-md-6 col-lg-4'>
                     <img src={expert} alt='' id='expert' />
                     <h5>INDUSTRY EXPERTS</h5>
-                    <p className='section-p'>Transblue provides industry experts at each turn of the project to ensure that the delivery is as expected and is exceeded.</p>
+                    <p className='section-p'>Transblue provides industry experts at each turn of the project to ensure that the delivery exceeds your expectations</p>
                 </div>
             </div>
         </div>
