@@ -10,7 +10,7 @@ import HQSubcontractor from './pages/hqsubcontractor';
 import axios from 'axios';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
-const Commercial = lazy(() => import ('./pages/commercial/index'));
+const Commercial = lazy(() => import ('./pages/commercial/newCommercial'));
 const Multifamily = lazy(() => import ('./pages/multifamily/index'));
 const Government = lazy(() => import ('./pages/government/index'));
 const Locations = lazy(() => import('./pages/locations/index'));
