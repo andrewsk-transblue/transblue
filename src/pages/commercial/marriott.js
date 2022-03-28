@@ -17,7 +17,8 @@ function Marriott() {
                     </div>
                 </div>
                 <div className='col-lg-5 col-12 left-text'>
-                    <h4 className='section-header'>THE MARRIOTT PROJECT</h4>
+                    <p className='mb-0'>FEATURED COMMERCIAL PROJECT</p>
+                    <h4 className='section-header mt-0'>THE MARRIOTT PROJECT</h4>
                     <p className='section-p'>Asphalt maintenance is essential in commercial properties. Applying a seal coat overlay to the existing asphalt keeps the parking lot looking fresh and sharp.</p>
                     <p className='section-p'>When working with a worldwide hospitality client such as Marriott, it is crucial to be on time, on budget, and have minimal impact on guests.</p>
                     <p className='section-p'>The service was delivered with World Class efficiency and established Transblue as a reliable partner for Marriott's future needs.</p>

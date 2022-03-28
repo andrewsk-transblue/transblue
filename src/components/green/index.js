@@ -9,9 +9,8 @@ function Green(props) {
         <div className='container-fluid green-solns'>
         <div className='row'>
             <div className='col-lg-12 title'>
-                <h4 className='section-header'>REDUCE YOUR CARBON FOOTPRINT AND ENVIRONMENTAL IMPACT</h4>
-                <p className='section-p'>With one of our {props.page} green solutions. For more information and full list of green services, visit our <a href='https://green.transblue.com/' target="_blank" rel="noreferer">green solutions website</a></p>
-                {/* <h3>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT WITH GREEN SOLUTIONS</h3> */}
+                <h4 className='section-header'>TRANSBLUE ENVIRONMENTAL SERVICES</h4>
+                <p className='section-p'>At Transblue, we offer a wide variety of environmental services to fit your {props.page} needs. For more information and full list of green services, visit our <a href='https://green.transblue.com/' target="_blank" rel="noreferer">green solutions website</a></p>
             </div>
         </div>
         <div className='row'>

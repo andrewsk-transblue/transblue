@@ -18,7 +18,6 @@ const Footer = lazy(() => import('../../components/footer'));
 const Header = lazy(() => import('../../components/landing/header'));
 
 function NewLanding() {
-
     useEffect(() => {
         ReactGA.event({
             category: 'User',

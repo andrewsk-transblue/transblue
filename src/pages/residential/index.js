@@ -46,7 +46,7 @@ function Residential() {
         <Fragment>
             <Helmet>
                 <title>Transblue Residential</title>
-                <meta name="description" content="Transblue brings expertise and aesthetic perfection to all your luxury landscaping projects. Call us today and learn all about the services we offer." />
+                <meta name="description" content="Transblue brings expertise and aesthetic perfection to all your luxury landscaping, patio, decking, concrete wall, paver, and other residential projects. Call us today and learn all about the services we offer." />
             </Helmet>
             <Navbar page='RESIDENTIAL' parentPage='gc' />
             <FranchiseNav />

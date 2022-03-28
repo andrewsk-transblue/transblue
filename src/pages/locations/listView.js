@@ -33,6 +33,7 @@ function ListView(props) {
                     <option value='east'>EAST</option>
                     <option value='west'>WEST</option>
                     <option value='southwest'>SOUTHWEST</option>
+                    <option value='central'>CENTRAL</option>
                 </select>
             </div>
             <div className='row'>

@@ -2,6 +2,10 @@ import React, {Fragment, useState, useEffect} from 'react';
 import Franchise from '../../../pages/franchise/franchise';
 import FranchiseNav from '../../franchiseNav';
 
+import residential from '../../../images/landingHeader/fire-min.jpeg';
+
+import './style.css';
+
 function Header() {
     const [text, setText] = useState('LUXURY EXTERIOR DESIGN');
     //const [index, setIndex] = useState(0)
@@ -38,11 +42,12 @@ function Header() {
         <Fragment>
             <FranchiseNav />
             <div className='header'>
-            <div id='header_slide'>
-                <div className='landing-header'>{text}</div>
-                <div className='overlay'></div>
+                <div id='header_slide'>
+                    <div className='landing-header'>{text}</div>
+                    <div className='overlay'></div>
+                </div>
             </div>
-        </div>
+        {/* <img className='header-img' src={residential} alt='' /> */}
         </Fragment>
     )
 }

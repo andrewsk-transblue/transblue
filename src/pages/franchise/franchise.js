@@ -47,6 +47,9 @@ function Franchise(props) {
             if(props.locations[i].urlcity.toLowerCase() === urlCity.toLowerCase()) {
                 console.log(props.locations[i].msafile)
                 let region = props.locations[i].region;
+
+                console.log(JSON.parse(props.locations[i].zipcodelist));
+
                 setLocation(props.locations[i]);
                 setServices(regionalServices[region]);
                 setName(props.locations[i].name.slice(10));
@@ -61,7 +64,7 @@ function Franchise(props) {
             <Fragment>
             <Helmet>
                 <title>{location.name}</title>
-                <meta name="description" content={`World Class General Contracting services offered in ${name}, ${location.state} and surrounding areas`} />
+                <meta name="description" content="Transblue is a franchising company offering general contracting services throughout the US. We specialize in residential and commercial construction." />
             </Helmet>
             <div className='franchise-wrapper'>
                 <Navbar page='' franchise={true} city={`${location.city}`} state={`${location.state}`} phone={`${location.callbluephone}`} name={`${location.name}`} urlCity={`${location.urlcity}`}  />
@@ -113,25 +116,25 @@ function Franchise(props) {
                     {db[location] !== undefined && <Reviews location={location} />}
 
                     <div className='map'>
-                    <div className='container-fluid'>
-                        <div className='row'>
-                            <div className='col-md-6 col-12 cities'>
-                                <h5>AREAS SERVICED</h5>
-                                <h2>{location.name.toUpperCase()}</h2>
-                                <p className='section-p'>
-                                    {location.phone}<br className='sm-screen-show' />
-                                    <span className='hours'>Mon-Fri 9:00am - 5:00pm</span>
-                                </p>
-                                <CityZip cities={JSON.parse(location.citylist)} zipcodes={JSON.parse(location.zipcodelist)} />
-                            </div>
-                            <div className='col-md-6 col-12'>
-                                {location.lat > 0 && <Map  lat={location.lat} lon={location.lon} 
-                                    geojson={JSON.parse(location.geojson)}
-                                 />}
+                        <div className='container-fluid'>
+                            <div className='row'>
+                                <div className='col-md-6 col-12 cities'>
+                                    <h5>AREAS SERVICED</h5>
+                                    <h2>{location.name.toUpperCase()}</h2>
+                                    <p className='section-p'>
+                                        {location.phone}<br className='sm-screen-show' />
+                                        <span className='hours'>Mon-Fri 9:00am - 5:00pm</span>
+                                    </p>
+                                    <CityZip cities={JSON.parse(location.citylist)} zipcodes={JSON.parse(location.zipcodelist)} />
+                                </div>
+                                <div className='col-md-6 col-12'>
+                                    {location.lat > 0 && <Map  lat={location.lat} lon={location.lon} 
+                                        geojson={JSON.parse(location.geojson)}
+                                    />}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
                 <Finance location={location} />

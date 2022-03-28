@@ -53,7 +53,7 @@ class Navbar extends Component {
                 </a>
                 {this.state.displayPage && <div className='nav-page'>{this.props.page}</div>}
 
-                <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button onClick={this.toggleSmallScreen} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse flex-lg-column" id="navbarNav">
@@ -63,7 +63,7 @@ class Navbar extends Component {
                             <a className="nav-link" href="/">HOME</a>
                         </li>
                         <li className="nav-item dropdown ml-auto">
-                            <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className={this.props.parentPage === 'gc' ? 'nav-link dropdown-toggle ml-auto active' : 'nav-link dropdown-toggle ml-auto'} id="navbarDropdown1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SERVICES
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`}  aria-labelledby="navbarDropdown1">
@@ -74,7 +74,7 @@ class Navbar extends Component {
                             </div>
                         </li>
                         <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 GREEN SOLUTIONS
                             </button>
                             <div className={`dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown2">
@@ -96,7 +96,7 @@ class Navbar extends Component {
                         </li>
 
                         <li className="nav-item dropdown ml-auto">
-                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className='nav-link dropdown-toggle ml-auto' id="navbarDropdown3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             OTHER
                             </button>
                             <div className={this.props.page === 'LOCATIONS' ? `dropdown-menu dropdown-locations` : `dropdown-menu ${this.state.bgColor}`} aria-labelledby="navbarDropdown3">

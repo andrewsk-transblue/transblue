@@ -121,7 +121,7 @@ function GivesBack(props) {
         <Fragment>
             <Helmet>
                 <title>Transblue Gives Back</title>
-                <meta name="description" content="At Transblue, we believe in doing things for the community and in the community." />
+                <meta name="description" content="At Transblue, we believe in doing things for the community and in the community. Transblue is a social enterprise that aims to improve the lives of everyone by providing help in access to quality education, healthcare, and nutrition." />
             </Helmet>
             <Navbar />
             <Header name='givesback' img={givesback} title='TRANSBLUE GIVES BACK' />

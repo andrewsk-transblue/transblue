@@ -1,4 +1,5 @@
 import React, {Fragment, useState, useEffect, useRef} from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar';
 import Form from './form';
 import Footer from '../../components/footer';
@@ -47,6 +48,10 @@ function Subcontractor() {
 
     return(
         <Fragment>
+            <Helmet>
+                <title>Transblue Residential</title>
+                <meta name="description" content="Transblue is the perfect partner for your next project. We have been successfully working with the most prestigious companies in the United States, Canada, and Mexico to provide them with the most cost-effective and efficient ways to improve the quality of their construction projects." />
+            </Helmet>
             <Navbar />
             <Header 
                 title='SUBCONTRACTORS' 

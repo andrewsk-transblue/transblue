@@ -24,7 +24,7 @@ function Locations(props) {
             <Fragment>
                 <Helmet>
                     <title>Transblue Locations</title>
-                    <meta name="description" content="Find a Transblue location near you!" />
+                    <meta name="description" content="In need of landscaping, patio, decking, pools, or pavers? You can find a Transblue location near you!" />
                 </Helmet>
                 <Navbar page='LOCATIONS' />
                 <Header title='FIND A LOCATION' subtitle='' name='locations' />

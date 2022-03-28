@@ -66,6 +66,13 @@
     background-size: cover;
     background-position: center center;
 }
+
+.header-wrapper[region='central'] {
+    background-image: url('../../images/franchiseHeaders/central.jpg') ;
+    background-size: cover;
+    background-position: center center;
+}
+
 .header-wrapper[region='east'] {
     background-image: url('../../images/franchiseHeaders/east.jpeg');
     background-size: cover;

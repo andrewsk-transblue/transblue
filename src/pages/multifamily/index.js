@@ -42,7 +42,7 @@ function Multifamily() {
         <Fragment>
             <Helmet>
                 <title>Transblue Multifamily</title>
-                <meta name="description" content="Transblue provides a number of multifamily services to HOAs and CAIs, including paving, snow removal, amenity installation, and everything in between." />
+                <meta name="description" content="Transblue provides several multifamily services to HOAs and CAIs, including paving, snow removal, amenity installation, pools, wall retaining, patio, athletic courts, and everything in between." />
             </Helmet>
             <Navbar page='MULTIFAMILY' parentPage='gc'  />
 
@@ -113,37 +113,36 @@ function Multifamily() {
                 </div>
                 <Assets />
                 <div className='wrapper'>
-                <Snow
-                    img={snow}
-                    title='KEEP YOUR COMMUNITY SAFE'
-                    p1='Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.'
-                    p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
-                    p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
-                />
-                <Green 
-                    page='multifamily'
-                    solar='Reduce overhead and save on utility bills with solar panels'
-                    ev='Increase resident retention and value of your property with EV Chargers'
-                    roof='Save money on cost of energy and local storm water fees' />
-                <ServiceList
-                title='MULTIFAMILY SERVICES'
-                //subtitle='Transblue is your construction resource. We offer a wide variety of services to fit your specific needs, contact us today to discuss your project.'
-                img={services}
-                services={[
-                    'Snow and Ice Management',
-                    'Swimming Pool construction and resurfacing',
-                    'Asphalt Paving',
-                    'Large Landscape installs',
-                    'Roofing',
-                    'Siding',
-                    'Painting',
-                    'Remodels and refreshes',
-                    'Concrete work',
-                    'Drainage Systems',
-                    'Decking, fencing and railing systems',
-                    'Electric Vehicle Charging Systems, Solar Power',
-                    'ESG Service Offerings'
-                ]} />
+                    <Snow
+                        img={snow}
+                        title='KEEP YOUR COMMUNITY SAFE'
+                        p1='Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.'
+                        p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
+                        p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
+                    />
+                    <Green 
+                        page='multifamily'
+                        solar='Reduce overhead and save on utility bills with solar panels'
+                        ev='Increase resident retention and value of your property with EV Chargers'
+                        roof='Save money on cost of energy and local storm water fees' />
+                    <ServiceList
+                        title='MULTIFAMILY SERVICES'
+                        img={services}
+                        services={[
+                            'Snow and Ice Management',
+                            'Swimming Pool construction and resurfacing',
+                            'Asphalt Paving',
+                            'Large Landscape installs',
+                            'Roofing',
+                            'Siding',
+                            'Painting',
+                            'Remodels and refreshes',
+                            'Concrete work',
+                            'Drainage Systems',
+                            'Decking, fencing and railing systems',
+                            'Electric Vehicle Charging Systems, Solar Power',
+                            'ESG Service Offerings'
+                    ]} />
                
                 </div>
                 <div className='charity-wrapper bg-light'>

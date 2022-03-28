@@ -4,7 +4,7 @@ const regions = {
     'Arizona': 'southwest',
     'Arkansas': 'southwest',
     'California': 'west',
-    'Colorado': 'west',
+    'Colorado': 'central',
     'Connecticut': 'east',
     'Delaware': 'east',
     'Florida': 'southwest',

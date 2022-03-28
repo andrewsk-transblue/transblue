@@ -28,7 +28,7 @@ function Careers(props) {
         <div className='career-wrapper'>
             <Helmet>
                 <title>Transblue Careers</title>
-                <meta name="description" content="Become part of our Transblue Family today!" />
+                <meta name="description" content="Transblue is a world class general contractor located in different states that sets the standard for construction excellence. Become part of our Transblue Family today. Apply now!" />
             </Helmet>
             <Header title='TRANSBLUE CAREERS' name='careers' />
             <Navbar />

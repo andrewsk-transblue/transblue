@@ -19,7 +19,8 @@ const regional = {
     'northwest': [nwcommercial, nwmulti, nwev],
     'southwest': [wcommercial, smulti, wev] ,
     'midwest': [mwcommercial, mwmulti, mwev],
-    'east': [necommercial, nemulti, neev]
+    'east': [necommercial, nemulti, neev],
+    'central': [nwcommercial, nwmulti, nwev]
 }
 
 export default regional;

@@ -24,6 +24,10 @@
     background-image: url('../../images/financeBgNw.jpg');
 }
 
+.finance-bg[data-region='central'] {
+    background-image: url('../../images/financeBgNw.jpg');
+}
+
 .finance-bg[data-region='midwest'] {
     background-image: url('../../images/financeBgMw.jpg');
 }

@@ -21,6 +21,10 @@ const regionalServices = {
         services: ['PATIO COVERS', 'FIREPITS', 'DECKS', 'OUTDOOR KITCHENS'],
         images: [nwpatiocover , nwfirepit, nwdecks, nwkitchen ]
     },
+    'central': {
+        services: ['PATIO COVERS', 'FIREPITS', 'DECKS', 'OUTDOOR KITCHENS'],
+        images: [nwpatiocover , nwfirepit, nwdecks, nwkitchen ]
+    },
     'west': {
         services: ['POOLS', 'DECKS', 'FIREPITS', 'OUTDOOR KITCHENS'],
         images: [wpool, wdeck, nwfirepit, wkitchen]

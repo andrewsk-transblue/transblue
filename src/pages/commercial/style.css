@@ -48,6 +48,10 @@
     margin-bottom: 1.5rem;
 }
 
+.marriott-wrapper .section-header {
+    margin-top: 10px !important
+}
+
 /* HOSPITALITY CSS */
 .hospitality-wrapper {
     width: 93%;

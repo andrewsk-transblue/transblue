@@ -38,7 +38,7 @@ function Finance(props) {
         <Fragment>
             <Helmet>
                 <title>Transblue Get Financed</title>
-                <meta name="description" content="" />
+                <meta name="description" content="When you want the best of quality, you should trust Transblue. We have quick, reliable, and affordable service for all your construction needs." />
             </Helmet>
             <Navbar />
             <FranchiseNav />
