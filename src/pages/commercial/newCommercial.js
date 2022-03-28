@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
@@ -20,6 +20,10 @@ import pepsi from './logos/pepsi.png';
 import redroof from './logos/redroof.png';
 import nextstep4 from '../../images/commercial/nextstep4.png';
 
+import forward from '../../images/residential/forward.png';
+import back from '../../images/residential/back.png';
+
+
 import './commercial.css';
 import './style.css';
 
@@ -36,6 +40,16 @@ function Commercial() {
             action: 'Visited Snow Landing Page'
           });
     }, [])
+
+    const [index, setIndex] = useState(0);
+
+    function changeIndex() {
+        index === 0
+            ? setIndex(1)
+            : setIndex(0)
+    }
+
+
     return(
         <Fragment>
                 <Helmet>
@@ -86,53 +100,78 @@ function Commercial() {
                 <div className='brands-wrapper container-fluid'>
                         <h3>SERVICING TOP BRANDS NATIONWIDE</h3>
                         <hr />
-                        <div className='row mt-4'>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={enterprise} alt='Enterprise' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={albertsons} alt='Albertsons' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={cbre} alt='CBRE' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={gatorade} alt='costco' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={goodwill} alt='walmart' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={homestreet} alt='wellsfargo' />
-                            </div>
-                        </div>
                         <div className='row'>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={safeway} alt='Safeway' />
+                            <div className='col-1 my-auto'>
+                                <button
+                                    onClick={changeIndex}
+                                >
+                                    <img src={back} alt='' />
+                                </button>
                             </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={usps} alt='USPS' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={marriott} alt='Marriott' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={jll} alt='JLL' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={pepsi} alt='Pepsi' />
-                            </div>
-                            <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                <img src={redroof} alt='Red Roof Inn' />
+                            {index === 0 && 
+                                <div className='col-10'>
+                                    <div className='row mt-4'>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={enterprise} alt='Enterprise' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={albertsons} alt='Albertsons' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={cbre} alt='CBRE' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={gatorade} alt='costco' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={goodwill} alt='walmart' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={homestreet} alt='wellsfargo' />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            {index === 1 &&
+                                <div className='col-10'>
+                                    <div className='row'>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={safeway} alt='Safeway' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={usps} alt='USPS' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={marriott} alt='Marriott' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={jll} alt='JLL' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={pepsi} alt='Pepsi' />
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                            <img src={redroof} alt='Red Roof Inn' />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <div className='col-1 my-auto'>
+                                <button
+                                    onClick={changeIndex}
+                                >
+                                    <img src={forward} alt='' />
+                                </button>
                             </div>
                         </div>
+                        
                         <div className='row'>
                             <p>*All company names and logos are trademarks or registered tradmarks of their respective holders. Transblue is not associated with or sponsored by the companies listed above.</p>
                         </div>
                 </div>
 
                 <div className='container-fluid'>
-                <div className='charity-wrapper bg-light'>
+                    <div className='charity-wrapper bg-light'>
                         <div className='wrapper'>
                             <h1>TRANSBLUE GIVES BACK</h1>
                             <div className='nextstep container-fluid'>
