@@ -99,9 +99,11 @@ function Commercial() {
                 </div>
                 <div className='brands-wrapper container-fluid'>
                         <div className='row'>
-                            <div className='col-12 col-lg-5 my-auto pr-lg-5'>
+                            <div className='col-12 col-lg-5 my-auto px-lg-5'>
                                 <h3>SERVICING TOP BRANDS NATIONWIDE</h3>
                                 <hr />
+
+                                <button className='case-studies'>CASE STUDIES</button>
                             </div>
                             <div className='col-lg-7 col-12'>
                                 <div className='row'>
@@ -155,7 +157,7 @@ function Commercial() {
                                                     <img src={pepsi} alt='Pepsi' />
                                                 </div>
                                                 <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={redroof} alt='Red Roof Inn' />
+                                                    <img className='w-40' src={redroof} alt='Red Roof Inn' />
                                                 </div>
                                             </div>
                                         </div>

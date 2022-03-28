@@ -71,6 +71,17 @@ button {
     border: 0px;
 }
 
+button.case-studies {
+    border: 2px solid white;
+    color: white;
+    padding: 2px 30px;
+    margin-top: 20px;
+}
+
+button.case-studies:hover {
+    opacity: .8;
+}
+
 @media only screen and (min-width: 576px) {
     .brands-wrapper img:not(.w-40) {
         width: 80%;
