@@ -92,21 +92,21 @@ function Commercial() {
                             <div className='col-12 col-lg-4'>
                                 <Card
                                     title='SPEED'
-                                    body='At Transblue, we save you time and headache by providing you with fast proposals and fast project execution.'
+                                    body='At Transblue, we provide you with fast proposals and fast project execution. This  saves you time and effort so you could concentrate on what really matters – like thinking about strategy'
                                     icon='fa fa-clock-o mb-2'
                                 />
                             </div>
                             <div className='col-12 col-lg-4'>
                                 <Card 
                                     title='QUALITY WORK'
-                                    body="With over 20 years in the commercial construction industry, we are committed and determined to deliver work of the highest quality."
+                                    body="At Transblue, you come first. Whether it’s on the local, regional, or national level, we focus on making you happy because your satisfaction is key."
                                     icon='fas fa-building mb-2'
                                 />
                             </div>
                             <div className='col-12 col-lg-4'>
                                 <Card 
-                                    title='COMPETITIVE RATES'
-                                    body='amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo'
+                                    title='COST EFFICIENT'
+                                    body='With a single point of contact for services, billing, multi-skilled people for a host of critical tasks, and the bundling of services together starts to drive efficiency and cost savings'
                                     icon='fa fa-usd mb-2'
                                 />
                             </div>

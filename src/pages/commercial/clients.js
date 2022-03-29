@@ -3,9 +3,9 @@ import React from "react";
 function Clients() {
 
     return(
-        <div className="about-wrapper container-fluid">
+        <div className="about-wrapper container-fluid" style={{width: '90%', maxWidth: '1000px'}}>
             <div className="row">
-                <div className="col-12 text-center mb-4">
+                <div className="col-12 text-center mb-4 mt-3">
                     <h4 className="section-header">
                         INDUSTRIES SERVICED
                     </h4>
