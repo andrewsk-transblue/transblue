@@ -10,7 +10,7 @@ function Services() {
         <div className='about-wrapper services'>
             <h3 className='section-header'>OUR COMMERCIAL SERVICES</h3>
             <p className='section-p' style={{textAlign: 'center',  width: '90%', maxWidth: '700px', margin: '0 auto'}}>
-                ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis
+                No matter the project, you can count on Transblue. We are a one-stop shop for all your commercial construction needs.
             </p>
             <div className='row mt-5'>
                 <div className='col-12 col-md-6 col-lg-3'>

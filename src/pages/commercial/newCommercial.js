@@ -30,9 +30,9 @@ import back from '../../images/residential/back.png';
 import './commercial.css';
 import './style.css';
 
-
 import ReactGA from 'react-ga';
-import ServiceCard from './serviceCard';
+import Clients from './clients';
+
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -232,6 +232,8 @@ function Commercial() {
                             <p>*All company names and logos are trademarks or registered tradmarks of their respective holders. Transblue is not associated with or sponsored by the companies listed above.</p>
                         </div>
                 </div>
+
+                <Clients />
 
                 <div className='container-fluid'>
                     <div className='charity-wrapper bg-light'>
