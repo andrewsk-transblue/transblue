@@ -99,7 +99,7 @@ function Commercial() {
                             <div className='col-12 col-lg-4'>
                                 <Card 
                                     title='QUALITY WORK'
-                                    body="At Transblue, you come first. Whether it’s on the local, regional, or national level, we focus on making you happy. Our commitment is to our customers. Our passion and dedication always results in quality work."
+                                    body="At Transblue, you come first. Whether it’s on the local, regional, or national level, we focus on making you happy. Our passion, dedication, and commitment to our customers always results in quality work."
                                     icon='fas fa-building mb-2'
                                 />
                             </div>
@@ -154,8 +154,14 @@ function Commercial() {
                             <div className='col-12 col-lg-5 my-auto'>
                                 <h3>SERVICING TOP BRANDS NATIONWIDE</h3>
                                 <hr />
-
-                                <button className='case-studies'>CASE STUDIES</button>
+                                {/* <button className='case-studies'>CASE STUDIES</button> */}
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/3rd_party_vs_self_perform best practice snow example- final.docx`} download className='case-studies'>CASE STUDY 1 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/Best Practices.pdf`} download className='case-studies'>CASE STUDY 2 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/Reduce your facility spend by 2 Million Dollars annually with Transblue.pdf`} download className='case-studies'>CASE STUDY 3 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/Snow Removal liability and risk management best practices.pdf`} download className='case-studies'>CASE STUDY 4 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB best practices landscape rfps and water management.pdf`} download className='case-studies'>CASE STUDY 5 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB CASE STUDY - vendor management.pdf`} download className='case-studies'>CASE STUDY 6 <i className='fa fa-download' /></a>
+                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB Water Management xeriscape.pdf`} download className='case-studies'>CASE STUDY 7 <i className='fa fa-download' /></a>
                             </div>
                             <div className='col-lg-7 col-12'>
                                 <div className='row'>

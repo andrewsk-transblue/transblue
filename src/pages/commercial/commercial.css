@@ -19,12 +19,12 @@
     font-size: 22px;
 }
 
-.about-wrapper a {
+.about-wrapper a:not(a.case-studies) {
     display: inline-block;
     margin-bottom: 15px;
 }
 
-.about-wrapper a:hover {
+.about-wrapper a:hover:not(a.case-studies) {
     background-color: white;
     color: #0b56a4 !important;
     border: 2px solid #0b56a4;
@@ -77,20 +77,21 @@ button {
     border: 0px;
 }
 
-button.case-studies {
-    border: 2px solid white;
+a.case-studies {
     color: white;
-    padding: 2px 30px;
-    margin-top: 30px;
+    padding: 10px 20px 10px 0px;
+    font-family: 'Raleway';
+    text-decoration: none !important;
+    display: inline-block;
+
 }
 
-button.case-studies:hover {
+a.case-studies:hover {
     opacity: .8;
 }
 
 .card {
     box-shadow: 0px 1px 15px 8px rgba(0,0,0,0.05);
-
 }
 
 .service-card h5 {
