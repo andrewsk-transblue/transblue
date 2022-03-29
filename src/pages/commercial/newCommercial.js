@@ -7,6 +7,7 @@ import Footer from '../../components/footer';
 import headerBg from '../../images/commercial/header2.jpg';
 import Hospitality from './hospitality';
 import Card from './card';
+import Services from './services';
 
 import enterprise from './logos/enterprise.jpg';
 import albertsons from './logos/albertsons.png';
@@ -40,7 +41,7 @@ function Commercial() {
     useEffect(() => {
         ReactGA.event({
             category: 'User',
-            action: 'Visited Snow Landing Page'
+            action: 'Visited Commercial Page'
           });
     }, [])
 
@@ -65,7 +66,7 @@ function Commercial() {
                     title='COMMERCIAL' 
                     subtitle='Your Business Construction Solution' />
                 <ContactCta />
-                <div className='container-fluid about-wrapper'>
+                <div className='container-fluid about-wrapper wrapper'>
                     <div className='row'>
                         <div className='col-lg-6'>
                             <h1>FAST &amp; RELIABLE <br />COMMERCIAL CONSTRUCTION</h1>
@@ -85,7 +86,7 @@ function Commercial() {
 
                 </div>
 
-                <div className='deliverables bg-light'>
+                <div className='deliverables bg-light wrapper'>
                     <div className='container-fluid about-wrapper'>
                         <div className='row mx-0'>
                             <div className='col-12 col-lg-4'>
@@ -114,13 +115,15 @@ function Commercial() {
                 </div>
                 
                 <div className='quality-wrapper'>
-                    <div className='text centered-text'>
-                    <h4>BRAND LOYALTY</h4>
-                    <hr className='center-hr'/>
-                    {/* <p className='section-p'>Nam sollicitudin massa libero, id euismod massa lobortis eu. Fusce varius diam quis ex gravida, et luctus mauris facilisis. Morbi urna neque, gravida quis pellentesque vitae, aliquam sodales felis.</p> */}
-                    <p className='section-p'>Brand loyalty means that your customers are coming back to your business again and again. The real loyal customers put in extra effort to find your establishment or product. If you have a physical location which your customers visit, then we are the best partner to have. Tranbslue understands and values customer loyalty.</p>
+                    <div className='text centered-text about-wrapper'>
+                        <h4>BRAND LOYALTY</h4>
+                        <hr className='center-hr'/>
+                        {/* <p className='section-p'>Nam sollicitudin massa libero, id euismod massa lobortis eu. Fusce varius diam quis ex gravida, et luctus mauris facilisis. Morbi urna neque, gravida quis pellentesque vitae, aliquam sodales felis.</p> */}
+                        <p className='section-p'>Brand loyalty means that your customers are coming back to your business again and again. The real loyal customers put in extra effort to find your establishment or product. If you have a physical location which your customers visit, then we are the best partner to have. Tranbslue understands and values customer loyalty.</p>
                     </div>
                 </div>
+
+                <Services />
                 {/* <div className='container-fluid about-wrapper'>
                     <div className='row mx-0'>
                         <div className='col-lg-6 order-lg-12'>
@@ -147,8 +150,8 @@ function Commercial() {
                 </div> */}
                 {/* <Hospitality /> */}
                 <div className='brands-wrapper container-fluid'>
-                        <div className='row'>
-                            <div className='col-12 col-lg-5 my-auto px-lg-5'>
+                        <div className='row about-wrapper'>
+                            <div className='col-12 col-lg-5 my-auto'>
                                 <h3>SERVICING TOP BRANDS NATIONWIDE</h3>
                                 <hr />
 
@@ -163,54 +166,58 @@ function Commercial() {
                                             <img src={back} alt='' />
                                         </button>
                                     </div>
-                                    {index === 0 && 
-                                        <div className='col-8 text-center'>
-                                            <div className='row mt-4'>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={enterprise} alt='Enterprise' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={albertsons} alt='Albertsons' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={cbre} alt='CBRE' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={gatorade} alt='costco' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={goodwill} alt='walmart' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={homestreet} alt='wellsfargo' />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    }
-                                    {index === 1 && 
-                                        <div className='col-8 text-center'>
-                                            <div className='row mt-4'>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={safeway} alt='Safeway' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={usps} alt='USPS' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={marriott} alt='Marriott' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={jll} alt='JLL' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img src={pepsi} alt='Pepsi' />
-                                                </div>
-                                                <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                    <img className='w-40' src={redroof} alt='Red Roof Inn' />
+                                    
+                                        {index === 0 &&
+                                            <div className='col-8 text-center'>
+                                                <div className='row mt-4'>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={enterprise} alt='Enterprise' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={albertsons} alt='Albertsons' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={cbre} alt='CBRE' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={gatorade} alt='costco' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={goodwill} alt='walmart' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={homestreet} alt='wellsfargo' />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    }
+                                        }
+                                    
+                                    
+                                        {index === 1 &&
+                                            <div className='col-8 text-center'>
+                                                <div className='row mt-4'>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={safeway} alt='Safeway' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={usps} alt='USPS' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={marriott} alt='Marriott' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={jll} alt='JLL' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img src={pepsi} alt='Pepsi' />
+                                                    </div>
+                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
+                                                        <img className='w-40' src={redroof} alt='Red Roof Inn' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    
                                     <div className='col-2 my-auto'>
                                         <button
                                             onClick={changeIndex}
