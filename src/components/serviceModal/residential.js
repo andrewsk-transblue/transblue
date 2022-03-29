@@ -3,7 +3,7 @@ import './style.css';
 
 function ResServiceModal() {
     return(
-        <button className='cta' data-toggle="modal" data-target={`#resServiceModal`}>
+        <button className='cta' data-bs-toggle="modal" data-bs-target={`#resServiceModal`}>
             ALL RESIDENTIAL SERVICES
         </button>
     )

@@ -4,7 +4,7 @@ import './style.css';
 function ServiceModal(props) {
     return(
         <Fragment>
-            <button className='cta' data-toggle="modal" data-target={`#serviceModal`}>
+            <button className='cta' data-toggle="modal" data-bs-target={`#serviceModal`}>
                 VIEW ALL SERVICES
             </button>
             
@@ -12,7 +12,7 @@ function ServiceModal(props) {
             <div className="modal fade" id={`serviceModal`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <div className='container-fluid section-p'>

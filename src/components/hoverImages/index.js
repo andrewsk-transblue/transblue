@@ -6,7 +6,7 @@ function HoverImages(props) {
     return(
         <div className='row hover-image-container'>
             <div className='col-12 col-sm-6 col-lg-6'>
-                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic1">
+                <button type="button" data-bs-toggle="modal" data-bs-trigger="hover" data-bs-target="#pic1">
                     <LazyLoadImage effect='blur' src={props.page[0].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic1' tabIndex="-1" role="dialog">
@@ -14,7 +14,7 @@ function HoverImages(props) {
                         <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">{props.page[0].title}</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -29,7 +29,7 @@ function HoverImages(props) {
                 </div>
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
-                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic2">
+                <button type="button" data-toggle="modal" data-trigger="hover" data-bs-target="#pic2">
                     <LazyLoadImage effect='blur' src={props.page[1].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic2' tabIndex="-1" role="dialog">
@@ -37,7 +37,7 @@ function HoverImages(props) {
                         <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">{props.page[1].title}</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -52,7 +52,7 @@ function HoverImages(props) {
                 </div>
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
-                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic3">
+                <button type="button" data-toggle="modal" data-trigger="hover" data-bs-target="#pic3">
                     <LazyLoadImage effect='blur' src={props.page[2].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic3' tabIndex="-1" role="dialog">
@@ -60,7 +60,7 @@ function HoverImages(props) {
                         <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">{props.page[2].title}</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -75,7 +75,7 @@ function HoverImages(props) {
                 </div>
             </div>
             <div className='col-12 col-sm-6 col-lg-6'>
-                <button type="button" data-toggle="modal" data-trigger="hover" data-target="#pic4" id='last-btn'>
+                <button type="button" data-bs-toggle="modal" data-bs-trigger="hover" data-bs-target="#pic4" id='last-btn'>
                     <LazyLoadImage effect='blur' src={props.page[3].image} alt='' />
                 </button>
                 <div className="modal fade" id='pic4' tabIndex="-1" role="dialog">
@@ -83,7 +83,7 @@ function HoverImages(props) {
                         <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">{props.page[3].title}</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>

@@ -76,7 +76,7 @@ function Form() {
                 </div>
             </div>
             <div className='row'>
-                {!disabled && <button onClick={handleSubmit} data-dismiss='modal' >SEND MESSAGE</button>}
+                {!disabled && <button onClick={handleSubmit} data-bs-dismiss='modal' >SEND MESSAGE</button>}
                 {(disabled && formCompleted) && <Captcha onChange={() => setDisabled(false)} />}
             </div>
 
