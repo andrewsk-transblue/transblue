@@ -83,6 +83,27 @@ button.case-studies:hover {
     opacity: .8;
 }
 
+.card {
+    box-shadow: 0px 1px 15px 8px rgba(0,0,0,0.05);
+
+}
+
+.service-card h5 {
+    font-family: 'Raleway';
+    color: #0b56a4;
+}
+
+/* .deliverables {
+    line-height: 600px;
+    background-image: url('./building.jpeg');
+    background-size: cover;
+    background-position: center center;
+} */
+
+.about-wrapper i {
+    color: rgb(77, 77, 77);
+}
+
 @media only screen and (min-width: 576px) {
     .brands-wrapper img:not(.w-40) {
         width: 80%;
@@ -121,5 +142,49 @@ button.case-studies:hover {
     }
     .about-wrapper p {
         padding-top: 0px !important;
+    }
+}
+
+
+.quality-wrapper {
+    background-image: url('./building.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.quality-wrapper h4 {
+    margin-bottom: 25px;
+    font-family: 'Raleway';
+    letter-spacing: .045em;
+    color: #0b56a4;
+}
+
+.quality-wrapper .text {
+    width: 80%;
+    text-align:center;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px 40px 30px;
+}
+
+/* .quality-wrapper .text hr {
+    background-color: #0b56a4;
+} */
+
+
+@media only screen and (min-width: 768px) {
+    .quality-wrapper .text {
+        padding: 40px 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .quality-wrapper .text {
+        padding: 40px 80px;
     }
 }

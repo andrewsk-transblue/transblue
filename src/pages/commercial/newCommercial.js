@@ -6,6 +6,7 @@ import ContactCta from '../../components/contactCta';
 import Footer from '../../components/footer';
 import headerBg from '../../images/commercial/header2.jpg';
 import Hospitality from './hospitality';
+import Card from './card';
 
 import enterprise from './logos/enterprise.jpg';
 import albertsons from './logos/albertsons.png';
@@ -30,6 +31,7 @@ import './style.css';
 
 
 import ReactGA from 'react-ga';
+import ServiceCard from './serviceCard';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -80,9 +82,48 @@ function Commercial() {
                         </div>
                     </div>
 
-                    <div className='row mt-5'>
+
+                </div>
+
+                <div className='deliverables bg-light'>
+                    <div className='container-fluid about-wrapper'>
+                        <div className='row mx-0'>
+                            <div className='col-12 col-lg-4'>
+                                <Card
+                                    title='SPEED'
+                                    body='At Transblue, we save you time and headache by providing you with fast proposals and fast project execution.'
+                                    icon='fa fa-clock-o mb-2'
+                                />
+                            </div>
+                            <div className='col-12 col-lg-4'>
+                                <Card 
+                                    title='QUALITY WORK'
+                                    body="With over 20 years in the commercial construction industry, we are committed and determined to deliver work of the highest quality."
+                                    icon='fas fa-building mb-2'
+                                />
+                            </div>
+                            <div className='col-12 col-lg-4'>
+                                <Card 
+                                    title='COMPETITIVE RATES'
+                                    body='amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo'
+                                    icon='fa fa-usd mb-2'
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className='quality-wrapper'>
+                    <div className='text centered-text'>
+                    <h4>BRAND LOYALTY</h4>
+                    <hr className='center-hr'/>
+                    {/* <p className='section-p'>Nam sollicitudin massa libero, id euismod massa lobortis eu. Fusce varius diam quis ex gravida, et luctus mauris facilisis. Morbi urna neque, gravida quis pellentesque vitae, aliquam sodales felis.</p> */}
+                    <p className='section-p'>Brand loyalty means that your customers are coming back to your business again and again. The real loyal customers put in extra effort to find your establishment or product. If you have a physical location which your customers visit, then we are the best partner to have. Tranbslue understands and values customer loyalty.</p>
+                    </div>
+                </div>
+                {/* <div className='container-fluid about-wrapper'>
+                    <div className='row mx-0'>
                         <div className='col-lg-6 order-lg-12'>
-                            {/* <img src={starbucks} alt='Starbucks Snow Plowing' /> */}
                         </div>
                         <div className='col-lg-6 order-lg-12'>
                             <h4 className='section-header'>NATIONWIDE SERVICES, LOCAL EXPERTISE</h4>
@@ -97,8 +138,14 @@ function Commercial() {
                                 risk management and service execution.</p>
                         </div>
                     </div>
-                </div>
-                <Hospitality />
+                </div> */}
+                {/* <div className='container-fluid'>
+                    <div className='row mb-5 mx-0'>
+                        <ServiceCard title='Snow and Ice Removal' body='Snow removal and de-icing services bring safety to your facility, making sure your business is up and running regardless of inclement weather.' />
+                        <ServiceCard title='CAPITAL EXPENDITURE' body='We’ll take care of your business exterior—including roofing, landscaping, painting, and brand refreshing, so you can focus on what matters most to you: running your business.' />
+                    </div>
+                </div> */}
+                {/* <Hospitality /> */}
                 <div className='brands-wrapper container-fluid'>
                         <div className='row'>
                             <div className='col-12 col-lg-5 my-auto px-lg-5'>
