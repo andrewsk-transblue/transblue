@@ -99,14 +99,14 @@ function Commercial() {
                             <div className='col-12 col-lg-4'>
                                 <Card 
                                     title='QUALITY WORK'
-                                    body="At Transblue, you come first. Whether it’s on the local, regional, or national level, we focus on making you happy because your satisfaction is key."
+                                    body="At Transblue, you come first. Whether it’s on the local, regional, or national level, we focus on making you happy. Our commitment is to our customers. Our passion and dedication always results in quality work."
                                     icon='fas fa-building mb-2'
                                 />
                             </div>
                             <div className='col-12 col-lg-4'>
                                 <Card 
                                     title='COST EFFICIENT'
-                                    body='With a single point of contact for services, billing, multi-skilled people for a host of critical tasks, and the bundling of services together starts to drive efficiency and cost savings'
+                                    body='A single point of contact for services, billing, multi-skilled people for a host of critical tasks, and bundling services with Transblue drives efficiency and cost savings.'
                                     icon='fa fa-usd mb-2'
                                 />
                             </div>
