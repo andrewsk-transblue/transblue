@@ -55,7 +55,7 @@ function ContactModal(props) {
 
     return(
         <Fragment>
-                <button className='cta' data-toggle="modal" data-target="#exampleModalCenter">
+                <button className='cta' data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                     {props.text !== undefined ? props.text : 'SEND A MESSAGE'}
                 </button>
                 
@@ -63,7 +63,7 @@ function ContactModal(props) {
                 <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered" role="document">
                         <div className="modal-content">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <form className='contact-form container-fluid' >
@@ -94,7 +94,7 @@ function ContactModal(props) {
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={disabled} onClick={handleSubmit} data-dismiss='modal' >SUBMIT</button>
+                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={disabled} onClick={handleSubmit} data-bs-dismiss='modal' >SUBMIT</button>
                                 </div>
                                 <div className='row'>
                                     <Captcha onChange={() => setDisabled(false)} />

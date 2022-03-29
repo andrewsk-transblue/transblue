@@ -3,6 +3,7 @@ import snow from '../../images/commercial/snow.jpeg';
 import refresh from '../../images/commercial/refresh.jpg';
 import roof from '../../images/commercial/roof.jpg';
 import asphalt from '../../images/commercial/asphalt2.jpg';
+import ContactModal from '../../components/contactModal';
 
 function Services() {
     return(
@@ -40,13 +41,9 @@ function Services() {
                         Customer experience starts in your parking lot. Professional asphalt services from Transblue enhance this experience, developing loyalty to your brand.
                     </p>
                 </div>
-                <div className='row'>
-                    <div className='col-12'>
-                        <div>
-                        <a href='/locations' className='cta'>LOCATIONS</a>
-                        <button className='cta'>SEND A MESSAGE</button>
-                        </div>
-                    </div>
+                <div style={{margin: '0 auto', marginTop: '40px'}}>
+                    <a href='/locations' className='cta'>LOCATIONS</a>
+                    <ContactModal />
                 </div>
             </div>
         </div>
