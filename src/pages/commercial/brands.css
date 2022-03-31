@@ -1,0 +1,80 @@
+.brands-wrapper {
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 45px 30px;
+    position: relative;
+}
+
+.brands-wrapper h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .06em;
+    padding-bottom: 10px;
+}
+
+.brands-wrapper .brand-img {
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.brands-wrapper p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: rgb(151, 151, 151);
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+}
+
+.brands-wrapper img:not(.w-40) {
+    width: 100%;
+}
+
+.w-40 {
+    width: 60%;
+}
+
+.brands-wrapper hr {
+    width: 40%;
+    background-color: #007bff;
+    margin-bottom: 0px;
+}
+
+button.download {
+    text-decoration: none !important;
+    border: 2px solid white !important;
+    color: white !important;
+    background-color: transparent !important;
+    font-size: .85em !important;
+    font-family: 'Muli', sans-serif !important;
+    letter-spacing: .07em !important;
+    padding: 4px 30px 2px 30px;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 576px) {
+    .brands-wrapper img:not(.w-40) {
+        width: 80%;
+    }
+    
+    .w-40 {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .brands-wrapper img:not(.w-40) {
+        width: 70%;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .brand-img {
+        padding-top: 1.4rem;
+    }
+}

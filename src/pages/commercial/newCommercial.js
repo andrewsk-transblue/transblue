@@ -8,23 +8,14 @@ import headerBg from '../../images/commercial/header2.jpg';
 import Hospitality from './hospitality';
 import Card from './card';
 import Services from './services';
+import Green from '../../components/green';
+import Carousel from './carousel';
 
-import enterprise from './logos/enterprise.jpg';
-import albertsons from './logos/albertsons.png';
-import cbre from './logos/cbre.webp';
-import gatorade from './logos/gatorade.png';
-import goodwill from './logos/goodwill.png';
-import homestreet from './logos/homestreet.png';
-import safeway from './logos/Untitled.png';
-import marriott from './logos/marriott.png';
-import usps from './logos/usps.webp';
-import jll from './logos/jll.png';
-import pepsi from './logos/pepsi.png';
-import redroof from './logos/redroof.png';
 import nextstep4 from '../../images/commercial/nextstep4.png';
 
 import forward from '../../images/residential/forward.png';
 import back from '../../images/residential/back.png';
+import snow from '../../images/commercial/snow.jpeg';
 
 
 import './commercial.css';
@@ -32,6 +23,10 @@ import './style.css';
 
 import ReactGA from 'react-ga';
 import Clients from './clients';
+import Marriott from './marriott';
+import Snow from '../../components/snow';
+import Brands from './brands';
+import ServiceModal from './modal';
 
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -45,16 +40,9 @@ function Commercial() {
           });
     }, [])
 
-    const [index, setIndex] = useState(0);
-
-    function changeIndex() {
-        index === 0
-            ? setIndex(1)
-            : setIndex(0)
-    }
-
     return(
         <Fragment>
+            <ServiceModal />
                 <Helmet>
                     <title>Transblue Commercial Services</title>
                     <meta name="description" content="Transblue is a leading general contractor, spanning on different states. We are a trusted source to design and construct commercial buildings, decks, and landscaping" />
@@ -63,30 +51,10 @@ function Commercial() {
                 <Header 
                     name='commercial' 
                     img={headerBg}
-                    title='COMMERCIAL' 
-                    subtitle='Your Business Construction Solution' />
+                    title='COMMERCIAL' />
                 <ContactCta />
-                <div className='container-fluid about-wrapper wrapper'>
-                    <div className='row'>
-                        <div className='col-lg-6'>
-                            <h1>FAST &amp; RELIABLE <br />COMMERCIAL CONSTRUCTION</h1>
-                            {/* <a className='cta' href='/operate'>HOW WE OPERATE</a> */}
-                        </div>
-                        <div className='col-lg-6'>
-                            <p className='section-p'>
-                                At Transblue, we are engaged with our customers as we design and build their capital projects. We understand that time, quality, and budget are keys to ensuring a World Class Delivery.
-                            </p>
-                            <p className='section-p'>
-                                When working with Transblue, you can experience a company focused on the customer experience. We strive to provide a World Class experience for both you and your customer. 
-                                {/* When fulfilling project deliverables, our primary objective is ensuring your customers don't lose faith in your brand. */}
-                            </p>
-                        </div>
-                    </div>
 
-
-                </div>
-
-                <div className='deliverables bg-light wrapper'>
+                <div className='deliverables wrapper'>
                     <div className='container-fluid about-wrapper'>
                         <div className='row mx-0'>
                             <div className='col-12 col-lg-4'>
@@ -113,131 +81,41 @@ function Commercial() {
                         </div>
                     </div>
                 </div>
+
+                <div className='about-wrapper'>
+                    <Marriott />
+                </div>
                 
                 <div className='quality-wrapper'>
                     <div className='text centered-text about-wrapper'>
                         <h4>BRAND LOYALTY</h4>
                         <hr className='center-hr'/>
-                        {/* <p className='section-p'>Nam sollicitudin massa libero, id euismod massa lobortis eu. Fusce varius diam quis ex gravida, et luctus mauris facilisis. Morbi urna neque, gravida quis pellentesque vitae, aliquam sodales felis.</p> */}
                         <p className='section-p'>Brand loyalty means that your customers are coming back to your business again and again. The real loyal customers put in extra effort to find your establishment or product. If you have a physical location which your customers visit, then we are the best partner to have. Tranbslue understands and values customer loyalty.</p>
                     </div>
                 </div>
 
-                <Services />
-                {/* <div className='container-fluid about-wrapper'>
-                    <div className='row mx-0'>
-                        <div className='col-lg-6 order-lg-12'>
-                        </div>
-                        <div className='col-lg-6 order-lg-12'>
-                            <h4 className='section-header'>NATIONWIDE SERVICES, LOCAL EXPERTISE</h4>
-                            <p className='section-p'>Transblue is focused on building real business solutions with real time 
-                                results. Our clients are able to focus on meeting strategic business 
-                                objectives, while maximizing internal resources and efficiencies.</p>
-                            <p className='section-p pb-4'> Using our unique consultative 
-                                approach and latest technologies, Transblue works with clients to 
-                                develop snow removal plans that include operational and financial 
-                                efficiencies. We present on demand plowing services as an investment, 
-                                rather than an expense, to help design a more effective approach to 
-                                risk management and service execution.</p>
-                        </div>
-                    </div>
-                </div> */}
-                {/* <div className='container-fluid'>
-                    <div className='row mb-5 mx-0'>
-                        <ServiceCard title='Snow and Ice Removal' body='Snow removal and de-icing services bring safety to your facility, making sure your business is up and running regardless of inclement weather.' />
-                        <ServiceCard title='CAPITAL EXPENDITURE' body='We’ll take care of your business exterior—including roofing, landscaping, painting, and brand refreshing, so you can focus on what matters most to you: running your business.' />
-                    </div>
-                </div> */}
-                {/* <Hospitality /> */}
-                <div className='brands-wrapper container-fluid'>
-                        <div className='row about-wrapper'>
-                            <div className='col-12 col-lg-5 my-auto'>
-                                <h3>SERVICING TOP BRANDS NATIONWIDE</h3>
-                                <hr />
-                                {/* <button className='case-studies'>CASE STUDIES</button> */}
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/3rd_party_vs_self_perform best practice snow example- final.docx`} download className='case-studies'>CASE STUDY 1 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/Best Practices.pdf`} download className='case-studies'>CASE STUDY 2 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/Reduce your facility spend by 2 Million Dollars annually with Transblue.pdf`} download className='case-studies'>CASE STUDY 3 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/Snow Removal liability and risk management best practices.pdf`} download className='case-studies'>CASE STUDY 4 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB best practices landscape rfps and water management.pdf`} download className='case-studies'>CASE STUDY 5 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB CASE STUDY - vendor management.pdf`} download className='case-studies'>CASE STUDY 6 <i className='fa fa-download' /></a>
-                                <a href={`${process.env.PUBLIC_URL}/casestudies/TB Water Management xeriscape.pdf`} download className='case-studies'>CASE STUDY 7 <i className='fa fa-download' /></a>
-                            </div>
-                            <div className='col-lg-7 col-12'>
-                                <div className='row'>
-                                    <div className='col-2 my-auto'>
-                                        <button
-                                            onClick={changeIndex}
-                                        >
-                                            <img src={back} alt='' />
-                                        </button>
-                                    </div>
-                                    
-                                        {index === 0 &&
-                                            <div className='col-8 text-center'>
-                                                <div className='row mt-4'>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={enterprise} alt='Enterprise' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={albertsons} alt='Albertsons' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={cbre} alt='CBRE' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={gatorade} alt='costco' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={goodwill} alt='walmart' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={homestreet} alt='wellsfargo' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        }
-                                    
-                                    
-                                        {index === 1 &&
-                                            <div className='col-8 text-center'>
-                                                <div className='row mt-4'>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={safeway} alt='Safeway' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={usps} alt='USPS' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={marriott} alt='Marriott' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={jll} alt='JLL' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img src={pepsi} alt='Pepsi' />
-                                                    </div>
-                                                    <div className='col-lg-4 col-md-2 col-sm-4 col-4 my-auto brand-img'>
-                                                        <img className='w-40' src={redroof} alt='Red Roof Inn' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        }
-                                    
-                                    <div className='col-2 my-auto'>
-                                        <button
-                                            onClick={changeIndex}
-                                        >
-                                            <img src={forward} alt='' />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        <div className='row'>
-                            <p>*All company names and logos are trademarks or registered tradmarks of their respective holders. Transblue is not associated with or sponsored by the companies listed above.</p>
-                        </div>
+                <div className='about-wrapper'>
+                    <Snow
+                        video={true}
+                        img={snow}
+                        title='REDUCE LIABILITY THIS WINTER'
+                        p1='Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.'
+                        p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
+                        p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
+                    />
                 </div>
+
+                <Carousel />
+
+                <div className='about-wrapper'>
+                    <Green 
+                        page='commercial'
+                        solar='Reduce overhead and save on utility bills with solar panels'
+                        ev='Increase customer retention and customer dwell time with EV Chargers'
+                        roof='Diversify marketing and conserve energy with a living roof' />
+                </div>
+
+                <Brands />
 
                 <Clients />
 

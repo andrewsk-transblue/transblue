@@ -11,6 +11,10 @@
     padding: 30px;
 }
 
+.about-wrapper.services {
+    padding: 0;
+}
+
 .about-wrapper h1 {
     font-family: 'Raleway', sans-serif;
     line-height: 1.3em;
@@ -99,20 +103,6 @@ a.case-studies:hover {
     color: #0b56a4;
 }
 
-/* .deliverables {
-    line-height: 600px;
-    background-image: url('./building.jpeg');
-    background-size: cover;
-    background-position: center center;
-} */
-
-.about-wrapper i {
-    color: rgb(77, 77, 77);
-    color: #0b56a4;
-    /* -webkit-text-stroke: 2px white; */
-}
-
-.card-body h4.section-header,
 .services h5 {
     color:rgb(77, 77, 77)
 }
@@ -129,6 +119,17 @@ a.case-studies:hover {
 .services img {
     width: 100%;
     margin-bottom: 1.5rem;
+}
+
+.deliverables {
+    /* background: linear-gradient(116.43deg,#070e14 -.01%, #0b56a4 103.46%);
+    mix-blend-mode: normal; */
+    background-color: #0b56a4;
+    color: white;
+}
+
+.card-body h4.section-header {
+    color: white;
 }
 
 @media only screen and (min-width: 576px) {
@@ -154,21 +155,6 @@ a.case-studies:hover {
 @media only screen and (min-width: 992px) {
     .brand-img {
         padding-top: 1.4rem;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .about-wrapper h1 {
-        font-size: 28px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .about-wrapper h1 {
-        font-size: 37px;
-    }
-    .about-wrapper p {
-        padding-top: 0px !important;
     }
 }
 
