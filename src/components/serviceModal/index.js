@@ -4,7 +4,7 @@ import './style.css';
 function ServiceModal(props) {
     return(
         <Fragment>
-            <button className='cta' data-toggle="modal" data-bs-target={`#serviceModal`}>
+            <button className='cta' data-bs-toggle="modal" data-bs-target={`#serviceModal`}>
                 VIEW ALL SERVICES
             </button>
             
