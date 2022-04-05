@@ -15,7 +15,9 @@ class Form extends Component {
         phone: '',
         message: '',
         formCompleted: false,
-        disabled: true
+        disabled: true,
+        zipcode: '',
+        leadSource: ''
     }
 
     onChange = (e) => {
@@ -28,6 +30,8 @@ class Form extends Component {
             && this.state.lastName.length > 0
             && this.state.email.length > 0
             && this.state.message.length > 0
+            && this.state.zipcode.length > 0
+            && this.state.leadSource.length > 0
         
         if(formCompleted) this.setState({formCompleted: true})
     }
@@ -43,7 +47,9 @@ class Form extends Component {
             to_email: this.props.email, //CHANGE THIS TO this.props.email to send to LOCATIONLEADS@TRANSBLUE.ORG
             reply_to: this.state.email, //CALL BLUE CAN REPLY TO USER
             phone: this.state.phone,
-            message: this.state.message
+            message: this.state.message,
+            leadSource: this.state.leadSource,
+            zipcode: this.state.zipcode
            }
 
         emailjs.send(
@@ -59,7 +65,6 @@ class Form extends Component {
     }
 
     render() {
-        
         return(
             <form className='form-wrapper' onSubmit={this.onSubmit}>
                 <h2 className='lg-screen-title'>GET IN TOUCH.</h2>
@@ -73,6 +78,10 @@ class Form extends Component {
                 <span>
                     <input onChange={this.onChange} className='left-input' name='email' placeholder='Email'></input>
                     <input onChange={this.onChange} className='right-input' name='phone' placeholder='Phone Number'></input>
+                </span>
+                <span>
+                    <input onChange={this.onChange} className='left-input' name='zipcode' placeholder='Zipcode'></input>
+                    <input onChange={this.onChange} className='right-input' name='leadSource' placeholder='How did you hear about us?'></input>
                 </span>
                 <span>
                     <textarea onChange={this.onChange} name='message' placeholder='Tell us about your project'></textarea>

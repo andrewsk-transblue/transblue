@@ -13,13 +13,15 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 // const Captcha = lazy(() => import('../captcha/captcha'))
 
 function Form(props) {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [message, setMessage] = useState('')
-    const [isSubmitted, setIsSubmitted] = useState(false)
-    const [submitEnabled, setSubmitEnabled] = useState(false)
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [submitEnabled, setSubmitEnabled] = useState(false);
+    const [zipcode, setZipcode] = useState('');
+    const [leadSource, setLeadSource] = useState('')
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -39,7 +41,9 @@ function Form(props) {
             to_email: to_email, //CHANGE THIS TO props.email or incoming leads
             reply_to: email,
             phone: phone,
-            message: message
+            message: message,
+            zipcode: zipcode,
+            leadSource: leadSource
         }
 
         emailjs.send(
@@ -67,12 +71,22 @@ function Form(props) {
             </div>
             <div className='row mt-2'>
                 <div className='col-12'>
+                    <input id='zipcode' onChange={(e) => setZipcode(e.target.value)} placeholder='Zipcode' value={zipcode} required></input>
+                </div>
+            </div>
+            <div className='row mt-2'>
+                <div className='col-12'>
                     <input id='phone' onChange={(e) => setPhone(e.target.value)} placeholder='Phone' value={phone} required></input>
                 </div>
             </div>
             <div className='row mt-2'>
                 <div className='col-12'>
                     <input id='email' onChange={(e) => setEmail(e.target.value)} placeholder='Email' value={email} required></input>
+                </div>
+            </div>
+            <div className='row mt-2'>
+                <div className='col-12'>
+                    <input id='leadSource' onChange={(e) => setLeadSource(e.target.value)} placeholder='How did you hear about us?' value={leadSource} required></input>
                 </div>
             </div>
             <div className='row mt-2'>

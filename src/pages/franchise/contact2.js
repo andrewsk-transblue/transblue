@@ -13,7 +13,7 @@ function Contact2(props) {
     else if(window.innerWidth < 875) height = 8
     else if(window.innerWidth > 1200 && window.innerWidth < 1335) height = 5;
     else if(window.innerWidth > 1335) height = 4;
-    else height = 5
+    else height = 6
 
     let zipcode = props.franchise.zipcode;
 

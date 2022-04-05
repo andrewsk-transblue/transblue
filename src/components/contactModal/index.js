@@ -14,21 +14,13 @@ function ContactModal(props) {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(true);
+    const [zipcode, setZipcode] = useState('');
+    const [leadSource, setLeadSource] = useState('');
 
     const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
 
     function handleSubmit(e) {
         e.preventDefault();
-
-        //adding message to database
-        let dbData = {
-            website: 'GC WEBSITE',
-            name: `${firstName} ${lastName}`,
-            phone: phone,
-            email: email,
-            message: message
-        }
-        //db('CONTACT').insert(dbData).one()
 
         let to_email;
         if(props.email) {
@@ -42,8 +34,10 @@ function ContactModal(props) {
             to_email: to_email, //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
             reply_to: email,
             phone: phone,
-            message: message
-           }
+            message: message,
+            zipcode: zipcode,
+            leadSource: leadSource
+        }
 
         emailjs.send(
         'service_gekurtf',
@@ -86,6 +80,14 @@ function ContactModal(props) {
                                     </div>
                                     <div className='col-sm-6 my-2 input-right'>
                                         <input placeholder='Phone Number' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+                                    </div>
+                                </div>
+                                <div className='row'>
+                                    <div className='col-sm-6 my-1 input-left'>
+                                        <input placeholder='Zipcode' id='firstName' value={zipcode} onChange={(e) => setZipcode(e.target.value)}></input>
+                                    </div>
+                                    <div className='col-sm-6 my-1 input-right'>
+                                        <input placeholder='How did you hear about us?' id='lastName' value={leadSource} onChange={(e) => setLeadSource(e.target.value)}></input>
                                     </div>
                                 </div>
                                 <div className='row'>

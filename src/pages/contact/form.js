@@ -13,24 +13,14 @@ function Form() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
-    const [disabled, setDisabled] = useState(true)
-    //const [disabled, setDisabled] = useState(true);
+    const [disabled, setDisabled] = useState(true);
+    const [zipcode, setZipcode] = useState('');
+    const [leadSource, setLeadSource] = useState('');
 
-    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0;
+    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && zipcode.length > 0 && leadSource.length > 0;
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('submit')
-
-        //adding message to database
-        let dbData = {
-            website: 'GC WEBSITE',
-            name: `${firstName} ${lastName}`,
-            phone: phone,
-            email: email,
-            message: message
-        }
-        //db('CONTACT').insert(dbData).one()
 
         //SEND MESSAGE TO INCOMINGLEADS USING EMAILJS
         let templateParams = {
@@ -39,7 +29,9 @@ function Form() {
             to_email: 'incomingleads@transblue.org', //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
             reply_to: email,
             phone: phone,
-            message: message
+            message: message,
+            zipcode: zipcode,
+            leadSource: leadSource
            }
 
         emailjs.send(
@@ -71,8 +63,16 @@ function Form() {
                 </div>
             </div>
             <div className='row'>
+                <div className='col-sm-6 my-2 input-left'>
+                    <input placeholder='Zipcode' value={zipcode} onChange={(e) => setZipcode(e.target.value)} required></input>
+                </div>
+                <div className='col-sm-6 my-2 input-right'>
+                    <input placeholder='How did you hear about us?' value={leadSource} onChange={(e) => setLeadSource(e.target.value)} required></input>
+                </div>
+            </div>
+            <div className='row'>
                 <div className='col-sm-12 px-0 mt-2'>
-                    <textarea placeholder='What can we help you with?' id='message' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                    <textarea placeholder='Tell us about your project' id='message' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                 </div>
             </div>
             <div className='row'>
