@@ -23,7 +23,7 @@ class Form extends Component {
     onChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value
-        }, () => console.log(this.state))
+        }, () => console.log(this.state));
 
         const formCompleted = 
             this.state.firstName.length > 0 
@@ -49,8 +49,8 @@ class Form extends Component {
             phone: this.state.phone,
             message: this.state.message,
             leadSource: this.state.leadSource,
-            zipcode: this.state.zipcode
-           }
+            zipcode: `${this.state.zipcode} - sent from ${this.props.location}s website`
+        }
 
         emailjs.send(
         'service_gekurtf',
