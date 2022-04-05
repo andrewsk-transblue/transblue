@@ -24,7 +24,6 @@ function Contact() {
                 <meta name="description" content="Transblue is a leading general contractor, spanning on different states. They are a trusted source to design and construct commercial buildings, decks, and landscaping" />
             </Helmet>
 
-            //Transblue is a world class general contractor with different locations throughout different states. Find out more about our services or contact us for a free quote.
             <FranchiseNav />
             <Navbar />
             <div className='contact-page-wrapper'>

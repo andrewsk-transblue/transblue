@@ -48,16 +48,6 @@ function Form(props) {
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )
-
-        //add message to database
-        let dbData = {
-            website: 'GC WEBSITE',
-            name: `${firstName} ${lastName}`,
-            email: email,
-            phone: phone,
-            message: message
-        }
-        //db('CONTACT').insert(dbData).one() 
     }
 
     return(

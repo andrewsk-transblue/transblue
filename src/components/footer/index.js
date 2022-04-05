@@ -44,6 +44,9 @@ function Footer() {
                     <a href='/privacy'>PRIVACY POLICY</a>
                 </span>
             </div>
+            <div style={{fontSize: '14px', width: '100%', textAlign: 'right'}}>
+                Copyright © 2022 Transblue.  All Rights Reserved
+            </div>
         </div>
     )
 }

@@ -32,7 +32,7 @@ function Services() {
                             image={commercial}
                             service='COMMERCIAL'
                             page='commercial'
-                            link='/residential'
+                            link='/commercial'
                             description='Our teams are focused on making your life simple and reducing the burden that comes with the capital projects required to keep your business looking its best. Our experts offer a full range of services from roofing, siding, asphalt, concrete, decking, fencing, to EV chargers and Solar installs, to Snow &amp; Ice management and everything in between.'
                         />
                     </div>
