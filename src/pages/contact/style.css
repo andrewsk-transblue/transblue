@@ -109,6 +109,10 @@
     margin: 1rem 0;
 }
 
+.contact-page-form button.disabled {
+    opacity: .6
+}
+
 @media only screen and (min-width: 576px) {
     .contact-page-form .input-left {
         padding-right: 5px;
