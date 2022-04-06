@@ -15,7 +15,7 @@ const ContactCta = lazy(() => import('../../components/contactCta'));
 const NewReviews = lazy(() => import('../../components/landing/newReviews/newReviews'));
 const Mission = lazy(() => import('../../components/landing/mission'));
 const Footer = lazy(() => import('../../components/footer'));
-const Header = lazy(() => import('../../components/landing/header'));
+const Header = lazy(() => import('../../components/landing/header/header'));
 
 function NewLanding() {
     useEffect(() => {
