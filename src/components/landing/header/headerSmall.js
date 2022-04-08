@@ -11,7 +11,7 @@ function HeaderSmall() {
     return(
         <>
             <FranchiseNav />
-            <div className="landing header">
+            <div className="landing header small">
                 <div id='img1-small' data-display={displayComm ? 'display' : ''} onClick={() => setDisplayComm(!displayComm)}>
                     <div id='text-1-small'>
                         <h2>COMMERCIAL</h2>

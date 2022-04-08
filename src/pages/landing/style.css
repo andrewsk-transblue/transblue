@@ -29,13 +29,16 @@
 
 /* HEADER CSS */
 .header {
-    position: fixed;
     width: 100%;
     top: 0;
     left:0;
     z-index: -3;
     height: auto;
     height: 100vh;
+}
+
+.header:not(.landing.header.small) {
+    position: fixed;
 }
 
 .landing-header {
