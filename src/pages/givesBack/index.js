@@ -24,7 +24,8 @@ const charities = [
     {
         name: 'DAWSON PLACE',
         url: 'dawson',
-        description: ["Dawson Place Child Advocacy Center is a nonprofit organization providing safety, justice, and healing to victims of child physical and secual abuse, assault, and neglect. Dawson Place has every service needed for victims and their families to receive the help they need. the Child Advocacy Center model minimizes the number of times a child has to tell their story, by bringing each professional needed for a case into one building, reducing the trauma of a victim's experience."]
+        description: ["Dawson Place Child Advocacy Center is a nonprofit organization providing safety, justice, and healing to victims of child physical and secual abuse, assault, and neglect. Dawson Place has every service needed for victims and their families to receive the help they need. the Child Advocacy Center model minimizes the number of times a child has to tell their story, by bringing each professional needed for a case into one building, reducing the trauma of a victim's experience."],
+        video: <iframe width="560" height="315" src="https://www.youtube.com/embed/RxTqT8AsBP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
     {
         name: "DEE'S HOPE",
@@ -145,6 +146,7 @@ function GivesBack(props) {
                                     <p className='section-p'>{p}</p>
                                 )
                             })}
+                            {charities[activeButton].video}
                             {/* {charities[activeButton].link &&
                             <a href='https://www.youtube.com/watch?v=ddYhFI8NU3w'>LEARN MORE ABOUT </a>} */}
                         </div>
