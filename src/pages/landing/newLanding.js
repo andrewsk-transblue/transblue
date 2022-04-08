@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, lazy} from 'react';
+import React, {Fragment, useEffect, lazy, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import './style.css';
@@ -16,13 +16,18 @@ const NewReviews = lazy(() => import('../../components/landing/newReviews/newRev
 const Mission = lazy(() => import('../../components/landing/mission'));
 const Footer = lazy(() => import('../../components/footer'));
 const Header = lazy(() => import('../../components/landing/header/header'));
+const HeaderSmall = lazy(() => import('../../components/landing/header/headerSmall'));
 
 function NewLanding() {
+    const [windowWidth, setWindowWidth] = useState('large');
+
     useEffect(() => {
         ReactGA.event({
             category: 'User',
             action: 'Visited Landing Page'
           });
+
+        if(window.innerWidth < 1000) setWindowWidth('small');
           //console.log(navigator.geolocation)
         // if('getCurrentPosition' in navigator.geolocation ) {
         //     axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY')
@@ -46,7 +51,7 @@ function NewLanding() {
                 <meta name="description" content="Transblue cares about our customers and their homes and businesses. From retaining walls to asphalt to snow removal, we get the job done right." />
             </Helmet>
             <Navbar page='HOME' />
-            <Header />
+            {windowWidth === 'large' ? <Header /> : <HeaderSmall />}
             <ContactCta />
             
             <div className='landing-body'>
