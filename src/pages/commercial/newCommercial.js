@@ -11,6 +11,8 @@ import Services from './services';
 import Green from '../../components/green';
 import Carousel from './carousel';
 
+import CaseStudy from './caseStudy';
+
 import nextstep4 from '../../images/commercial/nextstep4.png';
 
 import forward from '../../images/residential/forward.png';
@@ -27,6 +29,7 @@ import Marriott from './marriott';
 import Snow from '../../components/snow';
 import Brands from './brands';
 import ServiceModal from './modal';
+import CaseStudyModal from '../../components/caseStudyModal/caseStudyModal';
 
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -42,6 +45,7 @@ function Commercial() {
 
     return(
         <Fragment>
+            <CaseStudyModal />
             <ServiceModal />
                 <Helmet>
                     <title>Transblue Commercial Services</title>
@@ -104,6 +108,8 @@ function Commercial() {
                         p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
                     />
                 </div>
+
+                <CaseStudy />
 
                 <Carousel />
 
