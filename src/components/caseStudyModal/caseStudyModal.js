@@ -10,7 +10,7 @@ function CaseStudyModal() {
         company: '',
         email: '',
         phone: '',
-        caseStudy: 'casestudy1'
+        caseStudy: 'Best practices landscape rfps and water management'
     })
 
     const [submitted, setSubmitted] = useState(false);
@@ -27,6 +27,18 @@ function CaseStudyModal() {
                     formValues,
                     process.env.REACT_APP_REACTJS_USER
                 )
+
+            //creating an invisible element
+            var element = document.createElement('a');
+            element.setAttribute('href', `${process.env.PUBLIC_URL}/casestudies/${formValues.caseStudy}.pdf`);
+            element.setAttribute('download', `${formValues.caseStudy}.pdf`);
+        
+            document.body.appendChild(element);
+            
+            //onClick property
+            element.click();
+        
+            document.body.removeChild(element);
             
             // close modal
             window.$('#caseStudyModal').modal('hide');
@@ -39,10 +51,6 @@ function CaseStudyModal() {
                 phone: '',
                 caseStudy: ''
             })
-        }
-        
-        else {
-
         }
     }
 
@@ -63,23 +71,23 @@ function CaseStudyModal() {
                                 className="form-check-input" 
                                 type="radio"
                                  name="flexRadioDefault" 
-                                 id="casestudy1" 
-                                 onChange={(e) => setFormValues({...formValues, caseStudy: 'casestudy1'})}
-                                 checked={formValues.caseStudy === 'casestudy1'} />
+                                 id="Best practices landscape rfps and water management" 
+                                 onChange={(e) => setFormValues({...formValues, caseStudy: 'Best practices landscape rfps and water management'})}
+                                 checked={formValues.caseStudy === 'Best practices landscape rfps and water management'} />
                             <label className="form-check-label" for="flexRadioDefault1">
-                                Case Study 1
+                                Best practices landscape rfps and water management
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="casestudy2" checked={formValues.caseStudy === 'casestudy2'} onChange={(e) => setFormValues({...formValues, caseStudy: 'casestudy2'})} />
+                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="Reduce your facility spend by 2 Million Dollars annually" checked={formValues.caseStudy === 'Reduce your facility spend by 2 Million Dollars annually'} onChange={(e) => setFormValues({...formValues, caseStudy: 'Reduce your facility spend by 2 Million Dollars annually'})} />
                             <label className="form-check-label" for="flexRadioDefault2">
-                                Case Study 2
+                                Reduce your facility spend by 2 Million Dollars annually
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="casestudy3" checked={formValues.caseStudy === 'casestudy3'} onChange={(e) => setFormValues({...formValues, caseStudy: 'casestudy3'})} />
+                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="Snow Removal best practices - liability and risk management" checked={formValues.caseStudy === 'Snow Removal best practices - liability and risk management'} onChange={(e) => setFormValues({...formValues, caseStudy: 'Snow Removal best practices - liability and risk management'})} />
                             <label className="form-check-label" for="flexRadioDefault2">
-                                Case Study 3
+                                Snow Removal best practices - liability and risk management
                             </label>
                         </div>
                     </div>
