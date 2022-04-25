@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import './caseStudyModal.css';
 
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
@@ -60,7 +61,7 @@ function CaseStudyModal() {
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Download A Case Study</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">DOWNLOAD A CASE STUDY</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
@@ -90,8 +91,9 @@ function CaseStudyModal() {
                                 Snow Removal best practices - liability and risk management
                             </label>
                         </div>
-                    </div>
-                    <div className="modal-body">
+
+                        <hr />
+                    
                         <form className="needs-validation" noValidate>
                             <label htmlFor="caseStudyCompany" className="form-label">Company:</label>
                             <input className="w-100 mb-2 form-control" value={formValues.company} id='caseStudyCompany' onChange={(e) => setFormValues({...formValues, company: e.target.value})} />
@@ -105,10 +107,11 @@ function CaseStudyModal() {
                             <label htmlFor="caseStudyEmail" className="form-label">Email: *</label>
                             <input className="w-100 mb-2 form-control" type='email' value={formValues.email}id="caseStudyEmail" onChange={(e) => setFormValues({...formValues, email: e.target.value})} required className={formValues.email.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"}  />
                         </form>
-                    </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button onClick={submit} type="submit" className="btn btn-primary">Submit</button>
+                        <button type="button" className='close-modal' data-bs-dismiss="modal">CANCEL</button>
+                        <button onClick={submit} type="submit" className='submit-modal'>SUBMIT</button>
+                    </div>
+                
                     </div>
                 </div>
             </div>

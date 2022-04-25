@@ -1,0 +1,52 @@
+#caseStudyModal .modal-body {
+    padding: 20px 40px;
+}
+
+#caseStudyModal .modal-title {
+    font-family: 'Raleway';
+    letter-spacing: .063em;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+#caseStudyModal .modal-footer {
+    padding-right: 0px;
+}
+
+#caseStudyModal button.submit-modal {
+    background-color: #0b56a4;
+    color: white !important;
+    padding: 4px 25px 2px 25px;
+    border: 2px solid #0b56a4;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size:  12px;
+    letter-spacing: .0705em;
+    display: inline-block;
+    /* font-weight: 500; */
+  }
+  
+#caseStudyModal button.submit-modal:hover {
+    background-color: white;
+    color: #0b56a4 !important;
+    border: 2px solid #0b56a4;
+    transition: .5s;
+}
+  
+#caseStudyModal button.close-modal {
+    text-decoration: none !important;
+    border: 2px solid #0b56a4 !important;
+    color: #0b56a4 !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    font-family: 'Muli', sans-serif !important;
+    letter-spacing: .07em !important;
+    padding: 4px 20px 2px 20px;
+    margin-left: 10px;
+  }
+  
+#caseStudyModal button.close-modal:hover {
+    background-color: #0b56a4 !important;
+    color: white !important;
+    transition: .5s !important;
+  }
