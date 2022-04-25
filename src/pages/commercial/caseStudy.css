@@ -34,8 +34,9 @@
 }
 
 .case-study p {
-    width: 40%;
-    margin-bottom: 20px;
+    width: 90%;
+    max-width: 450px;
+    margin-bottom: 30px;
     margin-top: 20px;
 }
 
