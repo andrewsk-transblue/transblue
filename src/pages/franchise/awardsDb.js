@@ -6,9 +6,10 @@ import torch from '../../images/awards/torch.png';
 import homeadvisor from '../../images/awards/homeadvisor.png';
 import bbb from '../../images/awards/bbb.png';
 import disabled from '../../images/awards/disabled.jpeg';
+import ussbchamberlogo from '../../images/awards/ussbchamberlogo.jpg';
 
 let awardsDb = {
-    'spokane': [asm,  disabled, cai, veteran, westplains, homeadvisor],
+    'spokane': [asm,  disabled, cai, veteran, westplains, homeadvisor, ussbchamberlogo],
     'norfolk': [torch, homeadvisor, bbb]
 }
 

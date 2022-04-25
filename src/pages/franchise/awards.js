@@ -8,6 +8,7 @@ function Awards(props) {
         <div className='awards-wrapper' style={{width: '90%', margin: '0 auto'}}>
             <h2>AWARDS &amp; CERTIFICATES</h2>
             <div className='row'>
+            <a href="https://www.ussbchamber.org/simmsmccann-llc/"><img /></a> 
                 {awards.map(award => {
                     if(award.indexOf('static') === -1) {
                         return(
