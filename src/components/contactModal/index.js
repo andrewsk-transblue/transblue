@@ -1,4 +1,4 @@
-import React, {Fragment, Component, useState, lazy} from 'react';
+import React, {Fragment, Component, useState, lazy, useEffect} from 'react';
 import './style.css';
 
 import{ init } from 'emailjs-com';
@@ -8,16 +8,31 @@ init("user_iLZ3jXyTzXi5zQFlgf5DG");
 const Captcha = lazy(() => import('../captcha/captcha'));
 
 function ContactModal(props) {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(true);
-    const [zipcode, setZipcode] = useState('');
-    const [leadSource, setLeadSource] = useState('');
+    const [formCompleted, setFormCompleted] = useState(false);
+    const [formValues, setFormValues] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+        zipcode: '',
+        leadSource: ''
+    })
 
-    const formCompleted = firstName.length > 0 && lastName.length > 0 && phone.length > 0 && message.length > 0 && !disabled;
+    useEffect(() => {
+        
+        let bool = 
+            formValues.firstName.length > 0 && 
+            formValues.lastName.length > 0 && 
+            formValues.phone.length > 0 && 
+            formValues.message.length > 0 && 
+            !disabled;
+        
+        if(bool !== formCompleted) {
+            setFormCompleted(bool)
+        }
+    }, [formValues])
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -30,13 +45,13 @@ function ContactModal(props) {
 
         let templateParams = {
             website: 'GC WEBSITE',
-            from_name: `${firstName} ${lastName}`,
+            from_name: `${formValues.firstName} ${formValues.lastName}`,
             to_email: to_email, //CHANGE THIS TO INCOMINGLEADS@TRANSBLUE.ORG
-            reply_to: email,
-            phone: phone,
-            message: message,
-            zipcode: zipcode,
-            leadSource: leadSource
+            reply_to: formValues.email,
+            phone: formValues.phone,
+            message: formValues.message,
+            zipcode: formValues.zipcode,
+            leadSource: formValues.leadSource
         }
 
         emailjs.send(
@@ -45,11 +60,33 @@ function ContactModal(props) {
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )
+
+        // reset form values
+        setFormValues({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            message: '',
+            zipcode: '',
+            leadSource: ''
+        })
+    }
+
+    function handleChange(e) {
+        setFormValues({
+            ...formValues,
+            [e.target.id]: e.target.value
+        })
     }
 
     return(
         <Fragment>
-                <button className='cta' data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                <button 
+                    className='cta' 
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                >
                     {props.text !== undefined ? props.text : 'SEND A MESSAGE'}
                 </button>
                 
@@ -68,35 +105,42 @@ function ContactModal(props) {
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-6 my-1 input-left'>
-                                        <input placeholder='First Name' id='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
+                                        <input placeholder='First Name' id='firstName' value={formValues.firstName} onChange={handleChange}></input>
                                     </div>
                                     <div className='col-sm-6 my-1 input-right'>
-                                        <input placeholder='Last Name' id='lastName' value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
+                                        <input placeholder='Last Name' id='lastName' value={formValues.lastName} onChange={handleChange}></input>
                                     </div>
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-6 my-2 input-left'>
-                                        <input placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                                        <input placeholder='Email' id='email' value={formValues.email} onChange={handleChange}></input>
                                     </div>
                                     <div className='col-sm-6 my-2 input-right'>
-                                        <input placeholder='Phone Number' id='phone' value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+                                        <input placeholder='Phone Number' id='phone' value={formValues.phone} onChange={handleChange}></input>
                                     </div>
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-6 my-1 input-left'>
-                                        <input placeholder='Zipcode' id='firstName' value={zipcode} onChange={(e) => setZipcode(e.target.value)}></input>
+                                        <input placeholder='Zipcode' id='zipcode' value={formValues.zipcode} onChange={handleChange}></input>
                                     </div>
                                     <div className='col-sm-6 my-1 input-right'>
-                                        <input placeholder='How did you hear about us?' id='lastName' value={leadSource} onChange={(e) => setLeadSource(e.target.value)}></input>
+                                        <input placeholder='How did you hear about us?' id='leadSource' value={formValues.leadSource} onChange={handleChange}></input>
                                     </div>
                                 </div>
                                 <div className='row'>
                                     <div className='col-sm-12 px-0 mt-2'>
-                                        <textarea placeholder='What can we help you with?' id='message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                                        <textarea placeholder='What can we help you with?' id='message' value={formValues.message} onChange={handleChange}></textarea>
                                     </div>
                                 </div>
                                 <div className='row'>
-                                    <button className={!formCompleted ? 'cta disabled' : 'cta'} disabled={disabled} onClick={handleSubmit} data-bs-dismiss='modal' >SUBMIT</button>
+                                    <button 
+                                        className={!formCompleted ? 'cta disabled' : 'cta'}
+                                        disabled={disabled}
+                                        onClick={handleSubmit} 
+                                        data-bs-dismiss='modal' 
+                                    >
+                                        SUBMIT
+                                    </button>
                                 </div>
                                 <div className='row'>
                                     <Captcha onChange={() => setDisabled(false)} />

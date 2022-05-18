@@ -99,6 +99,12 @@ button.cta {
   margin-left: 10px;
 }
 
+button.cta:disabled:hover {
+  border: 2px solid #0b56a4 !important;
+  color: #0b56a4 !important;
+  background-color: transparent !important;
+}
+
 button.cta:hover {
   background-color: #0b56a4 !important;
   color: white !important;
