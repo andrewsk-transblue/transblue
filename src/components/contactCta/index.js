@@ -19,7 +19,11 @@ function ContactCta(props) {
             <button id='cta' onClick={() => setDisplayForm(true)}>CONTACT US</button>
             <Slide right when={displayForm} exit={true} collapse>
                 <div className='form'>
-                    <Form email={props.email} location={props.location} onClick={() => setDisplayForm(false)} />
+                    <Form 
+                        email={props.email} 
+                        location={props.location} 
+                        setDisplayForm={setDisplayForm} 
+                    />
                 </div>
             </Slide>
         </div>

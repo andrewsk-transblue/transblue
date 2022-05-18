@@ -65,7 +65,7 @@ function CaseStudyModal() {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-                        Select which case study you'd like to download: *
+                        Select which case study you'd like to download:
 
                         <div className="form-check mt-2">
                             <input 
