@@ -72,7 +72,10 @@ function Contact2(props) {
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-lg-6 col-12'>
-                            <Form email={props.franchise.email} location={props.franchise.name} onSubmit={() => setIsSent(true)} />
+                            <Form 
+                                email={props.franchise.email} 
+                                location={props.franchise.name} 
+                                onSubmit={() => setIsSent(true)} />
                         </div>
                         <div className='d-none d-lg-block col-lg-6 contact-info my-auto'>
                             <h5>{props.franchise.name.toUpperCase()}</h5>

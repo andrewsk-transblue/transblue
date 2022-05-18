@@ -58,6 +58,19 @@ class Form extends Component {
             templateParams,
             process.env.REACT_APP_REACTJS_USER
         )
+
+        // reset form
+        this.setState({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            message: '',
+            formCompleted: false,
+            disabled: true,
+            zipcode: '',
+            leadSource: ''
+        })
     }
 
     enableForm = () => {

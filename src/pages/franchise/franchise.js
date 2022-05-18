@@ -139,10 +139,18 @@ function Franchise(props) {
 
                 <Finance location={location} />
 
-                <Contact2 name={location.name} phone={location.phone} email={location.email} location={`${location.city}, ${location.state}`} franchise={location} />               
+                <Contact2 
+                    name={location.name} 
+                    phone={location.phone} 
+                    email={location.email} 
+                    location={`${location.city}, ${location.state}`}
+                    franchise={location} />               
             </div>
             {awardsDb[location.urlcity] && <Awards location={location.urlcity} />}
-            <Footer locationPage={true} franchise={true} location={location} />
+            <Footer 
+                locationPage={true} 
+                franchise={true} 
+                location={location} />
         </Fragment>
     )
 
