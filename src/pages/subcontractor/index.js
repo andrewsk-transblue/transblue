@@ -10,16 +10,20 @@ import Header from '../../components/header';
 import axios from 'axios';
 import './style.css';
 
+import{ init } from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
+init("user_iLZ3jXyTzXi5zQFlgf5DG");
+
 
 function Subcontractor() {
     const applyRef = useRef(null);
 
     const [formValues, setFormValues] = useState({
-        subject: 'Subcontractor Application Request',
         name: '',
         email: '',
         phone: '',
-        location: ''
+        location: '',
+        locationName: ''
     })
 
     const [locations, setLocations] = useState([]);
@@ -28,7 +32,7 @@ function Subcontractor() {
     const mounted = () => {
         axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
             .then(res => {
-                setLocations(res.data)
+                setLocations(res.data);
             })
     }
 
@@ -38,9 +42,11 @@ function Subcontractor() {
 
     function selectLocation(e) {
         let location = locations.filter(location => location.name === e.target.value)[0];
+
         setFormValues({
             ...formValues,
-            location: location.officeemail
+            location: location.officeemail,
+            locationName: location.name
         })
     }
 
@@ -49,7 +55,13 @@ function Subcontractor() {
     }
 
     function submit() {
-        
+         // send form values via email        
+         emailjs.send(
+            'service_gekurtf',
+            'template_y115xsd', //CONTACT TEMPLATE
+                formValues,
+                process.env.REACT_APP_REACTJS_USER
+            )
     }
 
     function handleChange(e) {
