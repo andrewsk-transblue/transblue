@@ -28,6 +28,7 @@ function Subcontractor() {
 
     const [locations, setLocations] = useState([]);
     const [disabled, setDisabled] = useState(true);
+    const [submitted, setSubmitted] = useState(false);
 
     const mounted = () => {
         axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
@@ -62,6 +63,17 @@ function Subcontractor() {
                 formValues,
                 process.env.REACT_APP_REACTJS_USER
             )
+
+        setFormValues({
+            name: '',
+            email: '',
+            phone: '',
+            location: '',
+            locationName: ''
+        })
+
+        setDisabled(true);
+        setSubmitted(true);
     }
 
     function handleChange(e) {
@@ -135,12 +147,19 @@ function Subcontractor() {
                         onChange={handleChange}
                         placeholder='EMAIL'
                     />
-                    <button 
-                        className={disabled ? 'sub-submit disabled' : 'sub-submit'} 
-                        onClick={submit}
-                    >
-                        SUBMIT
-                    </button>
+                    {!submitted && 
+                        <button 
+                            className={disabled ? 'sub-submit disabled' : 'sub-submit'} 
+                            onClick={submit}
+                            disabled={disabled}
+                        >
+                            SUBMIT
+                        </button>
+                    }
+
+                    {submitted &&
+                        <h5 style={{marginBottom: '0px', marginTop: '20px'}} className='submitted'>Thank you!! Someone from our team will be in touch with you shortly</h5>
+                    }
                 </div>
             </div>
             <Footer />
