@@ -12,18 +12,23 @@ import './style.css';
 
 
 function Subcontractor() {
-    const applicationRef = useRef(null);
     const applyRef = useRef(null);
-    const [displayForm, setDisplayForm] = useState(false);
-    const [location, setLocation] = useState({})
 
-    const [easybaseData, seteasybaseData] = useState([]);
-    const mounted = async() => {
+    const [formValues, setFormValues] = useState({
+        subject: 'Subcontractor Application Request',
+        name: '',
+        email: '',
+        phone: '',
+        location: ''
+    })
 
+    const [locations, setLocations] = useState([]);
+    const [disabled, setDisabled] = useState(true);
+
+    const mounted = () => {
         axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
             .then(res => {
-                console.log(res)
-                seteasybaseData(res.data)
+                setLocations(res.data)
             })
     }
 
@@ -32,24 +37,40 @@ function Subcontractor() {
     }, [])
 
     function selectLocation(e) {
-        for(let i=0; i<easybaseData.length; i++) {
-            if(easybaseData[i].name === e.target.value) {
-                setLocation(easybaseData[i])
-                setDisplayForm(true)
-            }
-        }
-
-        applicationRef.current.scrollIntoView({ behavior: 'smooth' })
+        let location = locations.filter(location => location.name === e.target.value)[0];
+        setFormValues({
+            ...formValues,
+            location: location.officeemail
+        })
     }
 
     function scrollToApply() {
         applyRef.current.scrollIntoView({behavior: 'smooth'})
     }
 
+    function submit() {
+        
+    }
+
+    function handleChange(e) {
+        setFormValues({
+            ...formValues,
+            [e.target.id]: e.target.value
+        })
+    }
+
+    useEffect(() => {
+        let { name, email, location, phone } = formValues;
+        if(name.length > 0 && email.length > 0 && location.length > 0 && phone.length > 0) {
+            setDisabled(false)
+        }
+
+    }, [formValues])
+
     return(
         <Fragment>
             <Helmet>
-                <title>Transblue Residential</title>
+                <title>Transblue Subcontractor</title>
                 <meta name="description" content="Transblue is the perfect partner for your next project. We have been successfully working with the most prestigious companies in the United States, Canada, and Mexico to provide them with the most cost-effective and efficient ways to improve the quality of their construction projects." />
             </Helmet>
             <Navbar />
@@ -75,27 +96,40 @@ function Subcontractor() {
                 <Tools />
                 <div ref={applyRef}></div>
                 <div className='apply-wrapper'>
-                    <h2>IT'S EASY TO APPLY!</h2>
-                    <h5>Just select from our list of locations, fill out our form below, and submit!</h5>
+                    <h5>Fill out our contact form below to request an application today!</h5>
                     <select className='browser-default custom-select' onChange={selectLocation}>
                         <option value=''>SELECT A LOCATION</option>
-                        {easybaseData.length > 0 && easybaseData.map(location => {
+                        {locations.length > 0 && locations.map(location => {
                             return(
-                                <option value={location.name}>{location.name}</option>
+                                <option key={location.id} value={location.name}>{location.name}</option>
                             )
                         })}
                     </select>
+                    <input 
+                        value={formValues.name}
+                        id='name'
+                        onChange={handleChange}
+                        placeholder='FULL NAME'
+                    />
+                    <input 
+                        value={formValues.phone}
+                        id='phone'
+                        onChange={handleChange}
+                        placeholder='PHONE NUMBER'
+                    />
+                    <input 
+                        value={formValues.email}
+                        id='email'
+                        onChange={handleChange}
+                        placeholder='EMAIL'
+                    />
+                    <button 
+                        className={disabled ? 'sub-submit disabled' : 'sub-submit'} 
+                        onClick={submit}
+                    >
+                        SUBMIT
+                    </button>
                 </div>
-                <div ref={applicationRef}></div>
-                {displayForm && 
-                <div className='promise-bg'>
-                    <div className='subcontractor-wrapper'>
-                        <h2>{location.name.toUpperCase()}</h2>
-                        <h5>SUBCONTRACTOR APPLICATION</h5>
-                        <hr />
-                        {easybaseData.length > 0 && <Form location={location} />}
-                    </div>
-                </div>}
             </div>
             <Footer />
         </Fragment>

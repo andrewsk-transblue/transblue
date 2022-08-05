@@ -9,7 +9,7 @@ import disabled from '../../images/awards/disabled.jpeg';
 import ussbchamberlogo from '../../images/awards/ussbchamberlogo.jpg';
 import bbb2 from '../../images/awards/bbb2.png';
 import sima from '../../images/awards/sima.jpg';
-import wmbe from '../../images/wmbe.jpg';
+import wmbe from '../../images/awards/wmbe.jpg';
 
 let awardsDb = {
     'spokane': [asm,  disabled, cai, veteran, westplains, homeadvisor, ussbchamberlogo],
