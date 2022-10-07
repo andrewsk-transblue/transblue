@@ -102,10 +102,10 @@ function CaseStudyModal() {
                             <input className={formValues.name.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"} value={formValues.name} id='caseStudyName' onChange={(e) => setFormValues({...formValues, name: e.target.value})} required />
 
                             <label htmlFor="caseStudyPhone" className="form-label">Phone: *</label>
-                            <input className="w-100 mb-2 form-control" value={formValues.phone} id="caseStudyPhone" onChange={(e) => setFormValues({...formValues, phone: e.target.value})} required className={formValues.phone.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"}  />
+                            <input value={formValues.phone} id="caseStudyPhone" onChange={(e) => setFormValues({...formValues, phone: e.target.value})} required className={formValues.phone.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"}  />
 
                             <label htmlFor="caseStudyEmail" className="form-label">Email: *</label>
-                            <input className="w-100 mb-2 form-control" type='email' value={formValues.email}id="caseStudyEmail" onChange={(e) => setFormValues({...formValues, email: e.target.value})} required className={formValues.email.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"}  />
+                            <input type='email' value={formValues.email}id="caseStudyEmail" onChange={(e) => setFormValues({...formValues, email: e.target.value})} required className={formValues.email.length === 0 && submitted ? "w-100 mb-2 form-control is-invalid" : "w-100 mb-2 form-control"}  />
                         </form>
                     <div className="modal-footer">
                         <button type="button" className='close-modal' data-bs-dismiss="modal">CANCEL</button>
