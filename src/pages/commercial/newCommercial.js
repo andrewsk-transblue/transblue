@@ -35,7 +35,6 @@ const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKI
 ReactGA.initialize(TRACKING_ID);
 
 function Commercial() {
-
     useEffect(() => {
         ReactGA.event({
             category: 'User',
@@ -85,10 +84,7 @@ function Commercial() {
                         </div>
                     </div>
                 </div>
-
-                <div className='about-wrapper'>
-                    <Marriott />
-                </div>
+                <CaseStudy />
                 
                 <div className='quality-wrapper'>
                     <div className='text centered-text about-wrapper'>
@@ -109,7 +105,9 @@ function Commercial() {
                     />
                 </div>
 
-                <CaseStudy />
+                <div className='about-wrapper'>
+                    <Marriott />
+                </div>
 
                 <Carousel />
 
