@@ -12,6 +12,7 @@ import Installation from '../../components/residential/installation';
 import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Rockstar from '../../components/residential/rockstar';
+import military from '../../images/military.jpg';
 
 import './style.css';
 
@@ -64,6 +65,8 @@ function Residential() {
             {/* <Header img={residential} title='RESIDENTIAL' subtitle='Make your backyard feel like home' /> */}
             <ContactCta />
             <div className='residential-body'>
+                <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+
                 <div className='about row'>
                     <p>
                     Transblue takes a holistic approach to your project. We believe that each project is a collaboration of your vision and our expertise. Our teams will guide you through the process and ensure you love what your are building and your dreams not only come true but become an investment that returns not only ROI but that brings family closer together! Projects are not just beautiful materials and designs, they are birthday parties, BBQ’s, anniversaries and relaxing afternoons! 

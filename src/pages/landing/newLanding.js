@@ -2,6 +2,7 @@ import React, {Fragment, useEffect, lazy, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import './style.css';
+import military from '../../images/military.jpg';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
@@ -52,9 +53,12 @@ function NewLanding() {
             </Helmet>
             <Navbar page='HOME' />
             {windowWidth === 'large' ? <Header /> : <HeaderSmall />}
+
             <ContactCta />
             
             <div className='landing-body'>
+                <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+
                 <div className='wrapper'>
                 <Mbridge />
                 </div>
