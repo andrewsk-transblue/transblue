@@ -1,9 +1,19 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import FranchiseNav from '../franchiseNav';
 import './style.css';
-import military from '../../images/military.jpg'
+import military from '../../images/military.jpg';
+import militarySmall from '../../images/military-small.png';
 
 function Header(props) {
+    const [screenSize, setScreenSize] = useState('large');
+
+    useEffect(() => {
+        if(window.innerWidth < 600) {
+            setScreenSize('small');
+        }
+        console.log(window.innerWidth)
+    }, [])
+
     return(
         <Fragment>
             <FranchiseNav />
@@ -15,7 +25,10 @@ function Header(props) {
                     <div className='header-subtext'>{props.subtitle}</div>
                 </div>
             </div>
-            <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+            {screenSize === 'large'
+                ?   <a href="https://militarymakeover.tv"       target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                :   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
+            }
         </Fragment>
     )
 }

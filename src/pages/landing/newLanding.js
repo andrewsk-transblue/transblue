@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import './style.css';
 import military from '../../images/military.jpg';
+import militarySmall from '../../images/military-small.png';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
@@ -21,6 +22,7 @@ const HeaderSmall = lazy(() => import('../../components/landing/header/headerSma
 
 function NewLanding() {
     const [windowWidth, setWindowWidth] = useState('large');
+    const [bannerWidth, setBannerWidth] = useState('large');
 
     useEffect(() => {
         ReactGA.event({
@@ -28,7 +30,8 @@ function NewLanding() {
             action: 'Visited Landing Page'
           });
 
-        if(window.innerWidth < 1000) setWindowWidth('small');
+        if(window.innerWidth < 1000) {setWindowWidth('small')};
+        if(window.innerWidth < 600) {setBannerWidth('small')};
           //console.log(navigator.geolocation)
         // if('getCurrentPosition' in navigator.geolocation ) {
         //     axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY')
@@ -57,7 +60,10 @@ function NewLanding() {
             <ContactCta />
             
             <div className='landing-body'>
-                <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                {bannerWidth === 'large'
+                    ?   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                    :   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
+                }
 
                 <div className='wrapper'>
                 <Mbridge />

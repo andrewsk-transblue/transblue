@@ -13,6 +13,7 @@ import UpgradeNew from '../../components/residential/upgradeNew';
 import ServiceCard from '../../components/residential/greenServices/serviceCard';
 import Rockstar from '../../components/residential/rockstar';
 import military from '../../images/military.jpg';
+import militarySmall from '../../images/military-small.png';
 
 import './style.css';
 
@@ -35,6 +36,13 @@ const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 function Residential() {
     const [displayDesign, setDisplayDesign] = useState(false);
+    const [bannerWidth, setBannerWidth] = useState('large');
+
+    useEffect(() => {
+        if(window.innerWidth < 600) {
+            setBannerWidth('small');
+        }
+    }, [])
 
     useEffect(() => {
         ReactGA.event({
@@ -65,7 +73,10 @@ function Residential() {
             {/* <Header img={residential} title='RESIDENTIAL' subtitle='Make your backyard feel like home' /> */}
             <ContactCta />
             <div className='residential-body'>
-                <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                {bannerWidth === 'large'
+                    ?   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                    :   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
+                }
 
                 <div className='about row'>
                     <p>
