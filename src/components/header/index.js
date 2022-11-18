@@ -26,8 +26,8 @@ function Header(props) {
                 </div>
             </div>
             {screenSize === 'large'
-                ?   <a href="https://militarymakeover.tv"       target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
-                :   <a href="https://militarymakeover.tv" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
+                ?   <a href="https://militarymakeover.tv/opportunities-for-building-a-better-america/" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
+                :   <a href="https://militarymakeover.tv/opportunities-for-building-a-better-america/" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
             }
         </Fragment>
     )

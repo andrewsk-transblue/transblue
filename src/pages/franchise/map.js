@@ -8,9 +8,7 @@ import './style.css';
 function Map(props) {
     const position = [props.lat, props.lon];
 
-    const [stylePath] = useState(
-        "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    )
+    const stylePath = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 
     return(
         <Fragment>     
