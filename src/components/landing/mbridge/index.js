@@ -15,6 +15,7 @@ import downarrow from '../../../images/featured/downarrow.png';
 import fence from '../../../images/newLanding/fence.png';
 
 import './style.css';
+import AsSeenOn from '../../asSeenOn/asSeenOn';
 
 function Mbridge() {
     const [displayDawson, setDisplayDawson] = useState(false)
@@ -103,6 +104,10 @@ function Mbridge() {
                     
                     <p className='section-p'> Our passion is to build beautiful projects and we believe in treating your home like ours. We truly care about your project and doing a great job for you. We listen, collaborate, and design. This enables us to turn your project and dream into a reality. Our goal is to always exceed expectations of our customers!
                     </p>
+                </div>
+
+                <div className='col-12 px-0'>
+                    <AsSeenOn />
                 </div>
 
             </div>

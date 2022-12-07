@@ -7,6 +7,8 @@ import militarySmall from '../../images/military-small.png';
 
 //REACT GOOGLE ANALYTICS
 import ReactGA from 'react-ga';
+import Calendly from '../../components/calendly/calendly';
+import { InlineWidget, PopupWidget } from 'react-calendly';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -32,27 +34,21 @@ function NewLanding() {
 
         if(window.innerWidth < 1000) {setWindowWidth('small')};
         if(window.innerWidth < 600) {setBannerWidth('small')};
-          //console.log(navigator.geolocation)
-        // if('getCurrentPosition' in navigator.geolocation ) {
-        //     axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY')
-        //         .then(res => console.log(res))
-        //     // import('reverse-geocode').then((reverse) => {
-        //     //     navigator.geolocation.getCurrentPosition(position => {
-        //     //         console.log(position)
-        //     //         let state = reverse.lookup(position.coords.latitude, position.coords.longitude, 'us').state;
-        //     //         console.log(state)
-        //     //         //let state = 'Arizona'
-        //     //         if(noSnowStates.indexOf(state) !== -1) setNoSnow(true)
-        //     //     })
-        //     // })            
-        // }
-    }, [])
+    }, []);
 
     return(
-        <Fragment>
+        <Fragment>   
+            {/* <PopupWidget 
+                url='https://calendly.com/carters-6/60min' 
+                text='Schedule an Appointment' 
+                rootElement={document.getElementById("root")}
+            /> */}
+            {/* <InlineWidget url='https://calendly.com/carters-6/60min' />   */}
             <Helmet>
                 <title>Transblue World Class General Contractors</title>
                 <meta name="description" content="Transblue cares about our customers and their homes and businesses. From retaining walls to asphalt to snow removal, we get the job done right." />
+               
+                {/* <!-- Calendly badge widget end --></link> */}
             </Helmet>
             <Navbar page='HOME' />
             {windowWidth === 'large' ? <Header /> : <HeaderSmall />}
@@ -77,7 +73,7 @@ function NewLanding() {
                     <NewReviews />
                     <Services />
                 </div>
-                <Footer locationPage={false} />
+                <Footer locationPage={false} />                 
             </div>
         </Fragment>
     )
