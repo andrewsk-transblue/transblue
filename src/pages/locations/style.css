@@ -60,7 +60,7 @@
     width: 100%;
 }
 
-.location h4 {
+.location h4:not(.text-wrapper h4) {
     font-family: 'Raleway', sans-serif;
     color: rgb(87, 87, 87);
     color: white;
@@ -70,6 +70,19 @@
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-wrapper h4 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    letter-spacing: .05em;
 }
 
 @media only screen and (max-width: 640px) {
