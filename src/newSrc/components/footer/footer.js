@@ -13,7 +13,7 @@ function Footer() {
     }
 
     function handleResize() {
-        if(window.innerWidth < 700) {
+        if(window.innerWidth < 750) {
             setScreenSize('small');
         }
     }
@@ -50,7 +50,7 @@ function Footer() {
                 </Typography>
             </Stack>
 
-            <Stack spacing={3} direction='row' justifyContent='center' mb={2}>
+            <Stack spacing={3} direction={{xs: 'column', md: 'row'}} justifyContent='center' mb={2}>
                 <Typography 
                     variant='subtitle1' 
                     sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
@@ -83,29 +83,18 @@ function Footer() {
                 >
                     BLOG
                 </Typography>
-                {screenSize === 'large' && 
-                    <Typography 
-                        variant='subtitle1' 
-                        sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
-                        component='a'
-                        href='/locations'
-                    >
-                        LOCATIONS
-                    </Typography>
-                }
+                <Typography 
+                    variant='subtitle1' 
+                    sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
+                    component='a'
+                    href='/locations'
+                >
+                    LOCATIONS
+                </Typography>
             </Stack>
 
             <Stack spacing={3} direction='row' justifyContent='center'>
-                {screenSize === 'small' && 
-                    <Typography 
-                        variant='subtitle1' 
-                        sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
-                        component='a'
-                        href='/locations'
-                    >
-                        LOCATIONS
-                    </Typography>
-                }
+
                 <Typography 
                     variant='subtitle1' 
                     sx={{color: 'white', textDecoration: 'none'}}
