@@ -4,10 +4,12 @@ import {
   Route
 } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
-import NewLanding from './pages/landing/newLanding';
+import Landing from './newSrc/pages/landing/landing';
 import './App.css';
 import HQSubcontractor from './pages/hqsubcontractor';
 import axios from 'axios';
+import { createTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./pages/commercial/newCommercial'));
@@ -26,6 +28,104 @@ const Success = lazy(() => import('./pages/subcontractor/success'));
 
 function App() {
   const [easybaseData, seteasybaseData] = useState([]);
+
+  const theme = createTheme({
+    typography: {
+      h1: {
+        fontSize: '7vw',
+        fontFamily: 'Raleway',
+        letterSpacing: '.03em',
+        '@media (min-width: 480px)': {
+          fontSize: '6.3vw'
+        },
+        '@media (min-width: 650px)': {
+          fontSize: '4.5vw'
+        }
+      },
+      h2: {
+        fontSize: '4.5vw',
+        fontFamily: 'Raleway',
+        letterSpacing: '.03em',        
+        '@media (min-width: 480px)': {
+          fontSize: '4.5vw'
+        },
+        '@media (min-width: 650px)': {
+          fontSize: '5vw'
+        },
+        '@media (min-width: 900px)': {
+          fontSize: '2.5vw'
+        }
+      },
+      body2: {
+        fontFamily: "Roboto",
+        letterSpacing: '.04em',
+        fontSize: '3.5vw',
+        color: '#6c757d',
+        lineHeight: '1.6em',
+        fontWeight: 300,
+        '@media (min-width: 650px)': {
+          fontSize: '2.5vw'
+        },
+        '@media (min-width: 900px)': {
+          fontSize: '1.3vw'
+        }
+      },
+      subtitle2: {
+        fontSize: '.85em',
+        mb: '10px',
+        color: '#6c757d',
+        letterSpacing: '.05em',
+        fontFamily: 'Raleway'
+      },
+      subtitle1: {
+        fontWeight: '500',
+        fontFamily: "Raleway",
+        fontSize: '1.15rem',
+        color: '#3b3b3b',
+        letterSpacing: '.05em',
+      },
+      h6: {
+        fontFamily: 'Raleway'
+      }
+    },
+    components: {
+      MuiButton: {
+        styleOverrides: {
+          outlined: {
+            borderRadius: '0px',
+            fontFamily: 'Raleway',
+            letterSpacing: '.085em',
+            height: '2.5em',
+            paddingRight: '30px',
+            paddingLeft: '30px'
+          }
+        }
+      },
+      MuiMenuPaper: {
+        styleOverrides: {
+          root: {
+            backgroundColor: 'black !important'
+          }
+        }
+      },
+      MuiMenuItem: {
+        styleOverrides: {
+          root: {
+            fontFamily: 'Raleway'
+          }
+        }
+      },
+      MuiTextField: {
+        styleOverrides: {
+          valueLabel: ({ ownerState, theme }) => ({
+              ...(ownerState.id.indexOf('dark') > -1 && {
+              backgroundColor: 'white'
+            })
+          })
+        }
+      }
+    }
+  });
   
   const mounted = async() => {
 
@@ -40,49 +140,49 @@ function App() {
        mounted();
   }, [])
 
-  console.log(JSON.stringify(``))
-
   return (
-      <HelmetProvider>
-        <Router>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Route exact path='/' component={NewLanding} />
-            <Route exact path='/landing' component={NewLanding} />
-            <Route exact path='/residential' component={Residential} />
-            <Route exact path='/residential-services' component={Residential} />
-            <Route exact path='/commercial' component={Commercial} />
-            <Route exact path='/commercial-services' component={Commercial} />
-            <Route exact path='/multifamily' component={Multifamily} />
-            <Route exact path='/multifamily-construction' component={Multifamily} />
-            <Route exact path='/government' component={Government} />
-            <Route exact path='/government-services' component={Government} />
-            <Route exact path='/subcontractor' component={Subcontractor} />
-            {easybaseData.length > 0 && <Route path='/locations/:state/:urlCity' render={(props) => {
-                const state = props.match.params.state;
-                const urlCity = props.match.params.urlCity;
-                return <Franchise locations={easybaseData} state={state} urlCity={urlCity} />
-            }} />}
-            {easybaseData.length > 0 && <Route exact path='/locations'>
-              <Locations locations={easybaseData} />
-            </Route>}
-            <Route exact path='/featured' component={Featured} />
-            <Route exact path='/featured-projects' component={Featured} />
-            <Route exact path='/privacy' component={Privacy} />
-            <Route exact path='/givesback/:charity' component={GivesBack} />
-            <Route exact path='/givesback' component={GivesBack} />
-            <Route exact path='/contact' component={Contact} />
-            {easybaseData.length > 0 &&  <Route exact path='/finance' >
-              <Finance locations={easybaseData} />
-            </Route>}
-            {easybaseData.length > 0 && <Route exact path='/careers'>
-              <Careers locations={easybaseData} />
+      <ThemeProvider theme={theme}>
+        <HelmetProvider>
+          <Router>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Route exact path='/' component={Landing} />
+              <Route exact path='/landing' component={Landing} />
+              <Route exact path='/residential' component={Residential} />
+              <Route exact path='/residential-services' component={Residential} />
+              <Route exact path='/commercial' component={Commercial} />
+              <Route exact path='/commercial-services' component={Commercial} />
+              <Route exact path='/multifamily' component={Multifamily} />
+              <Route exact path='/multifamily-construction' component={Multifamily} />
+              <Route exact path='/government' component={Government} />
+              <Route exact path='/government-services' component={Government} />
+              <Route exact path='/subcontractor' component={Subcontractor} />
+              {easybaseData.length > 0 && <Route path='/locations/:state/:urlCity' render={(props) => {
+                  const state = props.match.params.state;
+                  const urlCity = props.match.params.urlCity;
+                  return <Franchise locations={easybaseData} state={state} urlCity={urlCity} />
+              }} />}
+              {easybaseData.length > 0 && <Route exact path='/locations'>
+                <Locations locations={easybaseData} />
               </Route>}
-            
-            <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
-            <Route exact path='/success' component={Success} />
-          </Suspense>
-        </Router>
-      </HelmetProvider>
+              <Route exact path='/featured' component={Featured} />
+              <Route exact path='/featured-projects' component={Featured} />
+              <Route exact path='/privacy' component={Privacy} />
+              <Route exact path='/givesback/:charity' component={GivesBack} />
+              <Route exact path='/givesback' component={GivesBack} />
+              <Route exact path='/contact' component={Contact} />
+              {easybaseData.length > 0 &&  <Route exact path='/finance' >
+                <Finance locations={easybaseData} />
+              </Route>}
+              {easybaseData.length > 0 && <Route exact path='/careers'>
+                <Careers locations={easybaseData} />
+                </Route>}
+              
+              <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
+              <Route exact path='/success' component={Success} />
+            </Suspense>
+          </Router>
+        </HelmetProvider>
+      </ThemeProvider>
   );
 }
 
