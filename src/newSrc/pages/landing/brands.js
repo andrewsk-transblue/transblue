@@ -57,7 +57,7 @@ function Brands() {
                 </Grid>
                 <Grid item md={1}></Grid>
             </Grid>
-            <Box sx={{display: 'flex', justifyContent: 'center', mt: '10vh'}}>
+            <Box sx={{display: 'flex', justifyContent: 'center', mt: '6vh'}}>
                 <Button
                     variant='outlined'
                     sx={{border: '2px solid #0b56a4', fontWeight: 'bold'}}

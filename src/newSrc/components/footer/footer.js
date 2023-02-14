@@ -16,7 +16,7 @@ function Footer() {
                 width: '100%', 
                 bgcolor: 'rgb(39,39,39)',
                 py: '30px',
-                textAlign: 'center'
+                textAlign: 'center', mb: 5
             }}
         >
             <Button

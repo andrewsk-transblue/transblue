@@ -46,7 +46,7 @@ function Landing() {
             <GivesBack />
             <NewClients />
             <Brands />
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
