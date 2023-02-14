@@ -60,7 +60,7 @@ function Footer() {
                     HOME
                 </Typography>
                 <Typography 
-                    variant='subtitle1' 
+                    variant='subtitle1'
                     sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
                     component='a'
                     href='https://snow.transblue.com'

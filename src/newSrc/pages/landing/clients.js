@@ -39,7 +39,10 @@ function Clients() {
                     <ImageListItem sx={{bgcolor: '#f3f3f3'}}>
                         <Box sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
                             <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500}}>
-                                OUR CLIENTS
+                                OUR 
+                            </Typography>
+                            <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500}}>
+                                CLIENTS
                             </Typography>
                         </Box>
                     </ImageListItem>
