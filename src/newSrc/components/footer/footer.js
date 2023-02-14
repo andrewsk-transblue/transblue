@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { Email, ExpandLess, Facebook, Instagram, LinkedIn, PhoneEnabled, Pinterest, Twitter, YouTube } from "@mui/icons-material";
 
 function Footer() {
+    const [screenSize, setScreenSize] = useState('large');
+
     function scrollToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         })
     }
+
+    function handleResize() {
+        if(window.innerWidth < 700) {
+            setScreenSize('small');
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            handleResize();
+        })
+    }, [])
 
     return(
         <Box
@@ -69,17 +83,29 @@ function Footer() {
                 >
                     BLOG
                 </Typography>
-                <Typography 
-                    variant='subtitle1' 
-                    sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
-                    component='a'
-                    href='/locations'
-                >
-                    LOCATIONS
-                </Typography>
+                {screenSize === 'large' && 
+                    <Typography 
+                        variant='subtitle1' 
+                        sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
+                        component='a'
+                        href='/locations'
+                    >
+                        LOCATIONS
+                    </Typography>
+                }
             </Stack>
 
             <Stack spacing={3} direction='row' justifyContent='center'>
+                {screenSize === 'small' && 
+                    <Typography 
+                        variant='subtitle1' 
+                        sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
+                        component='a'
+                        href='/locations'
+                    >
+                        LOCATIONS
+                    </Typography>
+                }
                 <Typography 
                     variant='subtitle1' 
                     sx={{color: 'white', textDecoration: 'none'}}
