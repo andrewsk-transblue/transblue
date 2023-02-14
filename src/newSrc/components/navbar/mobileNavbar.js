@@ -110,7 +110,7 @@ function MobileNavbar() {
                         </MenuItem>
                         <MenuItem 
                             component='a'
-                            href='/projects'
+                            href='/featured'
                         >
                             PROJECTS
                         </MenuItem>

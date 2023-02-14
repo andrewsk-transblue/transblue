@@ -176,7 +176,7 @@ function Navbar({ page }) {
                             </MenuItem>
                             <MenuItem 
                                 component='a'
-                                href='/projects'
+                                href='/featured'
                             >
                                 PROJECTS
                             </MenuItem>
