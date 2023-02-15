@@ -3,7 +3,7 @@ import Captcha from '../captcha/captcha';
 
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Button, Grid, TextField, Typography } from '@mui/material';
 import { Clear } from '@mui/icons-material';
 import {withStyles} from '@mui/styles';
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
@@ -117,25 +117,7 @@ function Form(props) {
     return (
         // <ThemeProvider theme={theme}>
         // <CssBaseline />
-            <Box
-                sx={{
-                    width: '350px',
-                    paddingBottom: '16px',
-                    paddingTop: '16px',
-                    backgroundColor: 'rgba(0,0,0,.65)',
-                    backdropFilter: 'blur(5px)',
-                    position: 'fixed',
-                    right: '0px',
-                    top: '15vh',
-                    borderRadius: '4px 0px 0px 4px',
-                    zIndex: 50,
-                    maxHeight: '100vh',
-                    overflowY: 'auto',
-                    maxWidth: '100vw',
-                    overflowY: 'auto',
-                    maxHeight: '80vh'
-                }}
-            >
+            <>
                 <Grid
                     container
                     direction='row'
@@ -270,7 +252,7 @@ function Form(props) {
                     </Grid>
                 </Grid>
                 
-            </Box>
+            </>
         // </ThemeProvider>
     )
 }

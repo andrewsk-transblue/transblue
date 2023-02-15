@@ -31,7 +31,7 @@ function GivesBack() {
     return (
         <Box sx={{width: '95vw', maxWidth: '2000px', py: '20vh', m: '0 auto'}}>
             <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, textAlign: 'center', mb: 2}}>TRANSBLUE GIVES BACK</Typography>
-            <Typography variant='body2' sx={{textAlign: 'center', width: '95vw', maxWidth: '800px', m: '0 auto', mb: 5}}>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is donated to helping those in need around the globe. We are here for each other.</Typography>
+            <Typography variant='body2' sx={{textAlign: 'center', width: '95vw', maxWidth: '1500px', m: '0 auto', mb: 5}}>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is donated to helping those in need around the globe. We are here for each other.</Typography>
             <Grid container spacing={2} >
 
                 <Comp 

@@ -13,7 +13,11 @@ function CTA({ email, location }) {
                 ? setDisplayCta(true)
                 : setDisplayCta(false);
         })
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        console.log(displayForm)
+    }, [displayForm])
 
     return (
         displayCta && 
@@ -21,7 +25,8 @@ function CTA({ email, location }) {
             sx={{
                 position: 'fixed',
                 top: '25vh',
-                zIndex: 401
+                zIndex: 401,
+                width: '100%'
             }}
         >
             <Button
@@ -38,7 +43,6 @@ function CTA({ email, location }) {
                     borderRadius: '0px 0px 4px 4px',
                     transform: 'rotate(90deg)',
                     letterSpacing: '.03em',
-                    zIndex: 10
                 }}
                 variant='contained'
             >
@@ -46,13 +50,30 @@ function CTA({ email, location }) {
             </Button>
 
             <Slide right when={displayForm} exit={true} collapse>
-                <div className='form'>
+                <Box
+                    sx={{
+                        width: '350px',
+                        paddingBottom: '16px',
+                        paddingTop: '16px',
+                        backgroundColor: 'rgba(0,0,0,.65)',
+                        backdropFilter: 'blur(5px)',
+                        position: 'absolute',
+                        right: '0px',
+                        top: '-80px',
+                        borderRadius: '4px 0px 0px 4px',
+                        zIndex: 1000,
+                        overflowY: 'auto',
+                        maxWidth: '100vw',
+                        overflowY: 'auto',
+                        maxHeight: '80vh'
+                    }}
+                >
                     <Form 
                         email={email} 
                         location={location} 
                         setDisplayForm={setDisplayForm} 
                     />
-                </div>
+                </Box>
             </Slide>
         </Box>
     )
