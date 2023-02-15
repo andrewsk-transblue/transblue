@@ -31,7 +31,7 @@ const Col = (props) => {
 
 function Speed() {
     return(
-        <Box sx={{maxHeight: '100vh', pb: '15vh', pt: '5vh', width: '95vw', maxWidth: '2000px', m: '0 auto'}}>
+        <Box sx={{maxHeight: '100vh', pb: '20vh', width: '95vw', maxWidth: '2000px', m: '0 auto'}}>
             <Grid container height='100%'>
                 <Grid item xs={12} my='auto'>
                     <Grid container spacing={3}>

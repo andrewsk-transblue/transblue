@@ -11,10 +11,7 @@ import walmart from '../../images/brandLogos/walmart.png';
 function Brands() {
 
     return (
-        <Box sx={{py: {
-            xs: '20vh',
-            xl: '10vh'
-        }, maxHeight: '100vh'}}>
+        <Box sx={{py: '20vh', maxHeight: '100vh'}}>
             <Typography variant='h1' sx={{width: '100%', textAlign: 'center', color: '#0b56a4', fontWeight: 500, mb: {
                 xs: '6vh',
                 md: '10vh'
