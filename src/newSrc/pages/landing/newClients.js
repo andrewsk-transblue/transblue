@@ -27,7 +27,9 @@ const ImageComp = (props) => {
                     learn more
                 </Button>
             </div>
-            <Typography variant='h2' sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white'}}>{title}</Typography>
+            <Typography variant='h2' sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: {
+                xl: '2vw'
+            }}}>{title}</Typography>
         </Box>
     )
 }
@@ -36,10 +38,10 @@ function NewClients() {
     const [cols, setCols] = useState(1);
 
     useEffect(() => {
-        if(window.innerWidth > 1536) {
+        if(window.innerWidth > 1920) {
             setCols(4)
         }
-        else if(window.innerWidth < 1536 && window.innerWidth > 600) {
+        else if(window.innerWidth < 1920 && window.innerWidth > 600) {
             setCols(2)
         }
 
@@ -50,10 +52,10 @@ function NewClients() {
 
     useEffect(() => {
         window.addEventListener('resize', () => {
-            if(window.innerWidth > 1800) {
+            if(window.innerWidth > 1920) {
                 setCols(4)
             }
-            else if(window.innerWidth <= 1800 && window.innerWidth > 600) {
+            else if(window.innerWidth <= 1920 && window.innerWidth > 600) {
                 setCols(2)
             }
 
@@ -76,7 +78,7 @@ function NewClients() {
                     {cols === 1 ? 'OUR CLIENTS' : 'OUR'}
                 </Typography>
                 {cols > 1 &&
-                    <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: {
+                    <Typography variant='h1' sx={{color: '#0b56a4', mx: '0 auto', fontWeight: 500, textAlign: {
                         xs: 'center',
                         md: 'left'
                     }}}>
