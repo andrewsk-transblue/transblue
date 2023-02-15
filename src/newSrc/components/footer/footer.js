@@ -41,7 +41,10 @@ function Footer() {
                     sx={{opacity: .6, color: 'white', fontSize: '50px'}}
                 />
             </Button>
-            <Stack spacing={3} direction='row' justifyContent='center' my={2}>
+            <Stack spacing={{
+                xs: 1,
+                md: 3
+            }} direction={{xs: 'column', md: 'row'}} justifyContent='center' my={2}>
                 <Typography variant='subtitle2' sx={{color: 'rgb(192, 192, 192)'}}>
                     <PhoneEnabled sx={{verticalAlign: 'middle'}} /> +1 (844) 482-2583
                 </Typography>
@@ -50,7 +53,10 @@ function Footer() {
                 </Typography>
             </Stack>
 
-            <Stack spacing={3} direction={{xs: 'column', md: 'row'}} justifyContent='center' mb={2}>
+            <Stack spacing={{
+                xs: 1,
+                md: 3
+            }} direction={{xs: 'column', md: 'row'}} justifyContent='center' mb={2}>
                 <Typography 
                     variant='subtitle1' 
                     sx={{color: 'rgb(0, 110, 255)', textDecoration: 'none'}}
