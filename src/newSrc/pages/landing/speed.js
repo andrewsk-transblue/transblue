@@ -38,19 +38,19 @@ function Speed() {
                         <Col
                             icon={<AccessTime sx={iconStyle} />}
                             title='SPEED'
-                            body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            body='At Transblue, we get work done fast, completing projects efficiently without compromising on quality.'
                         />
                         <Col
                             icon={
                                 <StarBorder sx={iconStyle} />
                             }
                             title='QUALITY'
-                            body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            body='We provide high quality projects that are built to last, using top-of-the-line materials and expert craftsmanship.'
                         />
                         <Col
                             icon={<AttachMoney sx={iconStyle} />}
                             title='PRICE'
-                            body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            body='We offer competitive and transparent pricing for our projects, ensuring the right price and high quality services.'
                         />
                     </Grid>
                 </Grid>
