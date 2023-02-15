@@ -50,10 +50,10 @@ function NewClients() {
 
     useEffect(() => {
         window.addEventListener('resize', () => {
-            if(window.innerWidth > 1536) {
+            if(window.innerWidth > 1800) {
                 setCols(4)
             }
-            else if(window.innerWidth < 1536 && window.innerWidth > 600) {
+            else if(window.innerWidth <= 1800 && window.innerWidth > 600) {
                 setCols(2)
             }
 
