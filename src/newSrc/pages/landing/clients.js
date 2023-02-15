@@ -38,10 +38,11 @@ function Clients() {
                 <ImageList sx={{width: '100%', maxWidth: '2000px', m: '0 auto'}} cols={3}>
                     <ImageListItem sx={{bgcolor: '#f3f3f3'}}>
                         <Box sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
-                            <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500}}>
+                            <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500, width: '100%'}}>
                                 OUR 
                             </Typography>
-                            <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500}}>
+                            <br />
+                            <Typography variant='h1' sx={{ color: '#0b56a4', fontWeight: 500, width: '100%'}}>
                                 CLIENTS
                             </Typography>
                         </Box>

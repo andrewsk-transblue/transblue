@@ -65,9 +65,12 @@ function NewClients() {
 
     return(
         <Grid container>
-            <Grid item xs={12} md={4} my='auto'>
-                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500}}>
-                    OUR CLIENTS
+            <Grid item xs={12} md={4} my='auto' px={5}>
+                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: 'left'}}>
+                    OUR
+                </Typography>
+                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: 'left'}}>
+                    CLIENTS
                 </Typography>
             </Grid>
             <Grid item xs={12} md={8}>
