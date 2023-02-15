@@ -15,7 +15,10 @@ function Brands() {
             xs: '20vh',
             xl: '10vh'
         }, maxHeight: '100vh'}}>
-            <Typography variant='h1' sx={{width: '100%', textAlign: 'center', color: '#0b56a4', fontWeight: 500, mb: '10vh'}}>BRANDS WE WORK WITH</Typography>
+            <Typography variant='h1' sx={{width: '100%', textAlign: 'center', color: '#0b56a4', fontWeight: 500, mb: {
+                xs: '6vh',
+                md: '10vh'
+            }}}>BRANDS WE WORK WITH</Typography>
             <Grid container width='95vw' maxWidth='2000px' m='0 auto'>
                 <Grid item xs={6} md={3} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
