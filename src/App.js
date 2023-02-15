@@ -97,7 +97,10 @@ function App() {
             letterSpacing: '.085em',
             height: '2.5em',
             paddingRight: '30px',
-            paddingLeft: '30px'
+            paddingLeft: '30px',
+            '@media (min-width: 1920px)': {
+              fontSize: '.6vw'
+            }
           }
         }
       },
