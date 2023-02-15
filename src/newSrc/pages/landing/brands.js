@@ -12,7 +12,7 @@ function Brands() {
 
     return (
         <Box sx={{py: {
-            md: '20vh',
+            xs: '20vh',
             xl: '10vh'
         }, maxHeight: '100vh'}}>
             <Typography variant='h1' sx={{width: '100%', textAlign: 'center', color: '#0b56a4', fontWeight: 500, mb: '10vh'}}>BRANDS WE WORK WITH</Typography>

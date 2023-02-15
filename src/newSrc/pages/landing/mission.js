@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 
 function Mission() {
     return (
-        <Box sx={{width: '95%', pt: '20vh', pb: '10vh', maxWidth: '2000px', m: '0 auto'}}>
+        <Box sx={{width: '95%', pt: '20vh', maxWidth: '2000px', m: '0 auto'}}>
             <Grid container>
                 <Grid item xs={12} md={2} my='auto'>
                     <Box sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>

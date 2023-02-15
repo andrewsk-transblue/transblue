@@ -11,7 +11,7 @@ function About() {
         <Box sx={{py: '10vh'}}>
             <Grid container width='95vw' maxWidth='2000px' height='100%' m='0 auto'>
                 <Grid item xs={12} md={6} my='auto' pr={{xs: 0, md: 4}} mb={{xs: 2, md: 0}}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={{ xs: 1, md: 3}}>
                         <Grid item xs={6}>
                             <img
                                 src={`${tim6}?fit=crop&auto=format`}

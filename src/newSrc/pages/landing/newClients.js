@@ -66,12 +66,23 @@ function NewClients() {
     return(
         <Grid container>
             <Grid item xs={12} md={4} my='auto' px={5}>
-                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: 'left'}}>
-                    OUR
+                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: {
+                    xs: 'center',
+                    md: 'left'
+                }, mb: {
+                    xs: 5,
+                    md: 0
+                }}}>
+                    {cols === 1 ? 'OUR CLIENTS' : 'OUR'}
                 </Typography>
-                <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: 'left'}}>
-                    CLIENTS
-                </Typography>
+                {cols > 1 &&
+                    <Typography variant='h1' sx={{color: '#0b56a4', textAlign: 'center', fontWeight: 500, textAlign: {
+                        xs: 'center',
+                        md: 'left'
+                    }}}>
+                        CLIENTS
+                    </Typography>
+                }
             </Grid>
             <Grid item xs={12} md={8}>
                 <ImageList cols={cols}>
