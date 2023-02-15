@@ -51,7 +51,10 @@ function About() {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={6} my='auto' pl={{xs: 0, md: 4}}>
-                    <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, fontWeight: 500}}>TRANSBLUE GENERAL CONTRACTORS</Typography>
+                    <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
+                        xs: 3,
+                        md: 0
+                    }, fontWeight: 500}}>TRANSBLUE GENERAL CONTRACTORS</Typography>
                     <Typography variant='body2' sx={{mb: 1}}>
                         At Transblue, we have been in the business for over 17 years. We love helping people and we love providing an incredible customer experience for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.
                     </Typography>
