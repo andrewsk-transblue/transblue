@@ -1,10 +1,10 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import asphaltService from '../../images/asphaltService.jpg';
-import snowService from '../../images/snowService.jpg';
-import maintenance from '../../images/maintenance.jpg';
-import wayfair from '../../images/wayfair.jpeg';
+import asphaltService from '../../images/asphaltService-min.jpg';
+import snowService from '../../images/snowService-min.jpg';
+import maintenance from '../../images/maintenance-min.jpg';
+import wayfair from '../../images/wayfair-min.jpeg';
 import './newServices.css';
 import { Typography } from "@mui/material";
 import landscaping from '../../images/landscaping.jpg';

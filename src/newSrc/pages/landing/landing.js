@@ -1,7 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import Navbar from "../../components/navbar/navbar";
-import Clients from "./clients";
 import bg from '../../images/header.mp4';
 import './landing.css';
 import Contact from "./contact";

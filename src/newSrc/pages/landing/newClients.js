@@ -2,7 +2,6 @@ import { Box, Button, Grid, ImageList, ImageListItem, Typography } from "@mui/ma
 import React from "react";
 import multifamily from '../../images/multifamily.jpg';
 import government from '../../images/government.jpg';
-import snow from '../../images/snowSmall.jpg';
 import grainger from '../../images/grainger2.jpg';
 import residential from '../../images/residential.jpeg';
 import './landing.css';
