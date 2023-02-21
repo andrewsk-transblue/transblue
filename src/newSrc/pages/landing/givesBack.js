@@ -7,6 +7,8 @@ import hope from '../../images/hope2.jpg';
 const Comp = (props) => {
     const { title, subtitle, body, image, href } = props;
 
+    //By dedicating a portion of our profits from every project to support social causes and initiatives, we strive to make a meaningful contribution towards changing the world and eliminating social problems.
+
     return (
         <Grid item xs={12} sm={6} lg={4} pr={1}>
             <img src={image} alt={title} style={{width: '100%'}} />
@@ -32,8 +34,7 @@ function GivesBack() {
         <Box sx={{width: '95vw', maxWidth: '2000px', py: '20vh', m: '0 auto'}}>
             <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, textAlign: 'center', mb: 2}}>TRANSBLUE GIVES BACK</Typography>
             <Typography variant='body2' sx={{textAlign: 'center', width: '95vw', maxWidth: '1500px', m: '0 auto', mb: 5}}>Not only do we build beautiful outdoor living spaces, we are dedicated to eliminating social problems and increasing wellness in people, society, and the planet. A portion of profit from every project is donated to helping those in need around the globe. We are here for each other.</Typography>
-            <Grid container spacing={2} >
-
+            <Grid container spacing={2}>
                 <Comp 
                     title='DAWSON PLACE'
                     subtitle='HEALING FOR CHILDREN'
