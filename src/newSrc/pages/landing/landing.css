@@ -8,6 +8,17 @@ video {
     z-index: -1;
 }
 
+#header_mobile {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/header_Moment.jpg');
+    position: relative;
+}
+
 .client-overlay {
     position: absolute;
     width: 100%;

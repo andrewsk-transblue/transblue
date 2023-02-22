@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bg from '../../images/header.mp4';
 import './landing.css';
 import Contact from "./contact";
@@ -13,14 +13,39 @@ import Footer from "../../components/footer/footer";
 import Mission from "./mission";
 import NewClients from "./newClients";
 import NavWrapper from "../../components/navbar/navWrapper";
+import header_Moment from '../../images/header_Moment.jpg';
 
 function Landing() {
+    const [screenSize, setScreenSize] = useState('small');
+
+    const getScreenSize = () => {
+        if(window.innerWidth > 500) {
+            setScreenSize('large')
+        }
+        else {
+            setScreenSize('small')
+        }
+    }
+
+    useEffect(() => {
+        getScreenSize();
+        window.addEventListener('resize', () => {
+            getScreenSize();
+        })
+    }, [])
+
     return (
         <>
             <CTA />
-            <video autoPlay loop muted>
-                <source src={bg} />
-            </video>
+            {screenSize == 'large' &&
+                <video autoPlay loop muted>
+                    <source src={bg} />
+                </video>
+            }
+            {screenSize === 'small' &&
+                <div id='header_mobile' />
+
+            }
             <NavWrapper page='home' />
             <Box sx={{zIndex: 4, position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh', bgcolor: 'rgba(0,0,0,.3)', background: 'linear-gradient(90deg, rgba(0,0,0,1) 34%, rgba(0,0,0,0.7485119047619048) 61%, rgba(255,255,255,0) 100%)'}}></Box>
             <Box sx={{zIndex: 5, position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh'}}>
