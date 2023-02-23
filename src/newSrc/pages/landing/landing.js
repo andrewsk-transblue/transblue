@@ -39,7 +39,7 @@ function Landing() {
             <CTA />
             {screenSize == 'large' &&
                 <video autoPlay loop muted>
-                    <source src={bg} />
+                    <source src={`${process.env.PUBLIC_URL}/videos/header.mp4`} />
                 </video>
             }
             {screenSize === 'small' &&
