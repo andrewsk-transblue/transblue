@@ -5,7 +5,6 @@ import snowSmall from '../../../images/serviceCards/snowSmall.jpg';
 import multifamily from '../../../images/serviceCards/commercial.jpg';
 import commercial from '../../../images/serviceCards/commercial.jpeg';
 import government from '../../../images/serviceCards/government.jpg';
-import asphalt from '../../../images/serviceCards/asphalt.jpg';
 
 import './style.css';
 

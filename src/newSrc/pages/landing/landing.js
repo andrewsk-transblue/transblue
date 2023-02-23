@@ -1,6 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import bg from '../../images/header.mp4';
 import './landing.css';
 import Contact from "./contact";
 import Brands from "./brands";
@@ -13,7 +12,6 @@ import Footer from "../../components/footer/footer";
 import Mission from "./mission";
 import NewClients from "./newClients";
 import NavWrapper from "../../components/navbar/navWrapper";
-import header_Moment from '../../images/header_Moment.jpg';
 
 function Landing() {
     const [screenSize, setScreenSize] = useState('small');
@@ -39,7 +37,7 @@ function Landing() {
             <CTA />
             {screenSize == 'large' &&
                 <video autoPlay loop muted>
-                    <source src={`${process.env.PUBLIC_URL}/videos/header.mp4`} />
+                    <source src='https://tbconnectstorage.blob.core.windows.net/projectimages/header.mp4' />
                 </video>
             }
             {screenSize === 'small' &&
