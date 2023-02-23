@@ -7,6 +7,7 @@
   },
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.21.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.9",
@@ -33,7 +34,7 @@
     "react-in-viewport": "^1.0.0-alpha.19",
     "react-lazy-load-image-component": "^1.5.1",
     "react-leaflet": "^3.2.0",
-    "react-progressive-image-loading": "^3.0.3",
+    "react-progressive-image": "^0.6.0",
     "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
@@ -43,7 +44,7 @@
     "reverse-geocode": "^1.3.3",
     "save-dev": "0.0.1-security",
     "serve": "^12.0.1",
-    "source-map-explorer": "^2.5.2",
+    "source-map-explorer": "^2.5.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -73,6 +74,12 @@
   "bugs": {
     "url": "https://github.com/sarahm16/transblue/issues"
   },
+  "resolutions": {
+    "**/@babel/runtime": "7.5.0"
+  },
+  "nohoist": [
+    "**/babel-preset-react-app/@babel/runtime"
+  ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
