@@ -1,13 +1,8 @@
 {
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ],
-    "plugins": [
-      "unused-imports"
-    ],
+    "plugins": ["react-hooks"],
     "rules": {
-      "unused-imports/no-unused-imports": "error"
+      "react-hooks/exhaustive-deps": "warn",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/unused-imports": "warn"
     }
-  }
-  
+}

@@ -13,8 +13,8 @@ const ImageComp = (props) => {
     return (
         <Box sx={{width: '100%', height: '100%'}}>
             {/* <img src={src} alt={alt} syle={{position: 'absolute', top: 0, left: 0, width: '100%'}} /> */}
-            <div className="client-overlay"/>
-            <div className="service-description">
+            {/* <div className="client-overlay"/> */}
+            {/* <div className="service-description"> */}
                 <Typography sx={{color: '#0b56a4', pt: '40px', pb: 2, fontSize: { xl: '2vw' }}} variant='h2'>{title}</Typography>
                 {/* <Typography sx={{color: 'white', px: '40px', pb: 2}} variant='body2'>{description}</Typography> */}
                 <Button
@@ -25,7 +25,7 @@ const ImageComp = (props) => {
                 >
                     learn more
                 </Button>
-            </div>
+            {/* </div> */}
             <Typography variant='h2' sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: {
                 xl: '2vw'
             }}}>{title}</Typography>
@@ -36,31 +36,20 @@ const ImageComp = (props) => {
 function NewClients() {
     const [cols, setCols] = useState(1);
 
-    useEffect(() => {
-        if(window.innerWidth > 1920) {
+    const resizeWindow = () => {
+        if(window.innerWidth > 600) {
             setCols(2)
         }
-        else if(window.innerWidth < 1920 && window.innerWidth > 600) {
-            setCols(2)
-        }
-
-        else if(window.innerWidth < 600) {
+        else if(window.innerWidth <= 600) {
             setCols(1)
         }
-    }, []);
+    }
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            if(window.innerWidth > 1920) {
-                setCols(2)
-            }
-            else if(window.innerWidth <= 1920 && window.innerWidth > 600) {
-                setCols(2)
-            }
+        resizeWindow();
 
-            else if(window.innerWidth < 600) {
-                setCols(1)
-            }
+        window.addEventListener('resize', () => {
+            resizeWindow();
         })
     }, [])
 

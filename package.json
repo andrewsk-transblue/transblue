@@ -19,8 +19,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "emailjs-com": "^3.2.0",
-    "eslint": "^8.34.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
     "jquery": "^3.6.0",
     "leaflet": "^1.7.1",
     "path": "^0.12.7",
@@ -35,13 +33,13 @@
     "react-in-viewport": "^1.0.0-alpha.19",
     "react-lazy-load-image-component": "^1.5.1",
     "react-leaflet": "^3.2.0",
+    "react-progressive-image-loading": "^3.0.3",
     "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "react-signature-canvas": "^1.0.3",
-    "react-snap": "^1.23.0",
     "reverse-geocode": "^1.3.3",
     "save-dev": "0.0.1-security",
     "serve": "^12.0.1",
@@ -58,12 +56,6 @@
     "sitemap": "babel-node ./sitemap-generator.js",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "postbuild": "tar -cvzf transblue2.tar.gz ./build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": [
     ">0.2%",
@@ -84,6 +76,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "compress-create-react-app": "^1.1.3"
+    "compress-create-react-app": "^1.1.3",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
