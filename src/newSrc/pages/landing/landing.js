@@ -2,11 +2,11 @@ import { Box, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import './landing.css';
 import Contact from "./contact";
-import CTA from "../../components/cta/cta";
 import NavWrapper from "../../components/navbar/navWrapper";
 
 const About = lazy(() => import('./about'));
 const Brands = lazy(() => import('./brands'));
+const CTA = lazy(() => import('../../components/cta/cta'));
 const Services = lazy(() => import('./newServices'));
 const Speed = lazy(() => import('./speed'));
 const GivesBack = lazy(() => import('./givesBack'));
