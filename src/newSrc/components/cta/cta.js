@@ -15,10 +15,6 @@ function CTA({ email, location }) {
         })
     }, []);
 
-    useEffect(() => {
-        console.log(displayForm)
-    }, [displayForm])
-
     return (
         displayCta && 
         <Box
