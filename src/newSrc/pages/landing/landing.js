@@ -7,7 +7,7 @@ import NavWrapper from "../../components/navbar/navWrapper";
 const About = lazy(() => import('./about'));
 const Brands = lazy(() => import('./brands'));
 const CTA = lazy(() => import('../../components/cta/cta'));
-const Services = lazy(() => import('./newServices'));
+// const Services = lazy(() => import('./newServices'));
 const Speed = lazy(() => import('./speed'));
 const GivesBack = lazy(() => import('./givesBack'));
 const Footer = lazy(() => import('../../components/footer/footer'));
@@ -65,7 +65,7 @@ function Landing() {
                 <Mission />
                 <About />
                 <Speed />
-                <Services />
+                {/* <Services /> */}
                 <GivesBack />
                 <NewClients />
                 <Brands />

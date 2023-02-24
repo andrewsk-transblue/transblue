@@ -3,15 +3,24 @@ import React from 'react';
 import dawsonplace from '../../images/dawsonplace2.png';
 import deeshope from '../../images/deeshope2.jpg';
 import hope from '../../images/hope2.jpg';
+import dawsonplacetiny from '../../images/dawsonplace2tiny.png';
+import deeshopetiny from '../../images/deeshope2tiny.jpg';
+import hopetiny from '../../images/hope2tiny.jpg';
+import ProgressiveImage from 'react-progressive-image-loading';
 
 const Comp = (props) => {
-    const { title, subtitle, body, image, href } = props;
+    const { title, subtitle, body, image, href, tinySrc } = props;
 
     //By dedicating a portion of our profits from every project to support social causes and initiatives, we strive to make a meaningful contribution towards changing the world and eliminating social problems.
 
     return (
         <Grid item xs={12} sm={6} lg={4} pr={1}>
-            <img src={image} alt={title} style={{width: '100%'}} />
+            <ProgressiveImage
+                preview={tinySrc}
+                src={image}
+                render={(src, style) => <img src={src} style={{width: '100%'}} />}
+            />
+            {/* <img src={image} alt={title} style={{width: '100%'}} /> */}
             <Typography variant='subtitle2' sx={{my: '10px'}}>{title}</Typography>
             <Typography variant='subtitle1' sx={{mb: '.5rem', lineHeight: '1.2'}}>{subtitle}</Typography>
             <Typography variant='body2'>{body}</Typography>
@@ -40,6 +49,7 @@ function GivesBack() {
                     subtitle='HEALING FOR CHILDREN'
                     body="Dawson Place child advocacy center transforms hurt to hope for traumatized children. Transblue is consistently one of Dawson Place's primary community supporters."
                     image={dawsonplace}
+                    tinySrc={dawsonplacetiny}
                     href='/givesback/dawson'
                 />
 
@@ -48,6 +58,7 @@ function GivesBack() {
                     subtitle='FIGHTING FOR UNDERPRIVELEGED WOMEN'
                     body="Dee's Hope helps Ugandan women find a better way. By providing security, education, food, and shelter, Dee's Hope helps young girls escape to a life of freedom"
                     image={deeshope}
+                    tinySrc={deeshopetiny}
                     href='/givesback/dees'
                 />
 
@@ -56,6 +67,7 @@ function GivesBack() {
                     subtitle='FIRE AND POLICE CHAPLAINCY'
                     body="Through Northwest Incident Support, Hope Unlimited partners with first responders during crisis situations, providing resources for families during loss or difficult circumstances"
                     image={hope}
+                    tinySrc={hopetiny}
                     href='/givesback/hope'
                 />
             </Grid>
