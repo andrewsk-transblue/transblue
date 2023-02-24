@@ -17,7 +17,6 @@ function About() {
                                 src={`${tim6}?fit=crop&auto=format`}
                                 srcSet={`${tim6}?&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Snow Removal'
-                                loading="lazy"
                                 style={{width: '100%'}}
                             />
                         </Grid>
@@ -26,7 +25,6 @@ function About() {
                                 src={`${quality5}?fit=crop&auto=format`}
                                 srcSet={`${quality5}?&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Commercial Asphalt Installation'
-                                loading="lazy"
                                 style={{width: '100%'}}
                             />
                         </Grid>
@@ -35,7 +33,6 @@ function About() {
                                 src={`${quality4}?fit=crop&auto=format`}
                                 srcSet={`${quality4}?&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Multifamily Electric Vehicles'
-                                loading="lazy"
                                 style={{width: '100%'}}
                             />
                         </Grid>
@@ -44,7 +41,6 @@ function About() {
                                 src={`${grainger}?fit=crop&auto=format`}
                                 srcSet={`${grainger}?&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Commercial Maintenance'
-                                loading="lazy"
                                 style={{width: '100%'}}
                             />
                         </Grid>
