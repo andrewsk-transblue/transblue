@@ -85,8 +85,11 @@ function NewClients() {
                     <ImageList cols={cols}>
                         <ImageListItem>
                             <img
-                                src={`${screenSize === 'large' ? grainger : graingerPreview}?w=164&h=164&fit=crop&auto=format`}
-                                //srcSet={`${grainger}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${graingerPreview}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`
+                                    ${graingerPreview}?w=164&h=164&fit=crop&auto=format 300w,
+                                    ${grainger}?w=164&h=164&fit=crop&auto=format 768w
+                                `} 
                                 alt='Commercial Clients'
                                 loading="lazy"
                             />
@@ -103,8 +106,11 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${screenSize === 'large' ? multifamily : multifamilyPreview}?w=164&h=164&fit=crop&auto=format`}
-                                //srcSet={`${multifamily}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${multifamilyPreview}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`
+                                    ${multifamilyPreview}?w=164&h=164&fit=crop&auto=format 300w,
+                                    ${multifamily}?w=164&h=164&fit=crop&auto=format 768w
+                                `}                                
                                 alt='Multifamily new parking lot striping project'
                                 loading="lazy"
                             />
@@ -116,8 +122,11 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${screenSize === 'large' ? government : governmentPreview}?w=164&h=164&fit=crop&auto=format`}
-                                //srcSet={`${government}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${governmentPreview}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`
+                                    ${governmentPreview}?w=164&h=164&fit=crop&auto=format 300w,
+                                    ${government}?w=164&h=164&fit=crop&auto=format 768w
+                                `}
                                 alt='Government clients'
                                 loading="lazy"
                             />
@@ -130,8 +139,13 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${screenSize === 'large' ? residential : residentialPreview}?w=164&h=164&fit=crop&auto=format`}
-                                //srcSet={`${residential}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${residentialPreview}?fit=crop&auto=format`}
+                                srcSet={`
+                                    ${residentialPreview}?w=164&h=164&fit=crop&auto=format 300w,
+                                     ${residential}?w=164&h=164&fit=crop&auto=format 768w
+                                `}
+                                fit='crop'
+                                auto='format'
                                 alt='Residential Clients'
                                 loading="lazy"
                             />
