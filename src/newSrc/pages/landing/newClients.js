@@ -4,14 +4,9 @@ import multifamily from '../../images/multifamily.jpg';
 import government from '../../images/government.jpg';
 import grainger from '../../images/grainger2.jpg';
 import residential from '../../images/residential.jpeg';
-import multifamilyPreview from '../../images/previews/multifamily-tiny.jpg';
-import governmentPreview from '../../images/previews/government-tiny.jpg';
-import graingerPreview from '../../images/previews/grainger2-tiny.jpg';
-import residentialPreview from '../../images/previews/residential-tiny.jpg';
 import './landing.css';
 import { useState } from "react";
 import { useEffect } from "react";
-import ProgressiveImage from 'react-progressive-image';
 
 const ImageComp = (props) => {
     const { title, description, href, src, alt } = props;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import asphaltService from '../../images/asphaltService-min.jpg';
@@ -8,6 +8,13 @@ import wayfair from '../../images/wayfair-min.jpeg';
 import './newServices.css';
 import { Typography } from "@mui/material";
 import landscaping from '../../images/landscaping.jpg';
+
+import asphaltServicePreview from '../../images/previews/asphaltServicePreview.jpg';
+import snowServicePreview from '../../images/previews/snowServicePreview.jpg';
+import maintenancePreview from '../../images/previews/maintenancePreview.jpg';
+import wayfairPreview from '../../images/previews/wayfairPreview.jpg';
+import landscapingPreview from '../../images/previews/landscapingPreview.jpg';
+
 
 
 // const ButtonComp = ( { href }) => {
@@ -27,6 +34,14 @@ import landscaping from '../../images/landscaping.jpg';
 // }
 
 function Services() {
+    const [screenWidth, setScreenWidth] = useState('small');
+    
+    useEffect(() => {
+        if(window.innerWidth > 500) {
+            setScreenWidth('large')
+        }
+    }, [])
+
     return (
         <Carousel 
             showArrows={true} 
@@ -39,7 +54,11 @@ function Services() {
             // onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}
         >
             <div className='service-slide'>
-                <img src={asphaltService} alt='Brand new asphalt and striping in parking lot' />
+                <img src={
+                    screenWidth === 'large'
+                        ? asphaltService
+                        : asphaltServicePreview
+                } alt='Brand new asphalt and striping in parking lot' />
                 <div className="bg" />
                 <div className="centered">
                     <Typography variant='h1' >ASPHALT</Typography>
@@ -47,7 +66,11 @@ function Services() {
                 </div>            
             </div>
             <div className='service-slide'>
-                <img src={snowService} alt='snow plow starbucks project' />
+                <img src={
+                    screenWidth === 'large'
+                        ? snowService
+                        : snowServicePreview
+                } alt='snow plow starbucks project' />
                 <div className="bg" />
                 <div className="centered">
                     <Typography variant='h1' >SNOW SERVICES</Typography>
@@ -55,7 +78,11 @@ function Services() {
                 </div>            
             </div>
             <div className='service-slide'>
-                <img src={wayfair} alt='Capital Expenditure Wayfair Project' />
+                <img src={
+                    screenWidth === 'large'
+                        ? wayfair
+                        : wayfairPreview
+                } alt='Capital Expenditure Wayfair Project' />
                 <div className="bg" />
                 <div className="centered">
                     <Typography variant='h1' >CAPITAL EXPENDITURE</Typography>
@@ -63,7 +90,11 @@ function Services() {
                 </div>            
             </div>
             <div className='service-slide'>
-                <img src={maintenance} alt='On Demand Maintenance Services' />
+                <img src={
+                    screenWidth === 'large'
+                        ? maintenance
+                        : maintenancePreview
+                } alt='On Demand Maintenance Services' />
                 <div className="bg" />
                 <div className="centered">
                     <Typography variant='h1' >ON DEMAND SERVICES</Typography>
@@ -71,7 +102,11 @@ function Services() {
                 </div>            
             </div>
             <div className='service-slide'>
-                <img src={landscaping} alt='Commercial landscape maintenance services' />
+                <img src={
+                    screenWidth === 'large'
+                        ? landscaping
+                        : landscapingPreview
+                } alt='Commercial landscape maintenance services' />
                 <div className="bg" />
                 <div className="centered">
                     <Typography variant='h1' >MAINTENANCE</Typography>
