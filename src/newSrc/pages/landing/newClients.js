@@ -7,6 +7,10 @@ import residential from '../../images/residential.jpeg';
 import './landing.css';
 import { useState } from "react";
 import { useEffect } from "react";
+import multifamilyPreview from '../../images/previews/multifamilyPreview.jpg';
+import governmentPreview from '../../images/previews/governmentPreview.jpg';
+import graingerPreview from '../../images/previews/grainger2Preview.jpg';
+import residentialPreview from '../../images/previews/residentialPreview.jpg';
 
 const ImageComp = (props) => {
     const { title, description, href, src, alt } = props;
@@ -35,10 +39,12 @@ const ImageComp = (props) => {
 
 function NewClients() {
     const [cols, setCols] = useState(1);
+    const [screenSize, setScreenSize] = useState('small');
 
     const resizeWindow = () => {
         if(window.innerWidth > 600) {
-            setCols(2)
+            setCols(2);
+            setScreenSize('large');
         }
         else if(window.innerWidth <= 600) {
             setCols(1)
@@ -79,8 +85,8 @@ function NewClients() {
                     <ImageList cols={cols}>
                         <ImageListItem>
                             <img
-                                src={`${grainger}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${grainger}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${screenSize === 'large' ? grainger : graingerPreview}?w=164&h=164&fit=crop&auto=format`}
+                                //srcSet={`${grainger}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Commercial Clients'
                                 //loading="lazy"
                             />
@@ -97,8 +103,8 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${multifamily}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${multifamily}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${screenSize === 'large' ? multifamily : multifamilyPreview}?w=164&h=164&fit=crop&auto=format`}
+                                //srcSet={`${multifamily}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Multifamily new parking lot striping project'
                                 //loading="lazy"
                             />
@@ -110,8 +116,8 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${government}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${government}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${screenSize === 'large' ? government : governmentPreview}?w=164&h=164&fit=crop&auto=format`}
+                                //srcSet={`${government}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Government clients'
                                 //loading="lazy"
                             />
@@ -124,8 +130,8 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${residential}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${residential}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${screenSize === 'large' ? residential : residentialPreview}?w=164&h=164&fit=crop&auto=format`}
+                                //srcSet={`${residential}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Residential Clients'
                                 //loading="lazy"
                             />
