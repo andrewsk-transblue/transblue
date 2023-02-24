@@ -55,8 +55,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
     "sitemap": "babel-node ./sitemap-generator.js",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "postbuild": "tar -cvzf transblue2.tar.gz ./build"
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "browserslist": [
     ">0.2%",
