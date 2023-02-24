@@ -88,7 +88,7 @@ function NewClients() {
                                 src={`${screenSize === 'large' ? grainger : graingerPreview}?w=164&h=164&fit=crop&auto=format`}
                                 //srcSet={`${grainger}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Commercial Clients'
-                                //loading="lazy"
+                                loading="lazy"
                             />
                             
                             {/* <ProgressiveImage src={grainger} placeholder={graingerPreview}>
@@ -106,7 +106,7 @@ function NewClients() {
                                 src={`${screenSize === 'large' ? multifamily : multifamilyPreview}?w=164&h=164&fit=crop&auto=format`}
                                 //srcSet={`${multifamily}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Multifamily new parking lot striping project'
-                                //loading="lazy"
+                                loading="lazy"
                             />
                             <ImageComp                            
                                 title='MULTIFAMILY'
@@ -119,7 +119,7 @@ function NewClients() {
                                 src={`${screenSize === 'large' ? government : governmentPreview}?w=164&h=164&fit=crop&auto=format`}
                                 //srcSet={`${government}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Government clients'
-                                //loading="lazy"
+                                loading="lazy"
                             />
                             <ImageComp 
                                 src={government}
@@ -133,7 +133,7 @@ function NewClients() {
                                 src={`${screenSize === 'large' ? residential : residentialPreview}?w=164&h=164&fit=crop&auto=format`}
                                 //srcSet={`${residential}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt='Residential Clients'
-                                //loading="lazy"
+                                loading="lazy"
                             />
                             
                             <ImageComp 
