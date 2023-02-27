@@ -26,7 +26,7 @@ function Navbar({ page }) {
                 bgcolor: bgcolor
             })
         })
-    }, [theme]);
+    }, []);
     
     return (
         <Box sx={{width: '100%', zIndex: 8, bgcolor: theme.bgcolor, position: 'fixed', top: 0, left: 0}}>

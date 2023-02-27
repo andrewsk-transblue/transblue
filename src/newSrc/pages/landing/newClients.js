@@ -7,10 +7,6 @@ import residential from '../../images/residential.jpeg';
 import './landing.css';
 import { useState } from "react";
 import { useEffect } from "react";
-import multifamilyPreview from '../../images/previews/multifamilyPreview.jpg';
-import governmentPreview from '../../images/previews/governmentPreview.jpg';
-import graingerPreview from '../../images/previews/grainger2Preview.jpg';
-import residentialPreview from '../../images/previews/residentialPreview.jpg';
 
 const ImageComp = (props) => {
     const { title, description, href, src, alt } = props;
@@ -82,16 +78,17 @@ function NewClients() {
                     }
                 </Grid>
                 <Grid item xs={12} md={8}>
+                    {/* <img src={residentialPreview} /> */}
                     <ImageList cols={cols}>
                         <ImageListItem>
                             <img
-                                src={`${graingerPreview}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`
-                                    ${graingerPreview}?w=164&h=164&fit=crop&auto=format 300w,
-                                    ${grainger}?w=164&h=164&fit=crop&auto=format 768w
-                                `} 
+                                src={`${grainger}?fit=crop&auto=format`}
+                                // srcSet={`
+                                //     ${graingerPreview}?w=164&h=164&fit=crop&auto=format 500w,
+                                //     ${grainger}?w=164&h=164&fit=crop&auto=format 768w
+                                // `} 
                                 alt='Commercial Clients'
-                                loading="lazy"
+                                //loading="lazy"
                             />
                             
                             {/* <ProgressiveImage src={grainger} placeholder={graingerPreview}>
@@ -106,13 +103,13 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${multifamilyPreview}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`
-                                    ${multifamilyPreview}?w=164&h=164&fit=crop&auto=format 300w,
-                                    ${multifamily}?w=164&h=164&fit=crop&auto=format 768w
-                                `}                                
+                                src={`${multifamily}?fit=crop&auto=format`}
+                                // srcSet={`
+                                //     ${multifamilyPreview}?w=164&h=164&fit=crop&auto=format 500w,
+                                //     ${multifamily}?w=164&h=164&fit=crop&auto=format 768w
+                                // `}                                
                                 alt='Multifamily new parking lot striping project'
-                                loading="lazy"
+                                //loading="lazy"
                             />
                             <ImageComp                            
                                 title='MULTIFAMILY'
@@ -122,16 +119,15 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${governmentPreview}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`
-                                    ${governmentPreview}?w=164&h=164&fit=crop&auto=format 300w,
-                                    ${government}?w=164&h=164&fit=crop&auto=format 768w
-                                `}
+                                src={`${government}?fit=crop&auto=format`}
+                                // srcSet={`
+                                //     ${governmentPreview}?w=164&h=164&fit=crop&auto=format 500w,
+                                //     ${government}?w=164&h=164&fit=crop&auto=format 768w
+                                // `}
                                 alt='Government clients'
-                                loading="lazy"
+                                // loading="lazy"
                             />
                             <ImageComp 
-                                src={government}
                                 title='GOVERNMENT'
                                 description='Transblue provides a full range of construction services to Government Facilities, including Federal Government, Military, Municipality, School Districts, etc. With a track record of success, we understand the scope from paperwork to prevailing wage and construction to completion.'
                                 //href='/government'
@@ -139,15 +135,13 @@ function NewClients() {
                         </ImageListItem>
                         <ImageListItem>
                             <img
-                                src={`${residentialPreview}?fit=crop&auto=format`}
-                                srcSet={`
-                                    ${residentialPreview}?w=164&h=164&fit=crop&auto=format 300w,
-                                     ${residential}?w=164&h=164&fit=crop&auto=format 768w
-                                `}
-                                fit='crop'
-                                auto='format'
+                                src={`${residential}?fit=crop&auto=format`}
+                                // srcSet={`
+                                //     ${residentialPreview}?w=164&h=164&fit=crop&auto=format 500w,
+                                //      ${residential}?w=164&h=164&fit=crop&auto=format 768w
+                                // `}
                                 alt='Residential Clients'
-                                loading="lazy"
+                                // loading="lazy"
                             />
                             
                             <ImageComp 

@@ -24,7 +24,7 @@ function MobileNavbar() {
                 bgcolor: bgcolor
             })
         })
-    }, [theme]);
+    }, []);
 
     return (
         <Box sx={{ flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', top: 0, left: 0 }}>
