@@ -128,15 +128,14 @@ function App() {
         }
       }
     }
-  });
-  
-  const mounted = async() => {
+});
 
+const mounted = async() => {
     axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
-      .then(res => {
-        seteasybaseData(res.data)
-      })
-  }
+        .then(res => {
+          seteasybaseData(res.data)
+        })
+}
 
   useEffect(() => {
     console.log('testing')
