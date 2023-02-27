@@ -63,7 +63,7 @@ function Brands() {
                     variant='outlined'
                     sx={{border: '2px solid #0b56a4', fontWeight: 'bold'}}
                     component='a'
-                    href='/projects'
+                    href='/featured'
                 >
                     view our projects
                 </Button>
