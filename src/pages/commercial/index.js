@@ -3,10 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
-import About from './about';
-import Slideshow from '../../components/slideshow';
-import Impression from './impression';
-import Marriott from './marriott';
 import Hospitality from './hospitality';
 import Green from '../../components/green';
 import Snow from '../../components/snow';
@@ -17,14 +13,11 @@ import snow from '../../images/commercial/snow.jpeg';
 import ContactModal from '../../components/contactModal';
 import ThreeCols from '../../components/threeCol';
 import ServiceList from '../../components/serviceList';
-
 import roof from '../../images/commercial/roof.jpg';
 import asphalt from '../../images/commercial/asphalt2.jpg';
 import refresh from '../../images/commercial/refresh.jpg';
 import asphalt3 from '../../images/commercial/asphalt3.jpg';
 import commercial2 from '../../images/commercial/commercial2.jpg';
-
-
 import './style.css';
 import '../multifamily/style.css';
 
@@ -33,7 +26,6 @@ const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKI
 ReactGA.initialize(TRACKING_ID);
 
 class Commercial extends Component {
-
     componentDidMount() {
         ReactGA.event({
             category: 'User',
@@ -86,10 +78,6 @@ class Commercial extends Component {
                                         <li className='py-1'>Increase your business's value</li>
                                         <li className='py-1'>Attract and retain more customers</li>
                                         <li className='py-1'>Save time and money</li>
-                                        {/* <li className='py-1'>A thorough consultation</li>
-                                        <li className='py-1'>Transparent quote with no hidden fees</li>
-                                        <li className='py-1'>Communication from start to finish</li>
-                                        <li className='py-1'>100% commitment to your satisfaction</li> */}
                                     </ul>
                                     <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
                                 </div>
@@ -180,48 +168,3 @@ class Commercial extends Component {
 }
 
 export default Commercial;
-
-
- {/* <div className='wrapper'>
-                    <About />
-                </div> */}
-                {/* <div className='wrapper'>
-                    <Marriott />
-                    <Hospitality />
-                </div> */}
-                {/* <div className='simple-process'>
-                    <img src={simple} alt='Commercial Landscaping' />
-                    <div className='overlay'></div>
-                    <div className='container-fluid'>
-                        <div className='row'>
-                            <div className='col-lg-8 my-auto pr-0'>
-                                <h1 className='w-100'>Running a business is hard.</h1>
-                                <h3 className='mb-3'><i>Handling construction management shouldn't be.</i></h3>
-                                <h6>Our professionals simplify the process with:</h6>
-                                <Fade right cascade>
-                                    <ul>
-                                        <li className='py-1'>A thorough consultation</li>
-                                        <li className='py-1'>Transparent quote with no hidden fees</li>
-                                        <li className='py-1'>Communication from start to finish</li>
-                                        <li className='py-1'>100% commitment to your satisfaction</li>
-                                    </ul>
-                                </Fade>
-                            </div>
-                            <div className='col-lg-4 pt-3'></div>
-                        </div>
-                    </div>
-                </div> */}
-                {/* <div className='wrapper'>
-                    <Green 
-                    page='commercial'
-                    solar='Reduce overhead and save on utility bills with solar panels'
-                    ev='Increase customer retention and customer dwell time with EV Chargers'
-                    roof='Diversify marketing and conserve energy with a living roof' />
-                    <Snow
-                        img={snow}
-                        title='KEEP CUSTOMERS &amp; EMPLOYEES SAFE'
-                        p1='Transblue specializes in providing commercial snow removal services to multisite commercial, retail, industrial, and government facilities.'
-                        p2="Our comprehensive snow removal management plans will help with staying on budget and cost control initiatives, project planning and management, and environmental impacts that that face your brands image every day."
-                    />
-                    
-                </div> */}

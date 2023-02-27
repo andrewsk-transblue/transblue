@@ -179,7 +179,6 @@ function App() {
               {easybaseData.length > 0 && <Route exact path='/careers'>
                 <Careers locations={easybaseData} />
                 </Route>}
-              
               <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
               <Route exact path='/success' component={Success} />
             </Suspense>

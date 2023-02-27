@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import FranchiseNav from '../franchiseNav';
+import FranchiseNav from '../../../components/franchiseNav';
 import './header.css';
 import military from '../../../images/military.jpg';
 import militarySmall from '../../../images/military-small.png';
