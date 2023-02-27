@@ -16,7 +16,6 @@ import wayfairPreview from '../../images/previews/wayfairPreview.jpg';
 import landscapingPreview from '../../images/previews/landscapingPreview.jpg';
 
 
-
 // const ButtonComp = ( { href }) => {
 //     return (
 //         <Button
