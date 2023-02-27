@@ -11,9 +11,7 @@ import Hospitality from './hospitality';
 import Green from '../../components/green';
 import Snow from '../../components/snow';
 import Footer from '../../components/footer/index';
-import Fade from 'react-reveal/Fade';
 import headerBg from '../../images/commercial/header2.jpg';
-import simple from '../../images/commercial/simple.jpg';
 import nextstep4 from '../../images/commercial/nextstep4.png';
 import snow from '../../images/commercial/snow.jpeg';
 import ContactModal from '../../components/contactModal';
@@ -42,6 +40,7 @@ class Commercial extends Component {
             action: `Visited Commercial Page`
         });
     }
+
     render() {
         return(
             <Fragment>
