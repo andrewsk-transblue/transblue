@@ -10,31 +10,36 @@ function MobileNavbar() {
     const handleOpen = (e) => setAnchorEl(e.currentTarget);
 
     const [theme, setTheme] = useState({
-        bgcolor: 'transparent',
-        topPadding: 'topPadding',
+        style: {
+            bgcolor: 'transparent'
+        },
+        topPadding: '30px',
         rightPadding: 'rightPadding'
     });
 
     useEffect(() => {
         document.addEventListener('scroll', () => {
+            let topPadding = window.scrollY > 30 ? '0px' : '30px';
             let style = window.scrollY > window.innerHeight / 3 
-                ?   {
-                        bgcolor: 'rgba(24, 24, 24, 0.9) !important',
-                        backdropFilter: 'blur(2px)'
-                    }
-                :   {
-                        bgcolor: 'transparent'
-                    }
+            ?   {
+                    bgcolor: 'rgba(24, 24, 24, 0.9) !important',
+                    backdropFilter: 'blur(2px)'
+                }
+            :   {
+                    bgcolor: 'transparent'
+                }
 
             setTheme({
                 ...theme,
-                style: style
+                style: style,
+                topPadding: topPadding
             })
+            
         })
     }, []);
 
     return (
-        <Box sx={{ flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', top: 0, left: 0 }}>
+        <Box sx={{...theme.style, flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', top: theme.topPadding, left: 0 }}>
             <AppBar position='static' sx={{...theme.style}}>
                 <Toolbar>
                     <Box
