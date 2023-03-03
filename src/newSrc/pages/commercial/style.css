@@ -1,0 +1,368 @@
+.commercial-body .wrapper {
+    width: 93%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.commercial-about {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    width: 95%;
+}
+
+
+/* MARRIOTT CSS */
+.marriott-wrapper {
+    margin-bottom: 100px;
+}
+
+.marriott-wrapper .video-wrapper {
+    position: relative;
+}
+
+.marriott-wrapper iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.marriott-wrapper .video-wrapper img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.marriott-wrapper .video-wrapper button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 0px;
+}
+
+.marriott-wrapper .section-p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.marriott-wrapper .section-header {
+    margin-top: 10px !important
+}
+
+/* HOSPITALITY CSS */
+.hospitality-wrapper {
+    width: 93%;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.hospitality-wrapper .hospitality-header {
+    margin-top: 5px !important;
+    margin-bottom: 5px;
+}
+
+.hospitality-wrapper img:not(#expert) {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hospitality-wrapper img#expert {
+    width: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hospitality-wrapper h5 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(63, 63, 63);
+    letter-spacing: .05em;
+    margin-bottom: 15px;
+}
+
+.hospitality-wrapper h6 {
+    font-family: 'Raleway', sans-serif;
+    color:rgb(92, 92, 92);
+    margin-bottom: 0px;
+    letter-spacing: .0705em;
+}
+
+.hospitality-wrapper .section-p {
+    margin-bottom: 15px;
+}
+
+/* .hospitality-subheader {
+    margin-bottom: 0px;
+} */
+
+/* .hospitality-wrapper img:not(.check-icon) {
+    width: 100%;
+    margin-bottom: 15px;
+} */
+
+/* .hospitality-wrapper .check-icon {
+    width: 20px;
+} */
+
+.commercial-about img,
+.service-card img,
+.first-impression img,
+.commercial-header img,
+.nextstep img,
+.simple-process img,
+.asphalt-wrapper img,
+.green-solns img,
+.impression-wrapper img:not(.next-section) {
+    width: 100%;
+}
+
+/* NEXT STEP CSS */
+.nextstep {
+    width: 95%;
+}
+
+.nextstep .section-header {
+    margin-top: 0px !important;
+}
+
+.nextstep .section-subheader {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(92, 92, 92);
+    margin-bottom: 0px;
+    letter-spacing: .0705em;
+}
+
+.govt-slider .slick-next::before,
+.govt-slider .slick-prev::before {
+    color: black;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.slider img,
+.slider p {
+    width: 95%;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 93%;
+}
+
+/* SCHEDULE CSS */
+.schedule {
+    background-color: #eeeeee;
+    /* background-color: rgb(255, 136, 0); */
+    color: black;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.schedule h1 {
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 400; */
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-size: 2.5vw;
+    font-size: 20px;
+    font-size: clamp(20px, 2.5vw, 30px);
+}
+
+.schedule a {
+    background-color: #0b56a4;
+    border: 2px solid #0b56a4;
+    color: white;
+    text-decoration: none;
+}
+
+.schedule a:hover {
+    background-color: #eeeeee;
+    border: 2px solid #0b56a4;
+    color: #0b56a4;
+}
+
+/* BENEFITS CSS */
+.commercial-benefits {
+    width: 93%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.commercial-benefits img {
+    width: 90%;
+}
+
+.commercial-benefits .section-header {
+    margin-bottom: 5px;
+}
+
+/* SIMPLE PROCESS CSS */
+.simple-process .container-fluid {
+    margin: 0 auto;
+    width: 93%;
+    /* margin: 0px; */
+}
+
+.simple-process .overlay {
+    display: none;
+}
+
+.simple-process h1,
+.simple-process h3,
+.simple-process h6{
+    font-weight:normal;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+.simple-process h1 {
+    font-weight: 450;
+    color:#ed6a22;
+    margin-top: 25px;
+    font-size: 3.2vw;
+    font-size: 1.8em;
+    font-size: clamp(1.9em, 3.3vw, 3.2vw)
+}
+
+.simple-process h3 {
+    /* color:rgb(0, 90, 194); */
+    color: rgb(105, 105, 105);
+    font-size: clamp(1.2em, 2.2vw, 2.9vw)
+}
+
+.simple-process h6 {
+    margin-top: 25px;
+}
+
+.simple-process li {
+    font-family: 'Montserrat'
+}
+
+.impression-wrapper {
+    position: relative;
+    text-shadow: 1px 1px 8px rgb(53, 53, 53);
+    height: 400px;
+    background-image: url('../../images/commercial/impression.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* .impression-wrapper img:not(.next-section) {
+    width: 100%;
+} */
+
+.impression-wrapper .overlay {
+    background-color: rgba(0,0,0, .15);
+}
+
+.impression-wrapper .text {
+    position: absolute;
+    top: 95%;
+    left: 3.5%;
+    transform: translate(0, -95%);
+    width: 90%;
+    color: white;
+    z-index: 40;
+}
+
+.impression-wrapper .text h3 {
+    letter-spacing: 3.8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: clamp(19px, 3vw, 3.5vw)
+}
+
+.impression-wrapper p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* .impression-wrapper .next-section {
+    width: 40px;
+    height: 30px;
+} */
+
+
+@media only screen and (min-width: 768px) {
+    /* .impression-wrapper .next-section {
+        width: 75px;
+        height: 60px;
+    } */
+    .impression-wrapper .text {
+        width: 75%;
+    }
+    .impression-wrapper p {
+        font-size: 1em;
+    }
+    .simple-process {
+        position: relative;
+    }
+    .simple-process .container-fluid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 40;
+        color: white;
+        padding-left: 3rem;
+        width: 720px;
+    }
+    .simple-process .overlay {
+        display: block;
+    }
+    .simple-process h1 {
+        margin-top: 0px;
+    }
+    .simple-process h3 {
+        color: rgb(211, 211, 211);
+    }
+    .simple-process h6 {
+        margin: 3rem 0 1rem 0;
+    }
+    /* .hospitality-wrapper .hospitality-subheader {
+        margin-bottom: .5rem;
+        font-size: 18px;
+    } */
+}
+
+@media only screen and (min-width: 992px) {
+    .commercial-about {
+        margin-top: 100px;
+    }
+    .simple-process .container-fluid {
+        width: 960px;
+    }
+    .marriott-wrapper img {
+        margin-bottom: 0px;
+    }
+    .schedule h1 {
+        margin-bottom: 25px;
+    }
+    .impression-wrapper {
+        height: 500px;
+    }
+    .impression-wrapper .text {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .impression-wrapper {
+        height: 600px;
+    }
+    .simple-process .container-fluid {
+        width: 1140px;
+    }
+    .impression-wrapper p {
+        font-size: 1.2em;
+    }
+}

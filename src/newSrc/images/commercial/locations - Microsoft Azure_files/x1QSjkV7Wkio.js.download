@@ -1,0 +1,1 @@
+define("FxInternal/WeaveControls/TabComponent",{confirmEditDiscard:"Your unsaved edits will be discarded.",more:"More",required:"Required"})

@@ -12,7 +12,7 @@ import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 
 const Residential = lazy(() => import ('./pages/residential/index'));
-const Commercial = lazy(() => import ('./pages/commercial/newCommercial'));
+const Commercial = lazy(() => import ('./newSrc/pages/commercial/newCommercial'));
 const Multifamily = lazy(() => import ('./pages/multifamily/index'));
 const Government = lazy(() => import ('./pages/government/index'));
 const Locations = lazy(() => import('./pages/locations/index'));
