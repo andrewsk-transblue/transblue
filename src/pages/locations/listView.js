@@ -51,15 +51,6 @@ function ListView(props) {
                         </div>
                     )
                 })}
-                <div className='col-12 col-md-6 col-lg-4 mb-5 text-center'>
-                    <div className={`location-12 location`}>
-                        <img src={atlanta} />
-                        <div className='text-wrapper'>
-                            <h4>ATLANTA, GA</h4>
-                            <h4>COMING SOON</h4>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     )

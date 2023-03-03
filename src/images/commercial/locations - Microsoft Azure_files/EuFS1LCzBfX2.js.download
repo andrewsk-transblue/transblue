@@ -1,0 +1,1 @@
+define("Viva.Controls/Controls/Visualization/Viva.ChartUtil",["require","exports"],(function(r,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.isFxChartColorClass=t.getFxColorClass=void 0,t.getFxColorClass=function(r){return"msportalfx-chart-color-"+r%40},t.isFxChartColorClass=function(r){return(r||"").trim().startsWith("msportalfx-chart-color-")}}));
