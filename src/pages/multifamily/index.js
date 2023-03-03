@@ -9,7 +9,7 @@ import HoverImages from '../../components/hoverImages';
 import Snow from '../../components/snow';
 import ContactModal from '../../components/contactModal';
 import ThreeCols from '../../components/threeCol';
-import Hospitality from '../commercial/hospitality';
+import Hospitality from './hospitality';
 import Footer from '../../components/footer';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
