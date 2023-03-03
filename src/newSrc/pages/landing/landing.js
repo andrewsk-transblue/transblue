@@ -56,7 +56,7 @@ function Landing() {
                         <Grid item xs={10} my='auto'>
                             <Typography variant='h1' sx={{color: 'white'}}>TRANSBLUE</Typography>
                             <Typography variant='h1' sx={{color: 'white', mb: '2vh'}}>GENERAL CONTRACTORS</Typography>
-                            <Typography variant='h2' sx={{color: '#ed6a22'}}>Changing the world, one project at a time</Typography>
+                            <Typography variant='h2' sx={{color: '#ed6a22'}}>Changing the World One Project at a Time</Typography>
                         </Grid>
                         <Grid item xs={1} />
                     </Grid>
