@@ -17,7 +17,6 @@ function MobileNavbar() {
 
     useEffect(() => {
         document.addEventListener('scroll', () => {
-            let bgcolor = window.scrollY > window.innerHeight / 3 ? 'black' : 'transparent';
             let style = window.scrollY > window.innerHeight / 3 
                 ?   {
                         bgcolor: 'rgba(24, 24, 24, 0.9) !important',
@@ -29,7 +28,6 @@ function MobileNavbar() {
 
             setTheme({
                 ...theme,
-                bgcolor: bgcolor,
                 style: style
             })
         })
@@ -37,7 +35,7 @@ function MobileNavbar() {
 
     return (
         <Box sx={{ flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', top: 0, left: 0 }}>
-            <AppBar position='static' sx={theme.style}>
+            <AppBar position='static' sx={{...theme.style}}>
                 <Toolbar>
                     <Box
                         sx={{ flexGrow: 1, my: 'auto'}}

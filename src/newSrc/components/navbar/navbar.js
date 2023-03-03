@@ -19,7 +19,6 @@ function Navbar({ page }) {
 
     useEffect(() => {
         document.addEventListener('scroll', () => {
-            let bgcolor = window.scrollY > window.innerHeight / 3 ? 'black' : 'transparent';
             let style = window.scrollY > window.innerHeight / 3 
                 ?   {
                         bgcolor: 'rgba(24, 24, 24, 0.9) !important',
