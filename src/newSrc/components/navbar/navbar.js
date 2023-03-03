@@ -20,16 +20,24 @@ function Navbar({ page }) {
     useEffect(() => {
         document.addEventListener('scroll', () => {
             let bgcolor = window.scrollY > window.innerHeight / 3 ? 'black' : 'transparent';
+            let style = window.scrollY > window.innerHeight / 3 
+                ?   {
+                        bgcolor: 'rgba(24, 24, 24, 0.9) !important',
+                        backdropFilter: 'blur(2px)'
+                    }
+                :   {
+                        bgcolor: 'transparent'
+                    }
 
             setTheme({
                 ...theme,
-                bgcolor: bgcolor
+                style: style
             })
         })
     }, []);
     
     return (
-        <Box sx={{width: '100%', zIndex: 8, bgcolor: theme.bgcolor, position: 'fixed', top: 0, left: 0}}>
+        <Box sx={{...theme.style, width: '100%', zIndex: 8, position: 'fixed', top: 0, left: 0}}>
             <Grid container>
                 <Grid item md={5} my='auto'>
                     <Box sx={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
