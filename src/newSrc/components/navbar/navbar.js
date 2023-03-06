@@ -46,6 +46,14 @@ function Navbar({ page }) {
                 <Grid item md={5} my='auto'>
                     <Box sx={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
                         <Button
+                            component='a'
+                            sx={{color: page === 'home' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
+                            href='/'
+                        >
+                            home
+                        </Button>
+                        
+                        <Button
                             sx={{color: page === '' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
                             onClick={(e) => setServiceAnchor(e.currentTarget)}
                             endIcon={<KeyboardArrowDown />}
