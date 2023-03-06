@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
-import Navbar from '../../components/navbar';
 import About from './about';
 import Apply from './apply';
 import Footer from '../../components/footer';

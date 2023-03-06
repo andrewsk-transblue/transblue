@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect, lazy } from 'react';
 import { Helmet } from 'react-helmet-async';
 import handleViewport from 'react-in-viewport';
-import Navbar from '../../components/navbar/index';
 import FranchiseNav from '../../components/franchiseNav';
 import Footer from '../../components/footer/index';
 import Lifestyle from '../../components/residential/lifestyle/lifestyle';

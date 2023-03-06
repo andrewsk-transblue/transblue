@@ -1,5 +1,4 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import Navbar from '../../components/navbar';
 import FranchiseNav from '../../components/franchiseNav';
 import Footer from '../../components/footer';
 import './style.css';

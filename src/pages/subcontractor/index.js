@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect, useRef} from 'react';
 import { Helmet } from 'react-helmet-async';
-import Navbar from '../../components/navbar';
 import Form from './form';
 import Footer from '../../components/footer';
 import Respect from './respect';

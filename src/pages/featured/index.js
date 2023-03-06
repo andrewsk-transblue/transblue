@@ -1,6 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet-async';
-import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import OpenProject from './openProject';
 import Footer from '../../components/footer/index';

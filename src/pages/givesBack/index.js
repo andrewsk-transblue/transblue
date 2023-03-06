@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import { Helmet } from 'react-helmet-async';
-import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
 import givesback from '../../images/givesback.jpg';

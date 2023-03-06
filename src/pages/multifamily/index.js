@@ -1,6 +1,5 @@
 import React, {Fragment, useEffect} from 'react';
 import { Helmet } from 'react-helmet-async';
-import Navbar from '../../components/navbar/index';
 import Header from '../../components/header';
 import ContactCta from '../../components/contactCta';
 import Assets from '../../components/multifamily/assets';
