@@ -1,0 +1,139 @@
+.multifamily-body img:not(.next-section):not(.decks-image) {
+    width: 100%;
+}
+
+.multifamily-body .wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.multifamily-body .container-fluid {
+    width: 92%;
+}
+
+.multifamily-body .charity-wrapper .section-header {
+    margin-top: 0px !important;
+}
+
+/* .multifamily-body .multifamily-about {
+    padding: 90px 0px 90px 0px;
+} */
+
+.multifamily-about {
+    padding: 50px 0px;
+}
+
+.multifamily-about h1 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 2.1em;
+    margin-bottom: 18px;
+}
+
+.multifamily-about p {
+    font-family: 'Roboto';
+    line-height: 1.666em;;
+}
+
+.multifamily-about a {
+    border: 2px solid #0b56a4;
+    background-color: #0b56a4;
+    color: white;
+    padding: 6px 25px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: .85em;
+    letter-spacing: 1px;
+  }
+
+.multifamily-about a:hover {
+    background-color: transparent;
+    color: #0b56a4;
+    transition: .5s;
+}
+
+.multifamily-about a,
+.benefits a {
+    text-decoration: none;
+}
+
+.benefits {
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    margin-bottom: 100px;
+    font-family: 'Roboto';
+}
+
+.benefits ul {
+    margin: 20px 0px 30px 0px;
+    padding-left: 15px;
+}
+
+.benefits-banner {
+    width: 100%;
+    background-color: #0b56a4;
+    color: white;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.benefits-banner p:first-of-type {
+    font-size: 2.1em;
+    letter-spacing: .06em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.benefits-banner p:nth-of-type(2) {
+    letter-spacing: .07em;
+    font-family: 'Roboto';
+}
+
+.decks {
+    margin-bottom: 60px;
+    padding-top: 100px;
+}
+
+.decks img {
+    width: 100%;
+}
+
+/* .decks .overlay {
+    width: 95%;
+    background-color: rgba(0,0,0,.35)
+} */
+
+/* .decks .centered-text {
+    color: white;
+    font-size: 1.4em;
+    width: 70%;
+    letter-spacing: .03em;
+    font-family: 'Roboto';
+} */
+
+/* 
+.multifamily-body .green-solns {
+    margin-top: 100px;
+    margin-bottom: 80px;
+} */
+
+@media only screen and (min-width: 992px) {
+
+    .decks .section-p {
+        padding-bottom: 0px !important;
+    }
+
+    .benefits img {
+        padding-top: 0px !important;
+    }
+
+    .multifamily-about p {
+        padding-top: 0px !important;
+    }
+
+    .multifamily-about {
+        padding: 80px 0px;
+    }
+}
