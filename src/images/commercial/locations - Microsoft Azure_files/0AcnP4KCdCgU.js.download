@@ -1,1 +1,0 @@
-define("@microsoft/azureportal-reactview/Styling",["require","exports","@uifabric/utilities/lib/classNamesFunction"],(function(n,t,i){"use strict";function r(n){return i.classNamesFunction()(n)}Object.defineProperty(t,"__esModule",{value:!0});t.getClassNames=void 0;t.getClassNames=r}))

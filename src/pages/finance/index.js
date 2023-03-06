@@ -6,6 +6,7 @@ import './style.css';
 
 import ReactGA from 'react-ga';
 import { Helmet } from 'react-helmet-async';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -40,7 +41,7 @@ function Finance(props) {
                 <title>Transblue Get Financed</title>
                 <meta name="description" content="When you want the best of quality, you should trust Transblue. We have quick, reliable, and affordable service for all your construction needs." />
             </Helmet>
-            <Navbar />
+            <NavWrapper page='finance' />
             <FranchiseNav />
             <div className='finance-wrapper'>
                 <div className='overlay'></div>

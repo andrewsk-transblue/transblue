@@ -21,6 +21,7 @@ import './style.css';
 
 import ReactGA from 'react-ga';
 import ContactModal from '../../components/contactModal';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -38,7 +39,7 @@ function Government() {
                     <title>Transblue Government</title>
                     <meta name="description" content="Transblue is a world class general contractor and has built almost every type of project from large government projects to small commercial and residential construction., from asphalt to EV chargers to snow removal and everything in between!" />
                 </Helmet>
-                <Navbar page='GOVERNMENT' parentPage='gc' />
+                <NavWrapper page='government' />
                 <Header img={govt} title='GOVERNMENT' subtitle='' name='government' />
                 <ContactCta />
                 <div className='government-body'>

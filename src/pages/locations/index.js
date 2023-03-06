@@ -6,6 +6,7 @@ import Footer from '../../components/footer/index';
 import './style.css';
 
 import ReactGA from 'react-ga';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -26,7 +27,7 @@ function Locations(props) {
                     <title>Transblue Locations</title>
                     <meta name="description" content="In need of landscaping, patio, decking, pools, or pavers? You can find a Transblue location near you!" />
                 </Helmet>
-                <Navbar page='LOCATIONS' />
+                <NavWrapper page='locations' />
                 <Header title='FIND A LOCATION' subtitle='' name='locations' />
                 <ListView locations={props.locations} zipcode={props.zipcode}  />
                 <Footer locationPage={true} />

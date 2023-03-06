@@ -1,1 +1,0 @@
-define("Fx/Assets/AssetTypes",["require","exports","FxInternal/Assets/AssetTypes","Fx"],(function(n,t,i,r){"use strict";function f(n){return Q(u(n))}Object.defineProperty(t,"__esModule",{value:!0});t.getAllAssetTypes=void 0;var u=r.memoizePromise((function(n){return Q(i.getAllAssetTypesEndPoint.invoke(FxImpl.Rpc.client,"fx",n))}));t.getAllAssetTypes=f}))

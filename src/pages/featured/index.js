@@ -11,6 +11,7 @@ import leftarrow from '../../images/residential/leftarrow.png';
 import featuredDb from './db';
 
 import ReactGA from 'react-ga';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -31,7 +32,7 @@ function Featured() {
                 <title>Featured Projects</title>
                 <meta name="description" content="Transblue is known for their attention to detail, quality of materials and craftsmanship, and commitment to excellent customer service. Be one of our featured projects. Get inspired with one of our latest and greatest projects that we completed for satisfied clients." />
             </Helmet>
-            <Navbar page='PROJECTS' />
+            <NavWrapper page='projects' />
             <Header title='FEATURED PROJECTS' name='featured' />
             <ContactCta />
 

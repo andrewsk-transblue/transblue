@@ -9,6 +9,7 @@ import Footer from '../../components/footer';
 import './style.css';
 import Core from './core';
 import What from './what';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 
 function Careers(props) {
     const [locations,setLocations] = useState([]);
@@ -31,7 +32,7 @@ function Careers(props) {
                 <meta name="description" content="Transblue is a world class general contractor located in different states that sets the standard for construction excellence. Become part of our Transblue Family today. Apply now!" />
             </Helmet>
             <Header title='TRANSBLUE CAREERS' name='careers' />
-            <Navbar />
+            <NavWrapper page='careers' />
             <About scroll={scrollToApply} />
             <Core scroll={scrollToApply} />
             <What />

@@ -12,6 +12,7 @@ import './style.css';
 
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 
@@ -97,7 +98,7 @@ function Subcontractor() {
                 <title>Transblue Subcontractor</title>
                 <meta name="description" content="Transblue is the perfect partner for your next project. We have been successfully working with the most prestigious companies in the United States, Canada, and Mexico to provide them with the most cost-effective and efficient ways to improve the quality of their construction projects." />
             </Helmet>
-            <Navbar />
+            <NavWrapper page='subcontractor' />
             <Header 
                 title='SUBCONTRACTORS' 
                 name='subcontractor'

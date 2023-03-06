@@ -7,6 +7,7 @@ import givesback from '../../images/givesback.jpg';
 import './style.css';
 
 import ReactGA from 'react-ga';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -124,7 +125,7 @@ function GivesBack(props) {
                 <title>Transblue Gives Back</title>
                 <meta name="description" content="At Transblue, we believe in doing things for the community and in the community. Transblue is a social enterprise that aims to improve the lives of everyone by providing help in access to quality education, healthcare, and nutrition." />
             </Helmet>
-            <Navbar />
+            <NavWrapper page='givesback' />
             <Header name='givesback' img={givesback} title='TRANSBLUE GIVES BACK' />
             <div className='container givesback-wrapper sm-screen-hide'>
                 <div className='row'>

@@ -103,7 +103,7 @@ function Navbar({ page }) {
                         <Button
                             component='a'
                             href='/commercial'
-                            sx={{color: page === 'commercial' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
+                            sx={{color: page === 'COMMERCIAL' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
                         >
                             commercial
                         </Button>

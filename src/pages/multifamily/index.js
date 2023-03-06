@@ -30,14 +30,25 @@ import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
-function Multifamily() {
+// do some research on apis that service channel has to offer
+// can be a component of the national sales servicing portal
+// db of all the work they're doing
+// work order tied to this location
 
+// resize screen on stream, make a max width, like an in page youtube player
+
+// add recoding navbar for all page tb.com
+// 27 inch screen - fix transblue's mission
+// issue for wednesday - featured projects
+
+function Multifamily() {
     useEffect(() => {
         ReactGA.event({
             category: 'User',
             action: 'Visited Multifamily Page'
           });
-    }, [])
+    }, []);
+
     return(
         <Fragment>
             <Helmet>

@@ -18,6 +18,7 @@ import militarySmall from '../../images/military-small.png';
 import './style.css';
 
 import ReactGA from 'react-ga';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -57,7 +58,7 @@ function Residential() {
                 <title>Transblue Residential</title>
                 <meta name="description" content="Transblue brings expertise and aesthetic perfection to all your luxury landscaping, patio, decking, concrete wall, paver, and other residential projects. Call us today and learn all about the services we offer." />
             </Helmet>
-            <Navbar page='RESIDENTIAL' parentPage='gc' />
+            <NavWrapper page='residential' />
             <FranchiseNav />
 
             <div className='residential-header container-fluid'>
