@@ -1,4 +1,4 @@
-.multifamily-body img:not(.next-section):not(.decks-image) {
+.multifamily-body img:not(.next-section):not(.decks-image):not(.hospitality-img) {
     width: 100%;
 }
 

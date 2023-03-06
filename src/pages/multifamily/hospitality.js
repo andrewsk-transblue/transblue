@@ -7,25 +7,27 @@ import './style.css';
 function Hospitality() {
     return(
         <div className='hospitality-wrapper container-fluid'>
-            <h6>NO MATTER THE PROJECT,</h6>
-            <h4 className='section-header hospitality-header'>
-                YOU CAN COUNT ON TRANSBLUE
-            </h4>
-            <p className='section-p'>We're a one-stop shop for all your commercial construction needs.</p>
+            <div className='text-center mb-5'>
+                <h6>NO MATTER THE PROJECT,</h6>
+                <h4 className='section-header hospitality-header'>
+                    YOU CAN COUNT ON TRANSBLUE
+                </h4>
+                <p className='section-p'>We're a one-stop shop for all your commercial construction needs.</p>
+            </div>
 
             <div className='row'>
                 <div className='col-12 col-md-6 col-lg-4'>
-                    <img src={turnkey} alt='' />
+                    <img src={turnkey} alt='' className='hospitality-img mb-4' />
                     <h5>FLEXIBLE TURNKEY SOLUTION</h5>
                     <p className='section-p'>Our flexible turnkey solution allows you to focus on managing your business rather than managing contractors</p>
                 </div>
                 <div className='col-12 col-md-6 col-lg-4'>
-                    <img src={customers} alt='' />
+                    <img src={customers} alt='' className='hospitality-img mb-4' />
                     <h5>CLIENT COLLABORATION</h5>
                     <p className='section-p'>We collaborate with clients to provide industry expertise that parallels the project vision, ensuring the project outcome is methodically designed and brought to completion with a World Class finish</p>
                 </div>
                 <div className='col-12 col-md-6 col-lg-4'>
-                    <img src={expert} alt='' id='expert' />
+                    <img src={expert} alt='' id='expert' className='hospitality-img mb-4' />
                     <h5>INDUSTRY EXPERTS</h5>
                     <p className='section-p'>Transblue provides industry experts at each turn of the project to ensure that the delivery exceeds your expectations</p>
                 </div>

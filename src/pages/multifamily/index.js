@@ -26,6 +26,7 @@ import ascent from '../../images/multifamily/solidRock/ascent.png';
 import './style.css';
 
 import ReactGA from 'react-ga';
+import NavWrapper from '../../newSrc/components/navbar/navWrapper';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -54,7 +55,7 @@ function Multifamily() {
                 <title>Transblue Multifamily</title>
                 <meta name="description" content="Transblue provides several multifamily services to HOAs and CAIs, including paving, snow removal, amenity installation, pools, wall retaining, patio, athletic courts, and everything in between." />
             </Helmet>
-            <Navbar page='MULTIFAMILY' parentPage='gc'  />
+            <NavWrapper page='multifamily' parentPage='gc'  />
 
             <Header img={header2} title='MULTIFAMILY' subtitle='' name='multifamily' />
             <ContactCta />
