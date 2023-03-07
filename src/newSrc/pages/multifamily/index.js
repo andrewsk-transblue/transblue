@@ -26,6 +26,13 @@ import ascent from '../../images/multifamily/solidRock/ascent.png';
 import turnkey from '../../images/commercial/icons/turnkey.png';
 import customers from '../../images/commercial/icons/customers.jpg';
 import expert from '../../images/commercial/icons/expert.jpg';
+
+import deck from '../../images/multifamily/deck.jpg';
+
+import solar from '../../images/commercial/solar2.jpg';
+import ev from '../../images/commercial/ev2.jpg';
+import livingroof from '../../images/commercial/livingroof.jpg';
+
 import './style.css';
 
 import ReactGA from 'react-ga';
@@ -164,6 +171,60 @@ function Multifamily() {
                 />
             </Box>
 
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={5}>
+                    <Grid item xs={12} md={7}>
+                        <img src={deck} alt='' style={{width: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>INSTALL NEW DECKS AND RAILINGS</Typography>
+                        <Typography variant='body2'>At Transblue, we understand decks on your community properties. We understand that these decks are connected directly to your living space, and that their resurfacing or reconstruction needs to be done quickly and efficiently with high quality to minimize impact to your life. That is why Transblue is truly the right partner for your decking needs.</Typography>
+                        <Typography variant='body2'>Fencing is key to privacy and needs to be replaced every 15-20 years. Whether your increasing property privacy or just replacing worn out fencing, Transblue is the right choice for you!</Typography>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Assets />
+
+            <Box sx={{width: '90%', py: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={5}>
+                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>KEEP YOUR COMMUNITY SAFE</Typography>
+                        <Typography variant='body2' sx={{mb: 1}}>Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.</Typography>
+                        <Typography variant='body2' sx={{mb: 1}}>Keeping your property plowed and deiced keeps your community safe during the worst winter storms.</Typography>
+                        <Typography variant='body2' sx={{mb: 4}}>We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.</Typography>
+                        <a className='cta' href='https://snow.transblue.com' target='_blank' rel='noreferrer'>SNOW SERVICES</a><ContactModal />
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <img src={snow} alt='Multifamily Snow Removal' style={{width: '100%'}} />
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{width: '95%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <ThreeCols
+                    title='TRANSBLUE ENVIRONMENTAL SERVICES'
+                    subtitle='At Transblue, we offer a wide variety of environmental services to fit your multifamily needs. For more information and a full list of green services, visit our green solutions website'
+                    card1={{
+                        img: solar,
+                        title: 'SOLAR PANELS',
+                        body: 'Reduce overhead and save on utility bills with solar panels'
+                    }}
+                    card2={{
+                        img: ev,
+                        title: 'ELECTRIC VEHICLE CHARGERS',
+                        body: 'Increase resident retention and value of your property with EV chargers'
+                    }}
+                    card3={{
+                        img: livingroof,
+                        title: 'LIVING ROOFS',
+                        body: 'Save money on cost of energy and local storm water fees'
+                    }}
+                />
+            </Box>
+
+            
+
             <div className='multifamily-body'>
                 <div className='wrapper'>
 
@@ -173,20 +234,8 @@ function Multifamily() {
                 </div> */}
 
                 </div>
-                <Assets />
+                
                 <div className='wrapper'>
-                    <Snow
-                        img={snow}
-                        title='KEEP YOUR COMMUNITY SAFE'
-                        p1='Safety is key to our World Class snow and ice programs. At Transblue we don’t consider it snow removal, we consider it risk removal.'
-                        p2='Keeping your property plowed and deiced keeps your community safe during the worst winter storms.'
-                        p3='We offer comprehensive snow and ice management plans that include plowing, deicing, hauling, snow staging, shoveling, and icicle melting.'
-                    />
-                    <Green 
-                        page='multifamily'
-                        solar='Reduce overhead and save on utility bills with solar panels'
-                        ev='Increase resident retention and value of your property with EV Chargers'
-                        roof='Save money on cost of energy and local storm water fees' />
                     <ServiceList
                         title='MULTIFAMILY SERVICES'
                         img={services}
