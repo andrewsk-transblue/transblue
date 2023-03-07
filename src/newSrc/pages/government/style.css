@@ -1,0 +1,59 @@
+.government-body {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.government-body .container-fluid:not(.capabilities-wrapper):not(.first-wrapper) {
+    width: 93%;
+}
+
+.government-body .wrapper,
+.charity-wrapper .wrapper {
+    width: 93%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.government-header img,
+.government-about img,
+.asphalt img,
+.new-green-solns img {
+    width: 100%;
+}
+
+.government-body .new-green-solns {
+    margin-top: 80px;
+}
+
+.government-about button.cta {
+    margin-left: 0px;
+}
+
+/* .government-body .new-green-solns a.cta {
+    margin-top: 10px;
+} */
+
+.government-about .section-p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 750px) {
+    .government-about {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .government-body .new-green-solns {
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    .government-body {
+        margin-top: 80px;
+    }
+    .government-about img {
+        margin-top: 0px;
+    }
+}

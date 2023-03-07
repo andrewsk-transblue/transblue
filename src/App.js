@@ -14,7 +14,7 @@ import { ThemeProvider } from '@mui/material';
 const Residential = lazy(() => import ('./pages/residential/index'));
 const Commercial = lazy(() => import ('./newSrc/pages/commercial/newCommercial'));
 const Multifamily = lazy(() => import ('./newSrc/pages/multifamily/index'));
-const Government = lazy(() => import ('./pages/government/index'));
+const Government = lazy(() => import ('./newSrc/pages/government/government'));
 const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/subcontractor/index'));
