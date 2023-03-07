@@ -52,7 +52,7 @@ const ColComp = (props) => {
     return (
         <Grid item xs={12} md={4}>
             <img src={icon} alt='' />
-            <Typography variant='subtitle1' sx={{my: 1}}>{title}</Typography>
+            <Typography variant='subtitle1' sx={{mb: 1, mt: 2}}>{title}</Typography>
             <Typography variant='body2'>{body}</Typography>
         </Grid>
     )
@@ -118,7 +118,7 @@ function Multifamily() {
                 </Grid>
             </Box>
 
-            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+            <Box sx={{width: '95%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
                 <Typography variant='subtitle1' sx={{mb: 1, textAlign: 'center'}}>NO MATTER THE PROJECT,</Typography>
                 <Typography variant='h2' sx={{mb: 1, color: '#0b56a4', fontWeight: 500, textAlign: 'center'}}>YOU CAN COUNT ON TRANSBLUE</Typography>
                 <Typography variant='body2' sx={{textAlign: 'center', mb: 6}}>We're a one-stop shop for all your multifamily construction needs</Typography>
@@ -142,26 +142,18 @@ function Multifamily() {
                 </Grid>
             </Box>
 
-            <div className='multifamily-body'>
-                <div className='wrapper'>
-
-                {/* <div className='benefits-banner'>
-                    <p>INCREASE YOUR PROPERTY VALUE</p>
-                    <p>with our World Class services that enhance the beauty of every space </p>
-                </div> */}
-                 <ThreeCols
+            <Box sx={{width: '95%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <ThreeCols
                     title='REFRESH YOUR MULTIFAMILY RESIDENCE'
                     subtitle='Refreshed buildings keep property values high. Transblue is 100% committed to delivering World Class services that enhance the beauty of each and every space.'
                     card1={{
                         img: rooftop,
                         title: 'RETHINK YOUR ROOF',
-                        // body: 'Transblue provides roofing services for communities looking to replace existing roofing structures or install new roofing systems. This includes systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more',
                         body: 'We specialize in replacing and installing roofing systems such as flat PVC and TPO, metals, asphalt shingles, green roofs, tiles, torch down, and more'
                     }}
                     card2={{
                         img: pool,
                         title: 'POOL RENOVATION & CONSTRUCTION',
-                        // body: 'Transblue provides Swimming pool renovations and installs to community properties. This includes replastering, retiling, re-decking, and installing up to grade drainage systems',
                         body: 'Call us today to discuss swimming pool renovations and installations. We specialize in replastering, retiling, redecking, and installing up to grade drainage systems'
                     }}
                     card3={{
@@ -170,6 +162,16 @@ function Multifamily() {
                         body: 'We specialize in asphalt services that include paving, seal coating, crack sealing, parking lot striping, concrete replacement and grinding, curbing, and restriping'
                     }}
                 />
+            </Box>
+
+            <div className='multifamily-body'>
+                <div className='wrapper'>
+
+                {/* <div className='benefits-banner'>
+                    <p>INCREASE YOUR PROPERTY VALUE</p>
+                    <p>with our World Class services that enhance the beauty of every space </p>
+                </div> */}
+
                 </div>
                 <Assets />
                 <div className='wrapper'>

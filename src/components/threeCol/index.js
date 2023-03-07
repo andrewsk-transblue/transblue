@@ -1,34 +1,31 @@
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import './style.css';
 
 function ThreeCols(props) {
+    const { title, subtitle, card1, card2, card3 } = props;
     return(
-        <div className='container-fluid three-cols'>
-        <div className='row'>
-            <div className='col-lg-12 title'>
-                <h4 className='section-header'>{props.title}</h4>
-                <p className='section-p'>{props.subtitle}</p>
-                {/* <h3>LOWER YOUR ENERGY BILL AND ENVIRONMENTAL IMPACT WITH GREEN SOLUTIONS</h3> */}
-            </div>
-        </div>
-        <div className='row'>
-        <div className='col-lg-4 col-md-6'>
-                <img src={props.card1.img} alt='' />
-                <p className='subtitle'>{props.card1.title}</p>
-                <p className='section-p mb-4'>{props.card1.body}</p>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-                <img src={props.card2.img} alt='' />
-                <p className='subtitle'>{props.card2.title}</p>
-                <p className='section-p mb-4'>{props.card2.body}</p>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-                <img src={props.card3.img} alt='' />
-                <p className='subtitle'>{props.card3.title}</p>
-                <p className='section-p mb-4'>{props.card3.body}</p>
-            </div>
-        </div>
-    </div>
+        <>
+            <Typography variant='h2' sx={{mb: 2, color: '#0b56a4', textAlign: 'center', fontWeight: 500}}>{title}</Typography>
+            <Typography variant='body2' sx={{mb: 3, maxWidth: '800px', m: '0 auto', textAlign: 'center'}}>{subtitle}</Typography>
+            <Grid container spacing={3} mt={6}>
+                <Grid item xs={12} md={4}>
+                    <img src={card1.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
+                    <Typography variant='subtitle1' sx={{my: 2}}>{card1.title}</Typography>
+                    <Typography variant='body2'>{card1.body}</Typography>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <img src={card2.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
+                    <Typography variant='subtitle1' sx={{my: 2}}>{card2.title}</Typography>
+                    <Typography variant='body2'>{card2.body}</Typography>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <img src={card3.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
+                    <Typography variant='subtitle1' sx={{my: 2}}>{card3.title}</Typography>
+                    <Typography variant='body2'>{card3.body}</Typography>
+                </Grid>
+            </Grid>
+        </>
     )
 }
 
