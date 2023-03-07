@@ -3,12 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import Header from '../../../components/header';
 import ContactCta from '../../components/cta/cta';
 import Assets from '../../../components/multifamily/assets';
-import ServiceList from '../../../components/serviceList';
-import HoverImages from '../../../components/hoverImages';
-import Snow from '../../../components/snow';
 import ContactModal from '../../../components/contactModal';
 import ThreeCols from '../../../components/threeCol';
-import Footer from '../../components/footer/footer';
+import Footer from '../../newSrc/components/footer/footer';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
 import pool from '../../images/multifamily/pool.jpeg';
@@ -16,19 +13,14 @@ import parkinglot from '../../images/multifamily/asphalt.jpg';
 import snow from '../../images/multifamily/snow.jpg';
 import luxury from '../../images/multifamily/luxury.jpg';
 import services from '../../images/multifamily/services.jpeg';
-import Green from '../../../components/green';
-
 import solidrock from '../../images/multifamily/solidRock/1.png';
 import solidrock2 from '../../images/multifamily/solidRock/2.png';
 import solidrock3 from '../../images/multifamily/solidRock/3.png';
 import ascent from '../../images/multifamily/solidRock/ascent.png';
-
 import turnkey from '../../images/commercial/icons/turnkey.png';
 import customers from '../../images/commercial/icons/customers.jpg';
 import expert from '../../images/commercial/icons/expert.jpg';
-
 import deck from '../../images/multifamily/deck.jpg';
-
 import solar from '../../images/commercial/solar2.jpg';
 import ev from '../../images/commercial/ev2.jpg';
 import livingroof from '../../images/commercial/livingroof.jpg';
@@ -303,44 +295,6 @@ function Multifamily() {
                 </Grid>
             </Box>
 
-            
-
-            <div className='multifamily-body'>
-                <div className='wrapper'>
-
-
-                </div>
-                
-                <div className='charity-wrapper bg-light'>
-                     <div className='wrapper'>
-                         <h1>TRANSBLUE GIVES BACK</h1>
-                         <div className='container-fluid'>
-                            <div className='row'>
-                                <div className='col-lg-5 order-lg-12 left-text'>
-                                    <h4 className='section-header'>CREATING A SOLID FOUNDATION FOR YOUTH</h4>
-                                    <div className='section-p mb-3'>
-                                        Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.</div>
-                                    <div className='section-p mb-3'>
-                                        Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
-                                    </div>
-                                    <a href='/givesback/solidrock' className='cta'>LEARN MORE</a>
-                                    {/* <a href='https://www.youtube.com/watch?v=yPTjyTrF_8c' target="_blank" rel='noreferrer' className='cta'>LEARN MORE</a> */}
-                                </div>
-                                <div className='col-lg-7'>
-                                    <HoverImages 
-                                        page={[
-                                            {image: ascent, title: 'ASCENT ROOFING PROJECT', caption: ''},
-                                            {image: solidrock, title: 'SOLID ROCK CAMP', caption: ''},
-                                            {image: solidrock2, title: 'SOLID ROCK CAMP', caption: 'Music station at camp where the kids learn to sing praise songs which they memorize and take home with them. We believe that the message of these songs has the power to impact these children with hope and love.'},
-                                            {image: solidrock3, title: 'SOLID ROCK CAMP', caption: ''}
-                                        ]}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-            </div>
             <Footer />
         </Fragment>
     )
