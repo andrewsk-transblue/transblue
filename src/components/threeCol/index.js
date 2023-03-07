@@ -12,17 +12,44 @@ function ThreeCols(props) {
                 <Grid item xs={12} md={4}>
                     <img src={card1.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
                     <Typography variant='subtitle1' sx={{my: 2}}>{card1.title}</Typography>
-                    <Typography variant='body2'>{card1.body}</Typography>
+                    <Typography 
+                        variant='body2' 
+                        sx={{mb: {
+                                xs: 3,
+                                md: 0
+                            }}
+                        }
+                    >
+                        {card1.body}
+                    </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <img src={card2.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
                     <Typography variant='subtitle1' sx={{my: 2}}>{card2.title}</Typography>
-                    <Typography variant='body2'>{card2.body}</Typography>
+                    <Typography 
+                        variant='body2' 
+                        sx={{mb: {
+                                xs: 3,
+                                md: 0
+                            }}
+                        }
+                    >
+                        {card2.body}
+                    </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <img src={card3.img} alt='' style={{maxWidth: '100%', width: '100%'}} />
                     <Typography variant='subtitle1' sx={{my: 2}}>{card3.title}</Typography>
-                    <Typography variant='body2'>{card3.body}</Typography>
+                    <Typography 
+                        variant='body2' 
+                        sx={{mb: {
+                                xs: 3,
+                                md: 0
+                            }}
+                        }
+                    >
+                        {card3.body}
+                    </Typography>
                 </Grid>
             </Grid>
         </>

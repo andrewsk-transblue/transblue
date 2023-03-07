@@ -5,7 +5,7 @@ import ContactCta from '../../components/cta/cta';
 import Assets from '../../../components/multifamily/assets';
 import ContactModal from '../../../components/contactModal';
 import ThreeCols from '../../../components/threeCol';
-import Footer from '../../newSrc/components/footer/footer';
+import Footer from '../../components/footer/footer';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
 import pool from '../../images/multifamily/pool.jpeg';
@@ -83,7 +83,10 @@ function Multifamily() {
                             component='a'
                             href='/locations'
                             variant='contained'
-                            sx={{bgcolor: '#0b56a4', fontSize: '.85em', letterSpacing: '.09em', fontWeight: 500, color: 'white', borderRadius: '0px', padding: '6px 25px'}}
+                            sx={{bgcolor: '#0b56a4', fontSize: '.85em', letterSpacing: '.09em', fontWeight: 500, color: 'white', borderRadius: '0px', p: '6px 25px', mb: {
+                                xs: 3,
+                                md: 0
+                            }}}
                         >
                             find your local transblue
                         </Button>
@@ -109,7 +112,13 @@ function Multifamily() {
                             <li><Typography variant='body2' sx={{fontWeight: 400}}>Financing available for qualifying projects</Typography> </li>
                         </ul>
 
-                        <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
+                        <Box sx={{mb: {
+                                xs: 3,
+                                md: 0
+                            }}}
+                        >
+                            <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
+                        </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <img src={luxury} style={{width: '100%'}} alt='Luxury Multifamily Apartment' />
@@ -117,7 +126,10 @@ function Multifamily() {
                 </Grid>
             </Box>
 
-            <Box sx={{width: '95%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+            <Box sx={{width: '95%', pb: '20vh', maxWidth: '2000px', m: '0 auto', textAlign: {
+                xs: 'center',
+                md: 'left'
+            }}}>
                 <Typography variant='subtitle1' sx={{mb: 1, textAlign: 'center'}}>NO MATTER THE PROJECT,</Typography>
                 <Typography variant='h2' sx={{mb: 1, color: '#0b56a4', fontWeight: 500, textAlign: 'center'}}>YOU CAN COUNT ON TRANSBLUE</Typography>
                 <Typography variant='body2' sx={{textAlign: 'center', mb: 6}}>We're a one-stop shop for all your multifamily construction needs</Typography>
