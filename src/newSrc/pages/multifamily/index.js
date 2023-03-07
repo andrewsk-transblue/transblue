@@ -24,12 +24,10 @@ import deck from '../../images/multifamily/deck.jpg';
 import solar from '../../images/commercial/solar2.jpg';
 import ev from '../../images/commercial/ev2.jpg';
 import livingroof from '../../images/commercial/livingroof.jpg';
-
-import './style.css';
-
 import ReactGA from 'react-ga';
 import NavWrapper from '../../components/navbar/navWrapper';
 import { Box, Button, Grid, Typography } from '@mui/material';
+
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
