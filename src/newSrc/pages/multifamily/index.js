@@ -8,7 +8,6 @@ import HoverImages from '../../../components/hoverImages';
 import Snow from '../../../components/snow';
 import ContactModal from '../../../components/contactModal';
 import ThreeCols from '../../../components/threeCol';
-import Hospitality from './hospitality';
 import Footer from '../../components/footer/footer';
 import header2 from '../../images/multifamily/header2.jpg';
 import rooftop from '../../images/multifamily/rooftop.jpeg';
@@ -23,6 +22,10 @@ import solidrock from '../../images/multifamily/solidRock/1.png';
 import solidrock2 from '../../images/multifamily/solidRock/2.png';
 import solidrock3 from '../../images/multifamily/solidRock/3.png';
 import ascent from '../../images/multifamily/solidRock/ascent.png';
+
+import turnkey from '../../images/commercial/icons/turnkey.png';
+import customers from '../../images/commercial/icons/customers.jpg';
+import expert from '../../images/commercial/icons/expert.jpg';
 import './style.css';
 
 import ReactGA from 'react-ga';
@@ -41,6 +44,19 @@ ReactGA.initialize(TRACKING_ID);
 // add recoding navbar for all page tb.com
 // 27 inch screen - fix transblue's mission
 // issue for wednesday - featured projects
+
+const ColComp = (props) => {
+
+    const { icon, title, body } = props;
+
+    return (
+        <Grid item xs={12} md={4}>
+            <img src={icon} alt='' />
+            <Typography variant='subtitle1' sx={{my: 1}}>{title}</Typography>
+            <Typography variant='body2'>{body}</Typography>
+        </Grid>
+    )
+}
 
 function Multifamily() {
     useEffect(() => {
@@ -79,33 +95,56 @@ function Multifamily() {
                 </Grid>
             </Box>
 
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container>
+                    <Grid item xs={12} md={5}>
+                        <Typography variant='h2' sx={{mb: 2, color: '#0b56a4', fontWeight: 500}}>GET AN EDGE OVER YOUR COMPETITORS</Typography>
+                        <ul style={{paddingLeft: '15px', marginBottom: '30px'}}>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}} >Multi-discipline subject matter construction experts</Typography></li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Turnkey installation – all services under 1 roof </Typography></li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>One point of contact no matter how many trades are involved</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Proactive project management</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Collaborative team members and flexible service offerings</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>On time and on budget projects</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Fastest return on proposals in industry</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Financing available for qualifying projects</Typography> </li>
+                        </ul>
+
+                        <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <img src={luxury} style={{width: '100%'}} alt='Luxury Multifamily Apartment' />
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Typography variant='subtitle1' sx={{mb: 1, textAlign: 'center'}}>NO MATTER THE PROJECT,</Typography>
+                <Typography variant='h2' sx={{mb: 1, color: '#0b56a4', fontWeight: 500, textAlign: 'center'}}>YOU CAN COUNT ON TRANSBLUE</Typography>
+                <Typography variant='body2' sx={{textAlign: 'center', mb: 6}}>We're a one-stop shop for all your multifamily construction needs</Typography>
+
+                <Grid container spacing={2}>
+                    <ColComp
+                        icon={turnkey}
+                        title='FLEXIBLE TURNKEY SOLUTION'
+                        body='Our flexible turnkey solution allows you to focus on managing your business rather than managing contractors'
+                    />
+                     <ColComp
+                        icon={customers}
+                        title='CLIENT COLLABORATION'
+                        body='We collaborate with clients to provide industry expertise that parallels the project vision, ensuring the project outcome is methodically designed and brought to completion with a World Class finish'
+                    />
+                     <ColComp
+                        icon={expert}
+                        title='INDUSTRY EXPERTS'
+                        body='Transblue provides industry experts at each turn of the project to ensure that the delivery exceeds your expectations'
+                    />
+                </Grid>
+            </Box>
+
             <div className='multifamily-body'>
                 <div className='wrapper'>
 
-                <div className='container-fluid benefits'>
-                    <div className='row'>
-                    <div className='col-lg-7 order-lg-12'>
-                            <img className='pt-4' src={luxury} alt='Luxury Apartment' />
-                        </div>
-                        <div className='col-lg-5 right-text'>
-                            <h4 className='section-header'>GET AN EDGE OVER YOUR COMPETITORS</h4>
-                            <ul className='section-p'>
-                                <li>Multi-discipline subject matter construction experts</li>
-                                <li>Turnkey installation – all services under 1 roof </li>
-                                <li>One point of contact no matter how many trades are involved</li>
-                                {/* <li>Increase your property value</li> */}
-                                <li>Proactive project management</li>
-                                <li>Collaborative team members and flexible service offerings</li>
-                                <li>On time and on budget projects</li>
-                                <li>Fastest return on proposals in industry</li>
-                                <li>Financing available for qualifying projects</li>
-                            </ul>
-                            <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
-                        </div>
-                        
-                    </div>
-                </div>
-                <Hospitality />
                 {/* <div className='benefits-banner'>
                     <p>INCREASE YOUR PROPERTY VALUE</p>
                     <p>with our World Class services that enhance the beauty of every space </p>
