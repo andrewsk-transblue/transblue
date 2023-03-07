@@ -223,39 +223,94 @@ function Multifamily() {
                 />
             </Box>
 
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={5}>
+                    <Grid item xs={12} md={7}>
+                        <img src={services} alt='' style={{width: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <Typography variant='h2' sx={{mb: 2, color: '#0b56a4', fontWeight: 500}}>MULTIFAMILY SERVICES</Typography>
+                        <ul style={{paddingLeft: '15px', marginBottom: '30px'}}>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Snow and Ice Management</Typography></li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Swimming Pool construction and resurfacing</Typography></li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Asphalt Paving</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Large Landscape installs</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Roofing, siding, painting</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Remodels and refreshes</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Concrete work</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Drainage systems</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Decking, fencing and railing systems</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>Electric Vehicle Charging Systems, Solar Power</Typography> </li>
+                            <li><Typography variant='body2' sx={{fontWeight: 400}}>ESG Service Offerings</Typography> </li>
+                        </ul>
+
+                        <a className='cta' href='/locations'>LOCATIONS</a><ContactModal />
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{pb: '20vh'}}>
+                <Grid container width='95%' maxWidth='2000px' height='100%' m='0 auto'>
+                    <Grid item xs={12} md={7} my='auto' pr={{xs: 0, md: 4}} mb={{xs: 2, md: 0}}>
+                        <Grid container spacing={{ xs: 1, md: 3}}>
+                            <Grid item xs={6}>
+                                <img
+                                    src={`${ascent}?fit=crop&auto=format`}
+                                    srcSet={`${ascent}?&fit=crop&auto=format&dpr=2 2x`}
+                                    alt='Snow Removal'
+                                    style={{width: '100%'}}
+                                />
+                            </Grid>
+                            <Grid item xs={6}>
+                                <img
+                                    src={`${solidrock}?fit=crop&auto=format`}
+                                    srcSet={`${solidrock}?&fit=crop&auto=format&dpr=2 2x`}
+                                    alt='Commercial Asphalt Installation'
+                                    style={{width: '100%'}}
+                                />
+                            </Grid>
+                            <Grid item xs={6}>
+                                <img
+                                    src={`${solidrock2}?fit=crop&auto=format`}
+                                    srcSet={`${solidrock2}?&fit=crop&auto=format&dpr=2 2x`}
+                                    alt='Multifamily Electric Vehicles'
+                                    style={{width: '100%'}}
+                                />
+                            </Grid>
+                            <Grid item xs={6}>
+                                <img
+                                    src={`${solidrock3}?fit=crop&auto=format`}
+                                    srcSet={`${solidrock3}?&fit=crop&auto=format&dpr=2 2x`}
+                                    alt='Commercial Maintenance'
+                                    style={{width: '100%'}}
+                                />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={12} md={5} my='auto' pl={{xs: 0, md: 2}}>
+                        <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
+                            xs: 3,
+                            md: 0
+                        }, fontWeight: 500}}>CREATING A SOLID FOUNDATION FOR YOUTH</Typography>
+                        <Typography variant='body2' sx={{mb: 1}}>
+                            Last year, we completed the Ascent roofing project in Seattle, WA. We partnered with Solid Rock Mission and used the profits from the Ascent project to send over 4000 children and youth from Southern and Eastern Ukraine to summer camps. Over 1000 of these children committed their lives to Christ. These camps were a great opportunity to impact these children with hope and love in a trying time, and more importantly show them God's love.
+                        </Typography>
+                        <Typography variant='body2' sx={{mb: 2}}>
+                            Solid Rock Mission, one of our mBridge partners, reaches into rural and war torn regions of southern and eastern Ukraine, where alcoholism and the breakdown of family is rampant. Children and youth are often victims of abuse or politically radicalized.
+                        </Typography>
+                        <a href='/givesback/solidrock' className='cta'>LEARN MORE</a>
+                    </Grid>
+                </Grid>
+            </Box>
+
             
 
             <div className='multifamily-body'>
                 <div className='wrapper'>
 
-                {/* <div className='benefits-banner'>
-                    <p>INCREASE YOUR PROPERTY VALUE</p>
-                    <p>with our World Class services that enhance the beauty of every space </p>
-                </div> */}
 
                 </div>
                 
-                <div className='wrapper'>
-                    <ServiceList
-                        title='MULTIFAMILY SERVICES'
-                        img={services}
-                        services={[
-                            'Snow and Ice Management',
-                            'Swimming Pool construction and resurfacing',
-                            'Asphalt Paving',
-                            'Large Landscape installs',
-                            'Roofing',
-                            'Siding',
-                            'Painting',
-                            'Remodels and refreshes',
-                            'Concrete work',
-                            'Drainage Systems',
-                            'Decking, fencing and railing systems',
-                            'Electric Vehicle Charging Systems, Solar Power',
-                            'ESG Service Offerings'
-                    ]} />
-               
-                </div>
                 <div className='charity-wrapper bg-light'>
                      <div className='wrapper'>
                          <h1>TRANSBLUE GIVES BACK</h1>
