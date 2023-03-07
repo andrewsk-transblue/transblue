@@ -27,6 +27,7 @@ import './style.css';
 
 import ReactGA from 'react-ga';
 import NavWrapper from '../../components/navbar/navWrapper';
+import { Box, Button, Grid, Typography } from '@mui/material';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -56,22 +57,31 @@ function Multifamily() {
                 <meta name="description" content="Transblue provides several multifamily services to HOAs and CAIs, including paving, snow removal, amenity installation, pools, wall retaining, patio, athletic courts, and everything in between." />
             </Helmet>
             <NavWrapper page='multifamily' parentPage='gc' />
-
             <Header img={header2} title='MULTIFAMILY' subtitle='' name='multifamily' />
             <ContactCta />
+            <Box sx={{width: '90%', py: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container>
+                    <Grid item xs={12} md={6}>
+                        <Typography variant='h2' sx={{fontWeight: 500, mb: 1, letterSpacing: '2.5px'}}>BEAUTIFY YOUR</Typography>
+                        <Typography variant='h2' sx={{fontWeight: 500, mb: 2, letterSpacing: '2.5px'}}>MULTIFAMILY RESIDENCE</Typography>
+                        <Button 
+                            component='a'
+                            href='/locations'
+                            variant='contained'
+                            sx={{bgcolor: '#0b56a4', fontSize: '.85em', letterSpacing: '.09em', fontWeight: 500, color: 'white', borderRadius: '0px', padding: '6px 25px'}}
+                        >
+                            find your local transblue
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Typography variant='body2'>Transblue is proud to offer construction services to multifamily communities. Our multifamily division understands the specific needs of your community and can tailor construction plans accordingly. Primarily, we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</Typography>
+                    </Grid>
+                </Grid>
+            </Box>
+
             <div className='multifamily-body'>
                 <div className='wrapper'>
-                <div className='container-fluid multifamily-about'>
-                    <div className='row'>
-                        <div className='col-lg-6'>
-                            <h1>BEAUTIFY YOUR<br /> MULTIFAMILY RESIDENCE</h1>
-                            <a href='/locations'>FIND YOUR LOCAL TRANSBLUE</a>
-                        </div>
-                        <div className='col-lg-6'>
-                            <p className='section-p pt-4'>Transblue is proud to offer construction services to multifamily communities. Our multifamily division understands the specific needs of your community and can tailor construction plans accordingly. Primarily, we focus on Capital Projects that are pre-designated during annual reserve studies, but we can accomodate a multitude of projects. Give our team of professionals a call today to discuss your project!</p>
-                        </div>
-                    </div>
-                </div>
+
                 <div className='container-fluid benefits'>
                     <div className='row'>
                     <div className='col-lg-7 order-lg-12'>

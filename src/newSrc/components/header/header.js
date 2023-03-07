@@ -3,6 +3,8 @@ import FranchiseNav from '../../../components/franchiseNav';
 import './header.css';
 import military from '../../../images/military.jpg';
 import militarySmall from '../../../images/military-small.png';
+import { Typography } from '@mui/material';
+import CenteredDiv from '../centeredDiv/centeredDiv';
 
 function Header(props) {
     const { name, region, title, subtitle, franchise } = props;
@@ -18,12 +20,18 @@ function Header(props) {
         <Fragment>
             <FranchiseNav />
             <div className='header-wrapper' name={name} region={region}>
-                {props.name !== 'locations' && <div className='overlay'></div>}
+                {/* {props.name !== 'locations' && <div className='overlay'></div>}
                 <div className={franchise === true 
                     ? 'header-text franchise-header' 
                     : 'header-text'}>{title}
                     <div className='header-subtext'>{subtitle}</div>
-                </div>
+
+                    
+                </div> */}
+
+                <CenteredDiv>
+                    <Typography variant='h1' sx={{color: 'white'}}>{title}</Typography>
+                </CenteredDiv>
             </div>
             {screenSize === 'large'
                 ?   <a href="https://militarymakeover.tv/opportunities-for-building-a-better-america/" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
