@@ -17,30 +17,28 @@ function Brands() {
                 xs: '6vh',
                 md: '10vh'
             }}}>BRANDS WE WORK WITH</Typography>
-            <Grid container width='95vw' maxWidth='2000px' m='0 auto'>
-                <Grid item xs={6} md={3} my='auto'>
+            <Grid container width='75vw' maxWidth='2000px' m='0 auto'>
+                <Grid item xs={6} md={4} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
                         <img src={seveneleven} alt='7 Eleven Brand Logo' style={{width: '90%', maxWidth: '200px'}} />
                     </Box>
                 </Grid>
-                <Grid item xs={6} md={3} my='auto'>
+                <Grid item xs={6} md={4} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
                         <img src={boeing} alt='Boeing Logo' style={{width: '90%', maxWidth: '200px'}} />
                     </Box>
                 </Grid>
-                <Grid item xs={6} md={3} my='auto'>
+                <Grid item xs={6} md={4} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
                         <img src={cbre} alt='CBRE Logo' style={{width: '90%', maxWidth: '200px'}} />
                     </Box>
                 </Grid>
-                <Grid item xs={6} md={3} my='auto'>
+                {/* <Grid item xs={6} md={3} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                        <img src={lowes} alt='Lowes Logo' style={{width: '90%', maxWidth: '200px'}} />
-                    </Box>
 
-                </Grid>
-                <Grid item md={1}></Grid>
-                <Grid item xs={6} md={3} my='auto'>
+                    </Box>
+                </Grid> */}
+                <Grid item xs={6} md={4} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
                         <img src={starbucks} alt='Starbucks Logo' style={{width: '90%', maxWwidth: '200px'}} />
                     </Box>
@@ -51,12 +49,11 @@ function Brands() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={6} md={3} my='auto'>
+                <Grid item xs={6} md={4} my='auto'>
                     <Box sx={{display: 'flex', justifyContent: 'center'}}>
                         <img src={walmart} alt='Walmart Logo' style={{width: '90%', maxWidth: '200px'}} />
                     </Box>
                 </Grid>
-                <Grid item md={1}></Grid>
             </Grid>
             <Box sx={{display: 'flex', justifyContent: 'center', mt: '6vh'}}>
                 <Button
