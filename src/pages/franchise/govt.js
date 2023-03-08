@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../../components/section';
-import govtFence from '../../images/government/govtfence.jpeg'
+import govtFence from '../../newSrc/images/government/govtfence.jpeg'
 
 function Govt(props) {
     return(

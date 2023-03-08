@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../../../components/header/index';
 import ThreeCols from '../../../components/threeCol';
-import FirstResponders from '../../../components/government/firstResponders';
 import CTA from '../../components/cta/cta';
 import Footer from '../../components/footer/footer';
 import govt from '../../images/government/govtseattle.jpg';
@@ -13,7 +12,7 @@ import ev from '../../images/government/ev.jpg';
 import lightrail from '../../images/government/lightrail.jpg';
 import govtBenefits from '../../images/government/govt.jpg';
 import ContactModal from '../../../components/contactModal';
-import firstresponder from '../../../images/government/firstresponder.jpg';
+import firstresponder from '../../images/government/firstresponder.jpg';
 //import ev from '../../images/government/evCropped.jpg';
 import './style.css';
 
@@ -101,7 +100,7 @@ function Government() {
                     />
                 </Box>
 
-                <Box sx={{width: '90%', py: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
                     <Grid container spacing={4}>
                         <Grid item xs={12} md={5}>
                             <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>GOVERNMENT SNOW &amp; ICE MANAGEMENT</Typography>
@@ -143,7 +142,7 @@ function Government() {
                 </Box>
 
                 <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
-                    <Typography variant='h1' sx={{textAlign: 'center', mb: 8, fontWeight: 500, color: '#0b56a4'}}>TRANSBLUE GIVES GBACK</Typography>
+                    {/* <Typography variant='h1' sx={{textAlign: 'center', mb: 8, fontWeight: 500, color: '#0b56a4'}}>TRANSBLUE GIVES GBACK</Typography> */}
                     <Grid container spacing={5}>
                         <Grid item xs={12} md={6}>
                             <img src={firstresponder} style={{width: '100%'}} alt='' />

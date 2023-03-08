@@ -23,7 +23,7 @@
 }
 
 .header-wrapper[name='government'] {
-    background-image: url('../../../images/government/govtseattle.jpg');
+    background-image: url('../../../newSrc/images/government/govtseattle.jpg');
     background-size: cover;
     background-position: center center;
 }
