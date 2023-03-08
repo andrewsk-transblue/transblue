@@ -12,6 +12,7 @@ import './style.css';
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 import NavWrapper from '../../newSrc/components/navbar/navWrapper';
+import { Box } from '@mui/material';
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 
@@ -118,7 +119,9 @@ function Subcontractor() {
 
                 <Growing scrollToApply={scrollToApply} />
                 <Respect scrollToApply={scrollToApply} />
-                <iframe autoplay id='subcontractor' src="https://www.youtube.com/embed/HUzz0oQMdiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <Box sx={{display: 'flex', justifyContent: 'center'}}>
+                    <iframe autoplay id='subcontractor' src="https://www.youtube.com/embed/HUzz0oQMdiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </Box>
                 <Tools />
                 <div ref={applyRef}></div>
                 <div className='apply-wrapper'>
