@@ -14,20 +14,6 @@ import Footer from "../../components/footer/footer";
 
 const cardVariants = {
     hidden: {
-        y: 0
-    },
-    visible: {
-        y: [200, 0],
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 0.8
-        }
-    }
-};
-
-const titleVariants = {
-    hidden: {
         x: -200,
         opacity: 0
     },
@@ -36,24 +22,57 @@ const titleVariants = {
         transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8,
-            delay: .2
+            duration: 0.8
         },
         opacity: [0, 1]
     }
 };
 
-const overlayVariants = {
+const titleVariants = {
     hidden: {
-        opacity: 0,
-        y: 0
+        x: 400,
+        opacity: 0
     },
     visible: {
-        y: [200, 0],
+        x: [400, 0],
         transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8
+            duration: 0.8,
+            delay: .5
+        },
+        opacity: [0, 1]
+    }
+};
+
+const bodyVariants = {
+    hidden: {
+        x: 400,
+        opacity: 0
+    },
+    visible: {
+        x: [400, 0],
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8,
+            delay: 1
+        },
+        opacity: [0, 1]
+    }
+}
+
+const overlayVariants = {
+    hidden: {
+        opacity: 0,
+        x: -200
+    },
+    visible: {
+        x: [-200, 0],
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8,
         }
     }
 }
@@ -69,23 +88,25 @@ function Card({ img }) {
     }, [control, inView])
   
     return (
-        <div style={{position: 'relative'}}>
+        <Box sx={{position: 'relative'}}>
             <motion.div
+                layout='position'
                 className='project-card'
-                variants={cardVariants} 
+                variants={cardVariants}s
                 ref={ref}
                 animate={control}
             >
                 <img src={img} style={{width: '100%'}} />
             </motion.div>
             <motion.div
+                layout='position'
                 className='card-overlay'
                 initial={{opacity: 0}}
                 whileHover={{opacity: 1}}
                 animate={control}
                 variants={overlayVariants}
             />
-        </div>
+        </Box>
     );
 }
 
@@ -105,7 +126,28 @@ function Title({ title }) {
             ref={ref}
             animate={control}
         >
-            <Typography variant='h2' sx={{mt: 3, mb: 5, fontWeight: 500, letterSpacing: '.03em'}}>{title}</Typography>
+            <Typography variant='h2' sx={{fontWeight: 500, letterSpacing: '.03em', color: 'white'}}>{title}</Typography>
+        </motion.div>
+    )
+}
+
+function Body({ body }) {
+    const [ref, inView] = useInView();
+    const control = useAnimation();
+
+    useEffect(() => {
+        if(inView) {
+            control.start('visible');
+        }
+    }, [control, inView]);
+
+    return(
+        <motion.div 
+            variants={bodyVariants} 
+            ref={ref}
+            animate={control}
+        >
+            <Typography variant='body2' sx={{my: 3, letterSpacing: '.03em', color: 'whitesmoke'}}>{body}</Typography>
         </motion.div>
     )
 }
@@ -116,10 +158,44 @@ function Featured2() {
             <Header title='FEATURED PROJECTS' name='featured' />
             <NavWrapper />
             
-            <Box sx={{width: '100%', height: '100%', minHeight: '100vh', background: 'rgb(0,0,0)', background: 'linear-gradient(0deg, rgba(0,0,0,1) 34%, rgba(65,65,65,1) 90%)'}}>
-
+            <Box sx={{width: '100%', height: '100%', minHeight: '100vh', pt: '20vh', background: 'rgb(0,0,0)', background: 'linear-gradient(0deg, rgba(0,0,0,1) 34%, rgba(65,65,65,1) 90%)', overflowX: 'hidden'}}>
+                <Box sx={{width: '90vw', m: '0 auto'}}>
+                    <Box sx={{minHeight: '100vh'}}>
+                        <Grid container spacing={8}>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Card img={asphalt3} />
+                            </Grid>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Title title='5 STAR ASPHALT REFRESHMENT' />
+                                <Body body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis.' />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                    <Box sx={{minHeight: '100vh'}}>
+                        <Grid container spacing={8}>
+                        
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Card img={roofing3} />
+                            </Grid>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Title title='ROOFING DONE RIGHT' />
+                                <Body body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis.' />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                    <Box sx={{minHeight: '100vh'}}>
+                        <Grid container spacing={8}>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Card img={urban4} />
+                            </Grid>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Title title='URBAN OASIS' />
+                                <Body body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis.' />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Box>
             </Box>
-
             <Footer  />
         </>
     )
