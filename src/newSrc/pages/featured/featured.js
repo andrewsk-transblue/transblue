@@ -42,6 +42,21 @@ const titleVariants = {
     }
 };
 
+const overlayVariants = {
+    hidden: {
+        opacity: 0,
+        y: 0
+    },
+    visible: {
+        y: [200, 0],
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8
+        }
+    }
+}
+
 function Card({ img }) {
     const [ref, inView] = useInView();
     const control = useAnimation();
@@ -53,17 +68,25 @@ function Card({ img }) {
     }, [control, inView])
   
     return (
-        <motion.div 
-            className='project-card'
-            variants={cardVariants} 
-            ref={ref}
-            animate={control}
-            // src={img}
-            // style={{width: '100%'}} 
-            whileHover={{ scale: 1.02 }}
-        >
-            <img src={img} style={{width: '100%', overflow: 'hidden'}} />
-        </motion.div>
+        <div style={{position: 'relative'}}>
+            <motion.div 
+                className='project-card'
+                variants={cardVariants} 
+                ref={ref}
+                animate={control}
+                whileHover={{ scale: 1.02 }}
+            >
+                
+                <img src={img} style={{width: '100%'}} />
+            </motion.div>
+            <motion.div
+                className='card-overlay'
+                initial={{opacity: 0}}
+                whileHover={{opacity: 1}}
+                animate={control}
+                variants={overlayVariants}
+            />
+        </div>
     );
 }
 
@@ -86,7 +109,6 @@ function Title({ title }) {
             <Typography variant='h2' sx={{mt: 3, mb: 5, fontWeight: 500, letterSpacing: '.03em'}}>{title}</Typography>
         </motion.div>
     )
-  
 }
 
 function Featured() {
