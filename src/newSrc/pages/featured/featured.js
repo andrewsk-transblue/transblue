@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "../../components/header/header";
+import Header from "../../../components/header/index";
+import NavWrapper from "../../components/navbar/navWrapper";
 import asphalt3 from '../../images/featured/asphalt3.jpg';
 import { motion, useAnimation } from 'framer-motion/dist/framer-motion';
 import { useInView } from "react-intersection-observer";
@@ -92,6 +93,7 @@ function Featured() {
     return (
         <>
             <Header title='FEATURED PROJECTS' name='featured' />
+            <NavWrapper />
             
             <Box sx={{width: '90vw', maxWidth: '2000px', m: '0 auto', py: '20vh'}}>
                 <Grid container spacing={5}>
