@@ -4,6 +4,11 @@ import asphalt3 from '../../images/featured/asphalt3.jpg';
 import { motion, useAnimation } from 'framer-motion/dist/framer-motion';
 import { useInView } from "react-intersection-observer";
 import { Box, Grid, Typography } from "@mui/material";
+import roofing3 from '../../images/featured/roofing3.jpg';
+import urban4 from '../../images/featured/urban4.jpg';
+import transformation3 from '../../images/featured/transformation3.jpg';
+import trendy3 from '../../images/featured/trendy3.jpg';
+import './style.css';
 
 const cardVariants = {
     hidden: {
@@ -48,31 +53,16 @@ function Card({ img }) {
   
     return (
         <motion.div 
+            className='project-card'
             variants={cardVariants} 
             ref={ref}
             animate={control}
+            // src={img}
+            // style={{width: '100%'}} 
+            whileHover={{ scale: 1.02 }}
         >
-            <img src={asphalt3} style={{width: '100%'}} />
+            <img src={img} style={{width: '100%', overflow: 'hidden'}} />
         </motion.div>
-        // <Box sx={{height: '100vh'}}>
-           
-            // <motion.div
-            //     className="card-container"
-            //     initial="hidden"
-            //     whileInView="visible"
-            //     viewport={{ once: true, amount: 0.8 }}
-            //     animate='visible'
-            // >
-            //     <motion.div 
-            //         className="card" 
-            //         variants={cardVariants} 
-            //         ref={ref}
-            //         animate={control}
-            //     >
-            //         <img src={asphalt3} style={{width: '100%'}} />
-            //     </motion.div>
-            // </motion.div>
-    //   </Box>
     );
 }
 
@@ -92,7 +82,7 @@ function Title({ title }) {
             ref={ref}
             animate={control}
         >
-            <Typography variant='h2' sx={{mt: 3, mb: 5}}>TEST TITLE</Typography>
+            <Typography variant='h2' sx={{mt: 3, mb: 5, fontWeight: 500, letterSpacing: '.03em'}}>{title}</Typography>
         </motion.div>
     )
   
@@ -106,20 +96,24 @@ function Featured() {
             <Box sx={{width: '90vw', maxWidth: '2000px', m: '0 auto', py: '20vh'}}>
                 <Grid container spacing={5}>
                     <Grid item xs={6}>
-                        <Card />
-                        <Title />
+                        <Card img={asphalt3} />
+                        <Title title='5 STAR ASPHALT REFRESHMENT' />
                     </Grid>
                     <Grid item xs={6}>
-                        <Card />
-                        <Title />
+                        <Card img={roofing3} />
+                        <Title title='ROOFING DONE RIGHT' />
                     </Grid>
                     <Grid item xs={6}>
-                        <Card />
-                        <Title />
+                        <Card img={urban4} />
+                        <Title title='URBAN OASIS' />
                     </Grid>
                     <Grid item xs={6}>
-                        <Card />
-                        <Title />
+                        <Card img={transformation3} />
+                        <Title title='COMPLETE TRANSFORMATION' />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Card img={trendy3} />
+                        <Title title='A TRENDY LANDSCAPE' />
                     </Grid>
                 </Grid>
             </Box>
