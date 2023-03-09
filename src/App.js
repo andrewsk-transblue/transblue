@@ -18,7 +18,7 @@ const Government = lazy(() => import ('./newSrc/pages/government/government'));
 const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/subcontractor/index'));
-const Featured = lazy(() => import('./pages/featured'));
+const Featured = lazy(() => import('./newSrc/pages/featured/featured'));
 const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
