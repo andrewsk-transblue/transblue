@@ -19,6 +19,9 @@ const Locations = lazy(() => import('./pages/locations/index'));
 const Franchise = lazy(() => import('./pages/franchise/franchise'));
 const Subcontractor = lazy(() => import('./pages/subcontractor/index'));
 const Featured = lazy(() => import('./newSrc/pages/featured/featured'));
+const Featured2 = lazy(() => import('./newSrc/pages/featured/featured2'));
+const Featured3 = lazy(() => import('./newSrc/pages/featured/featured3'));
+
 const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
@@ -167,6 +170,9 @@ const mounted = async() => {
                 <Locations locations={easybaseData} />
               </Route>}
               <Route exact path='/featured' component={Featured} />
+              <Route exact path='/featured2' component={Featured2} />
+              <Route exact path='/featured3' component={Featured3} />
+
               <Route exact path='/featured-projects' component={Featured} />
               <Route exact path='/privacy' component={Privacy} />
               <Route exact path='/givesback/:charity' component={GivesBack} />

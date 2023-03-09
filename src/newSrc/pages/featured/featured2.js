@@ -10,6 +10,7 @@ import urban4 from '../../images/featured/urban4.jpg';
 import transformation3 from '../../images/featured/transformation3.jpg';
 import trendy3 from '../../images/featured/trendy3.jpg';
 import './style.css';
+import Footer from "../../components/footer/footer";
 
 const cardVariants = {
     hidden: {
@@ -69,13 +70,12 @@ function Card({ img }) {
   
     return (
         <div style={{position: 'relative'}}>
-            <motion.div 
+            <motion.div
                 className='project-card'
                 variants={cardVariants} 
                 ref={ref}
                 animate={control}
             >
-                
                 <img src={img} style={{width: '100%'}} />
             </motion.div>
             <motion.div
@@ -110,39 +110,19 @@ function Title({ title }) {
     )
 }
 
-function Featured() {
+function Featured2() {
     return (
         <>
             <Header title='FEATURED PROJECTS' name='featured' />
             <NavWrapper />
             
-            <Box sx={{width: '90vw', maxWidth: '2000px', m: '0 auto', py: '20vh'}}>
-                <Grid container spacing={5}>
-                    <Grid item xs={6}>
-                        <Card img={asphalt3} />
-                        <Title title='5 STAR ASPHALT REFRESHMENT' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={roofing3} />
-                        <Title title='ROOFING DONE RIGHT' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={urban4} />
-                        <Title title='URBAN OASIS' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={transformation3} />
-                        <Title title='COMPLETE TRANSFORMATION' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={trendy3} />
-                        <Title title='A TRENDY LANDSCAPE' />
-                    </Grid>
-                </Grid>
+            <Box sx={{width: '100%', height: '100%', minHeight: '100vh', background: 'rgb(0,0,0)', background: 'linear-gradient(0deg, rgba(0,0,0,1) 34%, rgba(65,65,65,1) 90%)'}}>
+
             </Box>
+
+            <Footer  />
         </>
     )
-
 }
 
-export default Featured;
+export default Featured2;

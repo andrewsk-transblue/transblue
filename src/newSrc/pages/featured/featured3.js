@@ -108,41 +108,19 @@ function Title({ title }) {
             <Typography variant='h2' sx={{mt: 3, mb: 5, fontWeight: 500, letterSpacing: '.03em'}}>{title}</Typography>
         </motion.div>
     )
-}
+};
 
-function Featured() {
+function Featured3() {
     return (
         <>
             <Header title='FEATURED PROJECTS' name='featured' />
             <NavWrapper />
-            
-            <Box sx={{width: '90vw', maxWidth: '2000px', m: '0 auto', py: '20vh'}}>
-                <Grid container spacing={5}>
-                    <Grid item xs={6}>
-                        <Card img={asphalt3} />
-                        <Title title='5 STAR ASPHALT REFRESHMENT' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={roofing3} />
-                        <Title title='ROOFING DONE RIGHT' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={urban4} />
-                        <Title title='URBAN OASIS' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={transformation3} />
-                        <Title title='COMPLETE TRANSFORMATION' />
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Card img={trendy3} />
-                        <Title title='A TRENDY LANDSCAPE' />
-                    </Grid>
-                </Grid>
+            <Box sx={{width: '90vw', m: '0 auto', py: '20vh'}}>
+
             </Box>
         </>
     )
 
 }
 
-export default Featured;
+export default Featured3;
