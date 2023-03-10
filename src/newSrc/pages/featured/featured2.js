@@ -119,6 +119,22 @@ const bodyVariants = {
     }
 };
 
+const buttonVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        x: [400, 0],
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8,
+            delay: 1.3
+        },
+        opacity: [0, 1]
+    }
+};
+
 const overlayVariants = {
     hidden: {
         opacity: 0,
@@ -190,7 +206,7 @@ function Title({ title }) {
     )
 };
 
-function Body({ body, selectProject, viewPictures }) {
+function Body({ body }) {
     const [ref, inView] = useInView();
     const control = useAnimation();
 
@@ -208,7 +224,27 @@ function Body({ body, selectProject, viewPictures }) {
             initial={{opacity: 0}}
         >
             <Typography variant='body2' sx={{my: 3, letterSpacing: '.03em', color: 'whitesmoke'}}>{body}</Typography>
+        </motion.div>
+    )
+};
 
+function Buttons({ selectProject, viewPictures }) {
+    const [ref, inView] = useInView();
+    const control = useAnimation();
+
+    useEffect(() => {
+        if(inView) {
+            control.start('visible');
+        }
+    }, [control, inView]);
+
+    return (
+        <motion.div 
+            variants={buttonVariants} 
+            ref={ref}
+            animate={control}
+            initial={{opacity: 0}}
+        >
             <IconButton
                 onClick={selectProject}
             >
@@ -221,7 +257,7 @@ function Body({ body, selectProject, viewPictures }) {
             </IconButton>
         </motion.div>
     )
-};
+}
 
 function Featured2() {
     const [open, setOpen] = useState(false);
@@ -269,6 +305,8 @@ function Featured2() {
                                         <Title title={project.name} />
                                         <Body 
                                             body={project.body}
+                                        />
+                                        <Buttons
                                             selectProject={() => {
                                                 setActiveProject(project);
                                                 setOpen(true);
