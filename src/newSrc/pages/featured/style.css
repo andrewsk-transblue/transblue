@@ -12,5 +12,5 @@
 };
 
 .react-slideshow-fadezoom-wrapper {
-    max-height: 90vh;
+    max-height: 90vh !important;
 }

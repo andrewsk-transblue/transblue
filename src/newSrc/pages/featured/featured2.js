@@ -33,6 +33,9 @@ import urban5 from '../../images/featured/urban5.jpg';
 import trendy1 from '../../images/featured/trendy1.jpg';
 import trendy2 from '../../images/featured/trendy2.jpg';
 
+import forward from '../../../images/residential/forward.png';
+import back from '../../../images/residential/back.png';
+
 const projects = [
     {
         name: '5 STAR ASPHALT REFRESHMENT',
@@ -257,6 +260,17 @@ function Buttons({ selectProject, viewPictures }) {
             </IconButton>
         </motion.div>
     )
+};
+
+const buttonStyle = {
+    width: "30px",
+    background: 'none',
+    border: '0px'
+};
+
+const properties = {
+    prevArrow: <button style={{ ...buttonStyle }}><img src={back} /></button>,
+    nextArrow: <button style={{ ...buttonStyle, right: '70px' }}><img src={forward} /></button>
 }
 
 function Featured2() {
@@ -279,10 +293,10 @@ function Featured2() {
                 onClose={() => setPicturesOpen(false)}
             >
                 <Box sx={{...style, width: '90vw', height: '90vh', overflowY: 'hidden'}}>
-                    <Zoom scale={1.4} indicators={true}>
+                    <Zoom scale={1.4} {...properties} >
                         {activeProject?.images?.map((each, index) => (
-                            <div key={index} style={{ width: "100%" }}>
-                                <img style={{width: '100%'}} alt="Slide Image" src={each} />
+                            <div key={index} style={{ width: "100%", height: '100%'}}>
+                                <img style={{width: '100%', height: '100%'}} alt="Slide Image" src={each} />
                             </div>
                         ))}
                     </Zoom>
