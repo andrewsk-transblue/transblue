@@ -293,13 +293,16 @@ function Featured2() {
                 onClose={() => setPicturesOpen(false)}
             >
                 <Box sx={{...style, width: '90vw', height: '90vh', overflowY: 'hidden'}}>
-                    <Zoom scale={1.4} {...properties} >
-                        {activeProject?.images?.map((each, index) => (
-                            <div key={index} style={{ width: "100%", height: '100%'}}>
-                                <img style={{width: '100%', height: '100%'}} alt="Slide Image" src={each} />
-                            </div>
-                        ))}
-                    </Zoom>
+                    <Box sx={{position: 'relative', width: '100%', height: '100%'}}>
+                        <Typography variant='h2' sx={{color: 'white', bgcolor: 'rgba(0,0,0,.5)', position: 'absolute', width: '100%', top: 0, left: 0, p: 3, textAlign: 'center', zIndex: 50}}>{activeProject?.name}</Typography>
+                        <Zoom scale={1.4} {...properties}>
+                            {activeProject?.images?.map((each, index) => (
+                                <div key={index} style={{ width: "100%", height: '100%'}}>
+                                    <img style={{width: '100%', height: '100%'}} alt="Slide Image" src={each} />
+                                </div>
+                            ))}
+                        </Zoom>
+                    </Box>
                 </Box>
             </Modal>
             <Header title='FEATURED PROJECTS' name='featured' />
