@@ -107,10 +107,10 @@ function Title({ title }) {
         >
             <Typography variant='h2' sx={{mt: 3, mb: 5, fontWeight: 500, letterSpacing: '.03em'}}>{title}</Typography>
         </motion.div>
-    )
+    );
 };
 
-function Featured3() {
+function Featured4() {
     return (
         <>
             <Header title='FEATURED PROJECTS' name='featured' />
@@ -122,4 +122,4 @@ function Featured3() {
     )
 }
 
-export default Featured3;
+export default Featured4;
