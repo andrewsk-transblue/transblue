@@ -14,7 +14,6 @@ import Footer from "../../components/footer/footer";
 
 const cardVariants = {
     hidden: {
-        x: -200,
         opacity: 0
     },
     visible: {
@@ -30,7 +29,6 @@ const cardVariants = {
 
 const titleVariants = {
     hidden: {
-        x: 400,
         opacity: 0
     },
     visible: {
@@ -39,7 +37,6 @@ const titleVariants = {
             type: "spring",
             bounce: 0.4,
             duration: 0.8,
-            delay: .5
         },
         opacity: [0, 1]
     }
@@ -47,7 +44,6 @@ const titleVariants = {
 
 const bodyVariants = {
     hidden: {
-        x: 400,
         opacity: 0
     },
     visible: {
@@ -56,16 +52,14 @@ const bodyVariants = {
             type: "spring",
             bounce: 0.4,
             duration: 0.8,
-            delay: 1
         },
         opacity: [0, 1]
     }
-}
+};
 
 const overlayVariants = {
     hidden: {
         opacity: 0,
-        x: -200
     },
     visible: {
         x: [-200, 0],
@@ -75,7 +69,7 @@ const overlayVariants = {
             duration: 0.8,
         }
     }
-}
+};
 
 function Card({ img }) {
     const [ref, inView] = useInView();
@@ -85,7 +79,7 @@ function Card({ img }) {
         if(inView) {
             control.start('visible');
         }
-    }, [control, inView])
+    }, [control, inView]);
   
     return (
         <Box sx={{position: 'relative'}}>
@@ -129,7 +123,7 @@ function Title({ title }) {
             <Typography variant='h2' sx={{fontWeight: 500, letterSpacing: '.03em', color: 'white'}}>{title}</Typography>
         </motion.div>
     )
-}
+};
 
 function Body({ body }) {
     const [ref, inView] = useInView();
@@ -150,7 +144,7 @@ function Body({ body }) {
             <Typography variant='body2' sx={{my: 3, letterSpacing: '.03em', color: 'whitesmoke'}}>{body}</Typography>
         </motion.div>
     )
-}
+};
 
 function Featured2() {
     return (
@@ -194,11 +188,33 @@ function Featured2() {
                             </Grid>
                         </Grid>
                     </Box>
+                    <Box sx={{minHeight: '100vh'}}>
+                        <Grid container spacing={8}>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Card img={transformation3} />
+                            </Grid>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Title title='COMPLETE TRANSFORMATION' />
+                                <Body body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis.' />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                    <Box sx={{minHeight: '100vh'}}>
+                        <Grid container spacing={8}>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Card img={trendy3} />
+                            </Grid>
+                            <Grid item xs={12} md={6} my='auto'>
+                                <Title title='A TRENDY LANDSCAPE' />
+                                <Body body='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis.' />
+                            </Grid>
+                        </Grid>
+                    </Box>
                 </Box>
             </Box>
             <Footer  />
         </>
-    )
-}
+    );
+};
 
 export default Featured2;
