@@ -9,7 +9,7 @@ function Mission() {
             <Grid container>
                 <Grid item xs={12} md={2} my='auto'>
                     <Box sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-                        <img src={logo} alt='Transblue Logo' style={{width: '70%', maxWidth: '200px'}} />
+                        <img src={logo} alt='Transblue Logo' style={{width: '70%', maxWidth: '250px'}} />
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={4} my='auto'>
@@ -26,7 +26,7 @@ function Mission() {
                 </Grid>
                 <Grid item xs={12} md={6} my='auto' sx={{pl: {
                     xs: 2,
-                    md: 8
+                    md: 4
                 }, pr: {
                     xs: 2,
                     md: 0

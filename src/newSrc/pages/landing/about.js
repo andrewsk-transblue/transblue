@@ -54,11 +54,10 @@ function About() {
                     <Typography variant='body2' sx={{mb: 1}}>
                         At Transblue, we have been in the business for over 17 years. We love helping people and we love providing an incredible customer experience for every one of our clients. We never cut corners and see every project through to the end, whether it's landscaping, asphalt or snow services.
                     </Typography>
-                    <Typography variant='body2'>
+                    <Typography variant='body2' sx={{mb: 0}}>
                         Our passion is to build beautiful projects and we believe in treating your property like ours. We truly care about your project and doing a great job for you. We listen, collaborate, and design. This enables us to turn your project and dream into a reality. Our goal is to always exceed expectations of our customers!
                     </Typography>
                 </Grid>
-                <Grid item xs={1}></Grid>
             </Grid>
         </Box>
     )

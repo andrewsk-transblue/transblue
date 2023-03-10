@@ -42,7 +42,7 @@ function App() {
           fontSize: '6.3vw'
         },
         '@media (min-width: 650px)': {
-          fontSize: '4.5vw'
+          fontSize: '4vw'
         }
       },
       h2: {
