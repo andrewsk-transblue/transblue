@@ -6,15 +6,6 @@ import militarySmall from '../../images/military-small.png';
 import Fade from 'react-reveal/Fade';
 
 function Header(props) {
-    const [screenSize, setScreenSize] = useState('large');
-
-    useEffect(() => {
-        if(window.innerWidth < 600) {
-            setScreenSize('small');
-        }
-        console.log(window.innerWidth)
-    }, [])
-
     return(
         <Fragment>
             <FranchiseNav />
@@ -26,10 +17,6 @@ function Header(props) {
                     <div className='header-subtext'>{props.subtitle}</div>
                 </div>
             </div>
-            {screenSize === 'large'
-                ?   <a href="https://militarymakeover.tv/opportunities-for-building-a-better-america/" target="_blank" rel="noopener"><img src={military} alt="Military Makeover on Lifetime" width="100%" /></a>
-                :   <a href="https://militarymakeover.tv/opportunities-for-building-a-better-america/" target="_blank" rel="noopener"><img src={militarySmall} alt="Military Makeover on Lifetime" width="100%" /></a>
-            }
         </Fragment>
     )
 }

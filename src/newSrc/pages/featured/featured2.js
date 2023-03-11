@@ -309,7 +309,6 @@ function Featured2() {
             <NavWrapper />
             
             <Box sx={{width: '100%', height: '100%', minHeight: '100vh', pt: '20vh', background: 'rgb(0,0,0)', background: 'linear-gradient(0deg, rgba(30,30,30) 34%, rgba(65,65,65,1) 90%)', overflowX: 'hidden'}}>
-                
                 <Box sx={{width: '90vw', m: '0 auto', maxWidth: '2000px'}}>
                     {projects.map(project => {
                         return (
