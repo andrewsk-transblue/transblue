@@ -4,14 +4,14 @@ import NavWrapper from "../../components/navbar/navWrapper";
 import asphalt3 from '../../images/featured/asphalt3.jpg';
 import { motion, useAnimation } from 'framer-motion/dist/framer-motion';
 import { useInView } from "react-intersection-observer";
-import { Box, Button, Divider, Grid, IconButton, Modal, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Modal, Typography } from "@mui/material";
 import roofing3 from '../../images/featured/roofing3.jpg';
 import urban4 from '../../images/featured/urban4.jpg';
 import transformation3 from '../../images/featured/transformation3.jpg';
 import trendy3 from '../../images/featured/trendy3.jpg';
 import './style.css';
 import Footer from "../../components/footer/footer";
-import { Filter, Gradient, PlayCircleOutline } from "@mui/icons-material";
+import { Filter, PlayCircleOutline } from "@mui/icons-material";
 
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -202,6 +202,7 @@ function Title({ title }) {
             ref={ref}
             animate={control}
             initial={{opacity: 0}}
+            viewport={{ once: true }}
         >
             
             <Typography variant='h2' sx={{fontWeight: 500, letterSpacing: '.03em', color: 'white'}}>{title}</Typography>
@@ -227,6 +228,7 @@ function Body({ body }) {
             ref={ref}
             animate={control}
             initial={{opacity: 0}}
+            viewport={{ once: true }}
         >
             <Typography variant='body2' sx={{my: 3, letterSpacing: '.03em', color: 'whitesmoke'}}>{body}</Typography>
         </motion.div>
@@ -250,18 +252,23 @@ function Buttons({ selectProject, viewPictures }) {
             animate={control}
             initial={{opacity: 0}}
         >
-            <IconButton
-                onClick={selectProject}
-            >
-                 <svg width={0} height={0}>
-                    <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
-                        <stop offset={0} stopColor="#ffb000" />
-                        <stop offset={.5} stopColor="#ed6a22" />
-                        <stop offset={1} stopColor='#fd6f01' />
-                    </linearGradient>
-                </svg>
-                <PlayCircleOutline sx={{fill: 'url(#linearColors)'}} fontSize='large' />
-            </IconButton>
+            
+                <IconButton
+                    onClick={selectProject}
+                >
+                    <svg width={0} height={0}>
+                        <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                            <stop offset={0} stopColor="#ffb000" />
+                            <stop offset={.5} stopColor="#ed6a22" />
+                            <stop offset={1} stopColor='#fd6f01' />
+                        </linearGradient>
+                    </svg>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                    >
+                        <PlayCircleOutline sx={{fill: 'url(#linearColors)'}} fontSize='large' />
+                    </motion.div>
+                </IconButton>
             <IconButton
                 onClick={viewPictures}
             >
@@ -272,7 +279,11 @@ function Buttons({ selectProject, viewPictures }) {
                         <stop offset={1} stopColor="#ffb000" />
                     </linearGradient>
                 </svg>
-                <Filter sx={{fill: 'url(#linearColors)'}} fontSize='large' />
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                >
+                    <Filter sx={{fill: 'url(#linearColors)'}} fontSize='large' />
+                </motion.div>
             </IconButton>
         </motion.div>
     )
