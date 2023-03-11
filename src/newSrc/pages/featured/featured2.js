@@ -11,7 +11,7 @@ import transformation3 from '../../images/featured/transformation3.jpg';
 import trendy3 from '../../images/featured/trendy3.jpg';
 import './style.css';
 import Footer from "../../components/footer/footer";
-import { Filter, PlayCircleOutline } from "@mui/icons-material";
+import { Filter, Gradient, PlayCircleOutline } from "@mui/icons-material";
 
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -203,8 +203,10 @@ function Title({ title }) {
             animate={control}
             initial={{opacity: 0}}
         >
+            
             <Typography variant='h2' sx={{fontWeight: 500, letterSpacing: '.03em', color: 'white'}}>{title}</Typography>
-            <Divider sx={{width: '20%', bgcolor: '#ed6a22', mt: 2, border: '1px solid #ed6a22'}} />
+            {/* <Divider sx={{width: '20%', background: 'linear-gradient(90deg, #ed6a22 0%, #ffb000 100%)', mt: 2, border: '1px solid #ed6a22'}} /> */}
+            <Box sx={{width: '20%', height: '2px', background: 'linear-gradient(90deg, #ed6a22 30%, #ffb000 100%)', mt: 2}} />
         </motion.div>
     )
 };
@@ -251,12 +253,26 @@ function Buttons({ selectProject, viewPictures }) {
             <IconButton
                 onClick={selectProject}
             >
-                <PlayCircleOutline sx={{color: '#ed6a22'}} fontSize='large' />
+                 <svg width={0} height={0}>
+                    <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                        <stop offset={0} stopColor="#ffb000" />
+                        <stop offset={.5} stopColor="#ed6a22" />
+                        <stop offset={1} stopColor='#fd6f01' />
+                    </linearGradient>
+                </svg>
+                <PlayCircleOutline sx={{fill: 'url(#linearColors)'}} fontSize='large' />
             </IconButton>
             <IconButton
                 onClick={viewPictures}
             >
-                <Filter sx={{color: '#ed6a22'}} fontSize='large' />
+                <svg width={0} height={0}>
+                    <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                        <stop offset={0} stopColor="#ed6a22" />
+                        <stop offset={.5} stopColor='#fd6f01' />
+                        <stop offset={1} stopColor="#ffb000" />
+                    </linearGradient>
+                </svg>
+                <Filter sx={{fill: 'url(#linearColors)'}} fontSize='large' />
             </IconButton>
         </motion.div>
     )
