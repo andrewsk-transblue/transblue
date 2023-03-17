@@ -89,7 +89,10 @@ function App() {
         letterSpacing: '.05em',
       },
       h6: {
-        fontFamily: 'Raleway'
+        fontFamily: 'Raleway',
+        '@media (min-width: 1400px)': {
+          fontSize: '1.8vw'
+        }
       }
     },
     components: {

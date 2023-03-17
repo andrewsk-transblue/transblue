@@ -34,7 +34,7 @@ function Residential() {
             <CTA />
 
             <Box sx={{width: '100%', p: '60px 0px', bgcolor: '#e2caa485'}}>
-                <Typography variant='body2' sx={{bgcolor: 'white', p: '30px 20px', width: '80%', fontFamily: 'Montserrat', textAlign: 'center', m: '0 auto'}}>
+                <Typography variant='body2' sx={{bgcolor: 'white', p: '3% 5%', width: '80%', fontFamily: 'Montserrat', textAlign: 'center', m: '0 auto'}}>
                     Transblue takes a holistic approach to your project. We believe that each project is a collaboration of your vision and our expertise. Our teams will guide you through the process and ensure you love what your are building and your dreams not only come true but become an investment that returns not only ROI but that brings family closer together! Projects are not just beautiful materials and designs, they are birthday parties, BBQ’s, anniversaries and relaxing afternoons!
                 </Typography>
             </Box>
@@ -45,7 +45,7 @@ function Residential() {
                         <img src={quality} alt='' style={{width: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
-                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2, letterSpacing: '.06em'}}>QUALITY TIME MATTERS</Typography>
+                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2, letterSpacing: '.06em', fontFamily: 'Montserrat'}}>QUALITY TIME MATTERS</Typography>
                         <Typography variant='body2' sx={{mb: 2}}>What do you do when your project is complete? When your dream project has the final touches laced into position?</Typography>
 
                         <Typography variant='h6' sx={{mb: 2, letterSpacing: '.1em'}}>SIT.    RELAX.     ENJOY</Typography>
