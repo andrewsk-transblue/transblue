@@ -39,8 +39,8 @@ function Privacy() {
                 <p>Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser.</p>
                 <h5>&mdash; CHANGES</h5>
                 <p>For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at info@transblue.org or by mail using the details provided below:</p>
-                <p>PO Box 6158<br />
-                    Edmonds, WA 98026<br />
+                <p>11916 Old Owen Rd #252<br />
+                    Monroe, WA 98272<br />
                     United States
                 </p>
             </div>
