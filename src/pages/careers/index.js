@@ -18,10 +18,6 @@ function Careers(props) {
     function scrollToApply() {
         applyRef.current.scrollIntoView({ behavior: 'smooth' })
     }
-
-    useEffect(() => {
-        console.log(props.locations)
-    }, [props.locations])
     
     return(
         submitted ? <Redirect to='/success' /> :

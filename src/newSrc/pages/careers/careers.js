@@ -1,5 +1,5 @@
 import { Box, Button, Grid, MenuItem, Select, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../../../components/header";
 import CTA from "../../components/cta/cta";
 import NavWrapper from "../../components/navbar/navWrapper";
@@ -29,6 +29,7 @@ function Careers() {
     const [position, setPosition] = useState('Project Manager');
     const [email, setEmail] = useState('');
     const [locations, setLocations] = useState([]);
+    const ref = useRef(null);
 
     useEffect(() => {
         axios.get(`https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations`).then(res => {
@@ -45,6 +46,10 @@ function Careers() {
             .then(res => {
                 props.redirect();
             })
+    };
+
+    function scrollToApply() {
+        ref.current.scrollIntoView({ behavior: 'smooth' })
     }
 
     return(
@@ -63,6 +68,7 @@ function Careers() {
                         xs: 3,
                         md: 0
                     }}}
+                    onClick={scrollToApply}
                 >
                     apply now
                 </Button>
@@ -142,7 +148,7 @@ function Careers() {
                 </Grid>
             </Box>
 
-            <Box sx={{bgcolor: '#f8f8f8', mb: '10vh'}}>
+            <Box sx={{bgcolor: '#f8f8f8', mb: '10vh'}} ref={ref}>
                 <Box sx={{width: '90%', py: '10vh', maxWidth: '2000px', m: '0 auto'}}>
                     <Grid container spacing={4}>
                         <Grid item xs={12} md={6} my='auto'>
@@ -186,7 +192,6 @@ function Careers() {
                     </Grid>
                 </Box>
             </Box>
-
             <Footer />
         </>
     )

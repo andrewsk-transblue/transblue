@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import './style.css';
 
 import{ init } from 'emailjs-com';
@@ -18,7 +18,7 @@ const Apply = forwardRef((props) => {
 
     function selectLocation(e) {
         setEmail(e.target.value)
-    }
+    };
 
     function submit(e) {
         e.preventDefault();
@@ -28,7 +28,7 @@ const Apply = forwardRef((props) => {
             .then(res => {
                 props.redirect();
             })
-    }
+    };
 
     return(
         <div className='apply-bg' ref={props.innerRef}>
