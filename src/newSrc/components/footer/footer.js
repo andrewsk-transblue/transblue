@@ -3,6 +3,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import { Email, ExpandLess, Facebook, Instagram, LinkedIn, PhoneEnabled, Pinterest, Twitter, YouTube } from "@mui/icons-material";
 import military from '../../../images/military.jpg';
 import militarySmall from '../../../images/military-small.png';
+import tiktok from '../../images/tiktok.png';
 
 function Footer() {
     const [screenSize, setScreenSize] = useState('large');
@@ -119,6 +120,10 @@ function Footer() {
                     >
                         <LinkedIn />
                     </Typography>
+                    <a href='https://www.tiktok.com/@transblue?is_from_webapp=1&sender_device=pc'>
+                        <img src={tiktok} style={{height: '1.15rem'}} alt='Tik Tok' />
+                    </a>
+
                     <Typography 
                         variant='subtitle1' 
                         sx={{color: 'white', textDecoration: 'none'}}
