@@ -61,7 +61,7 @@ function Careers() {
             <Box sx={{bgcolor: 'white', position: 'relative', zIndex: 5, textAlign: 'center', width: '70%', maxWidth: '750px', m: '0 auto', mt: '-100px', py: '60px', boxShadow: '0px 1px 20px 8px rgba(0,0,0,0.1)'}}>
                 <img src={logo} alt='Transblue Small Logo' style={{width: '20%'}} />
                 <Typography variant='h2' sx={{fontWeight: 500, mt: 4, mb: 3}}>JOIN OUR TRANSBLUE FAMILY</Typography>
-                <Typography variant='body2' sx={{maxWidth: '70%', m: '0 auto', mb: 3}}>What does living fully mean to you? Whether you are seeking to grow with new opportunities, work beside teammates that feel like family, or make a difference in the world, Transblue helps you live life to its fullest, no matter how you define it.</Typography>
+                <Typography variant='body2' sx={{maxWidth: '70%', m: '0 auto', mb: 5}}>What does living fully mean to you? Whether you are seeking to grow with new opportunities, work beside teammates that feel like family, or make a difference in the world, Transblue helps you live life to its fullest, no matter how you define it.</Typography>
                 <Button
                     variant='contained'
                     sx={{bgcolor: '#0b56a4', fontSize: '.85em', letterSpacing: '.09em', fontWeight: 500, color: 'white', borderRadius: '0px', p: '4px 30px', mb: {

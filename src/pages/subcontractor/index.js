@@ -12,7 +12,7 @@ import './style.css';
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com'
 import NavWrapper from '../../newSrc/components/navbar/navWrapper';
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 init("user_iLZ3jXyTzXi5zQFlgf5DG");
 
 
@@ -30,6 +30,7 @@ function Subcontractor() {
     const [locations, setLocations] = useState([]);
     const [disabled, setDisabled] = useState(true);
     const [submitted, setSubmitted] = useState(false);
+    const [language, setLanguage] = useState('english');
 
     const mounted = () => {
         axios.get('https://my-tb-cors.herokuapp.com/https://locations-fns.azurewebsites.net/api/getalllocations')
@@ -119,8 +120,21 @@ function Subcontractor() {
 
                 <Growing scrollToApply={scrollToApply} />
                 <Respect scrollToApply={scrollToApply} />
+                <Box sx={{textAlign: 'right', width: '100%', maxWidth: '1200px', m: '0 auto', mb: 2}}>
+                    <Button
+                        onClick={() => {
+                            language === 'english'
+                                ? setLanguage('spanish')
+                                : setLanguage('english')  
+                            }  
+                        }
+                    >
+                        {language === 'english' ? 'Mira en Espanol' : 'Watch in English'}
+                    </Button>
+                </Box>
                 <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                    <iframe autoplay id='subcontractor' src="https://www.youtube.com/embed/HUzz0oQMdiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <iframe autoplay id='subcontractor' src={language === 'english' ? 'https://www.youtube.com/embed/HUzz0oQMdiM' : 'https://www.youtube.com/embed/XE2P3xqN2jU'} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </Box>
                 <Tools />
                 <div ref={applyRef}></div>
