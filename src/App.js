@@ -26,7 +26,7 @@ const Privacy = lazy(() => import('./pages/privacy/index'));
 const GivesBack = lazy(() => import('./pages/givesBack'));
 const Contact = lazy(() => import('./pages/contact'));
 const Finance = lazy(() => import('./pages/finance'));
-const Careers = lazy(() => import('./pages/careers'));
+const Careers = lazy(() => import('./newSrc/pages/careers/careers'));
 const Success = lazy(() => import('./pages/subcontractor/success'));
 const Recurring = lazy(() => import('./newSrc/pages/recurring/recurring'));
 

@@ -1,8 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import FranchiseNav from '../franchiseNav';
 import './style.css';
-import military from '../../images/military.jpg';
-import militarySmall from '../../images/military-small.png';
 import Fade from 'react-reveal/Fade';
 
 function Header(props) {
