@@ -5,6 +5,25 @@ import NavWrapper from "../../components/navbar/navWrapper";
 import Footer from '../../components/footer/footer';
 import { Box, Grid, Typography } from "@mui/material";
 import quality from '../../../images/residential/quality2.jpg';
+import friends from '../../../images/residential/friends.jpg';
+import fire from '../../../images/residential/fire.jpeg';
+import couple from '../../../images/residential/couple.png';
+import CenteredDiv from "../../components/centeredDiv/centeredDiv";
+
+const imgStyle = {
+    width: '100%',
+    position: 'relative'
+};
+
+const overlayStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 1,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.44)'
+};
 
 function Residential() {
 
@@ -31,6 +50,38 @@ function Residential() {
 
                         <Typography variant='h6' sx={{mb: 2, letterSpacing: '.1em'}}>SIT.    RELAX.     ENJOY</Typography>
                         <Typography variant='body2'>This is the place you watch your children grow up, the place where you laugh, the place you long to be after a long day at the office. This is your escape, where the world makes sense again, where you recharge. This is Transblue.</Typography>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={5}>
+                    <Grid item xs={12} md={4}>
+                        <Box sx={imgStyle}>
+                            <img src={fire} alt='Transblue Firepit family' style={imgStyle} />
+                            <Box style={overlayStyle} />
+                            <CenteredDiv>
+                                <Typography variant='h6' sx={{color: 'white', fontWeight: 400, zIndex: 5, width: '100%', textAlign: 'center', letterSpacing: '.08em', fontFamily: 'Montserrat'}}>BOND WITH FAMILY</Typography>
+                            </CenteredDiv>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Box sx={imgStyle}>
+                            <img src={friends} alt='Transblue Firepit family' style={imgStyle} />
+                            <Box style={overlayStyle} />
+                            <CenteredDiv>
+                                <Typography variant='h6' sx={{color: 'white', fontWeight: 400, zIndex: 5, width: '100%', textAlign: 'center', letterSpacing: '.08em', fontFamily: 'Montserrat'}}>CELEBRATE YOUR FRIENDS</Typography>
+                            </CenteredDiv>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Box sx={imgStyle}>
+                            <img src={couple} alt='Transblue Firepit family' style={imgStyle} />
+                            <Box style={overlayStyle} />
+                            <CenteredDiv>
+                                <Typography variant='h6' sx={{color: 'white', fontWeight: 400, zIndex: 5, width: '100%', textAlign: 'center', letterSpacing: '.08em', fontFamily: 'Montserrat'}}>LOVE YOUR LIFE</Typography>
+                            </CenteredDiv>
+                        </Box>
                     </Grid>
                 </Grid>
             </Box>
