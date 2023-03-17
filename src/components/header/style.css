@@ -55,6 +55,12 @@
     background-position: center center;
 }
 
+.header-wrapper[name='residential'] {
+    background-image: url('../../images/residential/header2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 .header-wrapper[name='careers'] {
     background-image: url('../../images/careers/header.jpg');
     background-size: cover;

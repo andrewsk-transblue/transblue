@@ -11,7 +11,7 @@ import axios from 'axios';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 
-const Residential = lazy(() => import ('./pages/residential/index'));
+const Residential = lazy(() => import ('./newSrc/pages/residential/residential'));
 const Commercial = lazy(() => import ('./newSrc/pages/commercial/newCommercial'));
 const Multifamily = lazy(() => import ('./newSrc/pages/multifamily/index'));
 const Government = lazy(() => import ('./newSrc/pages/government/government'));
