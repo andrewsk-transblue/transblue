@@ -49,7 +49,7 @@ function Residential() {
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2, letterSpacing: '.06em', fontFamily: 'Montserrat'}}>QUALITY TIME MATTERS</Typography>
                         <Typography variant='body2' sx={{mb: 2}}>What do you do when your project is complete? When your dream project has the final touches laced into position?</Typography>
 
-                        <Typography variant='h6' sx={{mb: 2, letterSpacing: '.1em'}}>SIT.    RELAX.     ENJOY</Typography>
+                        <Typography variant='h6' sx={{mb: 2, letterSpacing: '.1em', fontWeight: 400}}>SIT.    RELAX.     ENJOY</Typography>
                         <Typography variant='body2'>This is the place you watch your children grow up, the place where you laugh, the place you long to be after a long day at the office. This is your escape, where the world makes sense again, where you recharge. This is Transblue.</Typography>
                     </Grid>
                 </Grid>
