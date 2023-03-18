@@ -9,6 +9,7 @@ import friends from '../../../images/residential/friends.jpg';
 import fire from '../../../images/residential/fire.jpeg';
 import couple from '../../../images/residential/couple.png';
 import CenteredDiv from "../../components/centeredDiv/centeredDiv";
+import installation from '../../../images/residential/installation.jpeg';
 
 const imgStyle = {
     width: '100%',
@@ -82,6 +83,20 @@ function Residential() {
                                 <Typography variant='h6' sx={{color: 'white', fontWeight: 400, zIndex: 5, width: '100%', textAlign: 'center', letterSpacing: '.08em', fontFamily: 'Montserrat'}}>LOVE YOUR LIFE</Typography>
                             </CenteredDiv>
                         </Box>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={5} my='auto'>
+                    <Grid item xs={12} md={6}>
+                        <img src={installation} alt='' style={{width: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2, letterSpacing: '.06em', fontFamily: 'Montserrat'}}>DESIGN, INSTALLATION, CONSTRUCTION</Typography>
+                        <Typography variant='body2' sx={{mb: 2}}>At Transblue, our team of landscape architects and designers put your plans on paper to design a beautiful landscape. Our projects are cost effective and add beautification to your property, no matter the size.</Typography>
+
+                        <Typography variant='body2'>Once the cost and plan is approved, our installation and construction team will provide you with a written time line and project schedule. At Transblue, we see your project through from concept to completion.</Typography>
                     </Grid>
                 </Grid>
             </Box>
