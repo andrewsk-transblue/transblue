@@ -5,6 +5,8 @@ import Header from "../../../components/header";
 import CTA from "../../components/cta/cta";
 import Footer from "../../components/footer/footer";
 import NavWrapper from "../../components/navbar/navWrapper";
+import asphalt from '../../images/asphalt/asphalt.jpeg';
+import parkinglot from '../../images/asphalt/parkinglot.jpeg';
 
 const iconStyle = {
     fontSize: '8px',
@@ -23,9 +25,15 @@ function Asphalt() {
             <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6}>
+                        {/* <Box sx={{position: 'relative', width: '100%', height: '100%'}}>
+                            
+                        
+                        </Box> */}
 
+                        <img src={parkinglot} style={{borderRadius: '50%', width: '75%', position: 'relative', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
+                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: '25%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
                         xs: 3,
                         md: 0
@@ -38,7 +46,7 @@ function Asphalt() {
                 </Grid>
             </Box>
 
-            <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: 10, py: 5}}>
+            <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: 10, py: 7}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6}>
                         <Typography variant='h2' sx={{color: 'white', fontWeight: 500, mb: 2}}>OUR SERVICES</Typography>
@@ -58,6 +66,10 @@ function Asphalt() {
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Striping</Typography>
                     </Grid>
                 </Grid>
+            </Box>
+
+            <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto'}}>
+
             </Box>
             <Footer />
         </>
