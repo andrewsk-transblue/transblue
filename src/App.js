@@ -29,6 +29,7 @@ const Finance = lazy(() => import('./pages/finance'));
 const Careers = lazy(() => import('./newSrc/pages/careers/careers'));
 const Success = lazy(() => import('./pages/subcontractor/success'));
 const Recurring = lazy(() => import('./newSrc/pages/recurring/recurring'));
+const Asphalt = lazy(() => import('./newSrc/pages/asphalt/asphalt'));
 
 function App() {
   const [easybaseData, seteasybaseData] = useState([]);
@@ -191,6 +192,7 @@ const mounted = async() => {
               <Route exact path='/subcontractor-application-hq' component={HQSubcontractor} />
               <Route exact path='/success' component={Success} />
               <Route exact path='/recurring' component={Recurring} />
+              <Route exact path='/asphalt' component={Asphalt} />
             </Suspense>
           </Router>
         </HelmetProvider>
