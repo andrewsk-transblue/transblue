@@ -22,16 +22,11 @@ function Asphalt() {
             <CTA />
             <NavWrapper page='asphalt' />
 
-            <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto'}}>
+            <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto', overflowX: 'hidden'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6}>
-                        {/* <Box sx={{position: 'relative', width: '100%', height: '100%'}}>
-                            
-                        
-                        </Box> */}
-
                         <img src={parkinglot} style={{borderRadius: '50%', width: '75%', position: 'relative', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
-                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: '25%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
+                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: '30%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
@@ -47,19 +42,19 @@ function Asphalt() {
             </Box>
 
             <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: 10, py: 7}}>
-                <Grid container spacing={10}>
+                <Grid container spacing={{xs: 2, md: 10}}>
                     <Grid item xs={12} md={6}>
                         <Typography variant='h2' sx={{color: 'white', fontWeight: 500, mb: 2}}>OUR SERVICES</Typography>
                         <Divider sx={{mb: 2, width: '25%', borderBottom: '2px solid #ed6a22'}} />
                         <Typography variant='body2' sx={{color: 'white'}}>At Transblue, we offer a wide range of services to help you get the most out of your paving project and keep your property looking emaculate.</Typography>
                     </Grid>
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={6} md={3}>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Installation</Typography>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Seal Coat</Typography>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Crack Fill</Typography>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Patching</Typography>
                     </Grid>
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={6} md={3}>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Resurfacing</Typography>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Repairs</Typography>
                         <Typography variant='body2' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> Regular Inspections</Typography>
