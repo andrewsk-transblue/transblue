@@ -82,31 +82,31 @@ function Asphalt() {
             </Box>
 
             <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '1500px', m: '0 auto'}}>
-                <Grid container spacing={10}>
-                    <Grid item xs={12} md={6} my='auto'>
+                <Grid container spacing={{xs: 5, md: 10}}>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Grid container spacing={{xs: 3, md: 5, xl: 10}}>
-                            <Grid item xs={12} md={3} my='auto'>
-                                <img src={commIcon} style={{width: '100%'}} />
+                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={commIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto'>
+                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
                                 <Typography variant='h2' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto'>
-                                <img src={multifamilyIcon} style={{width: '100%'}} />
+                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={multifamilyIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto'>
+                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
                                 <Typography variant='h2' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto'>
-                                <img src={govtIcon} style={{width: '100%'}} />
+                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={govtIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto'>
+                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
                                 <Typography variant='h2' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
                             </Grid>
                             
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={6} my='auto'>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>OUR ASPHALT CLIENTS</Typography>
                         {/* <Typography variant='body2'>Transblue is your one-stop-shop for all your asphalt needs, providing comprehensive services to government, multifamily, and commercial clients. Whether you need asphalt maintenance, repair, or new installation, Transblue can handle projects of any size, from single sites to hundreds of sites across the country.</Typography> */}
                         <Typography variant='body2'>Transblue is a one-stop-shop for all asphalt services, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your asphalt needs efficiently and reliably.</Typography>
