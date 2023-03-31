@@ -1,5 +1,5 @@
 import { Circle } from "@mui/icons-material";
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Header from "../../../components/header";
 import CTA from "../../components/cta/cta";
@@ -10,6 +10,7 @@ import parkinglot from '../../images/asphalt/parkinglot.jpeg';
 import commIcon from '../../images/asphalt/commIcon.jpg';
 import multifamilyIcon from '../../images/asphalt/multifamilyIcon.jpg';
 import govtIcon from '../../images/asphalt/govtIcon.jpg';
+import network from '../../images/asphalt/network.jpeg';
 
 const iconStyle = {
     fontSize: '8px',
@@ -108,6 +109,27 @@ function Asphalt() {
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>OUR ASPHALT CLIENTS</Typography>
                         {/* <Typography variant='body2'>Transblue is your one-stop-shop for all your asphalt needs, providing comprehensive services to government, multifamily, and commercial clients. Whether you need asphalt maintenance, repair, or new installation, Transblue can handle projects of any size, from single sites to hundreds of sites across the country.</Typography> */}
                         <Typography variant='body2'>Transblue is a one-stop-shop for all asphalt services, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your asphalt needs efficiently and reliably.</Typography>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{pb: '20vh', width: '100%', pl: '5vw'}}>
+
+                <Grid container spacing={10}>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, fontWeight: 500, letterSpacing: '.03em'}}>
+                            EXTENSIVE SUBCONTRACTOR NETWORK
+                        </Typography>
+                        <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site, giving you peace of mind knowing that your asphalt project is in good hands.</Typography>
+                        <Button
+                            variant='contained'
+                        >
+                            contact us
+                        </Button>
+
+                    </Grid>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <img src={network} style={{width: '100%'}} />
                     </Grid>
                 </Grid>
             </Box>
