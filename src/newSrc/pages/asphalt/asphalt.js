@@ -7,6 +7,9 @@ import Footer from "../../components/footer/footer";
 import NavWrapper from "../../components/navbar/navWrapper";
 import asphalt from '../../images/asphalt/asphalt.jpeg';
 import parkinglot from '../../images/asphalt/parkinglot.jpeg';
+import commIcon from '../../images/asphalt/commIcon.jpg';
+import multifamilyIcon from '../../images/asphalt/multifamilyIcon.jpg';
+import govtIcon from '../../images/asphalt/govtIcon.jpg';
 
 const iconStyle = {
     fontSize: '8px',
@@ -76,8 +79,37 @@ function Asphalt() {
                 </Grid>
             </Box>
 
-            <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto'}}>
-
+            <Box sx={{pb: '20vh', width: '90vw', maxWidth: '1500px', m: '0 auto'}}>
+                <Grid container spacing={10}>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <Grid container spacing={10}>
+                            <Grid item xs={3} my='auto'>
+                                <img src={commIcon} style={{width: '100%'}} />
+                            </Grid>
+                            <Grid item xs={9} my='auto'>
+                                <Typography variant='h2'>COMMERCIAL</Typography>
+                            </Grid>
+                            <Grid item xs={3} my='auto'>
+                                <img src={multifamilyIcon} style={{width: '100%'}} />
+                            </Grid>
+                            <Grid item xs={9} my='auto'>
+                                <Typography variant='h2'>MULTIFAMILY</Typography>
+                            </Grid>
+                            <Grid item xs={3} my='auto'>
+                                <img src={govtIcon} style={{width: '100%'}} />
+                            </Grid>
+                            <Grid item xs={9} my='auto'>
+                                <Typography variant='h2'>GOVERNMENT</Typography>
+                            </Grid>
+                            
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>OUR ASPHALT CLIENTS</Typography>
+                        {/* <Typography variant='body2'>Transblue is your one-stop-shop for all your asphalt needs, providing comprehensive services to government, multifamily, and commercial clients. Whether you need asphalt maintenance, repair, or new installation, Transblue can handle projects of any size, from single sites to hundreds of sites across the country.</Typography> */}
+                        <Typography variant='body2'>Transblue is a one-stop-shop for all asphalt services, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your asphalt needs efficiently and reliably.</Typography>
+                    </Grid>
+                </Grid>
             </Box>
             <Footer />
         </>
