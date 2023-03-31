@@ -79,27 +79,27 @@ function Asphalt() {
                 </Grid>
             </Box>
 
-            <Box sx={{pb: '20vh', width: '90vw', maxWidth: '1500px', m: '0 auto'}}>
+            <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '1500px', m: '0 auto'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6} my='auto'>
-                        <Grid container spacing={10}>
-                            <Grid item xs={3} my='auto'>
+                        <Grid container spacing={{xs: 3, md: 5, xl: 10}}>
+                            <Grid item xs={12} md={3} my='auto'>
                                 <img src={commIcon} style={{width: '100%'}} />
                             </Grid>
-                            <Grid item xs={9} my='auto'>
-                                <Typography variant='h2'>COMMERCIAL</Typography>
+                            <Grid item xs={12} md={9} my='auto'>
+                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
                             </Grid>
-                            <Grid item xs={3} my='auto'>
+                            <Grid item xs={12} md={3} my='auto'>
                                 <img src={multifamilyIcon} style={{width: '100%'}} />
                             </Grid>
-                            <Grid item xs={9} my='auto'>
-                                <Typography variant='h2'>MULTIFAMILY</Typography>
+                            <Grid item xs={12} md={9} my='auto'>
+                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
                             </Grid>
-                            <Grid item xs={3} my='auto'>
+                            <Grid item xs={12} md={3} my='auto'>
                                 <img src={govtIcon} style={{width: '100%'}} />
                             </Grid>
-                            <Grid item xs={9} my='auto'>
-                                <Typography variant='h2'>GOVERNMENT</Typography>
+                            <Grid item xs={12} md={9} my='auto'>
+                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
                             </Grid>
                             
                         </Grid>
