@@ -7,6 +7,7 @@ import dispatch from '../../images/dispatch.png';
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { AttachMoney, Construction, Laptop, Timelapse } from "@mui/icons-material";
 import maintenance from '../../images/maintenance.jpg';
+import network from '../../images/asphalt/network.jpeg';
 
 // we can have someone on site in as little as 30 minutes 
 // Super simple to use!
@@ -36,7 +37,7 @@ function Recurring() {
                 </Grid>
             </Box>
 
-            <Box sx={{width: '90%', pb: '10vh', maxWidth: '2000px', m: '0 auto'}}>
+            <Box sx={{width: '90%', pb: '20vh', maxWidth: '2000px', m: '0 auto'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6} my='auto'>
                         <Box sx={{position: 'relative', width: '100%', maxWidth: '600px', height: '400px', bgcolor: '#ed6a22', borderRadius: '200px 0px', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}}>
@@ -58,6 +59,27 @@ function Recurring() {
                         >
                             book a demo now
                         </Button>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{pb: '20vh', width: '100%', pl: '5vw'}}>
+
+                <Grid container spacing={10}>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, fontWeight: 500, letterSpacing: '.03em'}}>
+                            EXTENSIVE SUBCONTRACTOR NETWORK
+                        </Typography>
+                        <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site, giving you peace of mind knowing that your asphalt project is in good hands.</Typography>
+                        <Button
+                            variant='contained'
+                        >
+                            contact us
+                        </Button>
+
+                    </Grid>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <img src={network} style={{width: '100%'}} />
                     </Grid>
                 </Grid>
             </Box>
