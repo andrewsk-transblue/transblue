@@ -1,6 +1,6 @@
 import { Circle } from "@mui/icons-material";
 import { Box, Divider, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../../components/header";
 import CTA from "../../components/cta/cta";
 import Footer from "../../components/footer/footer";
@@ -15,6 +15,19 @@ const iconStyle = {
 }
 
 function Asphalt() {
+    const [screenSize, setScreenSize] = useState('small');
+
+    const getScreenSize = () => {
+        if(window.innerWidth > 980) {
+            setScreenSize('large')
+        }
+
+        else setScreenSize('small')
+    }
+
+    useEffect(() => {
+        getScreenSize();
+    }, []);
 
     return (
         <>
@@ -23,10 +36,10 @@ function Asphalt() {
             <NavWrapper page='asphalt' />
 
             <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto', overflowX: 'hidden'}}>
-                <Grid container spacing={10}>
+                <Grid container spacing={{xs: 18, md: 10}}>
                     <Grid item xs={12} md={6}>
                         <img src={parkinglot} style={{borderRadius: '50%', width: '75%', position: 'relative', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
-                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: '30%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
+                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: screenSize === 'small' ? '50%' : '25%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
@@ -42,7 +55,7 @@ function Asphalt() {
             </Box>
 
             <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: 10, py: 7}}>
-                <Grid container spacing={{xs: 2, md: 10}}>
+                <Grid container spacing={{xs: 4, md: 10}}>
                     <Grid item xs={12} md={6}>
                         <Typography variant='h2' sx={{color: 'white', fontWeight: 500, mb: 2}}>OUR SERVICES</Typography>
                         <Divider sx={{mb: 2, width: '25%', borderBottom: '2px solid #ed6a22'}} />
