@@ -1,7 +1,7 @@
 import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import React, { useEffect, useState } from 'react';
-import logo from '../../images/logoCropped.png';
+import logo from '../../images/smallLogo.png';
 import './navbar.css';
 
 function MobileNavbar() {
