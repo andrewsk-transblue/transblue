@@ -73,6 +73,12 @@
     background-position: center center;
 }
 
+.header-wrapper[name='capex'] {
+    background-image: url('../../newSrc/images/capEx/wayfair.png');
+    background-size: cover;
+    background-position: center center;
+}
+
 .header-wrapper[name='recurring'] {
     /* background-image: url('../../newSrc/images/dispatch.jpg'); */
     background-size: cover;
