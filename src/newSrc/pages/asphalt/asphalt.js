@@ -1,7 +1,6 @@
 import { Circle } from "@mui/icons-material";
 import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Header from "../../../components/header";
 import CTA from "../../components/cta/cta";
 import Footer from "../../components/footer/footer";
 import NavWrapper from "../../components/navbar/navWrapper";
