@@ -4,6 +4,7 @@ import Header from '../../../components/header';
 import CTA from '../../components/cta/cta';
 import Footer from '../../components/footer/footer';
 import NavWrapper from '../../components/navbar/navWrapper';
+import placeholder from '../../images/placeholder.jpg';
 
 function CapEx() {
 
@@ -30,6 +31,22 @@ function CapEx() {
                         >
                             send us a message
                         </Button>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <Box sx={{width: '90vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
+                <Typography variant='h1' sx={{color: '#0b56a4', letterSpacing: '.03em', textAlign: 'center', mb: 3}}>REFRESH YOUR BRAND</Typography>
+                <Typography variant='body2' sx={{textAlign: 'center', width: '100%', maxWidth: '850px', pb: 5, m: '0 auto'}}>With a diverse range of capital expenditure projects, Transblue can help transform your property and revitalize your brand with our comprehensive services. We offer everything from interior remodels to landscaping to roof renovations</Typography>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} md={4}>
+                        <img src={placeholder} alt='' style={{width: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <img src={placeholder} alt='' style={{width: '100%'}} />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <img src={placeholder} alt='' style={{width: '100%'}} />
                     </Grid>
                 </Grid>
             </Box>
