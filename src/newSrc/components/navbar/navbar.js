@@ -157,7 +157,7 @@ function Navbar({ page }) {
                                 sx={{color: page === 'subcontractor' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
 
                             >
-                                SUBCONTRACTORS
+                                PARTNERS
                             </Button>
 
                             <Button

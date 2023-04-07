@@ -11,6 +11,7 @@ import commIcon from '../../images/asphalt/commIcon.jpg';
 import multifamilyIcon from '../../images/asphalt/multifamilyIcon.jpg';
 import govtIcon from '../../images/asphalt/govtIcon.jpg';
 import network from '../../images/asphalt/network.jpeg';
+import CenteredDiv from "../../components/centeredDiv/centeredDiv";
 
 const iconStyle = {
     fontSize: '8px',
@@ -20,7 +21,7 @@ const iconStyle = {
 
 function Asphalt() {
     const [screenSize, setScreenSize] = useState('small');
-    const [height, setHeight] = useState(window.innerHeight)
+    const [height, setHeight] = useState(window.innerHeight * .75)
 
     const getScreenSize = () => {
         if(window.innerWidth > 980) {
@@ -36,9 +37,17 @@ function Asphalt() {
 
     return (
         <>
-            <Header name='asphalt' title='ASPHALT' />
+            <video autoPlay loop muted>
+                <source src="https://tbconnectstorage.blob.core.windows.net/projectimages/Asphalt_Web.mp4" />
+            </video>
+            
             <CTA />
             <NavWrapper page='asphalt' />
+
+            <Box sx={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,.644)', zIndex: 5}}></Box>
+            <CenteredDiv>
+                <Typography variant='h1' sx={{color: 'white', textAlign: 'center', letterSpacing: '.03em'}}>ASPHALT</Typography>
+            </CenteredDiv>
 
             <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto', overflowX: 'hidden'}}>
                 <Grid container spacing={{xs: 18, md: 10}}>
@@ -114,7 +123,30 @@ function Asphalt() {
                 </Grid>
             </Box>
             
-            <iframe width="100%" height={height} src="https://www.youtube.com/embed/K6_fAgv2CE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <Box sx={{pb: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto',}}>
+            <Grid container spacing={10}>
+                <Grid item xs={12} md={6} my='auto'>
+                    <iframe width="100%" height={height} src="https://www.youtube.com/embed/K6_fAgv2CE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </Grid>
+                <Grid item xs={12} md={6} my='auto'>
+                    <Typography variant='h2' sx={{color: '#0b56a4', letterSpacing: '.03em', mb: 2, fontWeight: 500}}>
+                        THE MARRIOT PROJECT
+                    </Typography>
+                    <Typography variant='body2' sx={{mb: 2}}>Asphalt maintenance is essential in commercial properties. Applying a seal coat overlay to the existing asphalt keeps the parking lot looking fresh and sharp.</Typography>
+                    <Typography variant='body2' sx={{mb: 2}}>
+                        When working with a worldwide hospitality client such as Marriott, it is crucial to be on time, on budget, and have minimal impact on guests.
+                    </Typography>
+                    <Typography variant='body2' sx={{mb: 2}}>
+                        The service was delivered with World Class efficiency and established Transblue as a reliable partner for Marriott's future needs.
+                    </Typography>
+                    <Button
+                        variant='contained'
+                    >
+                        send us a message
+                    </Button>
+                </Grid>
+            </Grid>
+           </Box>
 
             <Box sx={{pb: '20vh', width: '100%', pl: '5vw'}}>
 
