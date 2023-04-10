@@ -167,7 +167,6 @@ function CapEx() {
             <Footer />
         </>
     )
-
 }
 
 export default CapEx;
