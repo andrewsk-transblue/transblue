@@ -3,22 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header';
 import Footer from '../../components/footer/index';
 import './style.css';
-
 import ReactGA from 'react-ga';
 import NavWrapper from '../../newSrc/components/navbar/navWrapper';
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID// YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 const ListView = lazy(() => import('./listView'))
 
 function Locations(props) {
-    console.log(props)
-    useEffect(() => {
-        ReactGA.event({
-            category: 'User',
-            action: 'Visited Locations Page'
-          });
-    }, [])
        
         return(
             <Fragment>

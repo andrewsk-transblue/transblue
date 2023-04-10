@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './navbar.css';
-import logo from '../../images/smallLogo.png';
+import logo from '../../images/logoCropped.png';
 import { Box, Button, Grid, Menu, MenuItem } from "@mui/material";
 import { KeyboardArrowDown } from "@mui/icons-material";
 import FranchiseNav from "../../../components/franchiseNav";
@@ -43,7 +43,7 @@ function Navbar({ page }) {
     
     return (
         <>
-            <Box sx={{...theme.style, width: '100%', zIndex: 8, position: 'fixed', top: 0, left: 0}}>
+            <Box sx={{...theme.style, width: '100%', zIndex: 8, position: 'fixed', top: theme.topPadding, left: 0}}>
                 <Grid container>
                     <Grid item md={5} my='auto'>
                         <Box sx={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
