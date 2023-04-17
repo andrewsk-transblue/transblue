@@ -158,7 +158,7 @@ function MobileNavbar() {
                             // onClick={toggleDrawer(anchor, false)}
                             // onKeyDown={toggleDrawer(anchor, false)}
                         >
-                            <List sx={{bgcolor: 'rgba(0,0,0,.7)'}}>
+                            <List sx={{bgcolor: 'rgba(0,0,0,.75)'}}>
                                 <ListItem disablePadding>
                                     <ListItemButton
                                         component='a'
@@ -169,7 +169,7 @@ function MobileNavbar() {
                                 </ListItem>
                             </List>
                             <Divider />
-                            <List sx={{bgcolor: 'rgba(0,0,0,.7)'}}>
+                            <List sx={{bgcolor: 'rgba(0,0,0,.75)'}}>
                                 {services.map((service, index) => (
                                 <ListItem key={service.name} disablePadding>
                                     <ListItemButton
@@ -182,7 +182,7 @@ function MobileNavbar() {
                                 ))}
                             </List>
                             <Divider />
-                            <List sx={{bgcolor: 'rgba(0,0,0,.7)'}}>
+                            <List sx={{bgcolor: 'rgba(0,0,0,.75)'}}>
                                 {clients.map((client, index) => (
                                     <ListItem key={client.name} disablePadding>
                                         <ListItemButton
@@ -195,7 +195,7 @@ function MobileNavbar() {
                                 ))}
                             </List>
                             <Divider />
-                            <List sx={{bgcolor: 'rgba(0,0,0,.7)'}}>
+                            <List sx={{bgcolor: 'rgba(0,0,0,.75)'}}>
                                 {other.map((page, index) => (
                                 <ListItem key={page.name} disablePadding>
                                     <ListItemButton
