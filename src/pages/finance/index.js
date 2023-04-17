@@ -6,8 +6,6 @@ import './style.css';
 import ReactGA from 'react-ga';
 import { Helmet } from 'react-helmet-async';
 import NavWrapper from '../../newSrc/components/navbar/navWrapper';
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 function Finance(props) {
     //console.log(props.locations)
@@ -19,10 +17,6 @@ function Finance(props) {
     else buttonText = 'GET FINANCED'
 
     useEffect(() => {
-        ReactGA.event({
-            category: 'User',
-            action: `Visited Finance Page`
-        });
         //console.log(props.locations)
         if(props.locations !== undefined) setLocationList(props.locations)
         console.log(locationList)

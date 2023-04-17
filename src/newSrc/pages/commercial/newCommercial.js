@@ -24,16 +24,8 @@ import Brands from './brands';
 import ServiceModal from './modal';
 import CaseStudyModal from '../../../components/caseStudyModal/caseStudyModal';
 
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 function Commercial() {
-    useEffect(() => {
-        ReactGA.event({
-            category: 'User',
-            action: 'Visited Commercial Page'
-          });
-    }, [])
 
     return(
         <Fragment>

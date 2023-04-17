@@ -19,18 +19,8 @@ import './style.css';
 import ReactGA from 'react-ga';
 import NavWrapper from '../../components/navbar/navWrapper';
 import { Box, Grid, Typography } from '@mui/material';
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
-
-function Government() {
-    useEffect(() => {
-        ReactGA.event({
-            category: 'User',
-            action: 'Visited Government Page'
-          });
-    }, []);
-    
+function Government() {    
     return(
         <Fragment>
             <Helmet>

@@ -18,8 +18,6 @@ import './style.css';
 
 import ReactGA from 'react-ga';
 import NavWrapper from '../../newSrc/components/navbar/navWrapper';
-const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 const Carousel = lazy(() => import ('../../components/residential/carousel'));
 const Design = lazy(() => import('../../components/residential/design'))
@@ -42,14 +40,7 @@ function Residential() {
         if(window.innerWidth < 600) {
             setBannerWidth('small');
         }
-    }, [])
-
-    useEffect(() => {
-        ReactGA.event({
-            category: 'User',
-            action: 'Visited GC Residential Page'
-          });
-    }, [])
+    }, []);
 
     return(
         <Fragment>
