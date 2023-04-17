@@ -198,12 +198,6 @@ function Navbar({ page }) {
                             >
                                 <MenuItem 
                                     component='a'
-                                    href='/subcontractor'
-                                >
-                                    SUBCONTRACTORS
-                                </MenuItem>
-                                <MenuItem 
-                                    component='a'
                                     href='/contact'
                                 >
                                     CONTACT
