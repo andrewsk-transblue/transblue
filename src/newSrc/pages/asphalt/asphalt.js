@@ -50,7 +50,7 @@ function Asphalt() {
                     left: 0, 
                     width: '100%', 
                     height: '100%', 
-                    backgroundColor: 'rgba(0,0,0,.644)', 
+                    backgroundColor: 'rgba(0,0,0,.6)', 
                     zIndex: 4
                 }}
             />
@@ -129,7 +129,6 @@ function Asphalt() {
                             <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
                                 <Typography variant='h1' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
                             </Grid>
-                            
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
@@ -157,7 +156,10 @@ function Asphalt() {
                         The service was delivered with World Class efficiency and established Transblue as a reliable partner for Marriott's future needs.
                     </Typography>
                     <Button
-                        variant='contained'
+                        variant='outlined'
+                        sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                        component='a'
+                        href='/contact'
                     >
                         send us a message
                     </Button>
@@ -174,9 +176,12 @@ function Asphalt() {
                         </Typography>
                         <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site, giving you peace of mind knowing that your asphalt project is in good hands.</Typography>
                         <Button
-                            variant='contained'
+                            variant='outlined'
+                            sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                            component='a'
+                            href='/contact'
                         >
-                            contact us
+                            send us a message
                         </Button>
 
                     </Grid>
