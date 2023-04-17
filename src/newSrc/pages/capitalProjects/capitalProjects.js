@@ -51,7 +51,10 @@ function CapEx() {
                         </Typography>
                         <Typography variant='body2' sx={{mb: 3}}>Transblue is a leading provider of capital expenditure project services, offering a wide range of solutions tailored to meet the unique needs of each client. With years of experience and a team of skilled professionals, we have earned the trust of businesses across various industries. Our track record of successfully completing projects for several major brands speaks to our commitment to quality, reliability, and exceptional customer service.</Typography>
                         <Button
-                            variant='contained'
+                            variant='outlined'
+                            sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                            component='a'
+                            href='/contact'
                         >
                             send us a message
                         </Button>
@@ -96,7 +99,10 @@ function CapEx() {
                             Contact us today to discuss your project needs!
                         </Typography>
                         <Button
-                            variant='contained'
+                            variant='outlined'
+                            sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                            component='a'
+                            href='/contact'
                         >
                             send us a message
                         </Button>

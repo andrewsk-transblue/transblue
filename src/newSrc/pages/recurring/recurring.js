@@ -54,7 +54,10 @@ function Recurring() {
                         <Typography variant='body2' sx={{p: 1, mb: 3}}><AttachMoney sx={{mr: 1, color: '#0b56a4'}} /> Completely free of charge</Typography>
 
                         <Button
-                            variant='contained'
+                            variant='outlined'
+                            sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                            component='a'
+                            href='/contact'
                             fullWidth
                         >
                             book a demo now
@@ -71,7 +74,10 @@ function Recurring() {
                         </Typography>
                         <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site togive you peace of mind knowing that your property is in good hands!</Typography>
                         <Button
-                            variant='contained'
+                            variant='outlined'
+                            sx={{color: '#0b56a4', border: '2px solid #0b56a4', mt: 2, fontSize: '12px'}}
+                            component='a'
+                            href='/contact'
                         >
                             contact us
                         </Button>
