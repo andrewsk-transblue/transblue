@@ -97,7 +97,8 @@ function MobileNavbar() {
             bgcolor: 'transparent'
         },
         topPadding: '30px',
-        rightPadding: 'rightPadding'
+        rightPadding: 'rightPadding',
+        elevation: 0
     });
 
     useEffect(() => {
@@ -125,7 +126,7 @@ function MobileNavbar() {
     }, []);
 
     return (
-        <Box sx={{...theme.style, flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', left: 0, top: 0 }}>
+        <Box sx={{...theme.style, flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', left: 0, top: theme.topPadding }}>
             <AppBar position='static' sx={{...theme.style}} elevation={theme.elevation}>
                 <Toolbar>
                     <Box

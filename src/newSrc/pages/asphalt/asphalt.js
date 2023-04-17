@@ -43,16 +43,34 @@ function Asphalt() {
             <CTA />
             <NavWrapper page='asphalt' />
 
-            <Box sx={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,.644)', zIndex: 5}}></Box>
+            <Box 
+                sx={{
+                    position: 'absolute', 
+                    top: 0, 
+                    left: 0, 
+                    width: '100%', 
+                    height: '100%', 
+                    backgroundColor: 'rgba(0,0,0,.644)', 
+                    zIndex: 4
+                }}
+            />
             <CenteredDiv>
-                <Typography variant='h1' sx={{color: 'white', textAlign: 'center', letterSpacing: '.03em'}}>ASPHALT</Typography>
+                <Typography 
+                    variant='h1' 
+                    sx={{
+                        color: 'white', 
+                        textAlign: 'center', 
+                        letterSpacing: '.03em'
+                    }}
+                >
+                    ASPHALT
+                </Typography>
             </CenteredDiv>
 
             <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto', overflowX: 'hidden'}}>
-                <Grid container spacing={{xs: 18, md: 10}}>
+                <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6}>
-                        <img src={parkinglot} style={{borderRadius: '50%', width: '75%', position: 'relative', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
-                        <img src={asphalt} style={{width: '300px', borderRadius: '50%', top: '150%', left: screenSize === 'small' ? '50%' : '25%', position: 'absolute', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}} />
+                        <img src={parkinglot} style={{width: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, mt: {
