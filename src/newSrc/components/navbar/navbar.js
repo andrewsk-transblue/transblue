@@ -14,6 +14,9 @@ function Navbar({ page }) {
     const [serviceAnchor, setServiceAnchor] = useState(null);
     const handleServiceClose = () => setServiceAnchor(null);
     const serviceOpen = Boolean(serviceAnchor);
+    const [clientAnchor, setClientAnchor] = useState(null);
+    const handleClientClose = () => setClientAnchor(null);
+    const clientOpen = Boolean(clientAnchor);
     const [moreAnchor, setMoreAnchor] = useState(null);
     const handleMoreClose = () => setMoreAnchor(null);
     const moreOpen = Boolean(moreAnchor);
@@ -54,7 +57,7 @@ function Navbar({ page }) {
                             >
                                 home
                             </Button>
-                            
+
                             <Button
                                 sx={{color: page === '' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
                                 onClick={(e) => setServiceAnchor(e.currentTarget)}
@@ -67,6 +70,55 @@ function Navbar({ page }) {
                                 anchorEl={serviceAnchor}
                                 open={serviceOpen}
                                 onClose={handleServiceClose}
+                                MenuListProps={{
+                                    'aria-labelledby': 'basic-button',
+                                }}
+                            >
+                                <MenuItem 
+                                    component='a'
+                                    href='/asphalt'
+                                    //sx={{color: 'white', fontFamily: 'Raleway', bgcolor: theme.bgcolor}}
+                                >
+                                    ASPHALT
+                                </MenuItem>
+                                <MenuItem 
+                                    component='a'
+                                    href='/capex'
+                                >
+                                    CAP EX
+                                </MenuItem>
+                                <MenuItem 
+                                    component='a'
+                                    href='/recurring'
+                                >
+                                    MAINTENANCE
+                                </MenuItem>
+                                <MenuItem 
+                                    component='a'
+                                    href='https://snow.transblue.com'
+                                >
+                                    SNOW
+                                </MenuItem>
+                                <MenuItem 
+                                    component='a'
+                                    href='https://green.transblue.com'
+                                >
+                                    GREEN
+                                </MenuItem>
+                            </Menu>
+                            
+                            <Button
+                                sx={{color: page === '' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
+                                onClick={(e) => setClientAnchor(e.currentTarget)}
+                                endIcon={<KeyboardArrowDown />}
+                            >
+                                our clients
+                            </Button>
+                            <Menu
+                                id="basic-menu"
+                                anchorEl={clientAnchor}
+                                open={clientOpen}
+                                onClose={handleClientClose}
                                 MenuListProps={{
                                     'aria-labelledby': 'basic-button',
                                 }}
@@ -90,47 +142,7 @@ function Navbar({ page }) {
                                 >
                                     MULTIFAMILY
                                 </MenuItem>
-                                <MenuItem 
-                                    component='a'
-                                    href='https://snow.transblue.com'
-                                >
-                                    SNOW
-                                </MenuItem>
-                                <MenuItem 
-                                    component='a'
-                                    href='https://green.transblue.com'
-                                >
-                                    GREEN
-                                </MenuItem>
-                                <MenuItem 
-                                    component='a'
-                                    href='/residential'
-                                >
-                                    RESIDENTIAL
-                                </MenuItem>
                             </Menu>
-                        
-                            <Button
-                                component='a'
-                                href='/commercial'
-                                sx={{color: page === 'COMMERCIAL' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
-                            >
-                                commercial
-                            </Button>
-                            <Button
-                                component='a'
-                                href='https://green.transblue.com'
-                                sx={{color: page === '' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
-                            >
-                                green
-                            </Button>
-                            <Button
-                                component='a'
-                                href='https://snow.transblue.com'
-                                sx={{color: page === 'snow' ? '#ed6a22' : '#d3d3d3', fontFamily: 'Raleway'}}
-                            >
-                                snow
-                            </Button>
                         </Box>
                     </Grid>
                     <Grid item md={2} my='auto'>
