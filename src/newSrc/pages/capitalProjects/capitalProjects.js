@@ -86,7 +86,7 @@ function CapEx() {
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, letterSpacing: '.03em', mb: 2}}>
                             INTERIOR REMODELING
                         </Typography>
-                        <Typography variant='body2' sx={{mb: 3}}>Check out this video to see some of the interior remodeling projects we've done for major brands around the country</Typography>
+                        <Typography variant='body2' sx={{mb: 3}}>Enhance your space with our professional interior remodeling services. Our experienced general contractors provide expert guidance and execute capital expenditures to transform your interior into a beautiful, functional space.</Typography>
                         <Typography variant='body2' sx={{bgcolor: 'whitesmoke', p: 1}}><FormatPaint sx={{mr: 1, color: '#0b56a4'}} /> Painting</Typography>
                         <Typography variant='body2' sx={{p: 1}}><GridView sx={{mr: 1, color: '#0b56a4'}} /> Tiling</Typography>
                         <Typography variant='body2' sx={{bgcolor: 'whitesmoke', p: 1}}><Warehouse sx={{mr: 1, color: '#0b56a4'}} /> Installing Shelving</Typography>
@@ -110,7 +110,7 @@ function CapEx() {
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, letterSpacing: '.03em', mb: 2}}>
                             EXTERIOR PROJECTS
                         </Typography>
-                        <Typography variant='body2' sx={{mb: 2}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</Typography>
+                        <Typography variant='body2' sx={{mb: 2}}>Elevate your curb appeal with our top-notch exterior remodeling services. Our skilled general contractors specialize in capital expenditures for exterior transformations that enhance your site's aesthetics, durability, and value. Contact us for a consultation and give your site a stunning makeover!</Typography>
                         <Typography variant='body2' sx={{mb: 2}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</Typography>
                         
                     </Grid>
@@ -136,31 +136,30 @@ function CapEx() {
                 <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Grid container spacing={{xs: 3, md: 5, xl: 10}}>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={commIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={commIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={multifamilyIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={multifamilyIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={govtIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={govtIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
                             </Grid>
-                            
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>OUR CAPEX CLIENTS</Typography>
                         {/* <Typography variant='body2'>Transblue is your one-stop-shop for all your asphalt needs, providing comprehensive services to government, multifamily, and commercial clients. Whether you need asphalt maintenance, repair, or new installation, Transblue can handle projects of any size, from single sites to hundreds of sites across the country.</Typography> */}
-                        <Typography variant='body2'>Transblue is a one-stop-shop for all capital expenditure projects, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your asphalt needs efficiently and reliably.</Typography>
+                        <Typography variant='body2'>Transblue is a one-stop shop for all capital expenditure projects, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your service needs efficiently and reliably.</Typography>
                     </Grid>
                 </Grid>
             </Box>

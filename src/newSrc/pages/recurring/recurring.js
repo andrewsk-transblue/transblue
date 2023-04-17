@@ -46,10 +46,10 @@ function Recurring() {
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: '500', mb: 2}}>BUILT ON SOFTWARE</Typography>
-                        <Typography variant='body2' sx={{mb: 3}}>A contract with Transblue includes a work order app custom built by our team of developers for your company, and your company only. There's no more searching for the perfect software to fit your needs. </Typography>
+                        <Typography variant='body2' sx={{mb: 3}}>A contract with Transblue includes work order software custom built by our team of developers for your company, and your company only. There's no more searching for the perfect software to fit your needs. </Typography>
 
                         <Typography variant='body2' sx={{bgcolor: 'whitesmoke', p: 1}}><Timelapse sx={{mr: 1, color: '#0b56a4'}} /> Dispatch times as low as 30 minutes</Typography>
-                        <Typography variant='body2' sx={{p: 1}}><Laptop sx={{mr: 1, color: '#0b56a4'}} /> Super simple to use</Typography>
+                        <Typography variant='body2' sx={{p: 1}}><Laptop sx={{mr: 1, color: '#0b56a4'}} /> Simple and easy onboarding</Typography>
                         <Typography variant='body2' sx={{bgcolor: 'whitesmoke', p: 1}}><Construction sx={{mr: 1, color: '#0b56a4'}} /> Customizable services for your company's needs</Typography>
                         <Typography variant='body2' sx={{p: 1, mb: 3}}><AttachMoney sx={{mr: 1, color: '#0b56a4'}} /> Completely free of charge</Typography>
 
@@ -64,13 +64,12 @@ function Recurring() {
             </Box>
 
             <Box sx={{pb: '20vh', width: '100%', pl: '5vw'}}>
-
                 <Grid container spacing={10}>
-                    <Grid item xs={12} md={6} my='auto'>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, fontWeight: 500, letterSpacing: '.03em'}}>
                             EXTENSIVE SUBCONTRACTOR NETWORK
                         </Typography>
-                        <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site, giving you peace of mind knowing that your property is in good hands.</Typography>
+                        <Typography variant='body2' sx={{mb: 3}}>With an extensive network of trusted and experienced subcontractors, Transblue ensures that quality work is done at every site togive you peace of mind knowing that your property is in good hands!</Typography>
                         <Button
                             variant='contained'
                         >
@@ -78,7 +77,7 @@ function Recurring() {
                         </Button>
 
                     </Grid>
-                    <Grid item xs={12} md={6} my='auto'>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
                         <img src={network} style={{width: '100%'}} />
                     </Grid>
                 </Grid>
