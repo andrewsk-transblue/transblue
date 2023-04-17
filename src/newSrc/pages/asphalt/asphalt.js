@@ -111,23 +111,23 @@ function Asphalt() {
                 <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Grid container spacing={{xs: 3, md: 5, xl: 10}}>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={commIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={commIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>COMMERCIAL</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={multifamilyIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={multifamilyIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>MULTIFAMILY</Typography>
                             </Grid>
-                            <Grid item xs={12} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <img src={govtIcon} style={{width: screenSize === 'small' ? '50%' : '100%'}} />
+                            <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <img src={govtIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
                             </Grid>
-                            <Grid item xs={12} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
-                                <Typography variant='h2' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
+                            <Grid item xs={7} md={9} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
+                                <Typography variant='h1' sx={{letterSpacing: '.03em'}}>GOVERNMENT</Typography>
                             </Grid>
                             
                         </Grid>
