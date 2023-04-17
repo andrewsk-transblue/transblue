@@ -64,9 +64,8 @@ function Recurring() {
             </Box>
 
             <Box sx={{pb: '20vh', width: '100%', pl: '5vw'}}>
-
                 <Grid container spacing={10}>
-                    <Grid item xs={12} md={6} my='auto'>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Typography variant='h2' sx={{color: '#0b56a4', mb: 2, fontWeight: 500, letterSpacing: '.03em'}}>
                             EXTENSIVE SUBCONTRACTOR NETWORK
                         </Typography>
@@ -78,7 +77,7 @@ function Recurring() {
                         </Button>
 
                     </Grid>
-                    <Grid item xs={12} md={6} my='auto'>
+                    <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
                         <img src={network} style={{width: '100%'}} />
                     </Grid>
                 </Grid>
