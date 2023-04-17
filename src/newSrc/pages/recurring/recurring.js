@@ -41,7 +41,7 @@ function Recurring() {
                 <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6} my='auto'>
                         <Box sx={{position: 'relative', width: '100%', maxWidth: '600px', height: '400px', bgcolor: '#ed6a22', borderRadius: '200px 0px', boxShadow: '0px 3px 15px rgba(0,0,0,0.5)'}}>
-                            <img src={dispatch} style={{maxWidth: '400px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} />
+                            <img src={dispatch} style={{width: '400px', maxWidth: '105%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} />
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
