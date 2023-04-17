@@ -66,7 +66,7 @@ function Asphalt() {
                     ASPHALT
                 </Typography>
             </CenteredDiv>
-            
+
             <Box sx={{py: '20vh', width: '90vw', maxWidth: '2000px', m: '0 auto', overflowX: 'hidden'}}>
                 <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6}>
@@ -85,7 +85,7 @@ function Asphalt() {
                 </Grid>
             </Box>
 
-            <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: 10, py: 7}}>
+            <Box sx={{width: '100%', mb: '20vh', bgcolor: '#303030', px: {xs: 4, md: 10}, py: 7}}>
                 <Grid container spacing={{xs: 4, md: 10}}>
                     <Grid item xs={12} md={6}>
                         <Typography variant='h2' sx={{color: 'white', fontWeight: 500, mb: 2}}>OUR SERVICES</Typography>
