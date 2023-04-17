@@ -30,7 +30,7 @@ function Header(props) {
                 </div> */}
 
                 <CenteredDiv>
-                    <Typography variant='h1' sx={{color: 'white'}}>{title}</Typography>
+                    <Typography variant='h1' sx={{color: 'white', wordBreak: 'keep-all'}}>{title}</Typography>
                 </CenteredDiv>
             </div>
             {screenSize === 'large'

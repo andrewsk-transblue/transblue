@@ -50,6 +50,8 @@ code {
   font-size: clamp(40px, 4vw, 7em);
   letter-spacing: 5px;
   margin-bottom: 0px;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 .header-text.franchise-header {
