@@ -104,25 +104,29 @@ function MobileNavbar() {
         document.addEventListener('scroll', () => {
             let topPadding = window.scrollY > 30 ? '0px' : '30px';
             let style = window.scrollY > window.innerHeight / 3 
-            ?   {
-                    bgcolor: 'rgba(24, 24, 24, 0.9) !important',
-                    backdropFilter: 'blur(2px)'
-                }
-            :   {
-                    bgcolor: 'transparent'
-                }
+                ?   {
+                        bgcolor: 'rgba(24, 24, 24, 0.9) !important',
+                        backdropFilter: 'blur(2px)'
+                    }
+                :   {
+                        bgcolor: 'transparent'
+                    };
+
+            // add elevation to app bar when user scrolls past 1/3 of the page, when the appbar becomes dark
+            let elevation = window.scrollY > window.innerHeight / 3 ? 1 : 0
 
             setTheme({
                 ...theme,
                 style: style,
-                topPadding: topPadding
+                topPadding: topPadding,
+                elevation: elevation
             })
-        })
+        });
     }, []);
 
     return (
-        <Box sx={{...theme.style, flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', top: theme.topPadding, left: 0 }}>
-            <AppBar position='static' sx={{...theme.style}}>
+        <Box sx={{...theme.style, flexGrow: 1, width: '100%', zIndex: 8, position: 'fixed', left: 0, top: 0 }}>
+            <AppBar position='static' sx={{...theme.style}} elevation={theme.elevation}>
                 <Toolbar>
                     <Box
                         sx={{ flexGrow: 1, my: 'auto'}}
