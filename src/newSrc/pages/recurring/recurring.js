@@ -44,6 +44,7 @@ function Recurring() {
                             <img src={dispatch} style={{width: '400px', maxWidth: '105%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} />
                         </Box>
                     </Grid>
+                    
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: '500', mb: 2}}>BUILT ON SOFTWARE</Typography>
                         <Typography variant='body2' sx={{mb: 3}}>A contract with Transblue includes work order software custom built by our team of developers for your company, and your company only. There's no more searching for the perfect software to fit your needs. </Typography>
