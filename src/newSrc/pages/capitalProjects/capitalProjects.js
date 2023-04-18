@@ -9,6 +9,9 @@ import commIcon from '../../images/asphalt/commIcon.jpg';
 import multifamilyIcon from '../../images/asphalt/multifamilyIcon.jpg';
 import govtIcon from '../../images/asphalt/govtIcon.jpg';
 import { Circle, Construction, FormatPaint, GridView, Lightbulb, Warehouse } from '@mui/icons-material';
+import asphalt from '../../images/capEx/asphalt2.jpg';
+import indoor from '../../images/capEx/indoor.jpeg';
+import refresh from '../../images/capEx/refresh.jpg';
 
 const iconStyle = {
     fontSize: '8px',
@@ -64,26 +67,24 @@ function CapEx() {
 
             <Box sx={{width: '90vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
                 <Typography variant='h2' sx={{color: '#0b56a4', letterSpacing: '.03em', textAlign: 'center', mb: 3, fontWeight: 500}}>REFRESH YOUR BRAND</Typography>
-                <Typography variant='body2' sx={{textAlign: 'center', width: '90%', maxWidth: '850px', pb: 5, m: '0 auto'}}>With a diverse range of capital expenditure projects, Transblue can help transform your property and revitalize your brand with our comprehensive services. We offer everything from interior remodels to landscaping to roof renovations and more!</Typography>
+                <Typography variant='body2' sx={{textAlign: 'center', width: '90%', maxWidth: {xs: '850px', xl: '2000px'}, pb: 5, m: '0 auto'}}>With a diverse range of capital expenditure projects, Transblue can help transform your property and revitalize your brand with our comprehensive services. We offer everything from interior remodels to landscaping to roof renovations and more!</Typography>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={4}>
-                        <img src={placeholder} alt='' style={{width: '100%'}} />
+                        <img src={asphalt} alt='' style={{width: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <img src={placeholder} alt='' style={{width: '100%'}} />
+                        <img src={indoor} alt='' style={{width: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <img src={placeholder} alt='' style={{width: '100%'}} />
+                        <img src={refresh} alt='' style={{width: '100%'}} />
                     </Grid>
                 </Grid>
             </Box>
 
             <Box sx={{width: '90vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
-                <Grid container spacing={10} my='auto'>
-                    <Grid item xs={12} md={6}>
-                        <video style={{width: '100%', height: '100%', maxHeight: '500px'}}>
-                            <source src='https://tbconnectstorage.blob.core.windows.net/projectimages/capEx.mp4' style={{width: '100%', maxHeight: '500px'}} />
-                        </video>
+                <Grid container spacing={10}>
+                    <Grid item xs={12} md={6} my='auto'>
+                        <iframe width="100%" height={window.innerHeight * .75} src="https://www.youtube.com/embed/WeCO53IGQcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, letterSpacing: '.03em', mb: 2}}>
@@ -110,18 +111,18 @@ function CapEx() {
                 </Grid>
             </Box>
             
-            <Box sx={{width: '90vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
+            <Box sx={{width: '80vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6} my='auto'>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, letterSpacing: '.03em', mb: 2}}>
                             EXTERIOR PROJECTS
                         </Typography>
                         <Typography variant='body2' sx={{mb: 2}}>Elevate your curb appeal with our top-notch exterior remodeling services. Our skilled general contractors specialize in capital expenditures for exterior transformations that enhance your site's aesthetics, durability, and value. Contact us for a consultation and give your site a stunning makeover!</Typography>
-                        <Typography variant='body2' sx={{mb: 2}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</Typography>
+                        {/* <Typography variant='body2' sx={{mb: 2}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</Typography> */}
                         
                     </Grid>
                     <Grid item xs={12} md={6} my='auto'>
-                        <Box sx={{width: '100%', maxWidth: '600px', bgcolor: '#0b56a4', height: '400px', borderRadius: `200px 0px`, position: 'relative'}}>
+                        <Box sx={{width: '100%', maxWidth: '700px', bgcolor: '#0b56a4', height: '500px', borderRadius: `250px 0px`, position: 'relative'}}>
                             <Box sx={{maxWidth: '400px', width: '80%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
                                 <ul>
                                     <Typography variant='h6' sx={{color: 'white', mb: 1}}><Circle sx={iconStyle} /> SIDING</Typography> 
@@ -138,7 +139,7 @@ function CapEx() {
                 </Grid>
             </Box>
 
-            <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '1500px', m: '0 auto'}}>
+            <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '2000px', m: '0 auto'}}>
                 <Grid container spacing={{xs: 5, md: 10}}>
                     <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
                         <Grid container spacing={{xs: 3, md: 5, xl: 10}}>

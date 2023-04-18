@@ -61,7 +61,7 @@ function Recurring() {
                             href='/contact'
                             fullWidth
                         >
-                            book a demo now
+                            learn more
                         </Button>
                     </Grid>
                 </Grid>

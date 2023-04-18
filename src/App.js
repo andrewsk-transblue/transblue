@@ -97,7 +97,10 @@ function App() {
         fontFamily: 'Raleway',
         '@media (min-width: 1400px)': {
           fontSize: '1.8vw'
-        }
+        },
+        '@media (min-width: 2000px)': {
+          fontSize: '1.3vw'
+        },
       }
     },
     components: {
