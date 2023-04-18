@@ -22,7 +22,6 @@ const iconStyle = {
 
 function CapEx() {
     const [screenSize, setScreenSize] = useState('small');
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth / 4);
 
     const getScreenSize = () => {
         if(window.innerWidth > 980) {
@@ -35,7 +34,7 @@ function CapEx() {
     useEffect(() => {
         getScreenSize();
     }, []);
-
+    
     return(
         <>
             <NavWrapper page='Capital Projects' />
