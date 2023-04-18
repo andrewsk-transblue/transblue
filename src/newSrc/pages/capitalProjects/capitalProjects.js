@@ -64,7 +64,6 @@ function CapEx() {
                     </Grid>
                 </Grid>
             </Box>
-
             <Box sx={{width: '90vw', maxWidth: '2000px', pb: '20vh', m: '0 auto'}}>
                 <Typography variant='h2' sx={{color: '#0b56a4', letterSpacing: '.03em', textAlign: 'center', mb: 3, fontWeight: 500}}>REFRESH YOUR BRAND</Typography>
                 <Typography variant='body2' sx={{textAlign: 'center', width: '90%', maxWidth: {xs: '850px', xl: '2000px'}, pb: 5, m: '0 auto'}}>With a diverse range of capital expenditure projects, Transblue can help transform your property and revitalize your brand with our comprehensive services. We offer everything from interior remodels to landscaping to roof renovations and more!</Typography>
