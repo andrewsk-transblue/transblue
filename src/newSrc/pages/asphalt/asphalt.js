@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import CTA from "../../components/cta/cta";
 import Footer from "../../components/footer/footer";
 import NavWrapper from "../../components/navbar/navWrapper";
-import asphalt from '../../images/asphalt/asphalt.jpeg';
 import parkinglot from '../../images/asphalt/parkinglot.jpeg';
 import commIcon from '../../images/asphalt/commIcon.jpg';
 import multifamilyIcon from '../../images/asphalt/multifamilyIcon.jpg';
@@ -107,9 +106,9 @@ function Asphalt() {
                 </Grid>
             </Box>
 
-            <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '1500px', m: '0 auto'}}>
-                <Grid container spacing={{xs: 5, md: 10}}>
-                    <Grid item xs={12} md={6} my='auto' order={{xs: 2, md: 1}}>
+            <Box sx={{pb: '20vh', width: {xs: '90vw', md: '80vw'}, maxWidth: '2000px', m: '0 auto'}}>
+                <Grid container spacing={{xs: 5, md: 10, xl: 5}}>
+                    <Grid item xs={12} md={6} xl={7} my='auto' order={{xs: 2, md: 1}}>
                         <Grid container spacing={{xs: 3, md: 5, xl: 10}}>
                             <Grid item xs={5} md={3} my='auto' textAlign={screenSize === 'small' ? 'center' : 'left'}>
                                 <img src={commIcon} style={{width: screenSize === 'small' ? '80%' : '100%'}} />
@@ -131,7 +130,7 @@ function Asphalt() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={6} my='auto' order={{xs: 1, md: 2}}>
+                    <Grid item xs={12} md={6} xl={5} my='auto' order={{xs: 1, md: 2}}>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, mb: 2}}>OUR ASPHALT CLIENTS</Typography>
                         {/* <Typography variant='body2'>Transblue is your one-stop-shop for all your asphalt needs, providing comprehensive services to government, multifamily, and commercial clients. Whether you need asphalt maintenance, repair, or new installation, Transblue can handle projects of any size, from single sites to hundreds of sites across the country.</Typography> */}
                         <Typography variant='body2'>Transblue is a one-stop-shop for all asphalt services, catering to government, multifamily, and commercial clients with equal ease. Whether you have a single site or a large portfolio of properties, our team is equipped to handle all your asphalt needs efficiently and reliably.</Typography>

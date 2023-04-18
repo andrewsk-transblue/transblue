@@ -49,7 +49,7 @@ function Careers() {
     };
 
     function scrollToApply() {
-        ref.current.scrollIntoView({ behavior: 'smooth' })
+        ref.current.scrollIntoView({ behavior: 'smooth' });
     }
 
     return(

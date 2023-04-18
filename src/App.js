@@ -11,6 +11,8 @@ import axios from 'axios';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 
+import Test from './newSrc/pages/test/test';
+
 const Residential = lazy(() => import ('./newSrc/pages/residential/residential'));
 const Commercial = lazy(() => import ('./newSrc/pages/commercial/newCommercial'));
 const Multifamily = lazy(() => import ('./newSrc/pages/multifamily/index'));
@@ -197,6 +199,7 @@ const mounted = async() => {
               <Route exact path='/asphalt' component={Asphalt} />
               <Route exact path='/capex' component={CapEx} />
               <Route exact path='/roofs' component={RoofSnow} />
+              <Route exact path='/test' component={Test} />
             </Suspense>
           </Router>
         </HelmetProvider>
