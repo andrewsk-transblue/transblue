@@ -12,6 +12,7 @@ import { Circle, Construction, FormatPaint, GridView, Lightbulb, Warehouse } fro
 import asphalt from '../../images/capEx/asphalt2.jpg';
 import indoor from '../../images/capEx/indoor.jpeg';
 import refresh from '../../images/capEx/refresh.jpg';
+import roof from '../../images/capEx/roof.jpeg';
 
 const iconStyle = {
     fontSize: '8px',
@@ -44,9 +45,7 @@ function CapEx() {
             <Box sx={{width: '90vw', maxWidth: '2000px', py: '20vh', m: '0 auto'}}>
                 <Grid container spacing={10}>
                     <Grid item xs={12} md={6}>
-                        <video style={{width: '100%', height: '100%', maxHeight: '500px'}}>
-                            <source src='https://tbconnectstorage.blob.core.windows.net/projectimages/capEx.mp4' style={{width: '100%', maxHeight: '500px'}} />
-                        </video>
+                        <img src={roof} style={{width: '100%'}} />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Typography variant='h2' sx={{color: '#0b56a4', fontWeight: 500, letterSpacing: '.03em', mb: 2}}>
