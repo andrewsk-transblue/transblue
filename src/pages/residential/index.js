@@ -23,13 +23,13 @@ const Carousel = lazy(() => import ('../../components/residential/carousel'));
 const Design = lazy(() => import('../../components/residential/design'))
 
 //BLOCK ABOVE DESIGN COMPONENT THAT TRIGGERS DESIGN ANIMATION
-const Block = (props: { inViewport: boolean }) => {
+const Block = (props) => {
     const { inViewport, forwardedRef } = props;
     return (
       <div className="viewport-block" ref={forwardedRef}>
       </div>
     );
-  };
+};
 const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 function Residential() {
